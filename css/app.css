@@ -1740,6 +1740,8 @@ h3 {
     z-index: -1; }
     .in-flashback figure.prologue {
       background-image: url(../images/study.jpg); }
+    .in-flashback figure.chapter1 {
+      background-image: url(../images/yard.jpg); }
   .in-flashback h3 {
     color: white; }
   .in-flashback h4 {
