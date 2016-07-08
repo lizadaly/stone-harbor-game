@@ -1,0 +1,212 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+
+@include foundation-global-styles;
+@include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-visibility-classes;
+@include foundation-button-group;
+@include foundation-menu;
+@include foundation-thumbnail;
+@include foundation-top-bar;
+
+$section-margin: $global-margin * 4;
+
+.wf-loading * {
+  visibility: hidden
+}
+.code-dialogue {
+    background: $light-gray;
+    padding-bottom: $global-margin / 2 !important;
+    margin-bottom: $global-margin;
+}
+
+code, pre, kbd {
+    font-family: $font-family-monospace;
+    font-size: $small-font-size;
+}
+
+.button {
+    border: 0 ;
+}
+
+section {
+    margin: 0;
+}
+
+.medium-margin {
+    margin-top: $global-margin * 2;
+}
+.large-margin {
+    margin-top: $section-margin;
+}
+
+figure {
+    margin:0;
+}
+
+
+footer {
+    background: $darkest-gray;
+    padding: $global-margin * 2;
+    color: $white;
+}
+
+footer img {
+    fill: $white;
+}
+
+footer a {
+    color: $white;
+}
+
+footer small {
+
+}
+
+aside {
+    @include callout-base;
+    font-size: $small-font-size;
+    color: $darkest-gray;
+    width: grid-column(4);
+    @include grid-column-position(8);
+    float:right;
+    margin: 0rem 2rem;
+    @include grid-column-position(0);
+    h3 {
+        color: $darkest-gray;
+        text-transform: uppercase;
+        font-size: map-get(map-get($header-sizes, small), h6) * 1.4px;
+    }
+
+}
+
+header h1 {
+    font-size: map-get(map-get($header-sizes, medium), h1) * 1px;
+}
+.ReactCodeMirror {
+    background: #3f3f3f;
+    padding: .5rem;
+
+}
+
+
+.CodeMirror {
+    font-family: $font-family-monospace;
+    line-height: 1.2rem;
+}
+.instructions {
+    margin: $global-margin;
+    font-size: $small-font-size;
+    font-family: helvetica, arial, sans-serif;
+    min-height: 0.25rem;
+}
+
+pre {
+    background: $light-gray;
+    border: 1px solid $medium-gray;
+    padding: rem-calc(2 5 1);
+}
+nav a {
+    text-decoration: none;
+}
+nav img {
+    height: 1rem;
+}
+
+article {
+    margin-top: $global-margin;
+}
+
+blockquote {
+    margin-top: $global-margin;
+}
+
+.ww-logo {
+    margin: 0 1rem 0 1rem;
+    font-size: 1.5rem;
+    letter-spacing: -.5rem;
+    color: white;
+    font-family: $header-font-family;
+
+}
+.top-bar-title {
+    background: $light-gray;
+    text-align: center;
+}
+.ww-logo-1 {
+    color: $medium-gray;
+}
+psychic {
+  font-weight: bold;
+  font-style: italic;
+}
+h1 {
+  text-align: center;
+  padding: 1em 0 0 0
+}
+h2.subtitle {
+  padding: 0;
+  color: $dark-gray;
+}
+h5 {
+  color: $dark-gray;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  padding: 1.5em 0 1em 0;
+}
+h3 {
+  padding: 1em 0 0 0;
+}
+
+.in-flashback {
+  margin-top: $global-margin;
+
+  figure {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 50vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+
+    &.prologue {
+      background-image: url(../images/study.jpg);
+    }
+  }
+  h3 {
+    color: white;
+  }
+  h4 {
+    color: white;
+    font-style: italic;
+  }
+  section {
+    margin-top: 48vw;
+  }
+}
+small {
+  text-transform: uppercase;
+}
+blockquote {
+  background: $light-gray;
+  padding: 1rem;
+  border: none;
+  margin: $global-margin $global-margin * 2;
+}
+hr {
+  width: 25%;
+  margin: $global-margin * 2 auto;
+}
+.next-chapter-link {
+  text-align: center;
+  text-transform: uppercase;
+
+}

@@ -1,0 +1,247 @@
+const React = require('react')
+import { Examinable, FromInventory, MapFromInventory, NextChapter } from '../components'
+import { connect } from 'react-redux'
+import { RenderSection } from "."
+
+const Customer = {
+  clothes: [
+    "typical tourist clothes",
+    ["a cheap wedding ring",
+    "a dirty rain jacket",
+    "a novelty baseball cap"],
+    "an impatient stare"
+  ],
+  names: [
+    "Nancy?",
+    "Nadine?",
+    "Nicky?"
+  ],
+  body: [
+    "physical appearance",
+    ["unshaven face",
+    "calloused hands",
+    "peeling sunburn"],
+    "physical appearance and pick up some cues"
+  ]
+}
+
+const _Prologue = ({currentSection, inventory}) => {
+  var mapsClothes = {
+    "ring": "There's someone close to you. Someone you trusted to be with you always. But they're gone.",
+    "jacket": "Your vacation hasn't turned out the way you hoped. I'm sensing disappointment, maybe even despair.",
+    "cap": "You like to have fun, you're a carefree guy with a sense of humor. But you're not laughing lately."
+  }
+  var mapsName = {
+    "ring": "Did he approve of your marriage? I sense concern about how it unfolded.",
+    "jacket": "How would he feel about you traveling so far to see me?",
+    "cap": "He never laughed enough, did he?"
+  }
+  var mapsApprove = {
+    "ring": "Janet. Never even gave her the chance,",
+    "jacket": "frivolity and vacations. Never wanted me to have any fun,",
+    "cap": "'frivolity', as he called it. He never liked it when I joked around,"
+  }
+  var mapsBody = {
+    "face": "He's worried because you're not sleeping",
+    "hands": "He's proud that his son works with his hands",
+    "sunburn": "He's glad you've been spending time outdoors"
+  }
+  var libraryThings = [
+    "knicknacks",
+    ["a partially-written note",
+     "a photograph",
+     "an unfilled prescription"
+    ],
+    "personal effects"
+  ]
+  var libraryMaps = {
+    note: `You look down at the unfinished note. It reads: <blockquote>My dearest, I hope you understand
+      that I'm doing this based on need, not out of any lack of love for</blockquote> You don't
+      understand why, but you recognize the handwriting as Alan Healey's.`,
+    photograph: `You examine the picture. It's a formal group photo taken at the beach: an older man, an older woman, an adult
+      man and woman who must be siblings, a young girl. You know immediately that the old man is Alan Healey.`,
+    prescription: `You read the prescription. It's for a medication you've never heard of, yet
+      you intuitively know it treats high blood pressure.`
+  }
+  var sections = [
+    <section>
+      <h2>Prologue</h2>
+      <p>The beaded curtain dividing your tiny foyer from your tiny reading room
+        parts and your next customer steps through. You observe him  as
+        he takes in the decor. All the trappings
+        of a boardwalk fortune-teller are here: tarot decks, zodiac paintings,
+        an absurdly large crystal ball. Satisfied, he sits before you at
+        the cramped circular table. Your knees are almost touching; this room wasn't built for two tall men.
+      </p>
+      <p>"Are you here for a reading?" you ask, solemnly. The customer nods.
+        "Then let us begin," you say. "Some reach the spirits via palms or cards. I require a personal object,
+        one infused with the spirits themselves."
+      </p>
+      <p>You look over the customer, who is wearing <Examinable expansions={Customer.clothes} tag="p0_customer_clothes"/>.</p>
+    </section>,
+    <section>
+      <p>
+        "There's a powerful psychic force emanating from your <FromInventory inventory={inventory.p0_customer_clothes} />," you say. "May I hold it?"
+        The customer is wide-eyed as he hands it to you. You close your eyes and rotate
+        the <FromInventory inventory={inventory.p0_customer_clothes} /> slowly in your hands.
+        "<MapFromInventory from={inventory.p0_customer_clothes} to={mapsClothes} />"
+        You frown. "The spirits want to help, but their signals seem faint—"
+        You hear the sound of money sliding across the table, your favorite sound.
+      </p>
+      <p>
+        You open your eyes, since you need to watch for this part. "I see a name, begins with an S—" He stares at you blankly. "Or an N?"
+        He perks up. You frown as if in deep concentration. "<Examinable expansions={Customer.names} tag="p0_customer_names"/>"
+      </p>
+    </section>,
+    <section>
+      <p>"—Nicholas?" he supplies excitedly. "Is it my father?"</p>
+      <p>"Perhaps," you hedge. "<MapFromInventory from={inventory.p0_customer_clothes} to={mapsName} />"
+      </p>
+      <p>"He didn't approve of <MapFromInventory from={inventory.p0_customer_clothes} to={mapsApprove} />" he says bitterly.</p>
+      <p>"Yes, and he's sorry he behaved that way."</p>
+      <p>"He is?" The customer frowns thoughtfully. "That doesn't sound like him at all."</p>
+      <p>"The world of the afterlife changes a person," you say, gliding over his objection.
+        You study the customer's <Examinable expansions={Customer.body} tag="p0_customer_body" />.</p>
+    </section>,
+    <section>
+      <p>"<MapFromInventory from={inventory.p0_customer_body} to={mapsBody} />," you improvise.</p>
+      <p>"My God yes, how could you know?" he says, with awe. He slides forward, trusting you completely now. "That's true, I have been—"</p>
+      <p>But your triumph is short-lived, because the curtain rustles again unexpectedly. A woman steps through: mid-forties, no-nonsense, a bit frumpy for
+        your taste. She's not a potential client. You're unsurprised when she
+        flashes a badge at the customer, saying, "Get out."
+      </p>
+      <p>He nearly leaps out of his seat, and hastily packs up, embarrassed. "You don't have to leave,"
+        you tell him, but it's useless, he's burnt anyway. He squeezes past the
+        woman—the police officer—who watches him with a mix of pity and
+        contempt.
+        He's in such a hurry he doesn't think to pick up his extra money on the table,
+        and in the distraction of the moment you quietly slide it into your pocket.
+        His <FromInventory inventory={inventory.p0_customer_clothes} /> also lies forgotten.
+      </p>
+      <p>And now you're
+        alone with that cop. She's probably here to harass you about somebody's second thoughts:
+        a claim that they were defrauded, that you didn't disclaim it was for "entertainment purposes
+        only" enough, that their spouse found out, the usual. It doesn't happen often,
+        but it happens. Best to make the interview go smoothly: start polite, keep it businesslike.
+      </p>
+      <p>"May I help you, officer?" you ask. And then she says something that not even
+      you could've predicted.</p>
+      <p>"I need a psychic," she says, handing you
+        her <Examinable expansions={["card", 'card, which you flip over and read: <small>Tamisha Whitby, Detective Homicide, Ocean View, NJ</small>']}  tag="p0_nextUnit"/>.
+      </p>
+    </section>,
+    <section>
+      <hr/>
+      <p>You expect her to undercut the moment with a joke, but she doesn't,
+        just stands there studying you. You might be a fraud, but you're not rude.
+      "Frank Petrio," you say, extending your meaty hand.</p>
+
+      <p>She shakes it and produces one of your business cards. "Not <i>The Great Francisco</i>?"</p>
+      <p>You shrug, point to the sign over the door: "<small>For entertainment purposes only</small>." You both sit.</p>
+      <p>She says, "I don't believe in fortune-telling or psychics or any of that.
+        I'm here as a favor for someone." She's staring at you, hard, and you can't help but
+        squirm a little. This is probably how your clients feel. "Are you familiar with
+      the death of Alan Healey last month? It was in the papers."</p>
+
+      <p>"It's August at the boardwalk," you reply. "I've been pretty busy with work."</p>
+      <p>She looks pointedly around the reading room and you don't need to be psychic to know
+        what she thinks of your career choices. She produces a file folder and begins to read
+        from it.
+        "Healey was found dead in his home after taking
+        an overdose of his blood pressure medication. The Healeys are an old and wealthy family in
+        this town so the story got quite a bit of news coverage. Even more so when his grand-niece
+      Sarah went to the press claiming it was murder."</p>
+      <p>
+        None of this sounds familiar; you truly
+        don't follow local news. "Sorry. What does this have to do with me?"
+      </p>
+      <p>"Sarah is my god-daughter," the detective says, as if that explains things.
+        "I'm not officially on the case but she's asked for my help.
+      She's a very... spiritual person. She believes easily." Whitby pauses.</p>
+      <p>"She's gullible," you say.</p>
+      <p>The detective scowls. "I don't want to be
+        here any more than you want me here. I don't even think Healey was murdered.
+        He was an old man with poor vision who misread his dosage. I'm doing
+        a favor for a young person who is hurting and—" She reaches into her
+        pocket, searching for something. "Sarah told me specifically to come here,
+        that she'd heard this psychic was different. That if he wasn't honest, he
+        was at least compassionate."
+      </p>
+      <p>"<i>She</i>," you snap. "My mother was 'The Great Francesca.' This was her business,
+        but then she died. That's probably who your friend heard about."
+      </p>
+      <p>
+        "I'm sorry, I didn't—"
+      </p>
+      <p>You're  angry too, though you're not sure why.
+        "And now I operate it. For tourists and suckers. <i>For entertainment purposes only.</i>"</p>
+      <p>"I knew this was a waste of time," Whitby says. She tosses
+        a <Examinable expansions={["leather glove", "<psychic>tense and furious glove</psychic>"]} tag="p0_glove"/> on the desk. "There, I did what I came to do."
+      </p>
+    </section>,
+    <section>
+      <p><em>Something is very strange about that </em> <Examinable expansions={["<psychic>glove</psychic>.", "— <br/><br/><p>You pick up the glove, and everything changes.</p>"]} tag="p0_glove2"  /></p>
+    </section>,
+      <div className="in-flashback">
+        <figure className="prologue"/>
+        <h3>In the library</h3>
+        <section>
+          <p>You look down and see nothing, as if you aren't there. The color
+            has been washed out of the room. Objects are blurry and indistinct, like an old photograph. There's
+            a bookcase, a cluttered desk containing <Examinable expansions={libraryThings} tag="p0_library_things"/>,
+            a small lamp, family photographs on the wall.
+            There's a doorway leading into a brightly lit bedroom, but it's even fuzzier, less real,
+            than this room.
+          </p>
+        </section>
+      </div>,
+    <section>
+      <p>
+        <MapFromInventory from={inventory.p0_library_things} to={libraryMaps} />
+      </p>
+      <p>
+        A shadowed figure appears in the doorway, blotting out the light. You hear
+        a labored sound from the bedroom—someone choking and spluttering.
+      </p>
+      <p>
+        The figure listens to the distress impassively. Panic is rising in you, but
+        absurdly, you have no feet to run into the room, no voice to call for help. An achingly
+        long time later, the choking subsides until all is silence. The figure closes the bedroom door,
+        and the room is now lit by the single weak lamp on the desk. It illuminates the gloved hand on the
+        doorknob, and you're transfixed by that simple object. The figure tests the door, and satisfied
+        that the bedroom is locked, releases the knob,
+        the <Examinable expansions={["glove", "awful glove"]} tag="p0_glove3" /> brilliantly shimmering under the light—
+      </p>
+    </section>,
+    <section>
+      <h3>In your reading room</h3>
+      <p>
+        And just like that you're back, and the feeling of being weighed down by your own body
+        is almost grotesque. You look at the glove, and while it feels
+        dense and heavy in your hands, the sense of deep <i>wrongness</i> about it is gone. It's
+        just a glove.
+      </p>
+      <p>You can't imagine how you're going to explain all this to a
+        practical and rational police officer, but when you look up into her eyes you can see plainly
+        enough that <i>something</i> happened. She looks more than a little
+        bit afraid of you.
+      </p>
+      <p>
+        You push the glove back at her. "This was murder."
+      </p>
+      <NextChapter chapter="1" />
+    </section>
+      ]
+  return <RenderSection currentSection={currentSection} sections={sections} />
+}
+
+const mapStateToProps = (state, ownProps) => {
+  return {
+    currentSection: state.bookmarks[ownProps.chapterId],
+    inventory: state.inventory
+  }
+}
+
+export const Prologue = connect(
+  mapStateToProps
+)(_Prologue)
