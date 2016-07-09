@@ -6149,7 +6149,7 @@
 	function _fromInventory(inventory) {
 	  var offset = arguments.length <= 1 || arguments[1] === undefined ? "last" : arguments[1];
 
-	  var inv = inventory.split(" ");
+	  var inv = inventory ? inventory.split(" ") : "";
 	  var out = offset === "last" ? inv[inv.length - 1] : inv[offset];
 	  return out;
 	}
@@ -6334,7 +6334,7 @@
 	              { key: i },
 	              i == text.length - 1 ? "and " : "",
 	              React.createElement(Link, { handler: handler, text: t }),
-	              i < text.length - 1 ? ", " : ""
+	              text.length > 2 && i < text.length - 1 ? ", " : ""
 	            );
 	          })
 	        );
@@ -6613,8 +6613,7 @@
 	      'p',
 	      null,
 	      'Before you can react to that extraordinary statement, she says, "Let\'s try this now," and tosses you a ',
-	      React.createElement(_components.Examinable, { expansions: ["small metal object", "<psychic>frustrated cutting device</psychic>", "small metal item that's emanating frustration, and the moment you catch it you're—<br/><br/><br/>"], tag: 'c1_device' }),
-	      '.'
+	      React.createElement(_components.Examinable, { expansions: ["small metal object.", "<psychic>frustrated cutting device</psychic>.", "small metal item that's emanating frustration, and the moment you catch it you're—<br/><br/><br/>"], tag: 'c1_device' })
 	    )
 	  ), React.createElement(
 	    'div',
@@ -6623,14 +6622,253 @@
 	    React.createElement(
 	      'h3',
 	      null,
-	      'In the library'
+	      'In the courtyard'
 	    ),
 	    React.createElement(
 	      'section',
 	      null,
-	      React.createElement('p', null)
+	      React.createElement(
+	        'p',
+	        null,
+	        'It\'s dawn and you can smell salt in the air. ',
+	        React.createElement(_components.Examinable, { expansions: ['Something', 'A metal device'], tag: 'c1_device2' }),
+	        ' nearby is frustrated.'
+	      )
 	    )
 	  ), React.createElement(
+	    'section',
+	    null,
+	    React.createElement(
+	      'p',
+	      null,
+	      'This is the rear courtyard of the  Healey property. The neo-classical house is brightly lit by the rising sun, but as before, your vision blurs and darkens around the edges. You can make out a decorative stone fence enclosing the courtyard, opening to a set of stairs flanked by urns. The stairs lead to a sandy path through the dunes and presumably empties out onto their private beach.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'There\'s an odd sense of dual recognition: you just ',
+	      React.createElement(
+	        'em',
+	        null,
+	        'know'
+	      ),
+	      ' where you are, but you\'ve also been here before—maybe twenty years ago, tagging along with your mom on one of her rare house calls. She\'d parked in the wide, looping gravel drive at the front of the house and told you to wait in the car, but you got bored and wandered the grounds. You\'d been afraid of getting in trouble and stopped at the place you stand now. This time you don\'t turn back.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'It seems perfectly normal that the ',
+	      React.createElement(_components.Examinable, { expansions: ["urns", ["cracked urn ", "the newer urn"], "mismatched urns"], tag: 'c1_urns' }),
+	      ' alongside the back stairs are radiating frustration.'
+	    )
+	  ), React.createElement(
+	    'section',
+	    null,
+	    React.createElement(
+	      'p',
+	      null,
+	      React.createElement(_components.MapFromInventory, { from: inventory.c1_urns,
+	        to: {
+	          "": "The cracked urn is empty, but the newer urn ",
+	          "urn": "The newer urn"
+	        }
+	      }),
+	      ' contains the metal device that Whitby tossed to you. As before with the glove, it stands out as more real than anything around you, and suffused with a human-like expression of emotion. It\'s like reading someone\'s face.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Where the glove felt angry—murderous even—this object is frustrated. It\'s a cigar cutter, you now understand, one whose last action was thwarted. It\'s a simple device but a very personal one, and you can sense another emotion welling up from within it: a profound sense of loss.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Its sadness is blossoming, somehow, leaking out of the cutter and seeping into the urn, into the fissures of the stone fence and spilling onto the ground, spreading like an oil spill that\'s been ignited. You watch as the entire courtyard seems to blaze up in an paroxyism of grief.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'It stops suddenly at the base of the stairs, by a shrub planted along the path. The pool of grief has encountered a conflicting spasm of hatred. The intensely negative emotion is unfocused but familiar.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'The sun is rising in the sky now, and without warning police officers appear from around the sides of the house, the first responders to a potential crime scene. They\'re wading through the grief, completely unaware, and you can feel the vast separation between the animate and inanimate world.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'The police suddenly flock indoors—someone must\'ve found the body— and the grief begins to collapse, draining like a film run backwards until it pools back into  ',
+	      React.createElement(_components.Examinable, { expansions: ["the device", "Healey's cigar cutter"], tag: 'c1_cutter' }),
+	      '.'
+	    )
+	  ), React.createElement(
+	    'section',
+	    null,
+	    React.createElement(
+	      'h3',
+	      null,
+	      'In the diner'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Everyone is staring at you.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"He\'s all right," Whitby says. She\'s slapping your hand, the one clutching the cigar cutter. Her hand feels firey hot but it\'s just because you\'re so cold.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"What did I do?" you whisper, and try to sit up straight like an adult.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"You went pale. Then you slumped over." You see that your coffee is overturned and there\'s a pile of sopping wet napkins bundled up by the salt shaker.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"Sorry," you mutter. Patrons in the diner have resumed pretending not to notice you. You weigh the cigar cutter in your hand and fix the detective with your best psychic stare. "You found ',
+	      React.createElement(_components.Examinable, { expansions: ["this cigar cutter", "Healey's cigar cutter", "Healey's cigar cutter, in an urn", "Healey's cigar cutter, in an urn, dropped by the killer"], tag: 'c1_face' }),
+	      ' behind the house," you ',
+	      React.createElement(_components.MapFromInventory, { from: inventory.c1_face,
+	        to: {
+	          undefined: "say",
+	          cutter: "assert",
+	          urn: "insist"
+	        } }),
+	      '. Her face is ',
+	      React.createElement(_components.MapFromInventory, { from: inventory.c1_face,
+	        to: {
+	          undefined: "expressionless",
+	          cutter: "twitching a little",
+	          urn: "a swirl of conflicting emotions"
+	        } }),
+	      '.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"Yes," she says, finally.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"He was using it right before he died."'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"We think so," she confirmed. "He smoked outside, but kept his cigars in the study. We found one unwrapped, but uncut." She pauses and lowers her voice. "Where were you just now?"'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"Behind the house. I found it in the urn. I saw the police arrive, the morning of Healey\'s death." That part is crazy enough to say out loud, but you have to describe it all. "The cigar cutter... misses him."'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Any good will you had with Whitby just evaporated. "It what?"'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You shake your head and place the cutter aside. Your palms are sweaty but all the napkins were used to mop up your coffee. You wipe them on your pants instead. "I don\'t think it\'s just random objects that I\'m... connecting with. They have to be invested in what happened."'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"Invested," she says. It\'s not a question.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"Let me see that glove again."'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'She produces it reluctantly. As you expected, it\'s no longer suffused with rage or vengeance or any emotion at all. "When I first held this," you explain, "it was like being in the room with the angriest person you\'ve ever met. Someone so blinded by fury that they wanted no other outcome but violence."'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Her eyebrow is spectacularly arched. "The glove. Was angry."'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"And this cigar knife," you press on, "wanted nothing more than to cut one more cigar. It misses him, terribly."'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"Right now. It\'s missing him."'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You throw both items back on the table in frustration. "Not anymore. I think once they— show me what they\'re feeling, they\'re content again."'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'She doesn\'t know that to do with this unexpected bit of nonsense, and you\'re twisted up inside with embarrassment. "That glove," you point. "You only found one, didn\'t you?"'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"Yes."'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"Take me to the Healey\'s. I know where the other one is."'
+	    ),
+	    React.createElement(_components.NextChapter, { chapter: '2' })
+	  )];
+	  return React.createElement(_.RenderSection, { currentSection: currentSection, sections: sections });
+	};
+
+	var Chapter1 = exports.Chapter1 = (0, _reactRedux.connect)(function (state, ownProps) {
+	  return {
+	    currentSection: state.bookmarks[ownProps.chapterId],
+	    inventory: state.inventory
+	  };
+	})(_Chapter);
+
+/***/ },
+/* 61 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.Chapter2 = undefined;
+
+	var _components = __webpack_require__(58);
+
+	var _reactRedux = __webpack_require__(1);
+
+	var _ = __webpack_require__(56);
+
+	var React = __webpack_require__(3);
+
+
+	var _Chapter = function _Chapter(_ref) {
+	  var currentSection = _ref.currentSection;
+	  var inventory = _ref.inventory;
+	  var chapterId = _ref.chapterId;
+
+	  var sections = [React.createElement(
 	    'section',
 	    null,
 	    React.createElement(
@@ -6675,6 +6913,11 @@
 	  ), React.createElement(
 	    'section',
 	    null,
+	    React.createElement(
+	      'h2',
+	      null,
+	      'Chapter Two'
+	    ),
 	    React.createElement(
 	      'p',
 	      null,
@@ -6725,55 +6968,7 @@
 	      'p',
 	      null,
 	      '"Well, we won\'t find out by sitting here drinking lousy coffee." She collects her things and stands up. "The Healey property is no longer a crime scene, and Maggie Healey is staying with friends. Let\'s get those hands on some evidence."'
-	    ),
-	    React.createElement(_components.NextChapter, { chapter: '2' })
-	  )];
-	  return React.createElement(_.RenderSection, { currentSection: currentSection, sections: sections });
-	};
-
-	var mapStateToProps = function mapStateToProps(state, ownProps) {
-	  return {
-	    currentSection: state.bookmarks[ownProps.chapterId],
-	    inventory: state.inventory
-	  };
-	};
-
-	var Chapter1 = exports.Chapter1 = (0, _reactRedux.connect)(mapStateToProps)(_Chapter);
-
-/***/ },
-/* 61 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.Chapter2 = undefined;
-
-	var _components = __webpack_require__(58);
-
-	var _reactRedux = __webpack_require__(1);
-
-	var _ = __webpack_require__(56);
-
-	var React = __webpack_require__(3);
-
-
-	var _Chapter = function _Chapter(_ref) {
-	  var currentSection = _ref.currentSection;
-	  var inventory = _ref.inventory;
-	  var chapterId = _ref.chapterId;
-
-	  var sections = [React.createElement(
-	    'section',
-	    null,
-	    React.createElement(
-	      'h2',
-	      null,
-	      'Chapter Two'
-	    ),
-	    React.createElement('p', null)
+	    )
 	  )];
 	  return React.createElement(_.RenderSection, { currentSection: currentSection, sections: sections });
 	};

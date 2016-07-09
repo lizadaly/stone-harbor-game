@@ -17,7 +17,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
     "a stack of photos. You flip over the first, and it's of two old men"
   ]
 
-  var sections = [ 
+  var sections = [
     <section>
       <hr/>
       <h1>Tentative Title</h1>
@@ -87,86 +87,157 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       But you're not a liar, not about this."</p>
 
       <p>Before you can react to that extraordinary statement, she says, "Let's try this
-        now," and tosses you a <Examinable expansions={["small metal object", "<psychic>frustrated cutting device</psychic>", "small metal item that's emanating frustration, and the moment you catch it you're—<br/><br/><br/>"]} tag="c1_device" />.
+        now," and tosses you a <Examinable expansions={["small metal object.", "<psychic>frustrated cutting device</psychic>.", "small metal item that's emanating frustration, and the moment you catch it you're—<br/><br/><br/>"]} tag="c1_device" />
       </p>
     </section>,
     <div className="in-flashback">
       <figure className="chapter1" />
-      <h3>In the library</h3>
+      <h3>In the courtyard</h3>
       <section>
-        <p></p>
+        <p>
+          It's dawn and you can smell salt in the air. <Examinable expansions={['Something', 'A metal device']} tag="c1_device2" /> nearby is
+          frustrated.
+        </p>
       </section>
     </div>,
-        <section>
-          <p>
-            she's pulled more items
-            from her bag of tricks. "I'd like to walk you through the family," she says,
-            handing you <Examinable expansions={photos} tag="c1_photos1" />.</p>
-          <p>You recognize Healey and say as much. She nods. "That's Alan on the left and his younger brother, Jared, on the right.
-            Jared's wife has been out of the family for years; he's been raising his
-            daughter on his own. A little resentful of his lot in life, but
-            responsible." She turns over
-            another <Examinable expansions={["photo", "photo, of a little girl in a white dress"]} tag="c1_photos2"/>.
-          </p>
-        </section>,
-        <section>
-          <p>"That's Ellen, Jared's daughter. This picture's a few years old, she's eleven now."
-            Whitby considers her for a moment. "Everyone loves that little girl. My god-daughter Sarah is
-            her cousin by marriage." She pushes <Examinable expansions={["another picture", "a picture of two adult twins"]} tag="c1_photos3" /> across the table.</p>
-        </section>,
-        <section>
-          <p>"Chris and Christina," she says, and you can't help but snort. Whitby reveals just a
-            hint of a smile and you're absurdly relieved. "I'm a friend of the family,
-            but, yeah. Anyway, these two are Alan's niece and nephew. Alan and Jared had a sister,
-            Michelle, who passed away some years back. The twins still live in her house over in Sea Isle.
-          Don't know them personally."</p>
-          <p>"Last one," she says, and hands you <Examinable expansions={["another picture of Healey", "another picture of Healey, with his arm around a woman his age"]} tag="c1_photos4"/>.</p>
-        </section>,
-        <section>
-          <p>"His wife," you guess.</p>
-          <p>"You truly must be psychic," she says, and it's a gentler tease than you've heard from anyone in a long
-            time. "Margaret, Maggie. Lovely woman, but pragmatic. From what I hear she'd be the
-            first one to bail you out of trouble and also the first to throw you out on the
-            street if you dare screw up again. If more people were like her I'd be out of a job."
-          </p>
-          <p>
-            She spreads out the photos across the table. "Everyone I've shown you here was at the Healey estate the  weekend that he died.
-            If we were pursuing this as an active murder investigation they'd all be under
-            close watch, but a locked door, a common medication, an elderly victim,
-            it just added up to a tragic but ordinary death."
-          </p>
-          <p>"Do you still think that?" you ask quietly.</p>
-          <p>She signals for the check and thinks for a long time before answering. "I admit I wouldn't
-            have looked twice at this case if it had been assigned to me. This town is crazy in the summer,
-            there's plenty to do without digging up trouble. When Sarah called me and I reviewed the
-            file, I found a few red flags. Alan was a sharp old man, it would be unlike him to
-            make such a mistake. And his pill bottle was found <em>outside</em> his bedroom,
-            when he was locked in—"
-          </p>
-          <p>"Just like I saw."</p>
-          <p>"—and who locks their bedroom door when there's just family around?" She shakes her head.
-            "Not enough to act on, but it did make me think." And like you said, you saw all that.
-          I don't know what that means."</p>
-          <p>You admit you don't either.</p>
-          <p>"Well, we won't find out by sitting here drinking lousy coffee." She collects her things
-            and stands up. "The Healey property is no longer
-            a crime scene, and Maggie Healey is staying with friends. Let's get those hands on some
-          evidence."</p>
-          <NextChapter chapter="2" />
-        </section>
-        ]
-        return <RenderSection currentSection={currentSection} sections={sections} />
+    <section>
+      <p>
+        This is the rear courtyard of the  Healey property. The neo-classical house is
+        brightly lit by the rising sun, but as before, your vision blurs and darkens
+        around the edges. You can make out a decorative stone fence enclosing the
+        courtyard, opening to a set of stairs flanked by urns. The stairs lead to a
+        sandy path through the dunes and presumably empties out onto their private beach.
+      </p>
+      <p>There's
+        an odd sense of dual recognition: you just <em>know</em> where you
+        are, but you've also been here before—maybe twenty years ago, tagging
+        along with your mom on one of her rare house calls. She'd parked in the wide,
+        looping gravel drive at the front of the
+        house and told you to wait in the car, but you got bored and wandered the grounds.
+        You'd been afraid of
+        getting in trouble and stopped at the place you
+        stand now. This time you don't turn back.
+      </p>
+      <p>
+        It seems perfectly normal that the <Examinable expansions={["urns", ["cracked urn ", "the newer urn"], "mismatched urns"]} tag="c1_urns" /> alongside
+        the back stairs are radiating frustration.
+      </p>
+    </section>,
+    <section>
+      <p>
+        <MapFromInventory from={inventory.c1_urns}
+          to={ {
+            "": "The cracked urn is empty, but the newer urn ",
+            "urn": "The newer urn"
+          }}
+        /> contains the metal device that Whitby tossed to you. As before with the glove,
+        it stands out as more real than anything around you, and suffused with a
+        human-like expression of emotion. It's like reading someone's face.
+      </p>
+      <p>
+        Where the glove felt angry—murderous even—this object is frustrated.
+        It's a cigar cutter, you now understand, one whose last action
+        was thwarted. It's a simple device but a very personal one, and
+        you can sense another emotion welling up from within it: a profound sense of loss.
+      </p>
+      <p>
+        Its sadness is blossoming, somehow, leaking out of the cutter
+        and seeping into the urn, into the fissures of
+        the stone fence and spilling onto the ground, spreading like an oil spill
+        that's been ignited. You watch as the entire courtyard seems to blaze up
+        in an paroxyism of grief.
+      </p>
+      <p>
+        It stops suddenly at the base of the stairs, by a shrub planted along the
+        path. The pool of grief has encountered a conflicting spasm of
+        hatred. The intensely negative emotion is unfocused but familiar.
+      </p>
+      <p>The sun is rising in the sky now, and without warning police officers
+        appear from around the sides of the house, the first responders to a
+        potential crime scene. They're wading through the grief, completely
+        unaware, and you can feel the vast separation between the animate and
+        inanimate world.
+      </p>
+      <p>The police suddenly flock indoors—someone must've found the body—
+        and the grief begins to collapse, draining like a film run backwards
+        until it pools back into  <Examinable expansions={["the device", "Healey's cigar cutter"]} tag="c1_cutter"/>.
+      </p>
+    </section>,
+    <section>
+      <h3>In the diner</h3>
+      <p>
+        Everyone is staring at you.
+      </p>
+      <p>
+        "He's all right," Whitby says. She's slapping your hand, the one clutching the cigar
+        cutter. Her hand feels firey hot but it's just because you're so cold.
+      </p>
+      <p>"What did I do?" you whisper, and try to sit up straight like an adult.</p>
+      <p>"You went pale. Then you slumped over." You see that your coffee is
+      overturned and there's a pile of sopping wet napkins bundled up by the salt shaker.</p>
+      <p>"Sorry," you mutter. Patrons in the diner have resumed pretending not to notice you.
+        You weigh the cigar cutter in your hand and fix the detective with your best
+        psychic stare. "You found <Examinable expansions={["this cigar cutter", "Healey's cigar cutter", "Healey's cigar cutter, in an urn", "Healey's cigar cutter, in an urn, dropped by the killer"]} tag="c1_face" /> behind
+        the house," you <MapFromInventory from={inventory.c1_face}
+          to={{
+            undefined: "say",
+            cutter: "assert",
+            urn: "insist"
+          }} />.
 
-        }
+        Her face is <MapFromInventory from={inventory.c1_face}
+          to={{
+            undefined: "expressionless",
+            cutter: "twitching a little",
+            urn: "a swirl of conflicting emotions"
+          }} />.
+      </p>
+      <p>"Yes," she says, finally.</p>
+      <p>"He was using it right before he died."</p>
+      <p>"We think so," she confirmed. "He smoked outside, but kept his cigars in the study. We found
+      one unwrapped, but uncut." She pauses and lowers her voice. "Where were you just now?"</p>
+      <p>"Behind the house. I found it in the urn. I saw the police arrive, the morning of
+        Healey's death." That part is crazy enough to say out loud, but you have to
+        describe it all. "The cigar cutter... misses him."
+      </p>
+      <p>Any good will you had with Whitby just evaporated. "It what?"</p>
+      <p>You shake your head and place the cutter aside. Your palms are sweaty but all the
+        napkins were used to mop up your coffee. You wipe them on your pants instead.
+        "I don't think it's just random objects that I'm... connecting with. They have to be
+        invested in what happened."
+      </p>
+      <p>"Invested," she says. It's not a question.</p>
+      <p>"Let me see that glove again."</p>
+      <p>She produces it reluctantly. As you expected, it's no longer suffused with
+        rage or vengeance or any emotion at all. "When I first held this," you explain,
+        "it was like being in the room with the angriest person you've ever met. Someone
+        so blinded by fury that they wanted no other outcome but violence."
+      </p>
+      <p>Her eyebrow is spectacularly arched. "The glove. Was angry."</p>
+      <p>"And this cigar knife," you press on, "wanted nothing more than to cut one more cigar.
+        It misses him, terribly."
+      </p>
+      <p>"Right now. It's missing him."</p>
+      <p>You throw both items back on the table in frustration. "Not anymore. I think once they—
+      show me what they're feeling, they're content again."</p>
+      <p>She doesn't know that to do with this unexpected bit of nonsense, and you're twisted up
+        inside with embarrassment. "That glove," you point. "You only found one, didn't you?"
+      </p>
+      <p>
+        "Yes."
+      </p>
+      <p>
+        "Take me to the Healey's. I know where the other one is."
+      </p>
+      <NextChapter chapter="2" />
+      </section>
+    ]
+    return <RenderSection currentSection={currentSection} sections={sections} />
+}
 
-        const mapStateToProps = (state, ownProps) => {
-          return {
-      currentSection: state.bookmarks[ownProps.chapterId],
-      inventory: state.inventory
-    }
-  }
-
-
-  export const Chapter1 = connect(
-    mapStateToProps
-  )(_Chapter)
+export const Chapter1 = connect(
+  (state, ownProps) => ({
+    currentSection: state.bookmarks[ownProps.chapterId],
+    inventory: state.inventory
+  })
+)(_Chapter)

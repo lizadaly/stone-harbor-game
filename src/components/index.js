@@ -16,7 +16,7 @@ export const Link = ({text, handler}) => {
 }
 
 function _fromInventory(inventory, offset="last") {
-  let inv = inventory.split(" ")
+  let inv = inventory ? inventory.split(" ") : ""
   let out = offset === "last" ? inv[inv.length - 1] : inv[offset]
   return out
 }
@@ -145,7 +145,7 @@ class _Examinable extends React.Component {
           <span key={i}>
             { i == text.length -1 ? "and ": "" }
             <Link handler={handler} text={t}/>
-            { i < text.length -1 ? ", ": "" }
+            { text.length > 2 && i < text.length -1 ? ", ": "" }
           </span>
       )}</span>
     }
