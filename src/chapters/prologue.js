@@ -66,16 +66,20 @@ const _Prologue = ({currentSection, inventory}) => {
   var sections = [
     <section>
       <h2>Prologue</h2>
-      <p>The beaded curtain dividing your tiny foyer from your tiny reading room
-        parts and your next customer steps through. You observe him  as
-        he takes in the decor. All the trappings
+      <h3>In your reading room</h3>
+      <p>"To whomever seeks the wisdom of the ancients, come forth," you call out. After a brief hesistation, the beaded curtain parts
+      and your next customer steps through. A few stray beads fall off and scatter to the corners.</p>
+      <p>You should really replace that old thing, but you keep the room dimly lit enough that the customer doesn't notice.
+        He's busy gawking at the whole space. All the trappings
         of a boardwalk fortune-teller are here: tarot decks, zodiac paintings,
-        an absurdly large crystal ball. Satisfied, he sits before you at
-        the cramped circular table. Your knees are almost touching; this room wasn't built for two tall men.
+        an absurdly large crystal ball. His preconceptions satisfied, he sits across from you at
+        the cramped circular table.
       </p>
+      <p>Your knees are almost touching; this room wasn't built for two full-size men.</p>
       <p>"Are you here for a reading?" you ask, solemnly. The customer nods.
-        "Then let us begin," you say. "Some reach the spirits via palms or cards. I require a personal object,
-        one infused with the spirits themselves."
+        "Then let us begin," you say, clearing your throat.
+      </p>
+      <p>"Some reach the spirits via palms or cards. I require a personal object, one infused with the spirits themselves."
       </p>
       <p>You look over the customer, who is wearing <Examinable expansions={Customer.clothes} tag="p0_customer_clothes"/>.</p>
     </section>,
@@ -99,15 +103,15 @@ const _Prologue = ({currentSection, inventory}) => {
       </p>
       <p>"He didn't approve of <MapFromInventory from={inventory.p0_customer_clothes} to={mapsApprove} />" he says bitterly.</p>
       <p>"Yes, and he's sorry he behaved that way."</p>
-      <p>"He is?" The customer frowns thoughtfully. "That doesn't sound like him at all."</p>
+      <p>"He is?" The customer frowns. "That doesn't sound like him at all."</p>
       <p>"The world of the afterlife changes a person," you say, gliding over his objection.
         You study the customer's <Examinable expansions={Customer.body} tag="p0_customer_body" />.</p>
     </section>,
     <section>
       <p>"<MapFromInventory from={inventory.p0_customer_body} to={mapsBody} />," you improvise.</p>
-      <p>"My God yes, how could you know?" he says, with awe. He slides forward, trusting you completely now. "That's true, I have been—"</p>
-      <p>But your triumph is short-lived, because the curtain rustles again unexpectedly. A woman steps through: mid-forties, no-nonsense, a bit frumpy for
-        your taste. She's not a potential client. You're unsurprised when she
+      <p>"That's true, I have been—"</p>
+      <p>But your triumph is short-lived, because the curtain rustles again unexpectedly. A woman pushes through: mid-forties, no-nonsense, a bit frumpy for
+        your taste. Her sour expression tells you she's not a potential client. You're unsurprised when she
         flashes a badge at the customer, saying, "Get out."
       </p>
       <p>He nearly leaps out of his seat, and hastily packs up, embarrassed. "You don't have to leave,"
@@ -164,11 +168,11 @@ const _Prologue = ({currentSection, inventory}) => {
         He was an old man with poor vision who misread his dosage. I'm doing
         a favor for a young person who is hurting and—" She reaches into her
         pocket, searching for something. "Sarah told me specifically to come here,
-        that she'd heard this psychic was different. That if he wasn't honest, he
-        was at least compassionate."
+        that she'd heard this place was different. That if the psychic wasn't honest, they
+        were at least compassionate."
       </p>
-      <p>"<i>She</i>," you snap. "My mother was 'The Great Francesca.' This was her business,
-        but then she died. That's probably who your friend heard about."
+      <p>"<i>She</i> was," you snap. "My mother was 'The Great Francesca.' This was her business,
+        and then she died."
       </p>
       <p>
         "I'm sorry, I didn't—"
@@ -206,7 +210,7 @@ const _Prologue = ({currentSection, inventory}) => {
       <p>
         The figure listens to the distress impassively. Panic is rising in you, but
         absurdly, you have no feet to run into the room, no voice to call for help. An achingly
-        long time later, the choking subsides until all is silence. The figure closes the bedroom door,
+        long time later, the choking subsides. All is silence. The figure closes the bedroom door,
         and the room is now lit by the single weak lamp on the desk. It illuminates the gloved hand on the
         doorknob, and you're transfixed by that simple object. The figure tests the door, and satisfied
         that the bedroom is locked, releases the knob,

@@ -5774,14 +5774,34 @@
 	      'Prologue'
 	    ),
 	    React.createElement(
-	      'p',
+	      'h3',
 	      null,
-	      'The beaded curtain dividing your tiny foyer from your tiny reading room parts and your next customer steps through. You observe him  as he takes in the decor. All the trappings of a boardwalk fortune-teller are here: tarot decks, zodiac paintings, an absurdly large crystal ball. Satisfied, he sits before you at the cramped circular table. Your knees are almost touching; this room wasn\'t built for two tall men.'
+	      'In your reading room'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      '"Are you here for a reading?" you ask, solemnly. The customer nods. "Then let us begin," you say. "Some reach the spirits via palms or cards. I require a personal object, one infused with the spirits themselves."'
+	      '"To whomever seeks the wisdom of the ancients, come forth," you call out. After a brief hesistation, the beaded curtain parts and your next customer steps through. A few stray beads fall off and scatter to the corners.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You should really replace that old thing, but you keep the room dimly lit enough that the customer doesn\'t notice. He\'s busy gawking at the whole space. All the trappings of a boardwalk fortune-teller are here: tarot decks, zodiac paintings, an absurdly large crystal ball. His preconceptions satisfied, he sits across from you at the cramped circular table.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Your knees are almost touching; this room wasn\'t built for two full-size men.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"Are you here for a reading?" you ask, solemnly. The customer nods. "Then let us begin," you say, clearing your throat.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"Some reach the spirits via palms or cards. I require a personal object, one infused with the spirits themselves."'
 	    ),
 	    React.createElement(
 	      'p',
@@ -5841,7 +5861,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '"He is?" The customer frowns thoughtfully. "That doesn\'t sound like him at all."'
+	      '"He is?" The customer frowns. "That doesn\'t sound like him at all."'
 	    ),
 	    React.createElement(
 	      'p',
@@ -5863,12 +5883,12 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '"My God yes, how could you know?" he says, with awe. He slides forward, trusting you completely now. "That\'s true, I have been—"'
+	      '"That\'s true, I have been—"'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'But your triumph is short-lived, because the curtain rustles again unexpectedly. A woman steps through: mid-forties, no-nonsense, a bit frumpy for your taste. She\'s not a potential client. You\'re unsurprised when she flashes a badge at the customer, saying, "Get out."'
+	      'But your triumph is short-lived, because the curtain rustles again unexpectedly. A woman pushes through: mid-forties, no-nonsense, a bit frumpy for your taste. Her sour expression tells you she\'s not a potential client. You\'re unsurprised when she flashes a badge at the customer, saying, "Get out."'
 	    ),
 	    React.createElement(
 	      'p',
@@ -5958,7 +5978,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'The detective scowls. "I don\'t want to be here any more than you want me here. I don\'t even think Healey was murdered. He was an old man with poor vision who misread his dosage. I\'m doing a favor for a young person who is hurting and—" She reaches into her pocket, searching for something. "Sarah told me specifically to come here, that she\'d heard this psychic was different. That if he wasn\'t honest, he was at least compassionate."'
+	      'The detective scowls. "I don\'t want to be here any more than you want me here. I don\'t even think Healey was murdered. He was an old man with poor vision who misread his dosage. I\'m doing a favor for a young person who is hurting and—" She reaches into her pocket, searching for something. "Sarah told me specifically to come here, that she\'d heard this place was different. That if the psychic wasn\'t honest, they were at least compassionate."'
 	    ),
 	    React.createElement(
 	      'p',
@@ -5969,7 +5989,7 @@
 	        null,
 	        'She'
 	      ),
-	      '," you snap. "My mother was \'The Great Francesca.\' This was her business, but then she died. That\'s probably who your friend heard about."'
+	      ' was," you snap. "My mother was \'The Great Francesca.\' This was her business, and then she died."'
 	    ),
 	    React.createElement(
 	      'p',
@@ -6044,7 +6064,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'The figure listens to the distress impassively. Panic is rising in you, but absurdly, you have no feet to run into the room, no voice to call for help. An achingly long time later, the choking subsides until all is silence. The figure closes the bedroom door, and the room is now lit by the single weak lamp on the desk. It illuminates the gloved hand on the doorknob, and you\'re transfixed by that simple object. The figure tests the door, and satisfied that the bedroom is locked, releases the knob, the ',
+	      'The figure listens to the distress impassively. Panic is rising in you, but absurdly, you have no feet to run into the room, no voice to call for help. An achingly long time later, the choking subsides. All is silence. The figure closes the bedroom door, and the room is now lit by the single weak lamp on the desk. It illuminates the gloved hand on the doorknob, and you\'re transfixed by that simple object. The figure tests the door, and satisfied that the bedroom is locked, releases the knob, the ',
 	      React.createElement(_components.Examinable, { expansions: ["glove", "awful glove"], tag: 'p0_glove3' }),
 	      ' brilliantly shimmering under the light—'
 	    )
