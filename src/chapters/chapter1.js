@@ -11,10 +11,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
     young. They looked like brother and sister."`,
     prescription: `'It was Capoten,' you say immediately. 'To be taken three times daily. 100 mg.'`
   }
-  var photos = [
-    "a stack of photos",
-    "a stack of photos. You flip over the first, and it's of two old men"
-  ]
+
 
   var sections = [
     <section>
@@ -205,7 +202,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         "I don't think it's just any object that I can... connect with. They have to be
         invested in what happened."
       </p>
-      <p>"Invested," she says. It's not a question.</p>
+      <p>"Invested," she repeats. It's not a question.</p>
       <p>"Let me see that glove again."</p>
       <p>She produces it reluctantly. As you expected, it's no longer suffused with
         rage or vengeance or any emotion at all. "When I first held this," you explain,
@@ -216,17 +213,16 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>"And this cigar knife," you press on, "wanted nothing more than to cut one more cigar.
         It misses him, terribly."
       </p>
-      <p>"Right now. It's missing him."</p>
-      <p>You throw both items back on the table in frustration. "Not anymore. I think once they—
-      show me what they're feeling, they're content again."</p>
-      <p>She doesn't know that to do with this unexpected bit of nonsense, and you're twisted up
-        inside with embarrassment. "That glove," you point. "You only found one, didn't you?"
+      <p>"Right now? This glove <em>misses</em> him?"</p>
+      <p>"Not anymore. I think once they—show me what they're feeling, they're satisfied."</p>
+      <p>She sits back and folds her arms. "Mr. Pietro, I can't tell, do you think I'm an idiot or a sucker? Maybe both?"</p>
+      <p>"That glove," you point. "You only found one, didn't you?"
       </p>
       <p>
         "Yes."
       </p>
       <p>
-        "Take me to the Healey's. I know where the other one is."
+        "Take me to the Healeys'. I know where the other one is."
       </p>
       <NextChapter chapter="2" />
       </section>

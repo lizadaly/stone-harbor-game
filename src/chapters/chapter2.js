@@ -10,6 +10,29 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
   ]
   var sections = [
     <section>
+    <h2>Chapter Two</h2>
+    <h3>At the Healeys'</h3>
+    <p>
+      You barely talk on the ride over. You stopped by your shop on the way over just so you could formally close
+      up. It's Saturday and there huge crowds at the beach, so you flipped the <small>Open</small> sign around with more than a little
+      regret. On the other hand, this should probably be a day off for Whitby. You wonder what it's like to have
+      family who'd do this kind of a favor for you.
+    </p>
+    <p>
+      The house is just as you saw it in the vision: sprawling, white, faux classical, at odds with the usual sun-bleached
+      and gray wooden housing stock. But the property isn't new money, either. It's well cared for yet worn. Living at the
+      shore it's easy to find rich people to resent, but the Healeys' place is almost classy.
+    </p>
+    <p>
+      "Nobody's home," Whitby says, getting out of the car. "But I couldn't let you in even I wanted to." It's quite clear she
+      doesn't want to.
+    </p>
+    <p>
+      "I don't need to go inside, it's around back," you say. You know the way and don't wait for her.
+    </p>
+
+    </section>,
+    <section>
     <p>
       she's pulled more items
       from her bag of tricks. "I'd like to walk you through the family," she says,

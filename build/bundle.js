@@ -6482,7 +6482,6 @@
 	    photograph: '"It was a family photo, posed. Four adults and a girl. Two of the adults were\n    young. They looked like brother and sister."',
 	    prescription: '\'It was Capoten,\' you say immediately. \'To be taken three times daily. 100 mg.\''
 	  };
-	  var photos = ["a stack of photos", "a stack of photos. You flip over the first, and it's of two old men"];
 
 	  var sections = [React.createElement(
 	    'section',
@@ -6818,7 +6817,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '"Invested," she says. It\'s not a question.'
+	      '"Invested," she repeats. It\'s not a question.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -6843,17 +6842,28 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '"Right now. It\'s missing him."'
+	      '"Right now? This glove ',
+	      React.createElement(
+	        'em',
+	        null,
+	        'misses'
+	      ),
+	      ' him?"'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'You throw both items back on the table in frustration. "Not anymore. I think once they— show me what they\'re feeling, they\'re content again."'
+	      '"Not anymore. I think once they—show me what they\'re feeling, they\'re satisfied."'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'She doesn\'t know that to do with this unexpected bit of nonsense, and you\'re twisted up inside with embarrassment. "That glove," you point. "You only found one, didn\'t you?"'
+	      'She sits back and folds her arms. "Mr. Pietro, I can\'t tell, do you think I\'m an idiot or a sucker? Maybe both?"'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"That glove," you point. "You only found one, didn\'t you?"'
 	    ),
 	    React.createElement(
 	      'p',
@@ -6863,7 +6873,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '"Take me to the Healey\'s. I know where the other one is."'
+	      '"Take me to the Healeys\'. I know where the other one is."'
 	    ),
 	    React.createElement(_components.NextChapter, { chapter: '2' })
 	  )];
@@ -6904,6 +6914,45 @@
 
 	  var photos = ["a stack of photos", "a stack of photos. You flip over the first, and it's of two old men"];
 	  var sections = [React.createElement(
+	    'section',
+	    null,
+	    React.createElement(
+	      'h2',
+	      null,
+	      'Chapter Two'
+	    ),
+	    React.createElement(
+	      'h3',
+	      null,
+	      'At the Healeys\''
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You barely talk on the ride over. You stopped by your shop on the way over just so you could formally close up. It\'s Saturday and there huge crowds at the beach, so you flipped the ',
+	      React.createElement(
+	        'small',
+	        null,
+	        'Open'
+	      ),
+	      ' sign around with more than a little regret. On the other hand, this should probably be a day off for Whitby. You wonder what it\'s like to have family who\'d do this kind of a favor for you.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'The house is just as you saw it in the vision: sprawling, white, faux classical, at odds with the usual sun-bleached and gray wooden housing stock. But the property isn\'t new money, either. It\'s well cared for yet worn. Living at the shore it\'s easy to find rich people to resent, but the Healeys\' place is almost classy.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"Nobody\'s home," Whitby says, getting out of the car. "But I couldn\'t let you in even I wanted to." It\'s quite clear she doesn\'t want to.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"I don\'t need to go inside, it\'s around back," you say. You know the way and don\'t wait for her.'
+	    )
+	  ), React.createElement(
 	    'section',
 	    null,
 	    React.createElement(
