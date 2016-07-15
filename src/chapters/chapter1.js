@@ -6,11 +6,10 @@ import { RenderSection } from '.'
 const _Chapter = ({currentSection, inventory, chapterId}) => {
   var libraryMaps = {
     note: `You recite what the note said, word-for-word. You describe the
-    lettering, the handwriting like "Healey had been formally taught but had a slight tremor."`,
+    lettering, the handwriting like "someone formally taught but with a slight tremor."`,
     photograph: `"It was a family photo, posed. Four adults and a girl. Two of the adults were
-    young. They looked like brother and sister. One of them was Healey."`,
-    prescription: `'It was Capoten,' you say immediately. 'To be taken three times daily. 100 mg.
-    Made out to Healey.'`
+    young. They looked like brother and sister."`,
+    prescription: `'It was Capoten,' you say immediately. 'To be taken three times daily. 100 mg.'`
   }
   var photos = [
     "a stack of photos",
@@ -25,33 +24,31 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <h5>by Liza Daly</h5>
 
       <h2>Chapter One</h2>
-      <p>You agreed to continue this elsewhere, so you're at a typical Jersey diner: big booths, bad coffee. It's the
+      <h3>At the diner</h3>
+      <p>You agreed to continue this elsewhere, so here you are: big booths, bad coffee. It's the
         middle of a work week so there's nobody here but truck drivers and retirees. Detective Whitby's
-        coffee is black; yours is mostly sugar and cream and by comparison you feel
-        unmanly. You've left it untouched.
+        coffee is black; yours is choked with an unmanly amount of cream and sugar. You've left it untouched.
       </p>
       <p>"Tell me again about the <FromInventory inventory={inventory.p0_library_things}/>.
         What exactly did you see?"
       </p>
-      <p><MapFromInventory from={inventory.p0_library_things} to={libraryMaps}/></p>
+      <p>You just stick to the facts. <MapFromInventory from={inventory.p0_library_things} to={libraryMaps}/></p>
       <p>The detective makes no immediate response, just notes down what you wrote. "And describe
       the room again."</p>
       <p>"I already told you—"</p>
       <p>"Again." She's not meeting your eye, not giving any clues about potential right or wrong
       answers. She's good.</p>
-      <p>"It was a study or personal library. Probably Healey's. The bedroom was attached.
+      <p>"It was a study or personal library with an adjacent bedroom.
         Two single beds in the room, bookshelves, a desk with a few things, but I only looked closely at
         the <FromInventory inventory={inventory.p0_library_things} />."</p>
-      <p>"What kinds of books on the shelves? What topics?"</p>
-      <p>"I don't know."</p>
-      <p>Now she looks up. "You said the walls were filled with books. You
-        described the <FromInventory inventory={inventory.p0_library_things} /> clearly, but you
-      didn't see any of the books?"</p>
+      <p>"And describe the person you saw."</p>
+      <p>"I can't."</p>
+      <p>Now she looks up. "You
+        saw the <FromInventory inventory={inventory.p0_library_things} /> clearly, but you don't remember anything about the
+        person you're telling me is a killer?"</p>
       <p>How to explain? It was like staring down the wrong end of a telescope. The desk, that
-        glove, those were in sharp focus, but the edges of the room were
-        dark and foggy. An obscure memory arises: you were about ten,
-        you'd been in the reading room with your mom and two teenagers hoping
-        for a good fortune. It was so crowded, overheated, and their giggling and
+        glove, those were in sharp focus, but everything else was dark and foggy. An obscure memory arises: you were about ten,
+        playing in the corner while your mom read for two teenage girls. It was so crowded, overheated, and their giggling and
         the humid summer air swirled all around until you couldn't breathe. You nearly fainted
         that time, and this experience was like that—staring down a darkening
         tunnel and all the world falling away from you. But you only say,
@@ -81,13 +78,13 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>Your stomach is still churning. "Because you think I'm a fraud."</p>
       <p>"Of course you're a fraud."</p>
-      <p>She's not wrong, but it stings. It probably shows on your face, because
+      <p>She's not wrong, but that stings. It probably shows on your face, because
         she sighs and says, "Everything you described about that room was right.
         Maybe you knew it because you're a murderer. Maybe you're... something else.
-      But you're not a liar, not about this."</p>
+        But you weren't lying, and I get the impression you're as surprised by that as anybody."</p>
 
       <p>Before you can react to that extraordinary statement, she says, "Let's try this
-        now," and tosses you a <Examinable expansions={["small metal object.", "<psychic>frustrated cutting device</psychic>.", "small metal item that's emanating frustration, and the moment you catch it you're—<br/><br/><br/>"]} tag="c1_device" />
+        now," and tosses you a <Examinable expansions={["small metal object.", "<psychic>frustrated cutting device</psychic>.", "unfamiliar metal tool that's emanating frustration, and the moment you catch it you're—<br/><br/><br/>"]} tag="c1_device" />
       </p>
     </section>,
     <div className="in-flashback">
@@ -105,7 +102,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         This is the rear courtyard of the  Healey property. The neo-classical house is
         brightly lit by the rising sun, but as before, your vision blurs and darkens
         around the edges. You can make out a decorative stone fence enclosing the
-        courtyard, opening to a set of stairs flanked by urns. The stairs lead to a
+        courtyard, accessed by a set of stairs flanked by urns. The stairs lead to a
         sandy path through the dunes and presumably empties out onto their private beach.
       </p>
       <p>There's
@@ -130,21 +127,22 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
             "": "The cracked urn is empty, but the newer urn ",
             "urn": "The newer urn"
           }}
-        /> contains the metal device that Whitby tossed to you. As before with the glove,
-        it stands out as more real than anything around you, and suffused with a
-        human-like expression of emotion. It's like reading someone's face.
+        /> contains the metal tool that Whitby tossed to you. It contains a curved blade
+        in a round slot about the size of a quarter, with a safety cover—a cigar cutter, you
+        realize. As before with the glove,
+        it stands out as more real than anything around you. You can read the emotion
+        radiating from it as clearly as you could read a person's face.
       </p>
       <p>
-        Where the glove felt angry—murderous even—this object is frustrated.
-        It's a cigar cutter, you now understand, one whose last action
-        was thwarted. It's a simple device but a very personal one, and
+        Where the glove felt angry—murderous even—the cigar cutter is frustrated.
+        It had a single task and that job went unfinished when Healey, interrupted in his
+        room, was killed. It's a simple device but a very personal one, and
         you can sense another emotion welling up from within it: a profound sense of loss.
       </p>
       <p>
         Its sadness is blossoming, somehow, leaking out of the cutter
         and seeping into the urn, into the fissures of
-        the stone fence and spilling onto the ground, spreading like an oil spill
-        that's been ignited. You watch as the entire courtyard seems to blaze up
+        the stone fence and spilling onto the ground in a torrent. You watch as the entire courtyard seems to blaze up
         in an paroxyism of grief.
       </p>
       <p>
@@ -164,15 +162,15 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
     </section>,
     <section>
-      <h3>In the diner</h3>
+        <h3>At the diner</h3>
       <p>
         Everyone is staring at you.
       </p>
       <p>
-        "He's all right," Whitby says. She's slapping your hand, the one clutching the cigar
+        "He's all right," Whitby says to the room. She's slapping your hand, the one clutching the cigar
         cutter. Her hand feels firey hot but it's just because you're so cold.
       </p>
-      <p>"What did I do?" you whisper, and try to sit up straight like an adult.</p>
+      <p>"What did I do?" you whisper, and try to sit up straight.</p>
       <p>"You went pale. Then you slumped over." You see that your coffee is
       overturned and there's a pile of sopping wet napkins bundled up by the salt shaker.</p>
       <p>"Sorry," you mutter. Patrons in the diner have resumed pretending not to notice you.
@@ -192,18 +190,19 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
             urn: "a swirl of conflicting emotions"
           }} />.
       </p>
+      </section>,
+      <section>
       <p>"Yes," she says, finally.</p>
       <p>"He was using it right before he died."</p>
-      <p>"We think so," she confirmed. "He smoked outside, but kept his cigars in the study. We found
-      one unwrapped, but uncut." She pauses and lowers her voice. "Where were you just now?"</p>
-      <p>"Behind the house. I found it in the urn. I saw the police arrive, the morning of
-        Healey's death." That part is crazy enough to say out loud, but you have to
-        describe it all. "The cigar cutter... misses him."
+      <p>"We think so. He smoked outside, but kept his cigars in the study. We found
+      one unwrapped, but uncut." She pauses and lowers her voice. "Where were you? Just now?"</p>
+      <p>"Behind his house. This was in the urn. I saw the police arrive, the morning of
+        Healey's death." You hesitate to tell her the rest, but in for a penny, in for a pound. "The cigar cutter... misses him."
       </p>
-      <p>Any good will you had with Whitby just evaporated. "It what?"</p>
-      <p>You shake your head and place the cutter aside. Your palms are sweaty but all the
+      <p>"It what?"</p>
+      <p>Your palms are sweaty but all the
         napkins were used to mop up your coffee. You wipe them on your pants instead.
-        "I don't think it's just random objects that I'm... connecting with. They have to be
+        "I don't think it's just any object that I can... connect with. They have to be
         invested in what happened."
       </p>
       <p>"Invested," she says. It's not a question.</p>

@@ -69,9 +69,9 @@ const _Prologue = ({currentSection, inventory}) => {
       <h3>In your reading room</h3>
       <p>"To whomever seeks the wisdom of the ancients, come forth," you call out. After a brief hesistation, the beaded curtain parts
       and your next customer steps through. A few stray beads fall off and scatter to the corners.</p>
-      <p>You should really replace that old thing, but you keep the room dimly lit enough that the customer doesn't notice.
-        He's busy gawking at the whole space. All the trappings
-        of a boardwalk fortune-teller are here: tarot decks, zodiac paintings,
+      <p>You should really replace that old thing, but the room's dim and the customer doesn't notice.
+        He's distracted by the usual trappings
+        of a boardwalk fortune-teller: tarot decks, zodiac paintings,
         an absurdly large crystal ball. His preconceptions satisfied, he sits across from you at
         the cramped circular table.
       </p>
@@ -89,11 +89,11 @@ const _Prologue = ({currentSection, inventory}) => {
         The customer is wide-eyed as he hands it to you. You close your eyes and rotate
         the <FromInventory inventory={inventory.p0_customer_clothes} /> slowly in your hands.
         "<MapFromInventory from={inventory.p0_customer_clothes} to={mapsClothes} />"
-        You frown. "The spirits want to help, but their signals seem faint—"
-        You hear the sound of money sliding across the table, your favorite sound.
+        You frown. "The spirits want to help, but their signals seem faint—" When he doesn't respond, you
+        open one eye and clear your throat. He hastily produces another twenty bucks.
       </p>
       <p>
-        You open your eyes, since you need to watch for this part. "I see a name, begins with an S—" He stares at you blankly. "Or an N?"
+        "I see a name," you continue. "It begins with an S—" He stares at you blankly. "Or an N?"
         He perks up. You frown as if in deep concentration. "<Examinable expansions={Customer.names} tag="p0_customer_names"/>"
       </p>
     </section>,
@@ -114,7 +114,7 @@ const _Prologue = ({currentSection, inventory}) => {
         your taste. Her sour expression tells you she's not a potential client. You're unsurprised when she
         flashes a badge at the customer, saying, "Get out."
       </p>
-      <p>He nearly leaps out of his seat, and hastily packs up, embarrassed. "You don't have to leave,"
+      <p>He nearly leaps out of his seat and hastily packs up, embarrassed. "You don't have to leave,"
         you tell him, but it's useless, he's burnt anyway. He squeezes past the
         woman—the police officer—who watches him with a mix of pity and
         contempt.
@@ -147,9 +147,9 @@ const _Prologue = ({currentSection, inventory}) => {
         squirm a little. This is probably how your clients feel. "Are you familiar with
       the death of Alan Healey last month? It was in the papers."</p>
 
-      <p>"It's August at the boardwalk," you reply. "I've been pretty busy with work."</p>
+      <p>"It's August in Atlantic City," you reply. "I've been pretty busy with work."</p>
       <p>She looks pointedly around the reading room and you don't need to be psychic to know
-        what she thinks of your career choices. She produces a file folder and begins to read
+        what she thinks of your career choice. She produces a file folder and begins to read
         from it.
         "Healey was found dead in his home after taking
         an overdose of his blood pressure medication. The Healeys are an old and wealthy family in
@@ -205,7 +205,7 @@ const _Prologue = ({currentSection, inventory}) => {
       </p>
       <p>
         A shadowed figure appears in the doorway, blotting out the light. You hear
-        a labored sound from the bedroom—someone choking and spluttering.
+        a labored sound from the bedroom, someone choking and spluttering.
       </p>
       <p>
         The figure listens to the distress impassively. Panic is rising in you, but
@@ -214,7 +214,7 @@ const _Prologue = ({currentSection, inventory}) => {
         and the room is now lit by the single weak lamp on the desk. It illuminates the gloved hand on the
         doorknob, and you're transfixed by that simple object. The figure tests the door, and satisfied
         that the bedroom is locked, releases the knob,
-        the <Examinable expansions={["glove", "awful glove"]} tag="p0_glove3" /> brilliantly shimmering under the light—
+        the <Examinable expansions={["angry glove", "violently angry glove"]} tag="p0_glove3" /> seeming to boil under the light—
       </p>
     </section>,
     <section>
@@ -224,6 +224,9 @@ const _Prologue = ({currentSection, inventory}) => {
         is almost grotesque. You look at the glove, and while it feels
         dense and heavy in your hands, the sense of deep <i>wrongness</i> about it is gone. It's
         just a glove.
+      </p>
+      <p>
+        It's the first psychic experience of your entire life.
       </p>
       <p>You can't imagine how you're going to explain all this to a
         practical and rational police officer, but when you look up into her eyes you can see plainly

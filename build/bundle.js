@@ -5786,7 +5786,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'You should really replace that old thing, but you keep the room dimly lit enough that the customer doesn\'t notice. He\'s busy gawking at the whole space. All the trappings of a boardwalk fortune-teller are here: tarot decks, zodiac paintings, an absurdly large crystal ball. His preconceptions satisfied, he sits across from you at the cramped circular table.'
+	      'You should really replace that old thing, but the room\'s dim and the customer doesn\'t notice. He\'s distracted by the usual trappings of a boardwalk fortune-teller: tarot decks, zodiac paintings, an absurdly large crystal ball. His preconceptions satisfied, he sits across from you at the cramped circular table.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -5822,12 +5822,12 @@
 	      React.createElement(_components.FromInventory, { inventory: inventory.p0_customer_clothes }),
 	      ' slowly in your hands. "',
 	      React.createElement(_components.MapFromInventory, { from: inventory.p0_customer_clothes, to: mapsClothes }),
-	      '" You frown. "The spirits want to help, but their signals seem faint—" You hear the sound of money sliding across the table, your favorite sound.'
+	      '" You frown. "The spirits want to help, but their signals seem faint—" When he doesn\'t respond, you open one eye and clear your throat. He hastily produces another twenty bucks.'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'You open your eyes, since you need to watch for this part. "I see a name, begins with an S—" He stares at you blankly. "Or an N?" He perks up. You frown as if in deep concentration. "',
+	      '"I see a name," you continue. "It begins with an S—" He stares at you blankly. "Or an N?" He perks up. You frown as if in deep concentration. "',
 	      React.createElement(_components.Examinable, { expansions: Customer.names, tag: 'p0_customer_names' }),
 	      '"'
 	    )
@@ -5893,7 +5893,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'He nearly leaps out of his seat, and hastily packs up, embarrassed. "You don\'t have to leave," you tell him, but it\'s useless, he\'s burnt anyway. He squeezes past the woman—the police officer—who watches him with a mix of pity and contempt. He\'s in such a hurry he doesn\'t think to pick up his extra money on the table, and in the distraction of the moment you quietly slide it into your pocket. His ',
+	      'He nearly leaps out of his seat and hastily packs up, embarrassed. "You don\'t have to leave," you tell him, but it\'s useless, he\'s burnt anyway. He squeezes past the woman—the police officer—who watches him with a mix of pity and contempt. He\'s in such a hurry he doesn\'t think to pick up his extra money on the table, and in the distraction of the moment you quietly slide it into your pocket. His ',
 	      React.createElement(_components.FromInventory, { inventory: inventory.p0_customer_clothes }),
 	      ' also lies forgotten.'
 	    ),
@@ -5953,12 +5953,12 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '"It\'s August at the boardwalk," you reply. "I\'ve been pretty busy with work."'
+	      '"It\'s August in Atlantic City," you reply. "I\'ve been pretty busy with work."'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'She looks pointedly around the reading room and you don\'t need to be psychic to know what she thinks of your career choices. She produces a file folder and begins to read from it. "Healey was found dead in his home after taking an overdose of his blood pressure medication. The Healeys are an old and wealthy family in this town so the story got quite a bit of news coverage. Even more so when his grand-niece Sarah went to the press claiming it was murder."'
+	      'She looks pointedly around the reading room and you don\'t need to be psychic to know what she thinks of your career choice. She produces a file folder and begins to read from it. "Healey was found dead in his home after taking an overdose of his blood pressure medication. The Healeys are an old and wealthy family in this town so the story got quite a bit of news coverage. Even more so when his grand-niece Sarah went to the press claiming it was murder."'
 	    ),
 	    React.createElement(
 	      'p',
@@ -6059,14 +6059,14 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'A shadowed figure appears in the doorway, blotting out the light. You hear a labored sound from the bedroom—someone choking and spluttering.'
+	      'A shadowed figure appears in the doorway, blotting out the light. You hear a labored sound from the bedroom, someone choking and spluttering.'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
 	      'The figure listens to the distress impassively. Panic is rising in you, but absurdly, you have no feet to run into the room, no voice to call for help. An achingly long time later, the choking subsides. All is silence. The figure closes the bedroom door, and the room is now lit by the single weak lamp on the desk. It illuminates the gloved hand on the doorknob, and you\'re transfixed by that simple object. The figure tests the door, and satisfied that the bedroom is locked, releases the knob, the ',
-	      React.createElement(_components.Examinable, { expansions: ["glove", "awful glove"], tag: 'p0_glove3' }),
-	      ' brilliantly shimmering under the light—'
+	      React.createElement(_components.Examinable, { expansions: ["angry glove", "violently angry glove"], tag: 'p0_glove3' }),
+	      ' seeming to boil under the light—'
 	    )
 	  ), React.createElement(
 	    'section',
@@ -6086,6 +6086,11 @@
 	        'wrongness'
 	      ),
 	      ' about it is gone. It\'s just a glove.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'It\'s the first psychic experience of your entire life.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -6473,9 +6478,9 @@
 	  var chapterId = _ref.chapterId;
 
 	  var libraryMaps = {
-	    note: 'You recite what the note said, word-for-word. You describe the\n    lettering, the handwriting like "Healey had been formally taught but had a slight tremor."',
-	    photograph: '"It was a family photo, posed. Four adults and a girl. Two of the adults were\n    young. They looked like brother and sister. One of them was Healey."',
-	    prescription: '\'It was Capoten,\' you say immediately. \'To be taken three times daily. 100 mg.\n    Made out to Healey.\''
+	    note: 'You recite what the note said, word-for-word. You describe the\n    lettering, the handwriting like "someone formally taught but with a slight tremor."',
+	    photograph: '"It was a family photo, posed. Four adults and a girl. Two of the adults were\n    young. They looked like brother and sister."',
+	    prescription: '\'It was Capoten,\' you say immediately. \'To be taken three times daily. 100 mg.\''
 	  };
 	  var photos = ["a stack of photos", "a stack of photos. You flip over the first, and it's of two old men"];
 
@@ -6504,9 +6509,14 @@
 	      'Chapter One'
 	    ),
 	    React.createElement(
+	      'h3',
+	      null,
+	      'At the diner'
+	    ),
+	    React.createElement(
 	      'p',
 	      null,
-	      'You agreed to continue this elsewhere, so you\'re at a typical Jersey diner: big booths, bad coffee. It\'s the middle of a work week so there\'s nobody here but truck drivers and retirees. Detective Whitby\'s coffee is black; yours is mostly sugar and cream and by comparison you feel unmanly. You\'ve left it untouched.'
+	      'You agreed to continue this elsewhere, so here you are: big booths, bad coffee. It\'s the middle of a work week so there\'s nobody here but truck drivers and retirees. Detective Whitby\'s coffee is black; yours is choked with an unmanly amount of cream and sugar. You\'ve left it untouched.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -6518,6 +6528,7 @@
 	    React.createElement(
 	      'p',
 	      null,
+	      'You just stick to the facts. ',
 	      React.createElement(_components.MapFromInventory, { from: inventory.p0_library_things, to: libraryMaps })
 	    ),
 	    React.createElement(
@@ -6538,31 +6549,31 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '"It was a study or personal library. Probably Healey\'s. The bedroom was attached. Two single beds in the room, bookshelves, a desk with a few things, but I only looked closely at the ',
+	      '"It was a study or personal library with an adjacent bedroom. Two single beds in the room, bookshelves, a desk with a few things, but I only looked closely at the ',
 	      React.createElement(_components.FromInventory, { inventory: inventory.p0_library_things }),
 	      '."'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      '"What kinds of books on the shelves? What topics?"'
+	      '"And describe the person you saw."'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      '"I don\'t know."'
+	      '"I can\'t."'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'Now she looks up. "You said the walls were filled with books. You described the ',
+	      'Now she looks up. "You saw the ',
 	      React.createElement(_components.FromInventory, { inventory: inventory.p0_library_things }),
-	      ' clearly, but you didn\'t see any of the books?"'
+	      ' clearly, but you don\'t remember anything about the person you\'re telling me is a killer?"'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'How to explain? It was like staring down the wrong end of a telescope. The desk, that glove, those were in sharp focus, but the edges of the room were dark and foggy. An obscure memory arises: you were about ten, you\'d been in the reading room with your mom and two teenagers hoping for a good fortune. It was so crowded, overheated, and their giggling and the humid summer air swirled all around until you couldn\'t breathe. You nearly fainted that time, and this experience was like that—staring down a darkening tunnel and all the world falling away from you. But you only say, lamely, "It was hard to see."'
+	      'How to explain? It was like staring down the wrong end of a telescope. The desk, that glove, those were in sharp focus, but everything else was dark and foggy. An obscure memory arises: you were about ten, playing in the corner while your mom read for two teenage girls. It was so crowded, overheated, and their giggling and the humid summer air swirled all around until you couldn\'t breathe. You nearly fainted that time, and this experience was like that—staring down a darkening tunnel and all the world falling away from you. But you only say, lamely, "It was hard to see."'
 	    ),
 	    React.createElement(
 	      'p',
@@ -6627,13 +6638,13 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'She\'s not wrong, but it stings. It probably shows on your face, because she sighs and says, "Everything you described about that room was right. Maybe you knew it because you\'re a murderer. Maybe you\'re... something else. But you\'re not a liar, not about this."'
+	      'She\'s not wrong, but that stings. It probably shows on your face, because she sighs and says, "Everything you described about that room was right. Maybe you knew it because you\'re a murderer. Maybe you\'re... something else. But you weren\'t lying, and I get the impression you\'re as surprised by that as anybody."'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
 	      'Before you can react to that extraordinary statement, she says, "Let\'s try this now," and tosses you a ',
-	      React.createElement(_components.Examinable, { expansions: ["small metal object.", "<psychic>frustrated cutting device</psychic>.", "small metal item that's emanating frustration, and the moment you catch it you're—<br/><br/><br/>"], tag: 'c1_device' })
+	      React.createElement(_components.Examinable, { expansions: ["small metal object.", "<psychic>frustrated cutting device</psychic>.", "unfamiliar metal tool that's emanating frustration, and the moment you catch it you're—<br/><br/><br/>"], tag: 'c1_device' })
 	    )
 	  ), React.createElement(
 	    'div',
@@ -6661,7 +6672,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'This is the rear courtyard of the  Healey property. The neo-classical house is brightly lit by the rising sun, but as before, your vision blurs and darkens around the edges. You can make out a decorative stone fence enclosing the courtyard, opening to a set of stairs flanked by urns. The stairs lead to a sandy path through the dunes and presumably empties out onto their private beach.'
+	      'This is the rear courtyard of the  Healey property. The neo-classical house is brightly lit by the rising sun, but as before, your vision blurs and darkens around the edges. You can make out a decorative stone fence enclosing the courtyard, accessed by a set of stairs flanked by urns. The stairs lead to a sandy path through the dunes and presumably empties out onto their private beach.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -6693,17 +6704,17 @@
 	          "urn": "The newer urn"
 	        }
 	      }),
-	      ' contains the metal device that Whitby tossed to you. As before with the glove, it stands out as more real than anything around you, and suffused with a human-like expression of emotion. It\'s like reading someone\'s face.'
+	      ' contains the metal tool that Whitby tossed to you. It contains a curved blade in a round slot about the size of a quarter, with a safety cover—a cigar cutter, you realize. As before with the glove, it stands out as more real than anything around you. You can read the emotion radiating from it as clearly as you could read a person\'s face.'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'Where the glove felt angry—murderous even—this object is frustrated. It\'s a cigar cutter, you now understand, one whose last action was thwarted. It\'s a simple device but a very personal one, and you can sense another emotion welling up from within it: a profound sense of loss.'
+	      'Where the glove felt angry—murderous even—the cigar cutter is frustrated. It had a single task and that job went unfinished when Healey, interrupted in his room, was killed. It\'s a simple device but a very personal one, and you can sense another emotion welling up from within it: a profound sense of loss.'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'Its sadness is blossoming, somehow, leaking out of the cutter and seeping into the urn, into the fissures of the stone fence and spilling onto the ground, spreading like an oil spill that\'s been ignited. You watch as the entire courtyard seems to blaze up in an paroxyism of grief.'
+	      'Its sadness is blossoming, somehow, leaking out of the cutter and seeping into the urn, into the fissures of the stone fence and spilling onto the ground in a torrent. You watch as the entire courtyard seems to blaze up in an paroxyism of grief.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -6728,7 +6739,7 @@
 	    React.createElement(
 	      'h3',
 	      null,
-	      'In the diner'
+	      'At the diner'
 	    ),
 	    React.createElement(
 	      'p',
@@ -6738,12 +6749,12 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '"He\'s all right," Whitby says. She\'s slapping your hand, the one clutching the cigar cutter. Her hand feels firey hot but it\'s just because you\'re so cold.'
+	      '"He\'s all right," Whitby says to the room. She\'s slapping your hand, the one clutching the cigar cutter. Her hand feels firey hot but it\'s just because you\'re so cold.'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      '"What did I do?" you whisper, and try to sit up straight like an adult.'
+	      '"What did I do?" you whisper, and try to sit up straight.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -6770,7 +6781,10 @@
 	          urn: "a swirl of conflicting emotions"
 	        } }),
 	      '.'
-	    ),
+	    )
+	  ), React.createElement(
+	    'section',
+	    null,
 	    React.createElement(
 	      'p',
 	      null,
@@ -6784,22 +6798,22 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '"We think so," she confirmed. "He smoked outside, but kept his cigars in the study. We found one unwrapped, but uncut." She pauses and lowers her voice. "Where were you just now?"'
+	      '"We think so. He smoked outside, but kept his cigars in the study. We found one unwrapped, but uncut." She pauses and lowers her voice. "Where were you? Just now?"'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      '"Behind the house. I found it in the urn. I saw the police arrive, the morning of Healey\'s death." That part is crazy enough to say out loud, but you have to describe it all. "The cigar cutter... misses him."'
+	      '"Behind his house. This was in the urn. I saw the police arrive, the morning of Healey\'s death." You hesitate to tell her the rest, but in for a penny, in for a pound. "The cigar cutter... misses him."'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'Any good will you had with Whitby just evaporated. "It what?"'
+	      '"It what?"'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'You shake your head and place the cutter aside. Your palms are sweaty but all the napkins were used to mop up your coffee. You wipe them on your pants instead. "I don\'t think it\'s just random objects that I\'m... connecting with. They have to be invested in what happened."'
+	      'Your palms are sweaty but all the napkins were used to mop up your coffee. You wipe them on your pants instead. "I don\'t think it\'s just any object that I can... connect with. They have to be invested in what happened."'
 	    ),
 	    React.createElement(
 	      'p',
@@ -6888,6 +6902,7 @@
 	  var inventory = _ref.inventory;
 	  var chapterId = _ref.chapterId;
 
+	  var photos = ["a stack of photos", "a stack of photos. You flip over the first, and it's of two old men"];
 	  var sections = [React.createElement(
 	    'section',
 	    null,

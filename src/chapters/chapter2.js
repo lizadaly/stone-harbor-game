@@ -4,6 +4,10 @@ import { connect } from 'react-redux'
 import { RenderSection } from '.'
 
 const _Chapter = ({currentSection, inventory, chapterId}) => {
+  var photos = [
+    "a stack of photos",
+    "a stack of photos. You flip over the first, and it's of two old men"
+  ]
   var sections = [
     <section>
     <p>
