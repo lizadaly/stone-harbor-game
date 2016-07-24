@@ -1,3 +1,5 @@
+https://trello.com/b/tk73NNx3/psychic-game
+
 Set in the past to avoid DNA, cell phones, internet. 1970s?
 
 You: Frank Pietro
@@ -34,9 +36,3 @@ something innocuous, that the police wouldn't treat as evidence.
 A scene later where you see things from the dog's POV (you think at first it's the girl.)
 Because it's filtered through the dog, you can't understand anything that's said,
 but you can sense something via smell that's interesting?
-
-TODO:
-
-Save the game state
-Switch chapters
-Change UI for flashbacks

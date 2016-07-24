@@ -10,85 +10,105 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
   ]
   var sections = [
     <section>
-    <h2>Chapter Two</h2>
-    <h3>At the Healeys'</h3>
-    <p>
-      You barely talk on the ride over. You stopped by your shop on the way over just so you could formally close
-      up. It's Saturday and there huge crowds at the beach, so you flipped the <small>Open</small> sign around with more than a little
-      regret. On the other hand, this should probably be a day off for Whitby. You wonder what it's like to have
-      family who'd do this kind of a favor for you.
-    </p>
-    <p>
-      The house is just as you saw it in the vision: sprawling, white, faux classical, at odds with the usual sun-bleached
-      and gray wooden housing stock. But the property isn't new money, either. It's well cared for yet worn. Living at the
-      shore it's easy to find rich people to resent, but the Healeys' place is almost classy.
-    </p>
-    <p>
-      "Nobody's home," Whitby says, getting out of the car. "But I couldn't let you in even I wanted to." It's quite clear she
-      doesn't want to.
-    </p>
-    <p>
-      "I don't need to go inside, it's around back," you say. You know the way and don't wait for her.
-    </p>
-
-    </section>,
-    <section>
-    <p>
-      she's pulled more items
-      from her bag of tricks. "I'd like to walk you through the family," she says,
-      handing you <Examinable expansions={photos} tag="c1_photos1" />.</p>
-    <p>You recognize Healey and say as much. She nods. "That's Alan on the left and his younger brother, Jared, on the right.
-      Jared's wife has been out of the family for years; he's been raising his
-      daughter on his own. A little resentful of his lot in life, but
-      responsible." She turns over
-      another <Examinable expansions={["photo", "photo, of a little girl in a white dress"]} tag="c1_photos2"/>.
-    </p>
-  </section>,
-  <section>
-    <p>"That's Ellen, Jared's daughter. This picture's a few years old, she's eleven now."
-      Whitby considers her for a moment. "Everyone loves that little girl. My god-daughter Sarah is
-      her cousin by marriage." She pushes <Examinable expansions={["another picture", "a picture of two adult twins"]} tag="c1_photos3" /> across the table.</p>
-  </section>,
-  <section>
-    <p>"Chris and Christina," she says, and you can't help but snort. Whitby reveals just a
-      hint of a smile and you're absurdly relieved. "I'm a friend of the family,
-      but, yeah. Anyway, these two are Alan's niece and nephew. Alan and Jared had a sister,
-      Michelle, who passed away some years back. The twins still live in her house over in Sea Isle.
-    Don't know them personally."</p>
-    <p>"Last one," she says, and hands you <Examinable expansions={["another picture of Healey", "another picture of Healey, with his arm around a woman his age"]} tag="c1_photos4"/>.</p>
-  </section>,
-    <section>
       <h2>Chapter Two</h2>
-      <p>"His wife," you guess.</p>
-      <p>"You truly must be psychic," she says, and it's a gentler tease than you've heard from anyone in a long
-        time. "Margaret, Maggie. Lovely woman, but pragmatic. From what I hear she'd be the
-        first one to bail you out of trouble and also the first to throw you out on the
-        street if you dare screw up again. If more people were like her I'd be out of a job."
+      <h3>At the mansion</h3>
+      <p>
+        You barely talk on the ride over. You stopped by your storefront on the way to formally close
+        up for the afternoon. It’s Saturday and there are huge crowds at the beach, so you flipped the sign to <small>closed</small> with more than a little
+        regret. On the other hand, you realize this was probably a day off for Whitby. You wonder what it’s like to have
+        family who'd do this kind of a favor for you.
       </p>
       <p>
-        She spreads out the photos across the table. "Everyone I've shown you here was at the Healey estate the  weekend that he died.
-        If we were pursuing this as an active murder investigation they'd all be under
-        close watch, but a locked door, a common medication, an elderly victim,
-        it just added up to a tragic but ordinary death."
+        The house is just as you remember from the vision: sprawling, white, faux classical, at odds with the usual sun-bleached
+        and gray wooden vacation homes. But the property isn’t new money, either. It’s worn but well cared for. Living at the
+        shore it’s easy to find rich people to resent, but the Healeys’ place feels like a home.
       </p>
-      <p>"Do you still think that?" you ask quietly.</p>
-      <p>She signals for the check and thinks for a long time before answering. "I admit I wouldn't
-        have looked twice at this case if it had been assigned to me. This town is crazy in the summer,
-        there's plenty to do without digging up trouble. When Sarah called me and I reviewed the
-        file, I found a few red flags. Alan was a sharp old man, it would be unlike him to
-        make such a mistake. And his pill bottle was found <em>outside</em> his bedroom,
-        when he was locked in—"
+      <p>
+        “The wife is staying with her sister so nobody’s here,” Whitby says, getting out of the car. ”But I couldn’t let you in even I wanted to.” It’s quite clear she
+        doesn’t want to.
       </p>
-      <p>"Just like I saw."</p>
-      <p>"—and who locks their bedroom door when there's just family around?" She shakes her head.
-        "Not enough to act on, but it did make me think." And like you said, you saw all that.
-      I don't know what that means."</p>
-      <p>You admit you don't either.</p>
-      <p>"Well, we won't find out by sitting here drinking lousy coffee." She collects her things
-        and stands up. "The Healey property is no longer
-        a crime scene, and Maggie Healey is staying with friends. Let's get those hands on some
-      evidence."</p>
+      <p>
+        “I don’t need to go inside, it’s around back,” you reply. You know the way and don’t wait for her.
+      </p>
+      <p>
+        It’s late afternoon so the courtyard is in shade, and given that it’s a billion humid degrees out it’s
+        easy to see that was probably a deliberate architectural decision. You’re sweating your balls off
+        in shorts, though of course Detective Doubtful seems to be cool as ice in her polyester police suit. “Stop right there,”
+        she barks. “Just tell me where it is.”
+      </p>
+      <p>
+        “Don't want me planting any evidence?”
+      </p>
+      <p>
+        “Exactly.”
+      </p>
+      <p>
+        “You know you could consider lying to me once in a while.” She says nothing, so you just point. “It’s in a
+        bush by the base of the stairs. Probably.”
+      </p>
+      <p>
+        She’s already down in the area, but looks up over the railing. “Probably?”
+      </p>
+      <p>
+        “It <em>was</em> there, but Healey died weeks ago. How the hell should I know
+        what happened between now and then?” You hear her mutter something about being a lousy psychic.
+      </p>
+      <p>
+        “Who are you? What are you doing here?”
+      </p>
+      <p>You turn with a start and coming out of the house is a very old, very
+        disapproving <MapFromInventory from={inventory.c2_pail} to={{undefined: "man", "spade": "gardener", "fork": "gardener", "clippers": "gardener"}} /> carrying a utility bag. The bag contains <Examinable expansions={["some old tools", ["a rusted spade", "a large bent fork", "a pair of hedge clippers"], "some very old garden tools"]} tag="c2_pail"/>.
+      </p>
+    </section>,
+      <section>
+        <p>
+          “Uh,” you say. “Nice <MapFromInventory from={inventory.c2_pail} to={{"spade": "spade", "fork": "fork", "clippers": "clippers"}} />?” The detective rolls her eyes.
+        </p>
 
+        <p>
+          He frowns at both of you. “Are you with the police?”
+        </p>
+        <p>
+          “Yes,” Whitby says, truthfully.
+        </p>
+        <p>
+          “Oh all right then. I thought you folks had finished up.”
+          He reaches into the archaeological treasure that is his tool bag. “I met with some of your colleagues
+          down the station like you asked. I’d do anything for the family, they’ve been good to me.
+          Don't remember anything new to tell you—”
+        </p>
+        <p>Whitby is coming back up the stairs. “That's fine, sir, I'm sure you did everything—”</p>
+        <p>“—but I have <em>found</em> something that I thought might be helpful to y’all. Let me show you.”
+          He’s rumaging around now, and you start to get a really bad feeling about something in that bag.
+          Whitby picks up the pace.
+        </p>
+        <p>
+          “I want to be as helpful as I can. I wasn’t here when it happened, see. Maybe I could’ve–oh here we go,” he says, and you can feel the blood draining from your limbs and
+          your vision narrowing to a pinprick. Maybe Whitby can see your
+          ghost white face, it looks like she’s reaching out to intercept, but it’s too late, the gardener has eagerly
+          shoved <Examinable expansions={["a doll", "<psychic>a frightened doll</psychic>", "<psychic>a frightened doll with a crushed head</psychic>"]} tag="c2_doll" /> into
+          your paralyzed hands—
+        </p>
+      </section>,
+      <div className="in-flashback">
+        <figure className="chapter2" />
+        <h3>In the family room</h3>
+        <section>
+          <p>
+            You’ve never felt so small in your life—physically small. Even as a boy you were always big
+            for your age, often crashing into your mom's cheap but delicate new age baubles.
+            But now you are hemmed in on all sides by
+            gargantuan walls of solid furniture and feel downright tiny.
+          </p>
+          <p>
+            A young girl, carrying the <Examinable expansions={["doll", "comfortable doll"]} tag="c2_doll2" nextUnit="none" />, runs into the room and settles comfortably into a
+            high-backed chair. She’s followed by an <Examinable expansions={["older man", "kindly looking older man", "older man who you realize with a start is Alan Healey"]} tag="c2_healey" nextUnit="none" /> and
+            a <Examinable expansions={["woman", "woman of the same age", "woman who must be Healey's wife"]} tag="c2_margaret" />.
+          </p>
+        </section>
+      </div>,
+    <section>
+      <p>You‘re distracted by the doll for a bit. </p>
     </section>
   ]
   return <RenderSection currentSection={currentSection} sections={sections} />

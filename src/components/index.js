@@ -125,9 +125,15 @@ class _Examinable extends React.Component {
       if (this.props.nextUnit === "chapter") {
         this.props.onCompleteChapter()
       }
-      else {
+      else if (this.props.nextUnit === "section") {
         this.props.onCompleteSection()
       }
+      // The no-op version just expands in place (usually because another selector)
+      // will do the expansion
+      else if (this.props.nextUnit === "none")  {
+        // no-op
+      }
+
     }
     this.setState({
       currentExpansion: currentExpansion,
@@ -152,7 +158,7 @@ class _Examinable extends React.Component {
   }
 }
 _Examinable.propTypes = {
-  nextUnit: React.PropTypes.oneOf(['chapter', 'section']),
+  nextUnit: React.PropTypes.oneOf(['chapter', 'section', 'none']),
   tag: React.PropTypes.string.isRequired,
   expansions: React.PropTypes.array.isRequired,
   currentExpansion: React.PropTypes.number
