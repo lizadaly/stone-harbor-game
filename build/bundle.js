@@ -89,7 +89,7 @@
 
 	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(_Game).call(this, props));
 
-	    _this.chapters = [React.createElement(_chapters.Prologue, { chapterId: '0' }), React.createElement(_chapters.Chapter1, { chapterId: '1' }), React.createElement(_chapters.Chapter2, { chapterId: '2' })];
+	    _this.chapters = [React.createElement(_chapters.Prologue, { chapterId: '0' }), React.createElement(_chapters.Chapter1, { chapterId: '1' }), React.createElement(_chapters.Chapter2, { chapterId: '2' }), React.createElement(_chapters.Chapter3, { chapterId: '3' })];
 	    return _this;
 	  }
 
@@ -5682,6 +5682,18 @@
 	  });
 	});
 
+	var _chapter3 = __webpack_require__(315);
+
+	Object.keys(_chapter3).forEach(function (key) {
+	  if (key === "default") return;
+	  Object.defineProperty(exports, key, {
+	    enumerable: true,
+	    get: function get() {
+	      return _chapter3[key];
+	    }
+	  });
+	});
+
 	var _reactRedux = __webpack_require__(1);
 
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
@@ -5738,6 +5750,7 @@
 	var _Prologue = function _Prologue(_ref) {
 	  var currentSection = _ref.currentSection;
 	  var inventory = _ref.inventory;
+
 
 	  var mapsClothes = {
 	    "ring": "There’s someone close to you. Someone you trusted to be with you always. But they’re gone.",
@@ -6642,13 +6655,13 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'She’s not wrong, but that stings. It probably shows on your face, because she sighs and says, “Everything you described about that room was right. Maybe you knew it because you’re a murderer. Maybe you’re... something else. But you weren’t lying, and I get the impression you’re as surprised by that as anybody.”'
+	      'She’s not wrong, but that stings and you wince. She sighs and says, “Everything you described about that room was accurate. Maybe you knew it because you’re a murderer. Maybe you’re... something else. But you weren’t lying, and I get the impression you’re as surprised by that as anybody.”'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
 	      'Before you can react to that extraordinary statement, she says, “Let’s try this now,” and tosses you a ',
-	      React.createElement(_components.Examinable, { expansions: ["small metal object.", "<psychic>frustrated cutting device</psychic>.", "unfamiliar metal tool that’s emanating frustration, and the moment you catch it you’re—<br/><br/><br/>"], tag: 'c1_device' })
+	      React.createElement(_components.Examinable, { expansions: ["small metal object.", "<psychic>frustrated cutting device</psychic>.", "metal cutting tool that’s emanating frustration, and the moment you catch it you’re—<br/><br/><br/>"], tag: 'c1_device' })
 	    )
 	  ), React.createElement(
 	    'div',
@@ -6697,7 +6710,7 @@
 	          "urn": "The newer urn"
 	        }
 	      }),
-	      ' contains the metal tool that Whitby tossed to you. It’s a curved blade set in a round slot about the size of a quarter, with a safety cover—ah, it’s a cigar cutter. Like the glove, it stands out for you, seeming more real than its surroundings. You can read the emotion radiating from it as clearly as you could read a person’s face.'
+	      ' contains the metal tool that Whitby tossed to you. It’s a curved blade set in a round slot about the size of a quarter, with a safety cover—ah, it’s a cigar cutter. You can read the emotion radiating from it as clearly as you could read a person’s face.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -7129,12 +7142,12 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“Sorry,” he says roughly, and gets up. He doesn’t see the doll and steps on it, crushing its head, and in tripping over it kicks it across the room. Ellen was already crying but this sends her into hysterics. Maggie Healey looks grateful for something to do and hurries her out.'
+	      '“Sorry,” he says roughly, and gets up. He doesn’t see the doll and steps on it, crushing its head, and in tripping over it kicks it across the room. Little Ellen was already crying but this sends her into hysterics. Maggie Healey looks grateful for something to do and hurries her out.'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'The room is empty now but for the doll, which lies forgotten under an ornate cupboard. Time passes, the lights in the house go out, the grandfather clock on the wall spins and spins. Strangely it’s not boring, alone among the household objects. It’s peaceful and uncomplicated.'
+	      'The room is empty now but for the doll, which lies forgotten under an ornate cupboard. Time passes, maybe hours. The lights in the house go out as everyone goes to bed, the grandfather clock on the wall spins and spins. Strangely it’s not boring, being alone among the household objects. It’s peaceful and uncomplicated.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -7147,7 +7160,7 @@
 	      ),
 	      ' the doll is afraid, not because it was damaged and discarded, but because this still and orderly world has been invaded. The ',
 	      React.createElement(_components.Examinable, { expansions: ["doll", "terrified doll"], tag: 'c2_doll3' }),
-	      ' is crying out a warning, now, it wants to wake the house, but it can only wake you—'
+	      ' is crying out a warning now, it wants to wake the house, but it can only wake you—'
 	    )
 	  ), React.createElement(
 	    'section',
@@ -7211,7 +7224,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'She rolls up her car window even though it must be boiling hot for her. You gratefully do the same. “What happened this time?” she asks, gently.'
+	      'She sees that you’re shivering and rolls up her car window even though it must be boiling hot for her. You’re grateful and do the same. “What happened this time?” she asks, gently.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -7248,7 +7261,8 @@
 	      'p',
 	      null,
 	      'You don’t say anything, just stare at her, so she adds, “Look, just relax, Pietro. I believe you. And I need your help.”'
-	    )
+	    ),
+	    React.createElement(_components.NextChapter, { chapter: '3' })
 	  )];
 	  return React.createElement(_.RenderSection, { currentSection: currentSection, sections: sections });
 	};
@@ -28756,6 +28770,202 @@
 	var ReactMount = __webpack_require__(307);
 
 	module.exports = ReactMount.renderSubtreeIntoContainer;
+
+/***/ },
+/* 315 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.Chapter3 = undefined;
+
+	var _components = __webpack_require__(58);
+
+	var _reactRedux = __webpack_require__(1);
+
+	var _ = __webpack_require__(56);
+
+	var React = __webpack_require__(3);
+
+
+	var _Chapter = function _Chapter(_ref) {
+	  var currentSection = _ref.currentSection;
+	  var inventory = _ref.inventory;
+	  var chapterId = _ref.chapterId;
+
+	  var sections = [React.createElement(
+	    'section',
+	    null,
+	    React.createElement(
+	      'h2',
+	      null,
+	      'Chapter Three'
+	    ),
+	    React.createElement(
+	      'h3',
+	      null,
+	      'At the diner'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You were certain you’d never get to sleep but there was a whole-body weariness you haven’t felt since you were a kid. There were days when it was too damn hot to be in the reading room— Mom didn’t get air conditioning until 1975, long after you’d moved out—and you would just spend the whole day in the ocean. You weren’t much of a swimmer but just standing in the waves fighting the current was a lot of work, and you’d come home, tracking sand into the foyer and up the stairs to the apartment over the storefront. Mom’s work day didn’t really even start until the evening, and so you’d tend to sleep through most of it until she’d wake you, often well after midnight, and make a simple dinner. As a result you tended to miss whatever TV was on, which made you even more popular with the kids at school.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Cream?” Whitby asks, interrupting your thoughts.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You shake your head. “Trying to quit.” You make up for it by pouring in a dumptruck full of sugar.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Why did you move back?” When you look confused, she says, “After your mom died. She owned that property, it’s probably worth plenty given its placement on the boardwalk. Lots of people sold after the casinos went up.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“You ran a background check on me?” Her shrug says ',
+	      React.createElement(
+	        'em',
+	        null,
+	        'that’s what I do'
+	      ),
+	      '. “I moved back in when she was in the hospital, ran things for awhile until she got back on her feet.” You pause, sip the coffee, add more sugar. “She never did. Haven’t gotten around to selling it.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“That was four years ago.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Logically, you know this. But it’s different when someone else says it outright.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Sorry, none of my business why,” she says. She pulls out her bag and lays out a set of photos. “There isn’t even always a why. Sometimes people just get—stuck.”'
+	    )
+	  ), React.createElement(
+	    'section',
+	    null,
+	    React.createElement(
+	      'p',
+	      null,
+	      'she\'s pulled more items from her bag of tricks. "I\'d like to walk you through the family," she says, handing you .'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You recognize Healey and say as much. She nods. "That\'s Alan on the left and his younger brother, Jared, on the right. Jared\'s wife has been out of the family for years; he\'s been raising his daughter on his own. A little resentful of his lot in life, but responsible." She turns over another ',
+	      React.createElement(_components.Examinable, { expansions: ["photo", "photo, of a little girl in a white dress"], tag: 'c1_photos2' }),
+	      '.'
+	    )
+	  ), React.createElement(
+	    'section',
+	    null,
+	    React.createElement(
+	      'p',
+	      null,
+	      '"That\'s Ellen, Jared\'s daughter. This picture\'s a few years old, she\'s eleven now." Whitby considers her for a moment. "Everyone loves that little girl. My god-daughter Sarah is her cousin by marriage." She pushes ',
+	      React.createElement(_components.Examinable, { expansions: ["another picture", "a picture of two adult twins"], tag: 'c1_photos3' }),
+	      ' across the table.'
+	    )
+	  ), React.createElement(
+	    'section',
+	    null,
+	    React.createElement(
+	      'p',
+	      null,
+	      '"Chris and Christina," she says, and you can\'t help but snort. Whitby reveals just a hint of a smile and you\'re absurdly relieved. "I\'m a friend of the family, but, yeah. Anyway, these two are Alan\'s niece and nephew. Alan and Jared had a sister, Michelle, who passed away some years back. The twins still live in her house over in Sea Isle. Don\'t know them personally."'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"Last one," she says, and hands you ',
+	      React.createElement(_components.Examinable, { expansions: ["another picture of Healey", "another picture of Healey, with his arm around a woman his age"], tag: 'c1_photos4' }),
+	      '.'
+	    )
+	  ), React.createElement(
+	    'section',
+	    null,
+	    React.createElement(
+	      'h2',
+	      null,
+	      'Chapter Two'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"His wife," you guess.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"You truly must be psychic," she says, and it\'s a gentler tease than you\'ve heard from anyone in a long time. "Margaret, Maggie. Lovely woman, but pragmatic. From what I hear she\'d be the first one to bail you out of trouble and also the first to throw you out on the street if you dare screw up again. If more people were like her I\'d be out of a job."'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'She spreads out the photos across the table. "Everyone I\'ve shown you here was at the Healey estate the  weekend that he died. If we were pursuing this as an active murder investigation they\'d all be under close watch, but a locked door, a common medication, an elderly victim, it just added up to a tragic but ordinary death."'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"Do you still think that?" you ask quietly.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'She signals for the check and thinks for a long time before answering. "I admit I wouldn\'t have looked twice at this case if it had been assigned to me. This town is crazy in the summer, there\'s plenty to do without digging up trouble. When Sarah called me and I reviewed the file, I found a few red flags. Alan was a sharp old man, it would be unlike him to make such a mistake. And his pill bottle was found ',
+	      React.createElement(
+	        'em',
+	        null,
+	        'outside'
+	      ),
+	      ' his bedroom, when he was locked in—"'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"Just like I saw."'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"—and who locks their bedroom door when there\'s just family around?" She shakes her head. "Not enough to act on, but it did make me think." And like you said, you saw all that. I don\'t know what that means."'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You admit you don\'t either.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '"Well, we won\'t find out by sitting here drinking lousy coffee." She collects her things and stands up. "The Healey property is no longer a crime scene, and Maggie Healey is staying with friends. Let\'s get those hands on some evidence."'
+	    )
+	  )];
+	  return React.createElement(_.RenderSection, { currentSection: currentSection, sections: sections });
+	};
+
+	var mapStateToProps = function mapStateToProps(state, ownProps) {
+	  return {
+	    currentSection: state.bookmarks[ownProps.chapterId],
+	    inventory: state.inventory
+	  };
+	};
+
+	var Chapter3 = exports.Chapter3 = (0, _reactRedux.connect)(mapStateToProps)(_Chapter);
 
 /***/ }
 /******/ ]);

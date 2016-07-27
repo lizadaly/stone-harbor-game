@@ -74,13 +74,13 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>Your stomach is still churning. “Because you think I’m a fraud.”</p>
       <p>“Of course you’re a fraud.”</p>
-      <p>She’s not wrong, but that stings. It probably shows on your face, because
-        she sighs and says, “Everything you described about that room was right.
+      <p>She’s not wrong, but that stings and you wince. She sighs and says, “Everything you
+        described about that room was accurate.
         Maybe you knew it because you’re a murderer. Maybe you’re... something else.
       But you weren’t lying, and I get the impression you’re as surprised by that as anybody.”</p>
 
       <p>Before you can react to that extraordinary statement, she says, “Let’s try this
-        now,” and tosses you a <Examinable expansions={["small metal object.", "<psychic>frustrated cutting device</psychic>.", "unfamiliar metal tool that’s emanating frustration, and the moment you catch it you’re—<br/><br/><br/>"]} tag="c1_device" />
+        now,” and tosses you a <Examinable expansions={["small metal object.", "<psychic>frustrated cutting device</psychic>.", "metal cutting tool that’s emanating frustration, and the moment you catch it you’re—<br/><br/><br/>"]} tag="c1_device" />
       </p>
     </section>,
     <div className="in-flashback">
@@ -115,7 +115,6 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
           }}
         /> contains the metal tool that Whitby tossed to you. It’s a curved blade
         set in a round slot about the size of a quarter, with a safety cover—ah, it’s a cigar cutter.
-        Like the glove, it stands out for you, seeming more real than its surroundings.
         You can read the emotion
         radiating from it as clearly as you could read a person’s face.
       </p>

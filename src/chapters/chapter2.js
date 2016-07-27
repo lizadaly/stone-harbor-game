@@ -137,18 +137,19 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         “Sorry,” he says roughly, and gets up. He doesn’t see the doll and steps on it, crushing its
-        head, and in tripping over it kicks it across the room. Ellen was already crying but this
+        head, and in tripping over it kicks it across the room. Little Ellen was already crying but this
         sends her into hysterics. Maggie Healey looks grateful for something to do and hurries her out.
       </p>
       <p>
         The room is empty now but for the doll, which lies forgotten under an ornate cupboard. Time
-        passes, the lights in the house go out, the grandfather clock on the wall spins and spins.
-        Strangely it’s not boring, alone among the household objects. It’s peaceful and uncomplicated.
+        passes, maybe hours. The lights in the house go out as everyone goes to bed, the grandfather
+        clock on the wall spins and spins.
+        Strangely it’s not boring, being alone among the household objects. It’s peaceful and uncomplicated.
       </p>
       <p>You hear the sound of a window opening, and in the gloom of a moonless night you see very little,
         just the shadow of a person dropping into the room. <em>Now</em> the doll is afraid,
         not because it was damaged and discarded, but because this still and orderly world has been
-        invaded. The <Examinable expansions={["doll", "terrified doll"]} tag="c2_doll3" /> is crying out a warning,
+        invaded. The <Examinable expansions={["doll", "terrified doll"]} tag="c2_doll3" /> is crying out a warning
         now, it wants to wake the house, but it can only wake you—
       </p>
     </section>,
@@ -173,7 +174,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         have? <em>Hi I’m Detective Whitby and this is my pet psychic?</em>”
       </p>
       <p>“Aw that’s sweet of you, but really we’ve just met.”</p>
-      <p>She rolls up her car window even though it must be boiling hot for her. You gratefully do the same.
+      <p>She sees that you’re shivering and rolls up her car window even though it must be boiling hot for her. You’re grateful and do the same.
       “What happened this time?” she asks, gently.</p>
       <p>
         You tell her, in a simple recitation of facts. “But I get it,” you say. “It’s in my head, or
@@ -190,6 +191,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>You don’t say anything, just stare at her, so she adds, “Look, just relax, Pietro. I believe you.
       And I need your help.”</p>
+      <NextChapter chapter="3" />
     </section>
   ]
   return <RenderSection currentSection={currentSection} sections={sections} />

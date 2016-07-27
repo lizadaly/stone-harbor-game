@@ -26,6 +26,7 @@ const Customer = {
 }
 
 const _Prologue = ({currentSection, inventory}) => {
+
   var mapsClothes = {
     "ring": "There’s someone close to you. Someone you trusted to be with you always. But they’re gone.",
     "jacket": "Your vacation hasn’t turned out the way you hoped. I’m sensing disappointment, maybe even despair.",
