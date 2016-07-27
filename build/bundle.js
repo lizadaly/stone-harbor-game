@@ -7089,7 +7089,165 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'You‘re distracted by the doll for a bit. '
+	      'In the arms of its owner, the doll is radiating contentment rather than fear. Maybe that’s because it still has a head.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Healey’s wife says to her husband, “I\'ll get you your tea, dear.” She asks the girl, “Honey, do you want anything?” Her voice is firm, but kind.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“No thank you, Aunt Maggie,” the girl says, settling into one of the higher backed chairs. She hugs the doll in a grip which would probably kill a small animal, but the doll loves it.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Healey says nothing and watches his wife leave the room. He picks up a heavy black telephone from a side table and settles it on his lap. ”You play with Vicky now, Ellen. Uncle Alan just needs to make a quick phone call.” The little girls nods and hums to the doll tunelessly.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Healey dials the rotary phone slowly; it\'s obviously painful for his hands to operate. It’s a short number, local. His conversation is muffled and unintelligible. He’s lowered his voice, but it’s not just the volume. You catch words here and there—“never”,  “later”, and then he says angrily, “How could you?” and the girl, Ellen, looks up in alarm, letting go of the doll which tumbles to the floor.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      React.createElement(
+	        'em',
+	        null,
+	        'I’m watching this through her'
+	      ),
+	      ', you realize. The doll belongs to the girl, and it’s a child’s view of the world that you’re witnessing, as imprinted in one of her most treasured possessions. She didn’t care about or understand Healey’s conversation, at least not until it got heated.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“I won’t have her suffer for your mistakes,” Healey says, and slams the receiver down just as his wife enters carrying a tea pot and a plate. “Wrong number,” he says, preempting any discussion, and it’s obvious that this is a familiar family dynamic. His wife says nothing, just puts the serving items down.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Sorry,” he says roughly, and gets up. He doesn’t see the doll and steps on it, crushing its head, and in tripping over it kicks it across the room. Ellen was already crying but this sends her into hysterics. Maggie Healey looks grateful for something to do and hurries her out.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'The room is empty now but for the doll, which lies forgotten under an ornate cupboard. Time passes, the lights in the house go out, the grandfather clock on the wall spins and spins. Strangely it’s not boring, alone among the household objects. It’s peaceful and uncomplicated.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You hear the sound of a window opening, and in the gloom of a moonless night you see very little, just the shadow of a person dropping into the room. ',
+	      React.createElement(
+	        'em',
+	        null,
+	        'Now'
+	      ),
+	      ' the doll is afraid, not because it was damaged and discarded, but because this still and orderly world has been invaded. The ',
+	      React.createElement(_components.Examinable, { expansions: ["doll", "terrified doll"], tag: 'c2_doll3' }),
+	      ' is crying out a warning, now, it wants to wake the house, but it can only wake you—'
+	    )
+	  ), React.createElement(
+	    'section',
+	    null,
+	    React.createElement(
+	      'h3',
+	      null,
+	      'At the mansion (in Whitby’s car)'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You bolt straight up. “How did I get here?”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“We dragged you.” Whitby’s smoking—you didn’t think she was the type—but the long ash suggests she’s been distracted. Maybe by the guy who was slumped over in her passenger seat.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Who’s we?”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“The gardener,” she says, with infinite patience. “I told him your blood sugar crashed. So much for a low profile.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You’re sure it must be still hot as hell outside, but you’re chilled to the bone and unable to stop shivering. “I guess I should’ve had a donut before I went on duty today.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Cops sure love cop jokes. “I never said you were a police officer,” she replies dourly.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“You certainly didn’t correct his misapprehension.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'She  notices her forgotten cigarette and flicks it out the window. “What other choice did I have? ',
+	      React.createElement(
+	        'em',
+	        null,
+	        'Hi I’m Detective Whitby and this is my pet psychic?'
+	      ),
+	      '”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Aw that’s sweet of you, but really we’ve just met.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'She rolls up her car window even though it must be boiling hot for her. You gratefully do the same. “What happened this time?” she asks, gently.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You tell her, in a simple recitation of facts. “But I get it,” you say. “It’s in my head, or I’m a fraud. Just drop me back off at the boardwalk. I won’t bother you again.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'She nods and starts the car. “I’ll drop you off,” she says. “What time can you be ready tomorrow?”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Ready for ',
+	      React.createElement(
+	        'em',
+	        null,
+	        'what'
+	      ),
+	      '?”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'She jerks her head towards the back of the car and you spin around. Sitting on the back seat is a glove—no, a matched pair of gloves.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“It was right where you said it would be, under a bush by the base of the stairs. I picked it up before you did your fainting flower bit. When I get in to work on Monday I need to have some words with CSI about their thoroughness.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You don’t say anything, just stare at her, so she adds, “Look, just relax, Pietro. I believe you. And I need your help.”'
 	    )
 	  )];
 	  return React.createElement(_.RenderSection, { currentSection: currentSection, sections: sections });
