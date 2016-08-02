@@ -165,6 +165,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         the house,” you <MapFromInventory from={inventory.c1_face}
           to={{
             undefined: "say",
+            object: "say",
             cutter: "assert",
             urn: "insist"
           }} />.
@@ -172,6 +173,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         Her face is <MapFromInventory from={inventory.c1_face}
           to={{
             undefined: "expressionless",
+            object: "tense",
             cutter: "twitching a little",
             urn: "a swirl of conflicting emotions"
           }} />.

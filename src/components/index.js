@@ -27,16 +27,21 @@ export const FromInventory = ({inventory, offset="last"}) => {
   return <span dangerouslySetInnerHTML={{__html: _fromInventory(inventory, offset)}} />
 }
 
+/* A simple map implementation for any arbitrary input and output */
 export const Map = ({from, to}) => {
   return <span dangerouslySetInnerHTML={{__html: to[from]}} />
 }
-export const MapFromInventory = ({from, to}) => {
-  var _from = _fromInventory(from)
+
+/* For a given value of an inventory property, return the value from the `from`
+map that matches. Accepts an optional `offset` which is passed through to `fromInventory` */
+export const MapFromInventory = ({from, to, offset="last"}) => {
+  var _from = _fromInventory(from, offset)
   return <span dangerouslySetInnerHTML={{__html: to[_from]}} />
 }
 MapFromInventory.propTypes = {
   from: React.PropTypes.string,
-  to: React.PropTypes.object.isRequired
+  to: React.PropTypes.object.isRequired,
+  offset: React.PropTypes.anything
 }
 
 
@@ -69,36 +74,6 @@ const iteratedExaminable = (items) => (
   </span>
 )
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-      // Set the expansion list for a given tag
-      onSetExpansions: (expansions, tag, currentExpansion) => {
-        var exp = {}
-        exp[tag] = {currentExpansion: currentExpansion, expansions: expansions}
-        dispatch(setExpansions(exp, tag, currentExpansion))
-      },
-      onUpdateInventory: (sel, tag) => {
-        var inv = {}
-        inv[tag] = sel
-        dispatch(updateInventory(inv))
-      },
-      onCompleteSection: () => {
-        dispatch(showNextSection())
-      },
-      onCompleteChapter: () => {
-        dispatch(showNextChapter())
-      }
-    }
-}
-const mapStateToProps = (state, ownProps, currentExpansion=0) => {
-  if (state.expansions.hasOwnProperty(ownProps.tag)) {
-    currentExpansion = state.expansions[ownProps.tag].currentExpansion
-  }
-  return {
-    currentExpansion: currentExpansion
-  }
-}
-
 class _Examinable extends React.Component {
   constructor(props) {
     super(props);
@@ -116,11 +91,12 @@ class _Examinable extends React.Component {
     e.preventDefault()
     var currentExpansion = this.state.currentExpansion + 1
     this.props.onSetExpansions(this.props.expansions, this.props.tag, currentExpansion)
+    this.props.onUpdateInventory(e.target.textContent, this.props.tag)
 
     // Are we at the last set? If so, there may be some events to fire
     if (currentExpansion === this.props.expansions.length - 1) {
 
-      this.props.onUpdateInventory(e.target.textContent, this.props.tag)
+      //this.props.onUpdateInventory(e.target.textContent, this.props.tag)
 
       if (this.props.nextUnit === "chapter") {
         this.props.onCompleteChapter()
@@ -167,6 +143,36 @@ _Examinable.defaultProps = {
   nextUnit: 'section',
 }
 
+const mapDispatchToProps = (dispatch) => {
+    return {
+      // Set the expansion list for a given tag
+      onSetExpansions: (expansions, tag, currentExpansion) => {
+        var exp = {}
+        exp[tag] = {currentExpansion: currentExpansion, expansions: expansions}
+        dispatch(setExpansions(exp, tag, currentExpansion))
+      },
+      onUpdateInventory: (sel, tag) => {
+        var inv = {}
+        inv[tag] = sel
+        dispatch(updateInventory(inv))
+      },
+      onCompleteSection: () => {
+        dispatch(showNextSection())
+      },
+      onCompleteChapter: () => {
+        dispatch(showNextChapter())
+      }
+    }
+}
+
+const mapStateToProps = (state, ownProps, currentExpansion=0) => {
+  if (state.expansions.hasOwnProperty(ownProps.tag)) {
+    currentExpansion = state.expansions[ownProps.tag].currentExpansion
+  }
+  return {
+    currentExpansion: currentExpansion
+  }
+}
 export const Examinable = connect(
   mapStateToProps,
   mapDispatchToProps

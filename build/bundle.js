@@ -6202,22 +6202,29 @@
 	  return React.createElement('span', { dangerouslySetInnerHTML: { __html: _fromInventory(inventory, offset) } });
 	};
 
+	/* A simple map implementation for any arbitrary input and output */
 	var Map = exports.Map = function Map(_ref4) {
 	  var from = _ref4.from;
 	  var to = _ref4.to;
 
 	  return React.createElement('span', { dangerouslySetInnerHTML: { __html: to[from] } });
 	};
+
+	/* For a given value of an inventory property, return the value from the `from`
+	map that matches. Accepts an optional `offset` which is passed through to `fromInventory` */
 	var MapFromInventory = exports.MapFromInventory = function MapFromInventory(_ref5) {
 	  var from = _ref5.from;
 	  var to = _ref5.to;
+	  var _ref5$offset = _ref5.offset;
+	  var offset = _ref5$offset === undefined ? "last" : _ref5$offset;
 
-	  var _from = _fromInventory(from);
+	  var _from = _fromInventory(from, offset);
 	  return React.createElement('span', { dangerouslySetInnerHTML: { __html: to[_from] } });
 	};
 	MapFromInventory.propTypes = {
 	  from: React.PropTypes.string,
-	  to: React.PropTypes.object.isRequired
+	  to: React.PropTypes.object.isRequired,
+	  offset: React.PropTypes.anything
 	};
 
 	// Display all items in an expansion _except_ the user's selection.
@@ -6279,38 +6286,6 @@
 	  );
 	};
 
-	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-	  return {
-	    // Set the expansion list for a given tag
-	    onSetExpansions: function onSetExpansions(expansions, tag, currentExpansion) {
-	      var exp = {};
-	      exp[tag] = { currentExpansion: currentExpansion, expansions: expansions };
-	      dispatch((0, _actions.setExpansions)(exp, tag, currentExpansion));
-	    },
-	    onUpdateInventory: function onUpdateInventory(sel, tag) {
-	      var inv = {};
-	      inv[tag] = sel;
-	      dispatch((0, _actions.updateInventory)(inv));
-	    },
-	    onCompleteSection: function onCompleteSection() {
-	      dispatch((0, _actions.showNextSection)());
-	    },
-	    onCompleteChapter: function onCompleteChapter() {
-	      dispatch((0, _actions.showNextChapter)());
-	    }
-	  };
-	};
-	var mapStateToProps = function mapStateToProps(state, ownProps) {
-	  var currentExpansion = arguments.length <= 2 || arguments[2] === undefined ? 0 : arguments[2];
-
-	  if (state.expansions.hasOwnProperty(ownProps.tag)) {
-	    currentExpansion = state.expansions[ownProps.tag].currentExpansion;
-	  }
-	  return {
-	    currentExpansion: currentExpansion
-	  };
-	};
-
 	var _Examinable = function (_React$Component) {
 	  _inherits(_Examinable, _React$Component);
 
@@ -6339,11 +6314,12 @@
 	      e.preventDefault();
 	      var currentExpansion = this.state.currentExpansion + 1;
 	      this.props.onSetExpansions(this.props.expansions, this.props.tag, currentExpansion);
+	      this.props.onUpdateInventory(e.target.textContent, this.props.tag);
 
 	      // Are we at the last set? If so, there may be some events to fire
 	      if (currentExpansion === this.props.expansions.length - 1) {
 
-	        this.props.onUpdateInventory(e.target.textContent, this.props.tag);
+	        //this.props.onUpdateInventory(e.target.textContent, this.props.tag)
 
 	        if (this.props.nextUnit === "chapter") {
 	          this.props.onCompleteChapter();
@@ -6398,6 +6374,38 @@
 	  nextUnit: 'section'
 	};
 
+	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+	  return {
+	    // Set the expansion list for a given tag
+	    onSetExpansions: function onSetExpansions(expansions, tag, currentExpansion) {
+	      var exp = {};
+	      exp[tag] = { currentExpansion: currentExpansion, expansions: expansions };
+	      dispatch((0, _actions.setExpansions)(exp, tag, currentExpansion));
+	    },
+	    onUpdateInventory: function onUpdateInventory(sel, tag) {
+	      var inv = {};
+	      inv[tag] = sel;
+	      dispatch((0, _actions.updateInventory)(inv));
+	    },
+	    onCompleteSection: function onCompleteSection() {
+	      dispatch((0, _actions.showNextSection)());
+	    },
+	    onCompleteChapter: function onCompleteChapter() {
+	      dispatch((0, _actions.showNextChapter)());
+	    }
+	  };
+	};
+
+	var mapStateToProps = function mapStateToProps(state, ownProps) {
+	  var currentExpansion = arguments.length <= 2 || arguments[2] === undefined ? 0 : arguments[2];
+
+	  if (state.expansions.hasOwnProperty(ownProps.tag)) {
+	    currentExpansion = state.expansions[ownProps.tag].currentExpansion;
+	  }
+	  return {
+	    currentExpansion: currentExpansion
+	  };
+	};
 	var Examinable = exports.Examinable = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_Examinable);
 
 /***/ },
@@ -6776,6 +6784,7 @@
 	      React.createElement(_components.MapFromInventory, { from: inventory.c1_face,
 	        to: {
 	          undefined: "say",
+	          object: "say",
 	          cutter: "assert",
 	          urn: "insist"
 	        } }),
@@ -6783,6 +6792,7 @@
 	      React.createElement(_components.MapFromInventory, { from: inventory.c1_face,
 	        to: {
 	          undefined: "expressionless",
+	          object: "tense",
 	          cutter: "twitching a little",
 	          urn: "a swirl of conflicting emotions"
 	        } }),
@@ -7413,7 +7423,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '"Michael and Michelle," she says, and you can\'t help but snort. Whitby reveals just a hint of a smile. "I\'m a friend of the family, but, yeah, no points for originality. Anyway, these two are Alan’s niece and nephew. Alan and Jared had a sister, Christina, who passed away some years back. The twins still live in her house over in Sea Isle. Don’t know them personally."'
+	      '"Michael and Michelle Herschel," she says, and you can\'t help but snort. "Yeah, no points for originality. Anyway, these two are Alan’s niece and nephew. Alan and Jared had a sister, Christina, who passed away some years back. The twins still live in her house over in Sea Isle. Don’t know them personally."'
 	    ),
 	    React.createElement(
 	      'p',
@@ -7448,28 +7458,37 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'She thinks for a long time before answering. “I admit I wouldn\'t have looked twice at this case if it had been assigned to me. This town is crazy year round, but especially in the summer— there\'s plenty to do without digging up trouble. When Sarah called me and I reviewed the file, I found a few things that made me wonder: Alan was a sharp old man, it would be unlike him to make such a mistake. And his pill bottle was found ',
+	      'Her phone rings before she can answer. Whitby listens and nods a few times, then covers the receiver. “I need to take this, can you wait outside?”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Banished, you slink out through the bullpen to a nearby waiting area. This isn’t general intake—that would be swarming with impatient people who were drunk, angry, or, most likely, both. Instead this seems to be where they park visitors who are here voluntarily, to speak with the detectives. Nobody looks thrilled to be here, but at least they aren’t puking.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You’re flipping through a 1982 issue of ',
 	      React.createElement(
 	        'em',
 	        null,
-	        'outside'
+	        'Readers Digest'
 	      ),
-	      ' his bedroom, when he was locked in—”'
+	      ' (without actually reading a word) when you hear a woman complain, “But Detective Whitby specifically told me to come in.” You look up and with a jolt recognize Healey\'s niece from her photo.'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      '“Just like I saw.”'
-	    ),
-	    React.createElement(
-	      'p',
-	      null,
-	      '“—and who locks their bedroom door when there\'s just family around?” She shakes her head. “Not enough to act on, but it did make me think. And now here you are, telling me things I do know that you couldn’t know, and even some things I didn’t know at all. I don\'t know what that means.”'
-	    ),
-	    React.createElement(
-	      'p',
-	      null,
-	      'You admit you don\'t either.'
+	      'She’s told to cool her heels and sits down across from you. She notices that you’re ',
+	      React.createElement(_components.MapFromInventory, { from: inventory.c3_staring, to: { undefined: " ",
+	          staring: "staring at her ",
+	          hands: " ",
+	          shoes: " ",
+	          purse: " ",
+	          her: " "
+	        } }),
+	      React.createElement(_components.Examinable, { expansions: ["staring", ["hands", "shoes", "purse"], "staring at her"], tag: 'c3_staring' }),
+	      '.'
 	    )
 	  )];
 	  return React.createElement(_.RenderSection, { currentSection: currentSection, sections: sections });

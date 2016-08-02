@@ -77,9 +77,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         her cousin by marriage." She flips <Examinable expansions={["another picture", "a picture of two adult twins"]} tag="c1_photos3" /> over.</p>
     </section>,
     <section>
-      <p>"Michael and Michelle," she says, and you can't help but snort. Whitby reveals just a
-        hint of a smile. "I'm a friend of the family,
-        but, yeah, no points for originality. Anyway, these two are Alan’s niece and nephew. Alan and Jared had a sister,
+      <p>"Michael and Michelle Herschel," she says, and you can't help but snort. "Yeah, no points for
+        originality. Anyway, these two are Alan’s niece and nephew. Alan and Jared had a sister,
         Christina, who passed away some years back. The twins still live in her house over in Sea Isle.
       Don’t know them personally."</p>
       <p>“Last one,” she says, and hands you <Examinable expansions={["another picture of Healey", "another picture of Healey, with his arm around a woman his age"]} tag="c1_photos4"/>.</p>
@@ -97,20 +96,36 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         it just added up to a tragic but ordinary death.”
       </p>
       <p>"Do you still think that?" you ask.</p>
-      <p>She thinks for a long time before answering. “I admit I wouldn't
-        have looked twice at this case if it had been assigned to me. This town is crazy
-        year round, but especially in the summer—
-        there's plenty to do without digging up trouble. When Sarah called me and I reviewed the
-        file, I found a few things that made me wonder: Alan was a sharp old man, it would be unlike him to
-        make such a mistake. And his pill bottle was found <em>outside</em> his bedroom,
-        when he was locked in—”
+      <p>Her phone rings before she can answer. Whitby listens and nods a few times, then
+        covers the receiver. “I need to take this, can you wait outside?”
       </p>
-      <p>“Just like I saw.”</p>
-      <p>“—and who locks their bedroom door when there's just family around?” She shakes her head.
-        “Not enough to act on, but it did make me think. And now here you are, telling me
-        things I do know that you couldn’t know, and even some things I didn’t know at all.
-      I don't know what that means.”</p>
-      <p>You admit you don't either.</p>
+      <p>Banished, you slink out through the bullpen to a nearby waiting area. This isn’t general
+        intake—that would be swarming with impatient people who were drunk, angry, or, most likely, both.
+        Instead this seems to be where they park visitors who are here voluntarily, to speak with
+        the detectives. Nobody looks
+        thrilled to be here, but at least they aren’t puking.
+      </p>
+      <p>
+        You’re flipping through a 1982 issue of <em>Readers Digest</em> (without actually reading a word)
+        when you hear a woman complain, “But Detective Whitby specifically told me to come in.” You look up
+        and with a jolt recognize Healey's niece from her photo.
+      </p>
+      <p>She’s told to cool her heels and sits down across from you. She notices that
+        you’re <MapFromInventory from={inventory.c3_staring} to={
+          { undefined: " ",
+            staring: "staring at her ",
+            hands: " ",
+            shoes: " ",
+            purse: " ",
+            her: " "
+          }
+        }/>
+
+        <Examinable expansions={["staring", ["hands", "shoes", "purse"], "staring at her"]} tag="c3_staring"/>.
+
+
+            </p>
+
     </section>
   ]
   return <RenderSection currentSection={currentSection} sections={sections} />
