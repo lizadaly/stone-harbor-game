@@ -41,7 +41,9 @@ export const MapFromInventory = ({from, to, offset="last"}) => {
 MapFromInventory.propTypes = {
   from: React.PropTypes.string,
   to: React.PropTypes.object.isRequired,
-  offset: React.PropTypes.anything
+  offset: React.PropTypes.oneOfType([
+      React.PropTypes.string,
+      React.PropTypes.number])
 }
 
 

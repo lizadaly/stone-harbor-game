@@ -6224,7 +6224,7 @@
 	MapFromInventory.propTypes = {
 	  from: React.PropTypes.string,
 	  to: React.PropTypes.object.isRequired,
-	  offset: React.PropTypes.anything
+	  offset: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number])
 	};
 
 	// Display all items in an expansion _except_ the user's selection.
@@ -7474,12 +7474,12 @@
 	        null,
 	        'Readers Digest'
 	      ),
-	      ' (without actually reading a word) when you hear a woman complain, “But Detective Whitby specifically told me to come in.” You look up and with a jolt recognize Healey\'s niece from her photo.'
+	      '(incredibly, you think you read this one already) when an argument ensues nearby. A civilian is complaining to an impassive young officer: “But Detective Whitby specifically told me to come in!” You look up and with a jolt recognize Healey\'s niece from her photo.'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'She’s told to cool her heels and sits down across from you. She notices that you’re ',
+	      'She’s told to cool her heels and she sits down across from you. She notices that you’re ',
 	      React.createElement(_components.MapFromInventory, { from: inventory.c3_staring, to: { undefined: " ",
 	          staring: "staring at her ",
 	          hands: " ",
@@ -7488,7 +7488,47 @@
 	          her: " "
 	        } }),
 	      React.createElement(_components.Examinable, { expansions: ["staring", ["hands", "shoes", "purse"], "staring at her"], tag: 'c3_staring' }),
-	      '.'
+	      '.',
+	      React.createElement(_components.MapFromInventory, { from: inventory.c3_staring, to: {
+	          hands: " Her hands are well-kept, clean but not manicured.",
+	          shoes: " Her shoes are clunky, unfashionable. Probably orthotics.",
+	          purse: " The purse is brown? Tan? Ecru? Sensible for sure."
+	        } })
+	    )
+	  ), React.createElement(
+	    'section',
+	    null,
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Could be worse,” you say, with a rueful smile. “Did ya see the ',
+	      React.createElement(
+	        'em',
+	        null,
+	        'other'
+	      ),
+	      ' waiting room?”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'She doesn’t respond right away but who can blame her—you’re a creepy stranger chatting her up in a police station. ',
+	      React.createElement(_components.MapFromInventory, { from: inventory.c3_staring, to: {
+	          hands: '“Here,” you say, and pass her a handiwipe packet you swiped from Whitby’s room.\n          “For when you leave. There’s only one bathroom and it’s out of soap.”',
+	          shoes: ' You make a show of trying to get comfortable in your seat. “Man, all day on shift and now these\n          chairs? I’m ready to confess to anything.”',
+	          purse: ' “Say I hate to bother you, but do you have a tissue?” Women always have tissues in their purse.\n          You wipe your eyes. “There must be mold in here or something, my allergies are killin’ me.”\n          '
+	        } })
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“',
+	      React.createElement(_components.MapFromInventory, { from: inventory.c3_staring, to: {
+	          hands: "Thanks",
+	          shoes: "Yeah, me too",
+	          purse: "Sorry, no"
+	        } }),
+	      ',” she says slowly. She looks around, probably hoping for another woman to save her from this encounter, but it’s pretty much nothing but creepy dudes. Gaining someone’s trust is a lot harder when they aren’t paying you.'
 	    )
 	  )];
 	  return React.createElement(_.RenderSection, { currentSection: currentSection, sections: sections });

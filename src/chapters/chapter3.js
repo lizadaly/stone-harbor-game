@@ -106,11 +106,13 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         thrilled to be here, but at least they aren’t puking.
       </p>
       <p>
-        You’re flipping through a 1982 issue of <em>Readers Digest</em> (without actually reading a word)
-        when you hear a woman complain, “But Detective Whitby specifically told me to come in.” You look up
+        You’re flipping through a 1982 issue of <em>Readers Digest</em>
+        (incredibly, you think you read this one already)
+        when an argument ensues nearby. A civilian is complaining to an impassive young officer:
+        “But Detective Whitby specifically told me to come in!” You look up
         and with a jolt recognize Healey's niece from her photo.
       </p>
-      <p>She’s told to cool her heels and sits down across from you. She notices that
+      <p>She’s told to cool her heels and she sits down across from you. She notices that
         you’re <MapFromInventory from={inventory.c3_staring} to={
           { undefined: " ",
             staring: "staring at her ",
@@ -122,10 +124,34 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         }/>
 
         <Examinable expansions={["staring", ["hands", "shoes", "purse"], "staring at her"]} tag="c3_staring"/>.
-
-
-            </p>
-
+        <MapFromInventory from={inventory.c3_staring} to={{
+          hands: " Her hands are well-kept, clean but not manicured.",
+          shoes: " Her shoes are clunky, unfashionable. Probably orthotics.",
+          purse: " The purse is brown? Tan? Ecru? Sensible for sure."
+        }}/>
+      </p>
+    </section>,
+    <section>
+      <p>“Could be worse,” you say, with a rueful smile. “Did ya see the <em>other</em> waiting room?”</p>
+      <p>She doesn’t respond right away but who can blame her—you’re a creepy stranger
+        chatting her up in a police station. <MapFromInventory from={inventory.c3_staring} to={{
+          hands: `“Here,” you say, and pass her a handiwipe packet you swiped from Whitby’s room.
+          “For when you leave. There’s only one bathroom and it’s out of soap.”`,
+          shoes: ` You make a show of trying to get comfortable in your seat. “Man, all day on shift and now these
+          chairs? I’m ready to confess to anything.”`,
+          purse: ` “Say I hate to bother you, but do you have a tissue?” Women always have tissues in their purse.
+          You wipe your eyes. “There must be mold in here or something, my allergies are killin’ me.”
+          `
+        }}/>
+      </p>
+      <p>“<MapFromInventory from={inventory.c3_staring} to={{
+        hands: "Thanks",
+        shoes: "Yeah, me too",
+        purse: "Sorry, no"
+      }}/>,” she says slowly. She looks around, probably hoping for another woman to
+        save her from this encounter, but it’s pretty much nothing but creepy dudes. Gaining
+        someone’s trust is a lot harder when they aren’t paying you.
+      </p>
     </section>
   ]
   return <RenderSection currentSection={currentSection} sections={sections} />
