@@ -76,6 +76,15 @@ const iteratedExaminable = (items) => (
   </span>
 )
 
+/* An array of expansions that can be "examined." Accepts an array and
+reveals items one-by-one. Arrays may be nested one-level deep; if the current
+item is an array, each value will be displayed separated by commas and ending
+with "and". When only one item remains, nextUnit is fired (which may be null)
+in which case no event is triggered.
+
+Each time an expansion is revealed, onSetExpansions is called and onUpdateInventory
+sets the inventory property `key` to the current selected value. */
+
 class _Examinable extends React.Component {
   constructor(props) {
     super(props);
@@ -151,12 +160,14 @@ const mapDispatchToProps = (dispatch) => {
       onSetExpansions: (expansions, tag, currentExpansion) => {
         var exp = {}
         exp[tag] = {currentExpansion: currentExpansion, expansions: expansions}
-        dispatch(setExpansions(exp, tag, currentExpansion))
+        dispatch(setExpansions(exp))
+        return exp
       },
       onUpdateInventory: (sel, tag) => {
         var inv = {}
         inv[tag] = sel
         dispatch(updateInventory(inv))
+        return inv
       },
       onCompleteSection: () => {
         dispatch(showNextSection())

@@ -6286,6 +6286,15 @@
 	  );
 	};
 
+	/* An array of expansions that can be "examined." Accepts an array and
+	reveals items one-by-one. Arrays may be nested one-level deep; if the current
+	item is an array, each value will be displayed separated by commas and ending
+	with "and". When only one item remains, nextUnit is fired (which may be null)
+	in which case no event is triggered.
+
+	Each time an expansion is revealed, onSetExpansions is called and onUpdateInventory
+	sets the inventory property `key` to the current selected value. */
+
 	var _Examinable = function (_React$Component) {
 	  _inherits(_Examinable, _React$Component);
 
@@ -6380,12 +6389,14 @@
 	    onSetExpansions: function onSetExpansions(expansions, tag, currentExpansion) {
 	      var exp = {};
 	      exp[tag] = { currentExpansion: currentExpansion, expansions: expansions };
-	      dispatch((0, _actions.setExpansions)(exp, tag, currentExpansion));
+	      dispatch((0, _actions.setExpansions)(exp));
+	      return exp;
 	    },
 	    onUpdateInventory: function onUpdateInventory(sel, tag) {
 	      var inv = {};
 	      inv[tag] = sel;
 	      dispatch((0, _actions.updateInventory)(inv));
+	      return inv;
 	    },
 	    onCompleteSection: function onCompleteSection() {
 	      dispatch((0, _actions.showNextSection)());
