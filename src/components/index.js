@@ -1,5 +1,5 @@
 const React = require('react')
-import { showNextSection, showNextChapter, updateInventory, setExpansions } from "../actions"
+import { showNextSection, showNextChapter, updateInventory, setExpansions, updateStateCounter } from "../actions"
 import { inverter } from '../lib'
 import { connect } from 'react-redux'
 
@@ -120,8 +120,11 @@ class _Examinable extends React.Component {
       else if (this.props.nextUnit === "none")  {
         // no-op
       }
-
     }
+    // Tick the clock
+    this.props.onUpdateCounter()
+    
+
     this.setState({
       currentExpansion: currentExpansion,
     })
@@ -156,24 +159,26 @@ _Examinable.defaultProps = {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-      // Set the expansion list for a given tag
+      // Set the expansion list for a given tag and return the expansion object
       onSetExpansions: (expansions, tag, currentExpansion) => {
         var exp = {}
         exp[tag] = {currentExpansion: currentExpansion, expansions: expansions}
         dispatch(setExpansions(exp))
-        return exp
       },
+      // Set the inventory object and return the changed inventory
       onUpdateInventory: (sel, tag) => {
         var inv = {}
         inv[tag] = sel
         dispatch(updateInventory(inv))
-        return inv
       },
       onCompleteSection: () => {
         dispatch(showNextSection())
       },
       onCompleteChapter: () => {
         dispatch(showNextChapter())
+      },
+      onUpdateCounter: () => {
+        dispatch(updateStateCounter())
       }
     }
 }
@@ -183,7 +188,7 @@ const mapStateToProps = (state, ownProps, currentExpansion=0) => {
     currentExpansion = state.expansions[ownProps.tag].currentExpansion
   }
   return {
-    currentExpansion: currentExpansion
+    currentExpansion: currentExpansion,
   }
 }
 export const Examinable = connect(

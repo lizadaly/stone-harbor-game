@@ -63,6 +63,10 @@
 
 	var _reduxPersist = __webpack_require__(63);
 
+	var _counter = __webpack_require__(316);
+
+	var _actions = __webpack_require__(55);
+
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -71,15 +75,6 @@
 
 	var React = __webpack_require__(3);
 	var ReactDOM = __webpack_require__(179);
-
-
-	var store = (0, _redux.createStore)(_reducers.gameApp, undefined, (0, _reduxPersist.autoRehydrate)());
-	(0, _reduxPersist.persistStore)(store);
-	/*
-	let unsubscribe = store.subscribe(() =>
-	 console.log(store.getState())
-	)
-	*/
 
 	var _Game = function (_React$Component) {
 	  _inherits(_Game, _React$Component);
@@ -102,6 +97,7 @@
 	      return React.createElement(
 	        'div',
 	        null,
+	        React.createElement(_counter.Counter, null),
 	        Array(this.props.currentChapter + 1).fill().map(function (_, i) {
 	          return React.createElement(
 	            'chapter',
@@ -116,6 +112,10 @@
 	  return _Game;
 	}(React.Component);
 
+	_Game.contextTypes = {
+	  store: React.PropTypes.object.isRequired
+	};
+
 	var mapStateToProps = function mapStateToProps(state) {
 	  return {
 	    currentChapter: state.bookmarks.length - 1
@@ -125,6 +125,22 @@
 	var Game = exports.Game = (0, _reactRedux.connect)(mapStateToProps)(_Game);
 
 	$(document).ready(function () {
+	  var store = {};
+	  store = (0, _redux.createStore)(_reducers.gameApp, undefined, (0, _reduxPersist.autoRehydrate)());
+	  var persister = (0, _reduxPersist.persistStore)(store);
+
+	  window.addEventListener("popstate", function (e) {
+	    if (history.state) {
+	      // Use this state instead of reserializing
+	      //  history.state.counter = parseInt(location.hash.substring(1))
+	      if (history.state.counter != store.getState().counter) {
+	        persister.rehydrate(history.state);
+	      }
+	    }
+	  });
+	  //let unsubscribe = store.subscribe(() =>
+	  //console.log(store.getState())
+	  //)
 	  ReactDOM.render(React.createElement(
 	    _reactRedux.Provider,
 	    { store: store },
@@ -5582,10 +5598,36 @@
 	  }
 	}
 
+	function counter() {
+	  var state = arguments.length <= 0 || arguments[0] === undefined ? 0 : arguments[0];
+	  var action = arguments[1];
+
+	  switch (action.type) {
+	    case _actions.UPDATE_STATE_COUNTER:
+	      return state + 1;
+	    default:
+	      return state;
+	  }
+	}
+
+	function statePopped() {
+	  var state = arguments.length <= 0 || arguments[0] === undefined ? false : arguments[0];
+	  var action = arguments[1];
+
+	  switch (action.type) {
+	    case _actions.SET_STATE_BOOLEAN:
+	      return action.statePopped;
+	    default:
+	      return state;
+	  }
+	}
+
 	var gameApp = exports.gameApp = (0, _redux.combineReducers)({
 	  bookmarks: bookmarks,
 	  inventory: inventory,
-	  expansions: expansions
+	  expansions: expansions,
+	  counter: counter,
+	  statePopped: statePopped
 	});
 
 /***/ },
@@ -5601,6 +5643,8 @@
 	var SHOW_NEXT_CHAPTER = exports.SHOW_NEXT_CHAPTER = "SHOW_NEXT_CHAPTER";
 	var UPDATE_INVENTORY = exports.UPDATE_INVENTORY = "UPDATE_INVENTORY";
 	var SET_EXPANSIONS = exports.SET_EXPANSIONS = "SET_EXPANSIONS";
+	var UPDATE_STATE_COUNTER = exports.UPDATE_STATE_COUNTER = "UPDATE_STATE_COUNTER";
+	var SET_STATE_BOOLEAN = exports.SET_STATE_BOOLEAN = "SET_STATE_BOOLEAN";
 
 	// Show the next section of text
 	var showNextSection = exports.showNextSection = function showNextSection(section) {
@@ -5632,6 +5676,20 @@
 	  return {
 	    type: UPDATE_INVENTORY,
 	    inventory: inventory
+	  };
+	};
+	// Update the atomic counter for the current state change
+	var updateStateCounter = exports.updateStateCounter = function updateStateCounter(counter) {
+	  return {
+	    type: UPDATE_STATE_COUNTER,
+	    counter: counter
+	  };
+	};
+	// Flip the toggle to indicate that a browser history state was just popped
+	var setStateBoolean = exports.setStateBoolean = function setStateBoolean(statePopped) {
+	  return {
+	    type: SET_STATE_BOOLEAN,
+	    statePopped: statePopped
 	  };
 	};
 
@@ -5799,7 +5857,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'You should really replace that old thing, but the room’s dim and the customer doesn’t notice. He’s distracted by the usual trappings of a boardwalk fortune-teller: tarot decks, zodiac paintings, an absurdly large crystal ball. His preconceptions satisfied, he sits across from you at the cramped circular table.'
+	      'You should really get a new curtain, but the room’s dim and the customer doesn’t notice. He’s distracted by the usual trappings of a boardwalk fortune-teller: tarot decks, zodiac paintings, an absurdly large crystal ball. His preconceptions satisfied, he sits across from you at the cramped circular table.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -6341,6 +6399,9 @@
 	            // no-op
 	          }
 	      }
+	      // Tick the clock
+	      this.props.onUpdateCounter();
+
 	      this.setState({
 	        currentExpansion: currentExpansion
 	      });
@@ -6385,24 +6446,26 @@
 
 	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 	  return {
-	    // Set the expansion list for a given tag
+	    // Set the expansion list for a given tag and return the expansion object
 	    onSetExpansions: function onSetExpansions(expansions, tag, currentExpansion) {
 	      var exp = {};
 	      exp[tag] = { currentExpansion: currentExpansion, expansions: expansions };
 	      dispatch((0, _actions.setExpansions)(exp));
-	      return exp;
 	    },
+	    // Set the inventory object and return the changed inventory
 	    onUpdateInventory: function onUpdateInventory(sel, tag) {
 	      var inv = {};
 	      inv[tag] = sel;
 	      dispatch((0, _actions.updateInventory)(inv));
-	      return inv;
 	    },
 	    onCompleteSection: function onCompleteSection() {
 	      dispatch((0, _actions.showNextSection)());
 	    },
 	    onCompleteChapter: function onCompleteChapter() {
 	      dispatch((0, _actions.showNextChapter)());
+	    },
+	    onUpdateCounter: function onUpdateCounter() {
+	      dispatch((0, _actions.updateStateCounter)());
 	    }
 	  };
 	};
@@ -29048,6 +29111,82 @@
 	var ReactMount = __webpack_require__(308);
 
 	module.exports = ReactMount.renderSubtreeIntoContainer;
+
+/***/ },
+/* 316 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.Counter = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _reactRedux = __webpack_require__(1);
+
+	var _actions = __webpack_require__(55);
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	/* The global state counter */
+	var React = __webpack_require__(3);
+
+	var _Counter = function (_React$Component) {
+	  _inherits(_Counter, _React$Component);
+
+	  function _Counter(props) {
+	    _classCallCheck(this, _Counter);
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(_Counter).call(this, props));
+
+	    console.log("Pushing initial state");
+	    _this.updatePushState(props.serializedState, props.counter);
+	    return _this;
+	  }
+
+	  _createClass(_Counter, [{
+	    key: 'updatePushState',
+	    value: function updatePushState(serializedState, counter) {
+	      console.log("Updating push state with counter: ", counter);
+	      history.pushState(serializedState, "", "#" + counter);
+	    }
+	  }, {
+	    key: 'componentWillReceiveProps',
+	    value: function componentWillReceiveProps(p) {
+	      console.log("Previous counter: ", this.props.counter);
+
+	      if (p.counter > this.props.counter) {
+	        this.updatePushState(p.serializedState, p.counter);
+	      }
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return null;
+	    }
+	  }]);
+
+	  return _Counter;
+	}(React.Component);
+
+	_Counter.defaultProps = {
+	  counter: 0
+	};
+
+	var mapStateToProps = function mapStateToProps(state) {
+	  return {
+	    counter: state.counter,
+	    serializedState: state //{bookmarks: state.bookmarks, inventory: state.inventory, expansions: state.expansions}
+	  };
+	};
+	var Counter = exports.Counter = (0, _reactRedux.connect)(mapStateToProps, { setStateBoolean: _actions.setStateBoolean })(_Counter);
 
 /***/ }
 /******/ ]);

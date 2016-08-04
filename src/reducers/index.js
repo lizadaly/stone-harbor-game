@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
 import { SHOW_NEXT_CHAPTER, SHOW_NEXT_SECTION, UPDATE_INVENTORY,
-         SET_EXPANSIONS} from "../actions"
+         SET_EXPANSIONS, UPDATE_STATE_COUNTER, SET_STATE_BOOLEAN } from "../actions"
 
 function bookmarks(state=[0], action) {
   switch (action.type) {
@@ -37,8 +37,28 @@ function expansions(state=[], action) {
   }
 }
 
+function counter(state=0, action) {
+  switch (action.type) {
+    case UPDATE_STATE_COUNTER:
+      return state + 1
+    default:
+      return state
+  }
+}
+
+function statePopped(state=false, action) {
+  switch (action.type) {
+    case SET_STATE_BOOLEAN:
+      return action.statePopped
+    default:
+      return state
+  }
+}
+
 export const gameApp = combineReducers({
   bookmarks,
   inventory,
-  expansions
+  expansions,
+  counter,
+  statePopped
 })

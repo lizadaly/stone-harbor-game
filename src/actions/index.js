@@ -2,6 +2,8 @@ export const SHOW_NEXT_SECTION = "SHOW_NEXT_SECTION"
 export const SHOW_NEXT_CHAPTER = "SHOW_NEXT_CHAPTER"
 export const UPDATE_INVENTORY = "UPDATE_INVENTORY"
 export const SET_EXPANSIONS = "SET_EXPANSIONS"
+export const UPDATE_STATE_COUNTER = "UPDATE_STATE_COUNTER"
+export const SET_STATE_BOOLEAN = "SET_STATE_BOOLEAN"
 
 // Show the next section of text
 export const showNextSection = (section) => {
@@ -33,5 +35,19 @@ export const updateInventory = (inventory) => {
   return {
     type: UPDATE_INVENTORY,
     inventory
+  }
+}
+// Update the atomic counter for the current state change
+export const updateStateCounter = (counter) => {
+  return {
+    type: UPDATE_STATE_COUNTER,
+    counter
+  }
+}
+// Flip the toggle to indicate that a browser history state was just popped
+export const setStateBoolean = (statePopped) => {
+  return {
+    type: SET_STATE_BOOLEAN,
+    statePopped
   }
 }

@@ -70,7 +70,7 @@ const _Prologue = ({currentSection, inventory}) => {
       <h3>In your reading room</h3>
       <p>“Do you seek the wisdom of the ancients? Come forth!” After a brief hesitation, the beaded curtain parts
       and your next customer steps through. A few stray beads fall off and scatter to the corners.</p>
-      <p>You should really replace that old thing, but the room’s dim and the customer doesn’t notice.
+      <p>You should really get a new curtain, but the room’s dim and the customer doesn’t notice.
         He’s distracted by the usual trappings
         of a boardwalk fortune-teller: tarot decks, zodiac paintings,
         an absurdly large crystal ball. His preconceptions satisfied, he sits across from you at
