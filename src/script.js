@@ -9,6 +9,8 @@ import { persistStore, autoRehydrate } from 'redux-persist'
 import { Counter } from './components/counter'
 import { setStateBoolean } from "./actions"
 
+window.lockHistory = false  // GLOBAL to set the history for the browser as locked; unlocked on next tick
+
 class _Game extends React.Component {
     constructor(props) {
       super(props)
@@ -46,16 +48,16 @@ export const Game = connect(
 )(_Game)
 
 $(document).ready(function () {
-    var store = {}
-    store = createStore(gameApp, undefined, autoRehydrate())
+    var store = createStore(gameApp, undefined, autoRehydrate())
     var persister = persistStore(store)
-
+    window.lockHistory = true
     window.addEventListener("popstate", function(e) {
       if (history.state) {
         // Use this state instead of reserializing
-      //  history.state.counter = parseInt(location.hash.substring(1))
         if (history.state.counter != store.getState().counter) {
           persister.rehydrate(history.state)
+          history.replaceState(history.state, "", "#" + history.state.counter)
+          window.lockHistory = true
         }
       }
     })

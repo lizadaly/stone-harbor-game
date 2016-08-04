@@ -6,17 +6,20 @@ import { setStateBoolean } from "../actions"
 class _Counter extends React.Component {
   constructor(props) {
     super(props)
-    console.log("Pushing initial state")
+//    console.log("Pushing initial state")
     this.updatePushState(props.serializedState, props.counter)
   }
   updatePushState(serializedState, counter) {
-    console.log("Updating push state with counter: ", counter)
+    //console.log("Updating push state with counter: ", counter)
     history.pushState(serializedState, "", "#" + counter)
   }
   componentWillReceiveProps(p) {
-    console.log("Previous counter: ", this.props.counter)
-
-    if (p.counter > this.props.counter) {
+    //console.log("Previous counter: ", this.props.counter)
+    if (window.lockHistory) {
+      history.replaceState(p.serializedState, "", "#" + p.counter)
+      window.lockHistory = false
+    }
+    else if (p.counter > this.props.counter) {
       this.updatePushState(p.serializedState, p.counter)
     }
   }

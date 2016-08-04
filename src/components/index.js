@@ -107,8 +107,6 @@ class _Examinable extends React.Component {
     // Are we at the last set? If so, there may be some events to fire
     if (currentExpansion === this.props.expansions.length - 1) {
 
-      //this.props.onUpdateInventory(e.target.textContent, this.props.tag)
-
       if (this.props.nextUnit === "chapter") {
         this.props.onCompleteChapter()
       }
@@ -123,7 +121,6 @@ class _Examinable extends React.Component {
     }
     // Tick the clock
     this.props.onUpdateCounter()
-    
 
     this.setState({
       currentExpansion: currentExpansion,
@@ -178,6 +175,8 @@ const mapDispatchToProps = (dispatch) => {
         dispatch(showNextChapter())
       },
       onUpdateCounter: () => {
+        // Force unlocking the history before dispatching
+        window.lockHistory = false
         dispatch(updateStateCounter())
       }
     }
