@@ -9,15 +9,16 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <h2>Chapter Three</h2>
       <h3>In Whitby's office</h3>
       <p>
-        You were certain you’d never get to sleep but there was a whole-body weariness you haven’t felt
-        since you were a kid. There were days when it was too damn hot to be in the reading room—
+        You were certain you’d never get to sleep but last night you felt a whole-body weariness unlike
+        anything since you were a kid. You remember summer days when it was too hot to be in the reading room—
         Mom didn’t get air conditioning until 1975, long after you’d moved out—and you would just spend
-        the whole day in the ocean. You weren’t much of a swimmer but just standing in the waves fighting the
-        current was a lot of work, and you’d come home, tracking sand into the foyer and up the
-        stairs to the apartment over the storefront. Mom’s work day didn’t really even start until
+        the whole day in the ocean. You weren’t much of a swimmer, but just fighting the
+        current is a lot of work, and you’d come home, tracking sand into the foyer and up the
+        stairs to the apartment over the storefront, and crash straight into the bed. Mom’s work
+        day didn’t really even start until
         the evening, and so you’d tend to sleep through most of it until she’d wake you, often well
-        after midnight, and make a simple dinner. As a result you tended to miss whatever
-        TV was on, which made you even more popular with the kids at school.
+        after midnight, and make a simple dinner. As a result you tended to miss whatever was on
+        TV, which made you even more popular with the kids at school.
       </p>
       <p>
         “Cream?” Whitby asks, interrupting your thoughts.
@@ -25,15 +26,16 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>You shake your head. “Trying to quit. I’ll take a dumptruck full of sugar, though.”
       </p>
       <p>
-        She gives up on preparing your coffee for you and just hands you a mug and a fistful of
-        sugar packets. You’re seated across from her empty desk in an office that’s clearly
+        She hands you a mug and a fistful of
+        sugar packets. Her cluttered office is clearly
         shared with way too many other people, but it’s the weekend and just the on-duty
         cops are around, grimly filling out paperwork.
       </p>
       <p>
-        She closes the cheap venetian blind over the window that looks out into the bullpen.
-        This is probaby where you would be taken if you were a suspect, and with a jolt of
-        unease, realize that you probably still are.
+        She closes the venetian blind over the window that looks out into the bullpen, though it
+        has so many creases and kinks that it barely affords any privacy.
+        This is probably the same procedure she uses when interrogating a potential suspect,
+        though with some unease you realize that you probably still are one.
       </p>
       <p>
         “Why did you move back?” When you look confused, she says, “After your mom died. She owned
@@ -42,7 +44,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         her hands primly.
       </p>
       <p>
-        “You ran a background check on me?” Her shrug says <em>that’s what I do</em>. “I moved back in
+        “You ran a background check on me?” She shrugs: <em>That’s what I do</em>. “I moved back in
         when she was in the hospital, ran things for awhile until she got back on her feet.” You pause,
         sip the coffee, add more sugar. “She never did. Haven’t gotten around to selling it.”
       </p>
@@ -71,21 +73,21 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
     </section>,
     <section>
-      <p>"That's Ellen, the one the with doll!”</p>
-      <p>”Jared's daughter. This picture's a few years old, she's eleven now."
-        Whitby considers her for a moment. "Everyone loves that little girl. My god-daughter Sarah is
-        her cousin by marriage." She flips <Examinable expansions={["another picture", "a picture of two adult twins"]} tag="c1_photos3" /> over.</p>
+      <p>"That's Ellen, the one the with doll.”</p>
+      <p>“Jared's daughter. This picture's a few years old, she's eleven now.”
+        Whitby considers her for a moment. “Everyone loves that little girl. My god-daughter Sarah is
+        her cousin by marriage.” She flips <Examinable expansions={["another picture", "a picture of two adult twins"]} tag="c1_photos3" /> over.</p>
     </section>,
     <section>
-      <p>"Michael and Michelle Herschel," she says, and you can't help but snort. "Yeah, no points for
+      <p>“Michael and Michelle Herschel,” she says, and you can't help but snort. “Yeah, no points for
         originality. Anyway, these two are Alan’s niece and nephew. Alan and Jared had a sister,
         Christina, who passed away some years back. The twins still live in her house over in Sea Isle.
-      Don’t know them personally."</p>
+      Don’t know them personally.”</p>
       <p>“Last one,” she says, and hands you <Examinable expansions={["another picture of Healey", "another picture of Healey, with his arm around a woman his age"]} tag="c1_photos4"/>.</p>
     </section>,
     <section>
       <p>“His wife,” you say.</p>
-      <p>“Margaret, Maggie. Lovely woman, but tough as nails too. From what I hear she'd be the
+      <p>“Margaret, or Maggie. Lovely woman, but tough as nails too. From what I hear she'd be the
         first one to bail you out of trouble and also the first to throw you out on the
         street if you dare screw up again. If more people were like her I'd be out of a job.”
       </p>
@@ -101,27 +103,18 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>Banished, you slink out through the bullpen to a nearby waiting area. This isn’t general
         intake—that would be swarming with impatient people who were drunk, angry, or, most likely, both.
-        Instead this seems to be where they park visitors who are here voluntarily, to speak with
+        Instead this seems to be where they park visitors who are here voluntarily, those coming to speak with
         the detectives. Nobody looks
         thrilled to be here, but at least they aren’t puking.
       </p>
       <p>
-        You’re flipping through a 1982 issue of <em>Readers Digest</em>
-        (incredibly, you think you read this one already)
+        You’re flipping through a 1982 issue of <em>Readers Digest</em> (incredibly, you think you read this one already)
         when an argument ensues nearby. A civilian is complaining to an impassive young officer:
         “But Detective Whitby specifically told me to come in!” You look up
         and with a jolt recognize Healey's niece from her photo.
       </p>
       <p>She’s told to cool her heels and she sits down across from you. She notices that
-        you’re <MapFromInventory from={inventory.c3_staring} to={
-          { undefined: " ",
-            staring: "staring at her ",
-            hands: " ",
-            shoes: " ",
-            purse: " ",
-            her: " "
-          }
-        }/>
+        you’re <MapFromInventory from={inventory.c3_staring} to={{staring: "staring at her "}}/>
 
         <Examinable expansions={["staring", ["hands", "shoes", "purse"], "staring at her"]} tag="c3_staring"/>.
         <MapFromInventory from={inventory.c3_staring} to={{
@@ -152,6 +145,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         save her from this encounter, but it’s pretty much nothing but creepy dudes. Gaining
         someone’s trust is a lot harder when they aren’t paying you.
       </p>
+
     </section>
   ]
   return <RenderSection currentSection={currentSection} sections={sections} />

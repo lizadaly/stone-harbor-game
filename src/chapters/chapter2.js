@@ -163,17 +163,17 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         she’s been distracted. Maybe by the guy who was slumped over in her passenger seat.
       </p>
       <p>“Who’s we?”</p>
-      <p>“The gardener,” she says, with infinite patience. “I told him your blood sugar crashed. So much
-      for a low profile.”</p>
-      <p>You’re sure it must be still hot as hell outside, but you’re chilled to the bone and unable
+      <p>“Me and the gardener,” she says, with infinite patience. “I told him your blood sugar crashed. So much
+      for keeping a low profile.”</p>
+      <p>It’s surely hot as hell outside, but you’re chilled to the bone and unable
         to stop shivering. “I guess I should’ve had a donut before I went on duty today.”
       </p>
-      <p>Cops sure love cop jokes. “I never said you were a police officer,” she replies dourly.</p>
+      <p>“I never said you were a police officer,” she replies dourly. Cops love cop jokes.</p>
       <p>“You certainly didn’t correct his misapprehension.”</p>
       <p>She  notices her forgotten cigarette and flicks it out the window. “What other choice did I
         have? <em>Hi I’m Detective Whitby and this is my pet psychic?</em>”
       </p>
-      <p>“Aw that’s sweet of you, but really we’ve just met.”</p>
+      <p>“That’s sweet of you, but really we’ve just met.”</p>
       <p>She sees that you’re shivering and rolls up her car window even though it must be boiling hot for her. You’re grateful and do the same.
       “What happened this time?” she asks, gently.</p>
       <p>
@@ -183,14 +183,14 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>She nods and starts the car. “I’ll drop you off,” she says. “What time can you be ready tomorrow?”</p>
       <p>“Ready for <em>what</em>?”</p>
-      <p>She jerks her head towards the back of the car and you spin around. Sitting on the back seat is
+      <p>She points. Sitting on the back seat is
       a glove—no, a matched pair of gloves.</p>
       <p>“It was right where you said it would be, under a bush by the base of the stairs. I picked
         it up before you did your fainting flower bit. When I get in to work on Monday I need to have some
         words with CSI about their thoroughness.”
       </p>
-      <p>You don’t say anything, just stare at her, so she adds, “Look, just relax, Pietro. I believe you.
-      And I need your help.”</p>
+      <p>You don’t say anything, just stare at her, so she adds, “Look, just relax, Pietro. I believe you.”</p>
+
       <NextChapter chapter="3" />
     </section>
   ]

@@ -7260,17 +7260,17 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“The gardener,” she says, with infinite patience. “I told him your blood sugar crashed. So much for a low profile.”'
+	      '“Me and the gardener,” she says, with infinite patience. “I told him your blood sugar crashed. So much for keeping a low profile.”'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'You’re sure it must be still hot as hell outside, but you’re chilled to the bone and unable to stop shivering. “I guess I should’ve had a donut before I went on duty today.”'
+	      'It’s surely hot as hell outside, but you’re chilled to the bone and unable to stop shivering. “I guess I should’ve had a donut before I went on duty today.”'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'Cops sure love cop jokes. “I never said you were a police officer,” she replies dourly.'
+	      '“I never said you were a police officer,” she replies dourly. Cops love cop jokes.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -7291,7 +7291,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“Aw that’s sweet of you, but really we’ve just met.”'
+	      '“That’s sweet of you, but really we’ve just met.”'
 	    ),
 	    React.createElement(
 	      'p',
@@ -7322,7 +7322,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'She jerks her head towards the back of the car and you spin around. Sitting on the back seat is a glove—no, a matched pair of gloves.'
+	      'She points. Sitting on the back seat is a glove—no, a matched pair of gloves.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -7332,7 +7332,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'You don’t say anything, just stare at her, so she adds, “Look, just relax, Pietro. I believe you. And I need your help.”'
+	      'You don’t say anything, just stare at her, so she adds, “Look, just relax, Pietro. I believe you.”'
 	    ),
 	    React.createElement(_components.NextChapter, { chapter: '3' })
 	  )];
@@ -7389,7 +7389,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'You were certain you’d never get to sleep but there was a whole-body weariness you haven’t felt since you were a kid. There were days when it was too damn hot to be in the reading room— Mom didn’t get air conditioning until 1975, long after you’d moved out—and you would just spend the whole day in the ocean. You weren’t much of a swimmer but just standing in the waves fighting the current was a lot of work, and you’d come home, tracking sand into the foyer and up the stairs to the apartment over the storefront. Mom’s work day didn’t really even start until the evening, and so you’d tend to sleep through most of it until she’d wake you, often well after midnight, and make a simple dinner. As a result you tended to miss whatever TV was on, which made you even more popular with the kids at school.'
+	      'You were certain you’d never get to sleep but last night you felt a whole-body weariness unlike anything since you were a kid. You remember summer days when it was too hot to be in the reading room— Mom didn’t get air conditioning until 1975, long after you’d moved out—and you would just spend the whole day in the ocean. You weren’t much of a swimmer, but just fighting the current is a lot of work, and you’d come home, tracking sand into the foyer and up the stairs to the apartment over the storefront, and crash straight into the bed. Mom’s work day didn’t really even start until the evening, and so you’d tend to sleep through most of it until she’d wake you, often well after midnight, and make a simple dinner. As a result you tended to miss whatever was on TV, which made you even more popular with the kids at school.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -7404,12 +7404,12 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'She gives up on preparing your coffee for you and just hands you a mug and a fistful of sugar packets. You’re seated across from her empty desk in an office that’s clearly shared with way too many other people, but it’s the weekend and just the on-duty cops are around, grimly filling out paperwork.'
+	      'She hands you a mug and a fistful of sugar packets. Her cluttered office is clearly shared with way too many other people, but it’s the weekend and just the on-duty cops are around, grimly filling out paperwork.'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'She closes the cheap venetian blind over the window that looks out into the bullpen. This is probaby where you would be taken if you were a suspect, and with a jolt of unease, realize that you probably still are.'
+	      'She closes the venetian blind over the window that looks out into the bullpen, though it has so many creases and kinks that it barely affords any privacy. This is probably the same procedure she uses when interrogating a potential suspect, though with some unease you realize that you probably still are one.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -7419,11 +7419,11 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“You ran a background check on me?” Her shrug says ',
+	      '“You ran a background check on me?” She shrugs: ',
 	      React.createElement(
 	        'em',
 	        null,
-	        'that’s what I do'
+	        'That’s what I do'
 	      ),
 	      '. “I moved back in when she was in the hospital, ran things for awhile until she got back on her feet.” You pause, sip the coffee, add more sugar. “She never did. Haven’t gotten around to selling it.”'
 	    ),
@@ -7470,12 +7470,12 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '"That\'s Ellen, the one the with doll!”'
+	      '"That\'s Ellen, the one the with doll.”'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      '”Jared\'s daughter. This picture\'s a few years old, she\'s eleven now." Whitby considers her for a moment. "Everyone loves that little girl. My god-daughter Sarah is her cousin by marriage." She flips ',
+	      '“Jared\'s daughter. This picture\'s a few years old, she\'s eleven now.” Whitby considers her for a moment. “Everyone loves that little girl. My god-daughter Sarah is her cousin by marriage.” She flips ',
 	      React.createElement(_components.Examinable, { expansions: ["another picture", "a picture of two adult twins"], tag: 'c1_photos3' }),
 	      ' over.'
 	    )
@@ -7485,7 +7485,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '"Michael and Michelle Herschel," she says, and you can\'t help but snort. "Yeah, no points for originality. Anyway, these two are Alan’s niece and nephew. Alan and Jared had a sister, Christina, who passed away some years back. The twins still live in her house over in Sea Isle. Don’t know them personally."'
+	      '“Michael and Michelle Herschel,” she says, and you can\'t help but snort. “Yeah, no points for originality. Anyway, these two are Alan’s niece and nephew. Alan and Jared had a sister, Christina, who passed away some years back. The twins still live in her house over in Sea Isle. Don’t know them personally.”'
 	    ),
 	    React.createElement(
 	      'p',
@@ -7505,7 +7505,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“Margaret, Maggie. Lovely woman, but tough as nails too. From what I hear she\'d be the first one to bail you out of trouble and also the first to throw you out on the street if you dare screw up again. If more people were like her I\'d be out of a job.”'
+	      '“Margaret, or Maggie. Lovely woman, but tough as nails too. From what I hear she\'d be the first one to bail you out of trouble and also the first to throw you out on the street if you dare screw up again. If more people were like her I\'d be out of a job.”'
 	    ),
 	    React.createElement(
 	      'p',
@@ -7525,7 +7525,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'Banished, you slink out through the bullpen to a nearby waiting area. This isn’t general intake—that would be swarming with impatient people who were drunk, angry, or, most likely, both. Instead this seems to be where they park visitors who are here voluntarily, to speak with the detectives. Nobody looks thrilled to be here, but at least they aren’t puking.'
+	      'Banished, you slink out through the bullpen to a nearby waiting area. This isn’t general intake—that would be swarming with impatient people who were drunk, angry, or, most likely, both. Instead this seems to be where they park visitors who are here voluntarily, those coming to speak with the detectives. Nobody looks thrilled to be here, but at least they aren’t puking.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -7536,19 +7536,13 @@
 	        null,
 	        'Readers Digest'
 	      ),
-	      '(incredibly, you think you read this one already) when an argument ensues nearby. A civilian is complaining to an impassive young officer: “But Detective Whitby specifically told me to come in!” You look up and with a jolt recognize Healey\'s niece from her photo.'
+	      ' (incredibly, you think you read this one already) when an argument ensues nearby. A civilian is complaining to an impassive young officer: “But Detective Whitby specifically told me to come in!” You look up and with a jolt recognize Healey\'s niece from her photo.'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
 	      'She’s told to cool her heels and she sits down across from you. She notices that you’re ',
-	      React.createElement(_components.MapFromInventory, { from: inventory.c3_staring, to: { undefined: " ",
-	          staring: "staring at her ",
-	          hands: " ",
-	          shoes: " ",
-	          purse: " ",
-	          her: " "
-	        } }),
+	      React.createElement(_components.MapFromInventory, { from: inventory.c3_staring, to: { staring: "staring at her " } }),
 	      React.createElement(_components.Examinable, { expansions: ["staring", ["hands", "shoes", "purse"], "staring at her"], tag: 'c3_staring' }),
 	      '.',
 	      React.createElement(_components.MapFromInventory, { from: inventory.c3_staring, to: {
