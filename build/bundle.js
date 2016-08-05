@@ -12168,14 +12168,14 @@
 	    key: 'updatePushState',
 	    value: function updatePushState(serializedState, counter) {
 	      //console.log("Updating push state with counter: ", counter)
-	      history.pushState(serializedState, "", "#" + counter);
+	      history.pushState(serializedState, "", "");
 	    }
 	  }, {
 	    key: 'componentWillReceiveProps',
 	    value: function componentWillReceiveProps(p) {
 	      //console.log("Previous counter: ", this.props.counter)
 	      if (window.lockHistory) {
-	        history.replaceState(p.serializedState, "", "#" + p.counter);
+	        history.replaceState(p.serializedState, "", "");
 	        window.lockHistory = false;
 	      } else if (p.counter > this.props.counter) {
 	        this.updatePushState(p.serializedState, p.counter);

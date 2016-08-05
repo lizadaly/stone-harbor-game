@@ -15,6 +15,12 @@
       },
       h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
       })(document);
+
+      var reset = function (e) {
+        e.preventDefault();
+        localStorage.clear();
+        location.replace('/');
+      }
     </script>
 
     <meta name="keywords" content="bots python chatbots nlp natural language processing"/>
@@ -36,7 +42,7 @@
       </div>
       <div class="top-bar-right">
         <ul class="menu">
-          <li><a href="#" onClick="localStorage.clear(); location.replace('/')">Restart</a></li>
+          <li><a href="#" onClick="reset(event)">Restart</a></li>
         </ul>
       </div>
       </nav>

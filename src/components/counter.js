@@ -11,12 +11,12 @@ class _Counter extends React.Component {
   }
   updatePushState(serializedState, counter) {
     //console.log("Updating push state with counter: ", counter)
-    history.pushState(serializedState, "", "#" + counter)
+    history.pushState(serializedState, "", "")
   }
   componentWillReceiveProps(p) {
     //console.log("Previous counter: ", this.props.counter)
     if (window.lockHistory) {
-      history.replaceState(p.serializedState, "", "#" + p.counter)
+      history.replaceState(p.serializedState, "", "")
       window.lockHistory = false
     }
     else if (p.counter > this.props.counter) {
