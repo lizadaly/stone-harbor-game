@@ -56,7 +56,7 @@ $(document).ready(function () {
         // Use this state instead of reserializing
         if (history.state.counter != store.getState().counter) {
           persister.rehydrate(history.state)
-          history.replaceState(history.state, "", "#" + history.state.counter)
+          history.replaceState(history.state, "")
           window.lockHistory = true
         }
       }

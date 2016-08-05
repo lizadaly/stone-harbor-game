@@ -88,10 +88,14 @@ sets the inventory property `key` to the current selected value. */
 class _Examinable extends React.Component {
   constructor(props) {
     super(props);
-    this.handleChange = this.handleChange.bind(this);
+    this.handleChange = this.handleChange.bind(this)
     this.state = {
       currentExpansion: this.props.currentExpansion,
     }
+  }
+  componentWillMount() {
+    this.props.onSetExpansions(this.props.expansions, this.props.tag, this.props.currentExpansion)
+    this.props.onUpdateInventory(null, this.props.tag)
   }
   componentWillReceiveProps(newProps) {
     if (newProps.currentExpansion != this.state.currentExpansion)  {

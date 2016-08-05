@@ -136,7 +136,7 @@
 	      // Use this state instead of reserializing
 	      if (history.state.counter != store.getState().counter) {
 	        persister.rehydrate(history.state);
-	        history.replaceState(history.state, "", "#" + history.state.counter);
+	        history.replaceState(history.state, "");
 	        window.lockHistory = true;
 	      }
 	    }
@@ -6351,6 +6351,12 @@
 	  }
 
 	  _createClass(_Examinable, [{
+	    key: 'componentWillMount',
+	    value: function componentWillMount() {
+	      this.props.onSetExpansions(this.props.expansions, this.props.tag, this.props.currentExpansion);
+	      this.props.onUpdateInventory(null, this.props.tag);
+	    }
+	  }, {
 	    key: 'componentWillReceiveProps',
 	    value: function componentWillReceiveProps(newProps) {
 	      if (newProps.currentExpansion != this.state.currentExpansion) {
