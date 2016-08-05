@@ -1,5 +1,5 @@
 const React = require('react')
-import { MapFromInventory, Examinable, FromInventory, NextChapter } from '../components'
+import { Map, List, FromInventory, NextChapter } from '../components'
 import { connect } from 'react-redux'
 import { RenderSection } from '.'
 
@@ -29,7 +29,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>“Tell me again about the <FromInventory inventory={inventory.p0_library_things}/>.
         What exactly did you see?”
       </p>
-      <p>You just stick to the facts. <MapFromInventory from={inventory.p0_library_things} to={libraryMaps}/></p>
+      <p>You just stick to the facts. <Map from={inventory.p0_library_things} to={libraryMaps}/></p>
       <p>The detective makes no immediate response, just notes down what you wrote. “And describe
       the room again.”</p>
       <p>“I already told you—”</p>
@@ -53,14 +53,14 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>She’s writing again, for a long time. You try sipping your coffee, but
       it’s gone cold and all that cream is nauseating. </p>
       <p>“What do you sense from this?” she says without looking up. She
-        lays <Examinable expansions={["a man’s watch", "an ordinary gold watch"]} tag="c1_watch" /> on the table.</p>
+        lays <List expansions={["a man’s watch", "an ordinary gold watch"]} tag="c1_watch" /> on the table.</p>
     </section>,
     <section>
       <p>You palm it briefly, and then set it back down. “It’s a watch. Did you want to
       know if it’s a fake? I have no idea.”</p>
 
       <p>No reply, just more scratching in that damn notepad. “And this?” She produces
-        a <Examinable expansions={["handkerchief", "handkerchief, covered in dark red stains, which you recoil from when you turn it over"]} tag="c1_handerchief" />.
+        a <List expansions={["handkerchief", "handkerchief, covered in dark red stains, which you recoil from when you turn it over"]} tag="c1_handerchief" />.
       </p>
     </section>,
     <section>
@@ -80,7 +80,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       But you weren’t lying, and I get the impression you’re as surprised by that as anybody.”</p>
 
       <p>Before you can react to that extraordinary statement, she says, “Let’s try this
-        now,” and tosses you a <Examinable expansions={["small metal object.", "<psychic>frustrated cutting device</psychic>.", "metal cutting tool that’s emanating frustration, and the moment you catch it you’re—<br/><br/><br/>"]} tag="c1_device" />
+        now,” and tosses you a <List expansions={["small metal object.", "<psychic>frustrated cutting device</psychic>.", "metal cutting tool that’s emanating frustration, and the moment you catch it you’re—<br/><br/><br/>"]} tag="c1_device" />
       </p>
     </section>,
     <div className="in-flashback">
@@ -88,7 +88,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <h3>In the courtyard</h3>
       <section>
         <p>
-          It’s dawn and you can smell salt in the air. <Examinable expansions={['Something', 'A metal device']} tag="c1_device2" /> nearby is
+          It’s dawn and you can smell salt in the air. <List expansions={['Something', 'A metal device']} tag="c1_device2" /> nearby is
           frustrated.
         </p>
       </section>
@@ -102,13 +102,13 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         sandy path through the dunes and the path presumably leads to their private beach.
       </p>
       <p>
-        It seems perfectly normal that the <Examinable expansions={["urns", ["cracked urn ", "the newer urn"], "mismatched urns"]} tag="c1_urns" /> alongside
+        It seems perfectly normal that the <List expansions={["urns", ["cracked urn ", "the newer urn"], "mismatched urns"]} tag="c1_urns" /> alongside
         the back stairs are radiating frustration.
       </p>
     </section>,
     <section>
       <p>
-        <MapFromInventory from={inventory.c1_urns}
+        <Map from={inventory.c1_urns}
           to={ {
             "": "The cracked urn is empty, but the newer urn ",
             "urn": "The newer urn"
@@ -143,7 +143,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>One of the cops must’ve gotten a signal—someone located the body—and they all run into the house.
         The grief begins to collapse, draining like a film run backwards
-        until it pools back into  <Examinable expansions={["the device", "Healey’s cigar cutter"]} tag="c1_cutter"/>.
+        until it pools back into  <List expansions={["the device", "Healey’s cigar cutter"]} tag="c1_cutter"/>.
       </p>
     </section>,
     <section>
@@ -161,8 +161,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       overturned and there’s a pile of sopping wet napkins bundled up by the salt shaker.</p>
       <p>“Sorry,” you mutter. Patrons in the diner have resumed pretending not to notice you.
         You fix the detective with your best
-        fortune teller’s stare. “You found <Examinable expansions={["that object", "Healey’s cigar cutter", "Healey’s cigar cutter, in an urn", "Healey’s cigar cutter, in an urn, dropped by the killer"]} tag="c1_face" /> behind
-        the house,” you <MapFromInventory from={inventory.c1_face}
+        fortune teller’s stare. “You found <List expansions={["that object", "Healey’s cigar cutter", "Healey’s cigar cutter, in an urn", "Healey’s cigar cutter, in an urn, dropped by the killer"]} tag="c1_face" /> behind
+        the house,” you <Map from={inventory.c1_face}
           to={{
             undefined: "say",
             object: "say",
@@ -170,7 +170,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
             urn: "insist"
           }} />.
 
-        Her face is <MapFromInventory from={inventory.c1_face}
+        Her face is <Map from={inventory.c1_face}
           to={{
             undefined: "expressionless",
             object: "tense",

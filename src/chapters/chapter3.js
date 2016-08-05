@@ -1,5 +1,5 @@
 const React = require('react')
-import { MapFromInventory, Examinable, FromInventory, NextChapter } from '../components'
+import { Map, List, NextChapter } from '../components'
 import { connect } from 'react-redux'
 import { RenderSection } from '.'
 
@@ -61,7 +61,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>“Another test?” you sigh.</p>
       <p>“No, dummy. It’s time you met the family.” She turns over the
-        first <Examinable expansions={["photo", "photo, of Healey and another man"]} tag="c3_healeyphoto" />.
+        first <List expansions={["photo", "photo, of Healey and another man"]} tag="c3_healeyphoto" />.
       </p>
     </section>,
     <section>
@@ -69,21 +69,21 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         Jared's wife has been out of the family for years; he's been raising his
         daughter on his own. A little resentful of his lot in life, but
         responsible." She turns over
-        another <Examinable expansions={["photo", "photo, of a little girl in a white dress"]} tag="c1_photos2"/>.
+        another <List expansions={["photo", "photo, of a little girl in a white dress"]} tag="c1_photos2"/>.
       </p>
     </section>,
     <section>
       <p>"That's Ellen, the one the with doll.”</p>
       <p>“Jared's daughter. This picture's a few years old, she's eleven now.”
         Whitby considers her for a moment. “Everyone loves that little girl. My god-daughter Sarah is
-        her cousin by marriage.” She flips <Examinable expansions={["another picture", "a picture of two adult twins"]} tag="c1_photos3" /> over.</p>
+        her cousin by marriage.” She flips <List expansions={["another picture", "a picture of two adult twins"]} tag="c1_photos3" /> over.</p>
     </section>,
     <section>
       <p>“Michael and Michelle Herschel,” she says, and you can't help but snort. “Yeah, no points for
         originality. Anyway, these two are Alan’s niece and nephew. Alan and Jared had a sister,
         Christina, who passed away some years back. The twins still live in her house over in Sea Isle.
       Don’t know them personally.”</p>
-      <p>“Last one,” she says, and hands you <Examinable expansions={["another picture of Healey", "another picture of Healey, with his arm around a woman his age"]} tag="c1_photos4"/>.</p>
+      <p>“Last one,” she says, and hands you <List expansions={["another picture of Healey", "another picture of Healey, with his arm around a woman his age"]} tag="c1_photos4"/>.</p>
     </section>,
     <section>
       <p>“His wife,” you say.</p>
@@ -114,10 +114,10 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         and with a jolt recognize Healey's niece from her photo.
       </p>
       <p>She’s told to cool her heels and she sits down across from you. She notices that
-        you’re <MapFromInventory from={inventory.c3_staring} to={{staring: "staring at her "}}/>
+        you’re <Map from={inventory.c3_staring} to={{staring: "staring at her "}}/>
 
-        <Examinable expansions={["staring", ["hands", "shoes", "purse"], "staring at her"]} tag="c3_staring"/>.
-        <MapFromInventory from={inventory.c3_staring} to={{
+        <List expansions={["staring", ["hands", "shoes", "purse"], "staring at her"]} tag="c3_staring"/>.
+        <Map from={inventory.c3_staring} to={{
           hands: " Her hands are well-kept, clean but not manicured.",
           shoes: " Her shoes are clunky, unfashionable. Probably orthotics.",
           purse: " The purse is brown? Tan? Ecru? Sensible for sure."
@@ -127,7 +127,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
     <section>
       <p>“Could be worse,” you say, with a rueful smile. “Did ya see the <em>other</em> waiting room?”</p>
       <p>She doesn’t respond right away but who can blame her—you’re a creepy stranger
-        chatting her up in a police station. <MapFromInventory from={inventory.c3_staring} to={{
+        chatting her up in a police station. <Map from={inventory.c3_staring} to={{
           hands: `“Here,” you say, and pass her a handiwipe packet you swiped from Whitby’s room.
           “For when you leave. There’s only one bathroom and it’s out of soap.”`,
           shoes: ` You make a show of trying to get comfortable in your seat. “Man, all day on shift and now these
@@ -137,7 +137,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
           `
         }}/>
       </p>
-      <p>“<MapFromInventory from={inventory.c3_staring} to={{
+      <p>“<Map from={inventory.c3_staring} to={{
         hands: "Thanks",
         shoes: "Yeah, me too",
         purse: "Sorry, no"

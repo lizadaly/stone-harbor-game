@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 
 /* A nextChapter link */
 export const NextChapter = ({chapter}) => (
-  <div className="next-chapter-link"><Examinable expansions={["Next", ""]} tag={"c" + chapter + "next"} nextUnit="chapter"/></div>
+  <div className="next-chapter-link"><List expansions={["Next", ""]} tag={"c" + chapter + "next"} nextUnit="chapter"/></div>
 )
 
 /* A Link that the user interacts with to potentially change state */
@@ -27,18 +27,13 @@ export const FromInventory = ({inventory, offset="last"}) => {
   return <span dangerouslySetInnerHTML={{__html: _fromInventory(inventory, offset)}} />
 }
 
-/* A simple map implementation for any arbitrary input and output */
-export const Map = ({from, to}) => {
-  return <span dangerouslySetInnerHTML={{__html: to[from]}} />
-}
-
 /* For a given value of an inventory property, return the value from the `from`
 map that matches. Accepts an optional `offset` which is passed through to `fromInventory` */
-export const MapFromInventory = ({from, to, offset="last"}) => {
+export const Map = ({from, to, offset="last"}) => {
   var _from = _fromInventory(from, offset)
   return <span dangerouslySetInnerHTML={{__html: to[_from]}} />
 }
-MapFromInventory.propTypes = {
+Map.propTypes = {
   from: React.PropTypes.string,
   to: React.PropTypes.object.isRequired,
   offset: React.PropTypes.oneOfType([
@@ -61,10 +56,10 @@ export const AllButSelection = ({selection, expansions, offset=null}) => {
       notSelectedDisplay.push(item)
     }
   }
-  return iteratedExaminable(notSelectedDisplay)
+  return iteratedList(notSelectedDisplay)
 }
 // For a list of items, return a JSX node of markup
-const iteratedExaminable = (items) => (
+const iteratedList = (items) => (
   <span>{
     [...items].map((t, i) =>
       <span key={i}>
@@ -85,7 +80,7 @@ in which case no event is triggered.
 Each time an expansion is revealed, onSetExpansions is called and onUpdateInventory
 sets the inventory property `key` to the current selected value. */
 
-class _Examinable extends React.Component {
+class _List extends React.Component {
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this)
@@ -148,13 +143,13 @@ class _Examinable extends React.Component {
     }
   }
 }
-_Examinable.propTypes = {
+_List.propTypes = {
   nextUnit: React.PropTypes.oneOf(['chapter', 'section', 'none']),
   tag: React.PropTypes.string.isRequired,
   expansions: React.PropTypes.array.isRequired,
   currentExpansion: React.PropTypes.number
 }
-_Examinable.defaultProps = {
+_List.defaultProps = {
   nextUnit: 'section',
 }
 
@@ -194,7 +189,7 @@ const mapStateToProps = (state, ownProps, currentExpansion=0) => {
     currentExpansion: currentExpansion,
   }
 }
-export const Examinable = connect(
+export const List = connect(
   mapStateToProps,
   mapDispatchToProps
-)(_Examinable)
+)(_List)

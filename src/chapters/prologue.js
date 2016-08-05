@@ -1,5 +1,5 @@
 const React = require('react')
-import { Examinable, FromInventory, MapFromInventory, NextChapter } from '../components'
+import { List, FromInventory, Map, NextChapter } from '../components'
 import { connect } from 'react-redux'
 import { RenderSection } from "."
 
@@ -81,34 +81,34 @@ const _Prologue = ({currentSection, inventory}) => {
       </p>
       <p>“Then let us begin. Some reach the spirits via palms or cards. I require a personal object, one infused with the spirits themselves.”
       </p>
-      <p>You look over the customer, who is wearing <Examinable expansions={Customer.clothes} tag="p0_customer_clothes"/>.</p>
+      <p>You look over the customer, who is wearing <List expansions={Customer.clothes} tag="p0_customer_clothes"/>.</p>
     </section>,
     <section>
       <p>
         “There’s a powerful psychic force emanating from your <FromInventory inventory={inventory.p0_customer_clothes} />,” you say. “May I hold it?”
         The customer is wide-eyed as he hands it to you. You close your eyes and rotate
         the <FromInventory inventory={inventory.p0_customer_clothes} /> slowly in your hands.
-        “<MapFromInventory from={inventory.p0_customer_clothes} to={mapsClothes} />”
+        “<Map from={inventory.p0_customer_clothes} to={mapsClothes} />”
         You frown. “The spirits want to help, but their signals seem faint—” When he doesn’t respond, you
         open one eye and clear your throat. He hastily produces another twenty bucks.
       </p>
       <p>
         “I see a name,” you continue. “It begins with an S—” He stares at you blankly. “Or an N?”
-        He perks up. You frown as if in deep concentration. “<Examinable expansions={Customer.names} tag="p0_customer_names"/>”
+        He perks up. You frown as if in deep concentration. “<List expansions={Customer.names} tag="p0_customer_names"/>”
       </p>
     </section>,
     <section>
       <p>“—Nicholas?” he supplies excitedly. “Is it my father?”</p>
-      <p>“Perhaps,” you hedge. “<MapFromInventory from={inventory.p0_customer_clothes} to={mapsName} />”
+      <p>“Perhaps,” you hedge. “<Map from={inventory.p0_customer_clothes} to={mapsName} />”
       </p>
-      <p>“He didn’t approve of <MapFromInventory from={inventory.p0_customer_clothes} to={mapsApprove} />” he says bitterly.</p>
+      <p>“He didn’t approve of <Map from={inventory.p0_customer_clothes} to={mapsApprove} />” he says bitterly.</p>
       <p>“Yes, and he’s sorry he behaved that way.”</p>
       <p>“He is?“ The customer frowns. “That doesn’t sound like him at all.”</p>
       <p>“The world of the afterlife changes a person,” you say, gliding over his objection.
-        You study the customer’s <Examinable expansions={Customer.body} tag="p0_customer_body" />.</p>
+        You study the customer’s <List expansions={Customer.body} tag="p0_customer_body" />.</p>
     </section>,
     <section>
-      <p>“<MapFromInventory from={inventory.p0_customer_body} to={mapsBody} />,” you improvise.</p>
+      <p>“<Map from={inventory.p0_customer_body} to={mapsBody} />,” you improvise.</p>
       <p>“That’s true, I have been—”</p>
       <p>But your triumph is short-lived, because the curtain rustles again unexpectedly. A woman pushes through: mid-forties, no-nonsense, a bit frumpy for
         your taste. Her sour expression tells you she’s not a potential client. You’re unsurprised when she
@@ -131,7 +131,7 @@ const _Prologue = ({currentSection, inventory}) => {
       <p>“May I help you, officer?” you ask. And then she says something that not even
       you could’ve predicted.</p>
       <p>“It’s Detective. And I need a psychic,” she says, handing you
-        her <Examinable expansions={["card", 'card, which you flip over and read: <small>Tamisha Whitby, Criminal Investigations, Atlantic City, NJ</small>']}  tag="p0_nextUnit"/>.
+        her <List expansions={["card", 'card, which you flip over and read: <small>Tamisha Whitby, Criminal Investigations, Atlantic City, NJ</small>']}  tag="p0_nextUnit"/>.
       </p>
     </section>,
     <section>
@@ -180,11 +180,11 @@ const _Prologue = ({currentSection, inventory}) => {
       <p>You’re  angry too, though you’re not sure why.
         “And now I operate it. For tourists and suckers. <i>For entertainment purposes only.</i>”</p>
       <p>“I knew this was a waste of time,” Whitby says. She tosses
-        a <Examinable expansions={["leather glove", "<psychic>tense and furious glove</psychic>"]} tag="p0_glove"/> on the desk. "There, I did what I came to do.”
+        a <List expansions={["leather glove", "<psychic>tense and furious glove</psychic>"]} tag="p0_glove"/> on the desk. "There, I did what I came to do.”
       </p>
     </section>,
     <section>
-      <p><em>Something is very strange about that </em> <Examinable expansions={["<psychic>glove</psychic>.", "— <br/><br/><p>You pick up the glove, and everything changes.</p>"]} tag="p0_glove2"  /></p>
+      <p><em>Something is very strange about that </em> <List expansions={["<psychic>glove</psychic>.", "— <br/><br/><p>You pick up the glove, and everything changes.</p>"]} tag="p0_glove2"  /></p>
     </section>,
       <div className="in-flashback">
         <figure className="prologue"/>
@@ -192,7 +192,7 @@ const _Prologue = ({currentSection, inventory}) => {
         <section>
           <p>You look down and see nothing, as if you aren’t there. The color
             has been washed out of the room. Objects are blurry and indistinct, like an old photograph. There’s
-            a bookcase, a cluttered desk containing <Examinable expansions={libraryThings} tag="p0_library_things"/>,
+            a bookcase, a cluttered desk containing <List expansions={libraryThings} tag="p0_library_things"/>,
             a small lamp, family photographs on the wall.
             There’s a doorway leading into a brightly lit bedroom, but it’s even fuzzier, less real,
             than this room.
@@ -201,7 +201,7 @@ const _Prologue = ({currentSection, inventory}) => {
       </div>,
     <section>
       <p>
-        <MapFromInventory from={inventory.p0_library_things} to={libraryMaps} />
+        <Map from={inventory.p0_library_things} to={libraryMaps} />
       </p>
       <p>
         A shadowed figure appears in the doorway, blotting out the light. You hear
@@ -214,7 +214,7 @@ const _Prologue = ({currentSection, inventory}) => {
         and the room is now lit by the single weak lamp on the desk. It illuminates the gloved hand on the
         doorknob, and you’re transfixed by that simple object. The figure tests the door, and satisfied
         that the bedroom is locked, releases the knob,
-        the <Examinable expansions={["angry glove", "violently angry glove"]} tag="p0_glove3" /> seeming to boil under the light—
+        the <List expansions={["angry glove", "violently angry glove"]} tag="p0_glove3" /> seeming to boil under the light—
       </p>
     </section>,
     <section>

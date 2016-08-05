@@ -5860,7 +5860,7 @@
 	      'p',
 	      null,
 	      'You look over the customer, who is wearing ',
-	      React.createElement(_components.Examinable, { expansions: Customer.clothes, tag: 'p0_customer_clothes' }),
+	      React.createElement(_components.List, { expansions: Customer.clothes, tag: 'p0_customer_clothes' }),
 	      '.'
 	    )
 	  ), React.createElement(
@@ -5874,14 +5874,14 @@
 	      ',” you say. “May I hold it?” The customer is wide-eyed as he hands it to you. You close your eyes and rotate the ',
 	      React.createElement(_components.FromInventory, { inventory: inventory.p0_customer_clothes }),
 	      ' slowly in your hands. “',
-	      React.createElement(_components.MapFromInventory, { from: inventory.p0_customer_clothes, to: mapsClothes }),
+	      React.createElement(_components.Map, { from: inventory.p0_customer_clothes, to: mapsClothes }),
 	      '” You frown. “The spirits want to help, but their signals seem faint—” When he doesn’t respond, you open one eye and clear your throat. He hastily produces another twenty bucks.'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
 	      '“I see a name,” you continue. “It begins with an S—” He stares at you blankly. “Or an N?” He perks up. You frown as if in deep concentration. “',
-	      React.createElement(_components.Examinable, { expansions: Customer.names, tag: 'p0_customer_names' }),
+	      React.createElement(_components.List, { expansions: Customer.names, tag: 'p0_customer_names' }),
 	      '”'
 	    )
 	  ), React.createElement(
@@ -5896,14 +5896,14 @@
 	      'p',
 	      null,
 	      '“Perhaps,” you hedge. “',
-	      React.createElement(_components.MapFromInventory, { from: inventory.p0_customer_clothes, to: mapsName }),
+	      React.createElement(_components.Map, { from: inventory.p0_customer_clothes, to: mapsName }),
 	      '”'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
 	      '“He didn’t approve of ',
-	      React.createElement(_components.MapFromInventory, { from: inventory.p0_customer_clothes, to: mapsApprove }),
+	      React.createElement(_components.Map, { from: inventory.p0_customer_clothes, to: mapsApprove }),
 	      '” he says bitterly.'
 	    ),
 	    React.createElement(
@@ -5920,7 +5920,7 @@
 	      'p',
 	      null,
 	      '“The world of the afterlife changes a person,” you say, gliding over his objection. You study the customer’s ',
-	      React.createElement(_components.Examinable, { expansions: Customer.body, tag: 'p0_customer_body' }),
+	      React.createElement(_components.List, { expansions: Customer.body, tag: 'p0_customer_body' }),
 	      '.'
 	    )
 	  ), React.createElement(
@@ -5930,7 +5930,7 @@
 	      'p',
 	      null,
 	      '“',
-	      React.createElement(_components.MapFromInventory, { from: inventory.p0_customer_body, to: mapsBody }),
+	      React.createElement(_components.Map, { from: inventory.p0_customer_body, to: mapsBody }),
 	      ',” you improvise.'
 	    ),
 	    React.createElement(
@@ -5964,7 +5964,7 @@
 	      'p',
 	      null,
 	      '“It’s Detective. And I need a psychic,” she says, handing you her ',
-	      React.createElement(_components.Examinable, { expansions: ["card", 'card, which you flip over and read: <small>Tamisha Whitby, Criminal Investigations, Atlantic City, NJ</small>'], tag: 'p0_nextUnit' }),
+	      React.createElement(_components.List, { expansions: ["card", 'card, which you flip over and read: <small>Tamisha Whitby, Criminal Investigations, Atlantic City, NJ</small>'], tag: 'p0_nextUnit' }),
 	      '.'
 	    )
 	  ), React.createElement(
@@ -6064,7 +6064,7 @@
 	      'p',
 	      null,
 	      '“I knew this was a waste of time,” Whitby says. She tosses a ',
-	      React.createElement(_components.Examinable, { expansions: ["leather glove", "<psychic>tense and furious glove</psychic>"], tag: 'p0_glove' }),
+	      React.createElement(_components.List, { expansions: ["leather glove", "<psychic>tense and furious glove</psychic>"], tag: 'p0_glove' }),
 	      ' on the desk. "There, I did what I came to do.”'
 	    )
 	  ), React.createElement(
@@ -6079,7 +6079,7 @@
 	        'Something is very strange about that '
 	      ),
 	      ' ',
-	      React.createElement(_components.Examinable, { expansions: ["<psychic>glove</psychic>.", "— <br/><br/><p>You pick up the glove, and everything changes.</p>"], tag: 'p0_glove2' })
+	      React.createElement(_components.List, { expansions: ["<psychic>glove</psychic>.", "— <br/><br/><p>You pick up the glove, and everything changes.</p>"], tag: 'p0_glove2' })
 	    )
 	  ), React.createElement(
 	    'div',
@@ -6097,7 +6097,7 @@
 	        'p',
 	        null,
 	        'You look down and see nothing, as if you aren’t there. The color has been washed out of the room. Objects are blurry and indistinct, like an old photograph. There’s a bookcase, a cluttered desk containing ',
-	        React.createElement(_components.Examinable, { expansions: libraryThings, tag: 'p0_library_things' }),
+	        React.createElement(_components.List, { expansions: libraryThings, tag: 'p0_library_things' }),
 	        ', a small lamp, family photographs on the wall. There’s a doorway leading into a brightly lit bedroom, but it’s even fuzzier, less real, than this room.'
 	      )
 	    )
@@ -6107,7 +6107,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      React.createElement(_components.MapFromInventory, { from: inventory.p0_library_things, to: libraryMaps })
+	      React.createElement(_components.Map, { from: inventory.p0_library_things, to: libraryMaps })
 	    ),
 	    React.createElement(
 	      'p',
@@ -6118,7 +6118,7 @@
 	      'p',
 	      null,
 	      'The figure listens to the distress impassively. Panic is rising in you, but absurdly, you have no feet to run into the room, no voice to call for help. An achingly long time later, the choking subsides. All is silence. The figure closes the bedroom door, and the room is now lit by the single weak lamp on the desk. It illuminates the gloved hand on the doorknob, and you’re transfixed by that simple object. The figure tests the door, and satisfied that the bedroom is locked, releases the knob, the ',
-	      React.createElement(_components.Examinable, { expansions: ["angry glove", "violently angry glove"], tag: 'p0_glove3' }),
+	      React.createElement(_components.List, { expansions: ["angry glove", "violently angry glove"], tag: 'p0_glove3' }),
 	      ' seeming to boil under the light—'
 	    )
 	  ), React.createElement(
@@ -6184,7 +6184,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.Examinable = exports.AllButSelection = exports.MapFromInventory = exports.Map = exports.FromInventory = exports.Link = exports.NextChapter = undefined;
+	exports.List = exports.AllButSelection = exports.Map = exports.FromInventory = exports.Link = exports.NextChapter = undefined;
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -6211,7 +6211,7 @@
 	  return React.createElement(
 	    'div',
 	    { className: 'next-chapter-link' },
-	    React.createElement(Examinable, { expansions: ["Next", ""], tag: "c" + chapter + "next", nextUnit: 'chapter' })
+	    React.createElement(List, { expansions: ["Next", ""], tag: "c" + chapter + "next", nextUnit: 'chapter' })
 	  );
 	};
 
@@ -6242,26 +6242,18 @@
 	  return React.createElement('span', { dangerouslySetInnerHTML: { __html: _fromInventory(inventory, offset) } });
 	};
 
-	/* A simple map implementation for any arbitrary input and output */
+	/* For a given value of an inventory property, return the value from the `from`
+	map that matches. Accepts an optional `offset` which is passed through to `fromInventory` */
 	var Map = exports.Map = function Map(_ref4) {
 	  var from = _ref4.from;
 	  var to = _ref4.to;
-
-	  return React.createElement('span', { dangerouslySetInnerHTML: { __html: to[from] } });
-	};
-
-	/* For a given value of an inventory property, return the value from the `from`
-	map that matches. Accepts an optional `offset` which is passed through to `fromInventory` */
-	var MapFromInventory = exports.MapFromInventory = function MapFromInventory(_ref5) {
-	  var from = _ref5.from;
-	  var to = _ref5.to;
-	  var _ref5$offset = _ref5.offset;
-	  var offset = _ref5$offset === undefined ? "last" : _ref5$offset;
+	  var _ref4$offset = _ref4.offset;
+	  var offset = _ref4$offset === undefined ? "last" : _ref4$offset;
 
 	  var _from = _fromInventory(from, offset);
 	  return React.createElement('span', { dangerouslySetInnerHTML: { __html: to[_from] } });
 	};
-	MapFromInventory.propTypes = {
+	Map.propTypes = {
 	  from: React.PropTypes.string,
 	  to: React.PropTypes.object.isRequired,
 	  offset: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number])
@@ -6270,11 +6262,11 @@
 	// Display all items in an expansion _except_ the user's selection.
 	// If `offset` is not null, calls _fromInventory with that offset
 	// value to truncate each item; otherwise displays the item in full
-	var AllButSelection = exports.AllButSelection = function AllButSelection(_ref6) {
-	  var selection = _ref6.selection;
-	  var expansions = _ref6.expansions;
-	  var _ref6$offset = _ref6.offset;
-	  var offset = _ref6$offset === undefined ? null : _ref6$offset;
+	var AllButSelection = exports.AllButSelection = function AllButSelection(_ref5) {
+	  var selection = _ref5.selection;
+	  var expansions = _ref5.expansions;
+	  var _ref5$offset = _ref5.offset;
+	  var offset = _ref5$offset === undefined ? null : _ref5$offset;
 
 	  var notSelected = (0, _lib.inverter)(selection, expansions);
 	  var notSelectedDisplay = [];
@@ -6307,10 +6299,10 @@
 	    }
 	  }
 
-	  return iteratedExaminable(notSelectedDisplay);
+	  return iteratedList(notSelectedDisplay);
 	};
 	// For a list of items, return a JSX node of markup
-	var iteratedExaminable = function iteratedExaminable(items) {
+	var iteratedList = function iteratedList(items) {
 	  return React.createElement(
 	    'span',
 	    null,
@@ -6335,13 +6327,13 @@
 	Each time an expansion is revealed, onSetExpansions is called and onUpdateInventory
 	sets the inventory property `key` to the current selected value. */
 
-	var _Examinable = function (_React$Component) {
-	  _inherits(_Examinable, _React$Component);
+	var _List = function (_React$Component) {
+	  _inherits(_List, _React$Component);
 
-	  function _Examinable(props) {
-	    _classCallCheck(this, _Examinable);
+	  function _List(props) {
+	    _classCallCheck(this, _List);
 
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(_Examinable).call(this, props));
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(_List).call(this, props));
 
 	    _this.handleChange = _this.handleChange.bind(_this);
 	    _this.state = {
@@ -6350,7 +6342,7 @@
 	    return _this;
 	  }
 
-	  _createClass(_Examinable, [{
+	  _createClass(_List, [{
 	    key: 'componentWillMount',
 	    value: function componentWillMount() {
 	      this.props.onSetExpansions(this.props.expansions, this.props.tag, this.props.currentExpansion);
@@ -6417,16 +6409,16 @@
 	    }
 	  }]);
 
-	  return _Examinable;
+	  return _List;
 	}(React.Component);
 
-	_Examinable.propTypes = {
+	_List.propTypes = {
 	  nextUnit: React.PropTypes.oneOf(['chapter', 'section', 'none']),
 	  tag: React.PropTypes.string.isRequired,
 	  expansions: React.PropTypes.array.isRequired,
 	  currentExpansion: React.PropTypes.number
 	};
-	_Examinable.defaultProps = {
+	_List.defaultProps = {
 	  nextUnit: 'section'
 	};
 
@@ -6468,7 +6460,7 @@
 	    currentExpansion: currentExpansion
 	  };
 	};
-	var Examinable = exports.Examinable = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_Examinable);
+	var List = exports.List = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_List);
 
 /***/ },
 /* 59 */
@@ -6616,7 +6608,7 @@
 	      'p',
 	      null,
 	      'You just stick to the facts. ',
-	      React.createElement(_components.MapFromInventory, { from: inventory.p0_library_things, to: libraryMaps })
+	      React.createElement(_components.Map, { from: inventory.p0_library_things, to: libraryMaps })
 	    ),
 	    React.createElement(
 	      'p',
@@ -6671,7 +6663,7 @@
 	      'p',
 	      null,
 	      '“What do you sense from this?” she says without looking up. She lays ',
-	      React.createElement(_components.Examinable, { expansions: ["a man’s watch", "an ordinary gold watch"], tag: 'c1_watch' }),
+	      React.createElement(_components.List, { expansions: ["a man’s watch", "an ordinary gold watch"], tag: 'c1_watch' }),
 	      ' on the table.'
 	    )
 	  ), React.createElement(
@@ -6686,7 +6678,7 @@
 	      'p',
 	      null,
 	      'No reply, just more scratching in that damn notepad. “And this?” She produces a ',
-	      React.createElement(_components.Examinable, { expansions: ["handkerchief", "handkerchief, covered in dark red stains, which you recoil from when you turn it over"], tag: 'c1_handerchief' }),
+	      React.createElement(_components.List, { expansions: ["handkerchief", "handkerchief, covered in dark red stains, which you recoil from when you turn it over"], tag: 'c1_handerchief' }),
 	      '.'
 	    )
 	  ), React.createElement(
@@ -6731,7 +6723,7 @@
 	      'p',
 	      null,
 	      'Before you can react to that extraordinary statement, she says, “Let’s try this now,” and tosses you a ',
-	      React.createElement(_components.Examinable, { expansions: ["small metal object.", "<psychic>frustrated cutting device</psychic>.", "metal cutting tool that’s emanating frustration, and the moment you catch it you’re—<br/><br/><br/>"], tag: 'c1_device' })
+	      React.createElement(_components.List, { expansions: ["small metal object.", "<psychic>frustrated cutting device</psychic>.", "metal cutting tool that’s emanating frustration, and the moment you catch it you’re—<br/><br/><br/>"], tag: 'c1_device' })
 	    )
 	  ), React.createElement(
 	    'div',
@@ -6749,7 +6741,7 @@
 	        'p',
 	        null,
 	        'It’s dawn and you can smell salt in the air. ',
-	        React.createElement(_components.Examinable, { expansions: ['Something', 'A metal device'], tag: 'c1_device2' }),
+	        React.createElement(_components.List, { expansions: ['Something', 'A metal device'], tag: 'c1_device2' }),
 	        ' nearby is frustrated.'
 	      )
 	    )
@@ -6765,7 +6757,7 @@
 	      'p',
 	      null,
 	      'It seems perfectly normal that the ',
-	      React.createElement(_components.Examinable, { expansions: ["urns", ["cracked urn ", "the newer urn"], "mismatched urns"], tag: 'c1_urns' }),
+	      React.createElement(_components.List, { expansions: ["urns", ["cracked urn ", "the newer urn"], "mismatched urns"], tag: 'c1_urns' }),
 	      ' alongside the back stairs are radiating frustration.'
 	    )
 	  ), React.createElement(
@@ -6774,7 +6766,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      React.createElement(_components.MapFromInventory, { from: inventory.c1_urns,
+	      React.createElement(_components.Map, { from: inventory.c1_urns,
 	        to: {
 	          "": "The cracked urn is empty, but the newer urn ",
 	          "urn": "The newer urn"
@@ -6806,7 +6798,7 @@
 	      'p',
 	      null,
 	      'One of the cops must’ve gotten a signal—someone located the body—and they all run into the house. The grief begins to collapse, draining like a film run backwards until it pools back into  ',
-	      React.createElement(_components.Examinable, { expansions: ["the device", "Healey’s cigar cutter"], tag: 'c1_cutter' }),
+	      React.createElement(_components.List, { expansions: ["the device", "Healey’s cigar cutter"], tag: 'c1_cutter' }),
 	      '.'
 	    )
 	  ), React.createElement(
@@ -6841,9 +6833,9 @@
 	      'p',
 	      null,
 	      '“Sorry,” you mutter. Patrons in the diner have resumed pretending not to notice you. You fix the detective with your best fortune teller’s stare. “You found ',
-	      React.createElement(_components.Examinable, { expansions: ["that object", "Healey’s cigar cutter", "Healey’s cigar cutter, in an urn", "Healey’s cigar cutter, in an urn, dropped by the killer"], tag: 'c1_face' }),
+	      React.createElement(_components.List, { expansions: ["that object", "Healey’s cigar cutter", "Healey’s cigar cutter, in an urn", "Healey’s cigar cutter, in an urn, dropped by the killer"], tag: 'c1_face' }),
 	      ' behind the house,” you ',
-	      React.createElement(_components.MapFromInventory, { from: inventory.c1_face,
+	      React.createElement(_components.Map, { from: inventory.c1_face,
 	        to: {
 	          undefined: "say",
 	          object: "say",
@@ -6851,7 +6843,7 @@
 	          urn: "insist"
 	        } }),
 	      '. Her face is ',
-	      React.createElement(_components.MapFromInventory, { from: inventory.c1_face,
+	      React.createElement(_components.Map, { from: inventory.c1_face,
 	        to: {
 	          undefined: "expressionless",
 	          object: "tense",
@@ -7086,9 +7078,9 @@
 	      'p',
 	      null,
 	      'You turn with a start and coming out of the house is a very old, very disapproving ',
-	      React.createElement(_components.MapFromInventory, { from: inventory.c2_pail, to: { undefined: "man", "spade": "gardener", "fork": "gardener", "clippers": "gardener" } }),
+	      React.createElement(_components.Map, { from: inventory.c2_pail, to: { undefined: "man", "spade": "gardener", "fork": "gardener", "clippers": "gardener" } }),
 	      ' carrying a utility bag. The bag contains ',
-	      React.createElement(_components.Examinable, { expansions: ["some old tools", ["a rusted spade", "a large bent fork", "a pair of hedge clippers"], "some very old garden tools"], tag: 'c2_pail' }),
+	      React.createElement(_components.List, { expansions: ["some old tools", ["a rusted spade", "a large bent fork", "a pair of hedge clippers"], "some very old garden tools"], tag: 'c2_pail' }),
 	      '.'
 	    )
 	  ), React.createElement(
@@ -7098,7 +7090,7 @@
 	      'p',
 	      null,
 	      '“Uh,” you say. “Nice ',
-	      React.createElement(_components.MapFromInventory, { from: inventory.c2_pail, to: { "spade": "spade", "fork": "fork", "clippers": "clippers" } }),
+	      React.createElement(_components.Map, { from: inventory.c2_pail, to: { "spade": "spade", "fork": "fork", "clippers": "clippers" } }),
 	      '?” The detective rolls her eyes.'
 	    ),
 	    React.createElement(
@@ -7136,7 +7128,7 @@
 	      'p',
 	      null,
 	      '“I want to be as helpful as I can. I wasn’t here when it happened, see. Maybe I could’ve–oh here we go,” he says, and you can feel the blood draining from your limbs and your vision narrowing to a pinprick. Maybe Whitby can see your ghost white face, it looks like she’s reaching out to intercept, but it’s too late, the gardener has eagerly shoved ',
-	      React.createElement(_components.Examinable, { expansions: ["a doll", "<psychic>a frightened doll</psychic>", "<psychic>a frightened doll with a crushed head</psychic>"], tag: 'c2_doll' }),
+	      React.createElement(_components.List, { expansions: ["a doll", "<psychic>a frightened doll</psychic>", "<psychic>a frightened doll with a crushed head</psychic>"], tag: 'c2_doll' }),
 	      ' into your paralyzed hands—'
 	    )
 	  ), React.createElement(
@@ -7160,11 +7152,11 @@
 	        'p',
 	        null,
 	        'A young girl, carrying the ',
-	        React.createElement(_components.Examinable, { expansions: ["doll", "comfortable doll"], tag: 'c2_doll2', nextUnit: 'none' }),
+	        React.createElement(_components.List, { expansions: ["doll", "comfortable doll"], tag: 'c2_doll2', nextUnit: 'none' }),
 	        ', runs into the room and settles comfortably into a high-backed chair. She’s followed by an ',
-	        React.createElement(_components.Examinable, { expansions: ["older man", "kindly looking older man", "older man who you realize with a start is Alan Healey"], tag: 'c2_healey', nextUnit: 'none' }),
+	        React.createElement(_components.List, { expansions: ["older man", "kindly looking older man", "older man who you realize with a start is Alan Healey"], tag: 'c2_healey', nextUnit: 'none' }),
 	        ' and a ',
-	        React.createElement(_components.Examinable, { expansions: ["woman", "woman of the same age", "woman who must be Healey's wife"], tag: 'c2_margaret' }),
+	        React.createElement(_components.List, { expansions: ["woman", "woman of the same age", "woman who must be Healey's wife"], tag: 'c2_margaret' }),
 	        '.'
 	      )
 	    )
@@ -7231,7 +7223,7 @@
 	        'Now'
 	      ),
 	      ' the doll is afraid, not because it was damaged and discarded, but because this still and orderly world has been invaded. The ',
-	      React.createElement(_components.Examinable, { expansions: ["doll", "terrified doll"], tag: 'c2_doll3' }),
+	      React.createElement(_components.List, { expansions: ["doll", "terrified doll"], tag: 'c2_doll3' }),
 	      ' is crying out a warning now, it wants to wake the house, but it can only wake you—'
 	    )
 	  ), React.createElement(
@@ -7451,7 +7443,7 @@
 	      'p',
 	      null,
 	      '“No, dummy. It’s time you met the family.” She turns over the first ',
-	      React.createElement(_components.Examinable, { expansions: ["photo", "photo, of Healey and another man"], tag: 'c3_healeyphoto' }),
+	      React.createElement(_components.List, { expansions: ["photo", "photo, of Healey and another man"], tag: 'c3_healeyphoto' }),
 	      '.'
 	    )
 	  ), React.createElement(
@@ -7461,7 +7453,7 @@
 	      'p',
 	      null,
 	      'She nods. "That\'s Alan on the left and his younger brother, Jared, on the right. Jared\'s wife has been out of the family for years; he\'s been raising his daughter on his own. A little resentful of his lot in life, but responsible." She turns over another ',
-	      React.createElement(_components.Examinable, { expansions: ["photo", "photo, of a little girl in a white dress"], tag: 'c1_photos2' }),
+	      React.createElement(_components.List, { expansions: ["photo", "photo, of a little girl in a white dress"], tag: 'c1_photos2' }),
 	      '.'
 	    )
 	  ), React.createElement(
@@ -7476,7 +7468,7 @@
 	      'p',
 	      null,
 	      '“Jared\'s daughter. This picture\'s a few years old, she\'s eleven now.” Whitby considers her for a moment. “Everyone loves that little girl. My god-daughter Sarah is her cousin by marriage.” She flips ',
-	      React.createElement(_components.Examinable, { expansions: ["another picture", "a picture of two adult twins"], tag: 'c1_photos3' }),
+	      React.createElement(_components.List, { expansions: ["another picture", "a picture of two adult twins"], tag: 'c1_photos3' }),
 	      ' over.'
 	    )
 	  ), React.createElement(
@@ -7491,7 +7483,7 @@
 	      'p',
 	      null,
 	      '“Last one,” she says, and hands you ',
-	      React.createElement(_components.Examinable, { expansions: ["another picture of Healey", "another picture of Healey, with his arm around a woman his age"], tag: 'c1_photos4' }),
+	      React.createElement(_components.List, { expansions: ["another picture of Healey", "another picture of Healey, with his arm around a woman his age"], tag: 'c1_photos4' }),
 	      '.'
 	    )
 	  ), React.createElement(
@@ -7542,10 +7534,10 @@
 	      'p',
 	      null,
 	      'She’s told to cool her heels and she sits down across from you. She notices that you’re ',
-	      React.createElement(_components.MapFromInventory, { from: inventory.c3_staring, to: { staring: "staring at her " } }),
-	      React.createElement(_components.Examinable, { expansions: ["staring", ["hands", "shoes", "purse"], "staring at her"], tag: 'c3_staring' }),
+	      React.createElement(_components.Map, { from: inventory.c3_staring, to: { staring: "staring at her " } }),
+	      React.createElement(_components.List, { expansions: ["staring", ["hands", "shoes", "purse"], "staring at her"], tag: 'c3_staring' }),
 	      '.',
-	      React.createElement(_components.MapFromInventory, { from: inventory.c3_staring, to: {
+	      React.createElement(_components.Map, { from: inventory.c3_staring, to: {
 	          hands: " Her hands are well-kept, clean but not manicured.",
 	          shoes: " Her shoes are clunky, unfashionable. Probably orthotics.",
 	          purse: " The purse is brown? Tan? Ecru? Sensible for sure."
@@ -7569,7 +7561,7 @@
 	      'p',
 	      null,
 	      'She doesn’t respond right away but who can blame her—you’re a creepy stranger chatting her up in a police station. ',
-	      React.createElement(_components.MapFromInventory, { from: inventory.c3_staring, to: {
+	      React.createElement(_components.Map, { from: inventory.c3_staring, to: {
 	          hands: '“Here,” you say, and pass her a handiwipe packet you swiped from Whitby’s room.\n          “For when you leave. There’s only one bathroom and it’s out of soap.”',
 	          shoes: ' You make a show of trying to get comfortable in your seat. “Man, all day on shift and now these\n          chairs? I’m ready to confess to anything.”',
 	          purse: ' “Say I hate to bother you, but do you have a tissue?” Women always have tissues in their purse.\n          You wipe your eyes. “There must be mold in here or something, my allergies are killin’ me.”\n          '
@@ -7579,7 +7571,7 @@
 	      'p',
 	      null,
 	      '“',
-	      React.createElement(_components.MapFromInventory, { from: inventory.c3_staring, to: {
+	      React.createElement(_components.Map, { from: inventory.c3_staring, to: {
 	          hands: "Thanks",
 	          shoes: "Yeah, me too",
 	          purse: "Sorry, no"

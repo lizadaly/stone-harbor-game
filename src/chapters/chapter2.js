@@ -1,5 +1,5 @@
 const React = require('react')
-import { MapFromInventory, Examinable, FromInventory, NextChapter } from '../components'
+import { Map, List, FromInventory, NextChapter } from '../components'
 import { connect } from 'react-redux'
 import { RenderSection } from '.'
 
@@ -57,12 +57,12 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “Who are you? What are you doing here?”
       </p>
       <p>You turn with a start and coming out of the house is a very old, very
-        disapproving <MapFromInventory from={inventory.c2_pail} to={{undefined: "man", "spade": "gardener", "fork": "gardener", "clippers": "gardener"}} /> carrying a utility bag. The bag contains <Examinable expansions={["some old tools", ["a rusted spade", "a large bent fork", "a pair of hedge clippers"], "some very old garden tools"]} tag="c2_pail"/>.
+        disapproving <Map from={inventory.c2_pail} to={{undefined: "man", "spade": "gardener", "fork": "gardener", "clippers": "gardener"}} /> carrying a utility bag. The bag contains <List expansions={["some old tools", ["a rusted spade", "a large bent fork", "a pair of hedge clippers"], "some very old garden tools"]} tag="c2_pail"/>.
       </p>
     </section>,
       <section>
         <p>
-          “Uh,” you say. “Nice <MapFromInventory from={inventory.c2_pail} to={{"spade": "spade", "fork": "fork", "clippers": "clippers"}} />?” The detective rolls her eyes.
+          “Uh,” you say. “Nice <Map from={inventory.c2_pail} to={{"spade": "spade", "fork": "fork", "clippers": "clippers"}} />?” The detective rolls her eyes.
         </p>
 
         <p>
@@ -86,7 +86,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
           “I want to be as helpful as I can. I wasn’t here when it happened, see. Maybe I could’ve–oh here we go,” he says, and you can feel the blood draining from your limbs and
           your vision narrowing to a pinprick. Maybe Whitby can see your
           ghost white face, it looks like she’s reaching out to intercept, but it’s too late, the gardener has eagerly
-          shoved <Examinable expansions={["a doll", "<psychic>a frightened doll</psychic>", "<psychic>a frightened doll with a crushed head</psychic>"]} tag="c2_doll" /> into
+          shoved <List expansions={["a doll", "<psychic>a frightened doll</psychic>", "<psychic>a frightened doll with a crushed head</psychic>"]} tag="c2_doll" /> into
           your paralyzed hands—
         </p>
       </section>,
@@ -101,9 +101,9 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
             gargantuan walls of solid furniture and feel downright tiny.
           </p>
           <p>
-            A young girl, carrying the <Examinable expansions={["doll", "comfortable doll"]} tag="c2_doll2" nextUnit="none" />, runs into the room and settles comfortably into a
-            high-backed chair. She’s followed by an <Examinable expansions={["older man", "kindly looking older man", "older man who you realize with a start is Alan Healey"]} tag="c2_healey" nextUnit="none" /> and
-            a <Examinable expansions={["woman", "woman of the same age", "woman who must be Healey's wife"]} tag="c2_margaret" />.
+            A young girl, carrying the <List expansions={["doll", "comfortable doll"]} tag="c2_doll2" nextUnit="none" />, runs into the room and settles comfortably into a
+            high-backed chair. She’s followed by an <List expansions={["older man", "kindly looking older man", "older man who you realize with a start is Alan Healey"]} tag="c2_healey" nextUnit="none" /> and
+            a <List expansions={["woman", "woman of the same age", "woman who must be Healey's wife"]} tag="c2_margaret" />.
           </p>
         </section>
       </div>,
@@ -149,7 +149,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>You hear the sound of a window opening, and in the gloom of a moonless night you see very little,
         just the shadow of a person dropping into the room. <em>Now</em> the doll is afraid,
         not because it was damaged and discarded, but because this still and orderly world has been
-        invaded. The <Examinable expansions={["doll", "terrified doll"]} tag="c2_doll3" /> is crying out a warning
+        invaded. The <List expansions={["doll", "terrified doll"]} tag="c2_doll3" /> is crying out a warning
         now, it wants to wake the house, but it can only wake you—
       </p>
     </section>,
