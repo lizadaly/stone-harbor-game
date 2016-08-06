@@ -22,7 +22,17 @@ function bookmarks(state=[0], action) {
 function inventory(state={}, action) {
   switch (action.type) {
     case UPDATE_INVENTORY:
-      return Object.assign({}, state, action.inventory)
+      var inv = {}
+      if (action.sel === undefined && ! action.tag in state) {
+        inv[action.tag] = undefined
+      }
+      else if (action.sel === undefined && action.tag in state) {
+        // no op, leave the current value alone
+      }
+      else {
+        inv[action.tag] = action.sel
+      }
+      return Object.assign({}, state, inv)
     default:
       return state
   }

@@ -90,7 +90,7 @@ class _List extends React.Component {
   }
   componentWillMount() {
     this.props.onSetExpansions(this.props.expansions, this.props.tag, this.props.currentExpansion)
-    this.props.onUpdateInventory(null, this.props.tag)
+    this.props.onUpdateInventory(undefined, this.props.tag)
   }
   componentWillReceiveProps(newProps) {
     if (newProps.currentExpansion != this.state.currentExpansion)  {
@@ -163,9 +163,7 @@ const mapDispatchToProps = (dispatch) => {
       },
       // Set the inventory object and return the changed inventory
       onUpdateInventory: (sel, tag) => {
-        var inv = {}
-        inv[tag] = sel
-        dispatch(updateInventory(inv))
+        dispatch(updateInventory(sel, tag))
       },
       onCompleteSection: () => {
         dispatch(showNextSection())

@@ -128,22 +128,24 @@
 	var Game = exports.Game = (0, _reactRedux.connect)(mapStateToProps)(_Game);
 
 	$(document).ready(function () {
-	  var store = (0, _redux.createStore)(_reducers.gameApp, undefined, (0, _reduxPersist.autoRehydrate)());
+	  //    var store = createStore(gameApp, undefined, autoRehydrate())
+	  var store = (0, _redux.createStore)(_reducers.gameApp, undefined, (0, _redux.compose)((0, _reduxPersist.autoRehydrate)(), window.devToolsExtension && window.devToolsExtension()));
 	  var persister = (0, _reduxPersist.persistStore)(store);
 	  window.lockHistory = true;
 	  window.addEventListener("popstate", function (e) {
 	    if (history.state) {
 	      // Use this state instead of reserializing
 	      if (history.state.counter != store.getState().counter) {
+	        console.log("reserializing state with counter ", history.state.counter);
 	        persister.rehydrate(history.state);
 	        history.replaceState(history.state, "");
 	        window.lockHistory = true;
 	      }
 	    }
 	  });
-	  //let unsubscribe = store.subscribe(() =>
-	  //console.log(store.getState())
-	  //)
+	  var unsubscribe = store.subscribe(function () {
+	    return console.log(store.getState());
+	  });
 	  ReactDOM.render(React.createElement(
 	    _reactRedux.Provider,
 	    { store: store },
@@ -5583,7 +5585,15 @@
 
 	  switch (action.type) {
 	    case _actions.UPDATE_INVENTORY:
-	      return Object.assign({}, state, action.inventory);
+	      var inv = {};
+	      if (action.sel === undefined && !action.tag in state) {
+	        inv[action.tag] = undefined;
+	      } else if (action.sel === undefined && action.tag in state) {
+	        // no op, leave the current value alone
+	      } else {
+	        inv[action.tag] = action.sel;
+	      }
+	      return Object.assign({}, state, inv);
 	    default:
 	      return state;
 	  }
@@ -5661,10 +5671,11 @@
 
 	// Update the user's inventory list
 	// Data is a mapping of key/values based on the user selection
-	var updateInventory = exports.updateInventory = function updateInventory(inventory) {
+	var updateInventory = exports.updateInventory = function updateInventory(sel, tag) {
 	  return {
 	    type: UPDATE_INVENTORY,
-	    inventory: inventory
+	    sel: sel,
+	    tag: tag
 	  };
 	};
 	// Update the atomic counter for the current state change
@@ -6346,7 +6357,7 @@
 	    key: 'componentWillMount',
 	    value: function componentWillMount() {
 	      this.props.onSetExpansions(this.props.expansions, this.props.tag, this.props.currentExpansion);
-	      this.props.onUpdateInventory(null, this.props.tag);
+	      this.props.onUpdateInventory(undefined, this.props.tag);
 	    }
 	  }, {
 	    key: 'componentWillReceiveProps',
@@ -6432,9 +6443,7 @@
 	    },
 	    // Set the inventory object and return the changed inventory
 	    onUpdateInventory: function onUpdateInventory(sel, tag) {
-	      var inv = {};
-	      inv[tag] = sel;
-	      dispatch((0, _actions.updateInventory)(inv));
+	      dispatch((0, _actions.updateInventory)(sel, tag));
 	    },
 	    onCompleteSection: function onCompleteSection() {
 	      dispatch((0, _actions.showNextSection)());

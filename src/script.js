@@ -1,7 +1,7 @@
 const React = require('react')
 const ReactDOM = require('react-dom')
 import { Provider, connect } from 'react-redux'
-import { createStore } from 'redux'
+import { createStore, compose } from 'redux'
 import { gameApp } from './reducers'
 import { Prologue, Chapter1, Chapter2, Chapter3 } from './chapters'
 import { persistStore, autoRehydrate } from 'redux-persist'
@@ -48,21 +48,26 @@ export const Game = connect(
 )(_Game)
 
 $(document).ready(function () {
-    var store = createStore(gameApp, undefined, autoRehydrate())
+//    var store = createStore(gameApp, undefined, autoRehydrate())
+    var store = createStore(gameApp, undefined, compose(
+      autoRehydrate(),
+      window.devToolsExtension && window.devToolsExtension()
+    ))
     var persister = persistStore(store)
     window.lockHistory = true
     window.addEventListener("popstate", function(e) {
       if (history.state) {
         // Use this state instead of reserializing
         if (history.state.counter != store.getState().counter) {
+          console.log("reserializing state with counter ", history.state.counter)
           persister.rehydrate(history.state)
           history.replaceState(history.state, "")
           window.lockHistory = true
         }
       }
     })
-    //let unsubscribe = store.subscribe(() =>
-     //console.log(store.getState())
-    //)
+    let unsubscribe = store.subscribe(() =>
+      console.log(store.getState())
+    )
     ReactDOM.render(<Provider store={store}><Game/></Provider>, document.getElementById('article'))
 })

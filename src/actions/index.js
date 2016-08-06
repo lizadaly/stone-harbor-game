@@ -31,10 +31,11 @@ export const setExpansions = (expansions) => {
 
 // Update the user's inventory list
 // Data is a mapping of key/values based on the user selection
-export const updateInventory = (inventory) => {
+export const updateInventory = (sel, tag) => {
   return {
     type: UPDATE_INVENTORY,
-    inventory
+    sel,
+    tag
   }
 }
 // Update the atomic counter for the current state change
