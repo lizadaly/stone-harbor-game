@@ -95,7 +95,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
     </div>,
     <section>
       <p>
-        This is the rear courtyard of the  Healey property. The neo-classical house is
+        This is the rear courtyard of the Healey property. There’s no reason for you to know this; you’ve
+        never been there, but you know where you are as sure as you know your own home. The neo-classical house is
         brightly lit by the rising sun, but as before, your vision blurs and darkens
         around the periphery. You can make out a decorative stone fence enclosing the
         courtyard, accessed by a set of stairs flanked by urns. The stairs lead to a
@@ -199,8 +200,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
           invested in what happened.”
         </p>
         <p>“Invested,” she repeats.</p>
-        <p>“Let me see that glove again.”</p>
-        <p>She produces it reluctantly. As you expected, it’s no longer suffused with
+        <p>“Let me see that glove again.”
+          She produces it reluctantly. As you expected, it’s no longer suffused with
           rage or vengeance or any emotion at all. “When I first held this,” you explain,
           “it was like being in the room with the angriest person you’ve ever met. Someone
           so blinded by fury that they wanted no other outcome but violence.”

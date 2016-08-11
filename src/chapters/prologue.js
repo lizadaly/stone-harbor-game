@@ -40,7 +40,7 @@ const _Prologue = ({currentSection, inventory}) => {
   var mapsApprove = {
     "ring": "Janet. Never even gave her the chance,",
     "jacket": "frivolity and vacations. Never wanted me to have any fun,",
-    "cap": "’frivolity’, as he called it. He never liked it when I joked around,"
+    "cap": "‘frivolity’, as he called it. He never liked it when I joked around,"
   }
   var mapsBody = {
     "face": "He’s worried because you’re not sleeping",
@@ -70,13 +70,12 @@ const _Prologue = ({currentSection, inventory}) => {
       <h3>In your reading room</h3>
       <p>“Do you seek the wisdom of the ancients? Come forth!” After a brief hesitation, the beaded curtain parts
       and your next customer steps through. A few stray beads fall off and scatter to the corners.</p>
-      <p>You should really get a new curtain, but the room’s dim and the customer doesn’t notice.
-        He’s distracted by the usual trappings
+      <p>You should really get a new curtain, but the room’s dim and your clients don’t seem to notice.
+        They’re expecting to see the usual trappings
         of a boardwalk fortune-teller: tarot decks, zodiac paintings,
-        an absurdly large crystal ball. His preconceptions satisfied, he sits across from you at
+        an absurdly large crystal ball. His preconceptions satisfied, the customer sits across from you at
         the cramped circular table.
-      </p>
-      <p>Your knees are almost touching; this room wasn’t built for two full-size men.</p>
+      Your knees are almost touching; this room wasn’t built for two full-size men.</p>
       <p>“Are you here for a reading?” you ask solemnly. The customer nods.
       </p>
       <p>“Then let us begin. Some reach the spirits via palms or cards. I require a personal object, one infused with the spirits themselves.”
@@ -131,7 +130,7 @@ const _Prologue = ({currentSection, inventory}) => {
       <p>“May I help you, officer?” you ask. And then she says something that not even
       you could’ve predicted.</p>
       <p>“It’s Detective. And I need a psychic,” she says, handing you
-        her <List expansions={["card", 'card, which you flip over and read: <small>Tamisha Whitby, Criminal Investigations, Atlantic City, NJ</small>']}  tag="p0_nextUnit"/>.
+        her <List expansions={["card", 'card, which you flip over and read: <small>Tamisha Whitby, Criminal Investigations, Cape City, NJ</small>']}  tag="p0_nextUnit"/>.
       </p>
     </section>,
     <section>
@@ -147,7 +146,7 @@ const _Prologue = ({currentSection, inventory}) => {
         squirm a little. This is probably how your clients feel. “Are you familiar with
       the death of Alan Healey last month? It was in the papers.”</p>
 
-      <p>“It’s August in Atlantic City,” you reply. “I’ve been pretty busy with work.”</p>
+      <p>“It’s August at the boardwalk,” you reply. “I’ve been pretty busy with work.”</p>
       <p>She looks pointedly around the reading room and you don’t need to be psychic to know
         what she thinks of your career choice. She produces a file folder and begins to read
         from it.
@@ -226,7 +225,7 @@ const _Prologue = ({currentSection, inventory}) => {
         just a glove.
       </p>
       <p>
-        It’s the first psychic experience of your entire life.
+        This was the first psychic experience of your entire life.
       </p>
       <p>You can’t imagine how you’re going to explain all this to a
         practical and rational police officer, but when you look up into her eyes you can see plainly

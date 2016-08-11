@@ -13,8 +13,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         anything since you were a kid. You remember summer days when it was too hot to be in the reading room—
         Mom didn’t get air conditioning until 1975, long after you’d moved out—and you would just spend
         the whole day in the ocean. You weren’t much of a swimmer, but just fighting the
-        current is a lot of work, and you’d come home, tracking sand into the foyer and up the
-        stairs to the apartment over the storefront, and crash straight into the bed. Mom’s work
+        current is tiring, and you’d come home, tracking sand into the foyer and up the
+        stairs to the apartment over the storefront, and crash straight onto the bed. Mom’s work
         day didn’t really even start until
         the evening, and so you’d tend to sleep through most of it until she’d wake you, often well
         after midnight, and make a simple dinner. As a result you tended to miss whatever was on
@@ -29,23 +29,23 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         She hands you a mug and a fistful of
         sugar packets. Her cluttered office is clearly
         shared with way too many other people, but it’s the weekend and just the on-duty
-        cops are around, grimly filling out paperwork.
+        cops are around, grimly filling out paperwork in the bullpen.
       </p>
       <p>
-        She closes the venetian blind over the window that looks out into the bullpen, though it
+        She closes the venetian blind over the window that looks out into the common area, though it
         has so many creases and kinks that it barely affords any privacy.
         This is probably the same procedure she uses when interrogating a potential suspect,
-        though with some unease you realize that you probably still are one.
+        you think, and then with some unease remember that you probably still are one.
       </p>
       <p>
-        “Why did you move back?” When you look confused, she says, “After your mom died. She owned
-        that property, it’s probably worth plenty given its spot on the boardwalk.
-        Lots of people sold after the casinos went up.” She sits across from you and folds
-        her hands primly.
+        “Why did you move back to Jersey?” When you look confused, she says, “After your mom died. She owned
+        that property, it’s probably worth plenty, being right there on the boardwalk.”
+        She sits across from you and folds her hands primly.
       </p>
       <p>
         “You ran a background check on me?” She shrugs: <em>That’s what I do</em>. “I moved back in
-        when she was in the hospital, ran things for awhile until she got back on her feet.” You pause,
+        when she was in the hospital, thought I’d just run things for awhile until she got back on her feet.”
+        You pause,
         sip the coffee, add more sugar. “She never did. Haven’t gotten around to selling it.”
       </p>
       <p>
@@ -57,7 +57,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         “Sorry, none of my business why,” she says. “There isn’t even always a why. Sometimes people
         just get—stuck.” She picks up a small stack of photographs and begins laying them out,
-        snapping them crisply and laying them face down. She’d make a great casino dealer.
+        snapping them crisply and laying them face down. She’d make a great card dealer.
       </p>
       <p>“Another test?” you sigh.</p>
       <p>“No, dummy. It’s time you met the family.” She turns over the
@@ -65,17 +65,19 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
     </section>,
     <section>
-      <p>She nods. "That's Alan on the left and his younger brother, Jared, on the right.
-        Jared's wife has been out of the family for years; he's been raising his
-        daughter on his own. A little resentful of his lot in life, but
-        responsible." She turns over
+      <p>“That’s Alan on the left and his younger brother, Jared, on the right.
+        Jared’s wife left him years ago and started a new life, didn’t seem to want anything
+        to do with him or their kid. So he’s been raising his
+        daughter on his own. He’s a good single dad, but you know, the kind who thinks he deserves
+        a medal for doing what a million woman do every year.” She turns over
         another <List expansions={["photo", "photo, of a little girl in a white dress"]} tag="c1_photos2"/>.
       </p>
     </section>,
     <section>
-      <p>"That's Ellen, the one the with doll.”</p>
+      <p>“That's Ellen, the one with the doll.”</p>
       <p>“Jared's daughter. This picture's a few years old, she's eleven now.”
-        Whitby considers her for a moment. “Everyone loves that little girl. My god-daughter Sarah is
+        Whitby considers her for a moment. “Everyone loves that little girl. Not just because
+        of what happened to her either. She‘s a real sweet kid. My god-daughter Sarah is
         her cousin by marriage.” She flips <List expansions={["another picture", "a picture of two adult twins"]} tag="c1_photos3" /> over.</p>
     </section>,
     <section>
@@ -97,23 +99,41 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         close watch, but a locked door, a common medication, an elderly victim,
         it just added up to a tragic but ordinary death.”
       </p>
-      <p>"Do you still think that?" you ask.</p>
+      <p>“Do you still think that?” you ask.</p>
       <p>Her phone rings before she can answer. Whitby listens and nods a few times, then
         covers the receiver. “I need to take this, can you wait outside?”
       </p>
-      <p>Banished, you slink out through the bullpen to a nearby waiting area. This isn’t general
+      <p>Banished, you slink out through the bullpen to a nearby waiting area. Six plastic chairs, three other guys.
+        This isn’t general
         intake—that would be swarming with impatient people who were drunk, angry, or, most likely, both.
         Instead this seems to be where they park visitors who are here voluntarily, those coming to speak with
-        the detectives. Nobody looks
-        thrilled to be here, but at least they aren’t puking.
+      the detectives.</p>
+      <p>None of these guys looks
+        thrilled to be here, and frankly you doubt you‘d want to have a beer with any of them,
+        but at least they aren’t puking.
+        You follow the unspoken code of men’s bathroom etiquette and pretend they don’t exist.
+        There’s a pile of stale magazines on a makeshift coffee table begging for your attention instead.
       </p>
       <p>
         You’re flipping through a 1982 issue of <em>Readers Digest</em> (incredibly, you think you read this one already)
-        when an argument ensues nearby. A civilian is complaining to an impassive young officer:
-        “But Detective Whitby specifically told me to come in!” You look up
-        and with a jolt recognize Healey's niece from her photo.
+        when a woman begins arguing with an impassive young offer:
+        “But Detective Whitby specifically told me to come in now!” You look up
+        and with surprise recognize Healey's niece from her photo.
       </p>
-      <p>She’s told to cool her heels and she sits down across from you. She notices that
+      <p>She’s told to cool her heels and she sits down across from you in one of the two empty chairs.</p>
+      <p>Absolutely, positively, you should not engage with this woman. This is police business and she’s
+        here, right now, waiting to talk to the police. You should go home. There are only ten weeks in the
+        tourist season and that’s 80% of your income for the entire year. This is not your problem.
+      </p>
+      <p>
+        But then you think of that doll gazing back at you, and you have no choice.
+      </p>
+      <p>
+        Michelle Herschel, like her twin, is blonde, hair parted flat down the middle
+        with long bangs pulled back behind her ears. She’s wearing no jewelry, not even a
+        watch, but probably just forgot it—she’s fidgeting in her seat and twice looked at her wrist
+        only to find it empty. She’s not nervous or guilty,
+        just irritated. She has places to be. And now she’s noticed that
         you’re <Map from={inventory.c3_staring} to={{staring: "staring at her "}}/>
 
         <List expansions={["staring", ["hands", "shoes", "purse"], "staring at her"]} tag="c3_staring"/>.
@@ -125,15 +145,15 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
     </section>,
     <section>
-      <p>“Could be worse,” you say, with a rueful smile. “Did ya see the <em>other</em> waiting room?”</p>
-      <p>She doesn’t respond right away but who can blame her—you’re a creepy stranger
+      <p>“Could be worse,” you say, with a rueful smile. “Did you see the <em>other</em> waiting room?”</p>
+      <p>She doesn’t respond. Who can blame her—you’re a creepy stranger
         chatting her up in a police station. <Map from={inventory.c3_staring} to={{
           hands: `“Here,” you say, and pass her a handiwipe packet you swiped from Whitby’s room.
           “For when you leave. There’s only one bathroom and it’s out of soap.”`,
           shoes: ` You make a show of trying to get comfortable in your seat. “Man, all day on shift and now these
           chairs? I’m ready to confess to anything.”`,
-          purse: ` “Say I hate to bother you, but do you have a tissue?” Women always have tissues in their purse.
-          You wipe your eyes. “There must be mold in here or something, my allergies are killin’ me.”
+          purse: ` “Say I hate to bother you,” you continue, “but do you have a tissue?” Women always have tissues in their purse.
+          You wipe your eyes. “There must be mold in here or something, my allergies are killing me.”
           `
         }}/>
       </p>
@@ -141,12 +161,31 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         hands: "Thanks",
         shoes: "Yeah, me too",
         purse: "Sorry, no"
-      }}/>,” she says slowly. She looks around, probably hoping for another woman to
-        save her from this encounter, but it’s pretty much nothing but creepy dudes. Gaining
+      }}/>,” she says slowly. Gaining
         someone’s trust is a lot harder when they aren’t paying you.
+        She looks around, probably hoping for another woman to
+        save her from this encounter, but it’s just more unsavory-looking guys who are starting to
+        take notice of the drama.
       </p>
+      <p>
+        That gives you an idea. You  assess your
+        seatmates: <List expansions={["quite a cast of characters", ["a long-haired drifter", "a scrawny, sweaty nervous teen", "an old guy you vaguely recognize as a local beach bum"], "a bunch of weird guys"]} tag="c3_guys" />.
+      </p>
+    </section>,
+    <section>
+      <p>
+        <Map from={inventory.c3_guys} to={{
+          drifter: `The drifter probably hitched here. Hates authority, but likely didn’t do much to get in trouble.
+          Looks serene. Not in a hurry.`,
+          teen: `The kid’s definitely narcing on his friends. Scared of being seen. The cops are probably
+          holding a simple bust over him, threatening him with telling his parents or even a little jail time.`,
+          bum: `You know this old man. He’s been old your whole life. Your mom used to find him sorting
+          through your garbage, not looking for food, usually, just weird trinkets. He finds stuff on the beach
+          too. You have no idea where he lives or camps, or what he does in the winter.`
 
-    </section>
+        }} />
+      </p>
+      </section>
   ]
   return <RenderSection currentSection={currentSection} sections={sections} />
 }

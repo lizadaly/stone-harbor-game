@@ -47,7 +47,7 @@ export const Game = connect(
   mapStateToProps
 )(_Game)
 
-$(document).ready(function () {
+//$(document).ready(function () {
 //    var store = createStore(gameApp, undefined, autoRehydrate())
     var store = createStore(gameApp, undefined, compose(
       autoRehydrate(),
@@ -66,8 +66,9 @@ $(document).ready(function () {
         }
       }
     })
+    /*
     let unsubscribe = store.subscribe(() =>
       console.log(store.getState())
-    )
+    )*/
     ReactDOM.render(<Provider store={store}><Game/></Provider>, document.getElementById('article'))
-})
+//})
