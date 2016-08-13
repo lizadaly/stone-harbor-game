@@ -6250,7 +6250,10 @@
 	};
 
 	/* For a given value of an inventory property, return the value from the `from`
-	map that matches. Accepts an optional `offset` which is passed through to `fromInventory` */
+	map that matches. Accepts an optional `offset` which is passed through to `fromInventory`.
+	If the map evaluates to an Object (a node), return that as-is; otherwise return wrapped
+	HTML.
+	 */
 	var Map = exports.Map = function Map(_ref4) {
 	  var from = _ref4.from;
 	  var to = _ref4.to;
@@ -6258,7 +6261,8 @@
 	  var offset = _ref4$offset === undefined ? "last" : _ref4$offset;
 
 	  var _from = _fromInventory(from, offset);
-	  return React.createElement('span', { dangerouslySetInnerHTML: { __html: to[_from] } });
+	  if (!to[_from] || typeof to[_from] === 'string') return React.createElement('span', { dangerouslySetInnerHTML: { __html: to[_from] } });
+	  return to[_from];
 	};
 	Map.propTypes = {
 	  from: React.PropTypes.string,
@@ -7619,13 +7623,18 @@
 	          shoes: "Yeah, me too",
 	          purse: "Sorry, no"
 	        } }),
-	      ',” she says slowly. Gaining someone’s trust is a lot harder when they aren’t paying you. She looks around, probably hoping for another woman to save her from this encounter, but it’s just more unsavory-looking guys who are starting to take notice of the drama.'
+	      ',” she says slowly. ',
+	      React.createElement(_components.Map, { from: inventory.c3_staring, to: {
+	          hands: "She clutches a brown purse closer to her body and avoids your gaze.",
+	          shoes: "She clutches a brown purse closer to her body and tucks her shoes further under the seat.",
+	          purse: "She pulls the purse closer to her body." } }),
+	      ' You sense something shifty, paranoid, hiding in the purse, like a nervous mouse.'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'That gives you an idea. You  assess your seatmates: ',
-	      React.createElement(_components.List, { expansions: ["quite a cast of characters", ["a long-haired drifter", "a scrawny, sweaty nervous teen", "an old guy you vaguely recognize as a local beach bum"], "a bunch of weird guys"], tag: 'c3_guys' }),
+	      'Herscel looks around, probably hoping for another woman to save her, but it’s just more unsavory-looking guys like you: ',
+	      React.createElement(_components.List, { expansions: ["quite a cast of characters", ["a long-haired drifter", "a scrawny, sweaty teen", "an old guy you vaguely recognize as a local beach bum"], "a bunch of weird guys"], tag: 'c3_guys' }),
 	      '.'
 	    )
 	  ), React.createElement(
@@ -7634,8 +7643,13 @@
 	    React.createElement(
 	      'p',
 	      null,
+	      ' Desperate people are more your style, and you look him over with a practiced eye. ',
 	      React.createElement(_components.Map, { from: inventory.c3_guys, to: {
-	          drifter: 'The drifter probably hitched here. Hates authority, but likely didn’t do much to get in trouble.\n          Looks serene. Not in a hurry.',
+	          drifter: React.createElement(
+	            'span',
+	            null,
+	            'The drifter probably hitched here. Hates authority, but likely didn’t do much to get in trouble. Looks serene. Not in a hurry.'
+	          ),
 	          teen: 'The kid’s definitely narcing on his friends. Scared of being seen. The cops are probably\n          holding a simple bust over him, threatening him with telling his parents or even a little jail time.',
 	          bum: 'You know this old man. He’s been old your whole life. Your mom used to find him sorting\n          through your garbage, not looking for food, usually, just weird trinkets. He finds stuff on the beach\n          too. You have no idea where he lives or camps, or what he does in the winter.'
 

@@ -28,10 +28,15 @@ export const FromInventory = ({inventory, offset="last"}) => {
 }
 
 /* For a given value of an inventory property, return the value from the `from`
-map that matches. Accepts an optional `offset` which is passed through to `fromInventory` */
+map that matches. Accepts an optional `offset` which is passed through to `fromInventory`.
+If the map evaluates to an Object (a node), return that as-is; otherwise return wrapped
+HTML.
+ */
 export const Map = ({from, to, offset="last"}) => {
   var _from = _fromInventory(from, offset)
-  return <span dangerouslySetInnerHTML={{__html: to[_from]}} />
+  if (!to[_from] || typeof to[_from] === 'string')
+    return <span dangerouslySetInnerHTML={{__html: to[_from]}} />
+  return to[_from]
 }
 Map.propTypes = {
   from: React.PropTypes.string,
