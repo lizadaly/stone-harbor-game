@@ -27,15 +27,13 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         She hands you a mug and a fistful of
-        sugar packets. Her cluttered office is clearly
-        shared with way too many other people, but it’s the weekend and just the on-duty
+        sugar packets. Her office is shared, but it’s the weekend and just the on-duty
         cops are around, grimly filling out paperwork in the bullpen.
       </p>
       <p>
-        She closes the venetian blind over the window that looks out into the common area, though it
+        She closes the venetian blind that looks out into the common area, though it
         has so many creases and kinks that it barely affords any privacy.
-        This is probably the same procedure she uses when interrogating a potential suspect,
-        you think, and then with some unease remember that you probably still are one.
+        It feels like you’re about to be interrogated, which you are.
       </p>
       <p>
         “Why did you move back to Jersey?” When you look confused, she says, “After your mom died. She owned
@@ -49,19 +47,19 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         sip the coffee, add more sugar. “She never did. Haven’t gotten around to selling it.”
       </p>
       <p>
-        “That was four years ago.”
-      </p>
+        “That was four years ago.” Logically, you know this, but it’s different when someone else says it out loud.
+        Before you can answer, she says,
+      “Sorry, none of my business why.”</p>
       <p>
-        Logically, you know this. But it’s different when someone else says it outright.
+        You hesitate and then say, “There isn’t even always a why. Sometimes people
+        just get—stuck.”
       </p>
-      <p>
-        “Sorry, none of my business why,” she says. “There isn’t even always a why. Sometimes people
-        just get—stuck.” She picks up a small stack of photographs and begins laying them out,
-        snapping them crisply and laying them face down. She’d make a great card dealer.
+      <p>She nods and picks up a small stack of photographs and begins laying them out,
+        snapping them crisply and placing them face down. She’d make a great  dealer.
       </p>
       <p>“Another test?” you sigh.</p>
       <p>“No, dummy. It’s time you met the family.” She turns over the
-        first <List expansions={["photo", "photo, of Healey and another man"]} tag="c3_healeyphoto" />.
+        first <List expansions={["photo", "photo, of Healey and a younger man who resembles him"]} tag="c3_healeyphoto" />.
       </p>
     </section>,
     <section>
@@ -77,56 +75,55 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>“That's Ellen, the one with the doll.”</p>
       <p>“Jared's daughter. This picture's a few years old, she's eleven now.”
         Whitby considers her for a moment. “Everyone loves that little girl. Not just because
-        of what happened to her either. She‘s a real sweet kid. My god-daughter Sarah is
+        of what happened to her either; she’s just a sweet kid. My god-daughter Sarah is
         her cousin by marriage.” She flips <List expansions={["another picture", "a picture of two adult twins"]} tag="c1_photos3" /> over.</p>
     </section>,
     <section>
       <p>“Michael and Michelle Herschel,” she says, and you can't help but snort. “Yeah, no points for
-        originality. Anyway, these two are Alan’s niece and nephew. Alan and Jared had a sister,
-        Christina, who passed away some years back. The twins still live in her house over in Sea Isle.
+        originality. These two are Alan’s niece and nephew—their mom was Christina, Alan and Jared’s older
+        sister, but she passed away some years back. The twins still live in her house over in Sea Isle.
       Don’t know them personally.”</p>
       <p>“Last one,” she says, and hands you <List expansions={["another picture of Healey", "another picture of Healey, with his arm around a woman his age"]} tag="c1_photos4"/>.</p>
     </section>,
     <section>
       <p>“His wife,” you say.</p>
       <p>“Margaret, or Maggie. Lovely woman, but tough as nails too. From what I hear she'd be the
-        first one to bail you out of trouble and also the first to throw you out on the
-        street if you dare screw up again. If more people were like her I'd be out of a job.”
+        first one to bail you out of trouble and also the first to toss you  on the
+        street if you screwed up again. If more people were like her I'd be out of a job.”
       </p>
       <p>
         She spreads out the photos across the table. “Everyone I've shown you here was at or near the Healey estate the weekend that he died.
         If we were pursuing this as an active murder investigation they’d all be under
-        close watch, but a locked door, a common medication, an elderly victim,
-        it just added up to a tragic but ordinary death.”
+        close watch, but—a locked door, a common medication, an elderly victim?
+        It just added up to an unfortunate but ordinary death.”
       </p>
       <p>“Do you still think that?” you ask.</p>
       <p>Her phone rings before she can answer. Whitby listens and nods a few times, then
         covers the receiver. “I need to take this, can you wait outside?”
       </p>
-      <p>Banished, you slink out through the bullpen to a nearby waiting area. Six plastic chairs, three other guys.
+      <p>Banished, you slink out through the bullpen to a nearby waiting area. Six plastic chairs, a few other guys.
         This isn’t general
         intake—that would be swarming with impatient people who were drunk, angry, or, most likely, both.
-        Instead this seems to be where they park visitors who are here voluntarily, those coming to speak with
+        This is where they park visitors who are here voluntarily, those coming to speak with
       the detectives.</p>
-      <p>None of these guys looks
+      <p>Nobody looks
         thrilled to be here, and frankly you doubt you‘d want to have a beer with any of them,
-        but at least they aren’t puking.
-        You follow the unspoken code of men’s bathroom etiquette and pretend they don’t exist.
-        There’s a pile of stale magazines on a makeshift coffee table begging for your attention instead.
+        but at least these people aren’t puking.
+        You pretend they don’t exist and sift through a pile of stale magazines on a makeshift coffee table.
       </p>
       <p>
         You’re flipping through a 1982 issue of <em>Readers Digest</em> (incredibly, you think you read this one already)
-        when a woman begins arguing with an impassive young offer:
+        when a woman begins arguing with an impassive young officer:
         “But Detective Whitby specifically told me to come in now!” You look up
         and with surprise recognize Healey's niece from her photo.
       </p>
-      <p>She’s told to cool her heels and she sits down across from you in one of the two empty chairs.</p>
+      <p>She’s told to cool her heels and she sits down across from you in one of the few empty chairs.</p>
       <p>Absolutely, positively, you should not engage with this woman. This is police business and she’s
         here, right now, waiting to talk to the police. You should go home. There are only ten weeks in the
         tourist season and that’s 80% of your income for the entire year. This is not your problem.
       </p>
       <p>
-        But then you think of that doll gazing back at you, and you have no choice.
+        But then you think of that doll gazing back at you.
       </p>
       <p>
         Michelle Herschel, like her twin, is blonde, hair parted flat down the middle
@@ -140,7 +137,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         <Map from={inventory.c3_staring} to={{
           hands: " Her hands are well-kept, clean but not manicured.",
           shoes: " Her shoes are clunky, unfashionable. Probably orthotics.",
-          purse: " The purse is brown? Tan? Ecru? Sensible for sure."
+          purse: " The purse she’s clutching is brown? Tan? Ecru? Sensible for sure."
         }}/>
       </p>
     </section>,
@@ -153,7 +150,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
           shoes: ` You make a show of trying to get comfortable in your seat. “Man, all day on shift and now these
           chairs? I’m ready to confess to anything.”`,
           purse: ` “Say I hate to bother you,” you continue, “but do you have a tissue?” Women always have tissues in their purse.
-          You wipe your eyes. “There must be mold in here or something, my allergies are killing me.”
+          “There must be mold in here or something, my allergies are killing me.”
           `
         }}/>
       </p>
@@ -164,31 +161,138 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       }}/>,” she says slowly. <Map from={inventory.c3_staring} to={{
         hands: "She clutches a brown purse closer to her body and avoids your gaze.",
         shoes: "She clutches a brown purse closer to her body and tucks her shoes further under the seat.",
-      purse: "She pulls the purse closer to her body." }}/> You sense something shifty, paranoid,
-        hiding in the purse, like a nervous mouse.
+      purse: "She pulls the purse closer to her body." }}/> You sense something <psychic>shifty, paranoid</psychic>,
+        cowering in the purse, like a nervous mouse.
       </p>
       <p>
-        Herscel looks around, probably hoping for another woman to
-        save her, but it’s just more unsavory-looking guys
-        like you: <List expansions={["quite a cast of characters", ["a long-haired drifter", "a scrawny, sweaty teen", "an old guy you vaguely recognize as a local beach bum"], "a bunch of weird guys"]} tag="c3_guys" />.
+        Herschel looks around, probably hoping for another woman to
+        save her, but nobody else is in the waiting room besides <List expansions={["more unsavory-looking guys like you", ["a biker type", "an old guy you vaguely recognize as a local beach bum"], "a bunch of unsavory guys"]} tag="c3_guys" />.
       </p>
     </section>,
     <section>
-      <p> Desperate people are more your style, and you look him over with a practiced
-        eye. <Map from={inventory.c3_guys} to={{
-          drifter: <span>The drifter probably hitched here. Hates authority, but likely didn’t do much to get in trouble.
-          Looks serene. Not in a hurry.</span>,
-          teen: `The kid’s definitely narcing on his friends. Scared of being seen. The cops are probably
-          holding a simple bust over him, threatening him with telling his parents or even a little jail time.`,
-          bum: `You know this old man. He’s been old your whole life. Your mom used to find him sorting
-          through your garbage, not looking for food, usually, just weird trinkets. He finds stuff on the beach
-          too. You have no idea where he lives or camps, or what he does in the winter.`
+      <p> <Map from={inventory.c3_guys} to={{
+        "type": <span>Garden-variety Hell’s Angels dude. Rides up and down the Expressway in the summer
+          with a pack of his buddies. He’s snarling a little now that he notices
+          you’re <List expansions={["looking at him", "looking. Instead of breaking contact, you raise your eyebrows a little at Michelle Herschel in the universal language of sleazy guys"]} tag="c3_biker" />.
+        </span>,
+        bum: <span>You recognize this old man—your mom used to find him sorting
+          through your garbage, not looking for food, usually, just weird trinkets. You have no idea where he lives or camps, or what he does in the
+          winter. <Map from={inventory.c3_old_man} to={{
+            undefined: "You need to get him into that ",
+            purse: ""
+          }} />
+          <List expansions={["purse.", "You catch his eye and glance at the purse. To your surprise he says, “It’s hiding something, yes.”"]} tag="c3_old_man" />
+          </span>
 
         }} />
       </p>
+    </section>,
+    <section>
+      <p>
+        <Map from={inventory.c3_biker} to={{
+          him: "Biker guy looks confused, so you nod directly at her, and he finally takes the hint. He slides over one seat next to Ms. Herschel, not bothering to keep his leg from pressing into her personal space."
+        }} />
+        <Map from={inventory.c3_old_man} to= {{
+          "purse.": "Before you can react, the old man gets up, walks over to the woman, and says, apropos of nothing, “You can’t hide it forever.”"
+        }} />
+      </p>
+      <p>
+        Herschel clears wants no part of this and decides you’re the best of bad options. She sits
+        down at the remaining empty seat next to you. Her purse is between you, and you can sense it
+        fearfully pulling away. There’s something inside that doesn’t want to be found.
+        <Map from={inventory.c3_old_man} to= {{
+          "purse.": " You look around, but the old man is gone."
+        }} />
+        <Map from={inventory.c3_biker} to= {{
+          him: <span>The biker mutters something at the woman. “Back off, buddy,” you warn, and he looks
+          aggrieved—weren’t you just on the same side?.</span>
+        }} />
+      </p>
+      <p>
+        “Sorry,” Ms. Herschel says, unexpectedly. “I was rude to you.”
+      </p>
+      <p>
+        “No need to apologize.” <em>Also I’m trying to steal your purse.</em>
+      </p>
+      <p>
+        “I’m Michelle.”
+      </p>
+      <p>
+        “Frank,” you reply. “Frank Desiderio.” That was your father’s name. It’s never been yours.
+      </p>
+      <p>
+        “And what do you do, Frank?” She’s not really interested, just being polite, and
+        it shows when she grabs the purse and starts shuffling items around, stashing the
+        frightened object further inside. Maybe it’s even pushing her to do it, a little
+        compulsion she can’t place. You lean over trying to see what it is but
+        you don’t want to spook her.
+      </p>
+      <p>
+        “Limo driver,” you answer. That’s true too. You own a couple cars, sublease them to a buddy now.
+        You keep thinking
+        you’ll sell Mom’s property, pick your own business back up again, but it’s never the right time.
+        “It’s good money, there are always rich suckers to shuttle down to the casinos from Philly or New York.”
+      </p>
+      <p>
+        Too late, you remember that <em>she’s</em> rich. Or
+        at least her family is. Funny how that‘s not always the same thing.
+        “And you?” you ask, hoping for some damage control.
+      </p>
+      <p>
+        “I work with my brother,” she says, and you can tell that the conversation is over. She closes
+        the purse, and, agonizingly, sets it on the other side from you. You sense relief from
+        whatever has been trying to evade your grasp.
+      </p>
+      <p>At that moment, Whitby walks into the waiting area, brushing past you so rudely
+        that you’re a little hurt until you realize it’s a ruse. “Ms. Herschel,” she says, squatting in front
+        of the woman and leaning over like a confidente. “I’m so sorry to keep you waiting.”
+      </p>
+      <p>
+        “It’s fine, I’m just in a bit of a hurry—”
+      </p>
+      <p>
+        You hold your breath for a split second and your face blooms a bright red. You lean over, invading
+        Herschel’s personal space. “Hey, lady cop, I was here first and I’ve been waiting for over an hour.”
+      </p>
+      <p>
+        “Sir, if you’ll just let me know what you need—”
+      </p>
+      <p>
+        “What I <em>need</em> is to get some help around here even though I don’t have a pretty face and a <em>purse</em>.”
+      </p>
+      <p>
+        “Sir, I have to ask you to calm down.”
+        Whitby puts a protective arm around Michelle Herschel and pulls her to her feet. In doing so she
+        knocks the purse over, and—thank God—the contents spill everywhere.
+        The <List expansions={["<psychic>fearful object</psychic>", "<psychic>terrified receipt</psychic>",
+        "<psychic>hysterical receipt</psychic> is blessedly muffled when you stomp on with your foot, hiding it from view"]} tag="c3_receipt" />
+        <Map from={inventory.c3_receipt} to={{
+          undefined: " shrieks in terror",
+          "object": " shrieks louder, almost deafening you",
+        "receipt": "" }}/>.
+      </p>
+      <p>
+        “I’m so sorry,” Whitby says to Herschel, bending over to help clean up.
+        <Map from={inventory.c3_receipt} to={{
+          "object": " She’s retrieved almost everything now, chattering in a distracting way.",
+        "receipt": " She’s re-packing the purse." }}/>
+      </p>
+    </section>,
+    <section>
+      <p>Making a show of your own clumsiness, you retrieve <Map from={inventory.c3_staring} to={{
+        purse: "one of the tissues you’d wanted",
+        hands: "a spilled tissue",
+        shoes: "a spilled tissue"
+      }} /> off the floor and offer it to Herschel, but she pulls away from you. “I knew you were a creep,”
+        she says, and hurries out of the room towards the detective’s office. Whitby glances back
+        sympathetically, and you give her a little nod: <em>I got what I wanted</em>.
+      </p>
+      <p>When no one’s looking, you pick up the receipt with the tissue and carefully stash it in a pocket.</p>
+      <p><em>And probably what I deserve.</em></p>
+      <NextChapter chapter="4" />
     </section>
-  ]
-  return <RenderSection currentSection={currentSection} sections={sections} />
+    ]
+    return <RenderSection currentSection={currentSection} sections={sections} />
 }
 
 const mapStateToProps = (state, ownProps) => {

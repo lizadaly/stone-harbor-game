@@ -87,7 +87,7 @@
 
 	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(_Game).call(this, props));
 
-	    _this.chapters = [React.createElement(_chapters.Prologue, { chapterId: '0' }), React.createElement(_chapters.Chapter1, { chapterId: '1' }), React.createElement(_chapters.Chapter2, { chapterId: '2' }), React.createElement(_chapters.Chapter3, { chapterId: '3' })];
+	    _this.chapters = [React.createElement(_chapters.Prologue, { chapterId: '0' }), React.createElement(_chapters.Chapter1, { chapterId: '1' }), React.createElement(_chapters.Chapter2, { chapterId: '2' }), React.createElement(_chapters.Chapter3, { chapterId: '3' }), React.createElement(_chapters.Chapter4, { chapterId: '4' })];
 	    return _this;
 	  }
 
@@ -5746,6 +5746,18 @@
 	  });
 	});
 
+	var _chapter4 = __webpack_require__(317);
+
+	Object.keys(_chapter4).forEach(function (key) {
+	  if (key === "default") return;
+	  Object.defineProperty(exports, key, {
+	    enumerable: true,
+	    get: function get() {
+	      return _chapter4[key];
+	    }
+	  });
+	});
+
 	var _reactRedux = __webpack_require__(1);
 
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
@@ -6410,7 +6422,7 @@
 	            return React.createElement(
 	              'span',
 	              { key: i },
-	              i == text.length - 1 ? "and " : "",
+	              i == text.length - 1 ? " and " : "",
 	              React.createElement(Link, { handler: handler, text: t }),
 	              text.length > 2 && i < text.length - 1 ? ", " : ""
 	            );
@@ -7423,12 +7435,12 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'She hands you a mug and a fistful of sugar packets. Her cluttered office is clearly shared with way too many other people, but it’s the weekend and just the on-duty cops are around, grimly filling out paperwork in the bullpen.'
+	      'She hands you a mug and a fistful of sugar packets. Her office is shared, but it’s the weekend and just the on-duty cops are around, grimly filling out paperwork in the bullpen.'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'She closes the venetian blind over the window that looks out into the common area, though it has so many creases and kinks that it barely affords any privacy. This is probably the same procedure she uses when interrogating a potential suspect, you think, and then with some unease remember that you probably still are one.'
+	      'She closes the venetian blind that looks out into the common area, though it has so many creases and kinks that it barely affords any privacy. It feels like you’re about to be interrogated, which you are.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -7449,17 +7461,17 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“That was four years ago.”'
+	      '“That was four years ago.” Logically, you know this, but it’s different when someone else says it out loud. Before you can answer, she says, “Sorry, none of my business why.”'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'Logically, you know this. But it’s different when someone else says it outright.'
+	      'You hesitate and then say, “There isn’t even always a why. Sometimes people just get—stuck.”'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      '“Sorry, none of my business why,” she says. “There isn’t even always a why. Sometimes people just get—stuck.” She picks up a small stack of photographs and begins laying them out, snapping them crisply and laying them face down. She’d make a great card dealer.'
+	      'She nods and picks up a small stack of photographs and begins laying them out, snapping them crisply and placing them face down. She’d make a great  dealer.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -7470,7 +7482,7 @@
 	      'p',
 	      null,
 	      '“No, dummy. It’s time you met the family.” She turns over the first ',
-	      React.createElement(_components.List, { expansions: ["photo", "photo, of Healey and another man"], tag: 'c3_healeyphoto' }),
+	      React.createElement(_components.List, { expansions: ["photo", "photo, of Healey and a younger man who resembles him"], tag: 'c3_healeyphoto' }),
 	      '.'
 	    )
 	  ), React.createElement(
@@ -7494,7 +7506,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“Jared\'s daughter. This picture\'s a few years old, she\'s eleven now.” Whitby considers her for a moment. “Everyone loves that little girl. Not just because of what happened to her either. She‘s a real sweet kid. My god-daughter Sarah is her cousin by marriage.” She flips ',
+	      '“Jared\'s daughter. This picture\'s a few years old, she\'s eleven now.” Whitby considers her for a moment. “Everyone loves that little girl. Not just because of what happened to her either; she’s just a sweet kid. My god-daughter Sarah is her cousin by marriage.” She flips ',
 	      React.createElement(_components.List, { expansions: ["another picture", "a picture of two adult twins"], tag: 'c1_photos3' }),
 	      ' over.'
 	    )
@@ -7504,7 +7516,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“Michael and Michelle Herschel,” she says, and you can\'t help but snort. “Yeah, no points for originality. Anyway, these two are Alan’s niece and nephew. Alan and Jared had a sister, Christina, who passed away some years back. The twins still live in her house over in Sea Isle. Don’t know them personally.”'
+	      '“Michael and Michelle Herschel,” she says, and you can\'t help but snort. “Yeah, no points for originality. These two are Alan’s niece and nephew—their mom was Christina, Alan and Jared’s older sister, but she passed away some years back. The twins still live in her house over in Sea Isle. Don’t know them personally.”'
 	    ),
 	    React.createElement(
 	      'p',
@@ -7524,12 +7536,12 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“Margaret, or Maggie. Lovely woman, but tough as nails too. From what I hear she\'d be the first one to bail you out of trouble and also the first to throw you out on the street if you dare screw up again. If more people were like her I\'d be out of a job.”'
+	      '“Margaret, or Maggie. Lovely woman, but tough as nails too. From what I hear she\'d be the first one to bail you out of trouble and also the first to toss you  on the street if you screwed up again. If more people were like her I\'d be out of a job.”'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'She spreads out the photos across the table. “Everyone I\'ve shown you here was at or near the Healey estate the weekend that he died. If we were pursuing this as an active murder investigation they’d all be under close watch, but a locked door, a common medication, an elderly victim, it just added up to a tragic but ordinary death.”'
+	      'She spreads out the photos across the table. “Everyone I\'ve shown you here was at or near the Healey estate the weekend that he died. If we were pursuing this as an active murder investigation they’d all be under close watch, but—a locked door, a common medication, an elderly victim? It just added up to an unfortunate but ordinary death.”'
 	    ),
 	    React.createElement(
 	      'p',
@@ -7544,12 +7556,12 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'Banished, you slink out through the bullpen to a nearby waiting area. Six plastic chairs, three other guys. This isn’t general intake—that would be swarming with impatient people who were drunk, angry, or, most likely, both. Instead this seems to be where they park visitors who are here voluntarily, those coming to speak with the detectives.'
+	      'Banished, you slink out through the bullpen to a nearby waiting area. Six plastic chairs, a few other guys. This isn’t general intake—that would be swarming with impatient people who were drunk, angry, or, most likely, both. This is where they park visitors who are here voluntarily, those coming to speak with the detectives.'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'None of these guys looks thrilled to be here, and frankly you doubt you‘d want to have a beer with any of them, but at least they aren’t puking. You follow the unspoken code of men’s bathroom etiquette and pretend they don’t exist. There’s a pile of stale magazines on a makeshift coffee table begging for your attention instead.'
+	      'Nobody looks thrilled to be here, and frankly you doubt you‘d want to have a beer with any of them, but at least these people aren’t puking. You pretend they don’t exist and sift through a pile of stale magazines on a makeshift coffee table.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -7560,12 +7572,12 @@
 	        null,
 	        'Readers Digest'
 	      ),
-	      ' (incredibly, you think you read this one already) when a woman begins arguing with an impassive young offer: “But Detective Whitby specifically told me to come in now!” You look up and with surprise recognize Healey\'s niece from her photo.'
+	      ' (incredibly, you think you read this one already) when a woman begins arguing with an impassive young officer: “But Detective Whitby specifically told me to come in now!” You look up and with surprise recognize Healey\'s niece from her photo.'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'She’s told to cool her heels and she sits down across from you in one of the two empty chairs.'
+	      'She’s told to cool her heels and she sits down across from you in one of the few empty chairs.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -7575,7 +7587,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'But then you think of that doll gazing back at you, and you have no choice.'
+	      'But then you think of that doll gazing back at you.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -7587,7 +7599,7 @@
 	      React.createElement(_components.Map, { from: inventory.c3_staring, to: {
 	          hands: " Her hands are well-kept, clean but not manicured.",
 	          shoes: " Her shoes are clunky, unfashionable. Probably orthotics.",
-	          purse: " The purse is brown? Tan? Ecru? Sensible for sure."
+	          purse: " The purse she’s clutching is brown? Tan? Ecru? Sensible for sure."
 	        } })
 	    )
 	  ), React.createElement(
@@ -7611,7 +7623,7 @@
 	      React.createElement(_components.Map, { from: inventory.c3_staring, to: {
 	          hands: '“Here,” you say, and pass her a handiwipe packet you swiped from Whitby’s room.\n          “For when you leave. There’s only one bathroom and it’s out of soap.”',
 	          shoes: ' You make a show of trying to get comfortable in your seat. “Man, all day on shift and now these\n          chairs? I’m ready to confess to anything.”',
-	          purse: ' “Say I hate to bother you,” you continue, “but do you have a tissue?” Women always have tissues in their purse.\n          You wipe your eyes. “There must be mold in here or something, my allergies are killing me.”\n          '
+	          purse: ' “Say I hate to bother you,” you continue, “but do you have a tissue?” Women always have tissues in their purse.\n          “There must be mold in here or something, my allergies are killing me.”\n          '
 	        } })
 	    ),
 	    React.createElement(
@@ -7628,13 +7640,19 @@
 	          hands: "She clutches a brown purse closer to her body and avoids your gaze.",
 	          shoes: "She clutches a brown purse closer to her body and tucks her shoes further under the seat.",
 	          purse: "She pulls the purse closer to her body." } }),
-	      ' You sense something shifty, paranoid, hiding in the purse, like a nervous mouse.'
+	      ' You sense something ',
+	      React.createElement(
+	        'psychic',
+	        null,
+	        'shifty, paranoid'
+	      ),
+	      ', cowering in the purse, like a nervous mouse.'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'Herscel looks around, probably hoping for another woman to save her, but it’s just more unsavory-looking guys like you: ',
-	      React.createElement(_components.List, { expansions: ["quite a cast of characters", ["a long-haired drifter", "a scrawny, sweaty teen", "an old guy you vaguely recognize as a local beach bum"], "a bunch of weird guys"], tag: 'c3_guys' }),
+	      'Herschel looks around, probably hoping for another woman to save her, but nobody else is in the waiting room besides ',
+	      React.createElement(_components.List, { expansions: ["more unsavory-looking guys like you", ["a biker type", "an old guy you vaguely recognize as a local beach bum"], "a bunch of unsavory guys"], tag: 'c3_guys' }),
 	      '.'
 	    )
 	  ), React.createElement(
@@ -7643,18 +7661,198 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      ' Desperate people are more your style, and you look him over with a practiced eye. ',
+	      ' ',
 	      React.createElement(_components.Map, { from: inventory.c3_guys, to: {
-	          drifter: React.createElement(
+	          "type": React.createElement(
 	            'span',
 	            null,
-	            'The drifter probably hitched here. Hates authority, but likely didn’t do much to get in trouble. Looks serene. Not in a hurry.'
+	            'Garden-variety Hell’s Angels dude. Rides up and down the Expressway in the summer with a pack of his buddies. He’s snarling a little now that he notices you’re ',
+	            React.createElement(_components.List, { expansions: ["looking at him", "looking. Instead of breaking contact, you raise your eyebrows a little at Michelle Herschel in the universal language of sleazy guys"], tag: 'c3_biker' }),
+	            '.'
 	          ),
-	          teen: 'The kid’s definitely narcing on his friends. Scared of being seen. The cops are probably\n          holding a simple bust over him, threatening him with telling his parents or even a little jail time.',
-	          bum: 'You know this old man. He’s been old your whole life. Your mom used to find him sorting\n          through your garbage, not looking for food, usually, just weird trinkets. He finds stuff on the beach\n          too. You have no idea where he lives or camps, or what he does in the winter.'
+	          bum: React.createElement(
+	            'span',
+	            null,
+	            'You recognize this old man—your mom used to find him sorting through your garbage, not looking for food, usually, just weird trinkets. You have no idea where he lives or camps, or what he does in the winter. ',
+	            React.createElement(_components.Map, { from: inventory.c3_old_man, to: {
+	                undefined: "You need to get him into that ",
+	                purse: ""
+	              } }),
+	            React.createElement(_components.List, { expansions: ["purse.", "You catch his eye and glance at the purse. To your surprise he says, “It’s hiding something, yes.”"], tag: 'c3_old_man' })
+	          )
 
 	        } })
 	    )
+	  ), React.createElement(
+	    'section',
+	    null,
+	    React.createElement(
+	      'p',
+	      null,
+	      React.createElement(_components.Map, { from: inventory.c3_biker, to: {
+	          him: "Biker guy looks confused, so you nod directly at her, and he finally takes the hint. He slides over one seat next to Ms. Herschel, not bothering to keep his leg from pressing into her personal space."
+	        } }),
+	      React.createElement(_components.Map, { from: inventory.c3_old_man, to: {
+	          "purse.": "Before you can react, the old man gets up, walks over to the woman, and says, apropos of nothing, “You can’t hide it forever.”"
+	        } })
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Herschel clears wants no part of this and decides you’re the best of bad options. She sits down at the remaining empty seat next to you. Her purse is between you, and you can sense it fearfully pulling away. There’s something inside that doesn’t want to be found.',
+	      React.createElement(_components.Map, { from: inventory.c3_old_man, to: {
+	          "purse.": " You look around, but the old man is gone."
+	        } }),
+	      React.createElement(_components.Map, { from: inventory.c3_biker, to: {
+	          him: React.createElement(
+	            'span',
+	            null,
+	            'The biker mutters something at the woman. “Back off, buddy,” you warn, and he looks aggrieved—weren’t you just on the same side?.'
+	          )
+	        } })
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Sorry,” Ms. Herschel says, unexpectedly. “I was rude to you.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“No need to apologize.” ',
+	      React.createElement(
+	        'em',
+	        null,
+	        'Also I’m trying to steal your purse.'
+	      )
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“I’m Michelle.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Frank,” you reply. “Frank Desiderio.” That was your father’s name. It’s never been yours.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“And what do you do, Frank?” She’s not really interested, just being polite, and it shows when she grabs the purse and starts shuffling items around, stashing the frightened object further inside. Maybe it’s even pushing her to do it, a little compulsion she can’t place. You lean over trying to see what it is but you don’t want to spook her.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Limo driver,” you answer. That’s true too. You own a couple cars, sublease them to a buddy now. You keep thinking you’ll sell Mom’s property, pick your own business back up again, but it’s never the right time. “It’s good money, there are always rich suckers to shuttle down to the casinos from Philly or New York.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Too late, you remember that ',
+	      React.createElement(
+	        'em',
+	        null,
+	        'she’s'
+	      ),
+	      ' rich. Or at least her family is. Funny how that‘s not always the same thing. “And you?” you ask, hoping for some damage control.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“I work with my brother,” she says, and you can tell that the conversation is over. She closes the purse, and, agonizingly, sets it on the other side from you. You sense relief from whatever has been trying to evade your grasp.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'At that moment, Whitby walks into the waiting area, brushing past you so rudely that you’re a little hurt until you realize it’s a ruse. “Ms. Herschel,” she says, squatting in front of the woman and leaning over like a confidente. “I’m so sorry to keep you waiting.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“It’s fine, I’m just in a bit of a hurry—”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You hold your breath for a split second and your face blooms a bright red. You lean over, invading Herschel’s personal space. “Hey, lady cop, I was here first and I’ve been waiting for over an hour.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Sir, if you’ll just let me know what you need—”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“What I ',
+	      React.createElement(
+	        'em',
+	        null,
+	        'need'
+	      ),
+	      ' is to get some help around here even though I don’t have a pretty face and a ',
+	      React.createElement(
+	        'em',
+	        null,
+	        'purse'
+	      ),
+	      '.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Sir, I have to ask you to calm down.” Whitby puts a protective arm around Michelle Herschel and pulls her to her feet. In doing so she knocks the purse over, and—thank God—the contents spill everywhere. The ',
+	      React.createElement(_components.List, { expansions: ["<psychic>fearful object</psychic>", "<psychic>terrified receipt</psychic>", "<psychic>hysterical receipt</psychic> is blessedly muffled when you stomp on with your foot, hiding it from view"], tag: 'c3_receipt' }),
+	      React.createElement(_components.Map, { from: inventory.c3_receipt, to: {
+	          undefined: " shrieks in terror",
+	          "object": " shrieks louder, almost deafening you",
+	          "receipt": "" } }),
+	      '.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“I’m so sorry,” Whitby says to Herschel, bending over to help clean up.',
+	      React.createElement(_components.Map, { from: inventory.c3_receipt, to: {
+	          "object": " She’s retrieved almost everything now, chattering in a distracting way.",
+	          "receipt": " She’s re-packing the purse." } })
+	    )
+	  ), React.createElement(
+	    'section',
+	    null,
+	    React.createElement(
+	      'p',
+	      null,
+	      'Making a show of your own clumsiness, you retrieve ',
+	      React.createElement(_components.Map, { from: inventory.c3_staring, to: {
+	          purse: "one of the tissues you’d wanted",
+	          hands: "a spilled tissue",
+	          shoes: "a spilled tissue"
+	        } }),
+	      ' off the floor and offer it to Herschel, but she pulls away from you. “I knew you were a creep,” she says, and hurries out of the room towards the detective’s office. Whitby glances back sympathetically, and you give her a little nod: ',
+	      React.createElement(
+	        'em',
+	        null,
+	        'I got what I wanted'
+	      ),
+	      '.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'When no one’s looking, you pick up the receipt with the tissue and carefully stash it in a pocket.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      React.createElement(
+	        'em',
+	        null,
+	        'And probably what I deserve.'
+	      )
+	    ),
+	    React.createElement(_components.NextChapter, { chapter: '4' })
 	  )];
 	  return React.createElement(_.RenderSection, { currentSection: currentSection, sections: sections });
 	};
@@ -29241,6 +29439,48 @@
 	var ReactMount = __webpack_require__(309);
 
 	module.exports = ReactMount.renderSubtreeIntoContainer;
+
+/***/ },
+/* 317 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.Chapter4 = undefined;
+
+	var _components = __webpack_require__(58);
+
+	var _reactRedux = __webpack_require__(1);
+
+	var _ = __webpack_require__(56);
+
+	var React = __webpack_require__(3);
+
+
+	var _Chapter = function _Chapter(_ref) {
+	  var currentSection = _ref.currentSection;
+	  var inventory = _ref.inventory;
+	  var chapterId = _ref.chapterId;
+
+	  var sections = [React.createElement(
+	    'section',
+	    null,
+	    React.createElement(_components.NextChapter, { chapter: '4' })
+	  )];
+	  return React.createElement(_.RenderSection, { currentSection: currentSection, sections: sections });
+	};
+
+	var mapStateToProps = function mapStateToProps(state, ownProps) {
+	  return {
+	    currentSection: state.bookmarks[ownProps.chapterId],
+	    inventory: state.inventory
+	  };
+	};
+
+	var Chapter4 = exports.Chapter4 = (0, _reactRedux.connect)(mapStateToProps)(_Chapter);
 
 /***/ }
 /******/ ]);

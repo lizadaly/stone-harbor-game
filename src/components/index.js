@@ -140,7 +140,7 @@ class _List extends React.Component {
       return <span>{
         [...text].map((t, i) =>
           <span key={i}>
-            { i == text.length -1 ? "and ": "" }
+            { i == text.length -1 ? " and ": "" }
             <Link handler={handler} text={t}/>
             { text.length > 2 && i < text.length -1 ? ", ": "" }
           </span>
