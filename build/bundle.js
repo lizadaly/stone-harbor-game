@@ -29468,7 +29468,107 @@
 	  var sections = [React.createElement(
 	    'section',
 	    null,
-	    React.createElement(_components.NextChapter, { chapter: '4' })
+	    React.createElement(
+	      'h2',
+	      null,
+	      'Chapter Four'
+	    ),
+	    React.createElement(
+	      'h3',
+	      null,
+	      'Your Apartment'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You hear a tentative knock on the apartment door and yell, “It’s open!”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Whitby slides open the screen door and joins you on your tiny patio. “How’d you know it was me?”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“I’m psychic. How’d you know where I lived?”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“I’m a cop.” She sets down a paper bag and lights a cigarette without asking. “I brought beer.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“My favorite kind of houseguest,” you reply, though you don’t move to open one. Instead you hand her a clam shell to ash in.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“You get many guests?” she asks. It’s rhetorical—your apartment is a dump and you know it. You got as far as tossing out most of Mom’s old furniture but didn’t bother to replace much. Whitby puts her feet up on the railing and looks out over the boardwalk at the water. “I’ll give you this, it’s a million dollar view.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'She’s right. It’s dusk now, high tide, and the waves are starkly visible in the fading light, almost fluorescent. There’s a distant sound of the crowd on the boardwalk but the surf is even louder. Off to the north are the carousels and flume rides of the main strip; down at this end it’s still lively, but pleasant. “I love it here,” you admit.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Who wouldn’t?” Whitby notices the receipt next to you on a milk crate, weighed down with—“Is that a crystal ball?”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“It’s my spare.” You both continue to watch the waves in amiable silence, but you can’t put this off forever. “No, I haven’t touched it yet.” What you don’t say is how much agony you’ve been in just sitting next to this thing, this object that is desperate to hide from you.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Why not?”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Each time it’s more difficult.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“To get into the... vision?”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“No,” you say, “To get out of it.” She makes a thoughtful sound, but continues looking out over the water. You appreciate that she’s letting you do this on your own time, so you take the opportunity to stall a little longer. “What did Michelle Herschel say?”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Oh, nothing we hadn’t already heard. She was pretty thoroughly debriefed on the scene since she and her brother were staying here in town for the weekend. They rented a couple rooms at the Sahara. She’s probably pretty annoyed that I wasted her time repeating a bunch of questions she’d already been asked.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Then why’d you bring her in?” When she doesn’t reply, you laugh. “Was that whole thing a setup? Sending me out of your office?” You replay the events in your head. “That phone call you got, that was just the front desk telling you she’d arrived. And then you just watched us the whole time.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“See? Psychic.” She stubs out her cigarette. “It’s time. I promise to keep an eye on you.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You sigh. No time like the present. You reach for the ',
+	      React.createElement(_components.List, { expansions: ["<psychic>receipt</psychic>", "<psychic>cowering receipt</psychic>", "<psychic>sneaky little receipt</psychic>, and crumple it into your hand"], tag: 'c4_receipt' }),
+	      '.'
+	    )
+	  ), React.createElement(
+	    'section',
+	    null,
+	    React.createElement(_components.NextChapter, { chapter: '5' })
 	  )];
 	  return React.createElement(_.RenderSection, { currentSection: currentSection, sections: sections });
 	};
