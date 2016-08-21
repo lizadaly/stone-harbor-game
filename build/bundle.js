@@ -87,7 +87,7 @@
 
 	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(_Game).call(this, props));
 
-	    _this.chapters = [React.createElement(_chapters.Prologue, { chapterId: '0' }), React.createElement(_chapters.Chapter1, { chapterId: '1' }), React.createElement(_chapters.Chapter2, { chapterId: '2' }), React.createElement(_chapters.Chapter3, { chapterId: '3' }), React.createElement(_chapters.Chapter4, { chapterId: '4' })];
+	    _this.chapters = [React.createElement(_chapters.Prologue, { chapterId: '0' }), React.createElement(_chapters.Chapter1, { chapterId: '1' }), React.createElement(_chapters.Chapter2, { chapterId: '2' }), React.createElement(_chapters.Chapter3, { chapterId: '3' }), React.createElement(_chapters.Chapter4, { chapterId: '4' }), React.createElement(_chapters.Chapter5, { chapterId: '5' })];
 	    return _this;
 	  }
 
@@ -5754,6 +5754,18 @@
 	    enumerable: true,
 	    get: function get() {
 	      return _chapter4[key];
+	    }
+	  });
+	});
+
+	var _chapter5 = __webpack_require__(318);
+
+	Object.keys(_chapter5).forEach(function (key) {
+	  if (key === "default") return;
+	  Object.defineProperty(exports, key, {
+	    enumerable: true,
+	    get: function get() {
+	      return _chapter5[key];
 	    }
 	  });
 	});
@@ -29775,37 +29787,37 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“A lousy bookie, from the sound of it. Probably small time, somebody else’s sub.” When you ask, she adds, “Sub-bookie. A lot of guys get started by pooling bets on behalf of friends, co-workers, take a small percentage of the profits.”'
+	      'When you’ve finished, she says, “A lousy bookie, from the sound of it. Probably small time, somebody else’s sub.” When you ask, she adds, “Sub-bookie. A lot of guys get started by pooling bets on behalf of friends, co-workers, take a small percentage of the profits.”'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'The receipt is still crumpled in your hand, which is starting to cramp. You smooth it out on the coffee table and study it together. Of the five rows of numbers, four are now crossed out. Whitby says, “The first number is probably the bettor’s identifier. Bookies try not to write names down; their clients all know their ID number and give that when they call in their bets. Smart bookies pick random numbers, newcomers usually just number 1, 2, 3. None of these are bigger than twenty, so I think we’re looking at a small number of clients. But some are in pretty deep—the second numbers look like an outstanding balance. This sheet alone is worth about a hundred grand.”'
+	      'The receipt is still crumpled in your hand. You smooth it out on the coffee table and study it together. Of the five rows of numbers, four are now crossed out. Whitby says, “The first number in each row is probably the bettor’s identifier. Bookies try not to write names down; their clients all know their ID number and give that when they call in their bets. Pro bookies pick random numbers, newcomers usually just number 1, 2, 3. None of these are bigger than twenty, so I think we’re looking at a small number of clients. But some are in pretty deep—the second number look like an outstanding balance. This sheet alone is worth about a hundred grand.”'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      '“I thought you were a homicide detective.”'
+	      '“Impressive. I thought you were a homicide detective.”'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      '“This may surprise you, but illegal sports betting plays a part in a lot of more serious criminal activity.” She studies the receipt longer. ”I’m guessing the ones crossed off are the ones that Michael Herschel already collected on. I’ll take this to Vice tomorrow, see if this rings any bells. But it’s a long shot.”'
+	      '“This may surprise you, but illegal sports betting plays a part in a lot of more serious criminal activity.” She studies the receipt. ”I’m guessing Michael Herschel already collected on everyone who’s been crossed off. I’ll take this to Vice tomorrow, see if this rings any bells. But it’s a long shot without any names. Whoever has number eight is in for a bad week, I bet.”'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'Your headache is subsiding, a little. “What’s bothering me is why his sister had this, and not him.”'
+	      'Your headache is subsiding, a little. “How do you think his sister ended up with it?”'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'Whitby seems uninterested. “They’re probably in it together?”'
+	      '“By accident? Or maybe she’s in on it with him?” She doesn’t seem that interested.'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      '“I guess. She didn’t seem the type.”'
+	      '“I guess. She didn’t seem the type. Aren’t they wealthy enough already?”'
 	    ),
 	    React.createElement(
 	      'p',
@@ -29821,12 +29833,12 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“Yeah. Thanks though.” You can’t meet her eye, so you just fiddle with the crystal ball that somehow made its way inside from the porch.'
+	      '“Yeah. Thanks though.” You fiddle with the crystal ball that somehow made its way inside from the porch.'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      '“You did good work today, Pietro. You gave me real police things to run down. Take a day off, take a drive, go visit a friend. Rest up.” You nod, and she leaves, and you’re alone with your pounding head and your crystal ball and not much else.'
+	      '“You did good work today, Pietro. You gave me real police things to run down. Take a day off, go visit a friend, rest up. Try to get back your normal life.” You nod, and she leaves, and you’re alone with your pounding head and your crystal ball and not much else.'
 	    ),
 	    React.createElement(_components.NextChapter, { chapter: '5' })
 	  )];
@@ -29841,6 +29853,168 @@
 	};
 
 	var Chapter4 = exports.Chapter4 = (0, _reactRedux.connect)(mapStateToProps)(_Chapter);
+
+/***/ },
+/* 318 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.Chapter5 = undefined;
+
+	var _components = __webpack_require__(58);
+
+	var _reactRedux = __webpack_require__(1);
+
+	var _ = __webpack_require__(56);
+
+	var React = __webpack_require__(3);
+
+
+	var _Chapter = function _Chapter(_ref) {
+	  var currentSection = _ref.currentSection;
+	  var inventory = _ref.inventory;
+	  var chapterId = _ref.chapterId;
+
+	  var sections = [React.createElement(
+	    'section',
+	    null,
+	    React.createElement(
+	      'h2',
+	      null,
+	      'Chapter Five'
+	    ),
+	    React.createElement(
+	      'h3',
+	      null,
+	      'In your reading room'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Do you seek the wisdom of the ancients? Come forth!”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You didn’t visit a friend (they’ve given up on hearing from you) and you didn’t take a day off (can’t afford to), but you did get back to your regular life. After a couple of sleepless nights, exhaustion took hold and you’re almost on normal schedule—normal for you, which still involves keeping the business open until midnight and sleeping through successive summer beach days. It’s been beautiful, you hear: no land breeze, no greenhead flies, just gorgeous sun and a gentle sea breeze to keep the air moving. It’s been great for business.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'This customer is a preteen girl. Usually you send them away unless they come with a parent, but you’re in a foul mood and happy to take her money. Teen girls only care about boys so you cut to the chase. “I see a name,” you say. “It begins with an S—” Her eyes widen immediately. “',
+	      React.createElement(_components.List, { expansions: ["Scott?", "Steven?", "Sam?"], tag: 'p5_customer_names' }),
+	      '”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Sam!” she whispers.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“There’s a strong connection here, I can feel it. You and Sam are—close, yet.” From the other side of the beaded curtain you hear giggling. That’s surprising, these girls rarely come in to see you alone.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'The customer glances back towards the curtain. “I told them to wait outside. They can’t know about us,” she says, urgently. Her ',
+	      React.createElement(_components.List, { expansions: ["hands", "hands fidget, "], tag: 'c5_hands' }),
+	      React.createElement(_components.Map, { from: inventory.c5_hands, to: {
+	          undefined: " are restless on the table",
+	          hands: React.createElement(
+	            'span',
+	            null,
+	            ' alternately grasping ',
+	            React.createElement(_components.List, { expansions: ["a set of bracelets on her arm", "dozens of colorful plastic bracelets"], tag: 'c5_bracelets' }),
+	            '  and ',
+	            React.createElement(_components.List, { expansions: ["a handmade necklace", "a simple necklace of string and a pierced shell"], tag: 'c5_necklace' })
+	          )
+	        }
+	      }),
+	      '.'
+	    )
+	  ), React.createElement(
+	    'section',
+	    null,
+	    React.createElement(_components.Map, { from: inventory.c5_bracelets, to: {
+	        arm: React.createElement(
+	          'p',
+	          null,
+	          '“I sense a strong emotional connection from your bracelets.” She looks down at them in surprise, like she’d forgotten they were there. “Yeah, we bought them at the mall together.”'
+	        )
+	      } }),
+	    React.createElement(_components.Map, { from: inventory.c5_necklace, to: {
+	        necklace: React.createElement(
+	          'p',
+	          null,
+	          '“Your necklace is calling to me.”',
+	          React.createElement(_components.Map, { from: inventory.c5_bracelets, to: {
+	              arm: React.createElement(
+	                'span',
+	                null,
+	                ' You notice her eyelids flutter. “It’s a far more powerful connection than the bracelets.”'
+	              )
+	            } }),
+	          ' She grasps it, and smiles secretively. “Sam made it.”'
+	        )
+	      } }),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“He cares for you very deeply,” you say, and you’re just registering her sudden and profound disappointment in your comment when a commotion starts outside. An adult woman enters, furious. Somebody’s mother. This is why you don’t normally deal with kids.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Jennifer, get outside right this minute,” the woman says. Behind her, the two girls who must be your customer’s friends push in. ',
+	      React.createElement(_components.List, { expansions: ["One of them", "One girl wears a shell necklace, and "], tag: 'c5_girlfriend' }),
+	      ' looks especially pale.'
+	    )
+	  ), React.createElement(
+	    'section',
+	    null,
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Jennifer, Amy, Samantha, meet me in the car.” The girls scuttle out, Jennifer throwing you a look like she just learned that Santa Claus isn’t real. You know what’s coming next.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Give me whatever she paid you,” the mother says, holding out a hand.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“I don’t want any trouble,” you say. You doubt your newfound cop friend would help you out of this one anyway. Automatically, you hand over five bucks, half of what you charged the kid.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'The woman rips the money out of your hand and turns to leave. You roll your eyes to yourself and say, “Hey.” She turns back, offended that you addressed her. You stand and give her the rest of the money, which she looks at in puzzlement. “Give the kid a break, okay?” She huffs and leaves.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You put your face into your hands and rub your eyes until you see stars. The door bell jingles, and you skip the atmospheric preamble: “Come in!” It’s not like this day can get worse.'
+	    )
+	  )];
+	  return React.createElement(_.RenderSection, { currentSection: currentSection, sections: sections });
+	};
+
+	var mapStateToProps = function mapStateToProps(state, ownProps) {
+	  return {
+	    currentSection: state.bookmarks[ownProps.chapterId],
+	    inventory: state.inventory
+	  };
+	};
+
+	var Chapter5 = exports.Chapter5 = (0, _reactRedux.connect)(mapStateToProps)(_Chapter);
 
 /***/ }
 /******/ ]);

@@ -226,38 +226,40 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         notebook, same place she puts the real evidence, which makes you obscurely proud.
       </p>
       <p>
-        “A lousy bookie, from the sound of it. Probably small time, somebody else’s sub.” When you
-        ask, she adds, “Sub-bookie. A lot of guys get started by pooling bets on behalf of friends,
+        When you’ve finished, she says, “A lousy bookie, from the sound of it. Probably small time,
+        somebody else’s sub.” When you ask, she adds, “Sub-bookie. A lot of guys get started by pooling bets on behalf of friends,
         co-workers, take a small percentage of the profits.”
       </p>
       <p>
-        The receipt is still crumpled in your hand, which is starting to cramp. You smooth it out
+        The receipt is still crumpled in your hand. You smooth it out
         on the coffee table and study it together. Of the five rows of numbers, four are now
-        crossed out. Whitby says, “The first number is probably the bettor’s identifier. Bookies try not to
+        crossed out. Whitby says, “The first number in each row is probably the bettor’s identifier.
+        Bookies try not to
         write names down; their clients all know their ID number and give that when they call
-        in their bets. Smart bookies pick random numbers, newcomers usually just number 1, 2, 3.
+        in their bets. Pro bookies pick random numbers, newcomers usually just number 1, 2, 3.
         None of these are bigger than twenty, so I think we’re looking at a small number of clients.
-        But some are in pretty deep—the second numbers look like an outstanding balance. This sheet
+        But some are in pretty deep—the second number look like an outstanding balance. This sheet
         alone is worth about a
         hundred grand.”
       </p>
       <p>
-        “I thought you were a homicide detective.”
+        “Impressive. I thought you were a homicide detective.”
       </p>
       <p>
         “This may surprise you, but illegal sports betting plays a part in a lot of more serious criminal
-        activity.” She studies the receipt longer. ”I’m guessing the ones crossed off are the ones
-        that Michael Herschel already collected on. I’ll take this to Vice tomorrow, see if this
-        rings any bells. But it’s a long shot.”
+        activity.” She studies the receipt. ”I’m guessing Michael Herschel already collected on
+        everyone who’s been crossed off. I’ll take this to Vice tomorrow, see if this
+        rings any bells. But it’s a long shot without any names. Whoever has number eight is in
+        for a bad week, I bet.”
       </p>
       <p>
-        Your headache is subsiding, a little. “What’s bothering me is why his sister had this, and not him.”
+        Your headache is subsiding, a little. “How do you think his sister ended up with it?”
       </p>
       <p>
-        Whitby seems uninterested. “They’re probably in it together?”
+        “By accident? Or maybe she’s in on it with him?” She doesn’t seem that interested.
       </p>
       <p>
-        “I guess. She didn’t seem the type.”
+        “I guess. She didn’t seem the type. Aren’t they wealthy enough already?”
       </p>
       <p>
         Whitby’s packing up her stuff, her mind obviously on her day ahead. “Look, you’re good at reading
@@ -265,13 +267,12 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         that <em>everybody</em> is the type.” She tilts her head at you. “You gonna be okay by yourself?”
       </p>
       <p>
-        “Yeah. Thanks though.” You can’t meet her eye, so you just fiddle with the crystal ball
-        that somehow made its way inside from the porch.
+        “Yeah. Thanks though.” You fiddle with the crystal ball that somehow made its way inside from the porch.
       </p>
       <p>
         “You did good work today, Pietro. You gave me real police things to run down. Take a day off,
-        take a drive, go visit a friend. Rest up.” You nod, and she leaves, and you’re alone with your
-        pounding head and your crystal ball and not much else.
+        go visit a friend, rest up. Try to get back your normal life.” You nod, and she leaves,
+        and you’re alone with your pounding head and your crystal ball and not much else.
       </p>
       <NextChapter chapter="5" />
     </section>
