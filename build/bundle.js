@@ -29865,11 +29865,23 @@
 	});
 	exports.Chapter5 = undefined;
 
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 	var _components = __webpack_require__(58);
 
 	var _reactRedux = __webpack_require__(1);
 
+	var _actions = __webpack_require__(55);
+
 	var _ = __webpack_require__(56);
+
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var React = __webpack_require__(3);
 
@@ -29900,7 +29912,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'You didn’t visit a friend (they’ve given up on hearing from you) and you didn’t take a day off (can’t afford to), but you did get back to your regular life. After a couple of sleepless nights, exhaustion took hold and you’re almost on normal schedule—normal for you, which still involves keeping the business open until midnight and sleeping through successive summer beach days. It’s been beautiful, you hear: no land breeze, no greenhead flies, just gorgeous sun and a gentle sea breeze to keep the air moving. It’s been great for business.'
+	      'You didn’t visit a friend (they’ve given up on hearing from you) and you didn’t take a day off (can’t afford to), but you did get back to your regular life. After a couple of sleepless nights, exhaustion took hold and you’re almost on a normal schedule—normal for you, which still involves working until midnight and sleeping through successive summer beach days. It’s been beautiful, you hear: no land breeze, no greenhead flies, just gorgeous sun and a gentle sea breeze to keep the air moving. It’s been great for business.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -29917,7 +29929,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“There’s a strong connection here, I can feel it. You and Sam are—close, yet.” From the other side of the beaded curtain you hear giggling. That’s surprising, these girls rarely come in to see you alone.'
+	      '“There’s a strong connection here, I can feel it. You and Sam are—close, yet, not as close as you’d like.” From the other side of the beaded curtain you hear giggling. That’s surprising, these girls rarely come in to see you alone.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -29932,7 +29944,7 @@
 	            ' alternately grasping ',
 	            React.createElement(_components.List, { expansions: ["a set of bracelets on her arm", "dozens of colorful plastic bracelets"], tag: 'c5_bracelets' }),
 	            '  and ',
-	            React.createElement(_components.List, { expansions: ["a handmade necklace", "a simple necklace of string and a pierced shell"], tag: 'c5_necklace' })
+	            React.createElement(_components.List, { expansions: ["a handmade necklace", "a simple necklace made of string and a pierced shell"], tag: 'c5_necklace' })
 	          )
 	        }
 	      }),
@@ -29960,13 +29972,13 @@
 	                ' You notice her eyelids flutter. “It’s a far more powerful connection than the bracelets.”'
 	              )
 	            } }),
-	          ' She grasps it, and smiles secretively. “Sam made it.”'
+	          ' She grasps the shell around her neck, and smiles secretively. “Sam made it.”'
 	        )
 	      } }),
 	    React.createElement(
 	      'p',
 	      null,
-	      '“He cares for you very deeply,” you say, and you’re just registering her sudden and profound disappointment in your comment when a commotion starts outside. An adult woman enters, furious. Somebody’s mother. This is why you don’t normally deal with kids.'
+	      '“He cares for you very deeply,” you say, and you’re just registering her sudden and profound disappointment when a commotion starts outside. An adult woman enters, furious. Somebody’s mother. This is why you don’t normally deal with kids.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -30002,10 +30014,122 @@
 	      'p',
 	      null,
 	      'You put your face into your hands and rub your eyes until you see stars. The door bell jingles, and you skip the atmospheric preamble: “Come in!” It’s not like this day can get worse.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'And that‘s when ',
+	      React.createElement(_components.List, { expansions: ["Jared Healey", "Jared Healey, looking even more haggard,"], tag: 'c5_jared' }),
+	      ' walks into your room.'
 	    )
+	  ), React.createElement(
+	    'section',
+	    null,
+	    React.createElement('hr', null),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Your last vision surely took place recently, but since the death of his brother he’s seemingly aged years. He hasn’t bothered to shave, and at some recent point his glasses were broken and repaired with duct tape. “How does this work?” he asks.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You struggle to speak for a moment, and he interrupts. “You read my palms or something, what?”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“I... no. I require a personal object,” you say, by rote, but you’re choked with fear. What if he hands you something and you fall into another trance? What if you blurt something incriminating out? ',
+	      React.createElement(
+	        'em',
+	        null,
+	        'What if you’re powerless in front of a murderer?'
+	      )
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“What, like a watch or something? I sold it. Look, you got those Carrot cards or something?”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '”Tarot,” you correct automatically. “Yes, that is an excellent idea.” You retrieve a pack of your mom’s cards. You keep them around because some customers know what they want, but you prefer not to as it’s much easier to read people by what they carry on their person.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'While you shuffle you recite some woo about the Hermetic Order of the Golden Dawn and the Egyptian book of the Dead. Your mom’s deck has a little secret: it contains mostly the Major Arcana—the face cards like The Hanged Man and The Lovers—because she found that people got bored with readings that consisted entirely of the Two of Cups or the Seven of Wands. Hey, it’s for entertainment purposes only, right?'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'The ritual soothes you. “Tarot is not fortune-telling,” you conclude. “The cards are a reflection of present energy in a given area or circumstance.” You fix Healey with a stern expression. “You control that energy, through the choices that you make in life. If you don’t like what the cards tell you today, you can always change your behavior for a better outcome. Are you ready?”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Yes.”'
+	    ),
+	    React.createElement(Deck, null)
 	  )];
 	  return React.createElement(_.RenderSection, { currentSection: currentSection, sections: sections });
 	};
+
+	var _Deck = function (_React$Component) {
+	  _inherits(_Deck, _React$Component);
+
+	  function _Deck(props) {
+	    _classCallCheck(this, _Deck);
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(_Deck).call(this, props));
+
+	    var cardnames = [['justice', 'Justice'], ['death', 'Death'], ['fool', 'The Fool'], ['traitor', 'The Traitor'], ['money', 'Money'], ['judgment', 'Judgment'], ['man', 'The Blond Man'], ['night', 'Night']];
+	    _this.cards = cardnames.map(function (c) {
+	      return Card.apply(undefined, _toConsumableArray(c).concat([_this.onSelect.bind(_this)]));
+	    });
+	    //, this.onSelect.bind(this)) /*,
+	    return _this;
+	  }
+
+	  _createClass(_Deck, [{
+	    key: 'onSelect',
+	    value: function onSelect(name) {
+	      this.props.onUpdateInventory("c5_deck", name);
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return React.createElement(
+	        'figure',
+	        null,
+	        this.cards
+	      );
+	    }
+	  }]);
+
+	  return _Deck;
+	}(React.Component);
+
+	var Card = function Card(name, alt, handler) {
+	  var selected = arguments.length <= 3 || arguments[3] === undefined ? false : arguments[3];
+	  return React.createElement('img', { src: 'images/cards/' + name + '.png',
+	    className: (selected ? 'selected' : '') + ' card',
+	    alt: alt,
+	    onClick: function onClick() {
+	      return handler(name);
+	    }
+	  });
+	};
+
+	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+	  return {
+	    onUpdateInventory: function onUpdateInventory(sel, tag) {
+	      dispatch((0, _actions.updateInventory)(sel, tag));
+	    }
+	  };
+	};
+	var Deck = (0, _reactRedux.connect)(null, mapDispatchToProps)(_Deck);
 
 	var mapStateToProps = function mapStateToProps(state, ownProps) {
 	  return {
