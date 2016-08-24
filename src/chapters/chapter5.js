@@ -1,5 +1,5 @@
 const React = require('react')
-import { Map, List, NextChapter, ManyMap } from '../components'
+import { Map, List, NextChapter, ManyMap, AnyMap } from '../components'
 import { connect } from 'react-redux'
 import { updateInventory } from "../actions"
 
@@ -152,14 +152,12 @@ class _Deck extends React.Component {
   constructor(props) {
     super(props)
     let cardnames = [
-      ['justice', 'Justice'],
       ['death', 'Death'],
       ['fool', 'The Fool'],
-      ['traitor', 'The Traitor'],
-      ['money', 'Money'],
-      ['judgment', 'Judgment'],
+      ['justice', 'Justice'],
       ['man', 'The Blond Man'],
-      ['night', 'Night']
+      ['money', 'Money'],
+      ['traitor', 'The Traitor']
     ]
     let initialCards = cardnames.map(c => Card(...c, this.onSelect.bind(this)))
     let {chosen, cards} = this.drawCards(initialCards)
@@ -212,14 +210,32 @@ class _Deck extends React.Component {
               {hand}
             </figure>
             <Map from={this.state.lastPick[i]} to={{
-              undefined: <p>You consider which of these cards to choose from.</p>,
+              undefined: [<p>You consider which of these cards to choose from.</p>,
+              <p>You consider the second set.</p>,
+              <p>You consider the last set in the reading.</p>][i],
               death: <span>“<em>Death</em>,” you say, gravely. “Often this merely signifies change, but in your case—”
                 You pause. “I sense that there has been an actual death recently. Someone who you were
-                once close with?”
+                once close with?” Healey looks pale.
               </span>,
-              fool: <span>Fool!</span>,
-              judgment: <span>”<em>Judgment</em>. Who among us does not judge ourselves badly for what we’ve
-              done in our past.”</span>,
+              fool: <span>“<em>The Fool</em>. The spirits are unclear. Is the fool someone you know? Or you?”</span>,
+              justice: <span>”<em>Justice</em> will eventually come for us all. Some sooner than later.”</span>,
+              man: <span>”<em>The Blond Man</em>.” You frown.
+                <AnyMap from={this.props.inventory[this.props.tag]} to={
+                  {
+                    undefined: " “The spirits tell me a blond man plays a significant role in your current troubles.”",
+                    traitor: "“Is he the traitor?” Or is that you?",
+                    fool: "“Is he the fool? Or is that you?”",
+                  }
+                } /></span>,
+              money: <span>“<em>Money</em>. Nearly all religious traditions hold money as an evil, corrupting force.”
+              You refuse to consider yourself a hypocrite and continue on. “We would do well to heed them.”</span>,
+              traitor: <span>“<em>The Traitor</em>”.
+                { [
+                  " You fix him with an even stare. “Do you know someone who has betrayed a loved one?”",
+                  " You say nothing more, just stare at him until he squirms."
+                  ][i === 0 ? 0 : 1]
+                }</span>,
+
             }} />
           </div>
         })

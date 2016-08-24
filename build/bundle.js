@@ -6215,7 +6215,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.List = exports.AllButSelection = exports.ManyMap = exports.Map = exports.FromInventory = exports.Link = exports.NextChapter = undefined;
+	exports.List = exports.AllButSelection = exports.AnyMap = exports.ManyMap = exports.Map = exports.FromInventory = exports.Link = exports.NextChapter = undefined;
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -6275,8 +6275,9 @@
 
 	/* For a given value of an inventory property, return the value from the `from`
 	map that matches. Accepts an optional `offset` which is passed through to `fromInventory`.
-	If the map evaluates to an Object (a node), return that as-is; otherwise return wrapped
-	HTML.
+	If the map evaluates to string, return wrapped HTML;
+	if the map evaluates to a function, call it;
+	otherwise return the node.
 	 */
 	var Map = exports.Map = function Map(_ref4) {
 	  var from = _ref4.from;
@@ -6285,7 +6286,7 @@
 	  var offset = _ref4$offset === undefined ? "last" : _ref4$offset;
 
 	  var _from = _fromInventory(from, offset);
-	  if (!to[_from] || typeof to[_from] === 'string') return React.createElement('span', { dangerouslySetInnerHTML: { __html: to[_from] } });
+	  if (!to[_from] || typeof to[_from] === 'string') return React.createElement('span', { dangerouslySetInnerHTML: { __html: to[_from] } });else if (typeof to[_from] == 'function') return to[_from]();
 	  return to[_from];
 	};
 	Map.propTypes = {
@@ -6306,7 +6307,7 @@
 	    return Object.keys(to).indexOf(item) != -1;
 	  });
 	  return React.createElement(
-	    'div',
+	    'span',
 	    null,
 	    [].concat(_toConsumableArray(matches)).map(function (item, i) {
 	      return React.createElement(
@@ -6322,14 +6323,41 @@
 	  to: React.PropTypes.object.isRequired
 	};
 
+	/* Given an inventory _array_, where the value in inventory is an array which
+	   may contain 0, 1, or many items, return a random matching value that
+	   matches from the `to` object */
+	var AnyMap = exports.AnyMap = function AnyMap(_ref6) {
+	  var from = _ref6.from;
+	  var to = _ref6.to;
+
+	  if (!from) {
+	    if (to[undefined]) {
+	      return to[undefined];
+	    }
+	    return null;
+	  }
+	  var matches = from.filter(function (item) {
+	    return Object.keys(to).indexOf(item) != -1;
+	  });
+	  return React.createElement(
+	    'span',
+	    null,
+	    to[matches[Math.floor(Math.random() * matches.length)]]
+	  );
+	};
+	AnyMap.propTypes = {
+	  from: React.PropTypes.array,
+	  to: React.PropTypes.object.isRequired
+	};
+
 	// Display all items in an expansion _except_ the user's selection.
 	// If `offset` is not null, calls _fromInventory with that offset
 	// value to truncate each item; otherwise displays the item in full
-	var AllButSelection = exports.AllButSelection = function AllButSelection(_ref6) {
-	  var selection = _ref6.selection;
-	  var expansions = _ref6.expansions;
-	  var _ref6$offset = _ref6.offset;
-	  var offset = _ref6$offset === undefined ? null : _ref6$offset;
+	var AllButSelection = exports.AllButSelection = function AllButSelection(_ref7) {
+	  var selection = _ref7.selection;
+	  var expansions = _ref7.expansions;
+	  var _ref7$offset = _ref7.offset;
+	  var offset = _ref7$offset === undefined ? null : _ref7$offset;
 
 	  var notSelected = (0, _lib.inverter)(selection, expansions);
 	  var notSelectedDisplay = [];
@@ -30117,7 +30145,7 @@
 
 	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(_Deck).call(this, props));
 
-	    var cardnames = [['justice', 'Justice'], ['death', 'Death'], ['fool', 'The Fool'], ['traitor', 'The Traitor'], ['money', 'Money'], ['judgment', 'Judgment'], ['man', 'The Blond Man'], ['night', 'Night']];
+	    var cardnames = [['death', 'Death'], ['fool', 'The Fool'], ['justice', 'Justice'], ['man', 'The Blond Man'], ['money', 'Money'], ['traitor', 'The Traitor']];
 	    var initialCards = cardnames.map(function (c) {
 	      return Card.apply(undefined, _toConsumableArray(c).concat([_this.onSelect.bind(_this)]));
 	    });
@@ -30201,11 +30229,19 @@
 	              hand
 	            ),
 	            React.createElement(_components.Map, { from: _this2.state.lastPick[i], to: {
-	                undefined: React.createElement(
+	                undefined: [React.createElement(
 	                  'p',
 	                  null,
 	                  'You consider which of these cards to choose from.'
-	                ),
+	                ), React.createElement(
+	                  'p',
+	                  null,
+	                  'You consider the second set.'
+	                ), React.createElement(
+	                  'p',
+	                  null,
+	                  'You consider the last set in the reading.'
+	                )][i],
 	                death: React.createElement(
 	                  'span',
 	                  null,
@@ -30215,24 +30251,70 @@
 	                    null,
 	                    'Death'
 	                  ),
-	                  ',” you say, gravely. “Often this merely signifies change, but in your case—” You pause. “I sense that there has been an actual death recently. Someone who you were once close with?”'
+	                  ',” you say, gravely. “Often this merely signifies change, but in your case—” You pause. “I sense that there has been an actual death recently. Someone who you were once close with?” Healey looks pale.'
 	                ),
 	                fool: React.createElement(
 	                  'span',
 	                  null,
-	                  'Fool!'
+	                  '“',
+	                  React.createElement(
+	                    'em',
+	                    null,
+	                    'The Fool'
+	                  ),
+	                  '. The spirits are unclear. Is the fool someone you know? Or you?”'
 	                ),
-	                judgment: React.createElement(
+	                justice: React.createElement(
 	                  'span',
 	                  null,
 	                  '”',
 	                  React.createElement(
 	                    'em',
 	                    null,
-	                    'Judgment'
+	                    'Justice'
 	                  ),
-	                  '. Who among us does not judge ourselves badly for what we’ve done in our past.”'
+	                  ' will eventually come for us all. Some sooner than later.”'
+	                ),
+	                man: React.createElement(
+	                  'span',
+	                  null,
+	                  '”',
+	                  React.createElement(
+	                    'em',
+	                    null,
+	                    'The Blond Man'
+	                  ),
+	                  '.” You frown.',
+	                  React.createElement(_components.AnyMap, { from: _this2.props.inventory[_this2.props.tag], to: {
+	                      undefined: " “The spirits tell me a blond man plays a significant role in your current troubles.”",
+	                      traitor: "“Is he the traitor?” Or is that you?",
+	                      fool: "“Is he the fool? Or is that you?”"
+	                    } })
+	                ),
+	                money: React.createElement(
+	                  'span',
+	                  null,
+	                  '“',
+	                  React.createElement(
+	                    'em',
+	                    null,
+	                    'Money'
+	                  ),
+	                  '. Nearly all religious traditions hold money as an evil, corrupting force.” You refuse to consider yourself a hypocrite and continue on. “We would do well to heed them.”'
+	                ),
+	                traitor: React.createElement(
+	                  'span',
+	                  null,
+	                  '“',
+	                  React.createElement(
+	                    'em',
+	                    null,
+	                    'The Traitor'
+	                  ),
+	                  '”.',
+	                  [" You fix him with an even stare. “Do you know someone who has betrayed a loved one?”", " You say nothing more, just stare at him until he squirms."][i === 0 ? 0 : 1]
 	                )
+
 	              } })
 	          );
 	        })
