@@ -138,12 +138,11 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         “Yes.”
       </p>
-      <Deck />
-      <ManyMap from={inventory.c5_deck} to={{
-        death: `You picked death`,
-        fool: `Fool!`,
-        justice: <p>Justice for all</p>,
-      }} />
+      <p>
+        You lay out a spread of two cards:
+      </p>
+      <Deck tag="c5_deck"/>
+
     </section>
   ]
   return <RenderSection currentSection={currentSection} sections={sections} />
@@ -166,41 +165,69 @@ class _Deck extends React.Component {
     let {chosen, cards} = this.drawCards(initialCards)
     this.state = {
       cards: cards,
-      chosen: chosen
+      hands: [chosen],
+      lastPick: []
+    }
+  }
+  componentWillMount() {
+    if (!this.props.inventory[this.props.tag]) {
+      this.props.onUpdateInventory([], this.props.tag)
     }
   }
   drawCards(cards, numCards=2) {
-    let rand = Math.floor(Math.random() * cards.length - 1)
+    let rand = Math.floor(Math.random() * cards.length)
     let chosen = cards.splice(rand, numCards)
     return {chosen, cards}
   }
   onSelect(name) {
-    let inv = this.props.inventory.c5_deck
-    if (!inv) {
-      inv = []
+    let inv = [...this.props.inventory[this.props.tag]]
+    if (inv.indexOf(name) === -1) {
+      inv.push(name)
     }
-    this.props.onUpdateInventory([...inv, name], "c5_deck")
+    this.props.onUpdateInventory(inv, this.props.tag)
     // Replace just one card
     let {chosen, cards} = this.drawCards(this.state.cards, 1)
     // Clone the array and drop any empty slots
-    let newChosen = this.state.chosen.slice().filter(i => i)
+    let newChosen = this.state.hands[this.state.hands.length - 1].slice().filter(i => i)
     // Replace the card that was chosen (only), preserving the slot
     newChosen.forEach((val, i) => {
       if (val.props.id === name) {
         newChosen[i] = chosen[0]
+        return
       }
     })
     this.setState({
-      chosen: newChosen,
-      cards: cards
+      hands: [...this.state.hands, newChosen],
+      cards: cards,
+      lastPick: [...this.state.lastPick, name]
     })
   }
   render() {
-    return <figure>
-      {this.state.chosen}
-    </figure>
+
+    return <div>
+      {
+        this.state.hands.map((hand, i) => {
+          return <div key={i}>
+            <figure>
+              {hand}
+            </figure>
+            <Map from={this.state.lastPick[i]} to={{
+              undefined: <p>You consider which of these cards to choose from.</p>,
+              death: <span>“<em>Death</em>,” you say, gravely. “Often this merely signifies change, but in your case—”
+                You pause. “I sense that there has been an actual death recently. Someone who you were
+                once close with?”
+              </span>,
+              fool: <span>Fool!</span>,
+              judgment: <span>”<em>Judgment</em>. Who among us does not judge ourselves badly for what we’ve
+              done in our past.”</span>,
+            }} />
+          </div>
+        })
+      }
+    </div>
   }
 }
+
 
 const Card = (name, alt, handler, selected=false) => (
   <img src={'images/cards/' + name + '.png'}
@@ -211,8 +238,6 @@ const Card = (name, alt, handler, selected=false) => (
     onClick={() => handler(name)}
   />
 )
-
-
 
 const mapDispatchToProps = (dispatch) => {
   return {

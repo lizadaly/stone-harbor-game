@@ -30099,16 +30099,12 @@
 	      null,
 	      '“Yes.”'
 	    ),
-	    React.createElement(Deck, null),
-	    React.createElement(_components.ManyMap, { from: inventory.c5_deck, to: {
-	        death: 'You picked death',
-	        fool: 'Fool!',
-	        justice: React.createElement(
-	          'p',
-	          null,
-	          'Justice for all'
-	        )
-	      } })
+	    React.createElement(
+	      'p',
+	      null,
+	      'You lay out a spread of two cards:'
+	    ),
+	    React.createElement(Deck, { tag: 'c5_deck' })
 	  )];
 	  return React.createElement(_.RenderSection, { currentSection: currentSection, sections: sections });
 	};
@@ -30133,28 +30129,36 @@
 
 	    _this.state = {
 	      cards: cards,
-	      chosen: chosen
+	      hands: [chosen],
+	      lastPick: []
 	    };
 	    return _this;
 	  }
 
 	  _createClass(_Deck, [{
+	    key: 'componentWillMount',
+	    value: function componentWillMount() {
+	      if (!this.props.inventory[this.props.tag]) {
+	        this.props.onUpdateInventory([], this.props.tag);
+	      }
+	    }
+	  }, {
 	    key: 'drawCards',
 	    value: function drawCards(cards) {
 	      var numCards = arguments.length <= 1 || arguments[1] === undefined ? 2 : arguments[1];
 
-	      var rand = Math.floor(Math.random() * cards.length - 1);
+	      var rand = Math.floor(Math.random() * cards.length);
 	      var chosen = cards.splice(rand, numCards);
 	      return { chosen: chosen, cards: cards };
 	    }
 	  }, {
 	    key: 'onSelect',
 	    value: function onSelect(name) {
-	      var inv = this.props.inventory.c5_deck;
-	      if (!inv) {
-	        inv = [];
+	      var inv = [].concat(_toConsumableArray(this.props.inventory[this.props.tag]));
+	      if (inv.indexOf(name) === -1) {
+	        inv.push(name);
 	      }
-	      this.props.onUpdateInventory([].concat(_toConsumableArray(inv), [name]), "c5_deck");
+	      this.props.onUpdateInventory(inv, this.props.tag);
 	      // Replace just one card
 
 	      var _drawCards = this.drawCards(this.state.cards, 1);
@@ -30163,27 +30167,75 @@
 	      var cards = _drawCards.cards;
 	      // Clone the array and drop any empty slots
 
-	      var newChosen = this.state.chosen.slice().filter(function (i) {
+	      var newChosen = this.state.hands[this.state.hands.length - 1].slice().filter(function (i) {
 	        return i;
 	      });
 	      // Replace the card that was chosen (only), preserving the slot
 	      newChosen.forEach(function (val, i) {
 	        if (val.props.id === name) {
 	          newChosen[i] = chosen[0];
+	          return;
 	        }
 	      });
 	      this.setState({
-	        chosen: newChosen,
-	        cards: cards
+	        hands: [].concat(_toConsumableArray(this.state.hands), [newChosen]),
+	        cards: cards,
+	        lastPick: [].concat(_toConsumableArray(this.state.lastPick), [name])
 	      });
 	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var _this2 = this;
+
 	      return React.createElement(
-	        'figure',
+	        'div',
 	        null,
-	        this.state.chosen
+	        this.state.hands.map(function (hand, i) {
+	          return React.createElement(
+	            'div',
+	            { key: i },
+	            React.createElement(
+	              'figure',
+	              null,
+	              hand
+	            ),
+	            React.createElement(_components.Map, { from: _this2.state.lastPick[i], to: {
+	                undefined: React.createElement(
+	                  'p',
+	                  null,
+	                  'You consider which of these cards to choose from.'
+	                ),
+	                death: React.createElement(
+	                  'span',
+	                  null,
+	                  '“',
+	                  React.createElement(
+	                    'em',
+	                    null,
+	                    'Death'
+	                  ),
+	                  ',” you say, gravely. “Often this merely signifies change, but in your case—” You pause. “I sense that there has been an actual death recently. Someone who you were once close with?”'
+	                ),
+	                fool: React.createElement(
+	                  'span',
+	                  null,
+	                  'Fool!'
+	                ),
+	                judgment: React.createElement(
+	                  'span',
+	                  null,
+	                  '”',
+	                  React.createElement(
+	                    'em',
+	                    null,
+	                    'Judgment'
+	                  ),
+	                  '. Who among us does not judge ourselves badly for what we’ve done in our past.”'
+	                )
+	              } })
+	          );
+	        })
 	      );
 	    }
 	  }]);
