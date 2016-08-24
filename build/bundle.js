@@ -6215,7 +6215,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.List = exports.AllButSelection = exports.Map = exports.FromInventory = exports.Link = exports.NextChapter = undefined;
+	exports.List = exports.AllButSelection = exports.ManyMap = exports.Map = exports.FromInventory = exports.Link = exports.NextChapter = undefined;
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -6294,14 +6294,42 @@
 	  offset: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number])
 	};
 
+	/* Given an inventory _array_, where the value in inventory is an array which
+	   may contain 0, 1, or many items, return matching values from the
+	   `to` object */
+	var ManyMap = exports.ManyMap = function ManyMap(_ref5) {
+	  var from = _ref5.from;
+	  var to = _ref5.to;
+
+	  if (!from) return null;
+	  var matches = from.filter(function (item) {
+	    return Object.keys(to).indexOf(item) != -1;
+	  });
+	  return React.createElement(
+	    'div',
+	    null,
+	    [].concat(_toConsumableArray(matches)).map(function (item, i) {
+	      return React.createElement(
+	        'span',
+	        { key: i },
+	        to[item]
+	      );
+	    })
+	  );
+	};
+	ManyMap.propTypes = {
+	  from: React.PropTypes.array,
+	  to: React.PropTypes.object.isRequired
+	};
+
 	// Display all items in an expansion _except_ the user's selection.
 	// If `offset` is not null, calls _fromInventory with that offset
 	// value to truncate each item; otherwise displays the item in full
-	var AllButSelection = exports.AllButSelection = function AllButSelection(_ref5) {
-	  var selection = _ref5.selection;
-	  var expansions = _ref5.expansions;
-	  var _ref5$offset = _ref5.offset;
-	  var offset = _ref5$offset === undefined ? null : _ref5$offset;
+	var AllButSelection = exports.AllButSelection = function AllButSelection(_ref6) {
+	  var selection = _ref6.selection;
+	  var expansions = _ref6.expansions;
+	  var _ref6$offset = _ref6.offset;
+	  var offset = _ref6$offset === undefined ? null : _ref6$offset;
 
 	  var notSelected = (0, _lib.inverter)(selection, expansions);
 	  var notSelectedDisplay = [];
@@ -30071,7 +30099,16 @@
 	      null,
 	      '“Yes.”'
 	    ),
-	    React.createElement(Deck, null)
+	    React.createElement(Deck, null),
+	    React.createElement(_components.ManyMap, { from: inventory.c5_deck, to: {
+	        death: 'You picked death',
+	        fool: 'Fool!',
+	        justice: React.createElement(
+	          'p',
+	          null,
+	          'Justice for all'
+	        )
+	      } })
 	  )];
 	  return React.createElement(_.RenderSection, { currentSection: currentSection, sections: sections });
 	};
@@ -30085,17 +30122,60 @@
 	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(_Deck).call(this, props));
 
 	    var cardnames = [['justice', 'Justice'], ['death', 'Death'], ['fool', 'The Fool'], ['traitor', 'The Traitor'], ['money', 'Money'], ['judgment', 'Judgment'], ['man', 'The Blond Man'], ['night', 'Night']];
-	    _this.cards = cardnames.map(function (c) {
+	    var initialCards = cardnames.map(function (c) {
 	      return Card.apply(undefined, _toConsumableArray(c).concat([_this.onSelect.bind(_this)]));
 	    });
-	    //, this.onSelect.bind(this)) /*,
+
+	    var _this$drawCards = _this.drawCards(initialCards);
+
+	    var chosen = _this$drawCards.chosen;
+	    var cards = _this$drawCards.cards;
+
+	    _this.state = {
+	      cards: cards,
+	      chosen: chosen
+	    };
 	    return _this;
 	  }
 
 	  _createClass(_Deck, [{
+	    key: 'drawCards',
+	    value: function drawCards(cards) {
+	      var numCards = arguments.length <= 1 || arguments[1] === undefined ? 2 : arguments[1];
+
+	      var rand = Math.floor(Math.random() * cards.length - 1);
+	      var chosen = cards.splice(rand, numCards);
+	      return { chosen: chosen, cards: cards };
+	    }
+	  }, {
 	    key: 'onSelect',
 	    value: function onSelect(name) {
-	      this.props.onUpdateInventory("c5_deck", name);
+	      var inv = this.props.inventory.c5_deck;
+	      if (!inv) {
+	        inv = [];
+	      }
+	      this.props.onUpdateInventory([].concat(_toConsumableArray(inv), [name]), "c5_deck");
+	      // Replace just one card
+
+	      var _drawCards = this.drawCards(this.state.cards, 1);
+
+	      var chosen = _drawCards.chosen;
+	      var cards = _drawCards.cards;
+	      // Clone the array and drop any empty slots
+
+	      var newChosen = this.state.chosen.slice().filter(function (i) {
+	        return i;
+	      });
+	      // Replace the card that was chosen (only), preserving the slot
+	      newChosen.forEach(function (val, i) {
+	        if (val.props.id === name) {
+	          newChosen[i] = chosen[0];
+	        }
+	      });
+	      this.setState({
+	        chosen: newChosen,
+	        cards: cards
+	      });
 	    }
 	  }, {
 	    key: 'render',
@@ -30103,7 +30183,7 @@
 	      return React.createElement(
 	        'figure',
 	        null,
-	        this.cards
+	        this.state.chosen
 	      );
 	    }
 	  }]);
@@ -30116,6 +30196,8 @@
 	  return React.createElement('img', { src: 'images/cards/' + name + '.png',
 	    className: (selected ? 'selected' : '') + ' card',
 	    alt: alt,
+	    key: name,
+	    id: name,
 	    onClick: function onClick() {
 	      return handler(name);
 	    }
@@ -30129,7 +30211,11 @@
 	    }
 	  };
 	};
-	var Deck = (0, _reactRedux.connect)(null, mapDispatchToProps)(_Deck);
+	var Deck = (0, _reactRedux.connect)(function (state) {
+	  return {
+	    inventory: state.inventory
+	  };
+	}, mapDispatchToProps)(_Deck);
 
 	var mapStateToProps = function mapStateToProps(state, ownProps) {
 	  return {

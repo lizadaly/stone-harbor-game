@@ -1771,4 +1771,7 @@ hr {
   text-align: center;
   text-transform: uppercase; }
 
+img.card {
+  width: 200px; }
+
 /*# sourceMappingURL=app.css.map */

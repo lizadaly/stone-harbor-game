@@ -1,5 +1,5 @@
 const React = require('react')
-import { Map, List, NextChapter } from '../components'
+import { Map, List, NextChapter, ManyMap } from '../components'
 import { connect } from 'react-redux'
 import { updateInventory } from "../actions"
 
@@ -139,6 +139,11 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “Yes.”
       </p>
       <Deck />
+      <ManyMap from={inventory.c5_deck} to={{
+        death: `You picked death`,
+        fool: `Fool!`,
+        justice: <p>Justice for all</p>,
+      }} />
     </section>
   ]
   return <RenderSection currentSection={currentSection} sections={sections} />
@@ -157,15 +162,42 @@ class _Deck extends React.Component {
       ['man', 'The Blond Man'],
       ['night', 'Night']
     ]
-    this.cards = cardnames.map(c => Card(...c, this.onSelect.bind(this)))
-    //, this.onSelect.bind(this)) /*,
+    let initialCards = cardnames.map(c => Card(...c, this.onSelect.bind(this)))
+    let {chosen, cards} = this.drawCards(initialCards)
+    this.state = {
+      cards: cards,
+      chosen: chosen
+    }
+  }
+  drawCards(cards, numCards=2) {
+    let rand = Math.floor(Math.random() * cards.length - 1)
+    let chosen = cards.splice(rand, numCards)
+    return {chosen, cards}
   }
   onSelect(name) {
-    this.props.onUpdateInventory("c5_deck", name)
+    let inv = this.props.inventory.c5_deck
+    if (!inv) {
+      inv = []
+    }
+    this.props.onUpdateInventory([...inv, name], "c5_deck")
+    // Replace just one card
+    let {chosen, cards} = this.drawCards(this.state.cards, 1)
+    // Clone the array and drop any empty slots
+    let newChosen = this.state.chosen.slice().filter(i => i)
+    // Replace the card that was chosen (only), preserving the slot
+    newChosen.forEach((val, i) => {
+      if (val.props.id === name) {
+        newChosen[i] = chosen[0]
+      }
+    })
+    this.setState({
+      chosen: newChosen,
+      cards: cards
+    })
   }
   render() {
     return <figure>
-      {this.cards}
+      {this.state.chosen}
     </figure>
   }
 }
@@ -174,6 +206,8 @@ const Card = (name, alt, handler, selected=false) => (
   <img src={'images/cards/' + name + '.png'}
     className={(selected ? 'selected' : '') + ' card'}
     alt={alt}
+    key={name}
+    id={name}
     onClick={() => handler(name)}
   />
 )
@@ -188,7 +222,11 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 const Deck = connect(
-  null,
+  (state) => {
+    return {
+      inventory: state.inventory
+    }
+  },
   mapDispatchToProps
 )(_Deck)
 

@@ -46,6 +46,21 @@ Map.propTypes = {
       React.PropTypes.number])
 }
 
+/* Given an inventory _array_, where the value in inventory is an array which
+   may contain 0, 1, or many items, return matching values from the
+   `to` object */
+export const ManyMap = ({from, to}) => {
+  if (!from)
+    return null
+  let matches = from.filter((item) => Object.keys(to).indexOf(item) != -1)
+  return <div>
+    {[...matches].map((item, i) => <span key={i}>{to[item]}</span>)}
+  </div>
+}
+ManyMap.propTypes = {
+  from: React.PropTypes.array,
+  to: React.PropTypes.object.isRequired
+}
 
 // Display all items in an expansion _except_ the user's selection.
 // If `offset` is not null, calls _fromInventory with that offset
