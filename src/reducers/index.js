@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
 import { SHOW_NEXT_CHAPTER, SHOW_NEXT_SECTION, UPDATE_INVENTORY,
-         SET_EXPANSIONS, UPDATE_STATE_COUNTER } from "../actions"
+         SET_EXPANSIONS, UPDATE_STATE_COUNTER, UPDATE_DECK, UPDATE_HANDS, UPDATE_CHOSEN } from "../actions"
 
 function bookmarks(state=[0], action) {
   switch (action.type) {
@@ -56,10 +56,37 @@ function counter(state=0, action) {
   }
 }
 
+function deck(state=[], action) {
+  switch (action.type) {
+    case UPDATE_DECK:
+      return action.deck || state // Replace the previous deck entirely
+    default:
+      return state
+  }
+}
+function hands(state=[], action) {
+  switch (action.type) {
+    case UPDATE_HANDS:
+      return [...state, action.hands] // Just add the new set of hands
+    default:
+      return state
+  }
+}
+function chosen(state=[], action) {
+  switch (action.type) {
+    case UPDATE_CHOSEN:
+      return [...state, action.chosen] // Add the chosen card
+    default:
+      return state
+  }
+}
 
 export const gameApp = combineReducers({
   bookmarks,
   inventory,
   expansions,
-  counter
+  counter,
+  deck,
+  hands,
+  chosen
 })

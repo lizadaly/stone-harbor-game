@@ -1,7 +1,7 @@
 const React = require('react')
 import { Map, List, NextChapter, ManyMap, AnyMap } from '../components'
 import { connect } from 'react-redux'
-import { updateInventory } from "../actions"
+import { updateInventory, updateDeck, updateHands, updateChosen } from "../actions"
 
 import { RenderSection } from '.'
 
@@ -151,93 +151,72 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
 class _Deck extends React.Component {
   constructor(props) {
     super(props)
-    let cardnames = [
-      ['death', 'Death'],
-      ['fool', 'The Fool'],
-      ['justice', 'Justice'],
-      ['man', 'The Blond Man'],
-      ['money', 'Money'],
-      ['traitor', 'The Traitor']
-    ]
-    let initialCards = cardnames.map(c => Card(...c, this.onSelect.bind(this)))
-    let {chosen, cards} = this.drawCards(initialCards)
-    this.state = {
-      cards: cards,
-      hands: [chosen],
-      lastPick: []
-    }
+    this.cardnames = ['death', 'fool', 'justice', 'man', 'money', 'traitor']
   }
   componentWillMount() {
-    if (!this.props.inventory[this.props.tag]) {
-      this.props.onUpdateInventory([], this.props.tag)
-    }
+    let {drawn, cards} = this.drawCards(this.cardnames)
+    this.props.updateDeck(cards)
+    this.props.updateHands(drawn)
   }
   drawCards(cards, numCards=2) {
     let rand = Math.floor(Math.random() * cards.length)
-    let chosen = cards.splice(rand, numCards)
-    return {chosen, cards}
+    let drawn = cards.splice(rand, numCards)
+    return {drawn, cards}
   }
   onSelect(name) {
-    let inv = [...this.props.inventory[this.props.tag]]
-    if (inv.indexOf(name) === -1) {
-      inv.push(name)
-    }
-    this.props.onUpdateInventory(inv, this.props.tag)
     // Replace just one card
-    let {chosen, cards} = this.drawCards(this.state.cards, 1)
+    let {drawn, deck} = this.drawCards(this.props.deck, 1)
     // Clone the array and drop any empty slots
-    let newChosen = this.state.hands[this.state.hands.length - 1].slice().filter(i => i)
+    let newChosen = this.props.hands[this.props.hands.length - 1].slice().filter(i => i)
     // Replace the card that was chosen (only), preserving the slot
     newChosen.forEach((val, i) => {
-      if (val.props.id === name) {
-        newChosen[i] = chosen[0]
+      if (val === name) {
+        newChosen[i] = drawn[0]
         return
       }
     })
-    this.setState({
-      hands: [...this.state.hands, newChosen],
-      cards: cards,
-      lastPick: [...this.state.lastPick, name]
-    })
+    this.props.updateHands(newChosen)
+    this.props.updateDeck(deck)
+    this.props.updateChosen(name)
   }
   render() {
-
     return <div>
       {
-        this.state.hands.map((hand, i) => {
-          return <div key={i}>
-            <figure>
-              {hand}
-            </figure>
-            <Map from={this.state.lastPick[i]} to={{
-              undefined: [<p>You consider which of these cards to choose from.</p>,
-              <p>You consider the second set.</p>,
-              <p>You consider the last set in the reading.</p>][i],
-              death: <span>“<em>Death</em>,” you say, gravely. “Often this merely signifies change, but in your case—”
-                You pause. “I sense that there has been an actual death recently. Someone who you were
-                once close with?” Healey looks pale.
-              </span>,
-              fool: <span>“<em>The Fool</em>. The spirits are unclear. Is the fool someone you know? Or you?”</span>,
-              justice: <span>”<em>Justice</em> will eventually come for us all. Some sooner than later.”</span>,
-              man: <span>”<em>The Blond Man</em>.” You frown.
-                <AnyMap from={this.props.inventory[this.props.tag]} to={
-                  {
-                    undefined: " “The spirits tell me a blond man plays a significant role in your current troubles.”",
-                    traitor: "“Is he the traitor?” Or is that you?",
-                    fool: "“Is he the fool? Or is that you?”",
-                  }
-                } /></span>,
-              money: <span>“<em>Money</em>. Nearly all religious traditions hold money as an evil, corrupting force.”
-              You refuse to consider yourself a hypocrite and continue on. “We would do well to heed them.”</span>,
-              traitor: <span>“<em>The Traitor</em>”.
-                { [
-                  " You fix him with an even stare. “Do you know someone who has betrayed a loved one?”",
-                  " You say nothing more, just stare at him until he squirms."
-                  ][i === 0 ? 0 : 1]
-                }</span>,
+        this.props.hands.map((hand, i) => {
+          let cards = hand.map((c) => Card(c, c, this.onSelect.bind(this)))
+            return <div key={i}>
+              <figure>
+                {cards}
+              </figure>
+              <Map from={this.props.chosen[this.props.chosen.length - 1]} to={{
+                undefined: [<p>You consider which of these cards to choose from.</p>,
+                <p>You consider the second set.</p>,
+                <p>You consider the last set in the reading.</p>][i],
+                death: <span>“<em>Death</em>,” you say, gravely. “Often this merely signifies change, but in your case—”
+                  You pause. “I sense that there has been an actual death recently. Someone who you were
+                  once close with?” Healey looks pale.
+                </span>,
+                fool: <span>“<em>The Fool</em>. The spirits are unclear. Is the fool someone you know? Or you?”</span>,
+                justice: <span>”<em>Justice</em> will eventually come for us all. Some sooner than later.”</span>,
+                man: <span>”<em>The Blond Man</em>.” You frown.
+                  <AnyMap from={this.props.hands} to={
+                    {
+                      undefined: " “The spirits tell me a blond man plays a significant role in your current troubles.”",
+                      traitor: "“Is he the traitor?” Or is that you?",
+                      fool: "“Is he the fool? Or is that you?”",
+                    }
+                  } /></span>,
+                money: <span>“<em>Money</em>. Nearly all religious traditions hold money as an evil, corrupting force.”
+                You refuse to consider yourself a hypocrite and continue on. “We would do well to heed them.”</span>,
+                traitor: <span>“<em>The Traitor</em>”.
+                  { [
+                    " You fix him with an even stare. “Do you know someone who has betrayed a loved one?”",
+                    " You say nothing more, just stare at him until he squirms."
+                    ][i === 0 ? 0 : 1]
+                  }</span>,
 
-            }} />
-          </div>
+              }} />
+            </div>
         })
       }
     </div>
@@ -255,20 +234,16 @@ const Card = (name, alt, handler, selected=false) => (
   />
 )
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    onUpdateInventory: (sel, tag) => {
-      dispatch(updateInventory(sel, tag))
-    }
-  }
-}
+
 const Deck = connect(
   (state) => {
     return {
-      inventory: state.inventory
+      deck: state.deck,
+      hands: state.hands,
+      chosen: state.chosen
     }
   },
-  mapDispatchToProps
+  { updateDeck, updateHands, updateChosen }
 )(_Deck)
 
 const mapStateToProps = (state, ownProps) => {
