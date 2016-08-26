@@ -8637,13 +8637,16 @@
 	  _createClass(_Deck, [{
 	    key: 'componentWillMount',
 	    value: function componentWillMount() {
-	      var _drawCards = this.drawCards(this.cardnames);
+	      /* Don't do anything if we're remounting */
+	      if (this.props.deck.length === 0) {
+	        var _drawCards = this.drawCards(this.cardnames);
 
-	      var drawn = _drawCards.drawn;
-	      var cards = _drawCards.cards;
+	        var drawn = _drawCards.drawn;
+	        var cards = _drawCards.cards;
 
-	      this.props.updateDeck(cards);
-	      this.props.updateHands(drawn);
+	        this.props.updateDeck(cards);
+	        this.props.updateHands(drawn);
+	      }
 	    }
 	  }, {
 	    key: 'drawCards',
@@ -8684,6 +8687,7 @@
 	    value: function render() {
 	      var _this2 = this;
 
+	      console.log(this.props.hands);
 	      return React.createElement(
 	        'div',
 	        null,
@@ -8693,13 +8697,13 @@
 	          });
 	          return React.createElement(
 	            'div',
-	            { key: i },
+	            { key: i, id: i },
 	            React.createElement(
 	              'figure',
 	              null,
 	              cards
 	            ),
-	            React.createElement(_components.Map, { from: _this2.props.chosen[_this2.props.chosen.length - 1], to: {
+	            React.createElement(_components.Map, { from: _this2.props.chosen[i], to: {
 	                undefined: [React.createElement(
 	                  'p',
 	                  null,

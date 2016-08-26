@@ -154,9 +154,12 @@ class _Deck extends React.Component {
     this.cardnames = ['death', 'fool', 'justice', 'man', 'money', 'traitor']
   }
   componentWillMount() {
-    let {drawn, cards} = this.drawCards(this.cardnames)
-    this.props.updateDeck(cards)
-    this.props.updateHands(drawn)
+    /* Don't do anything if we're remounting */
+    if (this.props.deck.length === 0) {
+      let {drawn, cards} = this.drawCards(this.cardnames)
+      this.props.updateDeck(cards)
+      this.props.updateHands(drawn)
+    }
   }
   drawCards(cards, numCards=2) {
     let rand = Math.floor(Math.random() * cards.length)
@@ -180,15 +183,16 @@ class _Deck extends React.Component {
     this.props.updateChosen(name)
   }
   render() {
+    console.log(this.props.hands)
     return <div>
       {
         this.props.hands.map((hand, i) => {
           let cards = hand.map((c) => Card(c, c, this.onSelect.bind(this)))
-            return <div key={i}>
+            return <div key={i} id={i}>
               <figure>
                 {cards}
               </figure>
-              <Map from={this.props.chosen[this.props.chosen.length - 1]} to={{
+              <Map from={this.props.chosen[i]} to={{
                 undefined: [<p>You consider which of these cards to choose from.</p>,
                 <p>You consider the second set.</p>,
                 <p>You consider the last set in the reading.</p>][i],
