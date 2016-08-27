@@ -1,7 +1,7 @@
 const React = require('react')
 import { Map, List, NextChapter, ManyMap, AnyMap } from '../components'
 import { connect } from 'react-redux'
-import { updateInventory, updateDeck, updateHands, updateChosen } from "../actions"
+import { updateInventory, updateDeck, updateHands, updateChosen, showNextSection } from "../actions"
 
 import { RenderSection } from '.'
 
@@ -86,7 +86,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         The woman rips the money out of your hand and turns to leave. You roll your eyes to yourself
-        and say, “Hey.” She turns back, offended that you addressed her. You stand and give her
+        and say, “Hey.” She turns back, suspicious. You give her
         the rest of the money, which she looks at in puzzlement. “Give the kid a break, okay?”
         She huffs and leaves.
       </p>
@@ -95,14 +95,14 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         jingles, and you skip the atmospheric preamble: “Come in!” It’s not like this day can get worse.
       </p>
       <p>
-        And that‘s when <List expansions={["Jared Healey", "Jared Healey, looking even more haggard,"]} tag="c5_jared" /> walks into your room.
+        And that‘s when <List expansions={["Jared Healey", "Jared Healey, looking even more haggard than you feel,"]} tag="c5_jared" /> walks into your room.
       </p>
     </section>,
     <section>
       <hr/>
       <p>
-        Your last vision surely took place recently, but since the death of his brother he’s seemingly
-        aged years. He hasn’t bothered to shave, and at some recent point his glasses were
+        He’s seemed to age years since the events of the vision, surely no more than a month ago.
+        He hasn’t bothered to shave, and at some recent point his glasses were
         broken and repaired with duct tape. “How does this work?” he asks.
       </p>
       <p>
@@ -118,8 +118,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         ”Tarot,” you correct automatically. “Yes, that is an excellent idea.” You retrieve a pack of your
-        mom’s cards. You keep them around because some customers know what they want, but you
-        prefer not to as it’s much easier to read people by what they carry on their person.
+        mom’s cards. You keep them around because some customers know what they want, but
+        you’ve always found it easier to read people through their possessions.
       </p>
       <p>
         While you shuffle you recite some woo about the Hermetic Order of the Golden Dawn and the
@@ -142,7 +142,53 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         You lay out a spread of two cards:
       </p>
       <Deck tag="c5_deck"/>
-
+    </section>,
+    <section>
+      <p>Healey is sickly white, more from fear than from guilt. </p>
+      <p>You could’ve stopped at two cards—that would’ve been the kind thing to do—but you’re inexplicably
+        angry at Healey, a man you’ve never truly met before. He’s a coward and he’s dangerous,
+        but he’s not, you know now, a murderer. He’s too weak.
+      </p>
+      <p>
+        “If you have any hope of changing your fate, you have to appease the spirit of the dead,”
+        you threaten. Usually it’s an effort to tone down your naturally booming voice, but you let
+        the full force of it out. In this small space it swallows him up, squeezes what passes
+        for a conscience in the small man.
+      </p>
+      <p>“What must I do?” he cries.</p>
+      <p>“You must give me some evidence of your deceit.” You should probably have said “give it to
+        the spirits” or similar nonsense, but strike while the iron is hot. In an hour the man
+        is going to wonder what came over him and you’re going to need to be scarce.
+      </p>
+      <p>
+        “I don’t know what you mean!”
+      </p>
+      <p>
+        There’s no time to waste. “Put out your <List expansions={["hand", "hand and cleanse yourself of your guilt"]} tag="c5_hand" />,” you say.
+      </p>
+    </section>,
+    <section>
+      <p>If he finds your request odd coming from another man, he gives no sign, just plants his hands
+        firmly on the table. He’s so eager for your approval, he’d probably stand on his head if you’d
+        absolve him of his guilt.
+      </p>
+      <p>
+        You flinch a little when grabbing hold—what if that triggers a vision? But it’s just the
+        slight revulsion of another human’s clammy, sweaty body. You endure it; you’ve got one shot at
+        this: “I see numbers, so many numbers. A lot of pain and heartbreak in those numbers.” He
+        tries to pull back, but you grip harder, talk over his objection. “Who is number eight?”
+      </p>
+      <p>
+        He finally pulls free, and now he’s full-body shaking now. “Who—what are you?”
+      </p>
+      <p>
+        <em>“Who is number eight?”</em>
+      </p>
+      <p>
+        “Troiano,” he whispers. You could barely make out the name. Before you can ask for
+        anything more, Healey has fled.
+      </p>
+      <NextChapter chapter="6" />
     </section>
   ]
   return <RenderSection currentSection={currentSection} sections={sections} />
@@ -151,12 +197,19 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
 class _Deck extends React.Component {
   constructor(props) {
     super(props)
-    this.cardnames = ['death', 'fool', 'justice', 'man', 'money', 'traitor']
+    this.cardvalues = {
+      death: "Death",
+      fool: "The Fool",
+      justice: "Justice",
+      man: "The Blonde Man",
+      money: "Money",
+      traitor: "The Traitor,"
+    }
   }
   componentWillMount() {
     /* Don't do anything if we're remounting */
     if (this.props.deck.length === 0) {
-      let {drawn, cards} = this.drawCards(this.cardnames)
+      let {drawn, cards} = this.drawCards(Object.keys(this.cardvalues))
       this.props.updateDeck(cards)
       this.props.updateHands(drawn)
     }
@@ -168,26 +221,31 @@ class _Deck extends React.Component {
   }
   onSelect(name) {
     // Replace just one card
-    let {drawn, deck} = this.drawCards(this.props.deck, 1)
-    // Clone the array and drop any empty slots
-    let newChosen = this.props.hands[this.props.hands.length - 1].slice().filter(i => i)
-    // Replace the card that was chosen (only), preserving the slot
-    newChosen.forEach((val, i) => {
-      if (val === name) {
-        newChosen[i] = drawn[0]
-        return
-      }
-    })
-    this.props.updateHands(newChosen)
-    this.props.updateDeck(deck)
+    var {drawn, cards} = this.drawCards(this.props.deck, 1)
+    // If we have 3 cards left, we drew 3 cards and can't draw more
+    if (cards.length === 1) {
+      this.props.showNextSection()
+    }
+    else {
+      // Clone the array and drop any empty slots
+      let newChosen = this.props.hands[this.props.hands.length - 1].slice().filter(i => i)
+      // Replace the card that was chosen (only), preserving the slot
+      newChosen.forEach((val, i) => {
+        if (val === name) {
+          newChosen[i] = drawn[0]
+          return
+        }
+      })
+      this.props.updateHands(newChosen)
+    }
+    this.props.updateDeck(cards)
     this.props.updateChosen(name)
   }
   render() {
-    console.log(this.props.hands)
     return <div>
       {
         this.props.hands.map((hand, i) => {
-          let cards = hand.map((c) => Card(c, c, this.onSelect.bind(this)))
+          let cards = hand.map((c) => Card(c, this.cardvalues[c], this.onSelect.bind(this)))
             return <div key={i} id={i}>
               <figure>
                 {cards}
@@ -196,28 +254,69 @@ class _Deck extends React.Component {
                 undefined: [<p>You consider which of these cards to choose from.</p>,
                 <p>You consider the second set.</p>,
                 <p>You consider the last set in the reading.</p>][i],
-                death: <span>“<em>Death</em>,” you say, gravely. “Often this merely signifies change, but in your case—”
-                  You pause. “I sense that there has been an actual death recently. Someone who you were
-                  once close with?” Healey looks pale.
-                </span>,
-                fool: <span>“<em>The Fool</em>. The spirits are unclear. Is the fool someone you know? Or you?”</span>,
-                justice: <span>”<em>Justice</em> will eventually come for us all. Some sooner than later.”</span>,
-                man: <span>”<em>The Blond Man</em>.” You frown.
-                  <AnyMap from={this.props.hands} to={
+                death: <p>“<em>Death</em>,” you say, gravely. “Often this merely signifies change, but in your case—”
+                  You pause. “I sense that there has been a physical death recently, and an undeserved one.
+                  Someone who you were once close with?” Healey wipes his face. “Their spirit holds you
+                  accountable for what happened.
+                  <AnyMap from={this.props.chosen} to={
                     {
-                      undefined: " “The spirits tell me a blond man plays a significant role in your current troubles.”",
-                      traitor: "“Is he the traitor?” Or is that you?",
-                      fool: "“Is he the fool? Or is that you?”",
+                      traitor: ` Because you are The Traitor.
+                      `,
+                      fool: ` Because you are the Fool.
+                      `,
+                      money: ` All for the want of money.`,
+                      man: ` You and the Blond Man both.`
                     }
-                  } /></span>,
-                money: <span>“<em>Money</em>. Nearly all religious traditions hold money as an evil, corrupting force.”
-                You refuse to consider yourself a hypocrite and continue on. “We would do well to heed them.”</span>,
-                traitor: <span>“<em>The Traitor</em>”.
+                  } />”
+                </p>,
+                fool: <p>“<em>The Fool</em>. The spirits are unclear. Is the fool someone you know? Or you?”</p>,
+                justice: <p>”<em>Justice</em> will eventually come for us all. Some sooner than later.”
+                  When he says nothing, you continue. “Do you fear your own call to justice? The spirits
+                  believe you should be. You should be very afraid.” Now you’ve got his attention.
+                  <AnyMap from={this.props.chosen} to={
+                    {
+                      traitor: ` “The Traitor will be punished for his disloyalty.”
+                      `,
+                      fool: ` “You are truly the Fool if you go willingly to your punishment without an attempt
+                      to sae yourself.”
+                      `,
+                      death: ` “For what greater Justice can there be than in avenging a wrongful Death?”`,
+                      man: ` “You hope that the Blond Man is the only one who will receive punishment. But
+                      if you do nothing, if you continue to cower and hide, it is you alone who
+                      will be punished.”`
+                    }
+                  } />
+                </p>,
+                man: <p>”<em>The Blond Man</em>.” You frown.
+                  <AnyMap from={this.props.chosen} to={
+                    {
+                      undefined: `“The spirits tell me a blond man plays a significant role in your
+                      current troubles.” You pause. “You have colluded, together. With this man you
+                      have perpetrated a great wrong.”`,
+                      traitor: `“Is he the Traitor we saw earlier? Or is that you?” He flinches.
+                      “The spirits tell me it is both of you. You have committed a great wrong together.
+                      You must release yourself of this burden through penitent behavior.”
+                      `,
+                      fool: `“Is he the Fool in our reading?” He looks away. “No, you are the Fool. You
+                      have become mixed up with the wrong people, strayed from the path. And someone
+                      has been hurt. It is no too late for you to repent of your involvement.”
+                      `,
+                    }
+                  } /></p>,
+                money: <p>“<em>Money</em>. Nearly all religious traditions hold money as an evil, corrupting force.
+                  We would do well to heed them.” You close your eyes. “I sense money is at the root of
+                  your troubles. It’s poisoning you and those close to you. You must cleanse yourself of its
+                  influence.”
+                </p>,
+                traitor: <p>“<em>The Traitor</em>”.
                   { [
-                    " You fix him with an even stare. “Do you know someone who has betrayed a loved one?”",
-                    " You say nothing more, just stare at him until he squirms."
+                    ` You fix him with an even stare. “Do you know someone who has betrayed a loved one?”
+                    When he only stammers, you say, “The cards know what you may be afraid to admit.”
+                    `,
+                    ` You just stare at him until he squirms. “The cards know what you may be afraid to admit.”
+                    `
                     ][i === 0 ? 0 : 1]
-                  }</span>,
+                  }</p>,
 
               }} />
             </div>
@@ -247,7 +346,7 @@ const Deck = connect(
       chosen: state.chosen
     }
   },
-  { updateDeck, updateHands, updateChosen }
+  { updateDeck, updateHands, updateChosen, showNextSection }
 )(_Deck)
 
 const mapStateToProps = (state, ownProps) => {

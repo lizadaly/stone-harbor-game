@@ -8549,7 +8549,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'The woman rips the money out of your hand and turns to leave. You roll your eyes to yourself and say, “Hey.” She turns back, offended that you addressed her. You stand and give her the rest of the money, which she looks at in puzzlement. “Give the kid a break, okay?” She huffs and leaves.'
+	      'The woman rips the money out of your hand and turns to leave. You roll your eyes to yourself and say, “Hey.” She turns back, suspicious. You give her the rest of the money, which she looks at in puzzlement. “Give the kid a break, okay?” She huffs and leaves.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -8560,7 +8560,7 @@
 	      'p',
 	      null,
 	      'And that‘s when ',
-	      React.createElement(_components.List, { expansions: ["Jared Healey", "Jared Healey, looking even more haggard,"], tag: 'c5_jared' }),
+	      React.createElement(_components.List, { expansions: ["Jared Healey", "Jared Healey, looking even more haggard than you feel,"], tag: 'c5_jared' }),
 	      ' walks into your room.'
 	    )
 	  ), React.createElement(
@@ -8570,7 +8570,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'Your last vision surely took place recently, but since the death of his brother he’s seemingly aged years. He hasn’t bothered to shave, and at some recent point his glasses were broken and repaired with duct tape. “How does this work?” he asks.'
+	      'He’s seemed to age years since the events of the vision, surely no more than a month ago. He hasn’t bothered to shave, and at some recent point his glasses were broken and repaired with duct tape. “How does this work?” he asks.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -8595,7 +8595,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '”Tarot,” you correct automatically. “Yes, that is an excellent idea.” You retrieve a pack of your mom’s cards. You keep them around because some customers know what they want, but you prefer not to as it’s much easier to read people by what they carry on their person.'
+	      '”Tarot,” you correct automatically. “Yes, that is an excellent idea.” You retrieve a pack of your mom’s cards. You keep them around because some customers know what they want, but you’ve always found it easier to read people through their possessions.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -8618,6 +8618,79 @@
 	      'You lay out a spread of two cards:'
 	    ),
 	    React.createElement(Deck, { tag: 'c5_deck' })
+	  ), React.createElement(
+	    'section',
+	    null,
+	    React.createElement(
+	      'p',
+	      null,
+	      'Healey is sickly white, more from fear than from guilt. '
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You could’ve stopped at two cards—that would’ve been the kind thing to do—but you’re inexplicably angry at Healey, a man you’ve never truly met before. He’s a coward and he’s dangerous, but he’s not, you know now, a murderer. He’s too weak.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“If you have any hope of changing your fate, you have to appease the spirit of the dead,” you threaten. Usually it’s an effort to tone down your naturally booming voice, but you let the full force of it out. In this small space it swallows him up, squeezes what passes for a conscience in the small man.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“What must I do?” he cries.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“You must give me some evidence of your deceit.” You should probably have said “give it to the spirits” or similar nonsense, but strike while the iron is hot. In an hour the man is going to wonder what came over him and you’re going to need to be scarce.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“I don’t know what you mean!”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'There’s no time to waste. “Put out your ',
+	      React.createElement(_components.List, { expansions: ["hand", "hand and cleanse yourself of your guilt"], tag: 'c5_hand' }),
+	      ',” you say.'
+	    )
+	  ), React.createElement(
+	    'section',
+	    null,
+	    React.createElement(
+	      'p',
+	      null,
+	      'If he finds your request odd coming from another man, he gives no sign, just plants his hands firmly on the table. He’s so eager for your approval, he’d probably stand on his head if you’d absolve him of his guilt.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You flinch a little when grabbing hold—what if that triggers a vision? But it’s just the slight revulsion of another human’s clammy, sweaty body. You endure it; you’ve got one shot at this: “I see numbers, so many numbers. A lot of pain and heartbreak in those numbers.” He tries to pull back, but you grip harder, talk over his objection. “Who is number eight?”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'He finally pulls free, and now he’s full-body shaking now. “Who—what are you?”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      React.createElement(
+	        'em',
+	        null,
+	        '“Who is number eight?”'
+	      )
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Troiano,” he whispers. You could barely make out the name. Before you can ask for anything more, Healey has fled.'
+	    ),
+	    React.createElement(_components.NextChapter, { chapter: '6' })
 	  )];
 	  return React.createElement(_.RenderSection, { currentSection: currentSection, sections: sections });
 	};
@@ -8630,7 +8703,14 @@
 
 	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(_Deck).call(this, props));
 
-	    _this.cardnames = ['death', 'fool', 'justice', 'man', 'money', 'traitor'];
+	    _this.cardvalues = {
+	      death: "Death",
+	      fool: "The Fool",
+	      justice: "Justice",
+	      man: "The Blonde Man",
+	      money: "Money",
+	      traitor: "The Traitor,"
+	    };
 	    return _this;
 	  }
 
@@ -8639,7 +8719,7 @@
 	    value: function componentWillMount() {
 	      /* Don't do anything if we're remounting */
 	      if (this.props.deck.length === 0) {
-	        var _drawCards = this.drawCards(this.cardnames);
+	        var _drawCards = this.drawCards(Object.keys(this.cardvalues));
 
 	        var drawn = _drawCards.drawn;
 	        var cards = _drawCards.cards;
@@ -8660,40 +8740,48 @@
 	  }, {
 	    key: 'onSelect',
 	    value: function onSelect(name) {
+	      var _this2 = this;
+
 	      // Replace just one card
 
 	      var _drawCards2 = this.drawCards(this.props.deck, 1);
 
 	      var drawn = _drawCards2.drawn;
-	      var deck = _drawCards2.deck;
-	      // Clone the array and drop any empty slots
+	      var cards = _drawCards2.cards;
+	      // If we have 3 cards left, we drew 3 cards and can't draw more
 
-	      var newChosen = this.props.hands[this.props.hands.length - 1].slice().filter(function (i) {
-	        return i;
-	      });
-	      // Replace the card that was chosen (only), preserving the slot
-	      newChosen.forEach(function (val, i) {
-	        if (val === name) {
-	          newChosen[i] = drawn[0];
-	          return;
-	        }
-	      });
-	      this.props.updateHands(newChosen);
-	      this.props.updateDeck(deck);
+	      if (cards.length === 1) {
+	        this.props.showNextSection();
+	      } else {
+	        (function () {
+	          // Clone the array and drop any empty slots
+	          var newChosen = _this2.props.hands[_this2.props.hands.length - 1].slice().filter(function (i) {
+	            return i;
+	          });
+	          // Replace the card that was chosen (only), preserving the slot
+	          newChosen.forEach(function (val, i) {
+	            if (val === name) {
+	              newChosen[i] = drawn[0];
+	              return;
+	            }
+	          });
+	          _this2.props.updateHands(newChosen);
+	        })();
+	      }
+	      this.props.updateDeck(cards);
 	      this.props.updateChosen(name);
 	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var _this2 = this;
+	      var _this3 = this;
 
-	      console.log(this.props.hands);
 	      return React.createElement(
 	        'div',
 	        null,
 	        this.props.hands.map(function (hand, i) {
 	          var cards = hand.map(function (c) {
-	            return Card(c, c, _this2.onSelect.bind(_this2));
+	            return Card(c, _this3.cardvalues[c], _this3.onSelect.bind(_this3));
 	          });
 	          return React.createElement(
 	            'div',
@@ -8703,7 +8791,7 @@
 	              null,
 	              cards
 	            ),
-	            React.createElement(_components.Map, { from: _this2.props.chosen[i], to: {
+	            React.createElement(_components.Map, { from: _this3.props.chosen[i], to: {
 	                undefined: [React.createElement(
 	                  'p',
 	                  null,
@@ -8718,7 +8806,7 @@
 	                  'You consider the last set in the reading.'
 	                )][i],
 	                death: React.createElement(
-	                  'span',
+	                  'p',
 	                  null,
 	                  '“',
 	                  React.createElement(
@@ -8726,10 +8814,17 @@
 	                    null,
 	                    'Death'
 	                  ),
-	                  ',” you say, gravely. “Often this merely signifies change, but in your case—” You pause. “I sense that there has been an actual death recently. Someone who you were once close with?” Healey looks pale.'
+	                  ',” you say, gravely. “Often this merely signifies change, but in your case—” You pause. “I sense that there has been a physical death recently, and an undeserved one. Someone who you were once close with?” Healey wipes his face. “Their spirit holds you accountable for what happened.',
+	                  React.createElement(_components.AnyMap, { from: _this3.props.chosen, to: {
+	                      traitor: ' Because you are The Traitor.\n                      ',
+	                      fool: ' Because you are the Fool.\n                      ',
+	                      money: ' All for the want of money.',
+	                      man: ' You and the Blond Man both.'
+	                    } }),
+	                  '”'
 	                ),
 	                fool: React.createElement(
-	                  'span',
+	                  'p',
 	                  null,
 	                  '“',
 	                  React.createElement(
@@ -8740,7 +8835,7 @@
 	                  '. The spirits are unclear. Is the fool someone you know? Or you?”'
 	                ),
 	                justice: React.createElement(
-	                  'span',
+	                  'p',
 	                  null,
 	                  '”',
 	                  React.createElement(
@@ -8748,10 +8843,16 @@
 	                    null,
 	                    'Justice'
 	                  ),
-	                  ' will eventually come for us all. Some sooner than later.”'
+	                  ' will eventually come for us all. Some sooner than later.” When he says nothing, you continue. “Do you fear your own call to justice? The spirits believe you should be. You should be very afraid.” Now you’ve got his attention.',
+	                  React.createElement(_components.AnyMap, { from: _this3.props.chosen, to: {
+	                      traitor: ' “The Traitor will be punished for his disloyalty.”\n                      ',
+	                      fool: ' “You are truly the Fool if you go willingly to your punishment without an attempt\n                      to sae yourself.”\n                      ',
+	                      death: ' “For what greater Justice can there be than in avenging a wrongful Death?”',
+	                      man: ' “You hope that the Blond Man is the only one who will receive punishment. But\n                      if you do nothing, if you continue to cower and hide, it is you alone who\n                      will be punished.”'
+	                    } })
 	                ),
 	                man: React.createElement(
-	                  'span',
+	                  'p',
 	                  null,
 	                  '”',
 	                  React.createElement(
@@ -8760,14 +8861,14 @@
 	                    'The Blond Man'
 	                  ),
 	                  '.” You frown.',
-	                  React.createElement(_components.AnyMap, { from: _this2.props.hands, to: {
-	                      undefined: " “The spirits tell me a blond man plays a significant role in your current troubles.”",
-	                      traitor: "“Is he the traitor?” Or is that you?",
-	                      fool: "“Is he the fool? Or is that you?”"
+	                  React.createElement(_components.AnyMap, { from: _this3.props.chosen, to: {
+	                      undefined: '“The spirits tell me a blond man plays a significant role in your\n                      current troubles.” You pause. “You have colluded, together. With this man you\n                      have perpetrated a great wrong.”',
+	                      traitor: '“Is he the Traitor we saw earlier? Or is that you?” He flinches.\n                      “The spirits tell me it is both of you. You have committed a great wrong together.\n                      You must release yourself of this burden through penitent behavior.”\n                      ',
+	                      fool: '“Is he the Fool in our reading?” He looks away. “No, you are the Fool. You\n                      have become mixed up with the wrong people, strayed from the path. And someone\n                      has been hurt. It is no too late for you to repent of your involvement.”\n                      '
 	                    } })
 	                ),
 	                money: React.createElement(
-	                  'span',
+	                  'p',
 	                  null,
 	                  '“',
 	                  React.createElement(
@@ -8775,10 +8876,10 @@
 	                    null,
 	                    'Money'
 	                  ),
-	                  '. Nearly all religious traditions hold money as an evil, corrupting force.” You refuse to consider yourself a hypocrite and continue on. “We would do well to heed them.”'
+	                  '. Nearly all religious traditions hold money as an evil, corrupting force. We would do well to heed them.” You close your eyes. “I sense money is at the root of your troubles. It’s poisoning you and those close to you. You must cleanse yourself of its influence.”'
 	                ),
 	                traitor: React.createElement(
-	                  'span',
+	                  'p',
 	                  null,
 	                  '“',
 	                  React.createElement(
@@ -8787,7 +8888,7 @@
 	                    'The Traitor'
 	                  ),
 	                  '”.',
-	                  [" You fix him with an even stare. “Do you know someone who has betrayed a loved one?”", " You say nothing more, just stare at him until he squirms."][i === 0 ? 0 : 1]
+	                  [' You fix him with an even stare. “Do you know someone who has betrayed a loved one?”\n                    When he only stammers, you say, “The cards know what you may be afraid to admit.”\n                    ', ' You just stare at him until he squirms. “The cards know what you may be afraid to admit.”\n                    '][i === 0 ? 0 : 1]
 	                )
 
 	              } })
@@ -8819,7 +8920,7 @@
 	    hands: state.hands,
 	    chosen: state.chosen
 	  };
-	}, { updateDeck: _actions.updateDeck, updateHands: _actions.updateHands, updateChosen: _actions.updateChosen })(_Deck);
+	}, { updateDeck: _actions.updateDeck, updateHands: _actions.updateHands, updateChosen: _actions.updateChosen, showNextSection: _actions.showNextSection })(_Deck);
 
 	var mapStateToProps = function mapStateToProps(state, ownProps) {
 	  return {
