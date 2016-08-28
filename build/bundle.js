@@ -87,7 +87,7 @@
 
 	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(_Game).call(this, props));
 
-	    _this.chapters = [React.createElement(_chapters.Prologue, { chapterId: '0' }), React.createElement(_chapters.Chapter1, { chapterId: '1' }), React.createElement(_chapters.Chapter2, { chapterId: '2' }), React.createElement(_chapters.Chapter3, { chapterId: '3' }), React.createElement(_chapters.Chapter4, { chapterId: '4' }), React.createElement(_chapters.Chapter5, { chapterId: '5' })];
+	    _this.chapters = [React.createElement(_chapters.Prologue, { chapterId: '0' }), React.createElement(_chapters.Chapter1, { chapterId: '1' }), React.createElement(_chapters.Chapter2, { chapterId: '2' }), React.createElement(_chapters.Chapter3, { chapterId: '3' }), React.createElement(_chapters.Chapter4, { chapterId: '4' }), React.createElement(_chapters.Chapter5, { chapterId: '5' }), React.createElement(_chapters.Chapter6, { chapterId: '6' })];
 	    return _this;
 	  }
 
@@ -5827,6 +5827,18 @@
 	    enumerable: true,
 	    get: function get() {
 	      return _chapter5[key];
+	    }
+	  });
+	});
+
+	var _chapter6 = __webpack_require__(319);
+
+	Object.keys(_chapter6).forEach(function (key) {
+	  if (key === "default") return;
+	  Object.defineProperty(exports, key, {
+	    enumerable: true,
+	    get: function get() {
+	      return _chapter6[key];
 	    }
 	  });
 	});
@@ -30504,6 +30516,201 @@
 	var ReactMount = __webpack_require__(311);
 
 	module.exports = ReactMount.renderSubtreeIntoContainer;
+
+/***/ },
+/* 319 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.Chapter6 = undefined;
+
+	var _components = __webpack_require__(58);
+
+	var _reactRedux = __webpack_require__(1);
+
+	var _actions = __webpack_require__(55);
+
+	var _ = __webpack_require__(56);
+
+	var React = __webpack_require__(3);
+
+
+	var _Chapter = function _Chapter(_ref) {
+	  var currentSection = _ref.currentSection;
+	  var inventory = _ref.inventory;
+	  var chapterId = _ref.chapterId;
+
+	  var sections = [React.createElement(
+	    'section',
+	    null,
+	    React.createElement(
+	      'h2',
+	      null,
+	      'Chapter Six'
+	    ),
+	    React.createElement(
+	      'h3',
+	      null,
+	      'On the boardwalk'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You should’ve gone straight to Whitby. You will. But first you need to see something for yourself.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You know the Troianos. Sure, Healey might’ve meant some other person with that name, but when folks around here name a family, it usually means the one you’re apt to think about first. This clan owns a chain of little pizza places up and down Cape May county. You went to high school with one of the daughters, Nicki Troiano. And she has an older brother, graduated a little before you, who was always getting into trouble: one of those guys who figured he could scheme his way into the success that other people worked  for.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Nicki was a friend, insofar as girls and boys could be friends then. She grew up with an aunt in South Philly—you never quite knew why—and transferred in as a freshman. She didn’t have many friends and neither did you, and while you never had enough in common to be really close, it was nice to know someone had your back. And let’s be honest: you had a bit of a crush.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'There’s a list as long as your arm of the old acquaintances you haven’t bothered to get in touch with since you moved back, but Nicki’s the only one you’ve really avoided. She heard you complain about your mom for years: about her job, her flaky behavior, her mortifying clothes, and the fact that you lived in a cheap apartment over a tourist trap. Now ',
+	      React.createElement(
+	        'em',
+	        null,
+	        'you'
+	      ),
+	      ' have that job, that behavior, and twenty years later you live in the same dump.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Your heart sunk a little when Healey muttered that familiar name, but he had to be talking about her brother. Though you know as well as Whitby does: everybody’s the type.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'So you’re loitering outside ',
+	      React.createElement(
+	        'em',
+	        null,
+	        'Nicki’s Famous Pizzeria'
+	      ),
+	      ' (not famous, and her father named her after the pizza place rather than the other way around). When your disgust at your own cowardice finally gets the better of you, you go in.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Nothing’s changed much in twenty years. One of the reasons Nicki had a tough time making other friends was her schedule: she was working almost all the time. Said she’d rather hand out slices when she was young than when she was old. At least you’re not the only one who’s ended up standing still.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'She doesn’t see you right away, and rings up a family’s hoagies and soda total in her head. She was always good at math. When you get to the head of the line, you’re not sure what kind of reaction to expect, and it’s a surprise when she’s genuinely happy to see you. “Frankie! I heard yous in town again.” She never lost her Philly accent.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Yeah, I’ve been meaning to—” She waves off your excuse and hands you a couple of slices on the house. “Gimme a minute, I’ll get somebody to replace me. Grab a coke.” She disappears in the back and you dutifully take your food to a corner booth.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'She’s slurping from a giant lemonade when she slides in next to you—not across from you— and she looks younger than 35, like you remember her. “How you been?” she says.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'This sudden influx of kindness is almost unbearable. “Good, Nicki, I’m good.” You pause. “And I want to catch up sometime, I promise. I’ve been a real asshole, not coming to see you.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Nothing’s changed then,” she says, smiling. “I heard about your mom, I’m sorry. I would’ve come to the funeral but I never saw a notice in the paper.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“There wasn’t a public funeral,” you say. With anyone else you’d feel you needed to explain, but not her. There’s no censure in her expression, only concern.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“So what can I do you for?” Before you can answer, she adds, “I can tell from the look on your face this isn’t a social call, but I’m gonna hold you to your promise.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Deal. Listen, Nicki, I gotta ask you about something but I need you to just trust me and not ask me why.” She shrugs and nods. “Is Jimmy mixed up in any kind of trouble?”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You can see her warring with herself to probe. “I dunno what, but I think so. He’s supposed to work shifts here but it’s been months since I’ve seen him around the restaurant. I’d fire the bum but it’s still dad’s place, and Jimmy can do no wrong.” That’s an old tension in their family, and sadly, a common one. Favored son, dutiful daughter.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Meanwhile he’s got a fancy new car—a Porsche for christsakes—went in with some buddies on a sailboat when he wouldn’t know his aft from his ass. I saw him at Easter, asked him what he was into, but he just said he had a good run at the Sands.” You both know how implausible that is—you can win big in Atlantic City, but you need to start big. Nobody working a pizza joint wins car money.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“You know where I might find him?”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'For the first time, she looks at you a little suspiciously. “Don’t come back into my life if you’re in trouble too, Frankie.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You honestly don’t know how to answer that. “I’m just trying to make something right,” you say.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'That seems to be good enough. “Since he’s gotten the boat he spends a lot of time down at his ‘marina’. But I think that’s just a fancy way of saying a bar with a bunch of deadbeats.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Jared Healey’s marina?” you ask.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“Yeah, sounds familiar. Didn’t he just die?”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“His brother did,” you say. Your mind is already spinning.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Nicki puts her hand on yours, which is more physical contact than you were ever brave enough to initiate in high school. “You be careful, Frankie. I don’t want to lose my friend a second time.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'The lump in your throat is physically painful, and just like Healey, you mutter something, and flee.'
+	    )
+	  ), React.createElement('section', null)];
+	  return React.createElement(_.RenderSection, { currentSection: currentSection, sections: sections });
+	};
+
+	var mapStateToProps = function mapStateToProps(state, ownProps) {
+	  return {
+	    currentSection: state.bookmarks[ownProps.chapterId],
+	    inventory: state.inventory
+	  };
+	};
+
+	var Chapter6 = exports.Chapter6 = (0, _reactRedux.connect)(mapStateToProps)(_Chapter);
 
 /***/ }
 /******/ ]);
