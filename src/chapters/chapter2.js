@@ -56,39 +56,57 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         “Who are you? What are you doing here?”
       </p>
-      <p>You turn with a start. Coming out of the house is a very old, very
-        disapproving <Map from={inventory.c2_pail} to={{undefined: "man", "spade": "gardener", "fork": "gardener", "clippers": "gardener"}} /> carrying an
-        open and overflowing utility bag. He’s so frail that you can’t imagine him doing even the simplest
-        bit of landscaping on this grand estate. The bag contains <List expansions={["some old tools", ["a rusted spade", "a large bent fork", "a pair of hedge clippers"], "some very old garden tools"]} tag="c2_pail"/>.
+      <p>You turn with a start. It’s an older woman, alarmed at your presence. Her clothes are
+        <List expansions={["expensive"], ["but also a bit haphazardly put together; not everything matches"]} tag="c2_clothes" nextUnit={null} />.
+        She’s carrying a <List expansions={["duffel bag", "duffel bag, which from the way she carries it suggests it’s both full and heavy."]} tag="c2_duffel" nextUnit={null}/>.
+        Her <List expansions={["eyes are sharp", "eyes are sharp, but rheumy, like she’s been crying"]} tag="c2_eyes" />.
       </p>
     </section>,
-      <section>
-        <p>
-          “Uh,” you say. “Nice <Map from={inventory.c2_pail} to={{"spade": "spade", "fork": "fork", "clippers": "clippers"}} />?” The detective rolls her eyes.
-        </p>
-
-        <p>
-          He frowns at both of you. “Are you with the police?”
-        </p>
-        <p>
-          “Yes,” Whitby says, truthfully.
-        </p>
-        <p>
-          “Oh all right then. I thought you folks had finished up.”
-          He reaches into the archaeological treasure that is his tool bag. “I met with some of your colleagues
-          down the station like you asked. I’d do anything for the family, they’ve been good to me.
-          Don't remember anything new to tell you—”
-        </p>
-        <p>Whitby is coming back up the stairs. “That's fine, sir, I'm sure you did everything—”</p>
-        <p>“—but I have <em>found</em> something that I thought might be helpful to y’all. Let me show you.”
-          He’s rumaging around now, and you start to get a really bad feeling about something in that bag and
-          back up a little.
-          Whitby picks up the pace.
-        </p>
-        <p>
-          “I want to be as helpful as I can. I wasn’t here when it happened, see. Maybe I could’ve–oh here we go,” he says, and you can feel the blood draining from your limbs and
-          your vision narrowing to a pinprick. Maybe Whitby can see your
-          ghost white face, it looks like she’s reaching out to intercept, but it’s too late, the gardener has eagerly
+    <section>
+      <p>
+        <em>Ah, she must be the widow</em>. She frowns at both of you. “Are you with the police?”
+      </p>
+      <p>
+        “Yes,” Whitby says, truthfully. “I’m very sorry for your loss, Mrs. Healey.”
+      </p>
+      <p>She’s relieved that you aren’t thieves but not exactly pleased to see you. “I thought you
+        people were finished here.”
+      </p>
+      <p>
+        “Just following up on some loose ends,” Whitby says. She gives you a look that in
+        no uncertain terms means ‘keep your mouth shut.’
+      </p>
+      <p>
+        “Where are you headed?” you say, trying to act casual. The woman narrows her eyes, but you
+        just nod at the duffel bag.
+      </p>
+      <p>
+        “My sister is coming to pick me up. I’m going to stay with her for a bit.” Whitby made a
+        mistake with the timing, but that doesn’t stop her from glaring at you.
+      </p>
+      <p>
+        Mrs. Healey is staring at the detective now. “I know you,” she says. “You’re Sarah’s godmother.”
+      </p>
+      <p>
+        Whitby nods. “I went to high school with her mother.”
+      </p>
+      <p>
+        The woman putters a little around the area, deadheading a few parched flowering shrubs.
+        “I haven’t seen Sarah since—that night—but she left something at the house, let me give it to you.”
+        She reaches into the duffel bag and moves to offer you something—you, because you’re standing
+        right by her, but you’re hit by a wave of fear from whatever it is that almost physically knocks
+        you back. She looks puzzled at your reaction, but steps forward, holding the
+        thing out for you. Everything is blurred, disorienting; you can’t make it out even though it’s
+        right there.
+      </p>
+      <p>Whitby sees your distress and starts running up the steps across the patio. “Thank you, Mrs. Healey,
+        I’ll take that for her—”
+      </p>
+      <p>
+        You can feel the blood draining from your limbs and
+        your vision narrowing to a pinprick. Maybe Whitby can see your
+        ghost white face, it looks like she’s reaching out to intercept, but it’s too late,
+        the woman has eagerly
           shoved <List expansions={["a doll", "<psychic>a frightened doll</psychic>", "<psychic>a frightened doll with a crushed head</psychic>"]} tag="c2_doll" /> into
           your paralyzed hands—
         </p>
@@ -106,7 +124,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
           <p>
             A young girl, carrying the <List expansions={["doll", "happy doll"]} tag="c2_doll2" nextUnit="none" />, runs into the room and settles comfortably into a
             high-backed chair. She’s followed by an <List expansions={["older man", "kindly looking older man", "older man who you realize with a start is Alan Healey"]} tag="c2_healey" nextUnit="none" /> and
-            a <List expansions={["woman", "woman of the same age", "woman who must be Healey's wife"]} tag="c2_margaret" />.
+            a <List expansions={["woman", "woman of the same age", "woman you now recognize as Healey's wife"]} tag="c2_margaret" />.
           </p>
         </section>
       </div>,
@@ -186,14 +204,15 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
           she’s been distracted. Maybe by the guy who was slumped over in her passenger seat.
         </p>
         <p>“Who’s we?”</p>
-        <p>“Me and the gardener,” she says, with infinite patience. “I told him your blood sugar crashed. So much
+        <p>“Me and Mrs. Healey,” she says, with infinite patience. “She’s stronger than she looks.
+          I told her your blood sugar crashed. So much
         for keeping a low profile.”</p>
         <p>It’s surely hot as hell outside, but you’re chilled to the bone and unable
           to stop shivering. You laugh a little and it sounds weird to your own ears.
           “I guess I should’ve had a donut before I went on duty today.”
         </p>
         <p>“I never said you were a police officer,” she replies dourly. Cops love cop jokes.</p>
-        <p>“You certainly didn’t correct his misapprehension.”</p>
+        <p>“You certainly didn’t correct her misapprehension.”</p>
         <p>She  notices her forgotten cigarette and flicks it out the window. “What other choice did I
           have? <em>Hi I’m Detective Whitby and this is my pet psychic?</em>”
         </p>

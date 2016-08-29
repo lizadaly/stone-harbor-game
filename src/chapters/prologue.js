@@ -143,8 +143,8 @@ const _Prologue = ({currentSection, inventory}) => {
       <p>You shrug, point to the sign over the door: “<small>For entertainment purposes only</small>.” You both sit.</p>
       <p>She says, “I don’t believe in fortune-telling or psychics or any of that.
         I’m here as a favor for someone.” She’s staring at you, hard, and you can’t help but
-        squirm a little. This is probably how your clients feel. “Are you familiar with
-      the death of Alan Healey last month? It was in the papers.”</p>
+        squirm a little. This is probably how your clients feel. “Did you hear about the
+      death of Stone Harbor resident Alan Healey last month? It was in the papers.”</p>
 
       <p>“It’s August at the boardwalk,” you reply. “I’ve been pretty busy with work.”</p>
       <p>She looks pointedly around the reading room and you don’t need to be psychic to know
@@ -152,31 +152,31 @@ const _Prologue = ({currentSection, inventory}) => {
         from it.
         “Healey was found dead in his home after taking
         an overdose of his blood pressure medication. The Healeys are an old and wealthy family in
-        this town so the story got quite a bit of news coverage. Even more so when his grand-niece
-      Sarah went to the press claiming it was murder.”</p>
+      town so the story got quite a bit of news coverage.”</p>
       <p>
-        None of this sounds familiar; you truly
-        don’t follow local news. “Sorry. What does this have to do with me?”
+        Stone Harbor is a beautiful, wealthy, planned village about fifteen minutes and a million
+        miles away from the working-class carnival town where you live. “Sorry. What does this have to do with me?”
       </p>
-      <p>“Sarah is my god-daughter,” the detective says, as if that explains things.
-        “I’m not officially on the case but she’s asked for my help.
-      She’s a very... spiritual person. She believes easily.” Whitby pauses.</p>
+      <p>“Healey has a young niece who was staying with him at the time. She’s my god-daughter.
+        Her mother’s not in the picture anymore but I know she’d—I feel—” The detective looks
+        profoundly uncomfortable, like a lot of people who come in off the street here.
+      “She a very... spiritual person. She believes easily.” Whitby pauses again.</p>
       <p>“She’s gullible,“ you say.</p>
       <p>The detective scowls. ”I don’t want to be
         here any more than you want me here. I don’t even think Healey was murdered.
-        He was an old man with poor vision who misread his dosage. I’m doing
-        a favor for a young person who is hurting and—“ She reaches into her
-        pocket, searching for something. ”Sarah told me specifically to come here,
-        that she’d heard this place was different. That if the psychic wasn’t honest, they
-        were at least compassionate.“
+        He was an old man with poor vision who misread his dosage. I’m fulfilling a favor
+        to an old friend and—“ She reaches into her
+        pocket, searching for something. “Allison, her mother, told me if anything violent happened,
+        if there was ever a reason to think her daughter was in danger, I should come see the psychic here.
+        That she’d always listened to her, and would be able to help—”
       </p>
-      <p>“<i>She</i> was,” you snap. “My mother was ’The Great Francesca.’ This was her business,
+      <p>“Right, <em>she</em>,” you snap. “My mother was ’The Great Francesca.’ This was her business,
         and then she died.”
       </p>
       <p>
         “I’m sorry, I didn’t—”
       </p>
-      <p>You’re  angry too, though you’re not sure why.
+      <p>You’re angry too, though you’re not sure why.
         “And now I operate it. For tourists and suckers. <i>For entertainment purposes only.</i>”</p>
       <p>“I knew this was a waste of time,” Whitby says. She tosses
         a <List expansions={["leather glove", "<psychic>tense and furious glove</psychic>"]} tag="p0_glove"/> on the desk. "There, I did what I came to do.”
@@ -221,7 +221,7 @@ const _Prologue = ({currentSection, inventory}) => {
       <p>
         And just like that you’re back, and the feeling of being weighed down by your own body
         is almost grotesque. You look at the glove, and while it feels
-        dense and heavy in your hands, the sense of deep <i>wrongness</i> about it is gone. It’s
+        dense and heavy in your hands, the sense of deep <em>wrongness</em> about it is gone. It’s
         just a glove.
       </p>
       <p>
@@ -229,11 +229,11 @@ const _Prologue = ({currentSection, inventory}) => {
       </p>
       <p>You can’t imagine how you’re going to explain all this to a
         practical and rational police officer, but when you look up into her eyes you can see plainly
-        enough that <i>something</i> happened. She looks more than a little
+        enough that <em>something</em> happened. She looks more than a little
         bit afraid of you.
       </p>
       <p>
-        You push the glove back at her. “This was murder.”
+        You push the glove back at her. “Healey was murdered.”
       </p>
       <NextChapter chapter="1" />
     </section>

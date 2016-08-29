@@ -13,12 +13,10 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>“Do you seek the wisdom of the ancients? Come forth!”</p>
       <p>
         You didn’t visit a friend (they’ve given up on hearing from you) and you didn’t
-        take a day off (can’t afford to), but you did get back to your regular life.
-        After a couple of sleepless nights, exhaustion took hold and you’re almost
-        on a normal schedule—normal for you, which still involves working
+        take a day off (can’t afford to), but you did get back to your normal life.
+        Normal for you, which still involves working
         until midnight and sleeping through successive summer beach days.
-        It’s been beautiful, you hear: no land breeze, no greenhead flies, just
-        gorgeous sun and a gentle sea breeze to keep the air moving. It’s been
+        It’s been beautiful, you hear: sea breeze, no mosquitos or biting flies,
         great for business.
       </p>
       <p>
@@ -82,7 +80,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         “I don’t want any trouble,” you say. You doubt your newfound cop friend would help you out
-        of this one anyway. Automatically, you hand over five bucks, half of what you charged the kid.
+        of this one anyway. Automatically, you hand over five bucks, half of what you charged the girl.
       </p>
       <p>
         The woman rips the money out of your hand and turns to leave. You roll your eyes to yourself
@@ -92,7 +90,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         You put your face into your hands and rub your eyes until you see stars. The door bell
-        jingles, and you skip the atmospheric preamble: “Come in!” It’s not like this day can get worse.
+        jingles, and you skip the usual preamble: “Come in!” It’s not like this day can get worse.
       </p>
       <p>
         And that‘s when <List expansions={["Jared Healey", "Jared Healey, looking even more haggard than you feel,"]} tag="c5_jared" /> walks into your room.
@@ -114,24 +112,28 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         out? <em>What if you’re powerless in front of a murderer?</em>
       </p>
       <p>
-        “What, like a watch or something? I sold it. Look, you got those Carrot cards or something?”
+        “What, like a watch or something? I sold ’em. Well, I have this—” He slides something off his
+        hand (a ring?) and places on the table, but covers it with his palms. You immediately sense
+        waves of guilt pooling on the table, rippling towards you.
       </p>
       <p>
-        ”Tarot,” you correct automatically. “Yes, that is an excellent idea.” You retrieve a pack of your
+        You can’t do this right now, not in front of him.
+        ”Tarot cards,” you blurt out. “I sense you will benefit from their wisdom.”  You retrieve a pack of your
         mom’s cards. You keep them around because some customers know what they want, but
-        you’ve always found it easier to read people through their possessions.
+        you’ve always found it easier to read people through their possessions. In this case,
+        too easy.
       </p>
       <p>
         While you shuffle you recite some woo about the Hermetic Order of the Golden Dawn and the
-        Egyptian book of the Dead. Your mom’s deck has a little secret: it contains mostly the
-        Major Arcana—the face cards like The Hanged Man and The Lovers—because she found that
-        people got bored with readings that consisted entirely of the Two of Cups or the Seven of
+        Egyptian book of the Dead. Your mom’s deck is overstuffed with the fancy cards;
+        people get bored with readings that consist entirely of the Two of Cups or the Seven of
         Wands. Hey, it’s for entertainment purposes only, right?
       </p>
       <p>
         The ritual soothes you. “Tarot is not fortune-telling,” you conclude. “The cards
-        are a reflection of present energy in a given area or circumstance.” You fix
-        Healey with a stern expression. “You control that energy, through the choices that you
+        are a reflection of present energy in a given area or circumstance.” You feel
+        in control again and fix
+        Healey with a stern expression. “You direct that energy through the choices that you
         make in life. If you don’t like what the cards tell you today, you can always change your
         behavior for a better outcome. Are you ready?”
       </p>
@@ -145,7 +147,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
     </section>,
     <section>
       <p>Healey is sickly white, more from fear than from guilt. </p>
-      <p>You could’ve stopped at two cards—that would’ve been the kind thing to do—but you’re inexplicably
+      <p>You’re inexplicably
         angry at Healey, a man you’ve never truly met before. He’s a coward and he’s dangerous,
         but he’s not, you know now, a murderer. He’s too weak.
       </p>
@@ -153,13 +155,10 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “If you have any hope of changing your fate, you have to appease the spirit of the dead,”
         you threaten. Usually it’s an effort to tone down your naturally booming voice, but you let
         the full force of it out. In this small space it swallows him up, squeezes what passes
-        for a conscience in the small man.
+        for a conscience in the  man.
       </p>
       <p>“What must I do?” he cries.</p>
-      <p>“You must give me some evidence of your deceit.” You should probably have said “give it to
-        the spirits” or similar nonsense, but strike while the iron is hot. In an hour the man
-        is going to wonder what came over him and you’re going to need to be scarce.
-      </p>
+      <p>“You must purge yourself of your deceit.”</p>
       <p>
         “I don’t know what you mean!”
       </p>
@@ -179,7 +178,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         tries to pull back, but you grip harder, talk over his objection. “Who is number eight?”
       </p>
       <p>
-        He finally pulls free, and now he’s full-body shaking now. “Who—what are you?”
+        He finally pulls free, and now he’s full-body shaking now. “My wife, she told me you were—but I
+        didn’t believe—What are you?”
       </p>
       <p>
         <em>“Who is number eight?”</em>
@@ -187,6 +187,9 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         “Troiano,” he whispers. You could barely make out the name. Before you can ask for
         anything more, Healey has fled.
+      </p>
+      <p>
+        Still trembling with guilt, a simple gold wedding band lies forgotten on your table.
       </p>
       <NextChapter chapter="6" />
     </section>

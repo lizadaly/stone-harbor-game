@@ -33,8 +33,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “I’ll give you this, it’s a million dollar view.”
       </p>
       <p>
-        She’s right. It’s dusk now, high tide, and the waves are starkly visible in the fading
-        light, almost fluorescent. You can hear the distant sound of the crowd on the boardwalk but
+        She’s right. It’s dusk now, high tide, and the waves are starkly visible, almost fluorescent.
+        You can hear the distant sound of the crowd on the boardwalk but
         the surf is closer and louder. Off to the north are the carousels and flume rides of the main
         strip; down at this end it’s still lively, but pleasant. “I love it here,” you admit.
       </p>
@@ -45,12 +45,12 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         “It’s my spare.” You know well enough what what brought her to
         your apartment at 9pm on a Sunday night, so you answer her unasked question.
-        “I haven’t touched the receipt yet.” You
+        “I haven’t touched it yet.” You
         omit mentioning the strange agony of sharing a confined space with an object that is
         desperate to hide from you. How can a piece of paper have secrets?
       </p>
       <p>
-        “Why haven’t you?”
+        “Why not?”
       </p>
       <p>
         You watch the waves for a few cycles before answering. “Each time it’s more difficult.”
@@ -59,23 +59,23 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “To get into the... vision?”
       </p>
       <p>
-        “No,” you say, “To get out of it. What did Michelle Herschel say when you interviewed her?”
+        “To get out of it. What did Michelle Herschel say when you interviewed her?”
       </p>
       <p>
         “Oh, nothing we hadn’t already heard. She was pretty thoroughly debriefed on the scene since she
-        and her brother were staying here in town for the weekend. They rented a couple rooms at the Sahara.
-        She’s probably  annoyed that I wasted her time repeating a bunch of questions she’d already
+        and her brother were staying here in town for the weekend. They rented a couple rooms at the Caribbean.
+        She’s probably annoyed that I wasted her time repeating a bunch of questions she’d already
         been asked.”
       </p>
       <p>
-        “Then why’d you bring her in?” When she doesn’t reply it hits you suddenly, sparking
-        laughter. “Was that whole thing a setup?
-        Sending me out of your office?” You replay the events in your head. “That phone call you got, that was just
+        “Then why’d you bring her in?” When she doesn’t reply it hits you suddenly and you laugh.
+        “Was that a setup, sending me out of your office?” You replay the events in your head.
+        “That phone call you got, that was just
         the front desk telling you she’d arrived. And then you just watched us the whole time through your blinds.”
       </p>
       <p>
         “See? Psychic.” She stubs out her cigarette and picks up the receipt like it was just an ordinary
-        piece of paper. “It’s a bar bill. From a motel.” She flips it over. “A jumble of numbers
+        piece of paper. To her, it is. “It’s a bar bill. From a motel.” She flips it over. “A jumble of numbers
         handwritten on the back. What are they?”
       </p>
       <p>
@@ -83,10 +83,10 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         She holds the receipt out to you.
-        “It’s time, Pietro. I promise to keep an eye on you.”
+        “It’s time, Pietro. I promise to keep you safe.”
       </p>
       <p>
-        She’s right, and you’re ready now. “Thanks,” you say, and mean it. You reach for
+        She’s right. “Thanks,” you say, and mean it. You reach for
         the <List expansions={["<psychic>receipt</psychic>", "<psychic>cowering receipt</psychic>", "<psychic>sneaky little receipt</psychic>, and crumple it into your hand"]} tag="c4_receipt" />.
       </p>
     </section>,
@@ -102,8 +102,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         </p>
         <p>
           Across the street, an electronic bank sign tells you it’s just past dawn, explaining why the
-          motel is deserted. There's a temperature reading too and it’s surprisingly cool,
-          but trapped in this vision it feels like the most unforgiving midday, under a boiling solar spotlight
+          motel is deserted. There's a temperature reading too and it’s surprisingly cool;
+          trapped in this vision it feels like the most unforgiving midday, under a boiling solar spotlight
           with no place to hide. It all adds up to an overwhelming sense that you’re being watched.
         </p>
         <p>
@@ -119,8 +119,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         Michael Herschel emerges from inside the motel; you recognize him from the photo but
-        he’s obviously his sister’s twin—pale and fair-haired. He’s already sweating,
-        and since it’s not hot out, it must be his nerves.
+        you’d know he’s his sister’s twin—pale and fair-haired. He’s already sweating,
+        and since it’s not hot out, it must be  nerves.
         He can’t decide whether to sit or pace, alternately straightening cabana chairs and then circling
         the patio.
       </p>
@@ -157,7 +157,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         Healey gets up, kneels before his nephew. For an absurd moment you think he’s going to propose.
-        “Michael, please. That’s not how I want to run my business.”
+        “Michael, please. This isn’t how I want to run my business.”
       </p>
       <p>
         “You’re not running it, you’re ruining it.” He leans back, spreads his legs. He’s taking his time now.
@@ -199,7 +199,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “Hey, it’s your lamp,” she says mildly. “How do you feel?”
       </p>
       <p>
-        “Like I have the world’s worst hangover after the world’s least interesting bender. How long was I out?”
+        “Like I have the world’s worst hangover after the world’s shortest bender. How long was I out?”
       </p>
       <p>
         “You were never ‘out’, mostly you were just moaning about the light and the heat even though it’s
@@ -274,7 +274,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         go visit a friend, rest up. Try to get back your normal life.” You nod, and she leaves,
         and you’re alone with your pounding head and your crystal ball and not much else.
       </p>
-      <NextChapter chapter="5" />
+
     </section>
   ]
   return <RenderSection currentSection={currentSection} sections={sections} />

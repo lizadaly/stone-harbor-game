@@ -64,19 +64,31 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
     </section>,
     <section>
       <p>“That’s Alan on the left and his younger brother, Jared, on the right.
-        Jared’s wife left him years ago and started a new life, didn’t seem to want anything
-        to do with him or their kid. So he’s been raising his
-        daughter on his own. He’s a good single dad, but you know, the kind who thinks he deserves
+        I went to school with Jared’s wife Allison—we were next door neighbors for a few years—and
+        we stayed in touch while she went off to college. I didn’t know Jared until they got married.
+        His family and mine didn’t exactly go to the same garden parties.” She’s thoughtful
+        for a moment. “I never knew why she made me Sarah’s godmother. I’m not Catholic and
+        by then we weren’t close. She just said she wanted to make sure her girl was ‘protected,’ though
+        from what I don’t know. I just figured I was the only cop she’d ever known.
+      </p>
+      <p>
+        “About five years ago she just left. Just a note saying she’d decided to start a new life.
+        Left behind her wedding ring but took most of her personal possessions. I tried tracking
+        her down; she left a message for me at the office saying she’d met someone new and not
+        to go find her. I didn’t approve, but who am I to judge?”
+      </p>
+      <p>“How did her husband take it?”</p>
+      <p>“As you might imagine. So he’s been raising his
+        daughter on his own. He’s a good single dad, but the kind who thinks he deserves
         a medal for doing what a million woman do every year.” She turns over
-        another <List expansions={["photo", "photo, of a little girl in a white dress"]} tag="c1_photos2"/>.
+        another <List expansions={["photo", "photo of Sarah, the girl with the doll"]} tag="c1_photos2"/>.
       </p>
     </section>,
     <section>
-      <p>“That's Ellen, the one with the doll.”</p>
-      <p>“Jared's daughter. This picture's a few years old, she's eleven now.”
+      <p>“This picture's a few years old, she's eleven now.”
         Whitby considers her for a moment. “Everyone loves that little girl. Not just because
-        of what happened to her either; she’s just a sweet kid. My god-daughter Sarah is
-        her cousin by marriage.” She flips <List expansions={["another picture", "a picture of two adult twins"]} tag="c1_photos3" /> over.</p>
+        her mom skipped out on her; she’s just a sweet kid.”
+        She flips <List expansions={["another picture", "a picture of two adult twins"]} tag="c1_photos3" /> over.</p>
     </section>,
     <section>
       <p>“Michael and Michelle Herschel,” she says, and you can't help but snort. “Yeah, no points for
@@ -91,8 +103,11 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         first one to bail you out of trouble and also the first to toss you  on the
         street if you screwed up again. If more people were like her I'd be out of a job.”
       </p>
+      <p>“It wasn’t her,” you say, surprising even yourself. “I saw the way she looked at him, the night
+      that he died. She was worried about him. She loved him.”</p>
       <p>
-        She spreads out the photos across the table. “Everyone I've shown you here was at or near the Healey estate the weekend that he died.
+        “I think so too, but you never know,” she says, a little sadly. “Everyone I've shown you here
+        was at or near the Healey estate the weekend that he died.
         If we were pursuing this as an active murder investigation they’d all be under
         close watch, but—a locked door, a common medication, an elderly victim?
         It just added up to an unfortunate but ordinary death.”
@@ -182,9 +197,9 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
             purse: ""
           }} />
           <List expansions={["purse.", "You catch his eye and glance at the purse. To your surprise he says, “It’s hiding something, yes.”"]} tag="c3_old_man" />
-          </span>
+        </span>
 
-        }} />
+      }} />
       </p>
     </section>,
     <section>
@@ -236,26 +251,26 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         Too late, you remember that <em>she’s</em> rich. Or
         at least her family is. Funny how that‘s not always the same thing.
-        “And you?” you ask, hoping for some damage control.
+        “And you?” you ask, hoping to change the subject.
       </p>
       <p>
         “I work with my brother,” she says, and you can tell that the conversation is over. She closes
         the purse, and, agonizingly, sets it on the other side from you. You sense relief from
         whatever has been trying to evade your grasp.
       </p>
-      <p>At that moment, Whitby walks into the waiting area, brushing past you so rudely
-        that you’re a little hurt until you realize it’s a ruse. “Ms. Herschel,” she says, squatting in front
+      <p>Whitby walks into the waiting area, brushing past you so rudely
+        you know it’s a deliberate signal. “Ms. Herschel,” she says, squatting in front
         of the woman and leaning over like a confidente. “I’m so sorry to keep you waiting.”
       </p>
       <p>
         “It’s fine, I’m just in a bit of a hurry—”
       </p>
       <p>
-        You hold your breath for a split second and your face blooms a bright red. You lean over, invading
-        Herschel’s personal space. “Hey, lady cop, I was here first and I’ve been waiting for over an hour.”
+        You interrupt, loudly. “Hey, lady cop, I was here first and I’ve been waiting for over an hour.”
       </p>
       <p>
-        “Sir, if you’ll just let me know what you need—”
+        Whitby’s face shows no sign of recognition of you. “Sir, if you’ll just let me know what you need
+        I can try to find someone—”
       </p>
       <p>
         “What I <em>need</em> is to get some help around here even though I don’t have a pretty face and a <em>purse</em>.”
