@@ -187,7 +187,7 @@ const _Prologue = ({currentSection, inventory}) => {
     </section>,
       <div className="in-flashback">
         <figure className="prologue"/>
-        <h3>In the library</h3>
+        <h3>In the study</h3>
         <section>
           <p>You look down and see nothing, as if you aren’t there. The color
             has been washed out of the room. Objects are blurry and indistinct, like an old photograph. There’s

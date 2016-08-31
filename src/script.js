@@ -4,7 +4,8 @@ import { Provider, connect } from 'react-redux'
 import { createStore, compose } from 'redux'
 import { gameApp } from './reducers'
 import { Prologue, Chapter1, Chapter2, Chapter3,
-         Chapter4, Chapter5, Chapter6, Chapter7 } from './chapters'
+         Chapter4, Chapter5, Chapter6, Chapter7,
+         Chapter8 } from './chapters'
 import { persistStore, autoRehydrate } from 'redux-persist'
 
 import { Counter } from './components/counter'
@@ -23,7 +24,8 @@ class _Game extends React.Component {
         <Chapter4 chapterId="4"/>,
         <Chapter5 chapterId="5"/>,
         <Chapter6 chapterId="6"/>,
-        <Chapter7 chapterId="7"/>        
+        <Chapter7 chapterId="7"/>,
+        <Chapter8 chapterId="8"/>        
       ]
     }
     render() {
