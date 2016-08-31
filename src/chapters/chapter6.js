@@ -17,10 +17,10 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         You know the Troianos. Sure, Healey might’ve meant somebody else, but when
         folks around here name a family, it usually means the one you’re
-        apt to think about first. This clan owns a chain of little pizza places up and
+        apt to think about first. This clan owns a chain of forgettable pizza joints up and
         down Cape May County. You went to  school with one of the daughters,
-        Nicki Troiano. And she
-        has an older brother, graduated a little before you, who was always getting
+        Nicki Troiano. She
+        has an older brother who graduated a little before you and was always getting
         into trouble: one of those guys who figured he could
         scheme his way into the success that other people worked  for.
       </p>
@@ -28,7 +28,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         Nicki was a friend, insofar as girls and boys could be friends then. She grew up
         with an aunt in South Philly—you never quite knew why—and transferred in as a
         freshman. She didn’t have many friends and neither did you, and while you
-        never had enough in common it was nice to know someone had your
+        never had much in common it was nice to know someone had your
         back. And let’s be honest: you had a bit of a crush.
       </p>
       <p>
@@ -39,11 +39,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         over a tourist trap. Now <em>you</em> have that job, that behavior, and twenty
         years later you live in the same shithole.
       </p>
-      <p>
-        Your heart sunk a little when Healey muttered that familiar name, but he
-        had to be talking about her brother. Nicki wouldn’t get herself in debt to a bookie.
-        On the other hand, you know as well as Whitby does: everybody’s the type.
-      </p>
+
       <p>
         So you’re loitering outside <em>Nicki’s Famous Pizzeria</em> (not famous, and her
         father named her after the pizza place rather than the other way around). When your
@@ -57,8 +53,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         She doesn’t see you right away, and rings up a family’s hoagies and soda total
-        in her head. She was always good at math. When you get to the head of the line,
-        you’re not sure what kind of reaction to expect, but she’s
+        in her head. She was always good at math.
+        You’re not sure what kind of reaction to expect, but when you get to the head of the line she’s
         genuinely happy to see you. “Frankie! I heard you was in town again.” She never lost
         her Philly accent.
       </p>
@@ -99,14 +95,14 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         It’s obvious her first instinct is in fact to ask you why, but she restraints herself.
         “He’s supposed to work shifts here but it’s been months since I’ve seen him around the
-        restaurant. I’d fire the bum but it’s still dad’s place, and Jimmy can do no wrong. So yeah,
-        he may be up to something.
+        restaurant. I’d fire him but it’s still dad’s place, and Jimmy can do no wrong. So yeah,
+        something’s up with him.
       </p>
       <p>
-        “He’s got a fancy new car—a Porsche for christsakes—went in with some buddies on
+        “He’s got a fancy new car—a Porsche for christsakes—and went in with some buddies on
         a sailboat when he wouldn’t know his aft from his ass. I saw him at Easter, asked him what he
         was into, but he just said he had a good run at the Sands.” You both know how implausible
-        that is—you can win big in Atlantic City, but you need to start big. Nobody working a
+        that is: you can win big in Atlantic City, but you need to start big. Nobody working a
         pizza joint wins car money.
       </p>
       <p>
@@ -131,7 +127,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “Yeah, sounds familiar. Didn’t he just pass away?”
       </p>
       <p>
-        “His brother did,” you say. Your mind is already spinning.
+        “His brother did.” Your mind is already spinning, formulating a plan.
       </p>
       <p>
         Nicki puts her hand on yours, which is more physical contact than you were ever
@@ -141,8 +137,6 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         The lump in your throat is physically painful. “Can I borrow your phone?”
       </p>
-    </section>,
-    <section>
       <hr/>
       <h3>Pier 73 Marina</h3>
       <p>
@@ -153,7 +147,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         She was at home when you called; her office transferred you there. You felt weirdly guilty
         when a man answered. She doesn’t wear a ring, maybe a boyfriend? In the background you hear
-        him making dinner. A normal life. “No,” she’s saying, “No answer at his house, his sister
+        him making dinner: sounds of a normal life. “No,” she’s saying, “No answer at his house, his sister
         says she hasn’t seen him for weeks.”
       </p>
       <p>
@@ -168,8 +162,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         interrupted dinner.”
       </p>
       <p>
-        “I can’t cook for shit, my job is to stay out of the kitchen. You were doing Hank a favor.” <em>Hank</em> surely
-        must be a cop too. “Be careful,” she adds.
+        “I can’t cook for shit, my job is to stay out of the kitchen. You were doing Hank a favor.” <em>Hank</em>. “Be careful,” she adds.
       </p>
       <p>
         “You said that already.”
@@ -185,12 +178,12 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         The name stenciled along the bow: <smallcaps>Hot Sea Men</smallcaps>.
       </p>
       <p>
-        “Classy,” you mutter. You parked a half mile down the marsh road and are crouched behind
+        “Classy guys,” you mutter. You parked a half mile down the marsh road and are crouched behind
         one of many equally incongruous cars in the parking lot: a couple BMWs, a
         bright red Corvette, and Jimmy Troiano's gold Porsche.
       </p>
       <p>
-        It’s another postcard beach day, bright and cloudless; you’re totally exposed. You
+        It’s another postcard beach day, and while the daylight is fading you’re still totally exposed. You
         bend over and dart behind Jimmy’s car, keeping an eye on the tavern. If someone
         comes out, they’ll spot you in a minute.
       </p>
@@ -203,48 +196,51 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
     </section>,
     <section>
       <p>
-        <Map from={inventory.c5_car} to={{
+        <Map from={inventory.c6_car} to={{
           plate: `The plate reads, <smallcaps>JIMMY8</smallcaps>. <em>Subtle</em>. You
-          remove all the screws from the plate. It hangs there on friction alone but as soon as the
-          car pulls out on this uneven gravel, it should fall off.`,
+          remove all its screws. It hangs there on friction alone but as soon as the
+          car pulls out on this uneven gravel it should fall off.`,
           taillight: `It was cracked already, so putting it into an illegal state is just a matter of
           loosening it further with a pocket screwdriver. It’s hanging on for now, but
-          as soon as the car pulls out on this uneven gravel, it should fall off.`,
+          as soon as the car pulls out on this uneven gravel it should fall off.`,
           tailpipe: `It’s a ridiculously huge tailpipe, almost phallic. You reach behind it, to the
           muffler, and pull hard. With a couple quick tugs it’s now hanging low; after a few
           loosened screws, it’s guaranteed to start dragging on the ground.`
         }} />
       </p>
       <p>
-        Just as you creep away from the car, the tavern door opens. You pull back, hiding behind the
-        small body of the Porsche. You’re now drenched in sweat.
-      </p>
-      <p>
-        The sound carries easily. It’s Michael Herschel, in the flesh for the first time, and his
-        Nordic white features are marred by red anger. “I know you bums are hiding him from me.
+        Just as you finish, the tavern door opens.
+        It’s Michael Herschel, in the flesh for the first time, and his
+        Nordic white features are marred by red anger. He’s shouting into the bar; in the open
+        air the sound carries. “I know you bums are hiding him from me.
         When I come back I won’t be so friendly.” You sigh. Everybody wants to be a wise guy.
       </p>
       <p>
-        One of the Beemers belongs to him. It’s got one of those car phones—first you’ve ever seen.
+        One of the BMWs belongs to him. It’s got one of those car phones—first you’ve ever seen—
         but he closes the door before you can hear who he calls. The car pulls out fast, fishtailing
         on the gravel, and the resulting cloud of dust is sufficient cover for you to awkwardly
-        scamper back to the road.
+        scamper back to the road. You look back.
       </p>
       <p>
-        Incredibly, Jimmy was hiding too: lying down in a derilict rowboat. He waves off the
-        guys who spill out of the tavern to gawk—you imagine they deserve from gratitute for
+        Incredibly, Jimmy was hiding outside too: lying down in a derilict rowboat. He waves off the
+        guys who spill out of the tavern to gawk—you imagine they deserve some gratitute for
         not ratting him out—but he’s still the arrogant prick you remember and he gets into his Porsche instead.
         He doesn’t seem to have noticed you or the sabotage on his vehicle.
       </p>
       <p>
-        You pull a fishing hat down low as he drives past, but there’s no chance of detection,
-        and you’re immensely satisfied to see the <Map from={inventory.c5_car} to={{
+        You pull a fishing hat down low as he drives past but there’s no chance of detection,
+        and you’re immensely satisfied to see the <Map from={inventory.c6_car} to={{
           plate: `plate fall off and tumble into the cattails`,
           taillight: `taillight cover fall off and tumble into the cattails`,
           tailpipe: `tail pipe come loose and start dragging along the road, clattering and sparking`
         }} />.
-        
+        If all goes according to plan, a cop car will be parked in a speed trap down the road,
+        waiting for his Porsche and some probable cause to pull him over. Whitby agreed that
+        some light entrapment was more in Mr. Troiano’s interest than getting further in debt with
+        some wannabe bookie. With any luck, Jimmy will sing, then Jared Healey will crack, and
+        you’ll put this murder behind you.
       </p>
+      <NextChapter chapter="7" />
     </section>
   ]
   return <RenderSection currentSection={currentSection} sections={sections} />

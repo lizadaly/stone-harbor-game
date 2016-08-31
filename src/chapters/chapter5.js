@@ -146,16 +146,17 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <Deck tag="c5_deck"/>
     </section>,
     <section>
-      <p>Healey is sickly white, more from fear than from guilt. </p>
-      <p>You’re inexplicably
-        angry at Healey, a man you’ve never truly met before. He’s a coward and he’s dangerous,
+      <hr/>
+      <p>You fold up the deck and put it aside, and regard the man before you.
+        You’re inexplicably
+        angry at him, a man you’ve never truly met before. He’s a coward and he’s dangerous,
         but he’s not, you know now, a murderer. He’s too weak.
       </p>
       <p>
         “If you have any hope of changing your fate, you have to appease the spirit of the dead,”
-        you threaten. Usually it’s an effort to tone down your naturally booming voice, but you let
-        the full force of it out. In this small space it swallows him up, squeezes what passes
-        for a conscience in the  man.
+        you threaten. Usually you tone down your naturally booming voice, but now you unleash
+        the full force of it. In this small space it swallows him up, squeezes what passes
+        for his conscience.
       </p>
       <p>“What must I do?” he cries.</p>
       <p>“You must purge yourself of your deceit.”</p>
@@ -163,22 +164,22 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “I don’t know what you mean!”
       </p>
       <p>
-        There’s no time to waste. “Put out your <List expansions={["hand", "hand and cleanse yourself of your guilt"]} tag="c5_hand" />,” you say.
+        You have one shot here to get the information you and Whitby need.
+        “Put out your <List expansions={["hand", "hand and the spirits will reveal to me what you must do"]} tag="c5_hand" />,” you say.
       </p>
     </section>,
     <section>
-      <p>If he finds your request odd coming from another man, he gives no sign, just plants his hands
+      <p>If he finds the request odd he gives no sign, just plants his hands
         firmly on the table. He’s so eager for your approval, he’d probably stand on his head if you’d
         absolve him of his guilt.
       </p>
       <p>
-        You flinch a little when grabbing hold—what if that triggers a vision? But it’s just the
-        slight revulsion of another human’s clammy, sweaty body. You endure it; you’ve got one shot at
-        this: “I see numbers, so many numbers. A lot of pain and heartbreak in those numbers.” He
-        tries to pull back, but you grip harder, talk over his objection. “Who is number eight?”
+        You flinch a little when grabbing hold of his palms—what if that triggers a vision—but you feel
+        just the revulsion of another human’s clammy, sweaty body. “I see numbers, so many numbers. A lot of pain and heartbreak in those numbers.” He
+        tries to pull back, but you tighten your grip and talk over his objection. “Who is number eight?”
       </p>
       <p>
-        He finally pulls free, and now he’s full-body shaking now. “My wife, she told me you were—but I
+        He finally pulls free, and now he’s full-body shaking. “My wife, she told me you were—but I
         didn’t believe—What are you?”
       </p>
       <p>
@@ -189,7 +190,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         anything more, Healey has fled.
       </p>
       <p>
-        Still trembling with guilt, a simple gold wedding band lies forgotten on your table.
+        Still overwhelmed with guilt, a simple gold wedding band lies forgotten on your table.
       </p>
       <NextChapter chapter="6" />
     </section>

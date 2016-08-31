@@ -3,7 +3,8 @@ const ReactDOM = require('react-dom')
 import { Provider, connect } from 'react-redux'
 import { createStore, compose } from 'redux'
 import { gameApp } from './reducers'
-import { Prologue, Chapter1, Chapter2, Chapter3, Chapter4, Chapter5, Chapter6 } from './chapters'
+import { Prologue, Chapter1, Chapter2, Chapter3,
+         Chapter4, Chapter5, Chapter6, Chapter7 } from './chapters'
 import { persistStore, autoRehydrate } from 'redux-persist'
 
 import { Counter } from './components/counter'
@@ -21,7 +22,8 @@ class _Game extends React.Component {
         <Chapter3 chapterId="3"/>,
         <Chapter4 chapterId="4"/>,
         <Chapter5 chapterId="5"/>,
-        <Chapter6 chapterId="6"/>
+        <Chapter6 chapterId="6"/>,
+        <Chapter7 chapterId="7"/>        
       ]
     }
     render() {

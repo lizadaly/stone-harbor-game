@@ -177,10 +177,15 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         “Don’t call me,” he says. “I’ll let you know when it’s done. Or just check the account.” Healey
         tries to interrupt but Herschel makes a scolding sound like he’s talking to a dog.
-        “The most important thing is the <em>he</em> never finds out.”
+        “You’re sure <em>he</em> hasn’t found out?”
       </p>
       <p>
-        “I know,” Healey says, miserably. He slinks down the outside stairs, a broken man. With each
+        “Positive, you gotta trust me.”
+      </p>
+      <p>“No I don’t. Now, can you keep your mouth shut, or do I have two problems?”
+      </p>
+      <p>
+        “I’ll keep quiet,” Healey says, miserably. He slinks down the outside stairs, a broken man. With each
         step he takes, the vision fades to that blinding white a little more.
       </p>
       <p>
@@ -217,8 +222,9 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “What does Jared Healey do for a living?”
       </p>
       <p>
-        “Co-owner of a third-rate marina on the bay. Really more of a slip for locals to go
-        fishing and crabbing on the off season. Half the time nobody’s around, I know we never
+        “Manages a third-rate marina on the bay. Really more of a slip for locals to go
+        fishing and crabbing on the off season. It’s really owned by his brother.
+        Half the time nobody’s around, I know we never
         found him there when we brought him in for questioning.”
       </p>
       <p>
@@ -227,7 +233,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         When you’ve finished, she says, “A lousy bookie, from the sound of it. Probably small time,
-        somebody else’s sub.” When you ask, she adds, “Sub-bookie. A lot of guys get started by pooling bets on behalf of friends,
+        somebody else’s sub.” When you ask, she adds, “Sub-bookie. A lot of guys get started by pooling
+        bets on behalf of friends,
         co-workers, take a small percentage of the profits.”
       </p>
       <p>
@@ -246,7 +253,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “Impressive. I thought you were a homicide detective.”
       </p>
       <p>
-        “This may surprise you, but illegal sports betting plays a part in a lot of more serious criminal
+        “This may surprise you, but illegal sports betting plays a part in a lot of serious criminal
         activity.” She studies the receipt. ”I’m guessing Michael Herschel already collected on
         everyone who’s been crossed off. I’ll take this to Vice tomorrow, see if this
         rings any bells. But it’s a long shot without any names. Whoever has number eight is in
