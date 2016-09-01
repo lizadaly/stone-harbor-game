@@ -9,11 +9,19 @@ export * from "./chapter7.js"
 export * from "./chapter8.js"
 export * from "./epilogue.js"
 
+const ReactCSSTransitionGroup = require('react-addons-css-transition-group')
 const React = require('react')
 
-export const RenderSection = ({currentSection, sections}) => (
-  <div>{[...Array(currentSection + 1).keys()].map(i => {
+export const RenderSection = ({currentSection, sections}) => {
+  var sections = [...Array(currentSection + 1).keys()].map(i => {
     return <div key={i}>{sections[i]}</div>
-  })}
-  </div>
-)
+      })
+
+  return (
+    <div>
+      <ReactCSSTransitionGroup transitionName="section" transitionAppear={true} transitionEnterTimeout={500} transitionLeaveTimeout={300}>
+        {sections}
+      </ReactCSSTransitionGroup>
+    </div>
+  )
+}
