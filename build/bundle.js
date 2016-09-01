@@ -87,7 +87,7 @@
 
 	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(_Game).call(this, props));
 
-	    _this.chapters = [React.createElement(_chapters.Prologue, { chapterId: '0' }), React.createElement(_chapters.Chapter1, { chapterId: '1' }), React.createElement(_chapters.Chapter2, { chapterId: '2' }), React.createElement(_chapters.Chapter3, { chapterId: '3' }), React.createElement(_chapters.Chapter4, { chapterId: '4' }), React.createElement(_chapters.Chapter5, { chapterId: '5' }), React.createElement(_chapters.Chapter6, { chapterId: '6' }), React.createElement(_chapters.Chapter7, { chapterId: '7' }), React.createElement(_chapters.Chapter8, { chapterId: '8' })];
+	    _this.chapters = [React.createElement(_chapters.Prologue, { chapterId: '0' }), React.createElement(_chapters.Chapter1, { chapterId: '1' }), React.createElement(_chapters.Chapter2, { chapterId: '2' }), React.createElement(_chapters.Chapter3, { chapterId: '3' }), React.createElement(_chapters.Chapter4, { chapterId: '4' }), React.createElement(_chapters.Chapter5, { chapterId: '5' }), React.createElement(_chapters.Chapter6, { chapterId: '6' }), React.createElement(_chapters.Chapter7, { chapterId: '7' }), React.createElement(_chapters.Chapter8, { chapterId: '8' }), React.createElement(_chapters.Epilogue, { chapterId: '9' })];
 	    return _this;
 	  }
 
