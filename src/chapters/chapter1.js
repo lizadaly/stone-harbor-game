@@ -210,7 +210,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         <p>“And this cigar knife,” you press on, “wanted nothing more than to cut one more cigar.
           It had a purpose in existing and that purpose was thwarted.”
         </p>
-        <p>“And right now? This glove <em>misses</em> him?”</p>
+        <p>“And right now? This cigar cutter <em>misses</em> him?”</p>
         <p>“Not anymore. I think once they—show me what they’re feeling, they’re satisfied.”</p>
         <p>She sits back and folds her arms. “Mr. Pietro, I can’t tell, do you think I’m an idiot or a sucker?”</p>
         <p>“That glove,” you point. “You only found one, didn’t you?”

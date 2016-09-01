@@ -60,8 +60,9 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         “Yeah, I’ve been meaning to—” She waves off your excuse and hands you a couple of
-        slices on the house. “Gimme a minute, I’ll get somebody to sub in. Grab a coke.”
-        She disappears in the back and you dutifully take your food to a corner booth.
+        slices on the house. “Gimme a minute, I’ll get somebody to sub in. Didj’eat?”
+        She comps you two slices and a coke and disappears in the back. You dutifully take
+        your food to a booth.
       </p>
       <p>
         She’s slurping from a giant lemonade when she slides in next to you—not across from you—
@@ -147,15 +148,15 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         She was at home when you called; her office transferred you there. You felt weirdly guilty
         when a man answered. She doesn’t wear a ring, maybe a boyfriend? In the background you hear
-        him making dinner: sounds of a normal life. “No,” she’s saying, “No answer at his house, his sister
+        him making dinner: sounds of a normal life. “No,” she’s saying, “Not at his house, his sister
         says she hasn’t seen him for weeks.”
       </p>
       <p>
         “You believe her?”
       </p>
       <p>
-        “Hard to say, I didn’t make the housecall. Probably not.” You hear clanging pots in the background.
-        “Listen, I gotta go. I’ll make sure a patrol car picks him up. You do your part, but be careful.”
+        “Probably not.” You hear clanging pots in the background.
+        “Listen, I gotta go. You do your part, but be careful. I’ll make sure a patrol car picks him up.”
       </p>
       <p>
         Two people in one day expressing interest in your welfare is some kind of record. “Sorry I
@@ -168,7 +169,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “You said that already.”
       </p>
       <p>
-        “And I’ll keep saying it until you thank me.” She hangs up, but you know she’s not actually mad.
+        “And I’ll <em>keep</em> saying it until you thank me.” She hangs up, but she’s not actually mad.
       </p>
       <p>
         It doesn‘t take long to drive to the marina, and you know you’ve found the right one because it’s
@@ -179,11 +180,9 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         “Classy guys,” you mutter. You parked a half mile down the marsh road and are crouched behind
-        one of many equally incongruous cars in the parking lot: a couple BMWs, a
+        one of many equally incongruous cars in the parking lot: a couple new BMWs, a
         bright red Corvette, and Jimmy Troiano's gold Porsche.
-      </p>
-      <p>
-        It’s another postcard beach day, and while the daylight is fading you’re still totally exposed. You
+        You
         bend over and dart behind Jimmy’s car, keeping an eye on the tavern. If someone
         comes out, they’ll spot you in a minute.
       </p>
@@ -210,22 +209,22 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         Just as you finish, the tavern door opens.
-        It’s Michael Herschel, in the flesh for the first time, and his
+        It’s Michael Herschel in the flesh and his
         Nordic white features are marred by red anger. He’s shouting into the bar; in the open
         air the sound carries. “I know you bums are hiding him from me.
-        When I come back I won’t be so friendly.” You sigh. Everybody wants to be a wise guy.
+        When I come back I won’t be so friendly.” You sigh. Everybody wants to play the wise guy.
       </p>
       <p>
         One of the BMWs belongs to him. It’s got one of those car phones—first you’ve ever seen—
         but he closes the door before you can hear who he calls. The car pulls out fast, fishtailing
-        on the gravel, and the resulting cloud of dust is sufficient cover for you to awkwardly
-        scamper back to the road. You look back.
+        on the gravel, and the resulting cloud of dust is sufficient cover for you to
+        scamper back to the road with a quick look back.
       </p>
       <p>
         Incredibly, Jimmy was hiding outside too: lying down in a derilict rowboat. He waves off the
         guys who spill out of the tavern to gawk—you imagine they deserve some gratitute for
         not ratting him out—but he’s still the arrogant prick you remember and he gets into his Porsche instead.
-        He doesn’t seem to have noticed you or the sabotage on his vehicle.
+        He doesn’t seem to have noticed you or the sabotage to his vehicle.
       </p>
       <p>
         You pull a fishing hat down low as he drives past but there’s no chance of detection,
@@ -234,8 +233,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
           taillight: `taillight cover fall off and tumble into the cattails`,
           tailpipe: `tail pipe come loose and start dragging along the road, clattering and sparking`
         }} />.
-        If all goes according to plan, a cop car will be parked in a speed trap down the road,
-        waiting for his Porsche and some probable cause to pull him over. Whitby agreed that
+        A cop car is parked in a speed trap down the road,
+        waiting for this Porsche and some probable cause to pull him over. Whitby agreed that
         some light entrapment was more in Mr. Troiano’s interest than getting further in debt with
         some wannabe bookie. With any luck, Jimmy will sing, then Jared Healey will crack, and
         you’ll put this murder behind you.

@@ -26,12 +26,14 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “It begins with an S—” Her eyes widen immediately. “<List expansions={
         ["Scott?", "Steven?", "Sam?"]} tag="p5_customer_names"/>”
       </p>
+    </section>,
+    <section>
       <p>
         “Sam!” she whispers.
       </p>
       <p>
         “There’s a strong connection here, I can feel it. You and Sam are—close, yet, not as close as you’d like.”
-        From the other side of the beaded curtain you hear giggling. That’s surprising,
+        From the other side of the beaded curtain you hear giggling. Not surprising:
         these girls rarely come in to see you alone.
       </p>
       <p>
@@ -41,8 +43,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         <Map from={inventory.c5_hands} to={{
           undefined: " are restless on the table",
             hands: <span> alternately
-              grasping <List expansions={["a set of bracelets on her arm", "dozens of colorful plastic bracelets"]} tag="c5_bracelets" />
-              &nbsp; and <List expansions={["a handmade necklace", "a simple necklace made of string and a pierced shell"]} tag="c5_necklace" />
+              grasping <List expansions={["a set of bracelets on her arm", "dozens of colorful plastic bracelets"]} tag="c5_bracelets" nextUnit="none" />
+              &nbsp; and <List expansions={["a handmade necklace", "a simple necklace made of string and a pierced shell"]} tag="c5_necklace" nextUnit="none"/>
             </span>
         }}
         />.
@@ -79,8 +81,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “Give me whatever she paid you,” the mother says, holding out a hand.
       </p>
       <p>
-        “I don’t want any trouble,” you say. You doubt your newfound cop friend would help you out
-        of this one anyway. Automatically, you hand over five bucks, half of what you charged the girl.
+        “I don’t want any trouble,” you say. You doubt your cop friend would help you out
+        of this one. Automatically, you hand over five bucks, half of what you charged the girl.
       </p>
       <p>
         The woman rips the money out of your hand and turns to leave. You roll your eyes to yourself
@@ -93,7 +95,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         jingles, and you skip the usual preamble: “Come in!” It’s not like this day can get worse.
       </p>
       <p>
-        And that‘s when <List expansions={["Jared Healey", "Jared Healey, looking even more haggard than you feel,"]} tag="c5_jared" /> walks into your room.
+        And that’s when <List expansions={["Jared Healey", "Jared Healey, looking even more haggard than you feel,"]} tag="c5_jared" /> walks into your room.
       </p>
     </section>,
     <section>

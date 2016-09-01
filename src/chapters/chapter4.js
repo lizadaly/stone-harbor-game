@@ -63,7 +63,9 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         “Oh, nothing we hadn’t already heard. She was pretty thoroughly debriefed on the scene since she
-        and her brother were staying here in town for the weekend. They rented a couple rooms at the Caribbean.
+        and her brother were staying here in town for the weekend. They rented a couple rooms at the
+        <i>Caribbean</i> motel
+        in Wildwood.
         She’s probably annoyed that I wasted her time repeating a bunch of questions she’d already
         been asked.”
       </p>
@@ -74,8 +76,10 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         the front desk telling you she’d arrived. And then you just watched us the whole time through your blinds.”
       </p>
       <p>
-        “See? Psychic.” She stubs out her cigarette and picks up the receipt like it was just an ordinary
-        piece of paper. To her, it is. “It’s a bar bill. From a motel.” She flips it over. “A jumble of numbers
+        “See? Psychic. I just wanted to see what you could do when you put your mind to it, and you
+        didn’t disappoint.”
+        She stubs out her cigarette and picks up the receipt like it was just an ordinary
+        piece of paper (which, to her, it is). “It’s a bar bill from that motel.” She flips it over. “A jumble of numbers
         handwritten on the back. What are they?”
       </p>
       <p>
@@ -95,10 +99,9 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <h3>At the motel</h3>
       <section>
         <p>Your first instinct is to reach up and cover your eyes with your hands, but of course you have neither.
-          Nevertheless, it’s blindingly, painfully bright out. The <em>Caribbean</em> motel is
+          Nevertheless, it’s blindingly, painfully bright out. The <i>Caribbean</i> is
           on the bay side of the inlet—you’ve driven past it a thousand times—but
-          it appears to now almost hyperreal, a direct line to
-          a childhood remembrance of an ordinary place rendered extraordinary.
+          it appears to now almost hyperreal, day-glo.
         </p>
         <p>
           Across the street, an electronic bank sign tells you it’s just past dawn, explaining why the
@@ -223,9 +226,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         “Manages a third-rate marina on the bay. Really more of a slip for locals to go
-        fishing and crabbing on the off season. It’s really owned by his brother.
-        Half the time nobody’s around, I know we never
-        found him there when we brought him in for questioning.”
+        fishing and crabbing on the off season. It’s really owned by his brother.”
       </p>
       <p>
         “He’s a bookie,” you say, and describe the vision. Whitby takes notes in her little cop
@@ -240,12 +241,11 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         The receipt is still crumpled in your hand. You smooth it out
         on the coffee table and study it together. Of the five rows of numbers, four are now
-        crossed out. Whitby says, “The first number in each row is probably the bettor’s identifier.
-        Bookies try not to
-        write names down; their clients all know their ID number and give that when they call
-        in their bets. Pro bookies pick random numbers, newcomers usually just number 1, 2, 3.
-        None of these are bigger than twenty, so I think we’re looking at a small number of clients.
-        But some are in pretty deep—the second number look like an outstanding balance. This sheet
+        crossed out. Whitby says, “The first number in each row is probably the bettor’s identifier—
+        it’s not a business where you want to use proper names—and the second’s their outstanding balance.
+        Their clients all know their ID  and give that when they call
+        in their bets. All these IDs are single digit, so I think we’re looking at a small number of clients,
+        but some are in pretty deep. This sheet
         alone is worth about a
         hundred grand.”
       </p>
@@ -256,17 +256,17 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “This may surprise you, but illegal sports betting plays a part in a lot of serious criminal
         activity.” She studies the receipt. ”I’m guessing Michael Herschel already collected on
         everyone who’s been crossed off. I’ll take this to Vice tomorrow, see if this
-        rings any bells. But it’s a long shot without any names. Whoever has number eight is in
+        rings any bells. But it’s a long shot without names. Whoever is number eight is in
         for a bad week, I bet.”
       </p>
       <p>
-        Your headache is subsiding, a little. “How do you think his sister ended up with it?”
+        Your headache is subsiding, a little. “It was his sister who was carrying it around. Do you think she’s in on it?”
       </p>
       <p>
-        “By accident? Or maybe she’s in on it with him?” She doesn’t seem that interested.
+        “Seems likely.” She doesn’t seem that interested.
       </p>
       <p>
-        “I guess. She didn’t seem the type. Aren’t they wealthy enough already?”
+        “I guess. She didn’t look the type. Aren’t they wealthy enough already?”
       </p>
       <p>
         Whitby’s packing up her stuff, her mind obviously on her day ahead. “Look, you’re good at reading
@@ -281,7 +281,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         go visit a friend, rest up. Try to get back your normal life.” You nod, and she leaves,
         and you’re alone with your pounding head and your crystal ball and not much else.
       </p>
-
+      <NextChapter chapter="5" />
     </section>
   ]
   return <RenderSection currentSection={currentSection} sections={sections} />

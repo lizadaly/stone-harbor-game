@@ -16,11 +16,12 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         You barely talk on the ride over. You stopped by your storefront on the way to formally close
         up for the afternoon. It’s Saturday and there are huge crowds at the beach, so you flipped the sign to <small>closed</small> with more than a little
         regret. On the other hand, you realize this was probably a day off for Whitby. You wonder what it’s like to have
-        family who'd do this kind of a favor for you.
+        friends who'd do this kind of a favor for you.
       </p>
       <p>
-        The house is just as you remember from the vision: sprawling, white, faux classical, at odds with the usual sun-bleached
-        and gray wooden vacation homes. But the property isn’t new money, either. It’s worn but well cared for. Living at the
+        The house is just as you remember from the vision: sprawling, white, faux classical,
+        typical for the fancy neighborhood and so different from the sun-washed gray wood of
+        most shore houses. But the property isn’t new money, either. It’s worn but well cared for. Living at the
         shore it’s easy to find rich people to resent, but the Healeys’ place feels like a home.
       </p>
       <p>
@@ -31,9 +32,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “I don’t need to go inside, it’s around back,” you reply. You know the way and don’t wait for her.
       </p>
       <p>
-        It’s late afternoon so the courtyard is in shade, and given that it’s a billion humid degrees out it’s
-        easy to see that was probably a deliberate architectural decision. You’re sweating your balls off
-        in shorts, though of course the detective seems to be cool as ice in her polyester police suit. “Stop right there,”
+        It’s late afternoon so the courtyard is in shade, but it’s a hot, hot day and you’re sweating your balls off
+        in shorts. Of course the detective seems to be cool as ice in her polyester police suit. “Stop right there,”
         she barks. “Just tell me where it is.”
       </p>
       <p>
@@ -43,7 +43,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “Exactly.”
       </p>
       <p>
-        “You know you could consider lying to me once in a while.” She says nothing, so you just point. “It’s in a
+        “It would hurt my feelings less if you lied to me.” She says nothing, so you just point. “It’s in a
         bush by the base of the stairs. Probably.”
       </p>
       <p>
@@ -56,9 +56,9 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         “Who are you? What are you doing here?”
       </p>
-      <p>You turn with a start. It’s an older woman, alarmed at your presence. Her clothes are
-        <List expansions={["expensive"], ["but also a bit haphazardly put together; not everything matches"]} tag="c2_clothes" nextUnit={null} />.
-        She’s carrying a <List expansions={["duffel bag", "duffel bag, which from the way she carries it suggests it’s both full and heavy."]} tag="c2_duffel" nextUnit={null}/>.
+      <p>You turn with a start. It’s an older woman, alarmed at your presence. Her clothes
+        are <List expansions={["expensive", "but also a bit haphazardly put together; not everything matches"]} tag="c2_clothes" nextUnit={null} />.
+        She’s carrying a <List expansions={["duffel bag", "duffel bag, which from the way she carries it suggests it’s both full and heavy"]} tag="c2_duffel" nextUnit={null}/>.
         Her <List expansions={["eyes are sharp", "eyes are sharp, but rheumy, like she’s been crying"]} tag="c2_eyes" />.
       </p>
     </section>,
@@ -73,39 +73,30 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         people were finished here.”
       </p>
       <p>
-        “Just following up on some loose ends,” Whitby says. She gives you a look that in
-        no uncertain terms means ‘keep your mouth shut.’
+        “Just following up on some loose ends. My apologies for disturbing you, I thought you’d left already.”
+        Whitby replies. She gives you a look that in no uncertain terms means ‘keep your mouth shut.’
       </p>
       <p>
-        “Where are you headed?” you say, trying to act casual. The woman narrows her eyes, but you
-        just nod at the duffel bag.
+        “I know you,” Mrs. Healey says. “You’re Sarah’s godmother.”
       </p>
       <p>
-        “My sister is coming to pick me up. I’m going to stay with her for a bit.” Whitby made a
-        mistake with the timing, but that doesn’t stop her from glaring at you.
+        Whitby nods. “I went to high school with Allison.”
       </p>
       <p>
-        Mrs. Healey is staring at the detective now. “I know you,” she says. “You’re Sarah’s godmother.”
-      </p>
-      <p>
-        Whitby nods. “I went to high school with her mother.”
-      </p>
-      <p>
-        The woman putters a little around the area, deadheading a few parched flowering shrubs.
+        The woman putters a little around the area, deadheading a few parched flowers.
         “I haven’t seen Sarah since—that night—but she left something at the house, let me give it to you.”
         She reaches into the duffel bag and moves to offer you something—you, because you’re standing
-        right by her, but you’re hit by a wave of fear from whatever it is that almost physically knocks
+        right by her—and you’re struck by a wave of fear that physically knocks
         you back. She looks puzzled at your reaction, but steps forward, holding the
-        thing out for you. Everything is blurred, disorienting; you can’t make it out even though it’s
-        right there.
+        object out for you. Your vision is so distorted that can’t make it out even though it’s in front
+        of your face.
       </p>
       <p>Whitby sees your distress and starts running up the steps across the patio. “Thank you, Mrs. Healey,
         I’ll take that for her—”
       </p>
       <p>
         You can feel the blood draining from your limbs and
-        your vision narrowing to a pinprick. Maybe Whitby can see your
-        ghost white face, it looks like she’s reaching out to intercept, but it’s too late,
+        your vision narrowing to a pinprick. Whitby’s reaching out to intercept, but it’s too late,
         the woman has eagerly
           shoved <List expansions={["a doll", "<psychic>a frightened doll</psychic>", "<psychic>a frightened doll with a crushed head</psychic>"]} tag="c2_doll" /> into
           your paralyzed hands—
@@ -119,11 +110,11 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
             You’ve never felt so small in your life—physically small. Even as a boy you were  big
             for your age, often crashing into your mom's cheap but delicate new age baubles.
             But now you are hemmed in on all sides by
-            gargantuan walls of solid furniture and feel downright tiny.
+            gargantuan walls of solid furniture and you feel downright tiny.
           </p>
           <p>
             A young girl, carrying the <List expansions={["doll", "happy doll"]} tag="c2_doll2" nextUnit="none" />, runs into the room and settles comfortably into a
-            high-backed chair. She’s followed by an <List expansions={["older man", "kindly looking older man", "older man who you realize with a start is Alan Healey"]} tag="c2_healey" nextUnit="none" /> and
+            high-backed chair. She’s followed by an <List expansions={["older man", "kindly looking older man", "older man who you know to be Alan Healey"]} tag="c2_healey" nextUnit="none" /> and
             a <List expansions={["woman", "woman of the same age", "woman you now recognize as Healey's wife"]} tag="c2_margaret" />.
           </p>
         </section>
@@ -135,19 +126,19 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         She asks the girl, “Honey, do you want anything?” Her voice is firm, but kind, like you’d
       imagine an aunt could be.</p>
 
-      <p>“No thank you, Aunt Maggie,” the girl says, settling into one of the higher backed chairs. She hugs
+      <p>“No thank you, Aunt Maggie,” the girl says. She hugs
       the doll in a grip which would probably kill a small animal, but the doll loves it.</p>
       <p>
         Her aunt nods and says to her husband, “I'll get you your iced tea, dear.”
       </p>
       <p>Healey wears huge thick glasses and is bald but for a few wisps that could use trimming.
-        Probably his wife cuts his hair when he lets her. With an ache, you realize she’ll never
-        get another chance. Probably they’ll clean it up for the funeral. Did clean it up.
-        What’s the appropriate tense for a vision from the past that’s currently unfolding?
+        Probably his wife cuts his hair after a lot of fussing and protesting. With an ache, you realize she’ll never
+        get another chance; some stranger will clean it up for the funeral and she’ll think it’s all
+        wrong.
       </p>
 
       <p>Healey says nothing,
-        just <List expansions={["smiles", "forces a smile which doesn’t reach his eyes."]}  tag="c2_smile" />,
+        just <List expansions={["smiles", "forces a smile which doesn’t reach his eyes"]}  tag="c2_smile" />,
         and for a moment there’s an invisible battle of wills between husband
         and <List expansions={["wife", "a wife who clearly senses something’s up"]} nextUnit={null} tag="c2_wife" />.
       </p>
@@ -160,26 +151,26 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         happened. She chooses to believe the fake smile and exits the room.
       </p>
       <p>The second she’s out of sight, Healey picks up a heavy black telephone from
-        a side table and settles it on his lap. ”You play with Vicky now, Ellen. Uncle Alan
+        a side table and settles it on his lap. ”You play with Vicky now, Sarah. Uncle Alan
       just needs to make a quick phone call.” The little girls nods and hums to the doll tunelessly.</p>
       <p>Healey dials the rotary phone slowly; it's obviously painful for his hands to operate. It’s a short
         number, local. His conversation is muffled and unintelligible because he doesn’t want the girl
         to overhear. You catch words here and there—“never”,  “that money”,
-        and then he says angrily, “How could you?” and the girl, Ellen, looks up in alarm, letting go of the
+        and then he says angrily, “How could you?” and the girl, Sarah, looks up in alarm, letting go of the
         doll which tumbles to the floor.
       </p>
       <p>
-        “I won’t have her suffer for your mistakes,” Healey says (<em>“her” who?</em>) and slams the receiver down just as his
+        “I won’t have her suffer for your mistakes. By morning it’ll be done.” Healey says and slams the receiver down just as his
         wife enters carrying a couple of sweating glasses on a tray. “Wrong number,” he says, preempting any
-        discussion, and it’s obvious that this is a familiar family dynamic. His wife says nothing, just puts the
+        discussion. His wife says nothing, just puts the
         serving items down.
       </p>
       <p>
         “Sorry,” he says roughly, taking off his glasses to wipe his face, and then gets up. He doesn’t
         see the doll and steps on it, crushing its
-        head. He stumbles a little and in doing so kicks it across the room, but keeps going. Little Ellen was already
+        head. Little Sarah was already
         starting to cry but this
-        sends her into hysterics. Maggie Healey looks grateful for something to do and hurries her out.
+        sends her into hysterics. Maggie Healey bundles her up, says, “I’ll read to you in bed, honey, let’s go.”
       </p>
       <p>
         The room is empty now but for the doll, which lies forgotten under an ornate cupboard. Time
@@ -200,8 +191,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
           You bolt straight up. “How did I get here?”
         </p>
         <p>
-          “We dragged you.” Whitby’s smoking—you didn’t think she was the type—but the long ash suggests
-          she’s been distracted. Maybe by the guy who was slumped over in her passenger seat.
+          “We dragged you.” Whitby’s smoking—you didn’t think she was the type. The ash is long.
         </p>
         <p>“Who’s we?”</p>
         <p>“Me and Mrs. Healey,” she says, with infinite patience. “She’s stronger than she looks.
@@ -209,15 +199,16 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         for keeping a low profile.”</p>
         <p>It’s surely hot as hell outside, but you’re chilled to the bone and unable
           to stop shivering. You laugh a little and it sounds weird to your own ears.
-          “I guess I should’ve had a donut before I went on duty today.”
+          “Some cop I turned out to be.”
         </p>
-        <p>“I never said you were a police officer,” she replies dourly. Cops love cop jokes.</p>
+        <p>“I never said you were a police officer,” she replies dourly.</p>
         <p>“You certainly didn’t correct her misapprehension.”</p>
         <p>She  notices her forgotten cigarette and flicks it out the window. “What other choice did I
           have? <em>Hi I’m Detective Whitby and this is my pet psychic?</em>”
         </p>
-        <p>“That’s sweet of you, but really we’ve just met.”</p>
-        <p>She sees that you’re shivering and rolls up her car window even though it must be boiling hot for her. You’re grateful and do the same.
+        <p>“That’s sweet of you, but we’ve just met.”</p>
+        <p>She sees that you’re shivering and rolls up her car window even though it must be sweltering
+          in the car. You’re grateful.
         “What happened this time?” she asks, gently.</p>
         <p>
           You tell her, in a simple recitation of facts, even the bit about the doll.

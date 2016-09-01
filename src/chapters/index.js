@@ -7,6 +7,7 @@ export * from "./chapter5.js"
 export * from "./chapter6.js"
 export * from "./chapter7.js"
 export * from "./chapter8.js"
+export * from "./epilogue.js"
 
 const React = require('react')
 import { connect } from 'react-redux'

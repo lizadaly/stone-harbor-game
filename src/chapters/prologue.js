@@ -73,7 +73,7 @@ const _Prologue = ({currentSection, inventory}) => {
       <p>You should really get a new curtain, but the room’s dim and your clients don’t seem to notice.
         They’re expecting to see the usual trappings
         of a boardwalk fortune-teller: tarot decks, zodiac paintings,
-        an absurdly large crystal ball. His preconceptions satisfied, the customer sits across from you at
+        an absurdly large crystal ball. This customer seems satisfied on that front, and he sits across from you at
         the cramped circular table.
       Your knees are almost touching; this room wasn’t built for two full-size men.</p>
       <p>“Are you here for a reading?” you ask solemnly. The customer nods.
@@ -109,7 +109,7 @@ const _Prologue = ({currentSection, inventory}) => {
     <section>
       <p>“<Map from={inventory.p0_customer_body} to={mapsBody} />,” you improvise.</p>
       <p>“That’s true, I have been—”</p>
-      <p>But your triumph is short-lived, because the curtain rustles again unexpectedly. A woman pushes through: mid-forties, no-nonsense, a bit frumpy for
+      <p>Your triumph is short-lived when the curtain rustles again unexpectedly. A woman pushes through: mid-forties, no-nonsense, a bit frumpy for
         your taste. Her sour expression tells you she’s not a potential client. You’re unsurprised when she
         flashes a badge at the customer, saying, “Get out.”
       </p>
@@ -130,7 +130,7 @@ const _Prologue = ({currentSection, inventory}) => {
       <p>“May I help you, officer?” you ask. And then she says something that not even
       you could’ve predicted.</p>
       <p>“It’s Detective. And I need a psychic,” she says, handing you
-        her <List expansions={["card", 'card, which you flip over and read: <small>Tamisha Whitby, Criminal Investigations, Cape City, NJ</small>']}  tag="p0_nextUnit"/>.
+        her <List expansions={["card", 'card, which you flip over and read: <small>Tamisha Whitby, Criminal Investigations, Cape May County, NJ</small>']}  tag="p0_nextUnit"/>.
       </p>
     </section>,
     <section>
@@ -143,7 +143,7 @@ const _Prologue = ({currentSection, inventory}) => {
       <p>You shrug, point to the sign over the door: “<small>For entertainment purposes only</small>.” You both sit.</p>
       <p>She says, “I don’t believe in fortune-telling or psychics or any of that.
         I’m here as a favor for someone.” She’s staring at you, hard, and you can’t help but
-        squirm a little. This is probably how your clients feel. “Did you hear about the
+        squirm a little. This is probably how your clients feel. “Are you familiar with the
       death of Stone Harbor resident Alan Healey last month? It was in the papers.”</p>
 
       <p>“It’s August at the boardwalk,” you reply. “I’ve been pretty busy with work.”</p>
@@ -159,16 +159,16 @@ const _Prologue = ({currentSection, inventory}) => {
       </p>
       <p>“Healey has a young niece who was staying with him at the time. She’s my god-daughter.
         Her mother’s not in the picture anymore but I know she’d—I feel—” The detective looks
-        profoundly uncomfortable, like a lot of people who come in off the street here.
+        uncomfortable, like a lot of your customers do at first.
       “She a very... spiritual person. She believes easily.” Whitby pauses again.</p>
-      <p>“She’s gullible,“ you say.</p>
+      <p>“You mean she’s gullible,“ you say.</p>
       <p>The detective scowls. ”I don’t want to be
-        here any more than you want me here. I don’t even think Healey was murdered.
+        here any more than you want me here.
         He was an old man with poor vision who misread his dosage. I’m fulfilling a favor
         to an old friend and—“ She reaches into her
-        pocket, searching for something. “Allison, her mother, told me if anything violent happened,
+        pocket, searching for something. “Allison, my friend, told me if anything violent happened in the family,
         if there was ever a reason to think her daughter was in danger, I should come see the psychic here.
-        That she’d always listened to her, and would be able to help—”
+        That she’d listened to her, and would be able to help—”
       </p>
       <p>“Right, <em>she</em>,” you snap. “My mother was ’The Great Francesca.’ This was her business,
         and then she died.”

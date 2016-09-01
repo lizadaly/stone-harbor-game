@@ -11,7 +11,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         You were certain you’d never get to sleep but last night you felt a whole-body weariness unlike
         anything since you were a kid. You remember summer days when it was too hot to be in the reading room—
-        Mom didn’t get air conditioning until 1975, long after you’d moved out—and you would just spend
+        Mom didn’t get air conditioning until ’75, long after you’d moved out—and you would just spend
         the whole day in the ocean. You weren’t much of a swimmer, but just fighting the
         current is tiring, and you’d come home, tracking sand into the foyer and up the
         stairs to the apartment over the storefront, and crash straight onto the bed. Mom’s work
@@ -23,7 +23,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         “Cream?” Whitby asks, interrupting your thoughts.
       </p>
-      <p>You shake your head. “Trying to quit. I’ll take a dumptruck full of sugar, though.”
+      <p>You shake your head. “Trying to quit. I’ll take a dumptruck of sugar, though.”
       </p>
       <p>
         She hands you a mug and a fistful of
@@ -72,8 +72,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         from what I don’t know. I just figured I was the only cop she’d ever known.
       </p>
       <p>
-        “About five years ago she just left. Just a note saying she’d decided to start a new life.
-        Left behind her wedding ring but took most of her personal possessions. I tried tracking
+        “About nine years ago she took off. Just a note saying she’d decided to start a new life.
+        I tried tracking
         her down; she left a message for me at the office saying she’d met someone new and not
         to go find her. I didn’t approve, but who am I to judge?”
       </p>
@@ -103,7 +103,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         first one to bail you out of trouble and also the first to toss you  on the
         street if you screwed up again. If more people were like her I'd be out of a job.”
       </p>
-      <p>“It wasn’t her,” you say, surprising even yourself. “I saw the way she looked at him, the night
+      <p>“She didn’t kill him,” you say, surprising even yourself. “I saw the way she looked at him, the night
       that he died. She was worried about him. She loved him.”</p>
       <p>
         “I think so too, but you never know,” she says, a little sadly. “Everyone I've shown you here
@@ -127,7 +127,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         You pretend they don’t exist and sift through a pile of stale magazines on a makeshift coffee table.
       </p>
       <p>
-        You’re flipping through a 1982 issue of <em>Readers Digest</em> (incredibly, you think you read this one already)
+        You’re flipping through a 1982 issue of <em>Readers Digest</em> (worse, you think you read this one already)
         when a woman begins arguing with an impassive young officer:
         “But Detective Whitby specifically told me to come in now!” You look up
         and with surprise recognize Healey's niece from her photo.
@@ -212,8 +212,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         }} />
       </p>
       <p>
-        Herschel clears wants no part of this and decides you’re the best of bad options. She sits
-        down at the remaining empty seat next to you. Her purse is between you, and you can sense it
+        Herschel clears wants no part of this and decides you’re the best of bad options. She moves
+        over to the remaining empty seat next to you. Her purse is between you, and you can sense it
         fearfully pulling away. There’s something inside that doesn’t want to be found.
         <Map from={inventory.c3_old_man} to= {{
           "purse.": " You look around, but the old man is gone."

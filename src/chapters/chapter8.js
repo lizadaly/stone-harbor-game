@@ -11,13 +11,13 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <h2>Chapter Eight</h2>
       <h3>In the car</h3>
       <p>
-        You’re hurtling over the bridge in darkness while recounting the nesting
-        doll of visions. You omit the part about your mom seeing you. That feels private.
-        Whitby’s reaction to the story about her friend is stony. “I don’t know what to think about
+        You omit the part about your mom seeing you. That feels private. The rest you
+        tell on the way.
+        Whitby’s reaction to  her friend is stony. “I don’t know what to think about
         a mother who abandons her child.”
       </p>
       <p>
-        “I think if you’d seen it,” you say. “It was much worse than what happens to me. And she
+        “I think if you’d seen it...” you start. “It was much worse than what happens to me. And she
         knew so many details.”
       </p>
       <p>
@@ -29,23 +29,23 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         running away from responsibility. She was being brave. She was sacrificing herself for her kid.”
       </p>
       <p>
-        “Maybe,” Whitby says. “Only if it’s not too late.” She pulls up through a winding private drive.
-        You’re at the Healey estate.
+        “Maybe,” Whitby says. “Let’s hope it’s not too late.” She pulls up through a winding private drive.
+        You’re at the Healey estate in Stone Harbor.
       </p>
       <p>
-        “Troiano broke, as we thought he would. He confessed he’s been placing bets for a long time—no big
-        deal around these parts—but that things have escalated. There’s the marina, plus parking lots,
+        “Troiano broke, as we thought he would. He confessed he started with small time stuff,
+        just betting on Sunday’s game, everybody does it, but that things have escalated. There’s the marina, plus parking lots,
         storage facilities:
-        the Healey empire is really prime stuff for money-laundering, smuggling, you name it.
-        As far as I can tell it’s always been clean. Alan’s just very good managing properties and making smart
-        investments. But since he retired and let Jared run things, everything’s been hollowed out and
+        the Healey empire is really perfect for money-laundering, smuggling, you name it.
+        As far as I can tell it’s always been clean; Alan was just good at managing properties and making smart
+        investments. But since he retired and let Jared run the show, it’s all been hollowed out and
         mobbed up.”
       </p>
       <p>
-        You say, “Alan’s known for a long time, but didn’t want to believe it or hoped it would
+        You say, “Alan knew for a long time, but either didn’t want to believe it or hoped it would
         resolve on its own. Once it was clear to him that his brother was unrecoverable, he took
-        steps to protect himself, his wife, and his niece. She’s the daughter they never had. I think
-        Michael found out, and knew that if the business disappeared out from under them they’d
+        steps to protect himself and his wife, but also his niece. She’s the daughter they never had. I think
+        Michael found out about his plans, and knew that if the business disappeared out from under them they’d
         make some people very, very angry.”
       </p>
       <p>“I don’t know if it would’ve mattered, in the end,” Whitby says. “If half of what Troiano
@@ -53,18 +53,18 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         lose everything.” She cuts the lights and coasts into the driveway.
       </p>
       <p>
-        “Including this place?” She nods. “Shame.” Every stone, every column is telling you it’s been a
-        happy home.
-      </p>
-      <p>
         The house is dark, but Michael Healey’s car is here, pushed into the knotty trees and hastily
         covered up with brush. It’s radiating a fear of capture.
       </p>
       <p>
-        Every object around you is singing.
+        Every object around you is calling to you.
       </p>
       <p>
-        You point out the vehicle to the detective. “Stay here and don’t move.”
+        “They’ll lose this place too?” She nods. “That’s a shame.” Every stone, every column
+        is telling you it’s been a happy home.
+      </p>
+      <p>
+        You point out the vehicle to the detective. “Stay here and don’t move,” she says.
         She takes out her <List expansions={["gun", "uneasy gun"]} tag="c8_gun" /> and checks it over expertly, with steady
         hands. <Map from={inventory.c8_gun} to={{gun: "The gun tells you it‘s never been fired on duty. It’s afraid of hurting the wrong person. It hopes to never be used."}} />
       </p>
@@ -78,32 +78,32 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
     </section>,
     <section>
       <p>The moon is almost full and the white gravel driveway glows. You can hear the lap of the ocean,
-        and the cicadas and crickets fill the air with screeching. But those are almost drowned out
-        by the cacophony in the house. You drift across to
-        the <Link expansions={["front stairs",
-        "concrete front stairs, where the footprints of frightened men have left behind black psychic stains you know only you can see."]}
+        and the cicadas and crickets fill the air. But those are almost drowned out
+        by the cacophony of inanimate voices in the house. You drift across to
+        the <List expansions={["front stairs",
+        "concrete front stairs, where the footprints of frightened men have left behind black psychic stains you know only you can see"]}
           tag="c8_prints" nextUnit={null}/>. Through
-        a <Link expansions={[`small window`,`small window in the door`]} tag="c8_entryway" nextUnit={null}/> <Map
+        a <List expansions={[`small window`,`small window in the door`]} tag="c8_entryway" nextUnit={null}/> <Map
           from={inventory.c8_entryway} to={{
-            undefined: " you can see only blackness.",
-          window: `you can see the contours of the entryway, and the hum of more hungry objects.`}
+            undefined: " you can make out only blackness.",
+          window: `you can make out the contours of the entryway, and the hum of more hungry objects.`}
           }/>
-        The <Link expansions={["doorknob", "welcoming doorknob"]} tag="c8_doorknob" /> beckons you.
+        &nbsp; The <List expansions={["doorknob", "welcoming doorknob"]} tag="c8_doorknob" /> beckons you.
       </p>
     </section>,
     <section>
       <p>
-        You turn it, and you’re faintly aware of a hissing sound from outside, Whitby still doing
-        recon, trying to call you back to safety. You’re inside, though, and the carpet is blackened <Map from={inventory.c8_prints}
+        You turn it, and you’re faintly aware that this is stupid, you should run
+        back to safety. You’re inside, though, and the carpet is blackened <Map from={inventory.c8_prints}
           to={{
             undefined: ` with overlapping footprints, `,
             stairs: ` with the same footprints, `
           }} /> stains made not with mud but with fear and anger. You don’t see child-sized prints, but
-        the <Link expansions={["stair rail—", "stair rail is reaching out to you, like a hand across a dance floor, enticing you to follow."]} tag="c8_stairrail"/>
+        the <List expansions={["stair rail—", "stair rail is reaching out to you, like a hand across a dance floor, enticing you to follow."]} tag="c8_stairrail"/>
       </p>
       <p>
         Jared Healey lies in a heap at the base of the stairs, his neck bent backward. You don’t know if it
-        was the fall that killed him, but a <Link expansions={["heavy iron poker", "mournful iron poker"]} tag="c8_poker" /> is next to him,
+        was the fall that killed him, but a <List expansions={["heavy iron poker", "mournful iron poker"]} tag="c8_poker" /> is next to him,
         clotted with blood. <Map from={inventory.c8_poker} to={{poker: "You whisper your forgiveness to it." }} />
       </p>
     </section>,
@@ -121,9 +121,9 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
     </section>,
     <section>
       <p>
-        “What the hell do you think you‘re doing?’” Whitby hisses. Movement distracts you, and you look
-        down at the oriental carpet beneath your feet. The rug runs down the hallway, down the
-        left side, and as you watch the abstract patterns clump and reform into a series of undulating
+        “What the hell do you think you‘re doing?’” Whitby hisses. Some peripheral movement distracts you, and you look
+        down at the oriental carpet beneath your feet. The rug runs down the hallway
+        and as you watch the abstract patterns clump and reform into a series of undulating
         arrows, like a neon sign over a casino.
       </p>
       <p>
@@ -156,8 +156,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         The door tells you it’s locked but it wants to be open. There’s a scared little girl inside.
       </p>
       <p>
-        You reach for it, but the books on the shelves all arch their spines towards the shadowed corner.
-        The shadowed figure you remember from the vision sits there. Now it’s no longer blurred. It’s
+        You reach for it, but the books on the shelves all arch their spines towards the  corner.
+        The shadowed figure you remember from the vision sits there. Now it’s no longer blurry. It’s
         Michelle Herschel.
       </p>
       <p>
@@ -178,13 +178,13 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         “Yeah,” you say. The clock is ticking (literally, it’s like a pounding in your head) but you take
-        a moment to breathe, get to that calm center before slipping into a performance. “I’m here for the girl,”
+        a moment to breathe before slipping into your performance. “I’m here for the girl,”
         you say, truthfully.
       </p>
       <p>
-        She’s studying you from an overstuffed arm chair that is crawling with revulsion. The desk lamp is
+        She’s studying you from an  arm chair that is crawling with revulsion. The desk lamp is
         on, but its light is loathe to illuminate her and instead is bathing you in its glow. This isn’t
-        helping: whoever you’re pretending to be doesn’t look much like you.
+        helping: whoever you’re pretending to be probably doesn’t look much like you.
       </p>
       <p>
         <Map from={inventory.c8_michelle} to={{
@@ -197,8 +197,9 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “You’re Joey from AC? What were you doing at the police station?” she says. She’s not buying it.
       </p>
       <p>
-        What would a gangster be doing in a room full of cops? “Protecting my assets.” Experience
-        tells you the best way to sustain a lie is to change the topic, do a little misdirection.
+        What would a gangster be doing in a room full of cops? You rub your fingers together
+        in the universal money gesture. “Protecting my assets.” Experience
+        tells you the best way to sustain a lie is to change the topic, so you add,
         “What happened to Jared?”
       </p>
       <p>
@@ -209,7 +210,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         Michelle’s too quick though: she sees the strange interplay across your face, the way
         you tilt your head towards the door. “Like hell you’re him.” She gets out of the chair
-        and she’s holding <List expansion={["something", "a switchblade", "a humming switchblade"]} tag="c8_blade" /> in front of her, backing towards the bedroom door with
+        and she’s holding <List expansions={["something", "a switchblade", "a humming switchblade"]} tag="c8_blade" /> in front of her, backing towards the bedroom door with
         one hand flailing out for the doorknob.
       </p>
     </section>,
@@ -218,13 +219,16 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <h3>In the study</h3>
       <p>
         “Open the door,” Michelle Herschel says. She’s still holding out that knife, blade extended,
-        tightly gripped in her gloved hands. Alan
+        tightly gripped in those malevolent gloves. Alan
         Healey has his hands up, backing away towards the exit, but she shakes her head and waves the knife.
-        He steps around her, still in a defensive position, and complies. Light spills out of the
+        “The other one.” He steps around her, still in a defensive position, and complies. Light spills out of the
         bedroom.
       </p>
       <p>
-        “Where’s the deed?” she says.
+        “Maggie will be here any minute,” Healey says.
+      </p>
+      <p>
+        “She’s asleep in Sarah’s room. For your sake I hope they don’t wake up. Now, <em>where is the deed?</em>”
       </p>
       <p>
         “I don’t know what you—”
@@ -236,8 +240,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “It’s too late. I already signed it. It’s done, you can’t touch the money.”
       </p>
       <p>
-        “I know you’re lying,” she says, and she‘s right. She backs him further into the bedroom, and
-        you follow, helpless to stop this murder a second time.
+        “I know you’re lying,” she says, and you know he is too. She backs him further into the bedroom, and
+        you follow, helpless to stop this murder for the second time.
       </p>
       <p>There are two double beds, not one large one, but the beds assure you that it’s because
         Maggie tosses and turns and they decided years ago it was for the best. They still love each
@@ -253,8 +257,13 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         He takes a step towards the dresser but stumbles, grabbing on to the nightstand for balance.
         Only you—not Michelle—see his quick gesture: he pushes a piece of paper off the surface and it slides
-        behind it, in the gap between the furniture and the wall. The nightstand is resolute in its
+        behind it, into the gap between the furniture and the wall. The nightstand is resolute in its
         desire to hide that paper at all costs.
+      </p>
+      <p>
+        His cigar cutter was lying on the table too, and he grabs at it, throws it overhand at his
+        niece, and she bats it away easily. It skitters into the study where she’ll pick it up later
+        and toss it into the urn when she flees the estate.
       </p>
       <p>
         “Take your meds, Uncle,” Michelle says, nodding towards the bottle. “And don’t stop taking them
@@ -277,10 +286,10 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
     <section>
       <p>
         You’ve pinned Michelle Healey to the closed bedroom door: one hand gripped around the knife
-        (blood is <em>streaming</em> out of your hand), the other locked around her hand, stopping her
-        from turning the doorknob. As you come out of your trance so does she, seemingly. She knows
-        that you know, and your own horror at what she’s done seeps into her. Maybe she can feel
-        the contempt of this whole house, every fiber and every nail welling over once last time in grief.
+        (blood is <em>streaming</em> out of your hand), the other locked around her wrist, stopping her
+        from turning the doorknob. As you come out of your trance she knows
+        what you know, and your own horror at what she’s done sinks in to her. Maybe she can feel
+        the contempt of this whole house, every stitch and every nail welling over once last time in grief.
       </p>
       <p>
         She drops the knife, lets go of the doorknob, and slides down to the floor, her hair hanging
@@ -289,7 +298,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         “It’s okay,” you say. “She’s safe.” Whitby subdues Healey and you gently open the bedroom door,
-        seeing the little girl at the center of all this for the first time. She’s wedged herself between
+        meeting the little girl at the center of all this for the first time. She’s wedged herself between
         the beds, holding the headless doll in a death grip.
       </p>
       <p>
@@ -307,9 +316,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “That’s a good rule of thumb, but sometimes they make exceptions.”
       </p>
       <p>
-        The girl looks past you and sees Whitby in the doorway. “Aunt Tamisha!” she yells, and runs past
-        you, the doll briefly forgotten. It doesn’t mind: it’s happy when she’s happy. And then it’s
-        just a doll.
+        The girl looks past you and sees Whitby in the doorway. “Aunt Tamisha!” she yells, and runs to her,
+        the doll briefly forgotten. It doesn’t mind: it’s happy when she’s happy.
       </p>
 
       <p>
@@ -319,13 +327,13 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         hide.
       </p>
       <p>
-        It’s a master deed, to this land and this house, made out to transfer it all to Sarah Healey’s trust. It’s
-        dated the day of his death, and unsigned.
+        It’s a master deed, to this land and this house, made out to Sarah Healey’s trust. It’s
+        dated the day of his death and it’s unsigned.
       </p>
       <p>
-        It feels like the cigar cutter did: incomplete and unfinished. It’s asking for your help. You
+        Like the cigar cutter, it feels incomplete and unfinished. It’s asking for your help. You
         carry it over to the dresser—all the medications and personal items have been removed—but there’s
-        a simple <Link expansions={["cheap pen", "cheap pen bursting with ink"]} tag="c8_pen" /> in the top drawer.
+        a simple <List expansions={["cheap pen", "cheap pen bursting with ink"]} tag="c8_pen" /> in the top drawer.
       </p>
     </section>,
     <section>
@@ -341,7 +349,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         It’s over.
       </p>
       <p>
-        It’s a bit lonely.
+        You feel lonely.
       </p>
       <NextChapter chapter="9" />
     </section>
