@@ -66,7 +66,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         but I think he’ll talk.”
       </p>
       <p>
-        “I saw Michael Healey there too. He left right before Troiano.”
+        “I saw Michael Herschel there too. He left right before Troiano.”
       </p>
       <p>
         “Dammit, wish we could’ve known. I’ve got somebody watching his place but neither he nor his
@@ -76,7 +76,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       she says. “Why’d he come to you?”</p>
       <p>
         You’ve become so used to the idea that you’re wrapped up in the center of this drama that you
-        forgot that, to the Healey family, you’re a complete stranger. “He said something in the end
+        forgot that, to the Healey family, you’re a complete stranger. “He said something
         about his wife mentioning me. I guess she meant my mom.”
       </p>
       <p>
@@ -85,7 +85,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>You get up, clean off your plate, and rejoin her at the table. You pull out the ring from a
         pocket and unfold the paper towel around it. “He gave me this, when I asked for something
-        meaningful. But then—”
+        personal.”
       </p>
       <p>
         “What’s this one... feeling?” She says this hesitatingly, but not skeptically.
@@ -118,7 +118,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         the man walked down that steep path to get here. He also seems fueled by rage.
       </p>
       <p>
-        “Haven’t I given you <em>enough</em>?” he says. He’s standing still, leaning on a <smallcaps>Private Property</smallcaps> sign,
+        “Haven’t I given you <em>enough</em>?” he says. He’s leaning on a <smallcaps>Private Property</smallcaps> sign,
         while his brother is plowing circles in the sand with his pacing. “I’ve made up my mind.”
       </p>
       <p>
@@ -129,13 +129,13 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         this stops being my problem. I was willing to look the other way to let you make your own
         mistakes—”
       </p>
-      <p>Jared whirls on him. “You were happy to take the money while it was easy.”</p>
+      <p>“You were happy to take the money while it was easy.”</p>
 
       <p>“I never kept a dime of it. It’s in a trust, for Sarah.”</p>
       <p>Jared didn’t know this. “She’s not your daughter! How dare you?”</p>
       <p>“The way you’re going, Jared, there will be <em>nothing</em> left for her. She’ll be lucky
         not to be an orphan by the time these schemes of yours run their course.” His voice softens a
-        little. “Jared, these people are <em>dangerous</em>. They’re killers.”
+        little. “These people are <em>dangerous</em>. They’re killers.”
       </p>
       <p>
         “They’re my friends. They wouldn’t—”
@@ -155,7 +155,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         family went wrong, but it stops with Sarah. I made a promise.”
       </p>
       <p>
-        “You sanctimonious prick,” Jared says, then pauses. “To who?”
+        “You sanctimonious prick,” Jared says, then pauses. “A promise to who?”
       </p>
       <p>
         Now Alan is definitely not looking at his brother. “Allison.”
@@ -178,18 +178,18 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “You’ve killed me,” he says, sobbing.
       </p>
       <p>
-        “I thought they were your friends,” Alan replies, more sad than angry. His brother leaves him there,
+        “You did it to yourself,” Alan replies, more sad than angry. Jared leaves him there,
         struggling in the sand to get up. You can’t help, of course, only watch.
       </p>
       <p>
-        <em>But you feel the pull of the ring.</em>
+        You feel the pull of the ring.
       </p>
       <p><em>But I haven’t woken up</em> you think, as you move towards the surf. <em>I’m still in this vision, still in the past.</em></p>
       <p>
-        If you were just searching with your eyes, the ring would be long gone, tumbling amid the
+        If you were just searching with your eyes, the ring would be long gone, lost amid the
         seaweed and froth, but in the flat, washed out, emotionless plane of the vision, its
-        desperate, lonely ache is like a beacon. You reach down into the water (<em>since when do I have arms?</em>)
-        and put your hand around the <List expansions={["ring", "haunted ring"]} tag="c7_ring2" />.
+        desperate ache is like a beacon. You reach down into the water (<em>since when do I have arms?</em>)
+        and put your hand around Allison Healey’s <List expansions={["ring", "haunted ring"]} tag="c7_ring2" />.
       </p>
     </div>,
     <div className="in-flashback">
@@ -302,7 +302,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “Others will help. She’ll have many protectors. Find her a guardian, someone you trust.
         And her family, they’ll watch over her. Especially her uncle—” Your mom’s face clouds.
         You know what she’s seeing, what scene she’s witnessing. “He’ll sacrifice everything to protect her,”
-        she says, kind in her omission.
+        she says.
       </p>
       <p>
         “Even strangers.

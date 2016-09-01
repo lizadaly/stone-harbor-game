@@ -15,14 +15,12 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         someone from your past.
       </p>
       <p>
-        You know the Troianos. Sure, Healey might’ve meant somebody else, but when
-        folks around here name a family, it usually means the one you’re
-        apt to think about first. This clan owns a chain of forgettable pizza joints up and
+        You know the Troianos. They own a chain of forgettable pizza joints up and
         down Cape May County. You went to  school with one of the daughters,
-        Nicki Troiano. She
-        has an older brother who graduated a little before you and was always getting
+        Nicki. She
+        has an older brother who was always getting
         into trouble: one of those guys who figured he could
-        scheme his way into the success that other people worked  for.
+        scheme his way to success instead of working hard.
       </p>
       <p>
         Nicki was a friend, insofar as girls and boys could be friends then. She grew up
@@ -41,7 +39,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
 
       <p>
-        So you’re loitering outside <em>Nicki’s Famous Pizzeria</em> (not famous, and her
+        So you’re loitering outside <em>Nicki’s Famous Pizzeria</em> (not actually famous, and her
         father named her after the pizza place rather than the other way around). When your
         disgust at your own cowardice finally gets the better of you, you go in.
       </p>
@@ -59,8 +57,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         her Philly accent.
       </p>
       <p>
-        “Yeah, I’ve been meaning to—” She waves off your excuse and hands you a couple of
-        slices on the house. “Gimme a minute, I’ll get somebody to sub in. Didj’eat?”
+        “Yeah, I’ve been meaning to—” She waves off your excuse. “Gimme a minute, I’ll get somebody to sub in. Didj’eat?”
         She comps you two slices and a coke and disappears in the back. You dutifully take
         your food to a booth.
       </p>
@@ -71,22 +68,21 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         This sudden influx of kindness is almost unbearable. “Good, Nicki, I’m good.” You
-        savor the moment before you ruin this reunion.
+        savor the moment before you ruin it.
         “And I want to catch up sometime, I promise. I’ve been a real asshole, not coming to
         see you.”
       </p>
       <p>
-        “Nothing’s changed then,” she says, smiling. “I heard about your mom, I’m sorry. I would’ve
-        come to the funeral but I never saw a notice in the paper.”
+        “Same ol’ Frankie, then,” she says, smiling. “I heard about your mom, I’m sorry. I would’ve
+        come to the funeral but I never saw a notice in the papers.”
       </p>
       <p>
         “There was nothing public,” you say.
       </p>
-      <p>There’s no censure in her expression, only concern. “A lot of people loved her. She did
-        good for folks around here who had nobody else who’d listen to them.”
+      <p>There’s no censure in her expression, only concern. “A lot of people loved her, you know. She did
+        good for folks around here who had nobody else who’d listen to them. You was always a good listener too.”
         When you say nothing, she changes tack. “I can tell from the look on
-        your face this isn’t a social call, but I’m gonna hold you to your promise.
-        What can I do you for?”
+        your face this isn’t a social call. What can I do you for?”
       </p>
       <p>
         “Listen, Nicki, I gotta ask you about
@@ -94,24 +90,23 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “Is Jimmy mixed up in any kind of trouble?”
       </p>
       <p>
-        It’s obvious her first instinct is in fact to ask you why, but she restraints herself.
+        It’s obvious her first instinct is in fact to ask you why.
         “He’s supposed to work shifts here but it’s been months since I’ve seen him around the
-        restaurant. I’d fire him but it’s still dad’s place, and Jimmy can do no wrong. So yeah,
-        something’s up with him.
+        restaurant. I’d fire him but Dad would have a fit.
       </p>
       <p>
-        “He’s got a fancy new car—a Porsche for christsakes—and went in with some buddies on
+        “He’s got a fancy new car—a Porsche, can you believe it?—and went in with some buddies on
         a sailboat when he wouldn’t know his aft from his ass. I saw him at Easter, asked him what he
         was into, but he just said he had a good run at the Sands.” You both know how implausible
         that is: you can win big in Atlantic City, but you need to start big. Nobody working a
         pizza joint wins car money.
       </p>
       <p>
-        “You know where I might find him?”
+        “You know where I could find him?”
       </p>
       <p>
         For the first time, she looks at you a little suspiciously. “Don’t come back into my life
-        just to dump a new pile of shit on me, Frankie.”
+        just to dump a new pile of shit on me, Frankie. I got enough agita as it is.”
       </p>
       <p>
         “I’m just trying to make something right.”
@@ -125,14 +120,14 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “Jared Healey’s marina?” you ask.
       </p>
       <p>
-        “Yeah, sounds familiar. Didn’t he just pass away?”
+        “I dunno. Was that the guy who just died?”
       </p>
       <p>
-        “His brother did.” Your mind is already spinning, formulating a plan.
+        “His brother.” Your mind is already spinning, formulating a plan.
       </p>
       <p>
         Nicki puts her hand on yours, which is more physical contact than you were ever
-        able to initiate in high school. “You be careful, Frankie. I don’t want to lose my
+        able to initiate in high school. “You be careful. I don’t want to lose my
         friend a second time.”
       </p>
       <p>
@@ -163,7 +158,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         interrupted dinner.”
       </p>
       <p>
-        “I can’t cook for shit, my job is to stay out of the kitchen. You were doing Hank a favor.” <em>Hank</em>. “Be careful,” she adds.
+        “I can’t cook to save my life, my job is to stay out of the kitchen. You were doing Hank a favor.” <em>Hank</em>. “Be careful,” she adds.
       </p>
       <p>
         “You said that already.”
@@ -175,12 +170,12 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         It doesn‘t take long to drive to the marina, and you know you’ve found the right one because it’s
         a total dive. You wouldn’t park a rusted-out Pinto here much less a six-figure
         sailboat, but there one is, prominently docked next to the tavern. You don’t know boats,
-        but you do recognize craftsmanship, and the boat is a thing of beauty: white and chrome and gleaming.
+        but you do recognize craftsmanship, and this one is a thing of beauty: white and chrome and gleaming.
         The name stenciled along the bow: <smallcaps>Hot Sea Men</smallcaps>.
       </p>
       <p>
         “Classy guys,” you mutter. You parked a half mile down the marsh road and are crouched behind
-        one of many equally incongruous cars in the parking lot: a couple new BMWs, a
+        one of many equally showy cars in the parking lot: a couple new BMWs, a
         bright red Corvette, and Jimmy Troiano's gold Porsche.
         You
         bend over and dart behind Jimmy’s car, keeping an eye on the tavern. If someone
@@ -190,7 +185,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         Jimmy hasn’t had his car long but he’s not much for maintenance. There’s sand caked
         along the undercarriage (did this idiot drive it on the <em>beach</em>?) and its
         metallic finish is marred by lots of small dings. Good. You don’t want him
-        looking at the <List expansions={["car", ["license plate", "taillight", "tailpipe"], "car’s rear end" ]} conjunction="or" tag="c6_car" /> too closely.
+        looking at the <List expansions={["car", ["license plate", "taillight", "tail pipe"], "car’s rear end" ]} conjunction="or" tag="c6_car" /> too closely.
       </p>
     </section>,
     <section>
@@ -202,7 +197,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
           taillight: `It was cracked already, so putting it into an illegal state is just a matter of
           loosening it further with a pocket screwdriver. It’s hanging on for now, but
           as soon as the car pulls out on this uneven gravel it should fall off.`,
-          tailpipe: `It’s a ridiculously huge tailpipe, almost phallic. You reach behind it, to the
+          pipe: `It’s a ridiculously huge tail pipe, almost phallic. You reach behind it, to the
           muffler, and pull hard. With a couple quick tugs it’s now hanging low; after a few
           loosened screws, it’s guaranteed to start dragging on the ground.`
         }} />
@@ -231,7 +226,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         and you’re immensely satisfied to see the <Map from={inventory.c6_car} to={{
           plate: `plate fall off and tumble into the cattails`,
           taillight: `taillight cover fall off and tumble into the cattails`,
-          tailpipe: `tail pipe come loose and start dragging along the road, clattering and sparking`
+          pipe: `tail pipe come loose and start dragging along the road, clattering and sparking`
         }} />.
         A cop car is parked in a speed trap down the road,
         waiting for this Porsche and some probable cause to pull him over. Whitby agreed that

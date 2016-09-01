@@ -67,22 +67,26 @@ ManyMap.propTypes = {
 
 /* Given an inventory _array_, where the value in inventory is an array which
    may contain 0, 1, or many items, return a random matching value that
-   matches from the `to` object */
-export const AnyMap = ({from, to}) => {
+   matches from the `to` object. Items in the array will only be considered if
+   they are greater than or equal to `indexStart`, which defaults to 0 */
+export const AnyMap = ({from, to, indexStart=0}) => {
   if (!from) {
     if (to[undefined]) {
       return to[undefined]
     }
     return null
   }
-  let matches = from.filter((item) => Object.keys(to).indexOf(item) != -1)
+  let matches = from.filter((item, index) =>
+    Object.keys(to).indexOf(item) != -1 && index <= indexStart)
+
   return <span>
     {to[matches[Math.floor(Math.random() * matches.length)]]}
   </span>
 }
 AnyMap.propTypes = {
   from: React.PropTypes.array,
-  to: React.PropTypes.object.isRequired
+  to: React.PropTypes.object.isRequired,
+  indexStart: React.PropTypes.number
 }
 
 // Display all items in an expansion _except_ the user's selection.

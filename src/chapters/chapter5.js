@@ -150,7 +150,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
     <section>
       <hr/>
       <p>You fold up the deck and put it aside, and regard the man before you.
-        You’re inexplicably
+        You’re
         angry at him, a man you’ve never truly met before. He’s a coward and he’s dangerous,
         but he’s not, you know now, a murderer. He’s too weak.
       </p>
@@ -172,12 +172,12 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
     </section>,
     <section>
       <p>If he finds the request odd he gives no sign, just plants his hands
-        firmly on the table. He’s so eager for your approval, he’d probably stand on his head if you’d
+        firmly on the table. He’s so eager for your approval he’d probably stand on his head if you’d
         absolve him of his guilt.
       </p>
       <p>
-        You flinch a little when grabbing hold of his palms—what if that triggers a vision—but you feel
-        just the revulsion of another human’s clammy, sweaty body. “I see numbers, so many numbers. A lot of pain and heartbreak in those numbers.” He
+        You flinch a little when grabbing hold of his palms—what if that triggers a vision?—but there’s
+        just the revulsion of another human’s clammy, sweaty body. “I see numbers, rows and rows of numbers. A lot of pain and heartbreak in those numbers.” He
         tries to pull back, but you tighten your grip and talk over his objection. “Who is number eight?”
       </p>
       <p>
@@ -188,11 +188,11 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         <em>“Who is number eight?”</em>
       </p>
       <p>
-        “Troiano,” he whispers. You could barely make out the name. Before you can ask for
-        anything more, Healey has fled.
+        “Troiano,” he whispers. You could barely make out the name. Healey gets up, knocking over
+        the chair in the process, and flees through the curtain.
       </p>
       <p>
-        Still overwhelmed with guilt, a simple gold wedding band lies forgotten on your table.
+        He left his <psychic>guilt-ridden gold wedding band</psychic> on your table. 
       </p>
       <NextChapter chapter="6" />
     </section>
@@ -238,7 +238,7 @@ class _Deck extends React.Component {
     // Replace just one card
     var {drawn, cards} = this.drawCards(this.props.deck, 1)
     // If we have 3 cards left, we drew 3 cards and can't draw more
-    if (cards.length === 1) {
+    if (cards.length <= 2) {
       this.props.showNextSection()
     }
     else {
@@ -273,7 +273,7 @@ class _Deck extends React.Component {
                   You pause. “I sense that there has been a physical death recently, and an undeserved one.
                   Someone who you were once close with?” Healey wipes his face. “Their spirit holds you
                   accountable for what happened.
-                  <AnyMap from={this.props.chosen} to={
+                  <AnyMap from={this.props.chosen} indexStart={i} to={
                     {
                       traitor: ` Because you are The Traitor.
                       `,
@@ -288,7 +288,7 @@ class _Deck extends React.Component {
                 justice: <p>”<em>Justice</em> will eventually come for us all. Some sooner than later.”
                   When he says nothing, you continue. “Do you fear your own call to justice? The spirits
                   believe you should be. You should be very afraid.” Now you’ve got his attention.
-                  <AnyMap from={this.props.chosen} to={
+                  <AnyMap from={this.props.chosen} indexStart={i} to={
                     {
                       traitor: ` “The Traitor will be punished for his disloyalty.”
                       `,
@@ -303,7 +303,7 @@ class _Deck extends React.Component {
                   } />
                 </p>,
                 man: <p>”<em>The Blond Man</em>.” You frown.
-                  <AnyMap from={this.props.chosen} to={
+                  <AnyMap from={this.props.chosen} indexStart={i} to={
                     {
                       undefined: `“The spirits tell me a blond man plays a significant role in your
                       current troubles.” You pause. “You have colluded, together. With this man you
@@ -328,7 +328,7 @@ class _Deck extends React.Component {
                     ` You fix him with an even stare. “Do you know someone who has betrayed a loved one?”
                     When he only stammers, you say, “The cards know what you may be afraid to admit.”
                     `,
-                    ` You just stare at him until he squirms. “The cards know what you may be afraid to admit.”
+                    ` You just stare at him until he squirms. “The cards know what you may be afraid to admit about yourself.”
                     `
                     ][i === 0 ? 0 : 1]
                   }</p>,

@@ -75,7 +75,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         you were.
       </p>
       <p>
-        Of course you’re not too busy. “Yeah, I’ll find you after the game,” you say. She waves.
+        Under no circumstance would you be too busy. “Yeah, I’ll find you after the game,” you say. She waves.
       </p>
       <p>
         You finish cleaning up for the day: straighten the chairs, throw out the kids’ trash,
