@@ -37,6 +37,9 @@ code, pre, kbd {
 section {
     margin: 0;
 }
+.current-chapter {
+  margin-bottom: $section-margin;
+}
 
 .medium-margin {
     margin-top: $global-margin * 2;
@@ -139,7 +142,8 @@ psychic {
 }
 h1 {
   text-align: center;
-  padding: 1em 0 0 0
+  padding: .5em 0 0 0;
+  text-transform: uppercase;
 }
 h2.subtitle {
   padding: 0;

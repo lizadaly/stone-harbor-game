@@ -17,8 +17,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
     <section>
       <hr/>
       <h1>Stone Harbor</h1>
-      <h2 className="subtitle">An interactive story</h2>
-      <h5>by Liza Daly</h5>
+      <h5>Liza Daly</h5>
 
       <h2>Chapter One</h2>
       <h3>At the diner</h3>

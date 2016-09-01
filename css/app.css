@@ -937,7 +937,7 @@ h6 {
 
 @media screen and (min-width: 40em) {
   h1 {
-    font-size: 3rem; }
+    font-size: 4.5rem; }
 
   h2 {
     font-size: 2.1875rem; }
@@ -1611,6 +1611,9 @@ code, pre, kbd {
 section {
   margin: 0; }
 
+.current-chapter {
+  margin-bottom: 8rem; }
+
 .medium-margin {
   margin-top: 4rem; }
 
@@ -1657,7 +1660,7 @@ aside {
     font-size: 22.4px; }
 
 header h1 {
-  font-size: 48px; }
+  font-size: 72px; }
 
 pre {
   background: #f6f6f6;
@@ -1702,7 +1705,8 @@ psychic {
 
 h1 {
   text-align: center;
-  padding: 1em 0 0 0; }
+  padding: .5em 0 0 0;
+  text-transform: uppercase; }
 
 h2.subtitle {
   padding: 0;

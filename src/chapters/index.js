@@ -10,18 +10,10 @@ export * from "./chapter8.js"
 export * from "./epilogue.js"
 
 const React = require('react')
-import { connect } from 'react-redux'
 
-const mapStateToProps = (state) => {
-  return {
-  }
-}
-export const RenderSection = connect(
-  mapStateToProps
-)(({currentSection, sections, inFlashback}) => (
+export const RenderSection = ({currentSection, sections}) => (
   <div>{[...Array(currentSection + 1).keys()].map(i => {
     return <div key={i}>{sections[i]}</div>
-  }
-  )}
+  })}
   </div>
-))
+)

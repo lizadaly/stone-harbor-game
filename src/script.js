@@ -35,9 +35,9 @@ class _Game extends React.Component {
         <Counter/>
         {
           Array(this.props.currentChapter + 1).fill().map((_, i) => {
-            return <chapter key={"chapter" + i}>{this.chapters[i]}</chapter>
-          })
-        }
+            return <div key={"chapter" + i} className={i === this.props.currentChapter ? 'current-chapter' : ''}>{this.chapters[i]}</div>
+              })
+              }
       </div>
     }
 }

@@ -103,8 +103,8 @@
 	        React.createElement(_counter.Counter, null),
 	        Array(this.props.currentChapter + 1).fill().map(function (_, i) {
 	          return React.createElement(
-	            'chapter',
-	            { key: "chapter" + i },
+	            'div',
+	            { key: "chapter" + i, className: i === _this2.props.currentChapter ? 'current-chapter' : '' },
 	            _this2.chapters[i]
 	          );
 	        })
@@ -5764,7 +5764,6 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.RenderSection = undefined;
 
 	var _prologue = __webpack_require__(57);
 
@@ -5886,20 +5885,13 @@
 	  });
 	});
 
-	var _reactRedux = __webpack_require__(1);
-
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 	var React = __webpack_require__(3);
 
-
-	var mapStateToProps = function mapStateToProps(state) {
-	  return {};
-	};
-	var RenderSection = exports.RenderSection = (0, _reactRedux.connect)(mapStateToProps)(function (_ref) {
+	var RenderSection = exports.RenderSection = function RenderSection(_ref) {
 	  var currentSection = _ref.currentSection;
 	  var sections = _ref.sections;
-	  var inFlashback = _ref.inFlashback;
 	  return React.createElement(
 	    "div",
 	    null,
@@ -5911,7 +5903,7 @@
 	      );
 	    })
 	  );
-	});
+	};
 
 /***/ },
 /* 57 */
@@ -6787,14 +6779,9 @@
 	      'Stone Harbor'
 	    ),
 	    React.createElement(
-	      'h2',
-	      { className: 'subtitle' },
-	      'An interactive story'
-	    ),
-	    React.createElement(
 	      'h5',
 	      null,
-	      'by Liza Daly'
+	      'Liza Daly'
 	    ),
 	    React.createElement(
 	      'h2',
