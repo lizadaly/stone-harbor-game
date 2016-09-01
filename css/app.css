@@ -1720,6 +1720,7 @@ hr {
 img.card {
   width: 200px; }
 
+/* Section animations */
 .section-enter, .section-appear {
   opacity: 0.01; }
 
@@ -1733,5 +1734,20 @@ img.card {
 .section-leave.section-leave-active {
   opacity: 0.01;
   transition: opacity 300ms ease-in; }
+
+/* List item animations */
+.list-enter, .list-appear {
+  opacity: 0.05; }
+
+.list-enter.list-enter-active, .list-appear.list-appear-active {
+  opacity: 1;
+  transition: opacity 200ms ease-in; }
+
+.list-leave {
+  opacity: 1; }
+
+.list-leave.list-leave-active {
+  opacity: 0.01;
+  transition: opacity 200ms ease-in; }
 
 /*# sourceMappingURL=app.css.map */

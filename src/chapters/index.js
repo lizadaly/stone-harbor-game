@@ -19,7 +19,7 @@ export const RenderSection = ({currentSection, sections}) => {
 
   return (
     <div>
-      <ReactCSSTransitionGroup transitionName="section" transitionAppear={true} transitionEnterTimeout={500} transitionLeaveTimeout={300}>
+      <ReactCSSTransitionGroup transitionName="section" transitionAppear={true} transitionAppearTimeout={500} transitionEnterTimeout={500} transitionLeaveTimeout={300}>
         {sections}
       </ReactCSSTransitionGroup>
     </div>

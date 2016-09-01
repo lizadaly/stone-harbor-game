@@ -1,4 +1,5 @@
 const React = require('react')
+const ReactCSSTransitionGroup = require('react-addons-css-transition-group')
 import { showNextSection, showNextChapter, updateInventory, setExpansions, updateStateCounter } from "../actions"
 import { inverter } from '../lib'
 import { connect } from 'react-redux'
@@ -23,9 +24,9 @@ function _fromInventory(inventory, offset="last") {
 
 /* Return a word from an inventory list. By default, returns the last word. Otherwise,
 return the offset word */
-export const FromInventory = ({inventory, offset="last"}) => {
-  return <span dangerouslySetInnerHTML={{__html: _fromInventory(inventory, offset)}} />
-}
+export const FromInventory = ({inventory, offset="last"}) => (
+  <span key={inventory} dangerouslySetInnerHTML={{__html: _fromInventory(inventory, offset)}} />
+)
 
 /* For a given value of an inventory property, return the value from the `from`
 map that matches. Accepts an optional `offset` which is passed through to `fromInventory`.
@@ -36,7 +37,7 @@ otherwise return the node.
 export const Map = ({from, to, offset="last"}) => {
   var _from = _fromInventory(from, offset)
   if (!to[_from] || typeof to[_from] === 'string')
-    return <span dangerouslySetInnerHTML={{__html: to[_from]}} />
+    return <span key={to[_from]} dangerouslySetInnerHTML={{__html: to[_from]}} />
   else if (typeof to[_from] == 'function')
     return to[_from]()
   return to[_from]
@@ -181,7 +182,7 @@ class _List extends React.Component {
     else {
       return <span>{
         [...text].map((t, i) =>
-          <span key={i}>
+          <span key={t}>
             { i == text.length -1 ? ` ${this.props.conjunction} `: "" }
             <Link handler={handler} text={t}/>
             { text.length > 2 && i < text.length -1 ? ", ": "" }

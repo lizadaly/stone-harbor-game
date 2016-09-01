@@ -5907,7 +5907,7 @@
 	    null,
 	    React.createElement(
 	      ReactCSSTransitionGroup,
-	      { transitionName: "section", transitionAppear: true, transitionEnterTimeout: 500, transitionLeaveTimeout: 300 },
+	      { transitionName: "section", transitionAppear: true, transitionAppearTimeout: 500, transitionEnterTimeout: 500, transitionLeaveTimeout: 300 },
 	      sections
 	    )
 	  );
@@ -6350,6 +6350,7 @@
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 	var React = __webpack_require__(3);
+	var ReactCSSTransitionGroup = __webpack_require__(323);
 
 
 	/* A nextChapter link */
@@ -6385,8 +6386,7 @@
 	  var inventory = _ref3.inventory;
 	  var _ref3$offset = _ref3.offset;
 	  var offset = _ref3$offset === undefined ? "last" : _ref3$offset;
-
-	  return React.createElement('span', { dangerouslySetInnerHTML: { __html: _fromInventory(inventory, offset) } });
+	  return React.createElement('span', { key: inventory, dangerouslySetInnerHTML: { __html: _fromInventory(inventory, offset) } });
 	};
 
 	/* For a given value of an inventory property, return the value from the `from`
@@ -6402,7 +6402,7 @@
 	  var offset = _ref4$offset === undefined ? "last" : _ref4$offset;
 
 	  var _from = _fromInventory(from, offset);
-	  if (!to[_from] || typeof to[_from] === 'string') return React.createElement('span', { dangerouslySetInnerHTML: { __html: to[_from] } });else if (typeof to[_from] == 'function') return to[_from]();
+	  if (!to[_from] || typeof to[_from] === 'string') return React.createElement('span', { key: to[_from], dangerouslySetInnerHTML: { __html: to[_from] } });else if (typeof to[_from] == 'function') return to[_from]();
 	  return to[_from];
 	};
 	Map.propTypes = {
@@ -6612,7 +6612,7 @@
 	          [].concat(_toConsumableArray(text)).map(function (t, i) {
 	            return React.createElement(
 	              'span',
-	              { key: i },
+	              { key: t },
 	              i == text.length - 1 ? ' ' + _this2.props.conjunction + ' ' : "",
 	              React.createElement(Link, { handler: handler, text: t }),
 	              text.length > 2 && i < text.length - 1 ? ", " : ""
