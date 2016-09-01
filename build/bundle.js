@@ -49,7 +49,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.Game = undefined;
+	exports.reverse = exports.reset = exports.Game = undefined;
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -127,32 +127,55 @@
 
 	var Game = exports.Game = (0, _reactRedux.connect)(mapStateToProps)(_Game);
 
-	//$(document).ready(function () {
-	//    var store = createStore(gameApp, undefined, autoRehydrate())
-	var store = (0, _redux.createStore)(_reducers.gameApp, undefined, (0, _redux.compose)((0, _reduxPersist.autoRehydrate)(), window.devToolsExtension && window.devToolsExtension()));
-	var persister = (0, _reduxPersist.persistStore)(store);
-	window.lockHistory = true;
-	window.addEventListener("popstate", function (e) {
-	  if (history.state) {
-	    // Use this state instead of reserializing
-	    if (history.state.counter != store.getState().counter) {
-	      console.log("reserializing state with counter ", history.state.counter);
-	      persister.rehydrate(history.state);
-	      history.replaceState(history.state, "");
-	      window.lockHistory = true;
+	var startGame = function startGame() {
+	  var store = (0, _redux.createStore)(_reducers.gameApp, undefined, (0, _redux.compose)((0, _reduxPersist.autoRehydrate)(), window.devToolsExtension && window.devToolsExtension()));
+	  var persister = (0, _reduxPersist.persistStore)(store);
+	  window.lockHistory = true;
+	  window.addEventListener("popstate", function (e) {
+	    if (history.state) {
+	      // Use this state instead of reserializing
+	      if (history.state.counter != store.getState().counter) {
+	        console.log("reserializing state with counter ", history.state.counter);
+	        persister.rehydrate(history.state);
+	        history.replaceState(history.state, "");
+	        window.lockHistory = true;
+	      }
 	    }
+	  });
+	  /*
+	  let unsubscribe = store.subscribe(() =>
+	    console.log(store.getState())
+	  )*/
+	  ReactDOM.render(React.createElement(
+	    _reactRedux.Provider,
+	    { store: store },
+	    React.createElement(Game, null)
+	  ), document.getElementById('article'));
+	};
+	/* Non-React functionality */
+	var reset = exports.reset = function reset(e) {
+	  e.preventDefault();
+	  localStorage.clear();
+	  location.replace('/');
+	};
+	/* Toggle night mode */
+	var reverse = exports.reverse = function reverse() {
+	  var mode = localStorage.getItem("nightMode");
+	  if (!mode) {
+	    // Deliberately truthy
+	    mode = true;
+	  } else {
+	    mode = false;
 	  }
-	});
-	/*
-	let unsubscribe = store.subscribe(() =>
-	  console.log(store.getState())
-	)*/
-	ReactDOM.render(React.createElement(
-	  _reactRedux.Provider,
-	  { store: store },
-	  React.createElement(Game, null)
-	), document.getElementById('article'));
-	//})
+	  localStorage.setItem("nightMode", mode);
+	  document.getElementById('article').getClassList().toggle('nightmode', mode);
+	};
+
+	if (document.readyState != 'loading') {
+	  startGame();
+	} else {
+	  document.addEventListener('DOMContentLoaded', startGame);
+	}
 
 /***/ },
 /* 1 */
@@ -32109,7 +32132,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'She looks around the room in surprise. “Hey nice job on the decor.” The “reading room” (your name) is where kids with learning disabilities come to get independent tutoring or extra practice work. You’re not much more than a glorified babysitter—there’s a trained special ed teacher in charge of running this circus—but she lets you play the clown and distract the kids from their problems when their issues aren’t really schoolwork. Last week you brought in some of your mom’s tchotchkes; when nobody’s looking you teach the kids how to cold read. Hey, it’ll be more useful than geometry.'
+	      'She looks around the room in surprise. “I like the new decor.” The “reading room” (your name) is where kids with learning disabilities come to get independent tutoring or extra practice work. You’re not much more than a glorified babysitter—there’s a trained special ed teacher in charge of running this circus—but she lets you play the clown and distract the kids from their problems when their issues aren’t really schoolwork. Last week you brought in some of your mom’s tchotchkes; when nobody’s looking you teach the kids how to cold read. Hey, it’ll be more useful than geometry.'
 	    ),
 	    React.createElement(
 	      'p',

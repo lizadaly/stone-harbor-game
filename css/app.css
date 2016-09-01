@@ -431,7 +431,7 @@ button {
   display: none !important; }
 
 .row {
-  max-width: 56.25rem;
+  max-width: 34.375rem;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -964,7 +964,7 @@ a {
     border: 0; }
 
 hr {
-  max-width: 56.25rem;
+  max-width: 34.375rem;
   height: 0;
   border-right: 0;
   border-top: 0;

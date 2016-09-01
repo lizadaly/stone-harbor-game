@@ -15,15 +15,24 @@
       h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
       })(document);
 
+      var reset = function (e) {
+        e.preventDefault();
+        localStorage.clear();
+        location.replace('/');
+      }
+      /* Toggle night mode */
+      var reverse = function () {
+        var mode = localStorage.getItem("nightMode");
+        if (mode === undefined || mode === 'false') {
+          mode = 'true';
+        }
+        else {
+          mode = 'false';
+        }
+        localStorage.setItem("nightMode", mode);
+        document.getElementById('article').classList.toggle('nightmode', mode === 'true');
+      }
     </script>
-
-<script>
-var reset = function (e) {
-  e.preventDefault();
-  localStorage.clear();
-  location.replace('/');
-}
-</script>
 
     <meta name="keywords" content="bots python chatbots nlp natural language processing"/>
     <meta name="description" content="In this brief tutorial I’ll walk you through using a popular Python language library to evaluate user input and construct a simple chatbot."/>
@@ -45,16 +54,15 @@ var reset = function (e) {
       <div class="top-bar-right">
         <ul class="menu">
           <li><a href="#" onClick="reset(event)">Restart</a></li>
+          <li><a href="#" onClick="reverse()">Toggle Night Mode</a></li>
         </ul>
       </div>
       </nav>
 
-
+    <!-- Body -->
     <article id="article" class="row columns">
     </article>
-    <!--
-    <script defer src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-  -->
+
     <script defer src="build/bundle.js"></script>
     <!--
     <script>

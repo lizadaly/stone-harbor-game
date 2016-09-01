@@ -45,7 +45,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         better to keep saying it and you know it makes her feel better too.
       </p>
       <p>
-        She looks around the room in surprise. “Hey nice job on the decor.” The “reading room” (your name)
+        She looks around the room in surprise. “I like the new decor.” The “reading room” (your name)
         is where kids with learning disabilities come to get independent tutoring or extra practice work.
         You’re not much more than a glorified babysitter—there’s a trained special ed teacher in charge of
         running this circus—but she lets you play the clown and distract the kids from their problems

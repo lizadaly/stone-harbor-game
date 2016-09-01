@@ -26,7 +26,7 @@ class _Game extends React.Component {
         <Chapter6 chapterId="6"/>,
         <Chapter7 chapterId="7"/>,
         <Chapter8 chapterId="8"/>,
-        <Epilogue chapterId="9"/>        
+        <Epilogue chapterId="9"/>
       ]
     }
     render() {
@@ -55,8 +55,8 @@ export const Game = connect(
   mapStateToProps
 )(_Game)
 
-//$(document).ready(function () {
-//    var store = createStore(gameApp, undefined, autoRehydrate())
+
+const startGame = () => {
     var store = createStore(gameApp, undefined, compose(
       autoRehydrate(),
       window.devToolsExtension && window.devToolsExtension()
@@ -79,4 +79,29 @@ export const Game = connect(
       console.log(store.getState())
     )*/
     ReactDOM.render(<Provider store={store}><Game/></Provider>, document.getElementById('article'))
-//})
+}
+/* Non-React functionality */
+export const reset = (e) => {
+  e.preventDefault()
+  localStorage.clear()
+  location.replace('/')
+}
+/* Toggle night mode */
+export const reverse = () => {
+  var mode = localStorage.getItem("nightMode")
+  if (!mode) { // Deliberately truthy
+    mode = true
+  }
+  else {
+    mode = false
+  }
+  localStorage.setItem("nightMode", mode)
+  document.getElementById('article').getClassList().toggle('nightmode', mode)
+}
+
+if (document.readyState != 'loading') {
+  startGame()
+}
+else {
+  document.addEventListener('DOMContentLoaded', startGame)
+}
