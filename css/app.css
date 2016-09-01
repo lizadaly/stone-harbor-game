@@ -1659,20 +1659,6 @@ aside {
 header h1 {
   font-size: 48px; }
 
-.ReactCodeMirror {
-  background: #3f3f3f;
-  padding: .5rem; }
-
-.CodeMirror {
-  font-family: Inconsolata, Consolas, "Liberation Mono", Courier, monospace;
-  line-height: 1.2rem; }
-
-.instructions {
-  margin: 2rem;
-  font-size: 0.9rem;
-  font-family: helvetica, arial, sans-serif;
-  min-height: 0.25rem; }
-
 pre {
   background: #f6f6f6;
   border: 1px solid #cacaca;
@@ -1683,6 +1669,12 @@ nav a {
 
 nav img {
   height: 1rem; }
+
+body.nightmode {
+  background: #0a0a0a;
+  color: #fefefe; }
+  body.nightmode h1, body.nightmode h2, body.nightmode h3, body.nightmode h4, body.nightmode h5, body.nightmode h6 {
+    color: #fefefe; }
 
 article {
   margin-top: 2rem; }

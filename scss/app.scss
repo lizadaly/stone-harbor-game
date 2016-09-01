@@ -15,6 +15,7 @@
 
 $section-margin: $global-margin * 4;
 
+
 .wf-loading * {
   visibility: hidden
 }
@@ -87,23 +88,7 @@ aside {
 header h1 {
     font-size: map-get(map-get($header-sizes, medium), h1) * 1px;
 }
-.ReactCodeMirror {
-    background: #3f3f3f;
-    padding: .5rem;
 
-}
-
-
-.CodeMirror {
-    font-family: $font-family-monospace;
-    line-height: 1.2rem;
-}
-.instructions {
-    margin: $global-margin;
-    font-size: $small-font-size;
-    font-family: helvetica, arial, sans-serif;
-    min-height: 0.25rem;
-}
 
 pre {
     background: $light-gray;
@@ -116,7 +101,15 @@ nav a {
 nav img {
     height: 1rem;
 }
-
+body {
+  &.nightmode {
+    background: $black;
+    color: $white;
+    h1, h2, h3, h4, h5, h6 {
+      color: $white;
+    }
+  }
+}
 article {
     margin-top: $global-margin;
 }

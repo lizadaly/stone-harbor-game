@@ -59,8 +59,15 @@ $medium-gray: #cacaca;
 
 $black: #0a0a0a;
 $white: #fefefe;
+.nightmode {
+  $body-background: $black;
+  $body-font-color: #aaeeff;
+}
+
 $body-background: $white;
 $body-font-color: $black;
+
+
 $body-font-family: "adelle", serif;
 $body-antialiased: true;
 $global-margin: 2rem;

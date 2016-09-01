@@ -30,7 +30,7 @@
           mode = 'false';
         }
         localStorage.setItem("nightMode", mode);
-        document.getElementById('article').classList.toggle('nightmode', mode === 'true');
+        document.getElementById('body').classList.toggle('nightmode', mode === 'true');
       }
     </script>
 
@@ -45,7 +45,7 @@
     <link rel="apple-touch-icon" href="iconapple.png"/>
     <link rel="stylesheet" href="css/app.css"/>
   </head>
-  <body>
+  <body id="body">
 
     <nav class="top-bar" style="position:fixed; width: 100%; top:0">
       <div class="top-bar-title">

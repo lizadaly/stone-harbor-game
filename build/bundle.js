@@ -49,7 +49,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.reverse = exports.reset = exports.Game = undefined;
+	exports.Game = undefined;
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -152,27 +152,11 @@
 	    React.createElement(Game, null)
 	  ), document.getElementById('article'));
 	};
-	/* Non-React functionality */
-	var reset = exports.reset = function reset(e) {
-	  e.preventDefault();
-	  localStorage.clear();
-	  location.replace('/');
-	};
-	/* Toggle night mode */
-	var reverse = exports.reverse = function reverse() {
-	  var mode = localStorage.getItem("nightMode");
-	  if (!mode) {
-	    // Deliberately truthy
-	    mode = true;
-	  } else {
-	    mode = false;
-	  }
-	  localStorage.setItem("nightMode", mode);
-	  document.getElementById('article').getClassList().toggle('nightmode', mode);
-	};
 
 	if (document.readyState != 'loading') {
 	  startGame();
+	  var mode = localStorage.getItem("nightMode");
+	  document.getElementById('body').classList.toggle('nightmode', mode === 'true');
 	} else {
 	  document.addEventListener('DOMContentLoaded', startGame);
 	}

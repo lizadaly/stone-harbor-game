@@ -80,27 +80,12 @@ const startGame = () => {
     )*/
     ReactDOM.render(<Provider store={store}><Game/></Provider>, document.getElementById('article'))
 }
-/* Non-React functionality */
-export const reset = (e) => {
-  e.preventDefault()
-  localStorage.clear()
-  location.replace('/')
-}
-/* Toggle night mode */
-export const reverse = () => {
-  var mode = localStorage.getItem("nightMode")
-  if (!mode) { // Deliberately truthy
-    mode = true
-  }
-  else {
-    mode = false
-  }
-  localStorage.setItem("nightMode", mode)
-  document.getElementById('article').getClassList().toggle('nightmode', mode)
-}
+
 
 if (document.readyState != 'loading') {
   startGame()
+  var mode = localStorage.getItem("nightMode")
+  document.getElementById('body').classList.toggle('nightmode', mode === 'true')
 }
 else {
   document.addEventListener('DOMContentLoaded', startGame)
