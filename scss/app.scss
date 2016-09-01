@@ -19,16 +19,6 @@ $section-margin: $global-margin * 4;
 .wf-loading * {
   visibility: hidden
 }
-.code-dialogue {
-    background: $light-gray;
-    padding-bottom: $global-margin / 2 !important;
-    margin-bottom: $global-margin;
-}
-
-code, pre, kbd {
-    font-family: $font-family-monospace;
-    font-size: $small-font-size;
-}
 
 .button {
     border: 0 ;
@@ -52,52 +42,10 @@ figure {
     margin:0;
 }
 
-
-footer {
-    background: $darkest-gray;
-    padding: $global-margin * 2;
-    color: $white;
-}
-
-footer img {
-    fill: $white;
-}
-
-footer a {
-    color: $white;
-}
-
-footer small {
-
-}
-
-aside {
-    @include callout-base;
-    font-size: $small-font-size;
-    color: $darkest-gray;
-    width: grid-column(4);
-    @include grid-column-position(8);
-    float:right;
-    margin: 0rem 2rem;
-    @include grid-column-position(0);
-    h3 {
-        color: $darkest-gray;
-        text-transform: uppercase;
-        font-size: map-get(map-get($header-sizes, small), h6) * 1.4px;
-    }
-
-}
-
 header h1 {
     font-size: map-get(map-get($header-sizes, medium), h1) * 1px;
 }
 
-
-pre {
-    background: $light-gray;
-    border: 1px solid $medium-gray;
-    padding: rem-calc(2 5 1);
-}
 nav a {
     text-decoration: none;
 }
@@ -108,7 +56,7 @@ body {
   &.nightmode {
     background: $black;
     color: $white;
-    h1, h2, h3, h4, h5, h6 {
+    h1, h2, h3, h4, h5, h6, a {
       color: $white;
     }
   }

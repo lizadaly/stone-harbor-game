@@ -1596,15 +1596,6 @@ kbd {
 .wf-loading * {
   visibility: hidden; }
 
-.code-dialogue {
-  background: #f6f6f6;
-  padding-bottom: 1rem !important;
-  margin-bottom: 2rem; }
-
-code, pre, kbd {
-  font-family: Inconsolata, Consolas, "Liberation Mono", Courier, monospace;
-  font-size: 0.9rem; }
-
 .button {
   border: 0; }
 
@@ -1623,49 +1614,8 @@ section {
 figure {
   margin: 0; }
 
-footer {
-  background: #484848;
-  padding: 4rem;
-  color: #fefefe; }
-
-footer img {
-  fill: #fefefe; }
-
-footer a {
-  color: #fefefe; }
-
-aside {
-  margin: 0 0 1rem 0;
-  padding: 1rem 0;
-  border: 0;
-  border-radius: 0;
-  position: relative;
-  color: #0a0a0a;
-  font-size: 0.9rem;
-  color: #484848;
-  width: 33.33333%;
-  position: relative;
-  left: 66.66667%;
-  float: right;
-  margin: 0rem 2rem;
-  position: relative;
-  left: 0%; }
-  aside > :first-child {
-    margin-top: 0; }
-  aside > :last-child {
-    margin-bottom: 0; }
-  aside h3 {
-    color: #484848;
-    text-transform: uppercase;
-    font-size: 22.4px; }
-
 header h1 {
   font-size: 72px; }
-
-pre {
-  background: #f6f6f6;
-  border: 1px solid #cacaca;
-  padding: 0.125rem 0.3125rem 0.0625rem; }
 
 nav a {
   text-decoration: none; }
@@ -1676,7 +1626,7 @@ nav img {
 body.nightmode {
   background: #0a0a0a;
   color: #fefefe; }
-  body.nightmode h1, body.nightmode h2, body.nightmode h3, body.nightmode h4, body.nightmode h5, body.nightmode h6 {
+  body.nightmode h1, body.nightmode h2, body.nightmode h3, body.nightmode h4, body.nightmode h5, body.nightmode h6, body.nightmode a {
     color: #fefefe; }
 
 article {

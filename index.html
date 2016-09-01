@@ -21,9 +21,10 @@
         location.replace('/');
       }
       /* Toggle night mode */
-      var reverse = function () {
+      var reverse = function (e) {
+        e.preventDefault();
         var mode = localStorage.getItem("nightMode");
-        if (mode === undefined || mode === 'false') {
+        if (mode == null || mode === 'false') { // truthy
           mode = 'true';
         }
         else {
@@ -51,7 +52,7 @@
       <div class="top-bar-right">
         <ul class="menu">
           <li><a href="#" onClick="reset(event)">Restart</a></li>
-          <li><a href="#" onClick="reverse()">Toggle Night Mode</a></li>
+          <li><a href="#" onClick="reverse(event)">Toggle Night Mode</a></li>
         </ul>
       </div>
     </nav>
