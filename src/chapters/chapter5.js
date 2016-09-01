@@ -215,14 +215,23 @@ class _Deck extends React.Component {
   componentWillMount() {
     /* Don't do anything if we're remounting */
     if (this.props.deck.length === 0) {
-      let {drawn, cards} = this.drawCards(Object.keys(this.cardvalues))
+      // Shuffle the deck first
+      let shuffled = this.shuffle(Object.keys(this.cardvalues))
+      let {drawn, cards} = this.drawCards(shuffled)
       this.props.updateDeck(cards)
       this.props.updateHands(drawn)
     }
   }
+  shuffle(arr) {
+    var m = arr.length;
+    while (m) {
+        let i = Math.floor(Math.random() * m--);
+        [arr[m], arr[i]] = [arr[i], arr[m]];
+    }
+    return arr;
+  }
   drawCards(cards, numCards=2) {
-    let rand = Math.floor(Math.random() * cards.length)
-    let drawn = cards.splice(rand, numCards)
+    let drawn = cards.splice(0, numCards)
     return {drawn, cards}
   }
   onSelect(name) {

@@ -8809,7 +8809,10 @@
 	    value: function componentWillMount() {
 	      /* Don't do anything if we're remounting */
 	      if (this.props.deck.length === 0) {
-	        var _drawCards = this.drawCards(Object.keys(this.cardvalues));
+	        // Shuffle the deck first
+	        var shuffled = this.shuffle(Object.keys(this.cardvalues));
+
+	        var _drawCards = this.drawCards(shuffled);
 
 	        var drawn = _drawCards.drawn;
 	        var cards = _drawCards.cards;
@@ -8819,12 +8822,23 @@
 	      }
 	    }
 	  }, {
+	    key: 'shuffle',
+	    value: function shuffle(arr) {
+	      var m = arr.length;
+	      while (m) {
+	        var i = Math.floor(Math.random() * m--);
+	        var _ref2 = [arr[i], arr[m]];
+	        arr[m] = _ref2[0];
+	        arr[i] = _ref2[1];
+	      }
+	      return arr;
+	    }
+	  }, {
 	    key: 'drawCards',
 	    value: function drawCards(cards) {
 	      var numCards = arguments.length <= 1 || arguments[1] === undefined ? 2 : arguments[1];
 
-	      var rand = Math.floor(Math.random() * cards.length);
-	      var drawn = cards.splice(rand, numCards);
+	      var drawn = cards.splice(0, numCards);
 	      return { drawn: drawn, cards: cards };
 	    }
 	  }, {
