@@ -3,12 +3,12 @@ var webpack = require('webpack');
 var PROD = (process.env.NODE_ENV === 'production')
 
 module.exports = {
+    devtool: 'cheap-module-source-map',
     context: __dirname + "/src",
     entry: "./script",
     output: {
         path: __dirname + "/build",
         filename: PROD ? 'bundle.min.js' : 'bundle.js'
-
     },
     module: {
         loaders: [
@@ -24,14 +24,17 @@ module.exports = {
     },
     plugins: PROD ? [
         new webpack.optimize.UglifyJsPlugin({
-            compress: { warnings: false }
+            compress: {
+              warnings: false,
+              screw_ie8: true
+            },
+            comments: false
         }),
-	new webpack.DefinePlugin({
-	    "process.env": {
-		NODE_ENV: JSON.stringify("production")
-
-	    }
-	})
+	     new webpack.DefinePlugin({
+	          "process.env": {
+		            NODE_ENV: JSON.stringify("production")
+	             }
+       })
     ] : [
 	new webpack.DefinePlugin({
 	    "process.env": {
