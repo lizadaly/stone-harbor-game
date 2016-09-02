@@ -108,140 +108,144 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
     <div className="in-flashback">
       <figure className="chapter7" />
       <h3>On the beach</h3>
-      <p>
-        This is Alan Healey’s private beach. The peaks of his roof are visible above the dunes, rising up
-        behind dense, scrubby trees. It’s early morning.
-      </p>
-      <p>
-        This close you can see the resemblance between the brothers. Jared, younger, and Alan, older,
-        but cut from the same model, in body if not in spirit. Alan is more spry than you’d thought—
-        the man walked down that steep path to get here. He also seems fueled by rage.
-      </p>
-      <p>
-        “Haven’t I given you <em>enough</em>?” he says. He’s leaning on a <smallcaps>Private Property</smallcaps> sign,
-        while his brother is plowing circles in the sand with his pacing. “I’ve made up my mind.”
-      </p>
-      <p>
-        “If you take the properties away we’ll be—”
-      </p>
-      <p>
-        “<em>You’ll</em> be, Jared,” Alan says. “If I take the businesses back—when I take them back—all of
-        this stops being my problem. I was willing to look the other way to let you make your own
-        mistakes—”
-      </p>
-      <p>“You were happy to take the money while it was easy.”</p>
+      <section>
+        <p>
+          This is Alan Healey’s private beach. The peaks of his roof are visible above the dunes, rising up
+          behind dense, scrubby trees. It’s early morning.
+        </p>
+        <p>
+          This close you can see the resemblance between the brothers. Jared, younger, and Alan, older,
+          but cut from the same model, in body if not in spirit. Alan is more spry than you’d thought—
+          the man walked down that steep path to get here. He also seems fueled by rage.
+        </p>
+        <p>
+          “Haven’t I given you <em>enough</em>?” he says. He’s leaning on a <smallcaps>Private Property</smallcaps> sign,
+          while his brother is plowing circles in the sand with his pacing. “I’ve made up my mind.”
+        </p>
+        <p>
+          “If you take the properties away we’ll be—”
+        </p>
+        <p>
+          “<em>You’ll</em> be, Jared,” Alan says. “If I take the businesses back—when I take them back—all of
+          this stops being my problem. I was willing to look the other way to let you make your own
+          mistakes—”
+        </p>
+        <p>“You were happy to take the money while it was easy.”</p>
 
-      <p>“I never kept a dime of it. It’s in a trust, for Sarah.”</p>
-      <p>Jared didn’t know this. “She’s not your daughter! How dare you?”</p>
-      <p>“The way you’re going, Jared, there will be <em>nothing</em> left for her. She’ll be lucky
-        not to be an orphan by the time these schemes of yours run their course.” His voice softens a
-        little. “These people are <em>dangerous</em>. They’re killers.”
-      </p>
-      <p>
-        “They’re my friends. They wouldn’t—”
-      </p>
-      <p>
-        “They will. And I can’t stop you from ruining your own life. But I can stop you from
-        ruining your daughter’s.” He stares off towards the sea, not able to look his brother in the eye.
-        “I’ve decided to sell the entire business, liquidate all the real estate holdings. It’s all going
-        to trusts for Sarah and Maggie.”
-      </p>
-      <p>
-        From Jared’s expression of horror you know this isn’t
-        good for him. “We’ll never be able to pay back what we’ve been floating. Michael will kill me.”
-      </p>
-      <p>
-        Alan shakes his head sadly. “Michael needs to find his own way back. I don’t know where this
-        family went wrong, but it stops with Sarah. I made a promise.”
-      </p>
-      <p>
-        “You sanctimonious prick,” Jared says, then pauses. “A promise to who?”
-      </p>
-      <p>
-        Now Alan is definitely not looking at his brother. “Allison.”
-      </p>
-      <p>
-        “You talked to my wife? When?”
-      </p>
-      <p>
-        “Before she left. She told me she was leaving, that she had to leave because it wasn’t safe for her.
-        But she wouldn’t explain why.” He holds out his hand; in his palm is a gold ring that
-        matches the one Jared still wears. The ring is achingly, regretfully lonely.
-        “I’m sorry, brother. I should’ve told you.”
-      </p>
-      <p>
-        Jared lets out an anguished cry and reaches for his ex-wife’s ring, but Alan throws it—right <em>through</em> you—
-        and it lands in the surf. Jared howls and pushes
-        his elderly brother into the sand.
-      </p>
-      <p>
-        “You’ve killed me,” he says, sobbing.
-      </p>
-      <p>
-        “You did it to yourself,” Alan replies, more sad than angry. Jared leaves him there,
-        struggling in the sand to get up. You can’t help, of course, only watch.
-      </p>
-      <p>
-        You feel the pull of the ring.
-      </p>
-      <p><em>But I haven’t woken up</em> you think, as you move towards the surf. <em>I’m still in this vision, still in the past.</em></p>
-      <p>
-        If you were just searching with your eyes, the ring would be long gone, lost amid the
-        seaweed and froth, but in the flat, washed out, emotionless plane of the vision, its
-        desperate ache is like a beacon. You reach down into the water (<em>since when do I have arms?</em>)
-        and put your hand around Allison Healey’s <List expansions={["ring", "haunted ring"]} tag="c7_ring2" />.
-      </p>
+        <p>“I never kept a dime of it. It’s in a trust, for Sarah.”</p>
+        <p>Jared didn’t know this. “She’s not your daughter! How dare you?”</p>
+        <p>“The way you’re going, Jared, there will be <em>nothing</em> left for her. She’ll be lucky
+          not to be an orphan by the time these schemes of yours run their course.” His voice softens a
+          little. “These people are <em>dangerous</em>. They’re killers.”
+        </p>
+        <p>
+          “They’re my friends. They wouldn’t—”
+        </p>
+        <p>
+          “They will. And I can’t stop you from ruining your own life. But I can stop you from
+          ruining your daughter’s.” He stares off towards the sea, not able to look his brother in the eye.
+          “I’ve decided to sell the entire business, liquidate all the real estate holdings. It’s all going
+          to trusts for Sarah and Maggie.”
+        </p>
+        <p>
+          From Jared’s expression of horror you know this isn’t
+          good for him. “We’ll never be able to pay back what we’ve been floating. Michael will kill me.”
+        </p>
+        <p>
+          Alan shakes his head sadly. “Michael needs to find his own way back. I don’t know where this
+          family went wrong, but it stops with Sarah. I made a promise.”
+        </p>
+        <p>
+          “You sanctimonious prick,” Jared says, then pauses. “A promise to who?”
+        </p>
+        <p>
+          Now Alan is definitely not looking at his brother. “Allison.”
+        </p>
+        <p>
+          “You talked to my wife? When?”
+        </p>
+        <p>
+          “Before she left. She told me she was leaving, that she had to leave because it wasn’t safe for her.
+          But she wouldn’t explain why.” He holds out his hand; in his palm is a gold ring that
+          matches the one Jared still wears. The ring is achingly, regretfully lonely.
+          “I’m sorry, brother. I should’ve told you.”
+        </p>
+        <p>
+          Jared lets out an anguished cry and reaches for his ex-wife’s ring, but Alan throws it—right <em>through</em> you—
+          and it lands in the surf. Jared howls and pushes
+          his elderly brother into the sand.
+        </p>
+        <p>
+          “You’ve killed me,” he says, sobbing.
+        </p>
+        <p>
+          “You did it to yourself,” Alan replies, more sad than angry. Jared leaves him there,
+          struggling in the sand to get up. You can’t help, of course, only watch.
+        </p>
+        <p>
+          You feel the pull of the ring.
+        </p>
+        <p><em>But I haven’t woken up</em> you think, as you move towards the surf. <em>I’m still in this vision, still in the past.</em></p>
+        <p>
+          If you were just searching with your eyes, the ring would be long gone, lost amid the
+          seaweed and froth, but in the flat, washed out, emotionless plane of the vision, its
+          desperate ache is like a beacon. You reach down into the water (<em>since when do I have arms?</em>)
+          and put your hand around Allison Healey’s <List expansions={["ring", "haunted ring"]} tag="c7_ring2" />.
+        </p>
+      </section>
     </div>,
     <div className="in-flashback">
       <figure className="chapter7-2" />
       <h3>In her reading room</h3>
-      <p>
-        Have you woken up? If so, how did you get here? Aren’t you at Whitby’s?
-      </p>
-      <p>
-        Small details begin to jump out at you: objects in the wrong place; broken items mysteriously restored;
-        the beaded curtain heavily laden with beads. A blurred figure in the corner resolves. Your mother.
-      </p>
-      <p>
-        This isn’t one of your memories. You never saw her like this: older, close to the age at which she died
-        but still healthy. Her black hair is throttled with gray; her skin, always olive and leathery from
-        the sun and the wind is now fully wrinkled. There’s no one in the room with her.
-      </p>
-      <p>
-        <em>She’s alone because of you,</em> you think, and you fully feel that truth for the first time.
-        It must’ve been impossibly hard for her, a single parent, but as a selfish child you thought only of what she couldn’t
-        give you: a house, a dog, siblings, a normal life. The minute you turned 18
-        you thanked her by moving out, sending the occasional check and making the rare
-        desultory holiday visit, but mostly, you just left her—vengeance for the crime
-        of simply doing her best to raise her son. By the time you were there for her, she was dying.
-      </p>
-      <p>
-        The curtain rattles, and a woman steps through: mid-thirties, faux-blonde, the spitting image of
-        her daughter. This is Jared’s wife Allison.
-      </p>
-      <p>
-        Your mother’s face animates as she slides into character. “Do you seek the wisdom of the ancients?”
-        (You couldn’t even come up with your own routine.)
-      </p>
-      <p>
-        Allison Healey is cheerful, bubbly, her 1970s hair sun-bleached and luxuriously curled.
-        She exudes the air of a woman with her whole future ahead of her. An easy read, she’ll
-        want to hear about eternal love, tow-haired children, and a two-car garage. Your mom
-        starts up her patter, and you’re struck by how  <em>good</em> she was at this.
-        There’s no guile in her narrative at all. Her eyes fill with unconditional love for this
-        stranger. Her words
-        are pretty lies, but her desire to bring happiness to this person is utterly genuine.
-      </p>
-      <p>“I require a personal object, one infused with the spirits themselves,” she says,
-      and you realize you’re mouthing along with her, like a silent prayer.</p>
-      <p>
-        Without hesitating, Allison Healey removes the <List expansions={["ring", "gold wedding ring"]} tag="c7_allison_ring "/> from
-        her finger.
-      </p>
-    </div>,
-    <section>
-      <p>Your mother takes it and her reaction is immediate and violent. She rocks backwards in her chair,
-        her head snapping around in spasms. Her eyes are pinned open
+      <section>
+        <p>
+          Have you woken up? If so, how did you get here? Aren’t you at Whitby’s?
+        </p>
+        <p>
+          Small details begin to jump out at you: objects in the wrong place; broken items mysteriously restored;
+          the beaded curtain heavily laden with beads. A blurred figure in the corner resolves. Your mother.
+        </p>
+        <p>
+          This isn’t one of your memories. You never saw her like this: older, close to the age at which she died
+          but still healthy. Her black hair is throttled with gray; her skin, always olive and leathery from
+          the sun and the wind is now fully wrinkled. There’s no one in the room with her.
+        </p>
+        <p>
+          <em>She’s alone because of you,</em> you think, and you fully feel that truth for the first time.
+          It must’ve been impossibly hard for her, a single parent, but as a selfish child you thought only of what she couldn’t
+          give you: a house, a dog, siblings, a normal life. The minute you turned 18
+          you thanked her by moving out, sending the occasional check and making the rare
+          desultory holiday visit, but mostly, you just left her—vengeance for the crime
+          of simply doing her best to raise her son. By the time you were there for her, she was dying.
+        </p>
+        <p>
+          The curtain rattles, and a woman steps through: mid-thirties, faux-blonde, the spitting image of
+          her daughter. This is Jared’s wife Allison.
+        </p>
+        <p>
+          Your mother’s face animates as she slides into character. “Do you seek the wisdom of the ancients?”
+          (You couldn’t even come up with your own routine.)
+        </p>
+        <p>
+          Allison Healey is cheerful, bubbly, her 1970s hair sun-bleached and luxuriously curled.
+          She exudes the air of a woman with her whole future ahead of her. An easy read, she’ll
+          want to hear about eternal love, tow-haired children, and a two-car garage. Your mom
+          starts up her patter, and you’re struck by how  <em>good</em> she was at this.
+          There’s no guile in her narrative at all. Her eyes fill with unconditional love for this
+          stranger. Her words
+          are pretty lies, but her desire to bring happiness to this person is utterly genuine.
+        </p>
+        <p>“I require a personal object, one infused with the spirits themselves,” she says,
+        and you realize you’re mouthing along with her, like a silent prayer.</p>
+        <p>
+          Without hesitating, Allison Healey removes the <List expansions={["ring", "gold wedding ring"]} tag="c7_allison_ring "/> from
+          her finger.
+        </p>
+      </section>
+      </div>,
+      <section>
+        <p>Your mother takes it and her reaction is immediate and violent. She rocks backwards in her chair,
+          her head snapping around in spasms. Her eyes are pinned open
         but unseeing, and she’s started a keening moan unlike anything you’ve ever heard.
       </p>
       <p>

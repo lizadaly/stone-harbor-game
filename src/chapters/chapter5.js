@@ -150,8 +150,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
     <section>
       <hr/>
       <p>You fold up the deck and put it aside, and regard the man before you.
-        You’re
-        angry at him, a man you’ve never truly met before. He’s a coward and he’s dangerous,
+        He’s a coward and he’s dangerous,
         but he’s not, you know now, a murderer. He’s too weak.
       </p>
       <p>
@@ -192,7 +191,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         the chair in the process, and flees through the curtain.
       </p>
       <p>
-        He left his <psychic>guilt-ridden gold wedding band</psychic> on your table. 
+        He left his <psychic>guilt-ridden gold wedding band</psychic> on your table.
       </p>
       <NextChapter chapter="6" />
     </section>
@@ -238,7 +237,7 @@ class _Deck extends React.Component {
     // Replace just one card
     var {drawn, cards} = this.drawCards(this.props.deck, 1)
     // If we have 3 cards left, we drew 3 cards and can't draw more
-    if (cards.length <= 2) {
+    if (cards.length <= 1) {
       this.props.showNextSection()
     }
     else {
@@ -257,7 +256,7 @@ class _Deck extends React.Component {
     this.props.updateChosen(name)
   }
   render() {
-    return <div>
+    return <div className="deck">
       {
         this.props.hands.map((hand, i) => {
           let cards = hand.map((c) => Card(c, this.cardvalues[c], this.onSelect.bind(this)))

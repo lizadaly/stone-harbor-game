@@ -23,7 +23,11 @@ $section-margin: $global-margin * 4;
 .button {
     border: 0 ;
 }
-
+h1 {
+  line-height: 1em;
+  margin-bottom: .25em;
+  font-weight: 600;
+}
 section {
     margin: 0;
 }
@@ -42,10 +46,6 @@ figure {
     margin:0;
 }
 
-header h1 {
-    font-size: map-get(map-get($header-sizes, medium), h1) * 1px;
-}
-
 nav a {
     text-decoration: none;
 }
@@ -57,6 +57,10 @@ body {
     background: $black;
     color: $white;
     h1, h2, h3, h4, h5, h6, a {
+      color: $white;
+    }
+    blockquote {
+      background: $black;
       color: $white;
     }
   }
@@ -134,6 +138,12 @@ h3 {
     &.chapter4 {
       background-image: url(../images/motel.jpg);
     }
+    &.chapter7 {
+      background-image: url(../images/waves.jpg);
+    }
+    &.chapter7-2 {
+      background-image: url(../images/reading-room.jpg);
+    }
   }
   h3 {
     color: white;
@@ -165,9 +175,15 @@ hr {
 
 }
 
+/* Tarot styles */
+div.deck figure {
+  text-align: center;
+  margin-bottom: 1em;
+}
 img.card {
   width: 200px;
 }
+
 /* Section animations */
 .section-enter, .section-appear {
   opacity: 0.01;
@@ -185,22 +201,4 @@ img.card {
 .section-leave.section-leave-active {
   opacity: 0.01;
   transition: opacity 300ms ease-in;
-}
-/* List item animations */
-.list-enter, .list-appear {
-  opacity: 0.05;
-}
-
-.list-enter.list-enter-active, .list-appear.list-appear-active {
-  opacity: 1;
-  transition: opacity 200ms ease-in;
-}
-
-.list-leave {
-  opacity: 1;
-}
-
-.list-leave.list-leave-active {
-  opacity: 0.01;
-  transition: opacity 200ms ease-in;
 }

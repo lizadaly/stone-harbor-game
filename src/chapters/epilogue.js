@@ -93,9 +93,23 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
     <section>
       <hr/>
       <h2>Credits</h2>
+      <h3>Acknowledgments</h3>
       <p>
-        TBD
+        Thank you to testers X, Y, Z.
       </p>
+      <h3>Image credits</h3>
+      <ol>
+        <li><em>Study:</em> <a href="http://digitalcollections.nypl.org/items/510d47e1-a1d6-a3d9-e040-e00a18064a99">View of Bedroom from Study</a>: The Miriam and Ira D. Wallach Division of Art, Prints and Photographs: Photography Collection, The New York Public Library. (1918). </li>
+        <li><em>Family room:</em> <a href="http://digitalcollections.nypl.org/items/510d47e1-a1e6-a3d9-e040-e00a18064a99">Library, 640 Lexington Ave, 1916.</a> The Miriam and Ira D. Wallach Division of Art, Prints and Photographs: Photography Collection, The New York Public Library. (1916)</li>
+        <li><em>Healey estate:</em> <a href="http://www.loc.gov/pictures/item/nj1477.photos.038376p/">Murray Guggenheim House, Cedar & Norwood Avenues, Long Branch, Monmouth County, NJ</a> via the Library of Congress</li>
+        <li><em>Waves:</em> <a href="http://digitalcollections.nypl.org/items/510d47e1-48c7-a3d9-e040-e00a18064a99">Ocean Breakers, Cape Island, NJ</a>: The Miriam and Ira D. Wallach Division of Art, Prints and Photographs: Photography Collection, The New York Public Library. (1865).</li>
+        <li><em>Tarot cards:</em> <a href="http://gallica.bnf.fr/ark:/12148/btv1b105111415">Jeu de tarot divinatoire dit "Grand Etteilla" ou "tarot égyptien"</a> via the National Library of France</li>
+        <li><em>Reading room:</em> <a href="https://www.flickr.com/photos/montrealprotest/22008493185/in/photolist-zwPhg4-ocHKZV-oeuM5c-J2nxB4-5eF8MP-oeuM88-dQvgb7-ocHL78-ocDJ7S-ocDJ83-oeuM76-oeuM5T-oeuM9R-owmW9N-ow9Nae-ooqpns-ocHL5K-owjm52-ocHL1B-oeWXr6-ocDJ5s-5eFf9e-oeTj8f-ouMcMs-fHYLKi-ormX8L-ouhs93-oeWmbX-ovseYp-ocHL3k-odWkLC-oeuM9F-od8fWj-owoQuR-oukwMk-ovrN1j-obU1a9-oyfVhP-obU8dY-oeUNm6-oy8a4c-oweHoU-ocDJ95-ov9CYM-otnjKY-otqj6u-ouRQ8U-ouPxpF-oeULZi-ou3x1K">Psychic Readings - $10</a></li>
+        <li><em>La Fortune tarot:</em> <a href="http://gallica.bnf.fr/ark:/12148/btv1b103365240/f19.item">Jeu de Minchiate de fantaisie à enseignes françaises</a> via the Library of France</li>
+      </ol>
+      <figure style={{textAlign: "center", paddingTop: "6em"}}>
+        <img src="images/fortune-card.png" alt="Image of a tarot card that reads “Fortune”, depicting a figure standing on a wheel" />
+      </figure>
     </section>
   ]
 return <RenderSection currentSection={currentSection} sections={sections} />

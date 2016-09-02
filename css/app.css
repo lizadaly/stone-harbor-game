@@ -918,7 +918,7 @@ h6 {
     line-height: 0; }
 
 h1 {
-  font-size: 1.5rem; }
+  font-size: 2.1875rem; }
 
 h2 {
   font-size: 1.25rem; }
@@ -937,7 +937,7 @@ h6 {
 
 @media screen and (min-width: 40em) {
   h1 {
-    font-size: 4.5rem; }
+    font-size: 6rem; }
 
   h2 {
     font-size: 2.1875rem; }
@@ -1599,6 +1599,11 @@ kbd {
 .button {
   border: 0; }
 
+h1 {
+  line-height: 1em;
+  margin-bottom: .25em;
+  font-weight: 600; }
+
 section {
   margin: 0; }
 
@@ -1614,9 +1619,6 @@ section {
 figure {
   margin: 0; }
 
-header h1 {
-  font-size: 72px; }
-
 nav a {
   text-decoration: none; }
 
@@ -1627,6 +1629,9 @@ body.nightmode {
   background: #0a0a0a;
   color: #fefefe; }
   body.nightmode h1, body.nightmode h2, body.nightmode h3, body.nightmode h4, body.nightmode h5, body.nightmode h6, body.nightmode a {
+    color: #fefefe; }
+  body.nightmode blockquote {
+    background: #0a0a0a;
     color: #fefefe; }
 
 article {
@@ -1692,6 +1697,10 @@ h3 {
       background-image: url(../images/family-room.jpg); }
     .in-flashback figure.chapter4 {
       background-image: url(../images/motel.jpg); }
+    .in-flashback figure.chapter7 {
+      background-image: url(../images/waves.jpg); }
+    .in-flashback figure.chapter7-2 {
+      background-image: url(../images/reading-room.jpg); }
   .in-flashback h3 {
     color: white; }
   .in-flashback h4 {
@@ -1717,6 +1726,11 @@ hr {
   text-align: center;
   text-transform: uppercase; }
 
+/* Tarot styles */
+div.deck figure {
+  text-align: center;
+  margin-bottom: 1em; }
+
 img.card {
   width: 200px; }
 
@@ -1734,20 +1748,5 @@ img.card {
 .section-leave.section-leave-active {
   opacity: 0.01;
   transition: opacity 300ms ease-in; }
-
-/* List item animations */
-.list-enter, .list-appear {
-  opacity: 0.05; }
-
-.list-enter.list-enter-active, .list-appear.list-appear-active {
-  opacity: 1;
-  transition: opacity 200ms ease-in; }
-
-.list-leave {
-  opacity: 1; }
-
-.list-leave.list-leave-active {
-  opacity: 0.01;
-  transition: opacity 200ms ease-in; }
 
 /*# sourceMappingURL=app.css.map */
