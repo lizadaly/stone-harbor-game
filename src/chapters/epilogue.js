@@ -97,6 +97,10 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         Thank you to testers X, Y, Z.
       </p>
+      <h3>License</h3>
+      <p>
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>
+      </p>
       <h3>Image credits</h3>
       <ol>
         <li><em>Study:</em> <a href="http://digitalcollections.nypl.org/items/510d47e1-a1d6-a3d9-e040-e00a18064a99">View of Bedroom from Study</a>: The Miriam and Ira D. Wallach Division of Art, Prints and Photographs: Photography Collection, The New York Public Library. (1918). </li>

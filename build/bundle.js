@@ -28990,6 +28990,21 @@
 	    React.createElement(
 	      'h3',
 	      null,
+	      'License'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'This work is licensed under a ',
+	      React.createElement(
+	        'a',
+	        { rel: 'license', href: 'http://creativecommons.org/licenses/by/4.0/' },
+	        'Creative Commons Attribution 4.0 International License'
+	      )
+	    ),
+	    React.createElement(
+	      'h3',
+	      null,
 	      'Image credits'
 	    ),
 	    React.createElement(
