@@ -57,10 +57,7 @@ export const Game = connect(
 
 
 const startGame = () => {
-    var store = createStore(gameApp, undefined, compose(
-      autoRehydrate(),
-      window.devToolsExtension && window.devToolsExtension()
-    ))
+    var store = createStore(gameApp, undefined, autoRehydrate())
     var persister = persistStore(store)
     window.lockHistory = true
     window.addEventListener("popstate", function(e) {

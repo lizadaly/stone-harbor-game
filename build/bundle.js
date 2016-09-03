@@ -128,7 +128,7 @@
 	var Game = exports.Game = (0, _reactRedux.connect)(mapStateToProps)(_Game);
 
 	var startGame = function startGame() {
-	  var store = (0, _redux.createStore)(_reducers.gameApp, undefined, (0, _redux.compose)((0, _reduxPersist.autoRehydrate)(), window.devToolsExtension && window.devToolsExtension()));
+	  var store = (0, _redux.createStore)(_reducers.gameApp, undefined, (0, _reduxPersist.autoRehydrate)());
 	  var persister = (0, _reduxPersist.persistStore)(store);
 	  window.lockHistory = true;
 	  window.addEventListener("popstate", function (e) {
