@@ -29123,6 +29123,17 @@
 	      )
 	    ),
 	    React.createElement(
+	      'p',
+	      { className: 'small' },
+	      'Some images enhanced  via ',
+	      React.createElement(
+	        'a',
+	        { href: 'https://github.com/satoshiiizuka/siggraph2016_colorization' },
+	        'Let there be Color!: Joint End-to-end Learning of Global and Local Image Priors for Automatic Image Colorization with Simultaneous Classification'
+	      ),
+	      ' by Satoshi Iizuka, Edgar Simo-Serra, and Hiroshi Ishikawa'
+	    ),
+	    React.createElement(
 	      'figure',
 	      { style: { textAlign: "center", paddingTop: "6em" } },
 	      React.createElement('img', { src: 'images/fortune-card.png', alt: 'Image of a tarot card that reads “Fortune”, depicting a figure standing on a wheel' })

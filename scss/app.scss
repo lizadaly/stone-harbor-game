@@ -73,24 +73,21 @@ blockquote {
     margin-top: $global-margin;
 }
 
-.ww-logo {
-    margin: 0 1rem 0 1rem;
-    font-size: 1.5rem;
-    letter-spacing: -.5rem;
-    color: white;
-    font-family: $header-font-family;
-
+ol li {
+  margin-bottom: .5em;
+  font-size: smaller;
 }
 .top-bar-title {
     background: $light-gray;
     text-align: center;
 }
-.ww-logo-1 {
-    color: $medium-gray;
-}
+
 psychic {
   font-weight: bold;
   font-style: italic;
+}
+.small {
+  font-size: smaller;
 }
 h1 {
   text-align: center;

@@ -1640,23 +1640,20 @@ article {
 blockquote {
   margin-top: 2rem; }
 
-.ww-logo {
-  margin: 0 1rem 0 1rem;
-  font-size: 1.5rem;
-  letter-spacing: -.5rem;
-  color: white;
-  font-family: "Raleway", Helvetica; }
+ol li {
+  margin-bottom: .5em;
+  font-size: smaller; }
 
 .top-bar-title {
   background: #f6f6f6;
   text-align: center; }
 
-.ww-logo-1 {
-  color: #cacaca; }
-
 psychic {
   font-weight: bold;
   font-style: italic; }
+
+.small {
+  font-size: smaller; }
 
 h1 {
   text-align: center;
