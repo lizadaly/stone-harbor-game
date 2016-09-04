@@ -37,7 +37,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         “Why did you move back to Jersey?” When you look confused, she says, “After your mom died. She owned
-        that property, it’s probably worth plenty, being right there on the boardwalk.”
+        that property so it’s probably worth plenty, being right there on the boardwalk.”
         She sits across from you and folds her hands primly.
       </p>
       <p>
@@ -80,7 +80,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>“How did her husband take it?”</p>
       <p>“As you might imagine. So he’s been raising his
         daughter on his own. He’s a good single dad, but the kind who thinks he deserves
-        a medal for doing what a million woman do every year.” She turns over
+        a medal for doing what a million women do every year.” She turns over
         another <List expansions={["photo", "photo of Sarah, the girl with the doll"]} tag="c1_photos2"/>.
       </p>
     </section>,
@@ -95,11 +95,10 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         originality. These two are Alan’s niece and nephew—their mom was Christina, Alan and Jared’s older
         sister, but she passed away some years back. The twins still live in her house over in Sea Isle.
       Don’t know them personally.”</p>
-      <p>“Last one,” she says, and hands you <List expansions={["another picture of Healey", "another picture of Healey, with his arm around a woman his age"]} tag="c1_photos4"/>.</p>
+      <p>“Last one,” she says, and hands you <List expansions={["a photo of a woman you recognize", "a photo of Maggie Healey"]} tag="c1_photos4"/>.</p>
     </section>,
     <section>
-      <p>“His wife,” you say.</p>
-      <p>“Margaret, or Maggie. Lovely woman, but tough as nails too. From what I hear she'd be the
+      <p>“Margaret, or Maggie. Lovely woman, but tough as nails too, as you saw. From what I hear she'd be the
         first one to bail you out of trouble and also the first to toss you  on the
         street if you screwed up again. If more people were like her I'd be out of a job.”
       </p>
@@ -114,7 +113,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>“Do you still think that?” you ask.</p>
       <p>Her phone rings before she can answer. Whitby listens and nods a few times, then
-        covers the receiver. “I need to take this, can you wait outside?”
+        covers the receiver. “I need to take this. Can you wait outside?”
       </p>
       <p>Banished, you slink out through the bullpen to a nearby waiting area. Six plastic chairs, a few other guys.
         This isn’t general
@@ -127,10 +126,10 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         You pretend they don’t exist and sift through a pile of stale magazines on a makeshift coffee table.
       </p>
       <p>
-        You’re flipping through a 1982 issue of <em>Readers Digest</em> (worse, you think you read this one already)
+        You’re flipping through a 1982 issue of <em>Reader’s Digest</em> (worse, you think you read this one already)
         when a woman begins arguing with an impassive young officer:
         “But Detective Whitby specifically told me to come in now!” You look up
-        and with surprise recognize Healey's niece from her photo.
+        and with surprise recognize Healey's older niece Michelle from her photo.
       </p>
       <p>She’s told to cool her heels and she sits down across from you in one of the few empty chairs.</p>
       <p>Absolutely, positively, you should not engage with this woman. This is police business and she’s
@@ -181,25 +180,17 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         Herschel looks around, probably hoping for another woman to
-        save her, but nobody else is in the waiting room besides <List expansions={["more unsavory-looking guys like you", ["a biker type", "an old guy you vaguely recognize as a local beach bum"], "a bunch of unsavory guys"]} tag="c3_guys" />.
+        save her, but nobody else is in the waiting room besides <List expansions={["more unsavory-looking guys like you", "a bunch of guys, but you take particular note of a biker type sitting next to her"]} tag="c3_guys" />.
+      </p>
+      <p>
+        If you keep talking to her you’ll probably scare her off, so you need to get her to come to you if you’re
+        going to get into that purse.
       </p>
     </section>,
     <section>
-      <p> <Map from={inventory.c3_guys} to={{
-        "type": <span>Garden-variety Hell’s Angels dude. Rides up and down the Expressway in the summer
-          with a pack of his buddies. He’s snarling a little now that he notices
-          you’re <List expansions={["looking at him", "looking. Instead of breaking contact, you raise your eyebrows a little at Michelle Herschel in the universal language of sleazy guys"]} tag="c3_biker" />.
-        </span>,
-        bum: <span>You recognize this old man—your mom used to find him sorting
-          through your garbage, not looking for food, usually, just weird trinkets. You have no idea where he lives or camps, or what he does in the
-          winter. <Map from={inventory.c3_old_man} to={{
-            undefined: "You need to get him into that ",
-            purse: ""
-          }} />
-          <List expansions={["purse.", "You catch his eye and glance at the purse. To your surprise he says, “It’s hiding something, yes.”"]} tag="c3_old_man" />
-        </span>
-
-      }} />
+      <p> He’s a garden-variety Hell’s Angels dude. Rides up and down the Expressway in the summer
+        with a pack of his buddies. He’s snarling a little now that he notices
+        you’re <List expansions={["looking at him", "looking. Instead of breaking contact, you raise your eyebrows a little at Michelle Herschel in the universal language of sleazy guys"]} tag="c3_biker" />.
       </p>
     </section>,
     <section>
@@ -207,21 +198,15 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         <Map from={inventory.c3_biker} to={{
           him: "Biker guy looks confused, so you nod directly at her, and he finally takes the hint. He slides over one seat next to Ms. Herschel, not bothering to keep his leg from pressing into her personal space."
         }} />
-        <Map from={inventory.c3_old_man} to= {{
-          "purse.": "Before you can react, the old man gets up, walks over to the woman, and says, apropos of nothing, “You can’t hide it forever.”"
-        }} />
+
       </p>
       <p>
-        Herschel clears wants no part of this and decides you’re the best of bad options. She moves
+        Herschel clearly wants no part of him and decides you’re the best of bad options. She moves
         over to the remaining empty seat next to you. Her purse is between you, and you can sense it
         fearfully pulling away. There’s something inside that doesn’t want to be found.
-        <Map from={inventory.c3_old_man} to= {{
-          "purse.": " You look around, but the old man is gone."
-        }} />
-        <Map from={inventory.c3_biker} to= {{
-          him: <span>The biker mutters something at the woman. “Back off, buddy,” you warn, and he looks
-          aggrieved—weren’t you just on the same side?.</span>
-        }} />
+
+        The biker mutters something at the woman. “Back off, buddy,” you warn, and he looks
+        aggrieved—weren’t you just on the same side?
       </p>
       <p>
         “Sorry,” Ms. Herschel says, unexpectedly. “I was rude to you.”
@@ -246,7 +231,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “Limo driver,” you answer. That’s true too. You own a couple cars, sublease them to a buddy now.
         You keep thinking
         you’ll sell Mom’s property, pick your own business back up again, but it’s never the right time.
-        “It’s good money, there are always rich suckers to shuttle down to the casinos from Philly or New York.”
+        “It’s good money. There are always rich suckers to shuttle down to the casinos from Philly or New York.”
       </p>
       <p>
         Too late, you remember that <em>she’s</em> rich. Or
@@ -260,7 +245,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>Whitby walks into the waiting area, brushing past you so rudely
         you know it’s a deliberate signal. “Ms. Herschel,” she says, squatting in front
-        of the woman and leaning over like a confidente. “I’m so sorry to keep you waiting.”
+        of the woman and leaning over like a confidante. “I’m so sorry to keep you waiting.”
       </p>
       <p>
         “It’s fine, I’m just in a bit of a hurry—”
@@ -280,7 +265,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         Whitby puts a protective arm around Michelle Herschel and pulls her to her feet. In doing so she
         knocks the purse over, and—thank God—the contents spill everywhere.
         The <List expansions={["<psychic>fearful object</psychic>", "<psychic>terrified receipt</psychic>",
-        "<psychic>hysterical receipt</psychic> is blessedly muffled when you stomp on with your foot, hiding it from view"]} tag="c3_receipt" />
+        "<psychic>hysterical receipt</psychic> is blessedly muffled when you stomp on it with your foot, hiding it from view"]} tag="c3_receipt" />
         <Map from={inventory.c3_receipt} to={{
           undefined: " shrieks in terror",
           "object": " shrieks louder, almost deafening you",

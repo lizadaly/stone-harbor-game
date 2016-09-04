@@ -131,8 +131,9 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         in an paroxysm of grief. The house is mourning its owner.
       </p>
       <p>
-        But there’s a discordant note, a conflicting spasm of hatred. The intensely
-        negative emotion is unfocused but familiar. It’s localized down by the path.
+        But there’s a discordant note, a conflicting spasm of hatred. Down by the path,
+        near the base of the stairs, is the familiar anger of that glove, but subtly
+        different. It must be the glove’s pair.
       </p>
       <p>You hear muffled shouts, and several police officers
         appear from around the sides of the house. They’re first responders to a
@@ -153,7 +154,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         "He’s all right,” Whitby says to the room. She’s pulling the cigar cutter from your clenched fist. Her
-        hand feels firey hot against your skin, but it’s you that’s cold.
+        hand feels fiery hot against your skin, but it’s you that’s cold.
       </p>
       <p>“What did I do?” you whisper, and try to sit up straight.</p>
 

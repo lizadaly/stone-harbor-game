@@ -68,7 +68,8 @@ const _Prologue = ({currentSection, inventory}) => {
     <section>
       <h2>Prologue</h2>
       <h3>In your reading room</h3>
-      <p>“Do you seek the wisdom of the ancients? Come forth!” After a brief hesitation, the beaded curtain parts
+      <p>“Do you seek the wisdom of the ancients? Come forth!”</p>
+      <p>After a brief hesitation, the beaded curtain parts
       and your next customer steps through. A few stray beads fall off and scatter to the corners.</p>
       <p>You should really get a new curtain, but the room’s dim and your clients don’t seem to notice.
         They’re expecting to see the usual trappings
@@ -143,8 +144,8 @@ const _Prologue = ({currentSection, inventory}) => {
       <p>You shrug, point to the sign over the door: “<small>For entertainment purposes only</small>.” You both sit.</p>
       <p>She says, “I don’t believe in fortune-telling or psychics or any of that.
         I’m here as a favor for someone.” She’s staring at you, hard, and you can’t help but
-        squirm a little. This is probably how your clients feel. “Are you familiar with the
-      death of Stone Harbor resident Alan Healey last month? It was in the papers.”</p>
+        squirm a little. This is probably how your clients feel. “There was a death last month,
+      in Stone Harbor, an elderly man named Alan Healey. You may have read about it; it was in the papers.”</p>
 
       <p>“It’s August at the boardwalk,” you reply. “I’ve been pretty busy with work.”</p>
       <p>She looks pointedly around the reading room and you don’t need to be psychic to know
@@ -225,7 +226,7 @@ const _Prologue = ({currentSection, inventory}) => {
         just a glove.
       </p>
       <p>
-        This was the first psychic experience of your entire life.
+        This was the first actual psychic experience of your life.
       </p>
       <p>You can’t imagine how you’re going to explain all this to a
         practical and rational police officer, but when you look up into her eyes you can see plainly

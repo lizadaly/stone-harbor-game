@@ -6388,7 +6388,12 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“Do you seek the wisdom of the ancients? Come forth!” After a brief hesitation, the beaded curtain parts and your next customer steps through. A few stray beads fall off and scatter to the corners.'
+	      '“Do you seek the wisdom of the ancients? Come forth!”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'After a brief hesitation, the beaded curtain parts and your next customer steps through. A few stray beads fall off and scatter to the corners.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -6550,7 +6555,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'She says, “I don’t believe in fortune-telling or psychics or any of that. I’m here as a favor for someone.” She’s staring at you, hard, and you can’t help but squirm a little. This is probably how your clients feel. “Are you familiar with the death of Stone Harbor resident Alan Healey last month? It was in the papers.”'
+	      'She says, “I don’t believe in fortune-telling or psychics or any of that. I’m here as a favor for someone.” She’s staring at you, hard, and you can’t help but squirm a little. This is probably how your clients feel. “There was a death last month, in Stone Harbor, an elderly man named Alan Healey. You may have read about it; it was in the papers.”'
 	    ),
 	    React.createElement(
 	      'p',
@@ -6692,7 +6697,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'This was the first psychic experience of your entire life.'
+	      'This was the first actual psychic experience of your life.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -25373,7 +25378,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'But there’s a discordant note, a conflicting spasm of hatred. The intensely negative emotion is unfocused but familiar. It’s localized down by the path.'
+	      'But there’s a discordant note, a conflicting spasm of hatred. Down by the path, near the base of the stairs, is the familiar anger of that glove, but subtly different. It must be the glove’s pair.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -25403,7 +25408,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '"He’s all right,” Whitby says to the room. She’s pulling the cigar cutter from your clenched fist. Her hand feels firey hot against your skin, but it’s you that’s cold.'
+	      '"He’s all right,” Whitby says to the room. She’s pulling the cigar cutter from your clenched fist. Her hand feels fiery hot against your skin, but it’s you that’s cold.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -25707,12 +25712,12 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'The woman putters a little around the area, deadheading a few parched flowers. “I haven’t seen Sarah since—that night—but she left something at the house, let me give it to you.” She reaches into the duffel bag and moves to offer you something—you, because you’re standing right by her—and you’re struck by a wave of fear that physically knocks you back. She looks puzzled at your reaction, but steps forward, holding the object out for you. Your vision is so distorted that can’t make it out even though it’s in front of your face.'
+	      'The woman putters a little around the area, deadheading a few parched flowers. “I haven’t seen Sarah since—that night—but she left something at the house. Let me give it to you.” She reaches into the duffel bag and moves to offer you something—you, because you’re standing right by her—and you’re struck by a wave of fear that physically knocks you back. She looks puzzled at your reaction, but steps forward, holding the object out for you. Your vision is so distorted that can’t make it out even though it’s in front of your face.'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'Whitby sees your distress and starts running up the steps across the patio. “Thank you, Mrs. Healey, I’ll take that for her—”'
+	      'Whitby sees your distress and starts running up the steps across the patio. “Thank you, Mrs. Healey, I’ll take it—”'
 	    ),
 	    React.createElement(
 	      'p',
@@ -25783,8 +25788,6 @@
 	      null,
 	      'Healey says nothing, just ',
 	      React.createElement(_components.List, { expansions: ["smiles", "forces a smile which doesn’t reach his eyes"], tag: 'c2_smile' }),
-	      ', and for a moment there’s an invisible battle of wills between husband and ',
-	      React.createElement(_components.List, { expansions: ["wife", "a wife who clearly senses something’s up"], nextUnit: null, tag: 'c2_wife' }),
 	      '.'
 	    )
 	  ), React.createElement(
@@ -26013,7 +26016,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“Why did you move back to Jersey?” When you look confused, she says, “After your mom died. She owned that property, it’s probably worth plenty, being right there on the boardwalk.” She sits across from you and folds her hands primly.'
+	      '“Why did you move back to Jersey?” When you look confused, she says, “After your mom died. She owned that property so it’s probably worth plenty, being right there on the boardwalk.” She sits across from you and folds her hands primly.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -26074,7 +26077,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“As you might imagine. So he’s been raising his daughter on his own. He’s a good single dad, but the kind who thinks he deserves a medal for doing what a million woman do every year.” She turns over another ',
+	      '“As you might imagine. So he’s been raising his daughter on his own. He’s a good single dad, but the kind who thinks he deserves a medal for doing what a million women do every year.” She turns over another ',
 	      React.createElement(_components.List, { expansions: ["photo", "photo of Sarah, the girl with the doll"], tag: 'c1_photos2' }),
 	      '.'
 	    )
@@ -26100,7 +26103,7 @@
 	      'p',
 	      null,
 	      '“Last one,” she says, and hands you ',
-	      React.createElement(_components.List, { expansions: ["another picture of Healey", "another picture of Healey, with his arm around a woman his age"], tag: 'c1_photos4' }),
+	      React.createElement(_components.List, { expansions: ["a photo of a woman you recognize", "a photo of Maggie Healey"], tag: 'c1_photos4' }),
 	      '.'
 	    )
 	  ), React.createElement(
@@ -26109,12 +26112,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“His wife,” you say.'
-	    ),
-	    React.createElement(
-	      'p',
-	      null,
-	      '“Margaret, or Maggie. Lovely woman, but tough as nails too. From what I hear she\'d be the first one to bail you out of trouble and also the first to toss you  on the street if you screwed up again. If more people were like her I\'d be out of a job.”'
+	      '“Margaret, or Maggie. Lovely woman, but tough as nails too, as you saw. From what I hear she\'d be the first one to bail you out of trouble and also the first to toss you  on the street if you screwed up again. If more people were like her I\'d be out of a job.”'
 	    ),
 	    React.createElement(
 	      'p',
@@ -26134,7 +26132,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'Her phone rings before she can answer. Whitby listens and nods a few times, then covers the receiver. “I need to take this, can you wait outside?”'
+	      'Her phone rings before she can answer. Whitby listens and nods a few times, then covers the receiver. “I need to take this. Can you wait outside?”'
 	    ),
 	    React.createElement(
 	      'p',
@@ -26153,9 +26151,9 @@
 	      React.createElement(
 	        'em',
 	        null,
-	        'Readers Digest'
+	        'Reader’s Digest'
 	      ),
-	      ' (worse, you think you read this one already) when a woman begins arguing with an impassive young officer: “But Detective Whitby specifically told me to come in now!” You look up and with surprise recognize Healey\'s niece from her photo.'
+	      ' (worse, you think you read this one already) when a woman begins arguing with an impassive young officer: “But Detective Whitby specifically told me to come in now!” You look up and with surprise recognize Healey\'s older niece Michelle from her photo.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -26235,8 +26233,13 @@
 	      'p',
 	      null,
 	      'Herschel looks around, probably hoping for another woman to save her, but nobody else is in the waiting room besides ',
-	      React.createElement(_components.List, { expansions: ["more unsavory-looking guys like you", ["a biker type", "an old guy you vaguely recognize as a local beach bum"], "a bunch of unsavory guys"], tag: 'c3_guys' }),
+	      React.createElement(_components.List, { expansions: ["more unsavory-looking guys like you", "a bunch of guys, but you take particular note of a biker type sitting next to her"], tag: 'c3_guys' }),
 	      '.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'If you keep talking to her you’ll probably scare her off, so you need to get her to come to you if you’re going to get into that purse.'
 	    )
 	  ), React.createElement(
 	    'section',
@@ -26244,27 +26247,9 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      ' ',
-	      React.createElement(_components.Map, { from: inventory.c3_guys, to: {
-	          "type": React.createElement(
-	            'span',
-	            null,
-	            'Garden-variety Hell’s Angels dude. Rides up and down the Expressway in the summer with a pack of his buddies. He’s snarling a little now that he notices you’re ',
-	            React.createElement(_components.List, { expansions: ["looking at him", "looking. Instead of breaking contact, you raise your eyebrows a little at Michelle Herschel in the universal language of sleazy guys"], tag: 'c3_biker' }),
-	            '.'
-	          ),
-	          bum: React.createElement(
-	            'span',
-	            null,
-	            'You recognize this old man—your mom used to find him sorting through your garbage, not looking for food, usually, just weird trinkets. You have no idea where he lives or camps, or what he does in the winter. ',
-	            React.createElement(_components.Map, { from: inventory.c3_old_man, to: {
-	                undefined: "You need to get him into that ",
-	                purse: ""
-	              } }),
-	            React.createElement(_components.List, { expansions: ["purse.", "You catch his eye and glance at the purse. To your surprise he says, “It’s hiding something, yes.”"], tag: 'c3_old_man' })
-	          )
-
-	        } })
+	      ' He’s a garden-variety Hell’s Angels dude. Rides up and down the Expressway in the summer with a pack of his buddies. He’s snarling a little now that he notices you’re ',
+	      React.createElement(_components.List, { expansions: ["looking at him", "looking. Instead of breaking contact, you raise your eyebrows a little at Michelle Herschel in the universal language of sleazy guys"], tag: 'c3_biker' }),
+	      '.'
 	    )
 	  ), React.createElement(
 	    'section',
@@ -26274,25 +26259,12 @@
 	      null,
 	      React.createElement(_components.Map, { from: inventory.c3_biker, to: {
 	          him: "Biker guy looks confused, so you nod directly at her, and he finally takes the hint. He slides over one seat next to Ms. Herschel, not bothering to keep his leg from pressing into her personal space."
-	        } }),
-	      React.createElement(_components.Map, { from: inventory.c3_old_man, to: {
-	          "purse.": "Before you can react, the old man gets up, walks over to the woman, and says, apropos of nothing, “You can’t hide it forever.”"
 	        } })
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'Herschel clears wants no part of this and decides you’re the best of bad options. She moves over to the remaining empty seat next to you. Her purse is between you, and you can sense it fearfully pulling away. There’s something inside that doesn’t want to be found.',
-	      React.createElement(_components.Map, { from: inventory.c3_old_man, to: {
-	          "purse.": " You look around, but the old man is gone."
-	        } }),
-	      React.createElement(_components.Map, { from: inventory.c3_biker, to: {
-	          him: React.createElement(
-	            'span',
-	            null,
-	            'The biker mutters something at the woman. “Back off, buddy,” you warn, and he looks aggrieved—weren’t you just on the same side?.'
-	          )
-	        } })
+	      'Herschel clearly wants no part of him and decides you’re the best of bad options. She moves over to the remaining empty seat next to you. Her purse is between you, and you can sense it fearfully pulling away. There’s something inside that doesn’t want to be found. The biker mutters something at the woman. “Back off, buddy,” you warn, and he looks aggrieved—weren’t you just on the same side?'
 	    ),
 	    React.createElement(
 	      'p',
@@ -26327,7 +26299,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“Limo driver,” you answer. That’s true too. You own a couple cars, sublease them to a buddy now. You keep thinking you’ll sell Mom’s property, pick your own business back up again, but it’s never the right time. “It’s good money, there are always rich suckers to shuttle down to the casinos from Philly or New York.”'
+	      '“Limo driver,” you answer. That’s true too. You own a couple cars, sublease them to a buddy now. You keep thinking you’ll sell Mom’s property, pick your own business back up again, but it’s never the right time. “It’s good money. There are always rich suckers to shuttle down to the casinos from Philly or New York.”'
 	    ),
 	    React.createElement(
 	      'p',
@@ -26348,7 +26320,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'Whitby walks into the waiting area, brushing past you so rudely you know it’s a deliberate signal. “Ms. Herschel,” she says, squatting in front of the woman and leaning over like a confidente. “I’m so sorry to keep you waiting.”'
+	      'Whitby walks into the waiting area, brushing past you so rudely you know it’s a deliberate signal. “Ms. Herschel,” she says, squatting in front of the woman and leaning over like a confidante. “I’m so sorry to keep you waiting.”'
 	    ),
 	    React.createElement(
 	      'p',
@@ -26386,7 +26358,7 @@
 	      'p',
 	      null,
 	      '“Sir, I have to ask you to calm down.” Whitby puts a protective arm around Michelle Herschel and pulls her to her feet. In doing so she knocks the purse over, and—thank God—the contents spill everywhere. The ',
-	      React.createElement(_components.List, { expansions: ["<psychic>fearful object</psychic>", "<psychic>terrified receipt</psychic>", "<psychic>hysterical receipt</psychic> is blessedly muffled when you stomp on with your foot, hiding it from view"], tag: 'c3_receipt' }),
+	      React.createElement(_components.List, { expansions: ["<psychic>fearful object</psychic>", "<psychic>terrified receipt</psychic>", "<psychic>hysterical receipt</psychic> is blessedly muffled when you stomp on it with your foot, hiding it from view"], tag: 'c3_receipt' }),
 	      React.createElement(_components.Map, { from: inventory.c3_receipt, to: {
 	          undefined: " shrieks in terror",
 	          "object": " shrieks louder, almost deafening you",

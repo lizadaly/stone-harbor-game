@@ -84,7 +84,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         The woman putters a little around the area, deadheading a few parched flowers.
-        “I haven’t seen Sarah since—that night—but she left something at the house, let me give it to you.”
+        “I haven’t seen Sarah since—that night—but she left something at the house. Let me give it to you.”
         She reaches into the duffel bag and moves to offer you something—you, because you’re standing
         right by her—and you’re struck by a wave of fear that physically knocks
         you back. She looks puzzled at your reaction, but steps forward, holding the
@@ -92,7 +92,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         of your face.
       </p>
       <p>Whitby sees your distress and starts running up the steps across the patio. “Thank you, Mrs. Healey,
-        I’ll take that for her—”
+        I’ll take it—”
       </p>
       <p>
         You can feel the blood draining from your limbs and
@@ -138,9 +138,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
 
       <p>Healey says nothing,
-        just <List expansions={["smiles", "forces a smile which doesn’t reach his eyes"]}  tag="c2_smile" />,
-        and for a moment there’s an invisible battle of wills between husband
-        and <List expansions={["wife", "a wife who clearly senses something’s up"]} nextUnit={null} tag="c2_wife" />.
+        just <List expansions={["smiles", "forces a smile which doesn’t reach his eyes"]}  tag="c2_smile" />.
       </p>
     </section>,
     <section>
