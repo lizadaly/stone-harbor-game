@@ -71,7 +71,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         making progress. Maybe 1/100th of the way there.
       </p>
       <p>
-        “Well, if you ain’t too busy, Paul would love to see you.” Paul‘s her son. He’s quiet, like
+        “Well, if you aren’t too busy, Paul would love to see you.” Paul‘s her son. He’s quiet, like
         you were.
       </p>
       <p>

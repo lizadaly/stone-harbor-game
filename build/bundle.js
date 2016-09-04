@@ -28220,13 +28220,13 @@
 	      React.createElement(
 	        'em',
 	        null,
-	        'And then your mom turns her head and looks directly at you, as if you’re seated next to Allison.'
+	        'And then your mom turns her head and looks directly at you.'
 	      )
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'She smiles at you, the way she always did when you made her proud. “You’ll see your child again someday. And when you do, she’ll forgive you for leaving.”'
+	      'She smiles, the way she always did when you made her proud. “You’ll see your child again someday. And when you do, she’ll forgive you for leaving.”'
 	    ),
 	    React.createElement(
 	      'p',
@@ -28246,7 +28246,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'You’re standing in the surf and Healey is walking slowly, so slowly, back up the path to his house. You look down at your hand, and you feel yourself winking out of this vision too. The ',
+	      'You’re standing in the surf and Healey is walking slowly, so slowly, back up the path to his house. You look down at your palm, and you feel yourself winking out of this vision too. The ',
 	      React.createElement(_components.List, { expansions: ["ring", "ring"], tag: 'c7_ring_drop2' }),
 	      ' falls through your disappearing hand.'
 	    )
@@ -28631,7 +28631,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'Her eyes glitter; she wants to brag. “He didn’t want to go along with the plan.” There’s a ruckus outside—a thud. The furniture whispers to you, a message relayed object by object down the hall: Michael Herschel is subdued, Whitby is coming.'
+	      'Her eyes glitter; she wants to brag. “Now he’s out of the picture, you don’t need the girl. Michael and me are on board, we’re ready to take this thing to the next level. I’ll make sure we have control of the properties—” There’s a ruckus outside—a thud. The furniture whispers to you, a message relayed object by object down the hall: Michael Herschel is subdued, Whitby is coming.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -28963,7 +28963,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“Well, if you ain’t too busy, Paul would love to see you.” Paul‘s her son. He’s quiet, like you were.'
+	      '“Well, if you aren’t too busy, Paul would love to see you.” Paul‘s her son. He’s quiet, like you were.'
 	    ),
 	    React.createElement(
 	      'p',

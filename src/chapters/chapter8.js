@@ -211,7 +211,10 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “What happened to Jared?”
       </p>
       <p>
-        Her eyes glitter; she wants to brag. “He didn’t want to go along with the plan.” There’s a
+        Her eyes glitter; she wants to brag. “Now he’s
+        out of the picture, you don’t need the girl. Michael and me are on board, we’re
+        ready to take this thing to the next level. I’ll make sure we have control of the
+        properties—” There’s a
         ruckus outside—a thud. The furniture whispers to you, a message relayed object by object
         down the hall: Michael Herschel is subdued, Whitby is coming.
       </p>

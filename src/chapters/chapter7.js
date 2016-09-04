@@ -318,11 +318,10 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “It <em>is</em> unfair. You have to sacrifice your own happiness and leave her, to set these events in motion.”
       </p>
       <p>
-        <em>And then your mom turns her head and looks directly at you, as if you’re seated next to
-        Allison.</em>
+        <em>And then your mom turns her head and looks directly at you.</em>
       </p>
       <p>
-        She smiles at you, the way she always did when you made her proud.
+        She smiles, the way she always did when you made her proud.
         “You’ll see your child again someday. And when you do, she’ll forgive you for leaving.”
       </p>
       <p>
@@ -333,7 +332,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <h3>On the beach</h3>
       <p>
         You’re standing in the surf and Healey is walking slowly, so slowly, back up the path
-        to his house. You look down at your hand, and you feel yourself winking out of this vision too.
+        to his house. You look down at your palm, and you feel yourself winking out of this vision too.
         The <List expansions={["ring", "ring"]} tag="c7_ring_drop2" /> falls through your disappearing hand.
       </p>
     </section>,
