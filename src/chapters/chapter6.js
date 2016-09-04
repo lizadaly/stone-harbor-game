@@ -53,7 +53,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         She doesn’t see you right away, and rings up a family’s hoagies and soda total
         in her head. She was always good at math.
         You’re not sure what kind of reaction to expect, but when you get to the head of the line she’s
-        genuinely happy to see you. “Frankie! I heard you was in town again.” She never lost
+        genuinely happy to see you. “Frankie! I heard you were in town again.” She never lost
         her Philly accent.
       </p>
       <p>
@@ -62,9 +62,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         your food to a booth.
       </p>
       <p>
-        She’s slurping from a giant lemonade when she slides in next to you—not across from you—
-        and she looks younger than 35, like you remember her. “How you been?”
-        she says.
+        She’s slurping from a giant lemonade when she slides in next to you—not across from you.
+        “How you been?” she says.
       </p>
       <p>
         This sudden influx of kindness is almost unbearable. “Good, Nicki, I’m good.” You
@@ -73,14 +72,14 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         see you.”
       </p>
       <p>
-        “Same ol’ Frankie, then,” she says, smiling. “I heard about your mom, I’m sorry. I would’ve
+        “What else is new?” she says, smiling. “I heard about your mom, I’m sorry. I would’ve
         come to the funeral but I never saw a notice in the papers.”
       </p>
       <p>
         “There was nothing public,” you say.
       </p>
       <p>There’s no censure in her expression, only concern. “A lot of people loved her, you know. She did
-        good for folks around here who had nobody else who’d listen to them. You was always a good listener too.”
+        good for folks around here who had nobody else who’d listen to them. You were always a good listener too.”
         When you say nothing, she changes tack. “I can tell from the look on
         your face this isn’t a social call. What can I do you for?”
       </p>
@@ -138,43 +137,43 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         Nicki didn’t know where the marina was, but you called Information and got the address. You also
         called Whitby, who didn’t like your plan but reluctantly agreed to go along with it. “Hey,” you
-        say, while you have her on the line, “Did you find Michael Herschel?”
+        said, while you had her on the line, “Did you find Michael Herschel?”
       </p>
       <p>
         She was at home when you called; her office transferred you there. You felt weirdly guilty
-        when a man answered. She doesn’t wear a ring, maybe a boyfriend? In the background you hear
-        him making dinner: sounds of a normal life. “No,” she’s saying, “Not at his house, his sister
+        when a man answered. She doesn’t wear a ring, maybe a boyfriend? In the background you heard
+        him making dinner: sounds of a normal life. “No,” she said, “Not at his house. His sister
         says she hasn’t seen him for weeks.”
       </p>
       <p>
         “You believe her?”
       </p>
       <p>
-        “Probably not.” You hear clanging pots in the background.
+        “Probably not.” You heard clanging pots in the background.
         “Listen, I gotta go. You do your part, but be careful. I’ll make sure a patrol car picks him up.”
       </p>
       <p>
-        Two people in one day expressing interest in your welfare is some kind of record. “Sorry I
+        Two people in one day expressing interest in your welfare was some kind of record. “Sorry I
         interrupted dinner.”
       </p>
       <p>
-        “I can’t cook to save my life, my job is to stay out of the kitchen. You were doing Hank a favor.” <em>Hank</em>. “Be careful,” she adds.
+        “I can’t cook to save my life. My job is to stay out of the kitchen. You were doing Hank a favor.” <em>Hank</em>. “Be careful,” she added.
       </p>
       <p>
         “You said that already.”
       </p>
       <p>
-        “And I’ll <em>keep</em> saying it until you thank me.” She hangs up, but she’s not actually mad.
+        “And I’ll <em>keep</em> saying it until you thank me.” She hung up on that, but wasn’t actually mad.
       </p>
       <p>
-        It doesn‘t take long to drive to the marina, and you know you’ve found the right one because it’s
-        a total dive. You wouldn’t park a rusted-out Pinto here much less a six-figure
+        It didn’t take long to drive to the marina, and you knew you’ve found the right one because it’s
+        a total dive. You wouldn’t park a rusted-out Pinto here, much less a six-figure
         sailboat, but there one is, prominently docked next to the tavern. You don’t know boats,
         but you do recognize craftsmanship, and this one is a thing of beauty: white and chrome and gleaming.
         The name stenciled along the bow: <smallcaps>Hot Sea Men</smallcaps>.
       </p>
       <p>
-        “Classy guys,” you mutter. You parked a half mile down the marsh road and are crouched behind
+        “Classy guys,” you mutter. You’re crouched behind
         one of many equally showy cars in the parking lot: a couple new BMWs, a
         bright red Corvette, and Jimmy Troiano's gold Porsche.
         You
@@ -217,7 +216,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         Incredibly, Jimmy was hiding outside too: lying down in a derilict rowboat. He waves off the
-        guys who spill out of the tavern to gawk—you imagine they deserve some gratitute for
+        guys who spill out of the tavern to gawk—you imagine they deserve some gratitude for
         not ratting him out—but he’s still the arrogant prick you remember and he gets into his Porsche instead.
         He doesn’t seem to have noticed you or the sabotage to his vehicle.
       </p>

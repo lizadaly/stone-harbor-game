@@ -115,8 +115,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         </p>
         <p>
           This close you can see the resemblance between the brothers. Jared, younger, and Alan, older,
-          but cut from the same model, in body if not in spirit. Alan is more spry than you’d thought—
-          the man walked down that steep path to get here. He also seems fueled by rage.
+          but cut from the same model, in body if not in spirit. Alan is more spry than you’d thought— the man walked down that steep path to get here. He also seems fueled by rage.
         </p>
         <p>
           “Haven’t I given you <em>enough</em>?” he says. He’s leaning on a <smallcaps>Private Property</smallcaps> sign,
@@ -185,7 +184,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         <p>
           You feel the pull of the ring.
         </p>
-        <p><em>But I haven’t woken up</em> you think, as you move towards the surf. <em>I’m still in this vision, still in the past.</em></p>
+        <p><em>But I haven’t woken up,</em> you think, as you move towards the surf. <em>I’m still in this vision, still in the past.</em></p>
         <p>
           If you were just searching with your eyes, the ring would be long gone, lost amid the
           seaweed and froth, but in the flat, washed out, emotionless plane of the vision, its
@@ -203,12 +202,12 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         </p>
         <p>
           Small details begin to jump out at you: objects in the wrong place; broken items mysteriously restored;
-          the beaded curtain heavily laden with beads. A blurred figure in the corner resolves. Your mother.
+          the beaded curtain looking brand-new. A blurred figure in the corner resolves. Your mother.
         </p>
         <p>
           This isn’t one of your memories. You never saw her like this: older, close to the age at which she died
           but still healthy. Her black hair is throttled with gray; her skin, always olive and leathery from
-          the sun and the wind is now fully wrinkled. There’s no one in the room with her.
+          the sun and the wind, is now fully wrinkled. There’s no one in the room with her.
         </p>
         <p>
           <em>She’s alone because of you,</em> you think, and you fully feel that truth for the first time.
@@ -242,10 +241,10 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
           her finger.
         </p>
       </section>
-      </div>,
-      <section>
-        <p>Your mother takes it and her reaction is immediate and violent. She rocks backwards in her chair,
-          her head snapping around in spasms. Her eyes are pinned open
+    </div>,
+    <section>
+      <p>Your mother takes it and her reaction is immediate and violent. She rocks backwards in her chair,
+        her head snapping around in spasms. Her eyes are pinned open
         but unseeing, and she’s started a keening moan unlike anything you’ve ever heard.
       </p>
       <p>
@@ -268,7 +267,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         The words come in a rush: “But it’s not going to stop. It’s going to poison him. To cover his own losses he’s going
         to enlist those friends, skim off their winnings. He’ll think it’s going great for awhile and it will be, as
         long as he pulls in more people. When he runs out of friends, he’ll turn to his family. His
-        brother, his nephew, they’ll get drawn into his orbit, he’ll use his brothers’ properties as
+        brother, his nephew, they’ll get drawn into his orbit. He’ll use his brothers’ properties as
         collateral on some dangerous loans to keep covering the losses. But he’ll be addicted to the winnings,
         and so will Michael. By the time Jared realizes he’s in too deep, Michael will be there to
         push him even deeper. He’ll have no choice. Michael is dangerous and he’ll have made some
@@ -281,12 +280,12 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         “I can see, it so clearly. They’re coming into your house while you sleep. Two bad men are
         creeping into your daughter’s bedroom
-        and they’ll make it look like a burglary. Atlantic City is so violent, they’ll say. Nobody
-        should raise a family there, they should’ve stayed in Stone Harbor.”
+        and they’ll make it look like a burglary. Atlantic City is so violent, they’ll say. ‘Nobody
+        should raise a family there; they should’ve stayed in Stone Harbor.’”
       </p>
       <p>
-        “What can I do? Should we leave? I can’t let them hurt her.” She’s holding your mom’s hands now too, their palms are entwined
-        over round table. Your mom is still looking away from her, at a vision neither of you can see.
+        “What can I do? Should we leave? I can’t let them hurt her.” She’s holding your mom’s hands now too, their palms entwined
+        over the table. Your mom is still looking away from her, at a vision neither of you can see.
       </p>
       <p>
         “That’s no good. Jared loves Sarah, he’s always
@@ -303,18 +302,39 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “How? I can’t leave my own daughter.”
       </p>
       <p>
-        “Others will help. She’ll have many protectors. Find her a guardian, someone you trust.
-        And her family, they’ll watch over her. Especially her uncle—” Your mom’s face clouds.
+        “Of all the possible futures I can see, this is the only one where she survives. I see that
+        she’ll have many protectors. Some of them are strangers to you now. You must find her a guardian, someone you trust,
+        someone strong. That person will in turn enlist others, and they’ll keep her safe.
+      </p>
+      <p>
+        “And her uncle—” Your mom’s face clouds.
         You know what she’s seeing, what scene she’s witnessing. “He’ll sacrifice everything to protect her,”
         she says.
       </p>
       <p>
-        “Even strangers.
-        Good people will keep her safe. It’s okay to leave.” And then your mom turns her head and looks directly at you.
-        “You’ll see her again. And when you do, she’ll forgive you.”
+        “This seems so unfair. None of this has even happened yet–”
+      </p>
+      <p>
+        “It <em>is</em> unfair. You have to sacrifice your own happiness and leave her, to set these events in motion.”
+      </p>
+      <p>
+        <em>And then your mom turns her head and looks directly at you, as if you’re seated next to
+        Allison.</em>
+      </p>
+      <p>
+        She smiles at you, the way she always did when you made her proud.
+        “You’ll see your child again someday. And when you do, she’ll forgive you for leaving.”
       </p>
       <p>
         Your mother drops the <List expansions={["ring", "ring, heavy with its owner’s guilt"]} tag="c7_ring_drop" />.
+      </p>
+    </section>,
+    <section>
+      <h3>On the beach</h3>
+      <p>
+        You’re standing in the surf and Healey is walking slowly, so slowly, back up the path
+        to his house. You look down at your hand, and you feel yourself winking out of this vision too.
+        The <List expansions={["ring", "ring"]} tag="c7_ring_drop2" /> falls through your disappearing hand.
       </p>
     </section>,
     <section>
@@ -346,7 +366,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         You’re staring at the gun. “Where the hell am I going?”
       </p>
       <p>
-        “I have a hunch, but I need you to fill me in on the way. Don’t worry, Uri Gellar, I’m
+        “I have a hunch, but I need you to fill me in on the way. Don’t worry, Uri Geller, I’m
         leaving you in the car.”
       </p>
       <p>
@@ -354,7 +374,6 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <NextChapter chapter="8" />
     </section>
-
   ]
   return <RenderSection currentSection={currentSection} sections={sections} />
 }

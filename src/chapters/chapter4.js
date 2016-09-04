@@ -63,8 +63,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         “Oh, nothing we hadn’t already heard. She was pretty thoroughly debriefed on the scene since she
-        and her brother were staying here in town for the weekend. They rented a couple rooms at the
-        <i>Caribbean</i> motel
+        and her brother were staying here in town for the weekend. They rented a couple rooms at the <i>Caribbean</i> motel
         in Wildwood.
         She’s probably annoyed that I wasted her time repeating a bunch of questions she’d already
         been asked.”
@@ -100,8 +99,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <section>
         <p>Your first instinct is to reach up and cover your eyes with your hands, but of course you have neither.
           Nevertheless, it’s blindingly, painfully bright out. The <i>Caribbean</i> is
-          on the bay side of the inlet—you’ve driven past it a thousand times—but
-          it appears to now almost hyperreal, day-glo.
+          on the bay side of the inlet—you’ve driven past it a thousand times—but now
+          it appears to be almost hyperreal, day-glo.
         </p>
         <p>
           Across the street, an electronic bank sign tells you it’s just past dawn, explaining why the
@@ -200,7 +199,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
     <section>
       <h3>Your living room</h3>
       <p>
-        You open your eyes just a little, but it’s agony. “God turn that light off, what are you, the Gestapo?”
+        You open your eyes just a little, but it’s agony. “God, turn that light off, what are you, the Gestapo?”
         You hear Whitby’s footsteps, and then a click, and it’s still painful but you manage to look around.
       </p>
       <p>
@@ -210,8 +209,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “Like I have the world’s worst hangover after the world’s shortest bender. How long was I out?”
       </p>
       <p>
-        “You were never ‘out’, mostly you were just moaning about the light and the heat even though it’s
-        after midnight and I have your AC on full blast. Last time you were too cold, you really should make up
+        “You were never ‘out’. Mostly you were just moaning about the light and the heat even though it’s
+        after midnight and I have your AC on full blast. Last time you were too cold. You really should make up
         your mind.”
       </p>
       <p>

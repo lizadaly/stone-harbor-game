@@ -22,7 +22,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         “Yeah, I just...” Whitby steers the car onto a dark residential street. “She was always a real
-        party girl, I dunno if she was ready to have a child.”
+        party girl. I dunno if she was ready to have a child.”
       </p>
       <p>
         You’re not sure why it’s important to you that she understand, but it is. “She wasn’t

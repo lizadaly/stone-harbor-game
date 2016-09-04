@@ -26527,7 +26527,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“Oh, nothing we hadn’t already heard. She was pretty thoroughly debriefed on the scene since she and her brother were staying here in town for the weekend. They rented a couple rooms at the',
+	      '“Oh, nothing we hadn’t already heard. She was pretty thoroughly debriefed on the scene since she and her brother were staying here in town for the weekend. They rented a couple rooms at the ',
 	      React.createElement(
 	        'i',
 	        null,
@@ -26583,7 +26583,7 @@
 	          null,
 	          'Caribbean'
 	        ),
-	        ' is on the bay side of the inlet—you’ve driven past it a thousand times—but it appears to now almost hyperreal, day-glo.'
+	        ' is on the bay side of the inlet—you’ve driven past it a thousand times—but now it appears to be almost hyperreal, day-glo.'
 	      ),
 	      React.createElement(
 	        'p',
@@ -26727,7 +26727,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'You open your eyes just a little, but it’s agony. “God turn that light off, what are you, the Gestapo?” You hear Whitby’s footsteps, and then a click, and it’s still painful but you manage to look around.'
+	      'You open your eyes just a little, but it’s agony. “God, turn that light off, what are you, the Gestapo?” You hear Whitby’s footsteps, and then a click, and it’s still painful but you manage to look around.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -26742,7 +26742,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“You were never ‘out’, mostly you were just moaning about the light and the heat even though it’s after midnight and I have your AC on full blast. Last time you were too cold, you really should make up your mind.”'
+	      '“You were never ‘out’. Mostly you were just moaning about the light and the heat even though it’s after midnight and I have your AC on full blast. Last time you were too cold. You really should make up your mind.”'
 	    ),
 	    React.createElement(
 	      'p',
@@ -27035,7 +27035,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“What, like a watch or something? I sold ’em. Well, I have this—” He slides something off his hand (a ring?) and places on the table, but covers it with his palms. You immediately sense waves of guilt pooling on the table, rippling towards you.'
+	      '“What, like a watch or something? I sold ’em. Well, I have this—” He slides something off his hand (a ring?) and places it on the table, but covers it with his palms. You immediately sense waves of guilt pooling on the table, rippling towards you.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -27481,7 +27481,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'She doesn’t see you right away, and rings up a family’s hoagies and soda total in her head. She was always good at math. You’re not sure what kind of reaction to expect, but when you get to the head of the line she’s genuinely happy to see you. “Frankie! I heard you was in town again.” She never lost her Philly accent.'
+	      'She doesn’t see you right away, and rings up a family’s hoagies and soda total in her head. She was always good at math. You’re not sure what kind of reaction to expect, but when you get to the head of the line she’s genuinely happy to see you. “Frankie! I heard you were in town again.” She never lost her Philly accent.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -27491,7 +27491,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'She’s slurping from a giant lemonade when she slides in next to you—not across from you— and she looks younger than 35, like you remember her. “How you been?” she says.'
+	      'She’s slurping from a giant lemonade when she slides in next to you—not across from you. “How you been?” she says.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -27501,7 +27501,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“Same ol’ Frankie, then,” she says, smiling. “I heard about your mom, I’m sorry. I would’ve come to the funeral but I never saw a notice in the papers.”'
+	      '“What else is new?” she says, smiling. “I heard about your mom, I’m sorry. I would’ve come to the funeral but I never saw a notice in the papers.”'
 	    ),
 	    React.createElement(
 	      'p',
@@ -27511,7 +27511,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'There’s no censure in her expression, only concern. “A lot of people loved her, you know. She did good for folks around here who had nobody else who’d listen to them. You was always a good listener too.” When you say nothing, she changes tack. “I can tell from the look on your face this isn’t a social call. What can I do you for?”'
+	      'There’s no censure in her expression, only concern. “A lot of people loved her, you know. She did good for folks around here who had nobody else who’d listen to them. You were always a good listener too.” When you say nothing, she changes tack. “I can tell from the look on your face this isn’t a social call. What can I do you for?”'
 	    ),
 	    React.createElement(
 	      'p',
@@ -27582,12 +27582,12 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'Nicki didn’t know where the marina was, but you called Information and got the address. You also called Whitby, who didn’t like your plan but reluctantly agreed to go along with it. “Hey,” you say, while you have her on the line, “Did you find Michael Herschel?”'
+	      'Nicki didn’t know where the marina was, but you called Information and got the address. You also called Whitby, who didn’t like your plan but reluctantly agreed to go along with it. “Hey,” you said, while you had her on the line, “Did you find Michael Herschel?”'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'She was at home when you called; her office transferred you there. You felt weirdly guilty when a man answered. She doesn’t wear a ring, maybe a boyfriend? In the background you hear him making dinner: sounds of a normal life. “No,” she’s saying, “Not at his house, his sister says she hasn’t seen him for weeks.”'
+	      'She was at home when you called; her office transferred you there. You felt weirdly guilty when a man answered. She doesn’t wear a ring, maybe a boyfriend? In the background you heard him making dinner: sounds of a normal life. “No,” she said, “Not at his house. His sister says she hasn’t seen him for weeks.”'
 	    ),
 	    React.createElement(
 	      'p',
@@ -27597,23 +27597,23 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“Probably not.” You hear clanging pots in the background. “Listen, I gotta go. You do your part, but be careful. I’ll make sure a patrol car picks him up.”'
+	      '“Probably not.” You heard clanging pots in the background. “Listen, I gotta go. You do your part, but be careful. I’ll make sure a patrol car picks him up.”'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'Two people in one day expressing interest in your welfare is some kind of record. “Sorry I interrupted dinner.”'
+	      'Two people in one day expressing interest in your welfare was some kind of record. “Sorry I interrupted dinner.”'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      '“I can’t cook to save my life, my job is to stay out of the kitchen. You were doing Hank a favor.” ',
+	      '“I can’t cook to save my life. My job is to stay out of the kitchen. You were doing Hank a favor.” ',
 	      React.createElement(
 	        'em',
 	        null,
 	        'Hank'
 	      ),
-	      '. “Be careful,” she adds.'
+	      '. “Be careful,” she added.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -27629,12 +27629,12 @@
 	        null,
 	        'keep'
 	      ),
-	      ' saying it until you thank me.” She hangs up, but she’s not actually mad.'
+	      ' saying it until you thank me.” She hung up on that, but wasn’t actually mad.'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'It doesn‘t take long to drive to the marina, and you know you’ve found the right one because it’s a total dive. You wouldn’t park a rusted-out Pinto here much less a six-figure sailboat, but there one is, prominently docked next to the tavern. You don’t know boats, but you do recognize craftsmanship, and this one is a thing of beauty: white and chrome and gleaming. The name stenciled along the bow: ',
+	      'It didn’t take long to drive to the marina, and you knew you’ve found the right one because it’s a total dive. You wouldn’t park a rusted-out Pinto here, much less a six-figure sailboat, but there one is, prominently docked next to the tavern. You don’t know boats, but you do recognize craftsmanship, and this one is a thing of beauty: white and chrome and gleaming. The name stenciled along the bow: ',
 	      React.createElement(
 	        'smallcaps',
 	        null,
@@ -27645,7 +27645,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“Classy guys,” you mutter. You parked a half mile down the marsh road and are crouched behind one of many equally showy cars in the parking lot: a couple new BMWs, a bright red Corvette, and Jimmy Troiano\'s gold Porsche. You bend over and dart behind Jimmy’s car, keeping an eye on the tavern. If someone comes out, they’ll spot you in a minute.'
+	      '“Classy guys,” you mutter. You’re crouched behind one of many equally showy cars in the parking lot: a couple new BMWs, a bright red Corvette, and Jimmy Troiano\'s gold Porsche. You bend over and dart behind Jimmy’s car, keeping an eye on the tavern. If someone comes out, they’ll spot you in a minute.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -27685,7 +27685,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'Incredibly, Jimmy was hiding outside too: lying down in a derilict rowboat. He waves off the guys who spill out of the tavern to gawk—you imagine they deserve some gratitute for not ratting him out—but he’s still the arrogant prick you remember and he gets into his Porsche instead. He doesn’t seem to have noticed you or the sabotage to his vehicle.'
+	      'Incredibly, Jimmy was hiding outside too: lying down in a derilict rowboat. He waves off the guys who spill out of the tavern to gawk—you imagine they deserve some gratitude for not ratting him out—but he’s still the arrogant prick you remember and he gets into his Porsche instead. He doesn’t seem to have noticed you or the sabotage to his vehicle.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -28025,7 +28025,7 @@
 	        React.createElement(
 	          'em',
 	          null,
-	          'But I haven’t woken up'
+	          'But I haven’t woken up,'
 	        ),
 	        ' you think, as you move towards the surf. ',
 	        React.createElement(
@@ -28068,12 +28068,12 @@
 	      React.createElement(
 	        'p',
 	        null,
-	        'Small details begin to jump out at you: objects in the wrong place; broken items mysteriously restored; the beaded curtain heavily laden with beads. A blurred figure in the corner resolves. Your mother.'
+	        'Small details begin to jump out at you: objects in the wrong place; broken items mysteriously restored; the beaded curtain looking brand-new. A blurred figure in the corner resolves. Your mother.'
 	      ),
 	      React.createElement(
 	        'p',
 	        null,
-	        'This isn’t one of your memories. You never saw her like this: older, close to the age at which she died but still healthy. Her black hair is throttled with gray; her skin, always olive and leathery from the sun and the wind is now fully wrinkled. There’s no one in the room with her.'
+	        'This isn’t one of your memories. You never saw her like this: older, close to the age at which she died but still healthy. Her black hair is throttled with gray; her skin, always olive and leathery from the sun and the wind, is now fully wrinkled. There’s no one in the room with her.'
 	      ),
 	      React.createElement(
 	        'p',
@@ -28150,7 +28150,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'The words come in a rush: “But it’s not going to stop. It’s going to poison him. To cover his own losses he’s going to enlist those friends, skim off their winnings. He’ll think it’s going great for awhile and it will be, as long as he pulls in more people. When he runs out of friends, he’ll turn to his family. His brother, his nephew, they’ll get drawn into his orbit, he’ll use his brothers’ properties as collateral on some dangerous loans to keep covering the losses. But he’ll be addicted to the winnings, and so will Michael. By the time Jared realizes he’s in too deep, Michael will be there to push him even deeper. He’ll have no choice. Michael is dangerous and he’ll have made some dangerous friends who don’t like to be cheated out of their money.”'
+	      'The words come in a rush: “But it’s not going to stop. It’s going to poison him. To cover his own losses he’s going to enlist those friends, skim off their winnings. He’ll think it’s going great for awhile and it will be, as long as he pulls in more people. When he runs out of friends, he’ll turn to his family. His brother, his nephew, they’ll get drawn into his orbit. He’ll use his brothers’ properties as collateral on some dangerous loans to keep covering the losses. But he’ll be addicted to the winnings, and so will Michael. By the time Jared realizes he’s in too deep, Michael will be there to push him even deeper. He’ll have no choice. Michael is dangerous and he’ll have made some dangerous friends who don’t like to be cheated out of their money.”'
 	    ),
 	    React.createElement(
 	      'p',
@@ -28160,12 +28160,12 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“I can see, it so clearly. They’re coming into your house while you sleep. Two bad men are creeping into your daughter’s bedroom and they’ll make it look like a burglary. Atlantic City is so violent, they’ll say. Nobody should raise a family there, they should’ve stayed in Stone Harbor.”'
+	      '“I can see, it so clearly. They’re coming into your house while you sleep. Two bad men are creeping into your daughter’s bedroom and they’ll make it look like a burglary. Atlantic City is so violent, they’ll say. ‘Nobody should raise a family there; they should’ve stayed in Stone Harbor.’”'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      '“What can I do? Should we leave? I can’t let them hurt her.” She’s holding your mom’s hands now too, their palms are entwined over round table. Your mom is still looking away from her, at a vision neither of you can see.'
+	      '“What can I do? Should we leave? I can’t let them hurt her.” She’s holding your mom’s hands now too, their palms entwined over the table. Your mom is still looking away from her, at a vision neither of you can see.'
 	    ),
 	    React.createElement(
 	      'p',
@@ -28191,12 +28191,42 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“Others will help. She’ll have many protectors. Find her a guardian, someone you trust. And her family, they’ll watch over her. Especially her uncle—” Your mom’s face clouds. You know what she’s seeing, what scene she’s witnessing. “He’ll sacrifice everything to protect her,” she says.'
+	      '“Of all the possible futures I can see, this is the only one where she survives. I see that she’ll have many protectors. Some of them are strangers to you now. You must find her a guardian, someone you trust, someone strong. That person will in turn enlist others, and they’ll keep her safe.'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      '“Even strangers. Good people will keep her safe. It’s okay to leave.” And then your mom turns her head and looks directly at you. “You’ll see her again. And when you do, she’ll forgive you.”'
+	      '“And her uncle—” Your mom’s face clouds. You know what she’s seeing, what scene she’s witnessing. “He’ll sacrifice everything to protect her,” she says.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“This seems so unfair. None of this has even happened yet–”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      '“It ',
+	      React.createElement(
+	        'em',
+	        null,
+	        'is'
+	      ),
+	      ' unfair. You have to sacrifice your own happiness and leave her, to set these events in motion.”'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      React.createElement(
+	        'em',
+	        null,
+	        'And then your mom turns her head and looks directly at you, as if you’re seated next to Allison.'
+	      )
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'She smiles at you, the way she always did when you made her proud. “You’ll see your child again someday. And when you do, she’ll forgive you for leaving.”'
 	    ),
 	    React.createElement(
 	      'p',
@@ -28204,6 +28234,21 @@
 	      'Your mother drops the ',
 	      React.createElement(_components.List, { expansions: ["ring", "ring, heavy with its owner’s guilt"], tag: 'c7_ring_drop' }),
 	      '.'
+	    )
+	  ), React.createElement(
+	    'section',
+	    null,
+	    React.createElement(
+	      'h3',
+	      null,
+	      'On the beach'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You’re standing in the surf and Healey is walking slowly, so slowly, back up the path to his house. You look down at your hand, and you feel yourself winking out of this vision too. The ',
+	      React.createElement(_components.List, { expansions: ["ring", "ring"], tag: 'c7_ring_drop2' }),
+	      ' falls through your disappearing hand.'
 	    )
 	  ), React.createElement(
 	    'section',
@@ -28251,7 +28296,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“I have a hunch, but I need you to fill me in on the way. Don’t worry, Uri Gellar, I’m leaving you in the car.”'
+	      '“I have a hunch, but I need you to fill me in on the way. Don’t worry, Uri Geller, I’m leaving you in the car.”'
 	    ),
 	    React.createElement(
 	      'p',
@@ -28325,7 +28370,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      '“Yeah, I just...” Whitby steers the car onto a dark residential street. “She was always a real party girl, I dunno if she was ready to have a child.”'
+	      '“Yeah, I just...” Whitby steers the car onto a dark residential street. “She was always a real party girl. I dunno if she was ready to have a child.”'
 	    ),
 	    React.createElement(
 	      'p',
@@ -28957,7 +29002,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'Thank you to testers X, Y, Z.'
+	      'Thank you to testers Dan Schmidt, Y, Z.'
 	    ),
 	    React.createElement(
 	      'h3',

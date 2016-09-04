@@ -115,7 +115,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         “What, like a watch or something? I sold ’em. Well, I have this—” He slides something off his
-        hand (a ring?) and places on the table, but covers it with his palms. You immediately sense
+        hand (a ring?) and places it on the table, but covers it with his palms. You immediately sense
         waves of guilt pooling on the table, rippling towards you.
       </p>
       <p>
