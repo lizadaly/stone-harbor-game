@@ -27245,12 +27245,13 @@
 	        'div',
 	        { className: 'deck' },
 	        this.props.hands.map(function (hand, i) {
-	          var cards = hand.map(function (c) {
-	            return Card(c, _this3.cardvalues[c], _this3.onSelect.bind(_this3));
+	          var func = i === _this3.props.hands.length - 1 ? _this3.onSelect.bind(_this3) : null,
+	              cards = hand.map(function (c) {
+	            return React.createElement(Card, { name: c, key: c + i, alt: _this3.cardvalues[c], handler: func });
 	          });
 	          return React.createElement(
 	            'div',
-	            { key: i, id: i },
+	            { key: 'deck-' + i },
 	            React.createElement(
 	              'figure',
 	              null,
@@ -27281,8 +27282,8 @@
 	                  ),
 	                  ',” you say, gravely. “Often this merely signifies change, but in your case—” You pause. “I sense that there has been a physical death recently, and an undeserved one. Someone who you were once close with?” Healey wipes his face. “Their spirit holds you accountable for what happened.',
 	                  React.createElement(_components.AnyMap, { from: _this3.props.chosen, indexStart: i, to: {
-	                      traitor: ' Because you are The Traitor.\n                      ',
-	                      fool: ' Because you are the Fool.\n                      ',
+	                      traitor: ' Because you are The Traitor.\n                    ',
+	                      fool: ' Because you are the Fool.\n                    ',
 	                      money: ' All for the want of money.',
 	                      man: ' You and the Blond Man both.'
 	                    } }),
@@ -27310,10 +27311,10 @@
 	                  ),
 	                  ' will eventually come for us all. Some sooner than later.” When he says nothing, you continue. “Do you fear your own call to justice? The spirits believe you should be. You should be very afraid.” Now you’ve got his attention.',
 	                  React.createElement(_components.AnyMap, { from: _this3.props.chosen, indexStart: i, to: {
-	                      traitor: ' “The Traitor will be punished for his disloyalty.”\n                      ',
-	                      fool: ' “You are truly the Fool if you go willingly to your punishment without an attempt\n                      to sae yourself.”\n                      ',
+	                      traitor: ' “The Traitor will be punished for his disloyalty.”\n                    ',
+	                      fool: ' “You are truly the Fool if you go willingly to your punishment without an attempt\n                    to sae yourself.”\n                    ',
 	                      death: ' “For what greater Justice can there be than in avenging a wrongful Death?”',
-	                      man: ' “You hope that the Blond Man is the only one who will receive punishment. But\n                      if you do nothing, if you continue to cower and hide, it is you alone who\n                      will be punished.”'
+	                      man: ' “You hope that the Blond Man is the only one who will receive punishment. But\n                    if you do nothing, if you continue to cower and hide, it is you alone who\n                    will be punished.”'
 	                    } })
 	                ),
 	                man: React.createElement(
@@ -27327,8 +27328,8 @@
 	                  ),
 	                  '.” You frown.',
 	                  React.createElement(_components.AnyMap, { from: _this3.props.chosen, indexStart: i, to: {
-	                      undefined: '“The spirits tell me a blond man plays a significant role in your\n                      current troubles.” You pause. “You have colluded, together. With this man you\n                      have perpetrated a great wrong.”',
-	                      traitor: '“Is he the Traitor we saw earlier? Or is that you?” He flinches.\n                      “The spirits tell me it is both of you. You have committed a great wrong together.\n                      You must release yourself of this burden through penitent behavior.”\n                      ',
+	                      undefined: '“The spirits tell me a blond man plays a significant role in your\n                    current troubles.” You pause. “You have colluded, together. With this man you\n                    have perpetrated a great wrong.”',
+	                      traitor: '“Is he the Traitor we saw earlier? Or is that you?” He flinches.\n                    “The spirits tell me it is both of you. You have committed a great wrong together.\n                    You must release yourself of this burden through penitent behavior.”\n                      ',
 	                      fool: '“Is he the Fool in our reading?” He looks away. “No, you are the Fool. You\n                      have become mixed up with the wrong people, strayed from the path. And someone\n                      has been hurt. It is no too late for you to repent of your involvement.”\n                      '
 	                    } })
 	                ),
@@ -27366,18 +27367,54 @@
 	  return _Deck;
 	}(React.Component);
 
-	var Card = function Card(name, alt, handler) {
-	  var selected = arguments.length <= 3 || arguments[3] === undefined ? false : arguments[3];
-	  return React.createElement('img', { src: 'images/cards/' + name + '.png',
-	    className: (selected ? 'selected' : '') + ' card',
-	    alt: "Face of a tarot card called " + alt,
-	    key: name,
-	    id: name,
-	    onClick: function onClick() {
-	      return handler(name);
+	var Card = function (_React$Component2) {
+	  _inherits(Card, _React$Component2);
+
+	  function Card(props) {
+	    _classCallCheck(this, Card);
+
+	    var _this4 = _possibleConstructorReturn(this, (Card.__proto__ || Object.getPrototypeOf(Card)).call(this, props));
+
+	    _this4.state = { selected: false };
+	    return _this4;
+	  }
+
+	  _createClass(Card, [{
+	    key: 'componentDidUpdate',
+	    value: function componentDidUpdate() {
+	      var _this5 = this;
+
+	      if (this.state.selected && this.props.handler) {
+	        setTimeout(function () {
+	          _this5.setState({ selected: false }, function () {
+	            return _this5.props.handler(_this5.props.name);
+	          });
+	        }, 400);
+	      }
 	    }
-	  });
-	};
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _this6 = this;
+
+	      var selectable = this.props.handler ? 'selectable' : '';
+	      var selected = this.state.selected ? ' selected' : '';
+	      return React.createElement('img', { src: 'images/cards/' + this.props.name + '.png',
+	        className: selectable + selected + ' card',
+	        alt: "Face of a tarot card called " + this.props.alt,
+	        onClick: function onClick() {
+	          if (_this6.props.handler) {
+	            _this6.setState({
+	              selected: true
+	            });
+	          }
+	        }
+	      });
+	    }
+	  }]);
+
+	  return Card;
+	}(React.Component);
 
 	var Deck = (0, _reactRedux.connect)(function (state) {
 	  return {

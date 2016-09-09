@@ -259,57 +259,58 @@ class _Deck extends React.Component {
     return <div className="deck">
       {
         this.props.hands.map((hand, i) => {
-          let cards = hand.map((c) => Card(c, this.cardvalues[c], this.onSelect.bind(this)))
-            return <div key={i} id={i}>
-              <figure>
-                {cards}
-              </figure>
-              <Map from={this.props.chosen[i]} to={{
-                undefined: [<p>You consider which of these cards to choose from.</p>,
-                <p>You consider the second set.</p>,
-                <p>You consider the last set in the reading.</p>][i],
-                death: <p>“<em>Death</em>,” you say, gravely. “Often this merely signifies change, but in your case—”
-                  You pause. “I sense that there has been a physical death recently, and an undeserved one.
-                  Someone who you were once close with?” Healey wipes his face. “Their spirit holds you
-                  accountable for what happened.
-                  <AnyMap from={this.props.chosen} indexStart={i} to={
-                    {
-                      traitor: ` Because you are The Traitor.
-                      `,
-                      fool: ` Because you are the Fool.
-                      `,
-                      money: ` All for the want of money.`,
-                      man: ` You and the Blond Man both.`
-                    }
-                  } />”
-                </p>,
-                fool: <p>“<em>The Fool</em>. The spirits are unclear. Is the fool someone you know? Or you?”</p>,
-                justice: <p>”<em>Justice</em> will eventually come for us all. Some sooner than later.”
-                  When he says nothing, you continue. “Do you fear your own call to justice? The spirits
-                  believe you should be. You should be very afraid.” Now you’ve got his attention.
-                  <AnyMap from={this.props.chosen} indexStart={i} to={
-                    {
-                      traitor: ` “The Traitor will be punished for his disloyalty.”
-                      `,
-                      fool: ` “You are truly the Fool if you go willingly to your punishment without an attempt
-                      to sae yourself.”
-                      `,
-                      death: ` “For what greater Justice can there be than in avenging a wrongful Death?”`,
-                      man: ` “You hope that the Blond Man is the only one who will receive punishment. But
-                      if you do nothing, if you continue to cower and hide, it is you alone who
-                      will be punished.”`
-                    }
-                  } />
-                </p>,
-                man: <p>”<em>The Blond Man</em>.” You frown.
-                  <AnyMap from={this.props.chosen} indexStart={i} to={
-                    {
-                      undefined: `“The spirits tell me a blond man plays a significant role in your
-                      current troubles.” You pause. “You have colluded, together. With this man you
-                      have perpetrated a great wrong.”`,
-                      traitor: `“Is he the Traitor we saw earlier? Or is that you?” He flinches.
-                      “The spirits tell me it is both of you. You have committed a great wrong together.
-                      You must release yourself of this burden through penitent behavior.”
+          let func = i === this.props.hands.length - 1 ? this.onSelect.bind(this) : null,
+            cards = hand.map((c) => <Card name={c} key={c + i} alt={this.cardvalues[c]} handler={func} />)
+          return <div key={'deck-' + i}>
+            <figure>
+              {cards}
+            </figure>
+            <Map from={this.props.chosen[i]} to={{
+              undefined: [<p>You consider which of these cards to choose from.</p>,
+              <p>You consider the second set.</p>,
+              <p>You consider the last set in the reading.</p>][i],
+              death: <p>“<em>Death</em>,” you say, gravely. “Often this merely signifies change, but in your case—”
+                You pause. “I sense that there has been a physical death recently, and an undeserved one.
+                Someone who you were once close with?” Healey wipes his face. “Their spirit holds you
+                accountable for what happened.
+                <AnyMap from={this.props.chosen} indexStart={i} to={
+                  {
+                    traitor: ` Because you are The Traitor.
+                    `,
+                    fool: ` Because you are the Fool.
+                    `,
+                    money: ` All for the want of money.`,
+                    man: ` You and the Blond Man both.`
+                  }
+                } />”
+              </p>,
+              fool: <p>“<em>The Fool</em>. The spirits are unclear. Is the fool someone you know? Or you?”</p>,
+              justice: <p>”<em>Justice</em> will eventually come for us all. Some sooner than later.”
+                When he says nothing, you continue. “Do you fear your own call to justice? The spirits
+                believe you should be. You should be very afraid.” Now you’ve got his attention.
+                <AnyMap from={this.props.chosen} indexStart={i} to={
+                  {
+                    traitor: ` “The Traitor will be punished for his disloyalty.”
+                    `,
+                    fool: ` “You are truly the Fool if you go willingly to your punishment without an attempt
+                    to sae yourself.”
+                    `,
+                    death: ` “For what greater Justice can there be than in avenging a wrongful Death?”`,
+                    man: ` “You hope that the Blond Man is the only one who will receive punishment. But
+                    if you do nothing, if you continue to cower and hide, it is you alone who
+                    will be punished.”`
+                  }
+                } />
+              </p>,
+              man: <p>”<em>The Blond Man</em>.” You frown.
+                <AnyMap from={this.props.chosen} indexStart={i} to={
+                  {
+                    undefined: `“The spirits tell me a blond man plays a significant role in your
+                    current troubles.” You pause. “You have colluded, together. With this man you
+                    have perpetrated a great wrong.”`,
+                    traitor: `“Is he the Traitor we saw earlier? Or is that you?” He flinches.
+                    “The spirits tell me it is both of you. You have committed a great wrong together.
+                    You must release yourself of this burden through penitent behavior.”
                       `,
                       fool: `“Is he the Fool in our reading?” He looks away. “No, you are the Fool. You
                       have become mixed up with the wrong people, strayed from the path. And someone
@@ -339,17 +340,37 @@ class _Deck extends React.Component {
     </div>
   }
 }
+class Card extends React.Component {
 
-
-const Card = (name, alt, handler, selected=false) => (
-  <img src={'images/cards/' + name + '.png'}
-    className={(selected ? 'selected' : '') + ' card'}
-    alt={"Face of a tarot card called " + alt}
-    key={name}
-    id={name}
-    onClick={() => handler(name)}
-  />
-)
+  constructor(props) {
+    super(props)
+    this.state = {selected: false}
+  }
+  componentDidUpdate() {
+    if (this.state.selected && this.props.handler) {
+      setTimeout(() => {
+        this.setState({selected: false},
+          () => this.props.handler(this.props.name))
+      }, 400)
+    }
+  }
+  render() {
+    let selectable = this.props.handler ? 'selectable' : ''
+    let selected = this.state.selected ? ' selected' : ''
+    return <img src={'images/cards/' + this.props.name + '.png'}
+      className={selectable + selected + ' card'}
+      alt={"Face of a tarot card called " + this.props.alt}
+      onClick={() => {
+        if (this.props.handler) {
+          this.setState({
+            selected: true
+          })
+        }
+      }
+      }
+           />
+   }
+}
 
 
 const Deck = connect(
