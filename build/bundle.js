@@ -282,7 +282,7 @@
 	};
 	Provider.childContextTypes = {
 	  store: _storeShape2["default"].isRequired
-	};
+		};
 
 /***/ },
 /* 3 */
@@ -384,7 +384,7 @@
 	  __spread: __spread
 	};
 
-	module.exports = React;
+		module.exports = React;
 
 /***/ },
 /* 5 */
@@ -667,7 +667,7 @@
 	  toArray: toArray
 	};
 
-	module.exports = ReactChildren;
+		module.exports = ReactChildren;
 
 /***/ },
 /* 7 */
@@ -793,7 +793,7 @@
 	  fiveArgumentPooler: fiveArgumentPooler
 	};
 
-	module.exports = PooledClass;
+		module.exports = PooledClass;
 
 /***/ },
 /* 8 */
@@ -1298,7 +1298,7 @@
 
 	};
 
-	module.exports = ReactCurrentOwner;
+		module.exports = ReactCurrentOwner;
 
 /***/ },
 /* 12 */
@@ -1725,7 +1725,7 @@
 	  unescape: unescape
 	};
 
-	module.exports = KeyEscapeUtils;
+		module.exports = KeyEscapeUtils;
 
 /***/ },
 /* 18 */
@@ -1951,7 +1951,7 @@
 	  }
 	};
 
-	module.exports = ReactNoopUpdateQueue;
+		module.exports = ReactNoopUpdateQueue;
 
 /***/ },
 /* 20 */
@@ -2761,7 +2761,7 @@
 
 	};
 
-	module.exports = ReactClass;
+		module.exports = ReactClass;
 
 /***/ },
 /* 23 */
@@ -2788,7 +2788,7 @@
 	  childContext: null
 	});
 
-	module.exports = ReactPropTypeLocations;
+		module.exports = ReactPropTypeLocations;
 
 /***/ },
 /* 24 */
@@ -3084,7 +3084,7 @@
 	  tspan: createDOMFactory('tspan')
 	};
 
-	module.exports = ReactDOMFactories;
+		module.exports = ReactDOMFactories;
 
 /***/ },
 /* 28 */
@@ -3319,7 +3319,7 @@
 
 	};
 
-	module.exports = ReactElementValidator;
+		module.exports = ReactElementValidator;
 
 /***/ },
 /* 29 */
@@ -3667,7 +3667,7 @@
 	  getRootIDs: getRootIDs
 	};
 
-	module.exports = ReactComponentTreeHook;
+		module.exports = ReactComponentTreeHook;
 
 /***/ },
 /* 30 */
@@ -3948,7 +3948,7 @@
 	};
 	process.umask = function () {
 	    return 0;
-	};
+		};
 
 /***/ },
 /* 32 */
@@ -4485,7 +4485,7 @@
 	  subscribe: _react.PropTypes.func.isRequired,
 	  dispatch: _react.PropTypes.func.isRequired,
 	  getState: _react.PropTypes.func.isRequired
-	});
+		});
 
 /***/ },
 /* 37 */
@@ -5308,7 +5308,7 @@
 	    getState: getState,
 	    replaceReducer: replaceReducer
 	  }, _ref2[_symbolObservable2["default"]] = observable, _ref2;
-	}
+		}
 
 /***/ },
 /* 43 */
@@ -6075,7 +6075,7 @@
 	  deck: deck,
 	  hands: hands,
 	  chosen: chosen
-	});
+		});
 
 /***/ },
 /* 57 */
@@ -6155,7 +6155,7 @@
 	    type: UPDATE_CHOSEN,
 	    chosen: chosen
 	  };
-	};
+		};
 
 /***/ },
 /* 58 */
@@ -6313,7 +6313,7 @@
 	      sections
 	    )
 	  );
-	};
+		};
 
 /***/ },
 /* 59 */
@@ -7159,7 +7159,7 @@
 
 	'use strict';
 
-	module.exports = __webpack_require__(63);
+		module.exports = __webpack_require__(63);
 
 /***/ },
 /* 63 */
@@ -7251,7 +7251,7 @@
 	  }
 	});
 
-	module.exports = ReactCSSTransitionGroup;
+		module.exports = ReactCSSTransitionGroup;
 
 /***/ },
 /* 64 */
@@ -7502,7 +7502,7 @@
 	  }
 	});
 
-	module.exports = ReactTransitionGroup;
+		module.exports = ReactTransitionGroup;
 
 /***/ },
 /* 65 */
@@ -7555,7 +7555,7 @@
 
 	};
 
-	module.exports = ReactInstanceMap;
+		module.exports = ReactInstanceMap;
 
 /***/ },
 /* 66 */
@@ -7663,7 +7663,7 @@
 	  }
 	};
 
-	module.exports = ReactTransitionChildMapping;
+		module.exports = ReactTransitionChildMapping;
 
 /***/ },
 /* 67 */
@@ -7919,7 +7919,7 @@
 	  }
 	});
 
-	module.exports = ReactCSSTransitionGroupChild;
+		module.exports = ReactCSSTransitionGroupChild;
 
 /***/ },
 /* 69 */
@@ -8227,7 +8227,7 @@
 	  uncacheNode: uncacheNode
 	};
 
-	module.exports = ReactDOMComponentTree;
+		module.exports = ReactDOMComponentTree;
 
 /***/ },
 /* 71 */
@@ -8438,7 +8438,7 @@
 	  injection: DOMPropertyInjection
 	};
 
-	module.exports = DOMProperty;
+		module.exports = DOMProperty;
 
 /***/ },
 /* 72 */
@@ -8461,7 +8461,7 @@
 	  hasCachedChildNodes: 1 << 0
 	};
 
-	module.exports = ReactDOMComponentFlags;
+		module.exports = ReactDOMComponentFlags;
 
 /***/ },
 /* 73 */
@@ -8550,7 +8550,7 @@
 
 	module.exports = {
 	  inject: inject
-	};
+		};
 
 /***/ },
 /* 74 */
@@ -8945,7 +8945,7 @@
 	  }
 	};
 
-	module.exports = BeforeInputEventPlugin;
+		module.exports = BeforeInputEventPlugin;
 
 /***/ },
 /* 75 */
@@ -9047,7 +9047,7 @@
 	  PropagationPhases: PropagationPhases
 	};
 
-	module.exports = EventConstants;
+		module.exports = EventConstants;
 
 /***/ },
 /* 76 */
@@ -9189,7 +9189,7 @@
 	  accumulateEnterLeaveDispatches: accumulateEnterLeaveDispatches
 	};
 
-	module.exports = EventPropagators;
+		module.exports = EventPropagators;
 
 /***/ },
 /* 77 */
@@ -9447,7 +9447,7 @@
 
 	};
 
-	module.exports = EventPluginHub;
+		module.exports = EventPluginHub;
 
 /***/ },
 /* 78 */
@@ -9699,7 +9699,7 @@
 
 	};
 
-	module.exports = EventPluginRegistry;
+		module.exports = EventPluginRegistry;
 
 /***/ },
 /* 79 */
@@ -9933,7 +9933,7 @@
 	  injection: injection
 	};
 
-	module.exports = EventPluginUtils;
+		module.exports = EventPluginUtils;
 
 /***/ },
 /* 80 */
@@ -10153,7 +10153,7 @@
 
 	};
 
-	module.exports = ExecutionEnvironment;
+		module.exports = ExecutionEnvironment;
 
 /***/ },
 /* 84 */
@@ -10976,7 +10976,7 @@
 
 	};
 
-	module.exports = ChangeEventPlugin;
+		module.exports = ChangeEventPlugin;
 
 /***/ },
 /* 90 */
@@ -11232,7 +11232,7 @@
 	  asap: asap
 	};
 
-	module.exports = ReactUpdates;
+		module.exports = ReactUpdates;
 
 /***/ },
 /* 91 */
@@ -11370,7 +11370,7 @@
 	  logTopLevelRenders: false
 	};
 
-	module.exports = ReactFeatureFlags;
+		module.exports = ReactFeatureFlags;
 
 /***/ },
 /* 93 */
@@ -11543,7 +11543,7 @@
 
 	};
 
-	module.exports = ReactReconciler;
+		module.exports = ReactReconciler;
 
 /***/ },
 /* 94 */
@@ -11727,7 +11727,7 @@
 
 	};
 
-	module.exports = ReactOwner;
+		module.exports = ReactOwner;
 
 /***/ },
 /* 96 */
@@ -12106,7 +12106,7 @@
 	  }
 	};
 
-	module.exports = ReactInvalidSetStateWarningHook;
+		module.exports = ReactInvalidSetStateWarningHook;
 
 /***/ },
 /* 99 */
@@ -12148,7 +12148,7 @@
 	  }
 	};
 
-	module.exports = ReactHostOperationHistoryHook;
+		module.exports = ReactHostOperationHistoryHook;
 
 /***/ },
 /* 100 */
@@ -12207,7 +12207,7 @@
 	  }
 	};
 
-	module.exports = ReactChildrenMutationWarningHook;
+		module.exports = ReactChildrenMutationWarningHook;
 
 /***/ },
 /* 101 */
@@ -12510,7 +12510,7 @@
 
 	};
 
-	module.exports = Transaction;
+		module.exports = Transaction;
 
 /***/ },
 /* 104 */
@@ -12813,7 +12813,7 @@
 
 	};
 
-	module.exports = EnterLeaveEventPlugin;
+		module.exports = EnterLeaveEventPlugin;
 
 /***/ },
 /* 109 */
@@ -12986,7 +12986,7 @@
 
 	};
 
-	module.exports = ViewportMetrics;
+		module.exports = ViewportMetrics;
 
 /***/ },
 /* 112 */
@@ -13248,7 +13248,7 @@
 	  DOMPropertyNames: {}
 	};
 
-	module.exports = HTMLDOMPropertyConfig;
+		module.exports = HTMLDOMPropertyConfig;
 
 /***/ },
 /* 114 */
@@ -13283,7 +13283,7 @@
 
 	};
 
-	module.exports = ReactComponentBrowserEnvironment;
+		module.exports = ReactComponentBrowserEnvironment;
 
 /***/ },
 /* 115 */
@@ -13482,7 +13482,7 @@
 
 	};
 
-	module.exports = DOMChildrenOperations;
+		module.exports = DOMChildrenOperations;
 
 /***/ },
 /* 116 */
@@ -13630,7 +13630,7 @@
 	  svg: 'http://www.w3.org/2000/svg'
 	};
 
-	module.exports = DOMNamespaces;
+		module.exports = DOMNamespaces;
 
 /***/ },
 /* 118 */
@@ -14004,7 +14004,7 @@
 
 	};
 
-	module.exports = Danger;
+		module.exports = Danger;
 
 /***/ },
 /* 123 */
@@ -14361,7 +14361,7 @@
 	  TEXT_CONTENT: null
 	});
 
-	module.exports = ReactMultiChildUpdateTypes;
+		module.exports = ReactMultiChildUpdateTypes;
 
 /***/ },
 /* 127 */
@@ -14400,7 +14400,7 @@
 	  }
 	};
 
-	module.exports = ReactDOMIDOperations;
+		module.exports = ReactDOMIDOperations;
 
 /***/ },
 /* 128 */
@@ -15441,7 +15441,7 @@
 	  }
 	};
 
-	module.exports = AutoFocusUtils;
+		module.exports = AutoFocusUtils;
 
 /***/ },
 /* 130 */
@@ -15682,7 +15682,7 @@
 
 	};
 
-	module.exports = CSSPropertyOperations;
+		module.exports = CSSPropertyOperations;
 
 /***/ },
 /* 132 */
@@ -15835,7 +15835,7 @@
 	  shorthandPropertyExpansions: shorthandPropertyExpansions
 	};
 
-	module.exports = CSSProperty;
+		module.exports = CSSProperty;
 
 /***/ },
 /* 133 */
@@ -16339,7 +16339,7 @@
 
 	};
 
-	module.exports = DOMPropertyOperations;
+		module.exports = DOMPropertyOperations;
 
 /***/ },
 /* 140 */
@@ -16692,7 +16692,7 @@
 
 	});
 
-	module.exports = ReactBrowserEventEmitter;
+		module.exports = ReactBrowserEventEmitter;
 
 /***/ },
 /* 142 */
@@ -16730,7 +16730,7 @@
 	  }
 	};
 
-	module.exports = ReactEventEmitterMixin;
+		module.exports = ReactEventEmitterMixin;
 
 /***/ },
 /* 143 */
@@ -16865,7 +16865,7 @@
 	  getHostProps: DisabledInputUtils.getHostProps
 	};
 
-	module.exports = ReactDOMButton;
+		module.exports = ReactDOMButton;
 
 /***/ },
 /* 145 */
@@ -16920,7 +16920,7 @@
 	  }
 	};
 
-	module.exports = DisabledInputUtils;
+		module.exports = DisabledInputUtils;
 
 /***/ },
 /* 146 */
@@ -17335,7 +17335,7 @@
 	  }
 	};
 
-	module.exports = LinkedValueUtils;
+		module.exports = LinkedValueUtils;
 
 /***/ },
 /* 148 */
@@ -17463,7 +17463,7 @@
 
 	};
 
-	module.exports = ReactDOMOption;
+		module.exports = ReactDOMOption;
 
 /***/ },
 /* 149 */
@@ -18285,7 +18285,7 @@
 
 	};
 
-	module.exports = ReactMultiChild;
+		module.exports = ReactMultiChild;
 
 /***/ },
 /* 152 */
@@ -18335,7 +18335,7 @@
 
 	};
 
-	module.exports = ReactComponentEnvironment;
+		module.exports = ReactComponentEnvironment;
 
 /***/ },
 /* 153 */
@@ -18494,7 +18494,7 @@
 
 	};
 
-	module.exports = ReactChildReconciler;
+		module.exports = ReactChildReconciler;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(31)))
 
 /***/ },
@@ -19548,7 +19548,7 @@
 
 	};
 
-	module.exports = ReactCompositeComponent;
+		module.exports = ReactCompositeComponent;
 
 /***/ },
 /* 156 */
@@ -19593,7 +19593,7 @@
 	  }
 	};
 
-	module.exports = ReactNodeTypes;
+		module.exports = ReactNodeTypes;
 
 /***/ },
 /* 157 */
@@ -19831,7 +19831,7 @@
 	  injection: ReactHostComponentInjection
 	};
 
-	module.exports = ReactHostComponent;
+		module.exports = ReactHostComponent;
 
 /***/ },
 /* 161 */
@@ -20304,7 +20304,7 @@
 
 	};
 
-	module.exports = ReactUpdateQueue;
+		module.exports = ReactUpdateQueue;
 
 /***/ },
 /* 164 */
@@ -20743,7 +20743,7 @@
 	  }
 	});
 
-	module.exports = ReactDOMEmptyComponent;
+		module.exports = ReactDOMEmptyComponent;
 
 /***/ },
 /* 166 */
@@ -20884,7 +20884,7 @@
 	  getParentInstance: getParentInstance,
 	  traverseTwoPhase: traverseTwoPhase,
 	  traverseEnterLeave: traverseEnterLeave
-	};
+		};
 
 /***/ },
 /* 167 */
@@ -21053,7 +21053,7 @@
 
 	});
 
-	module.exports = ReactDOMTextComponent;
+		module.exports = ReactDOMTextComponent;
 
 /***/ },
 /* 168 */
@@ -21126,7 +21126,7 @@
 	  }
 	};
 
-	module.exports = ReactDefaultBatchingStrategy;
+		module.exports = ReactDefaultBatchingStrategy;
 
 /***/ },
 /* 169 */
@@ -21288,7 +21288,7 @@
 	  }
 	};
 
-	module.exports = ReactEventListener;
+		module.exports = ReactEventListener;
 
 /***/ },
 /* 170 */
@@ -21376,7 +21376,7 @@
 	  registerDefault: function registerDefault() {}
 	};
 
-	module.exports = EventListener;
+		module.exports = EventListener;
 
 /***/ },
 /* 171 */
@@ -21460,7 +21460,7 @@
 	  Updates: ReactUpdates.injection
 	};
 
-	module.exports = ReactInjection;
+		module.exports = ReactInjection;
 
 /***/ },
 /* 173 */
@@ -21772,7 +21772,7 @@
 	  }
 	};
 
-	module.exports = ReactInputSelection;
+		module.exports = ReactInputSelection;
 
 /***/ },
 /* 175 */
@@ -21989,7 +21989,7 @@
 	  setOffsets: useIEOffsets ? setIEOffsets : setModernOffsets
 	};
 
-	module.exports = ReactDOMSelection;
+		module.exports = ReactDOMSelection;
 
 /***/ },
 /* 176 */
@@ -22719,7 +22719,7 @@
 	  }
 	};
 
-	module.exports = SelectEventPlugin;
+		module.exports = SelectEventPlugin;
 
 /***/ },
 /* 183 */
@@ -23359,7 +23359,7 @@
 
 	};
 
-	module.exports = SimpleEventPlugin;
+		module.exports = SimpleEventPlugin;
 
 /***/ },
 /* 184 */
@@ -24471,7 +24471,7 @@
 	  }
 	};
 
-	module.exports = ReactMount;
+		module.exports = ReactMount;
 
 /***/ },
 /* 195 */
@@ -24532,7 +24532,7 @@
 	  useCreateElement: true
 	};
 
-	module.exports = ReactDOMFeatureFlags;
+		module.exports = ReactDOMFeatureFlags;
 
 /***/ },
 /* 197 */
@@ -24587,7 +24587,7 @@
 	  }
 	};
 
-	module.exports = ReactMarkupChecksum;
+		module.exports = ReactMarkupChecksum;
 
 /***/ },
 /* 198 */
@@ -24757,7 +24757,7 @@
 
 	var ReactMount = __webpack_require__(194);
 
-	module.exports = ReactMount.renderSubtreeIntoContainer;
+		module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ },
 /* 202 */
@@ -24874,7 +24874,7 @@
 	  }
 	};
 
-	module.exports = ReactDOMUnknownPropertyHook;
+		module.exports = ReactDOMUnknownPropertyHook;
 
 /***/ },
 /* 203 */
@@ -24922,7 +24922,7 @@
 	  }
 	};
 
-	module.exports = ReactDOMNullInputValuePropHook;
+		module.exports = ReactDOMNullInputValuePropHook;
 
 /***/ },
 /* 204 */
@@ -25048,7 +25048,7 @@
 
 	};
 
-	module.exports = CSSCore;
+		module.exports = CSSCore;
 
 /***/ },
 /* 205 */
@@ -25126,7 +25126,7 @@
 	  }
 	};
 
-	module.exports = ReactTransitionEvents;
+		module.exports = ReactTransitionEvents;
 
 /***/ },
 /* 206 */
@@ -25552,7 +25552,7 @@
 	    currentSection: state.bookmarks[ownProps.chapterId],
 	    inventory: state.inventory
 	  };
-	})(_Chapter);
+		})(_Chapter);
 
 /***/ },
 /* 207 */
@@ -27370,7 +27370,7 @@
 	  var selected = arguments.length <= 3 || arguments[3] === undefined ? false : arguments[3];
 	  return React.createElement('img', { src: 'images/cards/' + name + '.png',
 	    className: (selected ? 'selected' : '') + ' card',
-	    alt: alt,
+	    alt: "Face of a tarot card called " + alt,
 	    key: name,
 	    id: name,
 	    onClick: function onClick() {
@@ -29581,7 +29581,7 @@
 	    type: _constants.REHYDRATE,
 	    payload: data
 	  };
-	}
+		}
 
 /***/ },
 /* 220 */
@@ -29679,7 +29679,7 @@
 	 */
 	var baseEach = createBaseEach(baseForOwn);
 
-	module.exports = baseEach;
+		module.exports = baseEach;
 
 /***/ },
 /* 223 */
@@ -29725,7 +29725,7 @@
 	 */
 	var baseFor = createBaseFor();
 
-	module.exports = baseFor;
+		module.exports = baseFor;
 
 /***/ },
 /* 225 */
@@ -30087,7 +30087,7 @@
 	 */
 	var getLength = baseProperty('length');
 
-	module.exports = getLength;
+		module.exports = getLength;
 
 /***/ },
 /* 235 */
@@ -31198,7 +31198,7 @@
 	/** Used to detect overreaching core-js shims. */
 	var coreJsData = root['__core-js_shared__'];
 
-	module.exports = coreJsData;
+		module.exports = coreJsData;
 
 /***/ },
 /* 270 */
@@ -31222,7 +31222,7 @@
 	/** Used as a reference to the global object. */
 	var root = freeGlobal || freeSelf || thisGlobal || Function('return this')();
 
-	module.exports = root;
+		module.exports = root;
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
@@ -32689,7 +32689,7 @@
 	// Assign cache to `_.memoize`.
 	memoize.Cache = MapCache;
 
-	module.exports = memoize;
+		module.exports = memoize;
 
 /***/ },
 /* 313 */
@@ -33531,7 +33531,7 @@
 	    type: _constants.REHYDRATE_ERROR,
 	    payload: err
 	  };
-	}
+		}
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(325).setImmediate, (function() { return this; }())))
 
 /***/ },
@@ -33622,3 +33622,4 @@
 
 /***/ }
 /******/ ]);
+//# sourceMappingURL=bundle.js.map

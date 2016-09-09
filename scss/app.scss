@@ -173,12 +173,25 @@ hr {
 }
 
 /* Tarot styles */
+div.deck {
+  @media #{$medium-up} {
+    margin-left: -100px;
+    margin-right: -100px;
+    & p {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+  }
+}
 div.deck figure {
   text-align: center;
   margin-bottom: 1em;
 }
 img.card {
-  width: 200px;
+  width: 150px;
+  @media #{$medium-up} {
+    width: 300px;
+  }
 }
 
 /* Section animations */

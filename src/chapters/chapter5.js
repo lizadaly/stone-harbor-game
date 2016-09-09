@@ -344,7 +344,7 @@ class _Deck extends React.Component {
 const Card = (name, alt, handler, selected=false) => (
   <img src={'images/cards/' + name + '.png'}
     className={(selected ? 'selected' : '') + ' card'}
-    alt={alt}
+    alt={"Face of a tarot card called " + alt}
     key={name}
     id={name}
     onClick={() => handler(name)}
