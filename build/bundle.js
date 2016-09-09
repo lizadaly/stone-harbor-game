@@ -27245,7 +27245,7 @@
 	        'div',
 	        { className: 'deck' },
 	        this.props.hands.map(function (hand, i) {
-	          var func = i === _this3.props.hands.length - 1 ? _this3.onSelect.bind(_this3) : null,
+	          var func = i === _this3.props.hands.length - 1 && _this3.props.chosen.length < 3 ? _this3.onSelect.bind(_this3) : null,
 	              cards = hand.map(function (c) {
 	            return React.createElement(Card, { name: c, key: c + i, alt: _this3.cardvalues[c], handler: func });
 	          });

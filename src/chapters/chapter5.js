@@ -259,7 +259,7 @@ class _Deck extends React.Component {
     return <div className="deck">
       {
         this.props.hands.map((hand, i) => {
-          let func = i === this.props.hands.length - 1 ? this.onSelect.bind(this) : null,
+          let func = i === this.props.hands.length - 1 && this.props.chosen.length < 3 ? this.onSelect.bind(this) : null,
             cards = hand.map((c) => <Card name={c} key={c + i} alt={this.cardvalues[c]} handler={func} />)
           return <div key={'deck-' + i}>
             <figure>
