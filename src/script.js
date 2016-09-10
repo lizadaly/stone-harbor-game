@@ -1,5 +1,6 @@
 const React = require('react')
 const ReactDOM = require('react-dom')
+const Shim = require('es6-shim')
 
 import { Provider, connect } from 'react-redux'
 import { createStore, compose } from 'redux'
@@ -11,6 +12,11 @@ import { persistStore, autoRehydrate } from 'redux-persist'
 
 import { Counter } from './components/counter'
 import { setStateBoolean } from "./actions"
+
+import { GameUtils } from "./util"
+
+// Call the polyfill
+GameUtils()
 
 window.lockHistory = false  // GLOBAL to set the history for the browser as locked; unlocked on next tick
 
@@ -65,7 +71,7 @@ const startGame = () => {
       if (history.state) {
         // Use this state instead of reserializing
         if (history.state.counter != store.getState().counter) {
-          console.log("reserializing state with counter ", history.state.counter)
+//          console.log("reserializing state with counter ", history.state.counter)
           persister.rehydrate(history.state)
           history.replaceState(history.state, "")
           window.lockHistory = true

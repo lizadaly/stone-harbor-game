@@ -8,7 +8,7 @@ module.exports = {
     entry: "./script",
     output: {
         path: __dirname + "/build",
-        filename: PROD ? 'bundle.min.js' : 'bundle.js'
+        filename: PROD ? 'bundle.min.js' : 'bundle.js' 
     },
     module: {
         loaders: [

@@ -22,6 +22,7 @@ def deploy_qa():
 
 def deploy_app(code_dir):
 
+    local('NODE_ENV=production webpack')
     filename = 'deploy-{}.tgz'.format(timestamp)
     filepath = os.path.join(deploy_dir, filename)
 
