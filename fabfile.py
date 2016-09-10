@@ -11,12 +11,16 @@ env.user = 'django'
 env.hosts = ['162.243.253.184']
 deploy_dir = 'deploy'
 
-code_dir = '/home/django/apps/games/stone-harbor'
 
 def deploy():
-    deploy_app()
+    code_dir = '/home/django/apps/games/stone-harbor'
+    deploy_app(code_dir)
 
-def deploy_app():
+def deploy_qa():
+    code_dir = '/home/django/apps/games/staging/stone-harbor'
+    deploy_app(code_dir)
+
+def deploy_app(code_dir):
 
     filename = 'deploy-{}.tgz'.format(timestamp)
     filepath = os.path.join(deploy_dir, filename)

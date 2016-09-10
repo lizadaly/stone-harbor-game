@@ -80,6 +80,7 @@ const startGame = () => {
 
 
 if (document.readyState != 'loading') {
+  alert("Starting up") 
   startGame()
   var mode = localStorage.getItem("nightMode")
   document.getElementById('body').classList.toggle('nightmode', mode === 'true')
