@@ -220,7 +220,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         <p>
           The curtain rattles, and a woman steps through: mid-thirties, faux-blonde, the spitting image of
           her daughter. This is Jared’s wife Allison.
-        </p>
+        </p> 
         <p>
           Your mother’s face animates as she slides into character. “Do you seek the wisdom of the ancients?”
           (You couldn’t even come up with your own routine.)

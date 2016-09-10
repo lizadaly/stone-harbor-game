@@ -64,7 +64,7 @@ $body-background: $white;
 $body-font-color: $black;
 
 
-$body-font-family: "adelle", serif;
+$body-font-family: "adelle", "georgia", serif;
 $body-antialiased: true;
 $global-margin: 2rem;
 $global-padding: 1rem;
@@ -100,7 +100,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: 'Raleway', Helvetica;
+$header-font-family: 'Raleway', Helvetica, Arial, sans-serif;
 $header-font-weight: 500;
 $header-font-style: normal;
 $font-family-monospace: Inconsolata, Consolas, 'Liberation Mono', Courier, monospace;

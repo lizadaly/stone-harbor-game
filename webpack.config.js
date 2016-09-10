@@ -3,12 +3,12 @@ var webpack = require('webpack');
 var PROD = (process.env.NODE_ENV === 'production')
 
 module.exports = {
-    devtool: 'cheap-module-source-map',
+
     context: __dirname + "/src",
     entry: "./script",
     output: {
         path: __dirname + "/build",
-        filename: PROD ? 'bundle.min.js' : 'bundle.js' 
+        filename: PROD ? 'bundle.min.js' : 'bundle.js'
     },
     module: {
         loaders: [
