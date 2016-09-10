@@ -29165,6 +29165,21 @@
 	        React.createElement(
 	          'em',
 	          null,
+	          'Caribbean motel:'
+	        ),
+	        ' ',
+	        React.createElement(
+	          'a',
+	          { href: 'https://commons.wikimedia.org/wiki/File:WWHD_Caribbean_sign.JPG' },
+	          'WWHD Caribbean sign'
+	        )
+	      ),
+	      React.createElement(
+	        'li',
+	        null,
+	        React.createElement(
+	          'em',
+	          null,
 	          'Waves:'
 	        ),
 	        ' ',
