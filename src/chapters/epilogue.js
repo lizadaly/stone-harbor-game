@@ -91,7 +91,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <div className="next-chapter-link"><List expansions={["Credits", ""]} tag="credits"/></div>
     </section>,
     <section>
-      <hr/>
+      
       <h2>Credits</h2>
       <h3>Acknowledgments</h3>
       <p>
@@ -112,6 +112,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         <li><em>Tarot cards:</em> <a href="http://gallica.bnf.fr/ark:/12148/btv1b105111415">Jeu de tarot divinatoire dit "Grand Etteilla" ou "tarot égyptien"</a> via the National Library of France</li>
         <li><em>Reading room:</em> <a href="https://www.flickr.com/photos/montrealprotest/22008493185/in/photolist-zwPhg4-ocHKZV-oeuM5c-J2nxB4-5eF8MP-oeuM88-dQvgb7-ocHL78-ocDJ7S-ocDJ83-oeuM76-oeuM5T-oeuM9R-owmW9N-ow9Nae-ooqpns-ocHL5K-owjm52-ocHL1B-oeWXr6-ocDJ5s-5eFf9e-oeTj8f-ouMcMs-fHYLKi-ormX8L-ouhs93-oeWmbX-ovseYp-ocHL3k-odWkLC-oeuM9F-od8fWj-owoQuR-oukwMk-ovrN1j-obU1a9-oyfVhP-obU8dY-oeUNm6-oy8a4c-oweHoU-ocDJ95-ov9CYM-otnjKY-otqj6u-ouRQ8U-ouPxpF-oeULZi-ou3x1K">Psychic Readings - $10</a></li>
         <li><em>La Fortune tarot:</em> <a href="http://gallica.bnf.fr/ark:/12148/btv1b103365240/f19.item">Jeu de Minchiate de fantaisie à enseignes françaises</a> via the Library of France</li>
+        <li><em>Arrow icon:</em> <a href="https://thenounproject.com/WSD/collection/wsd-ornament-arrows/?oq=arrow&cidx=141&i=186311">arrow right by Anton Gajdosik from the Noun Project</a></li>
       </ol>
       <p className="small">
         Some images enhanced  via <a href="https://github.com/satoshiiizuka/siggraph2016_colorization">Let there be Color!: Joint End-to-end Learning of Global and Local Image Priors for Automatic Image Colorization with Simultaneous Classification</a> by Satoshi Iizuka, Edgar Simo-Serra, and Hiroshi Ishikawa

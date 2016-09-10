@@ -15,7 +15,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
 
   var sections = [
     <section>
-      <hr/>
+      
       <h1>Stone Harbor</h1>
       <h5>Liza Daly</h5>
 

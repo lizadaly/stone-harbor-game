@@ -6813,7 +6813,7 @@
 	  return React.createElement(
 	    'div',
 	    { className: 'next-chapter-link' },
-	    React.createElement(List, { expansions: ["Next", ""], tag: "c" + chapter + "next", nextUnit: 'chapter' })
+	    React.createElement(List, { expansions: ["Continue", ""], tag: "c" + chapter + "next", nextUnit: 'chapter' })
 	  );
 	};
 
@@ -25209,7 +25209,6 @@
 	  var sections = [React.createElement(
 	    'section',
 	    null,
-	    React.createElement('hr', null),
 	    React.createElement(
 	      'h1',
 	      null,
@@ -29072,7 +29071,6 @@
 	  ), React.createElement(
 	    'section',
 	    null,
-	    React.createElement('hr', null),
 	    React.createElement(
 	      'h2',
 	      null,
@@ -29236,6 +29234,21 @@
 	          'Jeu de Minchiate de fantaisie à enseignes françaises'
 	        ),
 	        ' via the Library of France'
+	      ),
+	      React.createElement(
+	        'li',
+	        null,
+	        React.createElement(
+	          'em',
+	          null,
+	          'Arrow icon:'
+	        ),
+	        ' ',
+	        React.createElement(
+	          'a',
+	          { href: 'https://thenounproject.com/WSD/collection/wsd-ornament-arrows/?oq=arrow&cidx=141&i=186311' },
+	          'arrow right by Anton Gajdosik from the Noun Project'
+	        )
 	      )
 	    ),
 	    React.createElement(

@@ -1724,8 +1724,23 @@ hr {
   margin: 4rem auto; }
 
 .next-chapter-link {
+  margin-top: 3rem;
   text-align: center;
-  text-transform: uppercase; }
+  font-style: italic; }
+  .next-chapter-link a {
+    text-decoration: none; }
+  .next-chapter-link::before {
+    position: relative;
+    content: " ";
+    background-image: url(../images/ornament.svg);
+    background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    display: block;
+    margin: auto;
+    opacity: 0.15;
+    width: 200px;
+    height: 20px; }
 
 /* Tarot styles */
 @media screen and (min-width: 40em) {
