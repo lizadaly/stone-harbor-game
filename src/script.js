@@ -1,6 +1,6 @@
 const React = require('react')
 const ReactDOM = require('react-dom')
-const Util = require('util')
+
 import { Provider, connect } from 'react-redux'
 import { createStore, compose } from 'redux'
 import { gameApp } from './reducers'
@@ -11,7 +11,6 @@ import { persistStore, autoRehydrate } from 'redux-persist'
 
 import { Counter } from './components/counter'
 import { setStateBoolean } from "./actions"
-
 
 window.lockHistory = false  // GLOBAL to set the history for the browser as locked; unlocked on next tick
 
