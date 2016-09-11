@@ -67,7 +67,7 @@
 
 	var _actions = __webpack_require__(58);
 
-	var _util = __webpack_require__(332);
+	var _util = __webpack_require__(336);
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -76,8 +76,8 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var React = __webpack_require__(3);
-	var ReactDOM = __webpack_require__(333);
-	var Shim = __webpack_require__(334);
+	var ReactDOM = __webpack_require__(332);
+	var Shim = __webpack_require__(337);
 
 	// Call the polyfill
 	(0, _util.GameUtils)();
@@ -29225,30 +29225,15 @@
 	        React.createElement(
 	          'em',
 	          null,
-	          'La Fortune tarot:'
+	          'Dunes photo:'
 	        ),
 	        ' ',
 	        React.createElement(
 	          'a',
-	          { href: 'http://gallica.bnf.fr/ark:/12148/btv1b103365240/f19.item' },
-	          'Jeu de Minchiate de fantaisie à enseignes françaises'
+	          { href: 'https://flic.kr/p/vpWnd' },
+	          'Dune Fence'
 	        ),
-	        ' via the Library of France'
-	      ),
-	      React.createElement(
-	        'li',
-	        null,
-	        React.createElement(
-	          'em',
-	          null,
-	          'Arrow icon:'
-	        ),
-	        ' ',
-	        React.createElement(
-	          'a',
-	          { href: 'https://thenounproject.com/WSD/collection/wsd-ornament-arrows/?oq=arrow&cidx=141&i=186311' },
-	          'arrow right by Anton Gajdosik from the Noun Project'
-	        )
+	        ' (taken in Stone Harbor, NJ)'
 	      )
 	    ),
 	    React.createElement(
@@ -29265,7 +29250,7 @@
 	    React.createElement(
 	      'figure',
 	      { style: { textAlign: "center", paddingTop: "6em" } },
-	      React.createElement('img', { src: 'images/fortune-card.png', alt: 'Image of a tarot card that reads “Fortune”, depicting a figure standing on a wheel' })
+	      React.createElement('img', { src: 'images/cover.png', alt: 'Cover for the game, with the words \'Stone Harbor\' and \'Liza Daly\' over a photo of the ocean dunes' })
 	    )
 	  )];
 	  return React.createElement(_.RenderSection, { currentSection: currentSection, sections: sections });
@@ -33726,6 +33711,17 @@
 
 /***/ },
 /* 332 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	module.exports = __webpack_require__(70);
+
+/***/ },
+/* 333 */,
+/* 334 */,
+/* 335 */,
+/* 336 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -33737,15 +33733,7 @@
 	var GameUtils = exports.GameUtils = function GameUtils() {};
 
 /***/ },
-/* 333 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	module.exports = __webpack_require__(70);
-
-/***/ },
-/* 334 */
+/* 337 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global, process) {'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol?"symbol":typeof obj;};/*!
