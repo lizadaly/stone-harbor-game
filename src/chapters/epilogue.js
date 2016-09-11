@@ -117,7 +117,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         Some images enhanced  via <a href="https://github.com/satoshiiizuka/siggraph2016_colorization">Let there be Color!: Joint End-to-end Learning of Global and Local Image Priors for Automatic Image Colorization with Simultaneous Classification</a> by Satoshi Iizuka, Edgar Simo-Serra, and Hiroshi Ishikawa
       </p>
 
-      <figure style={{textAlign: "center", paddingTop: "6em"}}>
+      <figure style={{textAlign: "center", marginTop: "6em"}} className="thumbnail">
         <img src="images/cover.png" alt="Cover for the game, with the words 'Stone Harbor' and 'Liza Daly' over a photo of the ocean dunes" />
       </figure>
     </section>

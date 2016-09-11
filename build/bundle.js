@@ -67,7 +67,7 @@
 
 	var _actions = __webpack_require__(58);
 
-	var _util = __webpack_require__(336);
+	var _util = __webpack_require__(332);
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -76,8 +76,8 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var React = __webpack_require__(3);
-	var ReactDOM = __webpack_require__(332);
-	var Shim = __webpack_require__(337);
+	var ReactDOM = __webpack_require__(333);
+	var Shim = __webpack_require__(334);
 
 	// Call the polyfill
 	(0, _util.GameUtils)();
@@ -27445,8 +27445,9 @@
 
 	      var selectable = this.props.handler ? 'selectable' : '';
 	      var selected = this.state.selected ? ' selected' : '';
-	      return React.createElement('img', { src: 'images/cards/' + this.props.name + '.png',
+	      return React.createElement('input', { type: 'image', src: 'images/cards/' + this.props.name + '.png',
 	        className: selectable + selected + ' card',
+	        tabIndex: '0',
 	        alt: "Face of a tarot card called " + this.props.alt,
 	        onClick: function onClick() {
 	          if (_this6.props.handler) {
@@ -29249,7 +29250,7 @@
 	    ),
 	    React.createElement(
 	      'figure',
-	      { style: { textAlign: "center", paddingTop: "6em" } },
+	      { style: { textAlign: "center", marginTop: "6em" }, className: 'thumbnail' },
 	      React.createElement('img', { src: 'images/cover.png', alt: 'Cover for the game, with the words \'Stone Harbor\' and \'Liza Daly\' over a photo of the ocean dunes' })
 	    )
 	  )];
@@ -33711,17 +33712,6 @@
 
 /***/ },
 /* 332 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	module.exports = __webpack_require__(70);
-
-/***/ },
-/* 333 */,
-/* 334 */,
-/* 335 */,
-/* 336 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -33733,7 +33723,15 @@
 	var GameUtils = exports.GameUtils = function GameUtils() {};
 
 /***/ },
-/* 337 */
+/* 333 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	module.exports = __webpack_require__(70);
+
+/***/ },
+/* 334 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global, process) {'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol?"symbol":typeof obj;};/*!

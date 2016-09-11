@@ -357,8 +357,9 @@ class Card extends React.Component {
   render() {
     let selectable = this.props.handler ? 'selectable' : ''
     let selected = this.state.selected ? ' selected' : ''
-    return <img src={'images/cards/' + this.props.name + '.png'}
+    return <input type="image" src={'images/cards/' + this.props.name + '.png'}
       className={selectable + selected + ' card'}
+      tabIndex="0"
       alt={"Face of a tarot card called " + this.props.alt}
       onClick={() => {
         if (this.props.handler) {
