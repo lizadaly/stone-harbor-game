@@ -1,4 +1,5 @@
 import os
+import shutil
 
 from fabric.api import local, settings, abort, run, cd, env, put, runs_once, lcd, local, task
 from fabric.contrib.console import confirm
@@ -10,6 +11,7 @@ timestamp="release-%s" % int(time.time() * 1000)
 env.user = 'django'
 env.hosts = ['162.243.253.184']
 deploy_dir = 'deploy'
+dist_dir = 'dist'
 
 @task
 def deploy():
@@ -22,6 +24,26 @@ def deploy_qa():
     code_dir = '/home/django/apps/games/staging/stone-harbor'
     deploy_app(code_dir)
     register_deployment('.')
+
+@task
+def build():
+#    local('NODE_ENV=production webpack')
+    filename = 'stone-harbor-liza-daly-{}.zip'.format(timestamp)
+    filepath = os.path.join(dist_dir, filename)
+    distpath = os.path.join(dist_dir, "stone-harbor")
+    local('find . -name "*.DS_Store" -exec rm \'{}\' \;')
+    local('find . -name "*~" -exec rm \'{}\' \;')
+    local('find . -name "*.pyc" -exec rm \'{}\' \;')
+    shutil.rmtree(dist_dir, ignore_errors=True)
+    os.makedirs(distpath)
+    local('cp index.html ' + distpath)
+    local('cp -r images ' + distpath)
+    local('cp -r build ' + distpath)
+    local('cp -r css ' + distpath)
+    with lcd(dist_dir):
+        local("pwd")
+        local('zip -r ../{} {}'.format(filepath, "stone-harbor"))
+    print(filepath)
 
 def deploy_app(code_dir):
 
