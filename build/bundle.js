@@ -6565,7 +6565,7 @@
 	      'p',
 	      null,
 	      '“It’s Detective. And I need a psychic,” she says, handing you her ',
-	      React.createElement(_components.List, { expansions: ["card", 'card, which you flip over and read: <small>Tamisha Whitby, Criminal Investigations, Cape May County, NJ</small>'], tag: 'p0_nextUnit' }),
+	      React.createElement(_components.List, { expansions: ["card", 'card, which you flip over and read: <em>Tamisha Whitby, Criminal Investigations, Cape May County, NJ</em>'], tag: 'p0_nextUnit' }),
 	      '.'
 	    )
 	  ), React.createElement(
