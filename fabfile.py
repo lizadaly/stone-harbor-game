@@ -37,6 +37,8 @@ def build():
     shutil.rmtree(dist_dir, ignore_errors=True)
     os.makedirs(distpath)
     local('cp index.html ' + distpath)
+    local('cp LICENSE ' + distpath)
+    local('cp README ' + distpath)        
     local('cp -r images ' + distpath)
     local('cp -r build ' + distpath)
     local('cp -r css ' + distpath)
