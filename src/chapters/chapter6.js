@@ -209,8 +209,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         When I come back I won’t be so friendly.” You sigh. Everybody wants to play the wise guy.
       </p>
       <p>
-        One of the BMWs belongs to him. It’s got one of those car phones—first you’ve ever seen—
-        but he closes the door before you can hear who he calls. The car pulls out fast, fishtailing
+        One of the BMWs belongs to him.  The car pulls out fast, fishtailing
         on the gravel, and the resulting cloud of dust is sufficient cover for you to
         scamper back to the road with a quick look back.
       </p>
