@@ -27202,12 +27202,12 @@
 	    var _this = _possibleConstructorReturn(this, (_Deck.__proto__ || Object.getPrototypeOf(_Deck)).call(this, props));
 
 	    _this.cardvalues = {
-	      death: "Death",
-	      fool: "The Fool",
-	      justice: "Justice",
-	      man: "The Blonde Man",
-	      money: "Money",
-	      traitor: "The Traitor,"
+	      death: "A tarot card labelled Mortalité, depicting a grim skeleton holding a scythe",
+	      fool: "A tarot card labelled Folie, showing a shabbily-dressed man ",
+	      justice: "A tarot card labelled La Justice, depicting a crowned woman",
+	      man: "A tarot card labelled Garçon Blond, of a man holding a cup",
+	      money: "A tarot card labelled Argent, showing a set of coins and a man holding a scythe",
+	      traitor: "A tarot card labelled Traitre, depicted a robed man holding up a lantern"
 	    };
 	    return _this;
 	  }
@@ -27448,7 +27448,7 @@
 	      return React.createElement('input', { type: 'image', src: 'images/cards/' + this.props.name + '.png',
 	        className: selectable + selected + ' card',
 	        tabIndex: '0',
-	        alt: "Face of a tarot card called " + this.props.alt,
+	        alt: this.props.alt,
 	        onClick: function onClick() {
 	          if (_this6.props.handler) {
 	            _this6.setState({

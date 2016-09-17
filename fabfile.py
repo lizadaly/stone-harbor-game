@@ -17,17 +17,16 @@ dist_dir = 'dist'
 def deploy():
     code_dir = '/home/django/apps/games/stone-harbor'
     deploy_app(code_dir)
-#    register_deployment('.')
+    register_deployment('.')
 
 @task
 def deploy_qa():
     code_dir = '/home/django/apps/games/staging/stone-harbor'
     deploy_app(code_dir)
-    register_deployment('.')
 
 @task
 def build():
-#    local('NODE_ENV=production webpack')
+    local('NODE_ENV=production webpack')
     filename = 'stone-harbor-liza-daly-{}.zip'.format(timestamp)
     filepath = os.path.join(dist_dir, filename)
     distpath = os.path.join(dist_dir, "stone-harbor")
@@ -38,7 +37,7 @@ def build():
     os.makedirs(distpath)
     local('cp index.html ' + distpath)
     local('cp LICENSE ' + distpath)
-    local('cp README ' + distpath)        
+    local('cp README ' + distpath)
     local('cp -r images ' + distpath)
     local('cp -r build ' + distpath)
     local('cp -r css ' + distpath)
