@@ -3,6 +3,11 @@ an internet connection if available to download custom fonts and run some
 analytics (anonymized), but a connection is not required. The game
 engine was tested on modern versions of Chrome, Firefox, Safari, and IE (10+).
 
+It has been reviewed by an accessibility expert and verified to work with
+keyboard controls and with the following screenreaders:
+NVDA 2016.1 and Firefox 48.0.2 on Windows 7, (NVDA, JAWS 12) + (Firefox,
+Internet Explorer 11) on Windows, and Voiceover + Safari on iOS 10.
+
 The underlying software is in React/Redux (ES6) and is custom to this game.
 The source code is licensed under the MIT License. Probably better to use Twine
 though!
