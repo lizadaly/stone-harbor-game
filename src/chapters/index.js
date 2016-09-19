@@ -13,9 +13,12 @@ const ReactCSSTransitionGroup = require('react-addons-css-transition-group')
 const React = require('react')
 
 export const RenderSection = ({currentSection, sections}) => {
-  var sections = [...Array(currentSection + 1).keys()].map(i => {
-    return <div key={i}>{sections[i]}</div>
-      })
+  var sections = [...Array(currentSection + 1).keys()].map((item, i) => {
+    if (i === currentSection)
+      return <div key={item} aria-live="polite">{sections[item]}</div>
+    else
+      return <div key={item}>{sections[item]}</div>
+    })
 
   return (
     <div>

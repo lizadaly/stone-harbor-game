@@ -6343,11 +6343,15 @@
 	  var currentSection = _ref.currentSection;
 	  var sections = _ref.sections;
 
-	  var sections = [].concat(_toConsumableArray(Array(currentSection + 1).keys())).map(function (i) {
-	    return React.createElement(
+	  var sections = [].concat(_toConsumableArray(Array(currentSection + 1).keys())).map(function (item, i) {
+	    if (i === currentSection) return React.createElement(
 	      "div",
-	      { key: i },
-	      sections[i]
+	      { key: item, "aria-live": "polite" },
+	      sections[item]
+	    );else return React.createElement(
+	      "div",
+	      { key: item },
+	      sections[item]
 	    );
 	  });
 
@@ -6685,7 +6689,7 @@
 	  ), React.createElement(
 	    'div',
 	    { className: 'in-flashback' },
-	    React.createElement('figure', { className: 'prologue' }),
+	    React.createElement('figure', { className: 'prologue', alt: 'A small, cluttered study, with pictures and a wicker chair before a desk, in sepia tones.' }),
 	    React.createElement(
 	      'h3',
 	      null,
@@ -25365,7 +25369,7 @@
 	  ), React.createElement(
 	    'div',
 	    { className: 'in-flashback' },
-	    React.createElement('figure', { className: 'chapter1' }),
+	    React.createElement('figure', { className: 'chapter1', alt: 'The large, empty courtyard of an immense house, in washed out sepia tones' }),
 	    React.createElement(
 	      'h3',
 	      null,
@@ -25775,7 +25779,7 @@
 	  ), React.createElement(
 	    'div',
 	    { className: 'in-flashback' },
-	    React.createElement('figure', { className: 'chapter2' }),
+	    React.createElement('figure', { className: 'chapter2', alt: 'An old-fashioned parlor, with overstuffed chairs and a vase of wilted flowers, in black and white' }),
 	    React.createElement(
 	      'h3',
 	      null,
@@ -26611,7 +26615,7 @@
 	  ), React.createElement(
 	    'div',
 	    { className: 'in-flashback' },
-	    React.createElement('figure', { className: 'chapter4' }),
+	    React.createElement('figure', { className: 'chapter4', alt: 'A sunny motel patio, in bright, over-saturated yellows, against a clear blue sky ' }),
 	    React.createElement(
 	      'h3',
 	      null,
@@ -27953,7 +27957,7 @@
 	  ), React.createElement(
 	    'div',
 	    { className: 'in-flashback' },
-	    React.createElement('figure', { className: 'chapter7' }),
+	    React.createElement('figure', { className: 'chapter7', alt: 'Ocean waves, the color of old blue jeans' }),
 	    React.createElement(
 	      'h3',
 	      null,
@@ -28135,7 +28139,7 @@
 	  ), React.createElement(
 	    'div',
 	    { className: 'in-flashback' },
-	    React.createElement('figure', { className: 'chapter7-2' }),
+	    React.createElement('figure', { className: 'chapter7-2', alt: 'The front entrance to a fortune-teller\'s parlor, with signs advertising palm reading, in black and white' }),
 	    React.createElement(
 	      'h3',
 	      null,
@@ -29085,7 +29089,7 @@
 	    React.createElement(
 	      'p',
 	      null,
-	      'Thank you to tester Dan Schmidt.'
+	      'Thank you to testers Dan Schmidt and Deborah Kaplan.'
 	    ),
 	    React.createElement(
 	      'h3',
