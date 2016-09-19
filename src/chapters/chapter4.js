@@ -94,7 +94,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
     </section>,
     <div className="in-flashback">
-      <figure className="chapter4" />
+      <figure className="chapter4" alt="A sunny motel patio, in bright, over-saturated yellows, against a clear blue sky "/>
       <h3>At the motel</h3>
       <section>
         <p>Your first instinct is to reach up and cover your eyes with your hands, but of course you have neither.

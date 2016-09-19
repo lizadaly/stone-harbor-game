@@ -187,7 +187,7 @@ const _Prologue = ({currentSection, inventory}) => {
       <p><em>Something is very strange about that </em> <List expansions={["<psychic>glove</psychic>.", "— <br/><br/><p>You pick up the glove, and everything changes.</p>"]} tag="p0_glove2"  /></p>
     </section>,
       <div className="in-flashback">
-        <figure className="prologue"/>
+        <figure className="prologue" alt="A small, cluttered study, with pictures and a wicker chair before a desk, in sepia tones."/>
         <h3>In the study</h3>
         <section>
           <p>You look down and see nothing, as if you aren’t there. The color

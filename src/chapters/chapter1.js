@@ -15,7 +15,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
 
   var sections = [
     <section>
-      
+
       <h1>Stone Harbor</h1>
       <h5>Liza Daly</h5>
 
@@ -83,7 +83,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
     </section>,
     <div className="in-flashback">
-      <figure className="chapter1" />
+      <figure className="chapter1" alt="The large, empty courtyard of an immense house, in washed out sepia tones"/>
       <h3>In the courtyard</h3>
       <section>
         <p>

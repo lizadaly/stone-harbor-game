@@ -106,7 +106,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
     </section>,
     <div className="in-flashback">
-      <figure className="chapter7" />
+      <figure className="chapter7" alt="Ocean waves, the color of old blue jeans" />
       <h3>On the beach</h3>
       <section>
         <p>
@@ -194,7 +194,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </section>
     </div>,
     <div className="in-flashback">
-      <figure className="chapter7-2" />
+      <figure className="chapter7-2" alt="The front entrance to a fortune-teller's parlor, with signs advertising palm reading, in black and white"/>
       <h3>In her reading room</h3>
       <section>
         <p>
@@ -220,7 +220,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         <p>
           The curtain rattles, and a woman steps through: mid-thirties, faux-blonde, the spitting image of
           her daughter. This is Jared’s wife Allison.
-        </p> 
+        </p>
         <p>
           Your mother’s face animates as she slides into character. “Do you seek the wisdom of the ancients?”
           (You couldn’t even come up with your own routine.)

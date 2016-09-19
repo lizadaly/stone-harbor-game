@@ -103,7 +103,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         </p>
       </section>,
       <div className="in-flashback">
-        <figure className="chapter2" />
+        <figure className="chapter2" alt="An old-fashioned parlor, with overstuffed chairs and a vase of wilted flowers, in black and white"/>
         <h3>In the family room</h3>
         <section>
           <p>

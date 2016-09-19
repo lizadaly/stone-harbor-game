@@ -95,7 +95,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <h2>Credits</h2>
       <h3>Acknowledgments</h3>
       <p>
-        Thank you to tester Dan Schmidt.
+        Thank you to testers Dan Schmidt and Deborah Kaplan.
       </p>
 
       <h3>License</h3>
