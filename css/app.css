@@ -1841,4 +1841,14 @@ aside.about-modal {
     display: block;
     background: #f6f6f6; }
 
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
 /*# sourceMappingURL=app.css.map */
