@@ -214,7 +214,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         scamper back to the road with a quick look back.
       </p>
       <p>
-        Incredibly, Jimmy was hiding outside too: lying down in a derilict rowboat. He waves off the
+        Incredibly, Jimmy was hiding outside too: lying down in a derelict rowboat. He waves off the
         guys who spill out of the tavern to gawk—you imagine they deserve some gratitude for
         not ratting him out—but he’s still the arrogant prick you remember and he gets into his Porsche instead.
         He doesn’t seem to have noticed you or the sabotage to his vehicle.

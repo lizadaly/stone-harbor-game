@@ -80,7 +80,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         about his wife mentioning me. I guess she meant my mom.”
       </p>
       <p>
-        “Ally was into all that crap when she was a kid—’scuse my characterization.” You gesture magnaminously
+        “Ally was into all that crap when she was a kid—’scuse my characterization.” You gesture magnanimously
         for her to continue. “Maybe some of it rubbed off on her husband?”
       </p>
       <p>You get up, clean off your plate, and rejoin her at the table. You pull out the ring from a

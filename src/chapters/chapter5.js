@@ -16,7 +16,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         take a day off (can’t afford to), but you did get back to your normal life.
         Normal for you, which still involves working
         until midnight and sleeping through successive summer beach days.
-        It’s been beautiful, you hear: sea breeze, no mosquitos or biting flies,
+        It’s been beautiful, you hear: sea breeze, no mosquitoes or biting flies,
         great for business.
       </p>
       <p>
@@ -261,40 +261,40 @@ class _Deck extends React.Component {
         this.props.hands.map((hand, i) => {
           let func = i === this.props.hands.length - 1 && this.props.chosen.length < 3 ? this.onSelect.bind(this) : null,
             cards = hand.map((c) => <Card name={c} key={c + i} alt={this.cardvalues[c]} handler={func} />)
-          return <div key={'deck-' + i}>
-            <figure>
-              {cards}
-            </figure>
-            <Map from={this.props.chosen[i]} to={{
-              undefined: [<p>You consider which of these cards to choose from.</p>,
-              <p>You consider the second set.</p>,
-              <p>You consider the last set in the reading.</p>][i],
-              death: <p>“<em>Death</em>,” you say, gravely. “Often this merely signifies change, but in your case—”
-                You pause. “I sense that there has been a physical death recently, and an undeserved one.
-                Someone who you were once close with?” Healey wipes his face. “Their spirit holds you
-                accountable for what happened.
-                <AnyMap from={this.props.chosen} indexStart={i} to={
-                  {
-                    traitor: ` Because you are The Traitor.
-                    `,
-                    fool: ` Because you are the Fool.
-                    `,
-                    money: ` All for the want of money.`,
-                    man: ` You and the Blond Man both.`
-                  }
-                } />”
-              </p>,
-              fool: <p>“<em>The Fool</em>. The spirits are unclear. Is the fool someone you know? Or you?”</p>,
-              justice: <p>”<em>Justice</em> will eventually come for us all. Some sooner than later.”
-                When he says nothing, you continue. “Do you fear your own call to justice? The spirits
-                believe you should be. You should be very afraid.” Now you’ve got his attention.
-                <AnyMap from={this.props.chosen} indexStart={i} to={
-                  {
-                    traitor: ` “The Traitor will be punished for his disloyalty.”
-                    `,
-                    fool: ` “You are truly the Fool if you go willingly to your punishment without an attempt
-                    to sae yourself.”
-                    `,
+              return <div key={'deck-' + i}>
+                <figure>
+                  {cards}
+                </figure>
+                <Map from={this.props.chosen[i]} to={{
+                  undefined: [<p>You consider which of these cards to choose from.</p>,
+                  <p>You consider the second set.</p>,
+                  <p>You consider the last set in the reading.</p>][i],
+                  death: <p>“<em>Death</em>,” you say, gravely. “Often this merely signifies change, but in your case—”
+                    You pause. “I sense that there has been a physical death recently, and an undeserved one.
+                    Someone who you were once close with?” Healey wipes his face. “Their spirit holds you
+                    accountable for what happened.
+                    <AnyMap from={this.props.chosen} indexStart={i} to={
+                      {
+                        traitor: ` Because you are The Traitor.
+                        `,
+                        fool: ` Because you are the Fool.
+                        `,
+                        money: ` All for the want of money.`,
+                        man: ` You and the Blond Man both.`
+                      }
+                    } />”
+                  </p>,
+                  fool: <p>“<em>The Fool</em>. The spirits are unclear. Is the fool someone you know? Or you?”</p>,
+                  justice: <p>”<em>Justice</em> will eventually come for us all. Some sooner than later.”
+                    When he says nothing, you continue. “Do you fear your own call to justice? The spirits
+                    believe you should be. You should be very afraid.” Now you’ve got his attention.
+                    <AnyMap from={this.props.chosen} indexStart={i} to={
+                      {
+                        traitor: ` “The Traitor will be punished for his disloyalty.”
+                        `,
+                        fool: ` “You are truly the Fool if you go willingly to your punishment without an attempt
+                        to see yourself.”
+                        `,
                     death: ` “For what greater Justice can there be than in avenging a wrongful Death?”`,
                     man: ` “You hope that the Blond Man is the only one who will receive punishment. But
                     if you do nothing, if you continue to cower and hide, it is you alone who
