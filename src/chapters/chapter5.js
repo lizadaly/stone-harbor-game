@@ -208,7 +208,7 @@ class _Deck extends React.Component {
       justice: "A tarot card labelled La Justice, depicting a crowned woman",
       man: "A tarot card labelled Garçon Blond, of a man holding a cup",
       money: "A tarot card labelled Argent, showing a set of coins and a man holding a scythe",
-      traitor: "A tarot card labelled Traitre, depicted a robed man holding up a lantern"
+      traitor: "A tarot card labelled Traitre, depicting a robed man holding up a lantern"
     }
   }
   componentWillMount() {
