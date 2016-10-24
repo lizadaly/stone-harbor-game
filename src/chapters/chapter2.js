@@ -110,7 +110,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         <section>
           <p>
             You’ve never felt so small in your life—physically small. Even as a boy you were  big
-            for your age, often crashing into your mom's cheap but delicate new age baubles.
+            for your age, often crashing into your mom’s cheap but delicate new age baubles.
             But now you are hemmed in on all sides by
             gargantuan walls of solid furniture and you feel downright tiny.
           </p>
@@ -131,7 +131,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>“No thank you, Aunt Maggie,” the girl says. She hugs
       the doll in a grip which would probably kill a small animal, but the doll loves it.</p>
       <p>
-        Her aunt nods and says to her husband, “I'll get you your iced tea, dear.”
+        Her aunt nods and says to her husband, “I’ll get you your iced tea, dear.”
       </p>
       <p>Healey wears huge thick glasses and is bald but for a few wisps that could use trimming.
         Probably his wife cuts his hair after a lot of fussing and protesting. With an ache, you realize she’ll never
@@ -153,7 +153,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>The second she’s out of sight, Healey picks up a heavy black telephone from
         a side table and settles it on his lap. ”You play with Vicky now, Sarah. Uncle Alan
       just needs to make a quick phone call.” The little girls nods and hums to the doll tunelessly.</p>
-      <p>Healey dials the rotary phone slowly; it's obviously painful for his hands to operate. It’s a short
+      <p>Healey dials the rotary phone slowly; it’s obviously painful for his hands to operate. It’s a short
         number, local. His conversation is muffled and unintelligible because he doesn’t want the girl
         to overhear. You catch words here and there—“never”,  “that money”,
         and then he says angrily, “How could you?” and the girl, Sarah, looks up in alarm, letting go of the
