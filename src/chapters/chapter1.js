@@ -155,7 +155,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         Everyone is staring at you.
       </p>
       <p>
-        "He’s all right,” Whitby says to the room. She’s pulling the cigar cutter from your clenched fist. Her
+        “He’s all right,” Whitby says to the room. She’s pulling the cigar cutter from your clenched fist. Her
         hand feels fiery hot against your skin, but it’s you that’s cold.
       </p>
       <p>“What did I do?” you whisper, and try to sit up straight.</p>
