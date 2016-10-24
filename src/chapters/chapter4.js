@@ -106,7 +106,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         </p>
         <p>
           Across the street, an electronic bank sign tells you it’s just past dawn, explaining why the
-          motel is deserted. There's a temperature reading too and it’s surprisingly cool;
+          motel is deserted. There’s a temperature reading too and it’s surprisingly cool;
           trapped in this vision it feels like the most unforgiving midday, under a boiling solar spotlight
           with no place to hide. It all adds up to an overwhelming sense that you’re being watched.
         </p>
