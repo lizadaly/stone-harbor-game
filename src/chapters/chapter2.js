@@ -37,7 +37,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         she barks. “Just tell me where it is.”
       </p>
       <p>
-        “Don't want me planting any evidence?”
+        “Don’t want me planting any evidence?”
       </p>
       <p>
         “Exactly.”
