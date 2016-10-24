@@ -175,7 +175,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         “Classy guys,” you mutter. You’re crouched behind
         one of many equally showy cars in the parking lot: a couple new BMWs, a
-        bright red Corvette, and Jimmy Troiano's gold Porsche.
+        bright red Corvette, and Jimmy Troiano’s gold Porsche.
         You
         bend over and dart behind Jimmy’s car, keeping an eye on the tavern. If someone
         comes out, they’ll spot you in a minute.
