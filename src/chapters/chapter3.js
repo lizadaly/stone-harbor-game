@@ -7,7 +7,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
   var sections = [
     <section>
       <h2>Chapter Three</h2>
-      <h3>In Whitby's office</h3>
+      <h3>In Whitby’s office</h3>
       <p>
         You were certain you’d never get to sleep but last night you felt a whole-body weariness unlike
         anything since you were a kid. You remember summer days when it was too hot to be in the reading room—
@@ -91,21 +91,21 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         She flips <List expansions={["another picture", "a picture of two adult twins"]} tag="c1_photos3" /> over.</p>
     </section>,
     <section>
-      <p>“Michael and Michelle Herschel,” she says, and you can't help but snort. “Yeah, no points for
+      <p>“Michael and Michelle Herschel,” she says, and you can’t help but snort. “Yeah, no points for
         originality. These two are Alan’s niece and nephew—their mom was Christina, Alan and Jared’s older
         sister, but she passed away some years back. The twins still live in her house over in Sea Isle.
       Don’t know them personally.”</p>
       <p>“Last one,” she says, and hands you <List expansions={["a photo of a woman you recognize", "a photo of Maggie Healey"]} tag="c1_photos4"/>.</p>
     </section>,
     <section>
-      <p>“Margaret, or Maggie. Lovely woman, but tough as nails too, as you saw. From what I hear she'd be the
+      <p>“Margaret, or Maggie. Lovely woman, but tough as nails too, as you saw. From what I hear she’d be the
         first one to bail you out of trouble and also the first to toss you  on the
-        street if you screwed up again. If more people were like her I'd be out of a job.”
+        street if you screwed up again. If more people were like her I’d be out of a job.”
       </p>
       <p>“She didn’t kill him,” you say, surprising even yourself. “I saw the way she looked at him, the night
       that he died. She was worried about him. She loved him.”</p>
       <p>
-        “I think so too, but you never know,” she says, a little sadly. “Everyone I've shown you here
+        “I think so too, but you never know,” she says, a little sadly. “Everyone I’ve shown you here
         was at or near the Healey estate the weekend that he died.
         If we were pursuing this as an active murder investigation they’d all be under
         close watch, but—a locked door, a common medication, an elderly victim?
@@ -129,7 +129,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         You’re flipping through a 1982 issue of <em>Reader’s Digest</em> (worse, you think you read this one already)
         when a woman begins arguing with an impassive young officer:
         “But Detective Whitby specifically told me to come in now!” You look up
-        and with surprise recognize Healey's older niece Michelle from her photo.
+        and with surprise recognize Healey’s older niece Michelle from her photo.
       </p>
       <p>She’s told to cool her heels and she sits down across from you in one of the few empty chairs.</p>
       <p>Absolutely, positively, you should not engage with this woman. This is police business and she’s
