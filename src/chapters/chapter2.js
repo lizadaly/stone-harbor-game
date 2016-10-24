@@ -16,7 +16,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         You barely talk on the ride over. You stopped by your storefront on the way to formally close
         up for the afternoon. It’s Saturday and there are huge crowds at the beach, so you flipped the sign to <small>closed</small> with more than a little
         regret. On the other hand, you realize this was probably a day off for Whitby. You wonder what it’s like to have
-        friends who'd do this kind of a favor for you.
+        friends who’d do this kind of a favor for you.
       </p>
       <p>
         The house is just as you remember from the vision: sprawling, white, faux classical,
