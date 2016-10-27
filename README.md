@@ -6,7 +6,9 @@ Read online: [Stone Harbor](https://stoneharborgame.com/)
 
 Stone Harbor was entered as part of the [2016 Interactive Fiction Competition](https://ifcomp.org).
 
-* Review by Emily Short in [Rock Paper Shotgun](https://www.rockpapershotgun.com/2016/10/12/if-comp-2016-best-games/)
+* [Review in Rock Paper Shotgun](https://www.rockpapershotgun.com/2016/10/12/if-comp-2016-best-games/) by <a href="https://twitter.com/emshort">Emily Short</a>
+* Discussion on <a href="http://www.theshortgame.net/104-more-ifcomp-2016/">The Short Game</a> podcast by <a href="https://twitter.com/laurajnash">Laura Nash</a>
+
 
 ![Stone Harbor cover](https://lizadaly.com/static/main/images/cover-small.png)
 
