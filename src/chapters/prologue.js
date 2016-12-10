@@ -162,16 +162,16 @@ const _Prologue = ({currentSection, inventory}) => {
         Her mother’s not in the picture anymore but I know she’d—I feel—” The detective looks
         uncomfortable, like a lot of your customers do at first.
       “She a very... spiritual person. She believes easily.” Whitby pauses again.</p>
-      <p>“You mean she’s gullible,“ you say.</p>
-      <p>The detective scowls. ”I don’t want to be
+      <p>“You mean she’s gullible,” you say.</p>
+      <p>The detective scowls. “I don’t want to be
         here any more than you want me here.
         He was an old man with poor vision who misread his dosage. I’m fulfilling a favor
-        to an old friend and—“ She reaches into her
+        to an old friend and—” She reaches into her
         pocket, searching for something. “Allison, my friend, told me if anything violent happened in the family,
         if there was ever a reason to think her daughter was in danger, I should come see the psychic here.
         That she’d listened to her, and would be able to help—”
       </p>
-      <p>“Right, <em>she</em>,” you snap. “My mother was ’The Great Francesca.’ This was her business,
+      <p>“Right, <em>she</em>,” you snap. “My mother was ‘The Great Francesca.’ This was her business,
         and then she died.”
       </p>
       <p>
@@ -180,7 +180,7 @@ const _Prologue = ({currentSection, inventory}) => {
       <p>You’re angry too, though you’re not sure why.
         “And now I operate it. For tourists and suckers. <i>For entertainment purposes only.</i>”</p>
       <p>“I knew this was a waste of time,” Whitby says. She tosses
-        a <List expansions={["leather glove", "<psychic>tense and furious glove</psychic>"]} tag="p0_glove"/> on the desk. ”There, I did what I came to do.”
+        a <List expansions={["leather glove", "<psychic>tense and furious glove</psychic>"]} tag="p0_glove"/> on the desk. “There, I did what I came to do.”
       </p>
     </section>,
     <section>
