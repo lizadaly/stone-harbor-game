@@ -95,7 +95,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         partially to blame.”
       </p>
       <p>
-        She’s worried about you and wants you to see it. “I called you over because it sounded from
+        She’s worried about you and wants you to see it. “I called you over because it sounded
         like you could use some company. Plus Hank
         made too much spaghetti again.” She touches your arm. “We’re here for you. And I’m no psychic,
         but we’re almost to the bottom of this thing. I know it.”
