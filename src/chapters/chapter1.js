@@ -6,7 +6,7 @@ import { RenderSection } from '.'
 const _Chapter = ({currentSection, inventory, chapterId}) => {
   var libraryMaps = {
     note: `You recite what the note said, word-for-word. You describe the
-    lettering, the handwriting like "someone formally taught but with a slight tremor."`,
+    lettering, the handwriting like “someone formally taught but with a slight tremor.”`,
     photograph: `"It was a family photo, posed. Four adults and a girl. Two of the adults were
     young. They looked like brother and sister."`,
     prescription: `"It was Capoten. To be taken three times daily. 100 mg."`
@@ -63,7 +63,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
     </section>,
     <section>
-      <p>“Jesus Christ is that blood?” Instinctively you’re trying to push back from table but you’re in a booth, there’s nowhere to go.</p>
+      <p>“Jesus Christ is that blood?” Instinctively you’re trying to push back from the table but you’re in a booth, there’s nowhere to go.</p>
       <p>“Do you sense anything from it?” she asks blandly, like surprising people with bloody evidence is the most
       ordinary thing in the world. Maybe this is what cops do for fun.</p>
       <p>“No! What the hell is wrong with you?”</p>
