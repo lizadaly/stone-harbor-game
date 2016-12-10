@@ -117,7 +117,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         </p>
         <p>
           This close you can see the resemblance between the brothers. Jared, younger, and Alan, older,
-          but cut from the same model, in body if not in spirit. Alan is more spry than you’d thought— the man walked down that steep path to get here. He also seems fueled by rage.
+          but cut from the same model, in body if not in spirit. Alan is more spry than you’d thought—the man walked down that steep path to get here. He also seems fueled by rage.
         </p>
         <p>
           “Haven’t I given you <em>enough</em>?” he says. He’s leaning on a <smallcaps>Private Property</smallcaps> sign,
@@ -284,7 +284,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         “I can see, it so clearly. They’re coming into your house while you sleep. Two bad men are
         creeping into your daughter’s bedroom
-        and they’ll make it look like a burglary. Atlantic City is so violent, they’ll say. ‘Nobody
+        and they’ll make it look like a burglary. ‘Atlantic City is so violent,’ they’ll say. ‘Nobody
         should raise a family there; they should’ve stayed in Stone Harbor.’”
       </p>
       <p>
@@ -316,7 +316,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         she says.
       </p>
       <p>
-        “This seems so unfair. None of this has even happened yet–”
+        “This seems so unfair. None of this has even happened yet—”
       </p>
       <p>
         “It <em>is</em> unfair. You have to sacrifice your own happiness and leave her, to set these events in motion.”
@@ -361,7 +361,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         He looks back towards the kitchen. “Already do.”
       </p>
       <p>
-        Whitby thunders into the living room, holstering a gun that appeared from nowhere
+        Whitby thunders into the living room, holstering a gun that appeared from nowhere,
         and bodily lifts you up by the elbow. “Nobody’s seen the girl
         for days. Goddammit.”
       </p>
