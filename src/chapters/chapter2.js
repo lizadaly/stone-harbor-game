@@ -25,7 +25,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         shore it’s easy to find rich people to resent, but the Healeys’ place feels like a home.
       </p>
       <p>
-        “The wife is staying with her sister so nobody’s here,” Whitby says, getting out of the car. ”But I couldn’t let you in even I wanted to.” It’s quite clear she
+        “The wife is staying with her sister so nobody’s here,” Whitby says, getting out of the car. “But I couldn’t let you in even if I wanted to.” It’s quite clear she
         doesn’t want to.
       </p>
       <p>
@@ -57,7 +57,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “Who are you? What are you doing here?”
       </p>
       <p>You turn with a start. It’s an older woman, alarmed at your presence. Her clothes
-        are <List expansions={["expensive", "but also a bit haphazardly put together; not everything matches"]} tag="c2_clothes" nextUnit={null} />.
+        are <List expansions={["expensive", "expensive but also a bit haphazardly put together; not everything matches"]} tag="c2_clothes" nextUnit={null} />.
         She’s carrying a <List expansions={["duffel bag", "duffel bag, which from the way she carries it suggests it’s both full and heavy"]} tag="c2_duffel" nextUnit={null}/>.
         Her <List expansions={["eyes are sharp", "eyes are sharp, but rheumy, like she’s been crying"]} tag="c2_eyes" />.
       </p>
@@ -88,7 +88,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         She reaches into the duffel bag and moves to offer you something—you, because you’re standing
         right by her—and you’re struck by a wave of fear that physically knocks
         you back. She looks puzzled at your reaction, but steps forward, holding the
-        object out for you. Your vision is so distorted that can’t make it out even though it’s in front
+        object out for you. Your vision is so distorted that you can’t make it out even though it’s in front
         of your face.
       </p>
       <p>Whitby sees your distress and starts running up the steps across the patio. “Thank you, Mrs. Healey,
@@ -116,8 +116,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
           </p>
           <p>
             A young girl, carrying the <List expansions={["doll", "happy doll"]} tag="c2_doll2" nextUnit="none" />, runs into the room and settles comfortably into a
-            high-backed chair. She’s followed by an <List expansions={["older man", "kindly looking older man", "older man who you know to be Alan Healey"]} tag="c2_healey" nextUnit="none" /> and
-            a <List expansions={["woman", "woman of the same age", "woman you now recognize as Healey's wife"]} tag="c2_margaret" />.
+            high-backed chair. She’s followed by <List expansions={["an older man", "a kindly looking older man", "an older man who you know to be Alan Healey"]} tag="c2_healey" nextUnit="none" /> and
+            <List expansions={["a woman", "a woman of the same age", "a woman you now recognize as Healey's wife"]} tag="c2_margaret" />.
           </p>
         </section>
       </div>,
@@ -151,8 +151,8 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         happened. She chooses to believe the fake smile and exits the room.
       </p>
       <p>The second she’s out of sight, Healey picks up a heavy black telephone from
-        a side table and settles it on his lap. ”You play with Vicky now, Sarah. Uncle Alan
-      just needs to make a quick phone call.” The little girls nods and hums to the doll tunelessly.</p>
+        a side table and settles it on his lap. “You play with Vicky now, Sarah. Uncle Alan
+      just needs to make a quick phone call.” The little girl nods and hums to the doll tunelessly.</p>
       <p>Healey dials the rotary phone slowly; it’s obviously painful for his hands to operate. It’s a short
         number, local. His conversation is muffled and unintelligible because he doesn’t want the girl
         to overhear. You catch words here and there—“never”,  “that money”,
