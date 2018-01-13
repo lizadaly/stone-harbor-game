@@ -116,8 +116,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
           </p>
           <p>
             A young girl, carrying the <List expansions={["doll", "happy doll"]} tag="c2_doll2" nextUnit="none" />, runs into the room and settles comfortably into a
-            high-backed chair. She’s followed by <List expansions={["an older man", "a kindly looking older man", "an older man who you know to be Alan Healey"]} tag="c2_healey" nextUnit="none" /> and
-            <List expansions={["a woman", "a woman of the same age", "a woman you now recognize as Healey's wife"]} tag="c2_margaret" />.
+            high-backed chair. She’s followed by <List expansions={["an older man", "a kindly looking older man", "an older man who you know to be Alan Healey"]} tag="c2_healey" nextUnit="none" /> and <List expansions={["a woman", "a woman of the same age", "a woman you now recognize as Healey's wife"]} tag="c2_margaret" />.
           </p>
         </section>
       </div>,
