@@ -145,7 +145,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “You should wait for—”
       </p>
       <p>
-        “No. That’s I’m here to do.” You open the <List expansions={["door to the right", "door to Healey’s room"]} tag="c8_bedroomdoor" />.
+        “No. That’s what I’m here to do.” You open the <List expansions={["door to the right", "door to Healey’s room"]} tag="c8_bedroomdoor" />.
       </p>
     </section>,
     <section>
