@@ -57,7 +57,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         “Who are you? What are you doing here?”
       </p>
       <p>You turn with a start. It’s an older woman, alarmed at your presence. Her clothes
-        are <List expansions={["expensive", "but also a bit haphazardly put together; not everything matches"]} tag="c2_clothes" nextUnit={null} />.
+        are <List expansions={["expensive", "expensive but also a bit haphazardly put together; not everything matches"]} tag="c2_clothes" nextUnit={null} />.
         She’s carrying a <List expansions={["duffel bag", "duffel bag, which from the way she carries it suggests it’s both full and heavy"]} tag="c2_duffel" nextUnit={null}/>.
         Her <List expansions={["eyes are sharp", "eyes are sharp, but rheumy, like she’s been crying"]} tag="c2_eyes" />.
       </p>

@@ -7,3 +7,5 @@ ve
 deploy
 build/*.map
 dist
+fabfile.py
+build
