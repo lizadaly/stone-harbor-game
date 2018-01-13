@@ -36,7 +36,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         He almost knocks over Nicki Troiano as she tries to enter as he’s leaving.
-        “Sorry!” he calls from the down the hall.
+        “Sorry!” he calls from down the hall.
       </p>
       <p>
         Nicki has a kid just starting freshman year, which is fine; the father is out of the
@@ -71,7 +71,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         making progress. Maybe 1/100th of the way there.
       </p>
       <p>
-        “Well, if you aren’t too busy, Paul would love to see you.” Paul‘s her son. He’s quiet, like
+        “Well, if you aren’t too busy, Paul would love to see you.” Paul’s her son. He’s quiet, like
         you were.
       </p>
       <p>
