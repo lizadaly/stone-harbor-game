@@ -287,7 +287,7 @@ class _Deck extends React.Component {
                   fool: <p>“<em>The Fool</em>. The spirits are unclear. Is the fool someone you know? Or you?”</p>,
                   justice: <p>”<em>Justice</em> will eventually come for us all. Some sooner than later.”
                     When he says nothing, you continue. “Do you fear your own call to justice? The spirits
-                    believe you should be. You should be very afraid.” Now you’ve got his attention.
+                    believe you should. You should be very afraid.” Now you’ve got his attention.
                     <AnyMap from={this.props.chosen} indexStart={i} to={
                       {
                         traitor: ` “The Traitor will be punished for his disloyalty.”
