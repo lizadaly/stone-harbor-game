@@ -85,7 +85,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
     </section>,
     <section>
-      <p>“This picture's a few years old, she's eleven now.”
+      <p>“This picture’s a few years old, she’s eleven now.”
         Whitby considers her for a moment. “Everyone loves that little girl. Not just because
         her mom skipped out on her; she’s just a sweet kid.”
         She flips <List expansions={["another picture", "a picture of two adult twins"]} tag="c1_photos3" /> over.</p>
@@ -235,7 +235,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         Too late, you remember that <em>she’s</em> rich. Or
-        at least her family is. Funny how that‘s not always the same thing.
+        at least her family is. Funny how that’s not always the same thing.
         “And you?” you ask, hoping to change the subject.
       </p>
       <p>
