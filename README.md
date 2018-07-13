@@ -10,7 +10,7 @@ Read online: [Stone Harbor](https://stoneharborgame.com/)
 * Discussion on <a href="http://www.theshortgame.net/104-more-ifcomp-2016/">The Short Game</a> podcast by <a href="https://twitter.com/laurajnash">Laura Nash</a>
 
 
-![Stone Harbor cover](https://lizadaly.com/static/main/images/cover-small.png)
+![Stone Harbor cover](https://lizadaly.com/images/stoneharbor.png)
 
 Stone Harbor is authored in [Windrift](https://github.com/lizadaly/windrift), a framework
 for writing web-based interactive stories.
