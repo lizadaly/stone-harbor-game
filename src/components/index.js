@@ -1,5 +1,6 @@
 const React = require('react')
-const ReactCSSTransitionGroup = require('react-addons-css-transition-group')
+
+import ReactCSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import { showNextSection, showNextChapter, updateInventory, setExpansions, updateStateCounter } from "../actions"
 import { inverter } from '../lib'
 import { connect } from 'react-redux'

@@ -1,7 +1,7 @@
 {
-  "name": "foundation-sites-template",
+  "name": "stone-harbor-game",
   "version": "1.0.0",
-  "description": "Basic template for a new Foundation for Sites project.",
+  "description": "Stone Harbor by Liza Daly",
   "main": "gulpfile.js",
   "devDependencies": {
     "babel-plugin-transform-runtime": "^6.9.0",
@@ -10,22 +10,15 @@
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-load-plugins": "^1.1.0",
-    "gulp-sass": "^2.1.0",
-    "redux-devtools": "^3.3.1"
+    "redux-devtools": "^3.3.1",
+    "node-gyp": "^3.7.0",
+    "nan": "^2.10"
   },
   "scripts": {
     "start": "gulp",
-    "build": "gulp sass"
+    "build": "gulp"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zurb/foundation-sites-template.git"
-  },
-  "bugs": {
-    "url": "https://github.com/zurb/foundation-sites/issues",
-    "email": "foundation@zurb.com"
-  },
-  "author": "ZURB <foundation@zurb.com>",
+  "author": "Liza Daly <lizadaly@gmail.com>",
   "license": "MIT",
   "private": true,
   "dependencies": {
@@ -48,6 +41,7 @@
     "react-dom": "^15.0.1",
     "react-markdown": "^2.2.0",
     "react-redux": "^4.4.5",
+    "react-transition-group": "^1.2.1",
     "redux": "^3.5.2",
     "redux-persist": "^3.2.2",
     "webpack": "^1.13.0"

@@ -24,3 +24,29 @@ Internet Explorer 11) on Windows, and Voiceover + Safari on iOS 10.
 The game text and derived images are released under a Creative Commons
 Attribution 4.0 International License. The epilogue of the game includes
 credit for the original images, which are either public domain or CC-BY or CC-BY-NC.
+
+## Running locally
+
+Stone Harbor has been developed on a Mac but should run in any
+environment that support JavaScript. You may need a C compiler to
+build some JS dependencies.
+
+To set up a local copy of Stone Harbor, do the following:
+
+```
+npm install
+```
+
+To run it on a Mac or Unix-like environment, use the `runserver.sh`
+script:
+
+```
+bash runserver.sh
+```
+
+This will start up a small HTTP server with Python 3. (If you have
+Python 2 only, see the script for what to uncomment.)
+
+Now the story should be available as:
+
+http://localhost:8000/
