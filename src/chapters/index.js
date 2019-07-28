@@ -9,7 +9,8 @@ export * from "./chapter7.js"
 export * from "./chapter8.js"
 export * from "./epilogue.js"
 
-const ReactCSSTransitionGroup = require('react-addons-css-transition-group')
+
+import ReactCSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 const React = require('react')
 
 export const RenderSection = ({currentSection, sections}) => {
