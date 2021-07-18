@@ -1591,8 +1591,7 @@ kbd {
   float: left; }
 
 .top-bar-right {
-  float: right;
-}
+  float: right; }
 
 .wf-loading * {
   visibility: hidden; }
