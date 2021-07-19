@@ -40,7 +40,7 @@
 
         var reset = function(e) {
             e.preventDefault();
-            var conf = confirm("Restart the game from the beginning?");
+            var conf = confirm("Recomeçar o jogo do início?");
             if (conf) {
                 localStorage.clear();
                 location.replace(window.location.href);
@@ -80,16 +80,16 @@
     <nav class="top-bar">
         <div class="top-bar-left">
             <ul class="menu">
-                <li id="about-toggle" class="about-toggle"><a href="#" onClick="about(event)">About</a>
+                <li id="about-toggle" class="about-toggle"><a href="#" onClick="about(event)">ACERCA</a>
                     <aside id="about-modal" class="about-modal">
                         <p>
-                            <i>Stone Harbor</i> is an interactive short story by <a href="https://lizadaly.com/">Liza Daly</a>
-                            entered into the <a href="https://ifcomp.org">2016 Interactive Fiction Competition</a>.
-                            Contact info: <a href="mailto:lizadaly@gmail.com">lizadaly@gmail.com</a>.
+                            <i>Stone Harbor</i> é um conto interativo de <a href="https://lizadaly.com/">Liza Daly</a>
+                            apresentado à <a href="https://ifcomp.org">edição de 2016 da Competição de Ficção Interativa</a>.
+                            Contacto: <a href="mailto:lizadaly@gmail.com">lizadaly@gmail.com</a>.
                             <br/><br/>
-                            <a href="pt/">Portuguese translation</a> by Jose Albuquerque da Costa Dias.
+                            <a href="pt/">Tradução portuguesa</a> de José Carlos Dias.
                         </p>
-                        <div class="close"><a href="#" onClick="about(event)"><small>close</small></a></div>
+                        <div class="close"><a href="#" onClick="about(event)"><small>fechar</small></a></div>
 
                     </aside>
                 </li>
@@ -97,9 +97,9 @@
         </div>
         <div class="top-bar-right">
             <ul class="menu">
-                <li><a href="#" onClick="reset(event)">Restart</a></li>
-                <li><a href="#" onClick="reverse(event)">Night Mode</a></li>
-                <li>Português | <a style="display: inline; padding: 0; text-decoration: underline; text-transform: none" href="..">Inglês</a></li>
+                <li><a href="#" onClick="reset(event)">RECOMEÇAR</a></li>
+                <li><a href="#" onClick="reverse(event)">Modo Noturno</a></li>
+                <li>PT | <a style="display: inline; padding: 0; text-decoration: underline; text-transform: none" href="..">EN</a></li>
 
             </ul>
         </div>
