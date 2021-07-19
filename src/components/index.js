@@ -7,7 +7,7 @@ import { connect } from 'react-redux'
 
 /* A nextChapter link */
 export const NextChapter = ({chapter}) => (
-  <div className="next-chapter-link"><List expansions={["Continue", ""]} tag={"c" + chapter + "next"} nextUnit="chapter"/></div>
+  <div className="next-chapter-link"><List expansions={["Continuar", ""]} tag={"c" + chapter + "next"} nextUnit="chapter"/></div>
 )
 
 /* A Link that the user interacts with to potentially change state */
