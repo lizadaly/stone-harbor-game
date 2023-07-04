@@ -22,7 +22,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Build
+    - name: Install
       run: |
         npm install
-
+    - name: Run 
+      run: |
+        npx gulp sass
