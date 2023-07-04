@@ -7,5 +7,7 @@ python3 -m http.server --cgi 8000 &
 # replace with:
 # python -m SimpleHTTPServer 8000
 
+echo "Running on port 8000"
+
 # Watch for changes to the build
 node_modules/webpack/bin/webpack.js -w &
