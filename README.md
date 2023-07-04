@@ -27,10 +27,6 @@ credit for the original images, which are either public domain or CC-BY or CC-BY
 
 ## Running locally
 
-Stone Harbor has been developed on a Mac but should run in any
-environment that support JavaScript. You may need a C compiler to
-build some JS dependencies.
-
 To set up a local copy of Stone Harbor, do the following:
 
 ```
@@ -44,9 +40,12 @@ script:
 bash runserver.sh
 ```
 
-This will start up a small HTTP server with Python 3. (If you have
-Python 2 only, see the script for what to uncomment.)
+This will start up a small HTTP server with Python 3. 
 
 Now the story should be available as:
 
 http://localhost:8000/
+
+## Running the Portuguese translation
+
+In the `pt/` directory, follow the same steps. The `runserver.sh` script will run the translation on port 8001. (The language toggle in the upper right of the UI is only meant to work on the deployed server.)

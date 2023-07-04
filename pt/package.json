@@ -45,5 +45,8 @@
     "redux": "^3.5.2",
     "redux-persist": "^3.2.2",
     "webpack": "1.13.0"
+  },
+  "overrides": {
+    "graceful-fs": "^4.2.11"
   }
 }
