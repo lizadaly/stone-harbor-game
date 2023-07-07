@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="no-js" lang="pt">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Stone Harbor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <script>
+
+        var reset = function(e) {
+            e.preventDefault();
+            var conf = confirm("Recomeçar o jogo do início?");
+            if (conf) {
+                localStorage.clear();
+                location.replace(window.location.href);
+            }
+        }
+
+        /* Toggle night mode */
+        var reverse = function(e) {
+                e.preventDefault();
+                var mode = localStorage.getItem("nightMode");
+                if (mode == null || mode === 'false') { // truthy
+                    mode = 'true';
+                } else {
+                    mode = 'false';
+                }
+                localStorage.setItem("nightMode", mode);
+                document.getElementById('body').classList.toggle('nightmode', mode === 'true');
+            }
+            /* Toggle About modal */
+        var about = function(e) {
+            e.preventDefault();
+            document.getElementById('about-modal').classList.toggle('open');
+            document.getElementById('about-toggle').classList.toggle('open');
+        }
+    </script>
+
+    <meta name="keywords" content="ifcomp interactive fiction experimental narrative" />
+    <meta name="description" content="In the summer of ’85, a boardwalk psychic is reluctantly faced with the possibility that he might not be a fraud after all." />
+    <meta name="author" content="Liza Daly" />
+    <meta name="copyright" content="Liza Daly 2016" />
+    <link rel="icon" href="images/icon.png" />
+    <link rel="stylesheet" href="css/app.css" />
+</head>
+
+<body id="body">
+
+    <nav class="top-bar">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li id="about-toggle" class="about-toggle"><a href="#" onClick="about(event)">ACERCA</a>
+                    <aside id="about-modal" class="about-modal">
+                        <p>
+                            <i>Stone Harbor</i> é um conto interativo de <a href="https://lizadaly.com/">Liza Daly</a>
+                            apresentado à <a href="https://ifcomp.org">edição de 2016 da Competição de Ficção Interativa</a>.
+                            Contacto: <a href="mailto:lizadaly@gmail.com">lizadaly@gmail.com</a>.
+                            <br/><br/>
+                            Tradução portuguesa de José Carlos Dias.
+                        </p>
+                        <div class="close"><a href="#" onClick="about(event)"><small>fechar</small></a></div>
+
+                    </aside>
+                </li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><a href="#" onClick="reset(event)">RECOMEÇAR</a></li>
+                <li><a href="#" onClick="reverse(event)">Modo Noturno</a></li>
+                <li>PT | <a style="display: inline; padding: 0 20px 0 0; text-decoration: underline; text-transform: none" href=".." title="English">EN</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+    <!-- Body -->
+    <article id="article" class="row columns">
+    </article>
+    <script defer src="build/bundle.js"></script>
+
+</body>
+
+</html>
