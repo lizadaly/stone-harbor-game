@@ -46,6 +46,6 @@ Now the story should be available as:
 
 http://localhost:8000/
 
-## Running the Portuguese translation
+## Running the translations
 
-In the `pt/` directory, follow the same steps. The `runserver.sh` script will run the translation on port 8001. (The language toggle in the upper right of the UI is only meant to work on the deployed server.)
+In the `pt/` or `es/` directory, follow the same steps. The `runserver.sh` script will run the translation on a different URL. (The language toggle in the upper right of the UI is only meant to work on the production site.)

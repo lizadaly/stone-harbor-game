@@ -7,7 +7,7 @@ python3 -m http.server --cgi 8001 &
 # replace with:
 # python -m SimpleHTTPServer 8000
 
-echo "Running PT translation on port 8001"
+echo "Running PT translation on port 8001, view at http://localhost:8001"
 
 # Watch for changes to the build
 node_modules/webpack/bin/webpack.js -w &
