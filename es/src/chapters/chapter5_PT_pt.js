@@ -9,30 +9,38 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
   var sections = [
     <section>
       <h2>Capítulo V</h2>
-      <h3>Na tua sala de leitura</h3>
-      <p>"Procuras a sabedoria dos anciões? Avança!"</p>
+      <h3>En tu sala de lectura</h3>
+      <p>"¿Buscas el conocimiento de los sabios? ¡Ven!"</p>
       <p>
-        Não foste visitar nenhum amigo (já todos desistiram de receber novas tuas) nem tiraste um dia de folga (não te podes dar ao luxo). Voltaste, sim, à tua vida normal. Normal para ti, o que implica trabalhar até à meia-noite e passar os dias da época balnear a dormir. Tem estado uma maravilha, ouves dizer: brisa marítima, nada de mosquitos nem daquelas moscas que ferram, ótimo para o negócio.
+        No visitaste a un amigo (porque ya no quieren escuchar de ti) y no te tomaste el día
+        (porque no puedes permitirtelo), pero si lograste volver a tu vida cotidiana.
+        Cotidiana para ti, lo cual todavía incluye trabajar hasta la medianoche y dormir
+        durante varias noches de playa/verano.
+        Es hermoso, oyes el mar y no hay mosquitos ni insectos molestos, es perfecto para trabajar.
       </p>
       <p>
-        A cliente é uma rapariga pré-adolescente. Normalmente, manda-las embora a não ser que venham com o pai ou a mãe, mas como estás de mau humor  aceitas de bom grado o dinheiro dela. Raparigas adolescentes só se interessam por rapazes por isso vais direto ao assunto. "Vejo um nome," dizes tu. "Começa com um S—" Os olhos dela alargam-se de imediato. “<List expansions={
+        La clienta es una preadolecente. Por lo general, sueles rechazarlas a menos que vengan
+        con un padre, pero estas de mal humor y tomar su dinero te hara feliz. A las jovencitas
+        solo les interesan los chicos, así que decides ir al grano. "veo un nombre", dices. "Comienza con S—"
+        Instantaneamente ves el reconocimiento.  “<List expansions={
         ["Scott?", "Steven?", "Sam?"]} tag="p5_customer_names"/>”
       </p>
     </section>,
     <section>
       <p>
-        “Sam!” sussurra ela.
+        “¡Sam!” sussurra ella.
       </p>
       <p>
-        “Há aqui uma ligação forte, estou a senti-la. Tu e o Sam são — próximos, porém, não tão próximos quanto gostarias.”
-        Do outro lado da cortina de contas ouves risinhos. Não espanta: estas raparigas raramente vêm sozinhas. 
+        "Siento una fuerte conexión. Sam y tu son cercanos, aun así, no tanto como te gustaría."
+        Se oyen risitas del otro lado de la cortina. Lo cual no es sorprendente: es raro que vengan
+        solas.
         </p>
       <p>
-        A cliente olha para trás em direção à cortina. "Eu disse-lhes para esperarem lá fora. Não podem saber sobre nós," diz ela urgentemente.
-        As suas <List expansions={["mãos", "mãos irrequietas"]} tag="c5_hands" />
+        La clienta voltea a mirar las cortinas. "Les dije que esperaran afuera. No pueden enterarse
+        de nosotros," dijo con urgencia. Sus  <List expansions={["manos", "inquietas manos,"]} tag="c5_hands" />
         <Map from={inventory.c5_hands} to={{
-          undefined: " estão agitadas em cima da mesa",
-            mãos: <span> vão pegando
+          undefined: " se mueven con impaciencia en la mesa",
+            manos: <span> de una en una
               ora <List expansions={["no conjunto de pulseiras que tem no braço", "em dezenas de pulseiras de plástico coloridas"]} tag="c5_bracelets" nextUnit="none" />
               &nbsp; ora <List expansions={["num colar feito à mão", "num colar simples feito de fio e uma concha furada"]} tag="c5_necklace" nextUnit="none"/>
             </span>
@@ -63,7 +71,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
     <section>
 
       <p>“Jennifer, Amy, Samantha, já falamos no carro.” As raparigas retiram-se apressadamente, com a Jennifer a lançar-te um olhar de quem acabou de descobrir que o Pai Natal não existe. Já sabes o que aí vem.</p>
-      
+
       <p>
         “Passe para cá o que ela pagou,” diz a mãe de mão estendida.
       </p>
@@ -104,11 +112,11 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         "Cartas de tarô," dizes bruscamente. "Sinto que beneficiará muito da sabedoria delas." Vais buscar um baralho de cartas da tua mãe. Guarda-las por perto porque alguns clientes sabem o que querem, mas, para ti, sempre foi mais fácil ler as pessoas através dos seus pertences. Neste caso, demasiado fácil.
       </p>
       <p>
-        Enquanto baralhas, recitas umas tretas sobre a Ordem Hermética da Madrugada Dourada e sobre o Livro dos Mortos dos egípcios. O baralho da tua mãe está a abarrotar de cartas bonitas; as pessoas aborrecem-se com leituras que consistem inteiramente de Dois de Copas e de Sete de Paus. Ei, é apenas para fins de entretenimento, certo? 
+        Enquanto baralhas, recitas umas tretas sobre a Ordem Hermética da Madrugada Dourada e sobre o Livro dos Mortos dos egípcios. O baralho da tua mãe está a abarrotar de cartas bonitas; as pessoas aborrecem-se com leituras que consistem inteiramente de Dois de Copas e de Sete de Paus. Ei, é apenas para fins de entretenimento, certo?
       </p>
       <p>
         O ritual acalma-te. "O tarô não mostra o futuro," concluis. "As cartas
-        são um reflexo da energia presente numa dada área ou circunstância." Sentes que estás novamente no controlo 
+        são um reflexo da energia presente numa dada área ou circunstância." Sentes que estás novamente no controlo
         e fitas Healey com uma expressão severa. "Você dirige essa energia através das escolhas que faz na vida. Se não gostar do que as cartas lhe mostrarem hoje, poderá sempre mudar o seu comportamento para um melhor resultado. Está preparado?"
       </p>
       <p>
@@ -123,7 +131,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <hr/>
       <p>
       Arrumas o baralho e põe-lo de lado, e observas com atenção o homem diante de ti.
-      É um cobarde e é perigoso, 
+      É um cobarde e é perigoso,
       mas não é, sabes agora, um assassino. É demasiado fraco.
       </p>
       <p>
@@ -143,7 +151,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>Se ele acha o pedido estranho, não dá mostras disso, e põe logo as mãos com firmeza em cima da mesa. Está tão ansioso pela tua aprovação que até era capaz de fazer o pino se tu o absolvesses da sua culpa.
       </p>
       <p>
-        Estremeces um nadinha quando lhe agarras as palmas das mãos — e se isto provocar uma visão? — mas há apenas a 
+        Estremeces um nadinha quando lhe agarras as palmas das mãos — e se isto provocar uma visão? — mas há apenas a
         repulsa de tocar num outro corpo pegajoso e suado. "Vejo números, filas e filas de números. Muita dor e mágoa nesses números." Ele tenta afastar-se, mas tu apertas ainda mais as mãos e falas por cima do seu protesto. "Quem é o número oito?"
       </p>
       <p>
@@ -153,7 +161,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         <em>“Quem é o número oito?”</em>
       </p>
       <p>
-        “Troiano,” sussurra ele. Quase que não conseguiste discernir o nome. 
+        “Troiano,” sussurra ele. Quase que não conseguiste discernir o nome.
         Healey levanta-se, deitando a cadeira abaixo, e sai disparado pela cortina.
       </p>
       <p>
@@ -263,7 +271,7 @@ class _Deck extends React.Component {
                   }
                 } />
               </p>,
-              man: <p>”<em>O Homem Louro</em>.” Franzes o sobrolho.  
+              man: <p>”<em>O Homem Louro</em>.” Franzes o sobrolho.
                 <AnyMap from={this.props.chosen} indexStart={i} to={
                   {
                     undefined: `" Os espíritos dizem-me que um homem louro desempenha um papel importante
