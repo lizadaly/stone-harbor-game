@@ -6,266 +6,281 @@ import { RenderSection } from '.'
 const _Chapter = ({currentSection, inventory, chapterId}) => {
   var sections = [
     <section>
-      <h2>Capítulo IV</h2>
-      <h3>O teu apartamento</h3>
+      <h2>Capítulo Cuatro</h2>
+      <h3>Tu departamento</h3>
       <p>
-        Ouves um bater hesitante na porta do teu apartamento. “Está aberta!”
+        Oyes que golpean de manera tentativa la puerta del departamento. “¡Está abierto!”
       </p>
       <p>
-        Whitby desliza a porta mosquiteira e encontra-te no teu pátio minúsculo. “Como é que sabias
-        que era eu?”
+        Whitby abre la puerta mosquitera y te acompaña en tu diminuto patio. “¿Cómo sabías
+        que era yo?”
       </p>
       <p>
-        “Sou médium. Como é que sabias onde eu morava?”
+        “Soy vidente. ¿Cómo sabías dónde vivo?”
       </p>
       <p>
-        “Sou bófia.” Ela pousa um saco de papel e acende um cigarro sem perguntar. “Trouxe cerveja.”
+        “Soy policía”. Deja una bolsa de papel en la mesa y enciende un cigarrillo sin preguntarte. “Traje cerveza”.
       </p>
       <p>
-        “O meu tipo preferido de visita,” respondes, embora não te mexas para abrir uma. Em vez disso,
-        passas-lhe uma concha de ameijoa para ela pôr a cinza. Ficam os dois sentados num silêncio amigável, olhando para o mar através
-        do gradeamento.
+        “Mi clase favorita de invitado”, contestas aunque no abres una. En cambio, le
+        das una almeja para que ponga las cenizas. Ambos se sientan en un silencio amigable, mientras miran más allá de
+        la baranda hacia el océano.
       </p>
       <p>
-        “Recebes muitas visitas?” questiona ela. Mas é apenas uma pergunta retórica — o teu apartamento é uma espelunca e sabe-lo bem.
-        Conseguiste deitar fora a maior parte da mobília antiga da tua mãe, mas não te preocupaste muito em substituí-la.
-        Whitby põe os pés em cima do gradeamento e olha além do passeio marítimo para o mar.
-        “Uma coisa não se pode negar, esta vista vale ouro.”
+        “¿Tienes muchos invitados?” pregunta. Es retórico, tu departamento es una pocilga y lo sabes.
+        Tiraste la mayoría de los muebles viejos de tu mamá, pero no te molestaste en reemplazar mucho.
+        Whitby pone los pies en la baranda y mira al paseo marítimo cerca del agua.
+        “Lo que sí, es una vista espectacular”.
       </p>
       <p>
-        Ela tem razão. O crepúsculo já assentou, a maré está cheia, e as ondas estão incrivelmente nítidas, quase fluorescentes.
-        Podes ouvir o burburinho distante da multidão no passeio marítimo, mas
-        o som da rebentação está mais próximo e mais alto. Para norte ficam os carrosséis e os tobogãs do parque de diversões da avenida principal;
-        cá deste lado, ainda há muito movimento, mas é agradável. “Adoro este lugar,” admites.
+        Tiene razón. Se ve el crepúsculo, la marea esta alta y las olas son claramente visibles, casi fluorescentes.
+        Puedes oír el sonido distante de la gente en el paseo marítimo, pero
+        las olas están más cerca y su sonido es más fuerte. Al norte están los carruseles y toboganes de agua del area
+        principal; cerca de aquí sigue siendo animado, pero placentero. “Amo este lugar”, admites.
       </p>
       <p>
-       “Quem não adoraria?” Whitby repara que o recibo está ao teu lado, em cima de uma grade de leite, sob o peso de uma — “Isso é uma bola de cristal?”
+        “¿Quién no?” Whitby nota que el recibo está a tu lado en un cajón de plástico,
+        bajo una... “¿Eso es una bola de cristal?”
       </p>
       <p>
-        “É a de reserva.” Sabes bem o que a trouxe ao teu
-        apartamento às nove da noite num domingo, portanto respondes à sua pergunta por fazer.
-        “Ainda não lhe toquei.”
-        Omites a menção à estranha agonia de compartilhar um espaço confinado com um objeto que está
-        desesperado por se esconder de ti. Como pode um pedaço de papel ter segredos?
+        “Es la de repuesto”. Sabes muy bien por qué vino a
+        tu departamento a las 9 p.m. un domingo a la noche, así que respondes su pregunta sin formular.
+        “Todavía no lo toqué”. Omites
+        mencionar la extraña agonía de compartir un especio cerrado con un objeto que está
+        desesperado por esconderse de ti. ¿Cómo puede tener secretos un pedazo de papel?
       </p>
       <p>
-        “Porquê?”
+        “¿Por qué no?”
       </p>
       <p>
-        Olhas para as ondas a rebentar durante algum tempo antes de responderes. “Cada vez é mais difícil.”
-    </p>
-      <p>
-        “Entrar na... visão?”
+        Observas las olas durante unos minutos antes de responder. “Cada vez es más difícil”.
       </p>
       <p>
-        “Sair dela. O que disse a Michelle Herschel quando a interrogaste?”
+        “¿Entrar a la... visión?”
       </p>
       <p>
-
-        “Ah, nada que já não tivéssemos ouvido. Já se tinha recolhido um depoimento bastante pormenorizado no local, porque ela e o irmão estavam cá a passar o fim de semana. Alugaram um quarto de casal no motel <i>Caribe</i> em Wildwood.
-        Deve estar irritada por lhe ter feito perder tempo a ouvir uma série de perguntas a que já
-        tinha respondido.”
+        “Salir. ¿Qué dijo Michelle Herschel cuando la interrogaste?”
       </p>
       <p>
-      “Mas, então, porque é que lhe pediste que viesse à esquadra?” Quando ela não responde, compreendes tudo e começas a rir.
-        “Aquilo foi uma armação, mandares-me embora do teu gabinete?” Repetes os acontecimentos na  cabeça.
-        “Aquela chamada que recebeste, era apenas
-        a receção a dizer que ela tinha chegado. E depois ficaste a observar-nos o tempo todo através das persianas.”
+        “Ah, nada que no sepamos. Le habían informado todo sobre la escena ya que ella
+        y su hermano se estaban quedando aquí durante el fin de semana. Alquilaron dos habitaciones en el <i>Caribbean Motel</i>
+        en Wildwood.
+        Probablemente le molestó que desperdiciara su tiempo repitiendo varias preguntas que ya
+        le habían hecho”.
       </p>
       <p>
-      "Estás a ver? Médium. Eu só queria ver do que eras capaz quando pões uma coisa na cabeça, e não dececionaste."
-        Ela apaga o cigarro e pega no recibo como se se tratasse de um mero pedaço de
-        papel (que, para ela, é). “É um recibo do bar daquele motel.” Ela vira-o. “Uma salgalhada de números escritos à mão no verso. Que serão?”
+        “¿Entonces por qué la llamaste?” Cuando no contesta, te das cuenta de repente y te ríes.
+        “¿Fue un trampa que me fuera de tu oficina?” Repites los eventos en tu cabeza.
+        “Esa llamada... era solo
+        la recepción diciéndote que ella había llegado. Y luego nos observaste todo el tiempo a través de la persiana”.
       </p>
       <p>
-        “Não sei.”
+        “¿Ves? Vidente. Solo quería ver qué podías hacer cuando te lo proponías y
+        no decepcionaste”.
+        Apaga el cigarrillo y levanta el recibo como si fuera solo un pedazo de papel
+        común (que, para ella, lo es). “Es un recibo del bar de ese motel”. Lo da vuelta. “Hay un montón de números
+        escritos a mano atrás. ¿Qué son?”
       </p>
       <p>
-        Ela estende o recibo na tua direção.
-        “Está na hora, Pietro. Prometo que te protejo.”
+        “No sé”.
       </p>
       <p>
-        Ela tem razão. “Obrigado,” dizes e é sentido. Estendes a mão
-        na direção do <List expansions={["<psychic>recibo</psychic>", "<psychic>recibo encolhido</psychic>", "<psychic>recibo manhoso</psychic>, e amarfanha-lo na tua mão"]} tag="c4_receipt" />.
+        Te extiende el recibo.
+        “Es hora, Pietro. Prometo mantenerte a salvo”.
+      </p>
+      <p>
+        Tiene razón. “Gracias”, dices y en serio. Tomas
+        el <List expansions={["<psychic>recibo</psychic>", "<psychic>recibo cobarde</psychic>", "<psychic>pequeño recibo astuto</psychic> y lo arrugas en la mano"]} tag="c4_receipt" />.
       </p>
     </section>,
     <div className="in-flashback">
       <figure className="chapter4">
-        <figcaption className="visuallyhidden">Um pátio de motel soalheiro, em tons amarelo-claros e excessivamente saturados, sob um céu azul limpo</figcaption>
+        <figcaption className="visuallyhidden">El patio soleado de un motel, en amarillos brillantes y sobresaturados, contra un cielo azul despejado</figcaption>
       </figure>
-      <h3>No motel</h3>
+      <h3>En el motel</h3>
       <section>
-        <p>
-          O teu primeiro instinto é levantar as mãos para tapar os olhos, mas, claro, não tens nem uma coisa, nem outra.
-          Mesmo assim, é uma luminosidade tão intensa que cega e até magoa. O <i>Caribe</i> fica
-          no lado da baía da enseada — passaste por lá milhares de vezes — mas agora
-          parece quase hiper-real, fluorescente.
-
-      </p>
-        <p>
-         Do outro lado da rua, uma tabuleta eletrónica dum banco diz-te que é pouco depois da madrugada, o que explica o estado deserto do
-          motel. Há também uma informação sobre a temperatura e está surpreendentemente fresco;
-          encerrado nesta visão parece-te que é o meio-dia mais implacável que já sentiste, sob um foco solar escaldante e sem nenhum lugar para te esconderes. E tudo desemboca na sensação opressiva de que estás a ser observado.
+        <p>Tu primer instinto es cubrirte los ojos con las manos, pero por supuesto no tienes nada de eso.
+          Aun así, hay un brillo cegador y doloroso afuera. El <i>Caribbean</i> está
+          del lado de la bahía de la ensenada, pasaste por ahí miles de veces, pero ahora
+          parece ser casi híper real, fosforescente.
         </p>
         <p>
-          Mesmo que não consigas realmente <em>sentir</em> nada, tens de sair deste sol, por isso
-          sobes (flutuando? boiando?) as escadas até ao convés, debaixo do imponente <List expansions={["toldo", "toldo abrasador"]} tag="c4_awning" />.
+          Al otro lado de la calle, el cartel electrónico de un banco marca que es recién pasado el amanecer, lo que explica por qué el
+          motel está desierto. También marca la temperatura y está sorpresivamente fresco;
+          atrapado en esta visión, se siente como el mediodía más implacable, bajo un sofocante foco solar
+          sin lugar donde esconderse. Todo resulta en un sentimiento abrumador de que te están observando.
+        </p>
+        <p>
+          Aunque no puedes <em>sentir</em> nada de verdad, tienes que alejarte de este sol, así
+          que te mueves (¿arrastras? ¿flotas?) por las escaleras hacia la terraza y bajo la
+          enorme <List expansions={["marquesina", "marquesina ardiente"]} tag="c4_awning" />.
         </p>
       </section>
     </div>,
     <section>
-      <p>Não há alívio nenhum cá em cima. Estar debaixo desta pala é sufocante, como se estivesses preso num quarto abafado.
-        Deve ser assim que uma formiga se sente debaixo de uma lupa.
-      </p>
-
-      <p>
-       Michael Herschel surge do interior do motel; reconhece-lo da foto, mas
-        de qualquer modo saberias sempre que é o gémeo da sua irmã — pálido e loiro. Ele já está a suar,
-        e como não faz calor, só podem ser nervos.
-        Ele não sabe se se há de sentar ou andar, e alterna entre endireitar espreguiçadeiras e dar voltas pelo pátio.
+      <p>No hay alivio aquí. Estar bajo este toldo es sofocante, como si estuvieras atrapado en una habitación cerrada y caliente.
+        Así se debe sentir ser una hormiga bajo una lupa.
       </p>
       <p>
-        O seu tio Jared junta-se a ele. Aqui não há semelhança familiar; Jared é quase careca, mas o pouco cabelo que lhe sobra é escuro. As sobrancelhas são farfalhudas e tem uma barba irregular. Tem um ar atormentado e desleixado quando comparado com os seus
-        sobrinhos. É cerca de 15 anos mais novo do que o irmão,
-        talvez uns cinco anos mais velho do que os Herschels, quase a mesma geração.
+        Michael Herschel sale de adentro del motel; lo reconoces por la foto, pero
+        sabrías que es el gemelo de su hermana, pálido y de cabello rubio. Ya está sudando
+        y, como no hace calor, deben ser los nervios.
+        No puede decidir si sentarse o caminar de un lado a otro. Alterna entre enderezar las tumbonas y dar vueltas
+        alrededor del patio.
       </p>
       <p>
-        “Estás atrasado,” refila Herschel.
+        Aparece su tío, Jared. Acá no hay parecido familiar; Jared está casi calvo, pero el poco cabello
+        que le queda es oscuro. Tiene las cejas tupidas y una barba desigual. Comparado con su
+        sobrina y sobrino, luce afligido y descuidado. Tiene 15 años menos que su hermano,
+        quizá solo 5 años más que los Herschel, casi la misma edad.
       </p>
       <p>
-        “Pois, sabes, o trânsito,” diz Jared Healey.
+        “Llegas tarde”, se queja Herschel.
       </p>
       <p>
-        Herschel, por fim, decide sentar-se. “Poupa-me, são 5h30 da manhã. A coisa está resolvida ou não?”
+        “Sí, bueno, el tráfico”, dice Jared Healey.
       </p>
       <p>
-        “Ainda não,” admite Healey. Antes de Herschel poder protestar, ele diz, “Preciso de mais tempo.”
+        Herschel al fin decide sentarse. “No mientas, son las 5:30 de la mañana. ¿Entonces se resolvió o no?”
       </p>
       <p>
-        “O tempo acabou, Jared.”
+        “Todavía no”, admite Healey. Antes de que Herschel pueda protestar, dice “Necesito más tiempo”.
       </p>
       <p>
-        “Que queres que faça?” diz Healey. A sua voz faz-se fininha; está genuinamente amedrontado
-        e a tentar escondê-lo.
+        “No tenemos más tiempo, Jared”.
       </p>
       <p>
-        Inicialmente quando apareceu, Herschel estava tenso, mas agora tudo na sua expressão corporal projeta confiança.  “Dei-te tempo suficiente
-        para corrigires isto. Acordámos um prazo e tu falhaste. Agora é a minha vez.” Ele <em>queria</em> este resultado, apercebes-te. Ele estava à espera de que o seu tio
-        trouxesse más notícias para poder assumir o controlo da situação.
+        “¿Qué quieres que haga?” dice Healey. Su voz se pone aguda; está asustado
+        en serio e intenta ocultarlo.
       </p>
       <p>
-       Healey levanta-se, ajoelha-se diante do sobrinho. Por um momento absurdo, pensas que vai pedi-lo em casamento.
-        “Michael, por favor. Não é assim que quero gerir o meu negócio.”
-  </p>
-      <p>
-
-        “Não estás a geri-lo, estás a destruí-lo.” Ele reclina-se, afasta as pernas. Faz um compasso de espera.
-        “Estou a ser generoso. Não me interessam as coisas pequenas. Fica com os teus amiguinhos na marina ou com qualquer uma dessas espeluncas em que acordas hoje em dia. Eu só quero os cinco primeiros.”
+        Herschel estaba nervioso cuando salió antes, pero ahora todo su lenguaje corporal proyecta
+        seguridad. “Te di mucho
+        tiempo para que arregles las cosas. Acordamos una fecha límite y lo echaste a perder. Ahora es mi turno”. Él <em>quería</em> este resultado, adviertes. Esperaba que
+        su tío le trajera malas noticias para poder controlar la situación.
       </p>
       <p>
-        Healey parece vencido. “Tens papel?” Ele revista-se e solta mais um suspiro. “Caneta?”
-
-    </p>
-      <p>
-       Herschel não está minimamente perturbado. Calmamente puxa duma caneta e tira um pedaço de papel do
-        bolso — o recibo. Ele observa triunfante o seu tio, prostrado diante dele, a escrevinhar uma série
-        de letras e números. Assim que termina a quinta linha, Herschel saca o papel
-        a Healey e põe-se de pé.
+        Healey se levanta y se arrodilla frente a su sobrino. Por un momento absurdo piensas que le va a pedir matrimonio.
+        “Michael, por favor. No quiero manejar así mi negocio”.
       </p>
       <p>
-        “Não me ligues,” diz ele. “Eu aviso-te quando estiver feito. Ou vai vendo a conta.” Healey
-        tenta interromper, mas Herschel solta um som de admoestação como se estivesse a falar com um cão.
-        “Tens a certeza de que <em>ele</em> não descobriu nada?”
-    </p>
-      <p>
-        “Absoluta, tens de confiar em mim.”
-      </p>
-      <p>“Não, não tenho. E agora, consegues ficar de bico calado ou vou ficar com dois problemas?”
+        “No lo estás manejando, lo estás arruinando”. Se reclina y extiende las piernas. Se está tomando su tiempo.
+        “Estoy siendo generoso. No quiero
+        las sobras. Deja a tus amigos en el puerto deportivo o cualquier antro en el que
+        te despiertes estos días. Solo quiero a los mejores cinco”.
       </p>
       <p>
-        “Vou ficar calado,” diz Healey numa lástima. Ele esgueira-se pelas escadas exteriores, um homem vergado. A cada passo que dá, a visão vai gradualmente dando lugar àquele branco ofuscante.
+        Healey luce derrotado. “¿Tienes algún papel?” Se palpa en busca de algo y vuelve a suspirar. “¿Un bolígrafo?”
       </p>
       <p>
-        Herschel vê o seu tio partir e diz em voz alta, “Já se foi. Estás satisfeita agora?” Sabias
-        que havia alguém a observar. A sensação de estares sob o microscópio intensifica-se, e a cena
-        torna-se completamente branca, tão branca como o papel naquele <List expansions={["recibo", "recibo paranoico"]} tag="c4_receipt_vision" />.
+        Herschel ni siquiera está desconcertado. Con calma, saca un bolígrafo y un pedazo de papel del
+        bolsillo, el recibo. Observa triunfante mientras su tío, postrado frente a él, garabatea una
+        serie de letras y números. Tan pronto como termina la quinta fila, Herschel le saca el
+        papel a Healey y se para.
+      </p>
+      <p>
+        “No me llames”, dice. “Te avisaré cuando esté hecho. O tan solo revisa la cuenta”. Healey
+        intenta interrumpir, pero Herschel hace un sonido de reprimenda como si le hablara a un perro.
+        “¿Estás seguro de que <em>él</em> no se enteró?”
+      </p>
+      <p>
+        “Seguro, confía en mí”.
+      </p>
+      <p>“No. Ahora, ¿puedes mantener la boca cerrada o tengo dos problemas?”
+      </p>
+      <p>
+        “No diré nada”, dice Healey miserablemente. Se desliza por las escaleras de afuera, un hombre roto. Con cada
+        paso que da, la visión se desvanece un poco más a ese blanco cegador.
+      </p>
+      <p>
+        Herschel observa a su tío irse y dice en voz alta “Se fue. ¿Estás feliz ahora?” Sabías
+        que alguien más estaba mirando. El sentimiento de estar bajo el microscopio se intensifica y la
+        escena se vuelve blanca, tan blanca como el papel de ese <List expansions={["recibo", "recibo paranoico"]} tag="c4_receipt_vision" />.
       </p>
     </section>,
     <section>
-      <h3>Na tua sala de estar</h3>
+      <h3>Tu sala de estar</h3>
       <p>
-        Abres os olhos ligeiramente, mas é uma agonia. “Meu Deus, apaga-me essa luz, és da Gestapo ou quê?”
-        Ouves os passos de Whitby, depois um clique, e apesar de ainda ser doloroso, consegues olhar em volta.
-     </p>
-      <p>
-        “Calma, é o teu candeeiro,” diz ela suavemente. “Como é que te sentes?”
+        Abres los ojos un poco, pero es una agonía. “Dios, apaga esa luz, ¿quién eres, la Gestapo?”
+        Oyes las pisadas de Whitby y luego un clic. Aún duele, pero logras mirar un poco a tu alrededor.
       </p>
       <p>
-    “Como se estivesse com a pior ressaca do mundo depois do enfrascanço mais curto da história. Quanto tempo estive desmaiado?”
+        “Oye, es tu lámpara”, dice con suavidad. “¿Cómo te sientes?”
       </p>
       <p>
-       “Nunca estiveste desmaiado. Estiveste-te a queixar da luz e do calor, embora já passe da meia-noite e o ar condicionado esteja no máximo. Da última vez tiveste frio. Era bom que te decidisses de uma vez por todas.”
-     </p>
-      <p>
-        Obrigas-te a sentar e a beber a água que ela atenciosamente te deixou aqui. “Foi forte esta.”
-
+        “Como si tuviera la peor resaca del mundo después de la borrachera más breve del mundo. ¿Cuánto tiempo estuve inconsciente?”
       </p>
       <p>
-       A sua habitual cara impassível abranda um bocadinho. “Desculpa ter-te pressionado a fazê-lo.” É confrangedor que ela esteja a pedir desculpas e é estranho para ti também, por isso dás avanço à conversa.
-        </p>
-      <p>
-       “O que é que o Jared Healey faz na vida?”
-
-     </p>
-      <p>
-        “Gere uma marina de terceira categoria na baía. É mais uma rampa de atracagem para o pessoal local ir pescar e apanhar caranguejos na época baixa. Na realidade, pertence ao irmão dele.”
+        “Nunca estuviste ‘inconsciente’. En su mayoría te quejaste de la luz y el calor aunque son pasadas
+        las doce y tu aire acondicionado está al máximo. La última vez tenías mucho frío. En serio deberías
+        decidirte”.
       </p>
       <p>
-        “Ele é corretor,” dizes e descreves a visão. Whitby tira notas no seu caderninho
-        de polícia, o mesmo em que põe as provas verdadeiras, o que te deixa nebulosamente orgulhoso.
-
+        Te fuerzas a enderezarte y bebes el agua que amablemente te dejó en la mesa. “Fue brutal”.
       </p>
       <p>
-        Quando acabas, ela diz, “Um péssimo corretor, pelo que dizes. Provavelmente peixe-miúdo,
-        um pau mandado qualquer.” Quando perguntas, ela acrescenta, “Um corretor de segunda fila. Muita dessa gente começa por recolher apostas em nome de amigos,
-        colegas, fica com uma pequena percentagem dos ganhos.”
+        Su cara impasible de siempre se ablanda un poco. “Perdón por haberte presionado”. Le es incómodo
+        disculparse y a ti también te resulta extraño, así que sigues adelante.
       </p>
       <p>
-
-        O recibo continua amarfanhado na tua mão. Alisa-lo
-        na mesa do café, e juntos estudam-no. Das cinco linhas de números, quatro estão agora riscadas.
-        Whitby diz, “O primeiro número de cada linha deve identificar o apostador — não é o tipo de negócio em que queres usar nomes verdadeiros — e o segundo é o saldo.
-        Os clientes conhecem todos o seu identificador e usam-no para
-        fazer as apostas. Todos os identificadores têm um algarismo só, por isso acho que estamos perante um pequeno grupo de clientes,
-        mas alguns estão atolados em dívidas. Só esta página vale uns cem mil dólares.”
-        </p>
-      <p>
-        “Impressionante. Pensava que eras dos homicídios.”
+        “¿A qué se dedica Jared Healey?”
       </p>
       <p>
-        “Pode parecer-te surpreendente, mas apostas desportivas ilegais fazem parte de muita atividade criminosa grave.” Ela estuda o recibo. “Suponho que o Michael Herschel já tenha cobrado a todos os que estão riscados. Amanhã, vou levar isto à unidade que trata do jogo ilegal, talvez lhes faça lembrar alguma coisa. Mas sem nomes é quase impossível. Quem for o número oito, espera-o uma péssima semana, aposto.”
+        “Maneja un puerto deportivo de segunda en la bahía. Es más un atracadero para que los residentes vayan a
+        pescar peces y cangrejos en la temporada baja. En realidad el dueño es su hermano”.
       </p>
       <p>
-       A tua dor de cabeça começa a dar-te tréguas. “Era a irmã dele que o tinha. Achas que ela está metida nisto?”
+        “Es un corredor de apuestas”, dices y describes la visión. Whitby anota en su pequeño cuaderno
+        de policía, en el mismo lugar donde guarda la verdadera evidencia, lo que te pone vagamente orgulloso.
       </p>
       <p>
-        “É muito provável.” Ela não parece muito interessada.
+        Cuando terminas, dice “Un pésimo corredor, por lo que parece. Seguro un aficionado,
+        el sub de alguien”. Cuando le preguntas, agrega “Subcorredor. Muchos empiezan juntando
+        apuestas en nombre de sus amigos,
+        colegas, se llevan un pequeño porcentaje de las ganancias”.
       </p>
       <p>
-        “Talvez. Ela não parece desse tipo. Eles já não são ricos que chegue?”
-        </p>
-      <p>
-        Whitby está a arrumar as suas coisas, a cabeça já está obviamente no dia que aí vem. “Ouve, tu podes ser bom a ler pessoas.
-        Não o nego. Mas se há uma coisa que aprendi neste trabalho é
-        que <em>todos</em> são desse tipo.” Ela inclina a cabeça para ti. “Ficas bem sozinho?”
+        Todavía tienes el recibo arrugado en la mano. Lo alisas
+        sobre la mesa y lo analizan juntos. De las cinco filas de números, cuatro están
+        tachadas. Whitby dice “Es probable que el primer número de cada fila sea el indentificador del apostador,
+        ya que no es un negocio donde quieras usar el nombre propio, y el segundo, es su saldo pendiente.
+        Sus clientes ya saben su identificación y la dicen cuando exigen la devolución
+        de sus apuestas. Todas estas son de un único dígito, así que creo que son pocos clientes,
+        pero algunos están metidos hasta el cuello. Solo esta
+        hoja vale alrededor de
+        cien mil dólares”.
       </p>
       <p>
-        “Sim. Mas obrigado.” Brincas com a bola de cristal que dalgum modo conseguiu vir do alpendre cá para dentro.
-       </p>
+        “Impresionante. Pensé que eras una detective de homicidios”.
+      </p>
       <p>
-        “Fizeste um bom trabalho hoje, Pietro. Deste-me coisas verdadeiras de polícia para investigar. Tira um dia de folga,
-        vai visitar um amigo, descansa. Tenta voltar à tua vida normal.” Acenas com a cabeça, e ela sai,
-        deixando-te sozinho com uma cabeça latejante, a tua bola de cristal e pouco mais.      
+        “Puede que esto te sorprenda, pero las apuestas deportivas ilegales están relacionadas con mucha actividad delictiva
+        seria”. Estudia el recibo. “Supongo que Michael Herschel ya le cobró a
+        todos los que están tachados. Se lo llevaré a la brigada antidrogas mañana, a ver si
+        les suena familiar. Pero es poco probable sin nombres. Apuesto a que el número ocho
+        tendrá una mala semana”.
+      </p>
+      <p>
+        Tu dolor de cabeza se está menguando un poco. “Su hermana lo llevaba encima. ¿Crees que está involucrada?”
+      </p>
+      <p>
+        “Es probable”. No parece tan interesada.
+      </p>
+      <p>
+        “Supongo. No parecía esa clase de persona. ¿No son lo suficientemente ricos ya?”
+      </p>
+      <p>
+        Whitby está guardando sus cosas, seguro con la mente en el día por delante. “Mira, eres bueno para leer
+        a la gente. Eso no lo niego. Pero si algo aprendí en este trabajo, es
+        que <em>todos</em> son esa clase de persona”. Inclina la cabeza hacia ti. “¿Vas a estar bien solo?”
+      </p>
+      <p>
+        “Sí, pero gracias”. Jugueteas con la bola de cristal que de alguna forma entró del porche.
+      </p>
+      <p>
+        “Hiciste un buen trabajo hoy, Pietro. Me diste material policial de verdad para que investigue. Tómate el día,
+        visita a un amigo, descansa. Intenta volver a tu vida cotidiana”. Asientes, se va
+        y te quedas solo con el martilleo de tu cabeza y tu bola de cristal y no mucho más.
       </p>
       <NextChapter chapter="5" />
     </section>

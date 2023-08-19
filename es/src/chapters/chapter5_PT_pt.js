@@ -8,41 +8,43 @@ import { RenderSection } from '.'
 const _Chapter = ({currentSection, inventory, chapterId}) => {
   var sections = [
     <section>
-      <h2>Capítulo V</h2>
+      <h2>Capítulo Cinco</h2>
       <h3>En tu sala de lectura</h3>
-      <p>"¿Buscas el conocimiento de los sabios? ¡Ven!"</p>
+      <p>"¿Buscas el conocimiento de los sabios? ¡Avante!"</p>
       <p>
-        No visitaste a un amigo (porque ya no quieren escuchar de ti) y no te tomaste el día
-        (porque no puedes permitirtelo), pero si lograste volver a tu vida cotidiana.
-        Cotidiana para ti, lo cual todavía incluye trabajar hasta la medianoche y dormir
-        durante varias noches de playa/verano.
-        Es hermoso, oyes el mar y no hay mosquitos ni insectos molestos, es perfecto para trabajar.
+        No visitaste a un amigo (ya no esperan oír de ti) y no te tomaste el día
+        (no puedes permitírtelo), pero sí lograste volver a tu vida cotidiana.
+        Cotidiana para ti, lo cual todavía incluye trabajar
+        hasta la medianoche y dormir durante varias noches de verano.
+        Oíste que está hermoso: la brisa marina, no hay mosquitos ni insectos molestos,
+        es perfecto para trabajar.
       </p>
       <p>
-        La clienta es una preadolecente. Por lo general, sueles rechazarlas a menos que vengan
-        con un padre, pero estas de mal humor y tomar su dinero te hara feliz. A las jovencitas
-        solo les interesan los chicos, así que decides ir al grano. "veo un nombre", dices. "Comienza con S—"
-        Instantaneamente ves el reconocimiento.  “<List expansions={
-        ["Scott?", "Steven?", "Sam?"]} tag="p5_customer_names"/>”
+        Esta clienta es una preadolescente. Por lo general, sueles rechazarlas a menos que vengan
+        con un adulto, pero estás de mal humor y tomar su dinero te hará feliz. A las jovencitas
+        solo les interesan los chicos, así que decides ir al grano. "Veo un nombre", dices. "Comienza con S..."
+        Instantáneamente ves el reconocimiento.  “<List expansions={
+        ["¿Scott?", "¿Steven?", "¿Sam?"]} tag="p5_customer_names"/>”
       </p>
     </section>,
     <section>
       <p>
-        “¡Sam!” sussurra ella.
+        “¡Sam!” susurra.
       </p>
       <p>
-        "Siento una fuerte conexión. Sam y tu son cercanos, aun así, no tanto como te gustaría."
-        Se oyen risitas del otro lado de la cortina. Lo cual no es sorprendente: es raro que vengan
+        "Siento una fuerte conexión. Sam y tú tienen una amistad... estrecha, pero no tanto como te gustaría".
+        Se oyen risitas del otro lado de la cortina. No es sorprendente: es raro que vengan
         solas.
         </p>
       <p>
-        La clienta voltea a mirar las cortinas. "Les dije que esperaran afuera. No pueden enterarse
-        de nosotros," dijo con urgencia. Sus  <List expansions={["manos", "inquietas manos,"]} tag="c5_hands" />
+        La clienta voltea a mirar la cortina. "Les dije que esperaran afuera. No pueden enterarse
+        de lo nuestro", dice con urgencia.
+        Sus <List expansions={["manos", "inquietas manos"]} tag="c5_hands" />
         <Map from={inventory.c5_hands} to={{
           undefined: " se mueven con impaciencia en la mesa",
-            manos: <span> de una en una
-              ora <List expansions={["no conjunto de pulseiras que tem no braço", "em dezenas de pulseiras de plástico coloridas"]} tag="c5_bracelets" nextUnit="none" />
-              &nbsp; ora <List expansions={["num colar feito à mão", "num colar simples feito de fio e uma concha furada"]} tag="c5_necklace" nextUnit="none"/>
+            manos: <span> alternan entre
+              agarrar <List expansions={["unas pulseras en su muñeca", "decenas de pulseras coloridas de plástico"]} tag="c5_bracelets" nextUnit="none" />
+              &nbsp; y <List expansions={["un collar hecho a mano", "un collar simple hecho de cuerda y un caracol agujereado"]} tag="c5_necklace" nextUnit="none"/>
             </span>
         }}
         />.
@@ -50,122 +52,150 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
     </section>,
     <section>
       <Map from={inventory.c5_bracelets} to={{
-        braço: <p>"Sinto uma ligação emocional forte a vir das tuas pulseiras." Ela olha para baixo surpresa, como se se tivesse esquecido de que estavam lá. “Certo, comprámos as pulseiras juntos no centro comercial.”</p>
+        muñeca: <p>"Siento una fuerte conexión emocional de tus pulseras". Las mira sorprendida,
+        como si hubiese olvidado que estaban allí. “Sí, las compramos en el centro comercial”.</p>
       }} />
       <Map from={inventory.c5_necklace} to={{
-        mão: <p>“O teu colar está a chamar-me.”
+        collar: <p>“Tu collar me llama”.
           <Map from={inventory.c5_bracelets} to={{
-            braço: <span> Reparas que as pálpebras dela tremulam. "É uma ligação muito mais poderosa do que a das pulseiras."</span>
+            muñeca: <span> Notas que parpadea más rápido. "Es una conexión mucho más fuerte que la de las pulseras".</span>
           }} />
 
-        &nbsp;Ela agarra na concha em volta do pescoço e esconde um sorriso. "Foi o Sam que o fez."</p>
+        &nbsp;Toma el collar y sonríe en secreto. "Sam lo hizo".</p>
       }} />
       <p>
-        "Ele nutre sentimentos profundos por ti," dizes, e começas a registar o seu súbito e profundo desapontamento quando começa um alvoroço lá fora. Uma mulher adulta entra furiosa. A mãe de alguém. É por isto que normalmente não lidas com crianças.
+        "A él le importas mucho", dices. Comienzas a notar su repentina y
+        profunda decepción cuando oyes una conmoción afuera. Una mujer adulta entra furiosa.
+        La madre de alguna. Por esto mismo no sueles tratar con niños.
       </p>
       <p>
-        "Jennifer, vai já lá para fora," diz a mulher. Atrás dela, as duas raparigas que devem ser as amigas da tua cliente forçam a entrada. <List expansions={["Uma delas",
-        "Uma das raparigas usa um colar de conchas, e "]} tag="c5_girlfriend" /> está bastante pálida.
+        "Sal inmediatamente, Jennifer", dice la mujer. Detrás de ella, entran las dos chicas
+        que seguro son amigas de tu clienta. <List expansions={["Una de ellas",
+        "una lleva puesto un collar de caracol y "]} tag="c5_girlfriend" /> se ve muy pálida.
       </p>
     </section>,
     <section>
 
-      <p>“Jennifer, Amy, Samantha, já falamos no carro.” As raparigas retiram-se apressadamente, com a Jennifer a lançar-te um olhar de quem acabou de descobrir que o Pai Natal não existe. Já sabes o que aí vem.</p>
+      <p>“Jennifer, Amy, Samantha, nos vemos en el auto”. Las niñas huyen, Jennifer te mira como
+       si se acabara de enterar que Papá Noel no existe. Sabes que es lo que te espera.</p>
 
       <p>
-        “Passe para cá o que ela pagou,” diz a mãe de mão estendida.
+        “Devuélveme lo que te haya pagado”, dice la madre y extiende la mano.
       </p>
 
       <p>
-        “Não quero sarilhos,” dizes. Duvidas que a tua amiga polícia te ajudasse com esta. Automaticamente, devolves cinco dólares, metade do que cobraste à rapariga.
+        “No quiero problemas”, respondes. Dudas mucho de que tu policía amiga te ayude a salir de esta.
+        Automáticamente, le devuelves cinco dólares, la mitad de lo que le cobraste a la niña.
       </p>
 
       <p>
-        A mulher arranca o dinheiro da tua mão e vira-se para sair. Reviras os olhos e dizes, "Ouça." Ela vira-se para ti desconfiada. Dás-lhe o resto do dinheiro, para o qual ela fica a olhar atrapalhada. "Tenha calma com a miúda, ok?"
-        Ela bufa de irritação e sai.
+        Te arranca el dinero de las manos y se voltea para marcharse. Pones los ojos en blanco
+        y le dices "Oye". Se voltea desconfiada. Le entregas el resto del dinero, que mira extrañada.
+        "Dale un respiro, ¿sí?" Resopla y se marcha.
       </p>
       <p>
-        Pões a cara nas mãos e esfregas os olhos até começares a ver estrelas. A campainha toca e tu saltas o preâmbulo do costume: "Entre!" Não é que o dia possa piorar.
+        Te refriegas los ojos hasta ver estrellas. Suena la campanilla de la puerta y decides saltearte las
+        introducciones: "¡Entra!" No es como si el día pudiera empeorar.
         </p>
       <p>
-        É então que <List expansions={["Jared Healey", "Jared Healey, com um aspeto ainda mais cansado do que tu te sentes,"]} tag="c5_jared" /> entra na sala.
+        Y es entonces cuando <List expansions={["Jared Healey", "Jared Healey, que se ve peor de lo que tú te sientes,"]} tag="c5_jared" /> entra a la sala.
       </p>
     </section>,
     <section>
       <hr/>
       <p>
-        Parece ter envelhecido vários anos desde os acontecimentos da visão, que não foram há mais de um mês.
-        Não se tem dado ao trabalho de se barbear e nalgum momento recente os óculos partiram-se e foram arranjados com fita-cola. "Como é que isto funciona?" pergunta ele.
+        Parece como si hubiese envejecido unos cuantos años desde lo que sucedió en la visión,
+        que no pudo haber sido hace más de un mes.
+        Ni se molestó en afeitarse, y en algún momento reciente se le rompieron los anteojos y los reparó con cinta adhesiva.
+        "¿Cómo funciona esto?" pregunta.
         </p>
       <p>
 
-        Não consegues falar de imediato, e ele interrompe. "Lê-me as mãos ou como é que é?"
+        Te cuesta hablar unos segundos y él te interrumpe. "¿Cómo es? ¿Me lees las palmas o algo así?"
       </p>
       <p>
-        "Eu... não. Eu preciso de um objeto pessoal," dizes tu de cor, mas estás sufocado com o medo. E se ele te passa alguma coisa e entras outra vez em transe? E se dizes, sem querer, qualquer coisa incriminatória? <em>E se ficares impotente diante de um assassino?</em>
+        "No, yo... requiero un objeto personal", dices de memoria, pero te ahoga el miedo.
+        ¿Y si te da algo que te haga volver a caer en un trance? ¿Y si se te escapa
+        algo incriminante? <em>¿Y si te quedas indefenso ante un asesino?</em>
       </p>
       <p>
-        "Como o quê, um relógio ou uma coisa assim? Já os vendi. Bem, tenho isto —" Ele tira algo da mão (um anel?) e coloca-o na mesa, mas cobre-o com as palmas. Começas logo a sentir vagas de culpa a formarem-se na mesa, a encresparem-se na tua direção.
+        "¿Qué? ¿Algo como un reloj? Los vendí todos. Ah, pero tengo esto..." Se quita algo de la mano
+        (¿un anillo?), lo apoya en la mesa, pero lo cubre para que no se vea. Inmediatamente percibes
+        olas de culpa que inundan la mesa y se dirigen hacia ti.
       </p>
       <p>
-        Não podes fazer isto agora, não em frente dele.
-        "Cartas de tarô," dizes bruscamente. "Sinto que beneficiará muito da sabedoria delas." Vais buscar um baralho de cartas da tua mãe. Guarda-las por perto porque alguns clientes sabem o que querem, mas, para ti, sempre foi mais fácil ler as pessoas através dos seus pertences. Neste caso, demasiado fácil.
+        No puedes hacer esto ahora, no frente a él.
+        "Cartas de tarot", dices con brusquedad. "Siento que su sabiduría te podría beneficiar". Tomas el mazo de cartas de tu mamá.
+        Las mantienes cerca porque algunos clientes saben lo que quieren, pero siempre te resultó más fácil leer a las personas
+        a tráves de sus posesiones. En este caso, demasiado fácil.
       </p>
       <p>
-        Enquanto baralhas, recitas umas tretas sobre a Ordem Hermética da Madrugada Dourada e sobre o Livro dos Mortos dos egípcios. O baralho da tua mãe está a abarrotar de cartas bonitas; as pessoas aborrecem-se com leituras que consistem inteiramente de Dois de Copas e de Sete de Paus. Ei, é apenas para fins de entretenimento, certo?
+        Mientras mezclas, recitas cosas esotéricas sobre la Orden Hermética de la Aurora Dorada y
+        el Libro egipcio de los muertos. El mazo de tu mamá está lleno de cartas elaboradas;
+        las personas suelen aburrirse con lecturas que consisten únicamente del Dos de Copas o el
+        Siete de Bastos. Oye, es solo para entretenimiento, ¿no?
       </p>
       <p>
-        O ritual acalma-te. "O tarô não mostra o futuro," concluis. "As cartas
-        são um reflexo da energia presente numa dada área ou circunstância." Sentes que estás novamente no controlo
-        e fitas Healey com uma expressão severa. "Você dirige essa energia através das escolhas que faz na vida. Se não gostar do que as cartas lhe mostrarem hoje, poderá sempre mudar o seu comportamento para um melhor resultado. Está preparado?"
+        El ritual te tranquiliza. "El tarot no es clarividencia", concluyes.
+        "Las cartas reflejan la energía presente en cierta zona o circunstancia". Otra vez te sientes en control,
+        te centras en Healey y lo miras serio.
+        "Diriges esa energía mediante las decisiones que tomas en la vida.
+        Si no te gusta lo que te dicen las cartas hoy, siempre puedes
+        cambiar tu comportamiento para mejorar el resultado. ¿Estás listo?"
       </p>
       <p>
-        “Sim.”
+        “Sí”.
       </p>
       <p>
-        Colocas duas cartas na mesa:
+        Despliegas dos cartas:
       </p>
       <Deck tag="c5_deck"/>
     </section>,
     <section>
       <hr/>
       <p>
-      Arrumas o baralho e põe-lo de lado, e observas com atenção o homem diante de ti.
-      É um cobarde e é perigoso,
-      mas não é, sabes agora, um assassino. É demasiado fraco.
+      Ordenas el mazo, lo pones a un lado y observas al hombre que tienes delante.
+      Es un cobarde y es peligroso,
+      pero ahora sabes que no es un asesino. Es demasiado débil.
       </p>
       <p>
-        "Se tem alguma esperança de mudar o seu destino, tem de apaziguar o espírito dos mortos," ameaça-lo. Normalmente, costumas baixar a tua voz naturalmente ribombante, mas agora solta-la em todo o seu poder. Neste pequeno espaço, ela engole-o e aperta o que se confunde com a sua consciência.
+        "Si deseas cambiar tu destino, debes apaciguar al espíritu del muerto", dices de forma amenazante.
+        Por lo general, acostumbras a bajar tu estruendosa voz, pero ahora decides darle rienda suelta. El lugar es
+        tan pequeño que tu voz lo devora, exprime lo que aparenta ser su conciencia.
       </p>
-      <p>“Que tenho eu de fazer?” grita ele.</p>
-      <p>“Tem de se expurgar da mentira que está em si.”</p>
+      <p>“¿Qué debo hacer?” llora.</p>
+      <p>“Debes purgarte de tus mentiras”.</p>
       <p>
-        “Eu não compreendo o que está a dizer!”
+        “¡No sé a qué te refieres!”
       </p>
       <p>
-        É a tua única chance de conseguir a informação de que tu e Whitby precisam.
-        “Estenda a sua <List expansions={["mão", "mão e os espíritos revelar-me-ão o que terá de fazer"]} tag="c5_hand" />,” dizes tu.
+        Tienes una sola oportunidad para obtener la información que tú y Whitby necesitan.
+        “Extiende la <List expansions={["mano", "mano y los espíritus me revelarán lo que debes hacer"]} tag="c5_hand" />”, dices.
       </p>
     </section>,
     <section>
-      <p>Se ele acha o pedido estranho, não dá mostras disso, e põe logo as mãos com firmeza em cima da mesa. Está tão ansioso pela tua aprovação que até era capaz de fazer o pino se tu o absolvesses da sua culpa.
+      <p>Si tu pedido le pareció extraño, no lo demuestra, solo pone las manos firmemente en la mesa.
+      Desea tanto tu aprobación que hasta se pondría de cabeza si eso lo librara de toda culpa.
       </p>
       <p>
-        Estremeces um nadinha quando lhe agarras as palmas das mãos — e se isto provocar uma visão? — mas há apenas a
-        repulsa de tocar num outro corpo pegajoso e suado. "Vejo números, filas e filas de números. Muita dor e mágoa nesses números." Ele tenta afastar-se, mas tu apertas ainda mais as mãos e falas por cima do seu protesto. "Quem é o número oito?"
+        Te estremeces un poco cuando tomas sus palmas, ¿y si esto provoca una visión?, pero solo sientes asco al
+        tocar el cuerpo húmedo y pegajoso de otro ser humano.
+        "Veo números, filas y filas de números. Hay mucho dolor y sufrimiento en ellos".
+        Intenta separarse, pero lo sujetas más fuerte y continúas hablando sin importar su objeción. "¿Quién es el número ocho?"
       </p>
       <p>
-        Ele acaba por libertar-se, mas agora todo o seu corpo treme. "A minha mulher, ela disse-me que você era — mas eu não acreditei — o que é que você é?"
+        Por fin logra librarse y notas como tiembla de pies a cabeza. "Mi esposa me dijo que eras...
+        pero no creí... ¿Qué eres?"
       </p>
       <p>
-        <em>“Quem é o número oito?”</em>
+        <em>“¿Quién es el número ocho?”</em>
       </p>
       <p>
-        “Troiano,” sussurra ele. Quase que não conseguiste discernir o nome.
-        Healey levanta-se, deitando a cadeira abaixo, e sai disparado pela cortina.
+        “Troiano”, susurra. A duras penas oyes el nombre.
+        Healey se levanta, tira la silla en el proceso y escapa a través de la cortina.
       </p>
       <p>
-        A <psychic>aliança de ouro carregada de culpa</psychic> fica esquecida em cima da mesa.
+        Olvidó <psychic>la alianza de oro llena de culpa</psychic> en la mesa.
       </p>
       <NextChapter chapter="6" />
     </section>
@@ -177,12 +207,12 @@ class _Deck extends React.Component {
   constructor(props) {
     super(props)
     this.cardvalues = {
-      death: "Uma carta de tarô com o nome Mortalité, que representa um esqueleto lúgubre segurando numa gadanha",
-      fool: "Uma carta de tarô com o nome Folie, que mostra um homem vestido com roupas esfarrapadas",
-      justice: "Uma carta de tarô com o nome La Justice, que representa uma mulher coroada",
-      man: "Uma carta de tarô com o nome Garçon Blond, de um homem a segurar uma taça",
-      money: "Uma carta de tarô com o nome Argent, que mostra um conjunto de moedas e um homem a segurar uma gadanha",
-      traitor: "Uma carta de tarô com o nome Traitre, que representa um homem vestido com um hábito a segurar numa lanterna"
+      death: "Una carta de Tarot titulada Mortalité que muestra a un sombrio esqueleto con una guadaña en la mano",
+      fool: "Una carta de Tarot titulada Folie que muestra a un hombre andrajoso",
+      justice: "Una carta de Tarot titulada La Justice que representa a una mujer que fue coronada",
+      man: "Una carta de Tarot titulada Garçon Blond que muestra a un hombre sosteniendo una copa",
+      money: "Una carta de Tarot titulada Argent que muestra un conjunto de monedas y a un hombre sosteniendo una guadaña",
+      traitor: "Una carta de Tarot titulada Traitre que representa a un hombre que fue asaltado sosteniendo una linterna"
     }
   }
   componentWillMount() {
@@ -240,61 +270,65 @@ class _Deck extends React.Component {
                   {cards}
                 </figure>
                 <Map from={this.props.chosen[i]} to={{
-                  undefined: [<p>Refletes sobre que carta escolher.</p>,
-                  <p>Refletes sobre o segundo conjunto.</p>,
-                  <p>Refletes sobre o último conjunto da leitura.</p>][i],
-                  death: <p>“<em>A Morte</em>,” dizes tu, solenemente. “Muitas vezes esta figura apenas significa mudança, mas no seu caso—”
-                    Fazes uma pausa. “Eu sinto que uma morte física aconteceu recentemente, e uma que foi imerecida.
-                    Uma pessoa de quem no passado foi próximo?” Healey limpa a cara. “O seu espírito considera-o responsável pelo que aconteceu.
+                  undefined: [<p>Consideras cuál carta elegir.</p>,
+                  <p>Observas el segundo par.</p>,
+                  <p>Observas el último par de la lectura.</p>][i],
+                  death: <p>“<em>La Muerte</em>”, dices serio. “La mayoría de las veces esto solo significa cambios, pero en tu caso...”
+                    Haces una pausa. “Presiento que hubo una muerte física hace poco y que fue injusta.
+                    ¿Alguien cercano a ti?” Healey se limpia el rostro. "Su espíritu te considera responsable por lo que pasó".
                     <AnyMap from={this.props.chosen} indexStart={i} to={
                       {
-                        traitor: ` Porque é você O Traidor.
+                        traitor: ` Porque eres el Traidor.
                         `,
-                        fool: ` Porque é você O Louco.
+                        fool: ` Porque eres el Bufón.
                         `,
-                        money: ` Tudo pela ânsia de dinheiro.`,
-                        man: ` Tu e o Homem Louro também.`
+                        money: ` Todo por dinero.`,
+                        man: ` Tú y el hombre rubio.`
                       }
                     } />”
                   </p>,
-                  fool: <p>“<em>O Louco</em>. Os espíritos não são claros. Será o louco alguém que conhece? Ou será você?”</p>,
-                  justice: <p>”<em>A Justiça</em> virá um dia por todos nós. Por alguns mais cedo, por outros mais tarde.”
-                    Como ele não diz nada, prossegues." Teme a sua própria chamada à justiça? Os espíritos acreditam que faz bem em temer. Deveria ter muito medo." Agora tens a sua atenção.
+                  fool: <p>“<em>El Bufón</em>. Los espíritus no son claros. ¿El bufón es alguien que conoces? ¿O eres tú?”</p>,
+                  justice: <p>“<em>La Justicia</em> al final nos alcanzará a todos. A unos más rápido que a otros”.
+                    Como no contesta, prosigues. "¿Temes que llegue a ti? Los espíritus piensan que sí deberías.
+                    Debes temerle y mucho". Por fin has captado su atención.
                     <AnyMap from={this.props.chosen} indexStart={i} to={
                       {
-                        traitor: ` “O Traidor será castigado pela sua deslealdade.”
+                        traitor: ` “El Traidor será castigado por su deslealtad”.
                         `,
-                        fool: ` “Vocé é verdadeiramente o Louco ao lançar-se voluntariamente para o castigo sem sequer tentar olhar para si próprio.”
+                        fool: ` “Definitivamente eres el Bufón si te dejas castigar tan fácil
+                        en vez de aceptar quién eres realmente”.
                         `,
-                    death: ` “Pois que maior Justiça poderá haver do que vingar uma Morte injusta?”`,
-                    man: ` “Alimenta a esperança de que o Homem Louro será o único a receber o castigo. Mas se nada fizer, se continuar a encolher-se e a esconder-se, será você e só você quem será castigado.”`
+                    death: ` “¿No crees que no existe mejor justicia que vengar una Muerte injusta?”`,
+                    man: ` “Esperas que el Hombre Rubio sea el único que sea castigado.
+                    Pero, si no actúas, si continúas teniendo miedo y escondiéndote, solo tú serás castigado”.`
                   }
                 } />
               </p>,
-              man: <p>”<em>O Homem Louro</em>.” Franzes o sobrolho.
+              man: <p>“<em>El Hombre Rubio</em>”. Frunces el ceño.
                 <AnyMap from={this.props.chosen} indexStart={i} to={
                   {
-                    undefined: `" Os espíritos dizem-me que um homem louro desempenha um papel importante
-                    nas suas presentes dificuldades." Fazes uma pausa. "Entraram em conluio, você e ele. Com este homem
-                    perpetrou um grande mal."`,
-                    traitor: `“Será ele o Traidor que vimos antes? Ou será você?” Ele estremece.
-                    “Os espíritos dizem-me que são vocês os dois. Vocês cometeram um grande mal juntos.
-                    Tem de se libertar deste fardo por via de um comportamento penitente.”
+                    undefined: `" Los espíritus dicen que un hombre rubio juega un papel importante en tus problemas actuales".
+                     Haces una pausa. "Han confabulado, cometieron un gran mal juntos".`,
+                    traitor: `“¿Es él el Traidor que vimos antes? ¿O eres tú?” Healey se estremece.
+                    “Los espíritus me dicen que son ambos. Los dos cometieron un gran mal juntos.
+                    Para liberarte de esta carga debes actuar con penitencia”.
                       `,
-                      fool: `“Será ele o Louco na nossa leitura?” Ele desvia o olhar. “Não, é você o Louco. Envolveu-se
-                      com as pessoas erradas, desviou-se do caminho. E alguém sofreu. Não é tarde demais para se arrepender do seu envolvimento.”
+                      fool: `“¿Es él el Bufón de esta lectura?” Esquiva tu mirada. “No, tú eres el Bufón.
+                      Te mezclaste con las personas equivocadas y te desviaste del camino. Y alguien salió herido.
+                      Todavía no es demasiado tarde para arrepentirte de tu participación”.
                       `,
                     }
                   } /></p>,
-                money: <p>“<em>Dinheiro</em>. Quase todas as confissões religiosas consideram o dinheiro como uma força má e corruptora.
-                Faríamos bem em dar-lhes atenção.” Fechas os olhos. "Sinto que é no dinheiro que reside a raiz dos seus problemas. Está a envenená-lo a si e àqueles que lhe são próximos. Tem de se purificar da sua influência.”
+                money: <p>"<em>Dinero</em>. Casi todas las tradiciones religiosas perciben al dinero como una fuerza maligna y corrupta.
+                Nos convendría hacerles caso". Cierras los ojos. "Siento que el dinero es la raíz de tus problemas.
+                Te está envenenando a ti y a aquellos que te rodean. Debes purificarte de su influencia".
                 </p>,
-                traitor: <p>“<em>O Traidor</em>”.
+                traitor: <p>“<em>El Traidor</em>”.
                   { [
-                    ` Fita-lo com um olhar calmo. "Conhece alguém que tenha atraiçoado um ente querido?"
-                      Quando ele começa a gaguejar, dizes, "As cartas sabem o que talvez receie  admitir."
+                    ` Lo miras con tranquilidad. "¿Conoces a alguien que haya traicionado a un ser querido?"
+                      Cuando comienza a tartamudear, dices "Las cartas saben lo que te aterra admitir".
                     `,
-                    ` Olhas para ele fixamente até que sentes o seu incómodo. “As cartas sabem o que talvez receie admitir sobre si próprio.”
+                    ` Solo lo miras hasta que se averguenza. “Las cartas saben lo que temes admitir de ti”.
                     `
                     ][i === 0 ? 0 : 1]
                   }</p>,

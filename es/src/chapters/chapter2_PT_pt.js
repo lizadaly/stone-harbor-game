@@ -5,215 +5,223 @@ import { RenderSection } from '.'
 
 const _Chapter = ({currentSection, inventory, chapterId}) => {
   var photos = [
-    "uma pilha de fotos",
-    "uma pilha de fotos. Viras a primeira... é de dois homens velhos"
+    "una pila de fotos",
+    "una pila de fotos. Das vuelta la primera y ves dos ancianos"
   ]
   var sections = [
     <section>
-      <h2>Capítulo II</h2>
-      <h3>Na mansão</h3>
+      <h2>Capítulo Dos</h2>
+      <h3>En la mansión</h3>
       <p>
-        Quase não falam na viagem para lá. No caminho passaste pela loja para a fechar para o resto do dia. É sábado e há um magote de gente na praia, o que te deixa um certo pesar ao virares a tabuleta para <small>fechado</small>.
-        Por outro lado, apercebes-te de que hoje deve ser o dia de folga de Whitby. Perguntas-te como será ter amigos capazes de fazer um favor assim por alguém.
-       </p>
-      <p>
-        A casa é exatamente como a recordas da tua visão: dispersa, branca, classicizante,
-        típica deste bairro chique e tão diferente da maioria das casas costeiras com a sua madeira cinza desbotada pelo sol. Mas também não estamos a falar de novos-ricos. Nota-se que tem tido muito uso, mas está bem cuidada. Quando se mora na costa é fácil encontrar pessoas ricas para desprezar, mas a casa dos Healeys sente-se que é um lar.
+        Apenas conversan en el camino. Hicieron una parada en tu tienda para cerrar formalmente
+        por la tarde. Es sábado y hay muchas personas en la playa, así que giraste el cartel del lado <small>cerrado</small> un tanto
+        arrepentido. Por otro lado, adviertes que es probable que hoy fuera el día libre de Whitby. Te preguntas cómo sería tener
+        amigos que te hagan esta clase de favor.
       </p>
       <p>
-        “A mulher está em casa da irmã por isso não está cá ninguém,” diz Whitby ao sair do carro. “Mas mesmo que quisesse não o podia deixar entrar.” Mas é mais do que óbvio que ela não quer.
+        La casa es igual a como la recuerdas de tu visión: enorme, blanca, estilo clásico falso,
+        típico del barrio sofisticado y tan diferente de la madera gris degastada por el sol de
+        la mayoría de las casas de la costa. Pero la propiedad tampoco es de advenedizos. Es antigua, pero está bien cuidada. Cuando vives en la
+        costa, es fácil encontrar gente rica a la que resentir, pero la casa de los Healey se siente como un hogar.
       </p>
       <p>
-        “Não preciso de entrar, é na parte de trás,” respondes. Conheces o caminho e nem esperas por ela.
+        “La esposa está con su hermana, así que no hay nadie”, dice Whitby mientras sale del auto. “Pero no puedo dejarte entrar ni aunque quisiera”. Es bastante claro
+        que no quiere.
       </p>
       <p>
-        A tarde já vai adiantada por isso o pátio está à sombra, mas é um dia muito, muito quente e tu, mesmo de calções, estás a suar que nem um porco. Claro está que a inspetora aguenta-se fresca, impávida e serena no seu uniforme de poliéster. “Pare imediatamente,”
-        ladra ela. “Diga-me onde é que está.”
+        “No necesito entrar, está atrás”, contestas. Conoces el camino y no la esperas.
       </p>
       <p>
-        “Está com medo que vá forjar provas?”
+        Es tarde, así que ya hay sombra en el patio, pero es un día muy, muy caluroso y estás sudando hasta las bolas
+        en pantalón corto. Por supuesto que la detective parece estar bien fresca en su uniforme de poliéster. “Detente”,
+        grita. “Solo dime dónde está”.
       </p>
       <p>
-        “Exatamente.”
+        “¿No quieres que deje ninguna evidencia falsa?”
       </p>
       <p>
-        “Sabe que me ofenderia menos se me mentisse.” Ela não responde, por isso limitas-te a apontar. 
-        "Está num arbusto na base das escadas. Provavelmente."
+        “Exacto”.
       </p>
       <p>
-        Ela pára. “Provavelmente?”
+        “Me dolería menos si me mintieras”. No dice nada, así que solo señalas. “Está en un
+        arbusto al pie de las escaleras. Tal vez.”
       </p>
       <p>
-        “<em>Estava</em> lá, mas Healey morreu há já algumas semanas. Eu sei lá o que é que aconteceu, entretanto.” Ouve-la resmungar algo sobre seres um médium da treta.
+        Pausa. “¿Tal vez?”
       </p>
       <p>
-        “Quem são vocês? O que estão a fazer aqui?”
+        “<em>Estaba</em> ahí, pero Healey murió hace semanas. ¿Cómo diablos debería saber
+        lo que pasó desde entonces?” La oyes murmurar algo sobre ser un pésimo vidente.
       </p>
-      <p>Viras-te num sobressalto. É uma mulher mais velha, alarmada pela vossa presença. Veste
-        roupas <List expansions={["caras", "caras, mas escolhidas um bocado ao acaso; nem tudo combina bem"]} tag="c2_clothes" nextUnit={null} />.
-        Traz consigo um <List expansions={["saco de marinheiro", "saco de marinheiro, que pelo modo como o carrega, parece cheio e pesado"]} tag="c2_duffel" nextUnit={null}/>.
-        Os seus <List expansions={["olhos são vivos", "olhos são vivos, mas estão turvos, como se estivesse estado a chorar"]} tag="c2_eyes" />.
+      <p>
+        “¿Quiénes son? ¿Qué hacen aquí?”
+      </p>
+      <p>Te giras sorprendido. Es una anciana, alarmada por tu presencia. Su ropa
+        es <List expansions={["cara", "cara, pero también puesta un poco al azar; no todo combina"]} tag="c2_clothes" nextUnit={null} />.
+        Lleva un <List expansions={["morral", "morral y por la forma en la que lo sostiene parece estar lleno y pesado"]} tag="c2_duffel" nextUnit={null}/>.
+        Tiene <List expansions={["ojos penetrantes", "ojos penetrantes, pero lagañosos, como si hubiera estado llorando"]} tag="c2_eyes" />.
       </p>
     </section>,
     <section>
       <p>
-        <em>Ah, deve ser a viúva</em>. Ela faz-vos má cara. “São da polícia?”
+        <em>Ah, debe ser la viuda</em>. Los mira mal a los dos. “¿Están con la policía?”
       </p>
       <p>
-        “Sim,” diz Whitby, de modo sentido. “Lamento muito a sua perda, Sra. Healey.”
+        “Sí”, dice Whitby, con sinceridad. “Lamento mucho su pérdida, señora Healey”.
       </p>
-      <p>Ela fica aliviada por não serem ladrões, mas não se pode dizer que esteja contente por vos ver.
-    “Pensava que vocês já tinham acabado as coisas por aqui.”
-      </p>
-      <p>
-        “Apenas a dar seguimento a umas coisas que ainda estão pendentes. As minhas desculpas pelo incómodo, pensava que já tinha partido.”
-        replica Whitby.  Ela lança-te um olhar com um significado claro de ‘bico calado’.
+      <p>Le alivia saber que no somos ladrones, pero tampoco se alegra de vernos. “Pensé
+        que ya habían terminado todo”.
       </p>
       <p>
-        “Eu conheço-a,” diz a Sra. Healey. “Você é a madrinha da Sarah.”
+        “Solo estamos investigando unos cabos sueltos. Disculpe las molestias, pensé que ya se había ido”,
+        contesta Whitby. Te mira de una manera que sin duda significa ‘cierra la boca’.
       </p>
       <p>
-        Whitby acena com a cabeça. “Andei com a Allison no liceu.”
+        “Yo te conozco”, dice la señora Healey. “Eres la madrina de Sarah”.
       </p>
       <p>
-        A mulher vagueia um pouco pelo jardim, arrancando algumas flores secas.
-        “Não vejo a Sarah desde — aquela noite — ela deixou uma coisa lá em casa. Espere que já lha dou.”
-        Ela leva a mão ao saco e aproxima-se para te dar alguma coisa — a ti, porque estás
-        mesmo ao seu lado — e é então que sentes o embate de uma vaga de medo que te faz cambalear para trás.
-        Ela fica confusa com a tua reação, mas avança, estendendo-te o objeto. A tua visão fica tão distorcida que nem consegues ver o que é,
-        apesar de estar mesmo à frente dos teus olhos.
-        </p>
-      <p>Whitby vê a tua aflição e larga a correr pelas escadas acima, cruzando o pátio. “Obrigado, Sra. Healey,
-        Eu fico com isso —”
+        Whitby asiente. “Fui a la escuela con Allison”.
       </p>
       <p>
-        Sentes o sangue a fugir-te dos braços e das pernas, e a tua visão a afunilar-se até não ser mais do que uma ponta de alfinete. 
-        Whitby lança-se para a intercetar, mas é tarde demais, a mulher não perdeu tempo em atirar <List expansions={["uma boneca", "<psychic>uma boneca assustada</psychic>", "<psychic>uma boneca assustada com a cabeça esmagada</psychic>"]} tag="c2_doll" /> para as tuas mãos paralisadas —
+        La mujer camina un poco por el área mientras arranca unas flores secas.
+        “No he visto a Sarah desde—esa noche—pero dejó algo en la casa. Déjame dártelo”.
+        Mete la mano en el morral y se acerca a ofrecerte algo a ti, porque estás parado al lado, y te golpea una oleada de miedo que literalmente
+        te empuja hacia atrás. Luce perpleja por tu reacción, pero se acerca, con el objeto
+        en la mano. Tu vista está tan distorsionada que no puedes distinguirlo aunque está frente
+        a tu cara.
+      </p>
+      <p>Whitby ve tu aflicción y empieza a correr a través del patio. “Gracias, señora Healey,
+        yo lo agarro...”
+      </p>
+      <p>
+        Sientes la sangre drenándose de tus extremidades y
+        tu vista reduciéndose a un agujerito. Whitby estira el brazo para interceptarla, pero es demasiado tarde,
+        la mujer te puso con impaciencia
+          una <List expansions={["muñeca", "<psychic>muñeca aterrada</psychic>", "<psychic>muñeca aterrada con la cabeza aplastada</psychic>"]} tag="c2_doll" /> en
+          tus manos paralizadas...
         </p>
       </section>,
       <div className="in-flashback">
         <figure className="chapter2">
-          <figcaption className="visuallyhidden">Uma saleta antiga, com cadeiras estofadas e uma jarra com flores murchas, a preto e branco</figcaption>
+          <figcaption className="visuallyhidden">Una sala anticuada, con sillas tapizadas y un jarrón con flores marchitas, en blanco y negro</figcaption>
         </figure>
-        <h3>Na sala de estar</h3>
+        <h3>En la sala de estar</h3>
         <section>
           <p>
-            Nunca te sentiste tão pequeno na tua vida — fisicamente pequeno. Já em rapaz eras grande
-            para a tua idade, e andavas sempre a esbarrar contra as traquitanas 'new age' da tua mãe, baratas, mas delicadas.
-            Mas agora cercado de todos os lados por
-            paredes gargantuescas de mobília pesada, sentes-te minúsculo.
+            Nunca te has sentido tan pequeño en tu vida, físicamente pequeño. Incluso de chico eras grande
+            para tu edad, solías chocar contra los baratos, pero delicados adornos nueva era de tu mamá.
+            Pero ahora estás acorralado por
+            paredes colosales de muebles macizos y te sientes diminuto.
           </p>
           <p>
-            Uma jovem rapariga, trazendo a <List expansions={["boneca", "boneca feliz"]} tag="c2_doll2" nextUnit="none" />, entra a correr quarto adentro e instala-se confortavelmente
-            numa cadeira de espaldar. Atrás dela vem <List expansions={["um homem mais velho", "um homem mais velho de aspeto amável", "um velhote que sabes que é Alan Healey"]} tag="c2_healey" nextUnit="none" /> e <List expansions={["uma mulher", "uma mulher da mesma idade", "uma mulher que agora reconheces ser a esposa de Healey"]} tag="c2_margaret" />.
+            Una niña, con la <List expansions={["muñeca", "feliz muñeca"]} tag="c2_doll2" nextUnit="none" />, entra corriendo a la habitación y se sienta cómodamente en una
+            silla con respaldo alto. La sigue <List expansions={["un anciano", "un anciano con aspecto amable", "un anciano que reconoces como Alan Healey"]} tag="c2_healey" nextUnit="none" /> y <List expansions={["una mujer", "una mujer de la misma edad", "una mujer que reconoces como la esposa de Healey"]} tag="c2_margaret" />.
           </p>
         </section>
       </div>,
     <section>
-      <p>Nas mãos da sua dona, a boneca irradia alegria em vez de medo. Talvez porque ainda tenha cabeça.</p>
-      <p>A esposa de Healey ainda tem madeixas castanhas no seu cabelo grisalho encaracolado. Ela está vestida a rigor, 
-      hábito comum na sua geração, isto apesar de teres a certeza de que o quarto está abafado como num dia quente de verão.
-      Ela pergunta à rapariga, “Querida, queres alguma coisa?” A sua voz é firme, mas meiga, como imaginarias a voz de uma tia.</p>
+      <p>En los brazos de su dueña, la muñeca irradia alegría en vez de miedo. Quizá es porque aún tiene cabeza.</p>
+      <p>La esposa de Healey todavía tiene mechones marrones en su pelo gris rizado. Está vestida formal,
+        como tiende a hacerlo su generación, aunque estás seguro que en la habitación hace mucho calor.
+        Le pregunta a la niña “Cielo, ¿quieres algo?” Su voz es firme, pero amable, como imaginas
+      que sería la de una tía.</p>
 
-      <p>“Não, obrigada, tia Maggie,” diz a rapariga. Ela aperta
-      a boneca num abraço tão forte que poderia matar um pequeno animal, mas a boneca adora-o.</p>
+      <p>“No, gracias, tía Maggie”, dice la niña. Abraza a
+      la muñeca con una fuerza que podría matar a un animal pequeño, pero el juguete lo ama.</p>
       <p>
-        A sua tia acena com a cabeça e diz ao seu marido, “Vou trazer-te o teu chá gelado, querido.”
+        Su tía asiente y le dice a su esposo “Te traeré tu té helado, cariño”.
       </p>
-      <p>Healey usa uns óculos grossos e é calvo, tirando uns quantos tufos que, por acaso, já mereciam um cortezito.
-        Provavelmente a mulher só lhe consegue cortar o cabelo depois de muito se queixar e barafustar. É com pesar que te apercebes
-        que ela nunca mais terá outra oportunidade para o fazer; será um estranho qualquer a prepará-lo para o funeral, 
-        e ela vai achar que está tudo mal feito.
+      <p>Healey usa unos enormes anteojos gruesos y está calvo, excepto por unos mechones que debería cortarse.
+        Es probable que su esposa le corte el pelo después de muchas quejas y protestas. Con dolor, adviertes que nunca
+        lo podrá volver a hacer; algún extraño lo peinará para el funeral y ella pensará que está
+        todo mal hecho.
       </p>
 
-      <p>Healey não diz nada,
-        apenas <List expansions={["sorri", "força um sorriso que não lhe chega aos olhos"]}  tag="c2_smile" />.
+      <p>Healey no dice nada,
+        solo <List expansions={["sonríe", "sonríe de manera forzada, con un leve gesto"]}  tag="c2_smile" />.
       </p>
     </section>,
     <section>
-      <p>Podias dar-lhe umas dicas sobre como mentir melhor
-      com a expressão facial. Ele está a esconder-lhe alguma coisa. Está à espera que ela saia.
-      Ela hesita um segundo só; mas já o topou. Queres chamá-la e dizer-lhe para ficar ali
-      para sempre — não o percas de vista. Mas tu não estás realmente lá, e isto já aconteceu. Ela decide acreditar no sorriso falso e sai do quarto.
+      <p>Podrías enseñarle cómo utilizar la expresión para mentir mejor. Le oculta algo. Está esperando a que se vaya.
+        Ella duda un segundo; sospecha de él. Quieres gritar y decirle que se quede ahí parada
+        por siempre, que no lo pierda de vista. Pero no estás allí de verdad y esto ya
+        sucedió. Elige creer en esa sonrisa falsa y se va.
       </p>
-      <p>Assim que ela desaparece, Healey pega num pesado telefone preto que está numa mesinha e acomoda-o no seu colo. 
-      “Agora brinca com a Vicky, Sarah. O tio Alan só precisa de fazer uma chamadinha rápida." A rapariguita acena com a cabeça
-       e põe-se a cantarolar uma melodia desafinada à boneca.</p>
-      <p>Healey disca lentamente o telefone; vê-se bem como é doloroso para as suas mãos realizarem a operação. É um número curto, 
-      local. A conversa decorre em surdina e é incompreensível porque ele não quer que a rapariga o ouça. Apanhas umas palavras aqui e ali 
-      — “nunca”, “esse dinheiro”, e depois ele diz zangado, “Como é que podes?” e a rapariga, Sarah, olha para cima alarmada, 
-      largando a boneca que cai no chão.</p>
-      <p>
-        “Eu não permitirei que ela sofra por causa dos teus erros. Amanhã de manhã, estará feito.” diz Healey e bate com o auscultador no aparelho
-        no preciso momento em que a sua mulher entra com dois copos suados numa bandeja. “Foi engano,” diz ele, antecipando-se a eventuais discussões.
-        A mulher não diz nada e só pousa a bandeja na mesa. </p>
-      <p>
-        "Desculpa,” diz ele asperamente, ao mesmo tempo que tira os óculos para limpar o rosto, depois levanta-se. Não vê
-        a boneca e pisa-a, esmagando-lhe a cabeça. A pequena Sarah que já estava quase em lágrimas, desata numa histeria.
-        Maggie Healey conforta-a e diz, “Vamos ler alguma coisa na cama, anda, querida.”
-       </p>
-      <p>
-        No quarto agora vazio resta apenas a boneca que ficou esquecida debaixo de um armário decorado. O tempo
-        passa, umas boas horas talvez. As luzes dentro de casa apagam-se à medida que as pessoas se vão deitando, o relógio
-        de pêndulo na parede gira e gira.
-        É curioso, mas não te sentes aborrecido assim sozinho entre os objetos domésticos. É tranquilo e descomplicado.
+      <p>Al momento que desaparece, Healey levanta un pesado teléfono negro de
+        una mesilla y lo pone sobre su regazo. “Juega con Vicky, Sarah. El tío Alan
+      solo tiene que hacer una llamada rápida”. La niña asiente y le tararea fuera de tono a la muñeca.</p>
+      <p>Healey marca el teléfono a disco lentamente; es obvio que le duele mover las manos. Es un número
+        corto, local. La conversación es en voz baja e incomprensible porque no quiere que la niña
+        lo escuche. Captas algunas palabras: “nunca”, “ese dinero”,
+        y luego dice enojado “¿Cómo pudiste?” y la niña, Sarah, lo mira sobresaltada y suelta la muñeca
+        que cae al piso.
       </p>
       <p>
-        Ouves uma janela a ser aberta, e na escuridão de uma noite sem luar consegues ver muito pouco,
-        só a sombra de uma pessoa a entrar dentro do quarto. <em>Agora</em> a boneca está com medo,
-        não porque foi estragada e abandonada, apercebes-te, mas porque este mundo sossegado e ordenado foi
-        invadido. A <List expansions={["boneca", "boneca apavorada"]} tag="c2_doll3" /> está agora a chorar um alerta, quer acordar a casa, mas apenas te consegue acordar a ti —
+        “No dejaré que ella sufra por tus errores. A la mañana ya estará hecho”, dice Healey y cuelga el auricular con un golpe seco cuando
+        su esposa entra con unos vasos transpirados en una bandeja. “Número equivocado”, dice, para evitar cualquier
+        discusión. Su esposa no dice nada, solo deja
+        los vasos en la mesa.
+      </p>
+      <p>
+        “Perdón”, dice de manera brusca, se saca los anteojos para frotarse la cara y se levanta. No ve
+        la muñeca, la pisa y le aplasta la
+        cabeza. La pequeña Sarah ya estaba
+        por llorar, pero esto
+        la vuelve histérica. Maggie Healey la arropa y dice “Te leeré un cuento en la cama, cielo, vamos”.
+      </p>
+      <p>
+        Ahora la habitación está vacía excepto por la muñeca, que yace olvidada bajo un armario ornamentado. Pasa
+        el tiempo, quizá horas. Las luces de la casa se apagan cuando todos se van a dormir, las agujas del reloj
+        en la pared giran y giran.
+        Aunque parezca extraño, no es aburrido estar solo entre los objetos de la casa. Es tranquilo y sin complicaciones.
+      </p>
+      <p>Oyes una ventana abrirse, ves muy poco en la penumbra de la noche sin luna,
+        pero distingues la sombra de una persona entrando en la habitación. <em>Ahora</em> la muñeca tiene miedo,
+        no porque fue dañada y desechada, adviertes, sino porque este mundo quieto y ordenado fue
+        invadido. La <List expansions={["muñeca", "muñeca aterrada"]} tag="c2_doll3" /> grita,
+        quiere despertar a la casa, pero solo puede despertarte a ti...
         </p>
       </section>,
       <section>
-        <h3>Na mansão (dentro do carro de Whitby)</h3>
+        <h3>En la mansión (dentro del auto de Whitby)</h3>
         <p>
-          Acordas subitamente num sobressalto. “Como é que eu cheguei aqui?”
+          Te despiertas de repente. “¿Cómo llegué aquí?”
         </p>
         <p>
-          “Arrastámos-te.” Whitby está a fumar — não pensavas que ela era dessas. A cinza já vai longa.
-
+          “Te arrastramos”. Whitby está fumando, no pensaste que era de esas. La ceniza es larga.
         </p>
-        <p>“Nós quem?”</p>
-
-        <p>“Eu e Sra. Healey,” diz ela com uma paciência infinita. "Ela é mais forte do que parece.
-          Disse-lhe que o teu nível de açúcar no sangue caiu a pique. Lá se foi 
-          o plano de sermos discretos."</p>
-
-        <p>Está um calor infernal lá fora, mas tu estás gelado até aos ossos e incapaz
-          de parar de tremer. Ris-te um bocadinho e soa esquisito aos teus ouvidos.
-          “Que rico polícia que eu saí.”
+        <p>“¿Tú y quién más?”</p>
+        <p>“La señora Healey y yo”, dice con infinita paciencia. “Es más fuerte de lo que parece.
+          Le dije que te bajó la glucosa. Pensé
+        que ibamos a mantener un perfil bajo”.</p>
+        <p>Afuera es un infierno, pero estás helado hasta los huesos y no puedes
+          dejar de temblar. Te ríes un poco y te suena raro.
+          “Qué buen policía resulté ser”.
         </p>
-        <p>“Nunca disse que eras um polícia,” replica com frieza.</p>
-
-        <p>“É um facto que não corrigiu o equívoco dela.”</p>
-        <p>Ela repara no seu cigarro esquecido e atira-o pela janela fora. “Que outra opção tinha eu? 
-        <em> Olá, sou a inspetora Whitby e este é o meu médium de estimação?</em>”
+        <p>“Nunca dije que eras un policía”, responde con severidad.</p>
+        <p>“Claramente no le corregiste el malentendido”.</p>
+        <p>Nota su cigarrillo olvidado y lo tira por la ventana. “¿Qué otra opción
+          tenía? <em>¿Hola, soy la detective Whitby y este es mi vidente mascota?</em>”
         </p>
-
-       <p>“É muito querido da sua parte, mas acabámos de nos conhecer.”</p>
-
-       <p>Ela vê que estás a tremer e fecha a janela do carro mesmo que esteja tão abafado lá dentro. Ficas-lhe grato.
-          “O que aconteceu desta vez?” pergunta-te com amabilidade.</p>
- 
+        <p>“Qué dulce de tu parte, pero recién nos conocemos”.</p>
+        <p>Ve que estás temblando y cierra la ventana aunque debe estar sofocante
+          en el auto. Estás agradecido.
+        “¿Qué pasó esta vez?” pregunta con gentileza.</p>
         <p>
-        Contas-lhe, numa simples recapitulação dos factos, até à parte da boneca.
-          “Mas eu percebo,” dizes-lhe quando ela não responde. “Está na minha cabeça ou, então, 
-          sou um charlatão. Leve-me de volta para a marginal.
-          Não torno a incomodá-la.”
-         </p>
-       <p>Ela acena com a cabeça e liga o carro. “Eu deixo-te lá,” diz ela. “A que horas podes estar pronto amanhã?”</p>
-
-        <p>“Pronto para <em>quê</em>?”</p>
-        <p>Ela aponta. Sentada, no assento de trás, está
-          a luva do assassino — não, as duas luvas do mesmo par.</p>
-
-        <p>“A outra estava exatamente no lugar onde tinhas dito que estaria, debaixo dum arbusto na base das escadas. Apanhei-a
-          antes da tua cena maricas do desmaio. Quando chegar ao trabalho na segunda-feira tenho de dar uma palavrinha
-          à malta da polícia forense sobre a sua ideia de 'meticuloso'. Já agora, podemos tratar-nos por tu, certo?”
+          Le recitas los hechos, incluso la parte de la muñeca.
+          “Pero entiendo”, dices cuando no responde. “Está en mi cabeza o
+          soy un fraude. Solo déjame de nuevo
+          en el paseo marítimo. No te volveré a molestar”.
         </p>
-
-        <p>Não dizes nada, só ficas a olhar para ela, portanto ela acrescenta, "Ouve, Pietro, relaxa. Eu acredito em ti.”</p>
+        <p>Asiente y arranca el auto. “Te dejaré allí”, dice. “¿A qué hora puedes estar listo mañana?”</p>
+        <p>“¿Listo para <em>qué</em>?”</p>
+        <p>Señala. Reposado en el asiento trasero está
+        el guante del asesino... no, un par de guantes idénticos.</p>
+        <p>“El otro estaba justo donde dijiste, bajo un arbusto cerca del pie de la escalera. Lo levanté
+          antes de que te marchitaras como una flor. Cuando vuelva al trabajo el lunes, tengo que hablar
+          con los investigadores forenses sobre su meticulosidad”.
+        </p>
+        <p>No dices nada, solo la miras fijo, así que agrega “Mira, solo relájate, Pietro. Te creo”.</p>
 
         <NextChapter chapter="3" />
       </section>
