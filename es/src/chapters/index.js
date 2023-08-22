@@ -1,13 +1,13 @@
-export * from "./prologue_PT_pt.js"
-export * from "./chapter1_PT_pt.js"
-export * from "./chapter2_PT_pt.js"
-export * from "./chapter3_PT_pt.js"
-export * from "./chapter4_PT_pt.js"
-export * from "./chapter5_PT_pt.js"
-export * from "./chapter6_PT_pt.js"
-export * from "./chapter7_PT_pt.js"
-export * from "./chapter8_PT_pt.js"
-export * from "./epilogue_PT_pt.js"
+export * from "./prologue.js"
+export * from "./chapter1.js"
+export * from "./chapter2.js"
+export * from "./chapter3.js"
+export * from "./chapter4.js"
+export * from "./chapter5.js"
+export * from "./chapter6.js"
+export * from "./chapter7.js"
+export * from "./chapter8.js"
+export * from "./epilogue.js"
 
 
 import ReactCSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
