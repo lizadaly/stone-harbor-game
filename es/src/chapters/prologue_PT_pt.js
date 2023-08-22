@@ -5,233 +5,238 @@ import { RenderSection } from "."
 
 const Customer = {
   clothes: [
-    "roupas típicas de turista",
-    ["um anel barato",
-    "um impermeável sujo",
-    "um boné de beisebol"],
-    "um olhar impaciente"
+    "ropa típica de turista",
+    ["un anillo de matrimonio barato",
+    "un impermeable sucio",
+    "un gorro de béisbol baladí"],
+    "una mirada impaciente"
   ],
   names: [
-    "Nancy?",
-    "Nadine?",
-    "Nicky?"
+    "¿Nancy?",
+    "¿Nadine?",
+    "¿Nicky?"
   ],
   body: [
-    "a sua aparência física",
-    ["a cara por barbear",
-    "as mãos calejadas",
-    "o escaldão a pelar"],
-    "a sua aparência física e consegues algumas pistas"
+    "su apariencia física",
+    ["su cara sin afeitar",
+    "sus manos callosas",
+    "su quemadura que se está pelando"],
+    "su apariencia física y captas algunas pistas"
   ]
 }
 
 const _Prologue = ({currentSection, inventory}) => {
 
   var mapsClothes = {
-    "anel": "Há alguém próximo de si. Alguém que você achava que iria ficar consigo para sempre. Mas já não está entre nós.",
-    "impermeável": "As suas férias não correram como esperava. Estou a sentir desapontamento, talvez até desespero.",
-    "boné": "Gosta de se divertir, é um tipo despreocupado com sentido de humor. Mas não se tem rido muito ultimamente."
+    "anillo": "Hay alguien cercano. Alguien que confiaste estaría contigo por siempre. Pero que ya no está",
+    "impermeable": "Tus vacaciones no resultaron ser como esperabas. Siento desilución, quizá incluso desesperanza",
+    "gorro": "Te gusta divertirte, eres un hombre despreocupado con sentido del humor. Pero últimamente no te ríes"
   }
   var mapsName = {
-    "anel": "Ele aprovou o seu casamento? Sinto preocupação pela forma como tudo se passou.",
-    "impermeável": "Como se sentiria ele ao saber que fez esta viagem tão longa para me ver?",
-    "boné": "Ele nunca riu o suficiente, pois não?"
+    "anillo": "¿Estaba de acuerdo él con tu matrimonio? Siento preocupación sobre cómo sucedió.",
+    "impermeable": "¿Cómo se sentiría al ver que viajaste tan lejos para verme?",
+    "gorro": "Nunca se rio lo suficiente, ¿no?"
   }
   var mapsApprove = {
-    "anel": "a Janet. Nunca lhe deu uma oportunidade,",
-    "impermeável": "frivolidades nem de férias. Nunca quis que eu me divertisse,",
-    "boné": "‘frivolidades’, como ele dizia. Nunca gostou das minhas piadas,"
+    "anillo": "Janet. Nunca le dio una oportunidad",
+    "impermeable": "ni la frivolidad ni las vacaciones. Nunca quería que me divirtiera",
+    "gorro": "la ‘frivolidad’, como él lo llamaba. Nunca le gustaba cuando bromeaba"
   }
   var mapsBody = {
-    "cara": "Ele está preocupado que não ande a dormir bem",
-    "mãos": "Ele está orgulhoso de o filho trabalhar com as mãos",
-    "escaldão": "Ele está contente que esteja a passar tempo ao ar livre"
+    "cara": "Le preocupa que no estás durmiendo",
+    "manos": "Le enorgullece que su hijo trabaje con las manos",
+    "quemadura": "Le alegra que hayas pasado tiempo afuera"
   }
   var libraryThings = [
-    "bibelôs",
-    ["uma mensagem inacabada",
-     "uma fotografia",
-     "uma receita médica em branco"
+    "chucherías",
+    ["una nota a medio escribir",
+     "una foto",
+     "una receta pendiente"
     ],
-    "objetos pessoais"
+    "objetos personales"
   ]
   var libraryMaps = {
-    mensagem: `Olhas para a mensagem inacabada. Diz: <blockquote>Minha querida, espero que entendas 
-    que estou a fazer isto por necessidade e não por falta de amor a</blockquote> Não percebes
-      como, mas reconheces a letra como sendo a de Alan Healey.`,
-    fotografia: `Examinas a imagem. É uma fotografia formal de grupo, tirada na praia: um homem idoso, uma mulher idosa, um homem
-      e uma mulher já adultos que devem ser irmãos, uma rapariga jovem. Vês logo que o velhote é Alan Healey.`,
-    receita: `Lês a receita. É para um medicamento de que nunca ouviste falar, porém
-      a tua intuição inclina-se para a hipertensão.`
+    nota: `Observas la nota a medio escribir. Dice: <blockquote>Querida, espero que entiendas
+      que hago esto por necesidad, no por falta de amor por</blockquote> No
+      entiendes cómo, pero reconoces que es la letra de Alan Healey`,
+    foto: `Examinas la foto. Es una foto grupal formal tomada en la playa: un anciano, una anciana, un hombre
+      y una mujer adultos que deben ser hermanos, y una niña. Sabes de inmediato que el anciano es Alan Healey`,
+    receta: `Lees la receta. Es para un medicamento que no conoces, pero
+      instintivamente sabes que es para la presión arterial alta`
   }
   var sections = [
     <section>
       <h2>Prólogo</h2>
-      <h3>Na tua sala de leitura</h3>
-      <p>"Procuras a sabedoria dos anciões? Avança!"</p>
-     <p>Após uma breve hesitação, a cortina de contas abre-se
-      para deixar entrar o próximo cliente. Algumas contas soltas caem e rolam até aos cantos.</p>
-       <p>Devias mesmo arranjar uma cortina nova, mas o quarto é escuro e os teus clientes nem parecem notar.
-        Estão à espera de ver as armadilhas habituais
-        duma vidente de praia: baralhos de tarô, pinturas do zodíaco,
-        uma bola de cristal absurdamente grande. Este cliente parece satisfeito com a fachada, e senta-se à tua frente, do outro lado da mesa redonda atafulhada.
-      Os vossos joelhos quase que se tocam; este quarto não foi feito para dois homens adultos.</p>
-      <p>“Veio para uma leitura?” perguntas em tom solene. O cliente assentiu com a cabeça.
+      <h3>En tu sala de lectura</h3>
+      <p>“¿Buscas el conocimiento de los sabios? ¡Avante!”</p>
+      <p>Después de una corta vacilación, la cortina de cuentas se abre
+      y entra tu próximo cliente. Caen algunas cuentas sueltas y se dispersan en las esquinas.</p>
+      <p>Ya deberías comprar una cortina nueva, pero la habitación está mal iluminada y los clientes parecen no notarlo.
+        Esperan ver los accesorios habituales
+        de un vidente en un paseo marítimo: cartas de tarot, pinturas del zodíaco,
+        una bola de cristal absurdamente grande. En ese aspecto, este cliente parece satisfecho y se sienta en frente tuyo
+        en la estrecha mesa circular.
+      Casi que tocan rodillas; esta habitación no fue hecha para dos hombres grandes.</p>
+      <p>“¿Viniste por una lectura?” preguntas de manera solemne. El cliente asiente.
       </p>
-      <p>"Comecemos, então. Alguns alcançam os espíritos através da palma da mão ou das cartas. Eu preciso dum objeto pessoal, um infundido com os próprios espíritos."
+      <p>“Entonces comencemos. Algunos contactan a los espíritus con cartas o las palmas. Yo requiero un objeto personal, uno infundido con el espíritu mismo”.
       </p>
-      <p>Inspecionas o cliente, que traz <List expansions={Customer.clothes} conjunction="e" tag="p0_customer_clothes"/>.</p>
+      <p>Inspeccionas al cliente, que tiene <List expansions={Customer.clothes} conjunction="y" tag="p0_customer_clothes"/>.</p>
     </section>,
     <section>
       <p>
-        “Há uma poderosa força psíquica a emanar do <FromInventory inventory={inventory.p0_customer_clothes} offset={1} />,” dizes. “Posso pegar nele?”
-        O cliente entrega-to, de olhos arregalados. Fechas os olhos e rodas
-         o <FromInventory inventory={inventory.p0_customer_clothes} offset={1} /> lentamente entre as tuas mãos.
-        “<Map from={inventory.p0_customer_clothes} to={mapsClothes} offset={1}/>”
-        Franzes a testa. “Os espíritos querem ajudar, mas parece que os sinais estão fracos—” Quando o homem não responde, 
-        abres um olho e clareias a garganta. O tipo rapidamente saca outra nota de vinte.
+        “Siento una poderosa fuerza psíquica de tu <FromInventory inventory={inventory.p0_customer_clothes} offset={1} />”, dices. “¿Puedes dármelo?”
+        El cliente mira asombrado cuando te lo entrega. Cierras los ojos y giras
+        el <FromInventory inventory={inventory.p0_customer_clothes} offset={1} /> lentamente entre tus manos.
+        “<Map from={inventory.p0_customer_clothes} to={mapsClothes} offset={1}/>”.
+        Frunces el ceño. “Los espíritus quieren ayudar, pero las señales son débiles...” Cuando no responde,
+        abres un ojo y te aclaras la garganta. Rápidamente saca otros veinte dólares.
       </p>
       <p>
-        “Vejo um nome,” continuas. “Começa com um S—” Ele olha-te sem expressão. “Ou será com um N?”
-        O homem anima-se. Franzes a testa, fingindo uma profunda concentração. “<List expansions={Customer.names} tag="p0_customer_names"/>”
+        “Veo un nombre”, continúas. “Comienza con una S...” Te mira inexpresivo. “¿O una N?”
+        Reacciona. Frunces el Ceño como en profunda concentración. “<List expansions={Customer.names} tag="p0_customer_names"/>”
       </p>
     </section>,
     <section>
-      <p>“—Nicholas?” sugere ele excitadamente. “Será o meu pai?”</p>
-      <p>“Talvez,” esquivas-te. “<Map from={inventory.p0_customer_clothes} to={mapsName} offset={1} />”
+      <p>“¿—Nicholas?” aporta con entusiasmo. “¿Es mi padre?”</p>
+      <p>“Quizás”, contestas con evasivas. “<Map from={inventory.p0_customer_clothes} to={mapsName} offset={1} />”
       </p>
-      <p>“Ele não gostava de <Map from={inventory.p0_customer_clothes} to={mapsApprove} offset={1} />” diz com amargura.</p>
-      <p>“Sim, e está arrependido de se ter comportado assim.”</p>
-      <p>“A sério?“ O cliente franze o rosto. “Isso não parece nada uma coisa dele.”</p>
-      <p>“O mundo do Além transforma uma pessoa,” afirmas, contornando a sua objeção.
-        Analisas <List expansions={Customer.body} tag="p0_customer_body" conjunction="e" />.</p>
+      <p>“No le gustaba <Map from={inventory.p0_customer_clothes} to={mapsApprove} offset={1} />”, dice con rencor.</p>
+      <p>“Sí, y lamenta haberse comportado de esa manera”.</p>
+      <p>“¿En serio?“ El cliente mira incrédulo. “Eso no suena para nada como él”.</p>
+      <p>“El más allá cambia a las personaS”, dices ignorando su objeción.
+        Analizas <List expansions={Customer.body} tag="p0_customer_body" conjunction="y" />.</p>
     </section>,
     <section>
-      <p>“<Map from={inventory.p0_customer_body} to={mapsBody} offset={1} />,” improvisas.</p>
-      <p>“É verdade, tenho sido—”</p>
-      <p>Mas o teu triunfo é sol de pouca dura, pois inesperadamente a cortina agita-se de novo. Uma mulher adentra-se pelo quarto: quarentona, toda pão-pão, queijo-queijo... um bocadinho desleixada
-        para o teu gosto. A sua expressão azeda diz-te que não se trata de uma potencial cliente. Não te surpreende quando mostra
-        um distintivo ao cliente e diz “Saia.”
+      <p>“<Map from={inventory.p0_customer_body} to={mapsBody} offset={1} />”, improvisas.</p>
+      <p>“Es verdad, he estado...”</p>
+      <p>Tu triunfo es efímero cuando la cortina se agita de nuevo de manera inesperada. Entra una mujer: cuarenta y tantos, sensata, un poco desaliñada
+        para tu gusto. Su expresión amarga te dice que no es una posible clienta. No te sorprende cuando
+        le muestra rápido su placa al cliente y dice “Váyase”.
       </p>
-
-     <p>O homem quase que salta do assento e apressadamente recolhe as suas coisas, envergonhado. “Pode ficar se quiser,”
-        dizes-lhe, mas em vão, o tipo só se quer pôr a milhas. Passa de fininho pela mulher — a agente de polícia — que o observa com um misto de pena e
-        de desprezo.
-        O homem está com tanta pressa que nem se lembra de levar o dinheiro extra que deixou na mesa
-        e que tu enfias sorrateiramente no bolso, aproveitando um momento de distração.
-         O <FromInventory inventory={inventory.p0_customer_clothes} offset={1} /> também ficou esquecido.
+      <p>Casi salta del asiento y guarda todo apurado, con vergüenza. “No tienes que irte”,
+        le dices, pero es inútil, ya no te cree nada. Trata de salir mientras
+        la mujer, la oficial de policía, lo mira con una mezcla de pena y
+        desdén.
+        Está tan apurado que se olvida de llevarse el dinero extra de la mesa
+        y, en la distracción del momento, lo deslizas silenciosamente dentro de tu bolsillo.
+        Su <FromInventory inventory={inventory.p0_customer_clothes} offset={1} /> también queda olvidado.
       </p>
-    <p>Ficas
-        sozinho com a polícia. Provavelmente veio para te atormentar por causa de arrependimentos alheios:
-        uma denúncia de alguém que foi enganado, que tu não os informaste vezes suficientes de que era uma coisa “apenas para fins de entretenimento”, que o marido ou a mulher descobriu, coisas do tipo. Não acontece com frequência,
-        mas acontece. É melhor deixar a conversa correr normalmente: começar com simpatia, manter a formalidade.
+      <p>Y ahora estás
+        solo con la oficial. Probablemente vino a hostigarte por el arrepentimiento de alguien:
+        afirman que fueron estafados, que no recalcaste lo suficiente que era “solo para
+        entretenimiento”, que su pareja se enteró, lo usual. No pasa seguido,
+        pero pasa. Mejor que el interrogatorio vaya sin problemas: comenzar con respeto, mantenerlo formal.
       </p>
-      <p>“Em que posso ajudá-la, senhora agente?” perguntas. E então ela responde duma forma que nem tu
-      podias ter previsto.</p>
-      <p>“É Inspetora. E preciso de um médium,” diz ela, entregando-te
-        o seu <List expansions={["cartão", 'cartão, que viras e lês: <em>Tamisha Whitby, Investigações Criminais, Condado de Cape May, NJ</em>']}  tag="p0_nextUnit"/>.
+      <p>“¿Puedo ayudarla, oficial?” preguntas. Y luego dice algo que ni tú
+      podrías haber predicho.</p>
+      <p>“Detective. Y necesito un vidente”, dice, entregándote
+        su <List expansions={["tarjeta", 'tarjeta, que volteas y lees: <em>Tamisha Whitby, Investigación Criminal, Condado de Cape May, NJ</em>']}  tag="p0_nextUnit"/>.
       </p>
     </section>,
     <section>
       <hr/>
-    <p>Esperas que ela corte o ambiente pesado com uma piada, mas nada,
-        fica ali apenas, a estudar-te. Podes ser um charlatão, mas não és malcriado.
-      “Frank Petrio,” apresentas-te, estendendo a tua mão carnuda.</p>
+      <p>Esperas que corte el momento pesado con un chiste, pero no,
+        solo se queda analizándote. Puedes ser un fraude, pero no eres grosero.
+      “Frank Petrio”, dices y extiendes tu mano rechoncha.</p>
 
-      <p>Ela aperta-a e mostra um dos teus cartões de visita. “Não o <i>Grande Francisco</i>?”</p>
-      <p>Encolhes os ombros e apontas para a tabuleta por cima da porta: “<small>Apenas para fins de entretenimento</small>.” Os dois sentam-se.</p>
-      <p>Ela diz, “Não acredito em adivinhos nem em médiuns nem em coisas do género. 
-        Estou aqui a fazer um favor a uma pessoa.” Ela olha-te tão fixamente que não consegues esconder o teu incómodo. Deve ser assim que os teus clientes se sentem. “Houve uma morte, no mês passado,
-      em Stone Harbor, um homem idoso chamado Alan Healey. Talvez tenha lido qualquer coisa sobre isso; veio nos jornais.”</p>
-      
-      <p>“É agosto, aqui no passeio marítimo,” respondes. “Tenho estado cheio de trabalho.”</p>
+      <p>Te saluda y saca una de tus tarjetas de negocios. “¿No 'El Gran Francisco'?”</p>
+      <p>Te encoges de hombros y apuntas al cartel sobre la puerta: “<small>Solo para entretenimiento</small>.” Ambos se sientan.</p>
+      <p>Ella dice “No creo en la clarividencia o en los psíquicos o en nada de eso.
+        Vine aquí como un favor a una persona”. Te mira fijo, demasiado, y no puedes evitar
+        retorcerte un poco de vergüenza. Así se deben sentir tus clientes. “Alguien murió hace un mes,
+      en Stone Harbor, un anciano llamado Alan Healey. Puede que lo hayas visto; estuvo en el periódico”.</p>
 
-      <p>Ela olha criticamente em torno da sala de leitura e não é preciso ser-se médium para saber
-        o que ela pensa sobre a tua opção de carreira. Ela tira uma pasta e começa a ler.
-        “Healey foi encontrado morto em casa, após ter ingerido
-        uma sobredosagem do medicamento que tomava para a hipertensão arterial. Os Healeys são uma família antiga e abastada na cidade,
-      por isso a história recebeu bastante atenção dos meios de comunicação locais.”</p>
- 
+      <p>“Es verano en el paseo marítimo”, contestas. “He estado bastante ocupado con el trabajo”.</p>
+      <p>Mira intencionadamente la sala de lectura y no necesitas ser vidente para saber
+        lo que opina de tu carrera. Saca una carpeta y comienza
+        a leerla.
+        “Healey fue encontrado muerto en su casa después de ingerir
+        una sobredosis de su remedio para la presión arterial. Los Healey son una familia antigua y adinerada del
+      pueblo, así que la historia apareció bastante en las noticias”.</p>
       <p>
-        Stone Harbor é uma vila lindíssima, próspera, muito bem planeada, que fica apenas a uns quinze minutos e a uma catrefada
-        de quilómetros da feira popular que é a cidade operária em que vives. “Desculpe. O que tem tudo isso a ver comigo?”
+        Stone Harbor es un hermoso pueblo próspero y autosuficiente a quince minutos y un millón
+        de kilómetros de distancia del pueblo carnaval de clase media donde vives. “Perdón, ¿qué tiene que ver esto conmigo?”
       </p>
-      <p>“Healey tem uma jovem sobrinha que estava a morar com ele na altura. É minha afilhada.
-        A mãe dela já está fora da equação, mas sei que ela gostaria de — quer dizer — acho...” A detetive parece
-        incomodada, como muitos dos teus clientes no início.
-      “Ela é uma pessoa muito... espiritual. Ela tende a acreditar.” Whitby pára de novo.</p>
-
-      <p>“Ou seja uma ingénua,” dizes.</p>    
-      <p>A inspetora olha-te com irritação. “Quero tanto estar aqui quanto você me quer cá.
-        Ele era um velho com uma visão débil que leu mal a dosagem. Estou a fazer um favor
-        a uma velha amiga e—” Ela leva a mão ao bolso à procura de qualquer coisa.
-        “Allison, a minha amiga, disse-me que se algum acontecimento violento se passasse na família,
-        se houvesse alguma razão para suspeitar que a sua filha pudesse estar em perigo, deveria consultar a médium aqui.
-        Que ela já a escutara e seria capaz de ajudar—”
+      <p>“Healey tiene una sobrinita que vivía con él. Ella es mi ahijada.
+        Su madre ya no está, pero sé que ella... Yo siento...” La detective luce
+        incómoda, como muchos de tus clientes al principio.
+      “Es una persona muy... espiritual. Cree fácilmente”. Whitby pausa de nuevo.</p>
+      <p>“Quiere decir que es ingenua”, dices.</p>
+      <p>La detective frunce el ceño. “Yo no quiero estar aquí
+        y tú quieres que me vaya.
+        Era un anciano que no veía bien y leyó mal su dosis, pero le estoy haciendo el favor
+        a una vieja amiga y...” Mete la mano en el
+        bolsillo, en busca de algo. “Allison, mi amiga, me dijo que si algo violento pasaba en la familia,
+        si había alguna razón para pensar que su hija estaba en peligro, que debía venir a ver a la vidente de aquí.
+        Que ella la había escuchado y podría ayudar...”
       </p>
-      <p>“Certo, <em>ela</em>,” dizes rispidamente. “A minha mãe era ‘A Grande Francesca.’ Este era o negócio dela,
-        e um dia morreu.”
+      <p>“Claro, <em>ella</em>”, exclamas. “Mi madre era ‘La Gran Francesca’. Este era su negocio,
+        pero murió”.
       </p>
       <p>
-        “Desculpe, não quis—”
+        “Lo siento, no quise...”
       </p>
-      <p>Também estás zangado, embora não saibas bem porquê.
-        “E eu tomei conta disto. É para turistas e otários. <i>Apenas para fins de entretenimento.</i>”</p>
-      <p>“Eu sabia que isto ia ser uma perda de tempo,” diz Whitby. Ela lança
-        uma <List expansions={["luva de pele", "<psychic>luva tensa e furiosa</psychic>"]} tag="p0_glove"/> para a mesa. Tome, já fiz o que vinha cá fazer.”
+      <p>Tú también estás enojado, pero no sabes por qué.
+        “Y ahora yo lo manejo. Para turistas e inocentes. <i>Solo para entretenimiento</i>”.</p>
+      <p>“Sabía que era una pérdida de tiempo”, dice Whitby. Arroja
+        un <List expansions={["guante de cuero", "<psychic>guante tenso y furioso</psychic>"]} tag="p0_glove"/> sobre la mesa. “Ahí tienes, hice lo que vine a hacer”.
       </p>
     </section>,
     <section>
-      <p><em>Há algo muito estranho nessa </em> <List expansions={["<psychic>luva</psychic>.", "— <br/><br/><p>Pegas na luva, e tudo muda.</p>"]} tag="p0_glove2"  /></p>
+      <p><em>Hay algo muy extraño sobre ese </em> <List expansions={["<psychic>guante</psychic>.", "... <br/><br/><p>Levantas el guante y todo cambia.</p>"]} tag="p0_glove2"  /></p>
     </section>,
       <div className="in-flashback">
         <figure className="prologue">
-          <figcaption className="visuallyhidden">Um escritório pequeno e atafulhado com quadros e uma cadeira de vime em frente de uma mesa, em tons de sépia.</figcaption>
+          <figcaption className="visuallyhidden">Un pequeño estudio desordenado, con fotos y una silla de mimbre frente a un escritorio, en tono sepia.</figcaption>
         </figure>
-        <h3>No escritório</h3>
+        <h3>En el estudio</h3>
         <section>
-        <p>Olhas para baixo e não vês nada, é como se não estivesses lá. As cores do quarto
-            desbotaram todas. Os objetos estão desfocados e indistintos, como numa fotografia antiga. Há
-            uma estante de livros, uma mesa desarrumada com <List expansions={libraryThings} tag="p0_library_things" conjunction="e"/>,
-            um pequeno candeeiro e fotografias de família na parede.
-            Há uma porta que leva a um quarto bem iluminado, mas que é ainda mais turvo, menos real,
-            do que este quarto.
+          <p>Miras hacia abajo y no ves nada, como si no estuvieras ahí. El color
+            de la habitación está todo desteñido. Los objetos están borrosos e indistintos, como una foto vieja. Hay
+            una biblioteca, un escritorio desordenado con <List expansions={libraryThings} tag="p0_library_things" conjunction="y"/>,
+            una lámpara pequeña, retratos familiares en la pared.
+            Hay una puerta que lleva a un dormitorio luminoso, pero está aun más borroso, menos real,
+            que esta habitación.
           </p>
         </section>
       </div>,
     <section>
       <p>
-        <Map from={inventory.p0_library_things} to={libraryMaps} offset={1} />
+        <Map from={inventory.p0_library_things} to={libraryMaps} offset={1} />.
       </p>
       <p>
-        Uma silhueta surge à porta, encobrindo a luz. Ouves
-        um som aflitivo vindo do outro quarto, alguém a sufocar e a engasgar-se.
+        Aparece una figura sombreada en la puerta que tapa la luz. Oyes
+        un sonido penoso del dormitorio, alguien ahogándose y balbuceando.
       </p>
       <p>
-        A figura ouve indiferente a agonia. O pânico cresce em ti, porém,
-        absurdamente, não tens pés para correres até ao quarto, nem voz com que pedir ajuda. Depois dum tempo
-        dolorosamente longo, o sufocar desvanece. Tudo é silêncio. A figura fecha a porta do quarto,
-        e a divisão está agora iluminada apenas pelo ténue candeeiro na secretária. Ilumina a mão enluvada na
-        maçaneta, um simples objeto que te deixa paralisado. A figura experimenta a porta, e satisfeita que o quarto está trancado, solta a maçaneta.
-        A <List expansions={["luva zangada", "luva violentamente zangada"]} tag="p0_glove3" /> parecendo ferver sob a luz—
+        La figura escucha el sufrimiento sin emoción. Comienzas a sentir pánico, pero,
+        absurdamente, no tienes pies para correr hacia el dormitorio, ninguna voz para pedir ayuda. Después de
+        un largo y doloroso tiempo, el ruido cesa. Todo es silencio. La figura cierra la puerta del dormitorio
+        y la habitación queda iluminada solo por la lampara débil. Alumbra la mano enguantada sobre
+        el picaporte y estás absorto por ese simple objeto. La figura intenta abrir la puerta y, feliz
+        de que está cerrada, suelta el picaporte,
+        mientras el <List expansions={["guante enojado", "guante violentamente enojado"]} tag="p0_glove3" /> parece hervir bajo la luz...
       </p>
     </section>,
     <section>
-      <h3>Na tua sala de leitura</h3>
+      <h3>En tu sala de lectura</h3>
       <p>
-        E num ápice estás de volta, com uma sensação quase grotesca de estares sobrecarregado com o peso
-        do teu próprio corpo. Olhas para a luva que, embora densa e pesada nas tuas mãos,
-        perdeu toda a sensação de profunda <em>maldade</em> que emanava. É só uma
-        luva.
+        Y, así como así, vuelves. El sentimiento de que te abruma tu cuerpo
+        es casi grotesco. Miras al guante y, aunque se siente denso y
+        pesado en tus manos, la sensación de que algo está profundamente <em>mal</em> desapareció. Es
+        solo un guante.
       </p>
       <p>
-        Esta foi, na verdade, a primeira experiência espírita da tua vida.
+        Esta fue la primera verdadera experiencia psíquica de tu vida.
       </p>
-      <p>Não fazes ideia de como vais explicar tudo isto a uma inspetora tão pragmática e racional, mas quando encontras o seu olhar podes ver claramente
-        que <em>algo</em> se passou. Ela parece assustada contigo e não é pouco.
+      <p>No puedes imaginar cómo harás para explicarle todo esto a una
+        oficial sensata y racional, pero, cuando la miras a los ojos, puedes ver claramente
+        que <em>algo</em> pasó. Luce un poco mucho
+        asustada de ti.
       </p>
       <p>
-        Empurras a luva de volta para ela. “Healey foi assassinado.”
+        Le devuelves el guante. “Healey fue asesinado”.
       </p>
       <NextChapter chapter="1" />
     </section>

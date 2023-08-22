@@ -8,277 +8,308 @@ import { RenderSection } from '.'
 const _Chapter = ({currentSection, inventory, chapterId}) => {
   var sections = [
     <section>
-      <h2>Capítulo VIII</h2>
-      <h3>No carro</h3>
+      <h2>Capítulo Ocho</h2>
+      <h3>En el auto</h3>
       <p>
-        Omites a parte sobre a tua mãe te ter visto. Sentes que é uma coisa privada. O resto contas-lhe no caminho. Whitby reage ao amigo de maneira fria. "Nem sei o que pensar duma mãe que é capaz de abandonar um filho."
+        Omites la parte donde tu madre te vio. Es privado. Pero le cuentas todo el resto en el camino.
+        La reacción de Whitby con respecto a su amiga es fría. "No sé qué pensar de una madre que abandona a su hija".
       </p>
       <p>
-        "Acho que se o tivesses visto..." começas. "Foi muito pior do que aquilo que me aconteceu. E ela sabia tantos pormenores."
+        "Pienso que si lo hubieses visto..." comienzas a decir. "Era peor que lo que me pasa a mí y sabía muchos más detalles".
       </p>
       <p>
-        "Sim, mas é que..." Whitby vira o carro para uma rua residencial escura. "Ela sempre foi uma rapariga de borgas. Não sei se estava preparada para ter um filho."
+        "Sí, pero..." Whitby dobla en una oscura calle residencial. "Siempre le gustó la fiesta. No sé si estaba lista para tener un hijo".
       </p>
       <p>
-        Não tens a certeza porque é tão importante para ti que ela compreenda, mas é. "Ela não estava a fugir das responsabilidades. Estava a ser corajosa. Estava a sacrificar-se pela filha."
+        No entiendes por qué te resulta importante que ella lo entienda, pero lo es. "No escapó de sus responsabilidades.
+        Fue valiente. Se sacrificó por su hija".
       </p>
       <p>
-        "Talvez," diz Whitby. "Esperemos é que não seja tarde demais." Ela vira o carro para um caminho privado cheio de curvas. Estão na propriedade dos Healeys em Stone Harbor.
+        "Tal vez", responde. "Esperemos que no sea demasiado tarde". Entra a un sinuoso camino privado.
+        Te encuentras en la mansión de los Healey en Stone Harbor.
       </p>
       <p>
-        "O Troiano cedeu, como previsto. Confessou que começou com coisas de pouco valor, a apostar no jogo de domingo, todos o fazem, mas as coisas começaram a intensificar-se. Têm a marina, mais os parques de estacionamento, os armazéns: na realidade, o império Healey é perfeito para lavagem de dinheiro, tráfico, é o que quiseres.
-        Tanto quanto sei sempre foi um negócio limpo. O Alan era bom a gerir as propriedades e a fazer investimentos acertados. Mas desde que se reformou e deixou o Jared à frente do negócio, ele limpou aquilo tudo e envolveu-se com mafiosos.
+        "Troiano se quebró tal como esperabamos. Confesó que empezó con algo pequeño, apostaba solo en los juegos
+        de los domingos, todos lo hacen, pero que escaló. El puerto deportivo, los estacionamientos, los depósitos:
+        el imperio de los Healey es perfecto para lavar dinero, contrabandear, lo que sea. Por lo que sé siempre estuvieron limpios;
+        Alan tan solo era bueno para gestionar propiedades e invertir bien. Pero desde que se retiró y dejó que Jared tomara el mando,
+        todo está vacío y relacionado con la mafia".
       </p>
       <p>
-        Dizes, "O Alan soube-o durante muito tempo, mas ou não queria acreditar ou esperava que tudo se resolvesse sozinho. Quando compreendeu que não havia forma de recuperar o irmão, tomou medidas para se proteger a ele próprio, à mulher e também à sobrinha. Ela é a filha que ele nunca teve. Acho que o Michael descobriu os planos do irmão e estava ciente de que se o negócio deixasse de existir por completo iria deixar certas pessoas muito, mas muito zangadas."
-      </p>
-      <p>"Não sei se realmente teria feito alguma diferença," diz Whitby. "Se metade daquilo que o Troiano disse for verdade, o FBI vai ter um dia em cheio. A família vai perder tudo." Ela desliga as luzes, põe o carro em ponto morte e deixa-o deslizar até à entrada.
-      </p>
-      <p>
-        A casa está às escuras, mas o carro de Michael Herschel está aqui, metido entre as árvores nodosas e escondido à pressa com arbustos. Está a irradiar medo de ser capturado.
+        Dices: "Hace tiempo que Alan lo sabía, pero no quería creerlo o esperaba que se resolviera solo.
+        Cuando se dio cuenta de que su hermano era un caso perdido, decidió protejerse a él, a su esposa y a su sobrina. Es la hija que nunca tuvieron.
+        Creo que Michael se enteró de sus planes y sabía que si desaparecía el negocio como tapadera, varias personas se enojarían mucho, mucho".
       </p>
       <p>
-        Todos os objetos em redor chamam por ti.
+       "Creo que al fin y al cabo, no importaba", dice Whitby. "Si la mitad de lo que Troiano dijo es verdad,
+       los federales se van a dar un festín. Los Healey perderán todo". Apaga las luces y conduce hasta la entrada de la casa.
       </p>
       <p>
-        "Achas que também vão perder esta casa?" Ela confirma com a cabeça. "É uma pena." Cada pedra, cada coluna diz que esta casa foi um lar feliz.
+        La casa está a oscuras, pero el auto de Michael Herschel está aquí, metido en los árboles nudosos
+        y cubierto apresuradamente con plantas. Emana miedo a ser descubierto.
+      </p>
+      <p>Todos los objetos que te rodean te llaman.</p>
+      <p>
+        "¿También perderán la casa?" Whitby asiente. "Qué pena". Cada piedra y columna te dice que era una casa feliz.
       </p>
       <p>
-        Com um gesto, mostras o veículo à inspetora. "Fica aqui e não te mexas," diz ela.
-        Ela tira a <List expansions={["arma", "arma inquieta"]} tag="c8_gun" /> e de mãos firmes verifica-a com destreza. <Map from={inventory.c8_gun} to={{arma: "A arma diz-te que nunca foi disparada em serviço. Tem medo de fazer mal à pessoa errada. Espera nunca ser usada."}} />
+        Le señalas el auto a la detective. "Quédate aquí y no te muevas", dice.
+        Saca su{" "} <List expansions={["arma", "arma inquieta"]} tag="c8_gun" /> y la revisa con manos firmes y expertas.{" "}
+        <Map
+         from={inventory.c8_gun}
+         to={{
+           arma: "El arma te cuenta que nunca fue disparada en el trabajo. Teme lastimar a la persona equivocada. Espera nunca ser utilizada."}} />
       </p>
     </section>,
     <section>
       <p>
-        Ela dirige-se à parte de trás da casa e desaparece. Estupidamente, apercebes-te de que não sabes se ela pediu reforços ou o que fazer se alguma coisa correr mal.
-        A <List expansions={["porta da frente", "velha e imponente casa está em apuros, e a porta da frente "]} tag="c8_house" /> chama por ti.
+        Whitby desaparece detrás de la casa. Estúpidamente, te das cuenta que no sabes si pidió refuerzos o qué deberías hacer si algo sale mal.
+        La <List expansions={["puerta de entrada", "vieja mansión está en problemas y la puerta de entrada "]} tag="c8_house" /> te llama.
       </p>
     </section>,
     <section>
       <p>
-      A lua está quase cheia, e o caminho de gravilha branca cintila. Podes ouvir o embalo do mar e as cigarras e os grilos que enchem o ar. Mas estes são quase completamente abafados pela cacofonia de vozes inanimadas dentro da casa. Deixas-te ir até às <List expansions={["escadas",
-        "escadas de betão, onde pegadas de homens assustados deixaram mediúnicas manchas negras que, bem sabes, só tu podes ver"]}
-          tag="c8_prints" nextUnit={null}/>. Através
-        de uma <List expansions={[`pequena janela`,`pequena janela na porta`]} tag="c8_entryway" nextUnit={null}/> <Map
+        La luna está casi llena y el camino de gravilla blanca resplandece. Puedes oír las olas del océano, y el sonido de las cigarras
+        y los grillos colman el aire. Pero todo eso queda casi ahogado ante la cacofonía de voces inanimadas en la casa. Te mueves hacia la{" "}
+       <List
+       expansions={[
+        "escalinata",
+        "escalinata de concreto, donde las pisadas de hombres asustados han dejado manchas negras psíquicas que sabes que solo tú puedes ver"]}
+          tag="c8_prints" nextUnit={null}/>. A través
+        de una{" "} <List expansions={[`pequeña ventana`,`pequeña ventana en la puerta`]}
+        tag="c8_entryway" nextUnit={null}/> <Map
           from={inventory.c8_entryway} to={{
-            undefined: " só entrevês pretidão.",
-          janela: `consegues discernir os contornos da entrada e o zunir de mais objetos famintos.`}
+            undefined: " solo ves oscuridad.",
+          ventana: `ves el contorno del vestíbulo y oyes el zumbido de más objetos hambrientos...`}
           }/>
-        &nbsp; A <List expansions={["maçaneta", "hospitaleira maçaneta"]} tag="c8_doorknob" /> faz-te sinal.
+        &nbsp; La <List expansions={["perilla", "perilla acojedora"]} tag="c8_doorknob" /> te invita a abrirla.
       </p>
     </section>,
     <section>
       <p>
-        Roda-la e ficas com a ligeira sensação de que é uma estupidez, que devias era regressar a correr para um lugar seguro. Só que já entraste, e vês um tapete enegrecido <Map from={inventory.c8_prints}
+        La giras y sabes vagamente que esto es estúpido, deberías volver a la seguridad del auto.
+        Pero ya estás adentro y la alfombra está ennegrecida
+        <Map
+          from={inventory.c8_prints}
           to={{
-            undefined: ` de tantas pegadas sobrepostas, `,
-            stairs: ` das mesmas pegadas, `
-          }} /> com as mesmas pegadas, manchas não de lama, mas de medo e raiva. Não vês pegadas de criança, mas o <List expansions={["corrimão da escada—", "corrimão da escada chama por ti, como uma mão numa pista de dança, incitando-te a que o sigas."]} tag="c8_stairrail"/>
+            undefined: ` con pisadas superpuestas, `,
+            stairs: ` con las mismas pisadas, `,
+          }} /> manchas no de lodo, sino de miedo y enojo. No ves pisadas del tamaño de una niña,
+          pero la <List expansions={["baranda de la escalera...", "baranda te llama como si te extendiera la mano para bailar, te seduce para que la sigas."]} tag="c8_stairrail"/>
       </p>
       <p>
-        Jared Healey jaz amontoado no fundo das escadas, o seu pescoço dobrado para trás. Não sabes se foi a queda que o matou, mas um <List expansions={["pesado atiçador de ferro", "pesaroso atiçador de ferro"]} tag="c8_poker" nextUnit={null} /> está a seu lado, empastado de sangue. <Map from={inventory.c8_poker} to={{ferro: "Sussurras-lhe o teu perdão." }} />
-      </p>
-    </section>,
-    <section>
-      <p>
-        Estás agora no cimo das escadas, e um corredor estende-se para a direita e para a esquerda. Há quadros ao longo da parede, <List expansions={["retratos de membros da família", "retratos de membros da família, os seus olhos comicamente gesticulando para a direita, para a direita."]} tag="c8_portraits" />
-        <Map from={inventory.c8_portraits} to={{undefined: " em grandioso estilo antigo."}} />
+        Jared Healey yace tirado al pie de la escalera con el cuello doblado hacia atrás. No sabes si fue la caída lo que lo mató, pero hay un <List expansions={["pesado atizador de hierro", "apenado atizador de hierro "]} tag="c8_poker" nextUnit={null} /> a su lado, empapado de sangre. <Map from={inventory.c8_poker} to={{atizador: "Susurras tus pesares." }} />
       </p>
     </section>,
     <section>
       <p>
-        Uma <List expansions={["mão", "mão firme"]} tag="c8_hand" /> no teu ombro deixa-te paralisado.
+        Llegas arriba y te encuentras en un pasillo que va a la izquierda y la derecha. Hay cuadros en toda la pared,
+        <List expansions={[" retratos de los miembros de la familia", " retratos de la familia, mirando cómicamente a la derecha, a la derecha."]} tag="c8_portraits" />
+        <Map from={inventory.c8_portraits} to={{undefined: " en el increíble estilo antiguo."}} />
       </p>
     </section>,
     <section>
       <p>
-        “'Mas que porra pensas tu que estás a fazer?'” sibila Whitby. Um movimento periférico capta a tua atenção, e olhas para baixo para o tapete oriental debaixo dos teus pés. O tapete cobre todo o corredor e, ao observá-lo, os seus padrões abstratos amontoam-se e convertem-se numa série de setas ondulantes, como um letreiro de néon num casino.
+        Una <List expansions={["mano", "mano firme"]} tag="c8_hand" /> en el hombro te paraliza.
+      </p>
+    </section>,
+    <section>
+      <p>
+        “'¿Qué demonios piensas que estás haciendo?'” sisea Whitby. Un movimiento periférico te distrae y miras a la alfombra oriental
+        debajo de tus pies. La alfombra se extiende por todo el pasillo y, al mirarla, el estampado abstracto se une
+        y se reforma en una serie de flechas ondulantes, como esos carteles de neón en los casinos.
       </p>
       <p>
-        "Tens de ir por ali," dizes-lhe, apontando para a esquerda. "Detém o Michael."
+        "Tienes que ir por allí", le dices mientras apuntas a la izquierda. "Detén a Michael".
+      </p>
+      <p>"¿Cómo sabes dónde está?" susurra.</p>
+      <p>"Me lo dijo la alfombra”.</p>
+      <p>Por alguna razón, la respuesta le es suficiente. "¿Qué haras tú?"</p>
+      <p>“Iré por Sarah”.</p>
+      <p>“Deberías esperar a...”
       </p>
       <p>
-        "Como é que sabes que ele está lá?" sussurra ela.
-      </p>
-      <p>
-        "Disse-me o tapete.”
-      </p>
-      <p>
-        Por alguma razão esta resposta convence-a. "Que é que estás a fazer?"
-      </p>
-      <p>
-        “Eu vou buscar a Sarah.”
-      </p>
-      <p>
-        “Deves esperar por—”
-      </p>
-      <p>
-        "Não. É por isso que estou aqui." Abres a <List expansions={["porta à direita", "porta do quarto de Healey"]} tag="c8_bedroomdoor" />.
+        "No. Estoy aquí para hacer esto". Abres la <List expansions={["puerta de la derecha", " puerta de la habitación de Healey"]} tag="c8_bedroomdoor" />.
       </p>
     </section>,
     <section>
       <hr/>
-      <h3>No escritório</h3>
+      <h3>En el estudio</h3>
       <p>
-        O quarto está quase tão obscurecido na vida real. A porta para o quarto de Healey está fechada. A porta diz-te que está trancada, mas quer ser aberta porque lá dentro há uma menina pequenina muito assustada.
+        La habitación está casi tan tenue como en la vida real. La puerta interna que da a la habitación de los Healey está cerrada.
+        Ella te dice que está cerrada, pero que quiere estar abierta porque adentro hay una pequeña niña asustada.
       </p>
       <p>
-        Vais para a abrir, mas os livros nas prateleiras todos arqueiam as suas lombadas em direção ao canto. O vulto na sombra da tua visão encontra-se lá sentado. Agora já não está desfocado. É Michelle Herschel.
+        Te estiras a abrirla, pero los libros en los estantes erizan sus lomos hacia la esquina de la habitación.
+        La figura ensombrecida que recuerdas de tu visión está sentada allí. Ya no está borrosa. Es Michelle Herschel.
       </p>
       <p>
-        <em>“Joey?”</em> diz ela, desconcertada. <List expansions={["O seu rosto", ["Os seus olhos de pânico", "as faces coradas", "a testa transpirada"], "A sua expressão assustada "]} tag="c8_michelle" conjunction="e" /> mal se 
-
+        <em>“¿Joey?”</em> dice desconcertada. <List expansions={["Su rostro", ["Sus ojos aterrorizados", "sus mejillas enrojecidas", "su frente transpirada"], "Su expresión aterrorizada",]} tag="c8_michelle" conjunction="y" /> apenas se
         <Map from={inventory.c8_michelle} to={{
-          undefined: " vê ",
-          rosto: " veem ",
-          pânico: " vê ",
-          transpirada: " vê ",
-          coradas: " vê "
-        }} />
-         na penumbra.
+          undefined: " ve ",
+          rostro: " ven ",
+          ojos: "ven ",
+          frente: "ve ",
+          mejillas: " ven ",
+        }} /> en la penumbra.
           </p>
     </section>,
     <section>
       <p>
         <Map from={inventory.c8_michelle} to={{
-          pânico: "Os olhos dela percorrem-te de cima abaixo, tentando avaliar-te.",
-          coradas: "As faces dela estão coradas como as dos mentirosos quando são apanhados.",
-          transpirada: "Ela está toda transpirada de estar aqui sozinha há tanto tempo."
-        }}/> Está a tentar compreender como é que o estranho da esquadra de polícia pode ser a pessoa que ela claramente aguardava. 
+          ojos: "Te mira de arriba a abajo, intentando descifrarte.",
+          mejillas: "Su rostro está enrojecido como los mentirosos cuando los descubren.",
+          frente: "Ha transpirado un largo rato, sola aquí adentro."
+        }}/> Está intentando entender cómo el desconocido de la estación de policía es la misma persona que ha estado esperando.
       </p>
       <p>
-        <em>Nunca se tratou do irmão dela.</em>
+        <em>Nunca fue su hermano.</em>
       </p>
       <p>
-        "Sim, sou eu o Joey,” dizes tu. O bater do relógio vai contando o tempo (e literalmente é como se a tua cabeça estivesse a levar uma surra), mas fazes um compasso de espera para respirar antes de iniciares a tua atuação. "Vim buscar a miúda," afirmas tu, com verdade. 
+        "Sí, soy Joey”, respondes. El reloj continúa con su tictac (literalmente, es como un martilleo en tu cabeza),
+        pero te das un momento para respirar antes de comenzar con tu actuación. "Estoy aquí por la niña", dices la verdad.
       </p>
       <p>
-        Ela estuda-te de uma poltrona infestada de repulsa. O candeeiro da secretária está ligado, mas a sua luz recusa-se a iluminá-la a ela, preferindo antes banhar-te com o seu brilho. Isto não está a ajudar: quem quer que estejas a imitar provavelmente não se parece muito contigo.
+        Te analiza desde un sillón plagado de repulsión. La lámpara de mesa está prendida, pero su luz se resiste a iluminarla
+        y te baña a ti en su brillo. Esto no ayuda: quien sea que estás fingiendo ser seguro no se parece mucho a ti.
       </p>
       <p>
         <Map from={inventory.c8_michelle} to={{
-          pânico: "“Estás a olhar para onde?” dizes tu, e tentas mostrar-te aborrecido.",
-          coradas: "“Que é que estás a esconder?” dizes tu, e apontas acusador para ela.",
-          transpirada: "“Tresanda a suor aqui,” dizes tu com um sorriso escarninho."
-        }}/>&nbsp; “Onde é que ela está?”
+          ojos: "“¿Qué miras?” dices y tratas de verte aburrido.",
+          mejillas: "“¿Qué escondes?” dices y la señalas de modo acusador.",
+          frente: "“Apesta a transpiración aquí”, dices y la miras con asco."
+        }}/>&nbsp; “¿Dónde está?”
       </p>
       <p>
-        “Tu és o Joey do AC? Que é que estavas a fazer na esquadra?” Ela não está a engolir a história.
+        "¿Eres Joey de AC? ¿Por qué estabas en la estación de policía?" No me cree.
       </p>
       <p>
-        Que fazia um bandido numa sala cheia de polícias? Esfregas os dedos naquele gesto universal do dinheiro. "A proteger os meus bens." A experiência diz-te que a melhor maneira de aguentar uma mentira é mudar de tópico, por isso acrescentas, "Que é que aconteceu ao Jared?"
+        ¿Por qué estaría un delincuente en un lugar lleno de policías? Frotas los dedos, haciendo el gesto universal de dinero.
+        "Protegía mis activos". Por experiencia, sabes que la mejor forma de mantener una mentira es cambiar de tema,
+        así que agregas "¿Qué le pasó a Jared?"
       </p>
       <p>
-        Os olhos dela reluzem; ela quer gabar-se. "Agora que ele 
-        já está fora de cena, não precisas da miúda. O Michael e eu estamos contigo, e preparados para levar a coisa para a fase seguinte. Eu certifico-me que o controlo das propriedades será nosso—" Há uma confusão lá fora — um baque. A mobília sussurra-te uma mensagem passada de objeto em objeto desde o fundo do corredor: Michael Herschel foi dominado, Whitby já vem a caminho.
+        Sus ojos brillan; quiere alardear. "Está fuera de escena, ya no necesitas a la niña. Ahora nos tienes a Michael y a mí,
+        somos cómplices, estamos preparados para llevar las cosas al próximo nivel. Me aseguraré de controlar las propiedades..."
+        Se oye un alboroto afuera, un ruido sordo. Los muebles te susurran, un mensaje que pasó de objeto a objeto desde el salón:
+        Michael Herschel fue sometido, Whitby está en camino.
       </p>
       <p>
-        Mas Michelle é demasiado rápida; ela apercebe-se do significado das nuances expressivas do teu rosto, o modo como inclinas a cabeça na direção da porta. "Uma porra é que és o Joey." Ela levanta-se da cadeira e na mão segura <psychic><List expansions={["alguma coisa", "uma navalha de ponta e mola", "uma ponta e mola sussurrante"]} tag="c8_blade" /></psychic> à altura do peito. Vai recuando em direção à porta do quarto e lançando uma das mãos para tentar encontrar a maçaneta.
+        Pero Michelle es demasiado rápida; ve la extraña interacción en tu rostro, cómo inclinas la cabeza hacia la puerta.
+        "Ni de chiste eres él". Se levanta del sillón y sostiene <psychic><List expansions={["algo ", "una navaja automática ", "una navaja automática zumbante "]} tag="c8_blade" /></psychic>
+        frente a ella mientras retrocede hacia la puerta del cuarto y con la otra mano busca la perilla.
       </p>
     </section>,
     <section>
-      <h3>Então</h3>
+      <h3>En ese entonces</h3>
       <p>
-        “Abra a porta,” diz Michelle Herschel. Ela ainda está a segurar a navalha, lâmina estendida, firmemente apertada entre aquelas luvas malévolas. Alan Healey tem as mãos no ar, recuando para a saída, mas ela abana a cabeça e sinaliza com a faca. "A outra." Ele dá uns passos para a rodear, ainda numa posição defensiva, e obedece. A luz escorre para fora do quarto.
+        “Abre la puerta”, dice Michelle Herschel. Continúa apuntando con la navaja, el filo extendido; la sostiene firmemente
+        con esos guantes malévolos. Alan Healey retrocede hacia la salida con las manos levantadas, pero ella niega
+        con la cabeza y apunta con la navaja. "La otra". Él la rodea, aún con una postura defensiva, y obedece. Se cuela luz de la habitación.
+      </p>
+      <p>"Maggie llegará en cualquier momento", dice Healey.</p>
+      <p>
+        "Está dormida en la habitación de Sarah. Por tu bien, espero que no se despierten. Bueno, <em>¿dónde esta la escritura?</em>"
+      </p>
+      <p>"No sé a qué te..."</p>
+      <p>“Tío Healey, no quiero lastimarte”, dice. Pero lo hace.</p>
+      <p>
+        “Es tarde. Ya lo firmé. Está hecho, no puedes tocar el dinero”.
       </p>
       <p>
-        "A Maggie vai chegar a qualquer momento," diz Healey.
+        "Sé que mientes", responde Michelle y tú también lo sabes. Lo acorrala más en la habitación y tú los sigues,
+        incapaz de detener este asesinato por segunda vez.
+      </p>
+      <p>Hay dos camas pequeñas, pero ellas te aseguran que es porque Maggie se mueve mucho al dormir y se decidió hace años
+      que así era mejor. Todavía se aman, dice la habitación.
       </p>
       <p>
-        "Ela está a dormir no quarto da Sarah. Para seu bem, é melhor que não acordem. Agora, <em>onde é que está a escritura?</em>"
-      </p>
-      <p>
-        "Não sei de que estás a —"
-      </p>
-      <p>
-        “Tio Healey, não lhe quero fazer mal,” diz ela. Mas claro que quer.
-      </p>
-      <p>
-        “É tarde demais. Já está assinada. Está feito, não podes tocar no dinheiro.”
-      </p>
-      <p>
-        "Eu sei que está a mentir," diz ela, e tu também sabes disso. Ela encurrala-o mais para dentro do quarto, e tu segue-los, impotente para impedir este assassínio uma segunda vez.
-      </p>
-      <p>Há duas pequenas camas, mas as camas garantem-te que é porque Maggie se mexe e se vira muito, e eles decidiram, há anos já, que era melhor assim. Eles ainda se amam, diz o quarto.
-      </p>
-      <p>
-        Healey recua até à sua própria cama, que o quer abraçar e proteger desta mulher. "Não,"
-        diz ela, apontado novamente a faca, desta vez, na direção da cómoda. Ele levanta-se outra vez, e os seus olhos tocam brevemente a <List expansions={["mesa de cabeceira", "mesa de cabeceira firme e protetora"]} tag="c8_nightstand" />.
+        Healey retrocede hasta su propia cama, la cual quiere abrazarlo y protegerlo de esta mujer. "No", dice ella y vuelve a señalar con la navaja,
+        esta vez hacia la cómoda. Él se levanta y sus ojos brevemente ojean <List expansions={["la mesa de noche", "la mesa de noche firme y protectora"]} tag="c8_nightstand" />.
       </p>
     </section>,
     <section>
       <p>
-        Ele dá um passo em direção à cómoda, mas tropeça, agarrando-se à mesa de cabeceira para manter o equilíbrio.
-        Apenas tu — Michelle não — vês o seu gesto rápido: ele empurra um pedaço de papel que desliza do tampo e cai para trás da mesa, ficando entre a peça de mobília e a parede. A mesa de cabeceira está determinada no seu desejo de esconder aquele papel a todo o custo.
+        Se dirige hacia la cómoda, pero tropieza y se agarra de la mesa de noche para estabilizarse. Solo tú, Michelle no, ves su rápido movimiento:
+        empuja un papel que se desliza y cae entre el mueble y la pared. La mesa de noche está determinada a esconder el papel a toda costa.
       </p>
       <p>
-        A sua guilhotina para charutos também estava na mesa, e ele apanha-a e atira-a com força à sobrinha, mas ela desvia-a facilmente. O objeto ressalta para o interior do escritório onde ela o irá apanhar mais tarde e atirar para dentro da urna quando estiver a fugir da propriedade.  
+        En la mesa también había un cortapuros. Lo agarra y se lo tira a su sobrina, pero lo evita con facilidad.
+        Termina en el estudio donde ella luego lo agarrará y arrojará en la urna cuando escape.
         </p>
       <p>
-        “Tome os remédios, Tio,” diz Michelle, apontando para a garrafa com a cabeça. “E não pare até terem desaparecido todos.”
+        “Toma tu medicación, tío”, dice Michelle apuntando hacia el frasco. “No pares de tomarla hasta que desaparezca”.
       </p>
       <p>
-        “Michelle, não faças isto—”
+        “Michelle, no hagas esto...”
       </p>
       <p>
-        "Não nos deixou outra escolha," diz ela, e a sua voz vacila momentaneamente. "Era o Tio ou nós. O Tio teve uma boa vida. O Michael deu-lhe a oportunidade de tomar a decisão certa." Podes ver na sua cara que ela acredita nestas coisas. 
+        "No nos dejaste otra opción", responde, le falla un poco la voz al decir eso. "Eres tú o nosotros. Tuviste una buena vida.
+        Michael te dio la oportunidad de hacer lo correcto". Ves en su rostro que realmente cree en lo que dice.
       </p>
       <p>
-        Healey chora agora em silêncio, as suas mãos tremem e vão-se enchendo de comprimidos, e tu não aguentas ver, felizmente não tens de o fazer — 
-        a dor psicológica da visão dá lugar à <List expansions={["dor física real", "dor de estar a agarrar a lâmina de uma faca"]} tag="c8_holdblade" />—
+        Healey está llorando en silencio mientras apila pastillas en su mano. No soportas ver esto, pero por suerte no tienes que hacerlo;
+        el dolor psicológico de la visión se transforma en <List expansions={["dolor real", "el dolor de agarrar el filo de una navaja"]} tag="c8_holdblade" />...
       </p>
     </section>,
     <section>
-      <h3>Agora</h3>
+      <h3>Ahora</h3>
       <p>
-        Encostaste Michelle Herschel à porta fechada do quarto: uma mão agarrada à faca (sangue <em>escorre</em> da tua mão), a outra fechada em volta do pulso dela, impedindo-a de rodar a maçaneta. Tens estado a gritar-lhe, a dizer-lhe tintim por tintim o que viste, até que por fim o horror das suas ações começa a assentar. Talvez ela consiga sentir o desprezo de toda a casa, cada costura e cada prego a verter uma última vez o seu desgosto.
+        Lograste atrapar a Michelle Herschel contra la puerta cerrada de la habitación: una mano en la navaja (sangre <em>chorrea</em> de tu mano)
+        y la otra en su muñeca para impedir que abra la puerta. Le has estado gritando, contándole el minuto a minuto de lo que viste y, por fin,
+        por primera vez, comprende el horror de lo que hizo. Tal vez puede sentir el desprecio de toda la casa,
+        cada hilo y cada clavo que se llena por última vez de dolor.
       </p>
       <p>
-        Ela larga a faca, solta a maçaneta, e deixa-se cair no chão, cabelos frouxos a ladear o rosto. Cais para trás no preciso momento em que Whitby entra no quarto, de arma apontada. Sente-la a suspirar de alívio; não teve de ser disparada. 
+        Michelle suelta la navaja y la perilla de la puerta; se desliza hacia el piso, su cabello suelto alrededor de su rostro.
+        Te alejas trastabillando a la par que Whitby entra con su arma extendida.
+        Sientes como suspira de alivio, no tuvo que ser disparada.
       </p>
       <p>
-        "Está tudo bem," dizes tu. "A Sarah está a salvo." Whitby encarrega-se de Herschel enquanto tu abres suavemente a porta para ver, pela primeira vez, a rapariguita no centro de tudo isto, metida entre as camas, segurando a boneca sem cabeça num aperto de morte.
+        "Todo está bien", dices. "Sarah está a salvo". Whitby se encarga de Herschel mientras abres cuidadosamente la puerta de la habitación.
+        Por primera vez conoces a la pequeña niña en el centro de todo esto. Está acurrucada entre las dos camas
+        y sostiene con fuerza la muñeca sin cabeza.
       </p>
       <p>
-        Ajoelhas-te diante dela, sussurras algo sem sentido, e tocas carinhosamente na <List expansions={["boneca", "Vicky, a boneca maltratada, mas feliz"]} tag="c8_doll" />.
+        Te arrodillas ante ella mientras le susurras tonterías y con cuidado tocas <List expansions={["la muñeca", "Vicky, la muñeca maltratada, pero feliz"]} tag="c8_doll" />.
       </p>
     </section>,
     <section>
-      <p>“A Vicky quer que saibas que agora vai ficar tudo bem,” dizes sinceramente.
-        “Ela diz que te vai sempre proteger.”
+      <p>“Vicky quiere que sepas que todo estará bien”, dices con sinceridad.
+        “Dice que siempre te cuidará”.
       </p>
+      <p>Sarah hace una mueca. "Las muñecas no hablan".</p>
+      <p>“Es una buena regla de oro, pero a veces hacen excepciones”.</p>
       <p>
-        Sarah torce a cara ao olhar para ti. “As bonecas não falam.”
-      </p>
-      <p>
-        “Essa é uma boa regra geral, mas às vezes elas abrem exceções.”
-      </p>
-      <p>
-        A rapariga desvia o olhar para Whitby que surge à entrada da porta. "Tia Tamisha!" grita ela e corre na sua direção, deixando a boneca esquecida por uns breves momentos. Não faz mal: quando Sarah está contente, ela está contente.
+        La niña mira atrás tuyo y ve a Whitby en la entrada. "¡Tía Tamisha!" grita y corre hacia ella.
+        La muñeca queda olvidada de momento. No le importa: ella es feliz cuando Sarah es feliz.
       </p>
 
       <p>
-        Whitby põe-se a dar mimos à rapariga, a distraí-la enquanto os polícias enchem a casa, retiram o corpo e os Herschels, silenciosos e desafiadores. Dás a volta à cama até à mesa de cabeceira, afasta-la da parede e retiras o papel que Alan Healey tinha escondido, usando os seus últimos minutos na Terra.</p>
+        Whitby abraza e inspecciona a la niña, la distrae mientras otros oficiales colman la casa, quitan el cuerpo
+        y sacan a los silenciosos y desafiantes Herschel. Rodeas la cama para llegar a la mesa de noche, la separas de la pared y recuperas el papel
+        que Alan Healey escondió en sus últimos minutos de vida.</p>
       <p>
-        É uma escritura desta propriedade e desta casa no nome de um fundo pertencente a Sarah Healey. Tem a data do dia da sua morte e não está assinada.
+        Es la escritura original, de este terreno y de la casa, para un fideicomiso a nombre de Sarah Healey, fechado el día de su muerte y sin firmar.
       </p>
       <p>
-        Assim como a guilhotina de charutos, sente-se incompleta e inacabada. Está a pedir-te ajuda. Leva-la até à cómoda — todos os medicamentos e objetos pessoais foram removidos — mas está lá uma simples <List expansions={["caneta barata", "caneta barata a abarrotar de tinta"]} tag="c8_pen" /> na gaveta de cima.
+      Así como el cortapuros, se siente incompleto e inconcluso. Te pide ayuda. Lo llevas hasta la cómoda (ya sacaron toda la medicación
+      y las pertenencias personales), pero hay un simple <List expansions={["bolígrafo barato", "bolígrafo barato explotando de tinta"]} tag="c8_pen" /> en el primer cajón.
       </p>
     </section>,
     <section>
       <p>
-        A caligrafia de Healey era naturalmente fluida
+        La caligrafía de Healey era naturalmente fluida
 
-         <Map from={inventory.p0_library_things} to={{nota: "— distinta daquela nota apressada que leste na tua primeira visão —"}} /> com um ligeiro toque de arrogância. A caneta guia-te com facilidade, e com cada movimento sentes a escritura a suspirar de satisfação. "Isto tem de ir para o advogado dele," dizes para Whitby, que de certeza te viu falsificar a assinatura de Alan, mas ela pega na escritura com uma mão enquanto segura a da rapariga na outra. 
+         <Map from={inventory.p0_library_things} to={{nota: ", no como la nota escrita con prisa de esa primera visión,"}} />
+         y un poco arrogante. El bolígrafo te guía con naturalidad y con cada trazo sientes como la escritura suspira de alegría.
+         "Esto es para su abogado", le dices a Whitby que seguro vio cómo falsificaste la firma de Alan, pero igual
+         toma la escritura con una mano mientras sostiene la mano de Sarah con la otra.
       </p>
       <p>
-        Quando a soltas, a tua ligação com a casa desaparece num piscar de olhos, como um interruptor que se desligou. Acabou.
+        Al soltarla, la conexión que tenías con la casa se termina, como un interruptor que se apaga. Terminó al fin.
       </p>
-      <p>
-        Sentes um imenso alívio, mas também solidão.
-        
-      </p>
+      <p>Sientes un inmenso alivio y una tremenda soledad.</p>
       <NextChapter chapter="9" />
     </section>
   ]

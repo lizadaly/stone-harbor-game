@@ -8,103 +8,111 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
   var sections = [
     <section>
       <h2>Epílogo</h2>
-      <h3>Na tua sala de leitura</h3>
+      <h3>En tu sala de lectura</h3>
       <p>
-        "Procuras a sabedoria dos anciões? Avança!"
+        "¿Buscas los conocimientos de los sabios? ¡Avante!"
       </p>
       <p>
-        A cabeça de A.J., um dos teus alunos preferidos, surge à porta.
-        “Eu disse-lhe, Sr. Pietro, que estava velho demais para essas merdas.”
+        A.J., uno de tus estudiantes favoritos, asoma la cabeza por la puerta.
+        “Le dije que soy demasiado grande para esa mierda, señor Pietro”.
       </p>
       <p>
-        "Velho demais para essas <em>trampas</em>," corriges. "Ó pá, vais mesmo privar um velhote do seu divertimento?"
+        "Demasiado grande para esa <em>basura</em>", corriges. "¿En serio privarás a un viejo de su diversión?"
       </p>
       <p>
-        O miúdo revira os olhos. “Iá. Então e vem ao jogo?”
+        El niño pone los ojos en blanco. "Sí. En fin, ¿vendrá al partido?"
       </p>
       <p>
-        "Acho que não tenho escolha," dizes alegremente.
-        É o último dia de aulas antes do Dia de Ação de Graças, ou seja, dia de jogo de "Homecoming", ou seja, todos os funcionários da escola, dos professores aos contínuos, incluindo até os mais modestos ajudantes — como tu — estão de serviço no controlo de multidão, no bar dos petiscos e nos aplausos suplementares.
+        "No tengo otra opción", dices alegremente.
+        Es el último día de clases antes del Día de Acción de Gracias, lo que significa que es el partido de bienvenida, lo que significa
+        que todos los empleados de la escuela, tanto los maestros, como los conserjes y los humildes ayudantes (ese eres tú) tienen
+        el trabajo de controlar a la multitud, atender la barra de refrigerios y servir como animadores extras.
       </p>
       <p>
-        “Fixe,” diz ele, obviamente sem ouvir. Pega na mochila com os livros, esquecida pela quinquagésima vez. Ficas a pensar se ela se sente triste quando isso acontece. 
+        “Genial”, dice obviamente sin haber escuchado. Vino a recoger su mochila, la cual ha olvidado por milésima vez.
+        Te preguntas si se sentirá triste cuando eso pasa.
       </p>
       <p>
-        Ele quase que deita Nicki Troiano ao chão quando esta tenta entrar no preciso momento em que ele vai a sair. "Desculpe!" grita ele já do fundo do corredor.
+        Casi colisiona con Nicki Troiano mientra él sale y ella entra. "¡Perdón!" grita desde el pasillo.
       </p>
       <p>
-        Nicki tem um filho que vai começar o secundário este ano, o que é fixe; o pai está fora da equação, o que é fantástico. Estás sempre a pedir desculpa por não teres estado presente durante esses anos iniciais, e ela está sempre a dizer cala-te, Frankie, mas dizê-lo uma e outra vez faz-te sentir melhor, e sabes que a ela também.
+        El hijo de Nicky recién comienza la universidad, lo cual es bueno; el padre ya no está, lo cual es fantástico.
+        Siempre le dices que te arrepientes de no haber estado en los primeros años y ella siempre te dice que te calles, Frankie;
+        pero decirlo te hace sentir mejor y sabes que a ella también le ayuda.
       </p>
       <p>
-        Ela olha para a sala surpreendida. "Gosto da nova decoração." A "sala de leitura" (o nome é teu) é aonde vêm os miúdos com dificuldades de aprendizagem para receber orientação ou fazer exercícios adicionais. Não és muito mais do que uma vulgar «baby-sitter» — há uma professora de necessidades educativas especiais encarregue de dirigir este circo — mas ela deixa-te fazer de palhaço e distrair os miúdos dos seus problemas quando não se trata de coisas que tenham a ver com trabalhos da escola. Na semana passada, trouxeste algumas das traquitanas da tua mãe; quando ninguém está a ver, ensinas, aos miúdos, alguns truques para comunicar com o além. O quê? Vai dar-lhes mais jeito do que geometria. 
+        Mira la sala sorprendida. "Me gusta la nueva decoración". La "sala de lectura" (tú elegiste el nombre) es donde los niños con dificultades de aprendizaje
+        vienen a recibir clases particulares o de apoyo. No eres más que un niñero con pretensiones, una maestra especializada maneja todo esto, pero
+        te deja jugar al maestro y distraer a los niños de sus problemas cuando no se relacionan con los deberes. La semana pasada trajiste
+        algunas de las baratijas de tu mamá; cuando nadie está mirando, les enseñas a hacer lecturas en frío. Mira, seguro será más útil que la geometría.
       </p>
       <p>
-        "Tens planos para depois do jogo?" pergunta ela. Ficas embevecido com o tom tímido da sua voz. 
+        "¿Harás algo luego del partido?" pregunta. Te sientes halagado por lo tímida que suena su voz.
       </p>
       <p>
-        Pões-te a limpar o pó duma bola de cristal para queimar alguma da energia nervosa. "Não sei, devia ir estudar..."
-        Estás a 99% de terminar uma licenciatura em serviço social (ideia da Whitby), se bem que, neste momento, estejas a acumular créditos numa universidade comunitária acessível (ideia tua).    
-        A matéria não é difícil, mas há muito tempo que não estavas numa sala de aula. Sempre que te queixas da quantidade de trabalho, Whitby sente-se culpada, e Hank o Tanque enche-te com esparguete. Passas a vida a queixar-te.
-      </p>—
-      <p>
-        “É Dia de Ação de Graças, Frankie.”
+        Le quitas el polvo a una bola de cristal para matar un poco tu nerviosismo. "No sé, debería estudiar..." Solo te falta
+        el 99% de la carrera para conseguir tu licenciatura en asistente social (idea de Whitby), pero, a este punto, solo estás tomando
+        créditos fáciles para la universidad (idea tuya). El material no es díficil, pero ha pasado mucho tiempo desde la última vez
+        que estudiaste. Cuando te quejas de todo lo que debes hacer, Whitby se siente culpable
+        y Hank el Tanque te prepara espagueti. Te vives quejando.
       </p>
       <p>
-        Encolhes os ombros. Gostas de a provocar. Tecnicamente, ainda são só amigos, mas achas que estás a fazer progressos. Já só te faltam para aí uns 99%. 
+        “Es el Día de Acción de Gracias, Frankie”.
       </p>
       <p>
-        "Bem, se não estiveres muito ocupado, o Paul adorava ver-te." Paul é o filho dela. Ele é calado, como tu eras.
+        Te encojes de hombros. Te gusta molestarla. Técnicamente siguen siendo amigos, pero parece que están progresando. Van un 1% del camino.
       </p>
       <p>
-        Ias agora estar muito ocupado! "Sim, vou ter contigo depois do jogo," dizes. Ela acena com a mão.
+        "Bueno, si no estás muy ocupado, a Paul le encantaría verte". Paul es su hijo. Es callado, tal como tú lo eras.
       </p>
       <p>
-        Acabas de arrumar as coisas: endireitas as cadeiras, deitas fora o lixo dos miúdos, passas a ridícula vassourinha para carpetes por debaixo das mesas. Passas uma última vez pela tua mesa, passando a mão suavemente pelos teus pertences, um hábito que apanhaste recentemente. Metade de um baralho de cartas de tarô distribuído na mesa, um frasco com moedas I Ching; uma foto tua tremida, tirada pela tua mãe, na praia, nos anos 60; uma foto dela, ainda mais tremida, tirada por ti, em que ela está a tapar a cara com um livro nessa mesma praia.
+        Nunca estás ocupado. "Está bien, te buscaré luego del partido", dices. Ella te saluda.
       </p>
       <p>
-        Satisfeito, pegas na tua mala e apagas a luz, deixando os objetos aos seus segredos.
+        Terminas de ordenar por hoy: enderezas las sillas, tiras la basura de los niños, aspiras debajo de la mesa con tu ridículamente
+        diminuta aspiradora. Por último, limpias tu escritorio y tocas con gentileza tus posesiones, un hábito que has adquirido hace poco.
+        Hay un mazo de tarot a medio repartir; un frasco con monedas para el <em>I Ching</em>; una foto borrosa de ti, tomada por tu mamá,
+        en la playa en los años 60; una foto aun más borrosa que tú tomaste de ella, se está cubriendo la cara con un libro en la misma playa.
+      </p>
+      <p>
+        Satisfecho, agarras tu bolso, apagas la luz y dejas a los objetos con sus secretos.
       </p>
       <div className="next-chapter-link"><List expansions={["Créditos", ""]} tag="credits"/></div>
     </section>,
     <section>
 
       <h2>Créditos</h2>
-      
-       <h3>Tradução para português de Portugal</h3>
+      <h3>Traducción al español latinoamericano</h3>
       <p>
-        José Carlos Dias
+        Neido Translations: Lucila Neira y Micaela Dominguez.
       </p>
 
-      <h3>Agradecimentos do tradutor</h3>
-
-      <p>Obrigado a Gabriela Kozakiewicz e a Szymon Kowalski pela valiosa colaboração na fase inicial da tradução. Obrigado a Eulália Duarte pela revisão do texto. E obrigado à Liza pela paciente ajuda com as partes relacionadas com a programação na tradução e por ter escrito esta história incrível.</p>
-
-      <h3>Agradecimentos</h3>
+      <h3>Agradecimientos</h3>
       <p>
-        Obrigado ao Dan Schmidt e à Deborah Kaplan por terem testado o jogo.
+        Le agradezco a los testers Dan Schmidt y Deborah Kaplan.
       </p>
 
-      <h3>Licenças</h3>
+      <h3>Licencia</h3>
       <p>
-        Esta obra foi publicada ao abrigo da <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Licença Internacional Creative Commons Attribution 4.0</a>.
+        Esta obra fue publicada bajo la <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Licencia Creative Commons Atribución 4.0 Internacional</a>.
       </p>
-      <h3>Créditos das imagens</h3>
+      <h3>Créditos de las imágenes</h3>
       <ol>
-        <li><em>Escritório:</em> <a href="http://digitalcollections.nypl.org/items/510d47e1-a1d6-a3d9-e040-e00a18064a99">Vista do Quarto de Dormir a partir do Escritório</a>: Divisão de Arte, Impressões e Fotografias Miriam and Ira D. Wallach: Coleção de Fotografia, Biblioteca Pública de Nova Iorque (1918). </li>
-        <li><em>Quarto da família:</em> <a href="http://digitalcollections.nypl.org/items/510d47e1-a1e6-a3d9-e040-e00a18064a99">Library, 640 Lexington Ave, 1916:</a> Divisão de Arte, Impressões e Fotografias Miriam and Ira D. Wallach: Coleção de Fotografia, Biblioteca Pública de Nova Iorque (1916).</li>
-        <li><em>A propriedade dos Healeys:</em> <a href="http://www.loc.gov/pictures/item/nj1477.photos.038376p/">Murray Guggenheim House, Cedar & Norwood Avenues, Long Branch, Monmouth County, NJ</a> via Biblioteca do Congresso.</li>
-        <li><em>Motel das Caraíbas:</em> <a href="https://commons.wikimedia.org/wiki/File:WWHD_Caribbean_sign.JPG">WWHD Caribbean sign.</a></li>
-        <li><em>Ondas:</em> <a href="http://digitalcollections.nypl.org/items/510d47e1-48c7-a3d9-e040-e00a18064a99">Ocean Breakers, Cape Island, NJ</a>: Divisão de Arte, Impressões e Fotografias Miriam and Ira D. Wallach: Coleção de Fotografia, Biblioteca Pública de Nova Iorque (1865).</li>
-        <li><em>Cartas de Tarô:</em> <a href="http://gallica.bnf.fr/ark:/12148/btv1b105111415">Jeu de tarot divinatoire dit "Grand Etteilla" ou "tarot égyptien"</a> via Biblioteca Nacional de França.</li>
-        <li><em>Sala de leitura:</em> <a href="https://www.flickr.com/photos/montrealprotest/22008493185/in/photolist-zwPhg4-ocHKZV-oeuM5c-J2nxB4-5eF8MP-oeuM88-dQvgb7-ocHL78-ocDJ7S-ocDJ83-oeuM76-oeuM5T-oeuM9R-owmW9N-ow9Nae-ooqpns-ocHL5K-owjm52-ocHL1B-oeWXr6-ocDJ5s-5eFf9e-oeTj8f-ouMcMs-fHYLKi-ormX8L-ouhs93-oeWmbX-ovseYp-ocHL3k-odWkLC-oeuM9F-od8fWj-owoQuR-oukwMk-ovrN1j-obU1a9-oyfVhP-obU8dY-oeUNm6-oy8a4c-oweHoU-ocDJ95-ov9CYM-otnjKY-otqj6u-ouRQ8U-ouPxpF-oeULZi-ou3x1K">Psychic Readings - $10.</a></li>
-        <li><em>Foto das dunas:</em> <a href="https://flic.kr/p/vpWnd">Dune Fence</a> (tirada em Stone Harbor, New Jersey).</li>
+        <li><em>Estudio:</em> <a href="http://digitalcollections.nypl.org/items/510d47e1-a1d6-a3d9-e040-e00a18064a99">Vista del cuarto desde el estudio</a>: División de Arte, Grabados y Fotografías de Miriam y Ira D. Wallach: Colección fotográfica, Biblioteca Pública de Nueva York (1918). </li>
+        <li><em>Sala de estar:</em> <a href="http://digitalcollections.nypl.org/items/510d47e1-a1e6-a3d9-e040-e00a18064a99">Biblioteca, 640 Avenida Lexington, 1916:</a> División de Arte, Grabados y Fotografías de Miriam y Ira D. Wallach: Colección fotográfica, Biblioteca Pública de Nueva York (1916).</li>
+        <li><em>La propiedad de los Healey:</em> <a href="http://www.loc.gov/pictures/item/nj1477.photos.038376p/">Biblioteca Conmemorativa Murray Guggenheim, Avenidas Cedar & Norwood, Long Branch, condado de Monmouth, NJ</a> vía la Biblioteca del Congreso de Estados Unidos.</li>
+        <li><em>Caribbean Motel:</em> <a href="https://commons.wikimedia.org/wiki/File:WWHD_Caribbean_sign.JPG">WWHD Caribbean sign.</a></li>
+        <li><em>Olas:</em> <a href="http://digitalcollections.nypl.org/items/510d47e1-48c7-a3d9-e040-e00a18064a99">Ocean Breakers, Cape Island, NJ</a>: División de Arte, Grabados y Fotografías de Miriam y Ira D. Wallach: Colección fotográfica, Biblioteca Pública de Nueva York (1865).</li>
+        <li><em>Cartas de tarot:</em> <a href="http://gallica.bnf.fr/ark:/12148/btv1b105111415">Jeu de tarot divinatoire dit "Grand Etteilla" ou "tarot égyptien"</a> vía la Biblioteca Nacional de Francia.</li>
+        <li><em>Sala de lectura:</em> <a href="https://www.flickr.com/photos/montrealprotest/22008493185/in/photolist-zwPhg4-ocHKZV-oeuM5c-J2nxB4-5eF8MP-oeuM88-dQvgb7-ocHL78-ocDJ7S-ocDJ83-oeuM76-oeuM5T-oeuM9R-owmW9N-ow9Nae-ooqpns-ocHL5K-owjm52-ocHL1B-oeWXr6-ocDJ5s-5eFf9e-oeTj8f-ouMcMs-fHYLKi-ormX8L-ouhs93-oeWmbX-ovseYp-ocHL3k-odWkLC-oeuM9F-od8fWj-owoQuR-oukwMk-ovrN1j-obU1a9-oyfVhP-obU8dY-oeUNm6-oy8a4c-oweHoU-ocDJ95-ov9CYM-otnjKY-otqj6u-ouRQ8U-ouPxpF-oeULZi-ou3x1K">Psychic Readings - $10.</a></li>
+        <li><em>Foto de las dunas:</em> <a href="https://flic.kr/p/vpWnd">Dune Fence</a> (sacadas en Stone Harbor, Nueva Jersey).</li>
       </ol>
       <p className="small">
-        Algumas imagens foram trabalhadas com o software <a href="https://github.com/satoshiiizuka/siggraph2016_colorization">Let there be Color!: Joint End-to-end Learning of Global and Local Image Priors for Automatic Image Colorization with Simultaneous Classification</a> de Satoshi Iizuka, Edgar Simo-Serra e Hiroshi Ishikawa.
+        Algunas imágenes fueron editadas con <a href="https://github.com/satoshiiizuka/siggraph2016_colorization">Let there be Color!: Joint End-to-end Learning of Global and Local Image Priors for Automatic Image Colorization with Simultaneous Classification</a> de Satoshi Iizuka, Edgar Simo-Serra y Hiroshi Ishikawa.
       </p>
 
       <figure style={{textAlign: "center", marginTop: "6em"}} className="thumbnail">
-        <img src="images/cover.png" alt="Capa do jogo, com as palavras 'Stone Harbor' e 'Liza Daly' sobre uma fotografia de dunas perto do mar" />
+        <img src="images/cover.png" alt="Cubierta del juego, con las palabras 'Stone Harbor' y 'Liza Daly' sobre una fotografía de las dunas del mar" />
       </figure>
     </section>
   ]

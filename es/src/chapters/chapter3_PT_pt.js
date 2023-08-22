@@ -6,279 +6,289 @@ import { RenderSection } from '.'
 const _Chapter = ({currentSection, inventory, chapterId}) => {
   var sections = [
     <section>
-      <h2>Capítulo III</h2>
-      <h3>No gabinete de Whitby</h3>
+      <h2>Capítulo Tres</h2>
+      <h3>En la oficina de Whitby</h3>
       <p>
-        Estavas convencido de que nunca mais irias conseguir dormir, mas na noite passada o cansaço tomou conta de todo o teu corpo, um cansaço como não sentiras desde criança. Lembras-te de dias de verão demasiado quentes para se poder ficar na sala de leitura — a tua mãe só mandou pôr ar condicionado depois de ’75, muito tempo depois de teres saído de casa — e, portanto, passavas o dia inteiro no mar. Não eras grande nadador, mas só lutar contra a corrente já era, para ti, cansativo, e voltavas para casa a largar areia pelo átrio e pelas escadas que te levavam ao apartamento em cima da loja, e deixavas-te cair morto na cama. Para a tua mãe, o dia de trabalho só começava mesmo ao anoitecer, e tu costumavas
-        ficar a dormir a maior parte do tempo até que ela te ia acordar, muitas vezes,
-        bem depois da meia-noite, e te fazia um jantar simples. Como resultado, perdias o que passava na televisão, o que te tornava ainda mais popular entre as crianças na escola.
-     </p>
-      <p>
-        "Natas?” pergunta Whitby, interrompendo os teus pensamentos.
-      </p>
-      <p>Abanas a cabeça. "Estou a tentar deixar-me disso. Mas aceito um camião de açúcar."</p>
-      <p>
-        Ela passa-te uma caneca e uma mão cheia de pacotes de açúcar.
-        Ela partilha o gabinete, mas, como é fim de semana, só cá estão os polícias de serviço a preencherem papelada com ar lúgubre.
-      </p>
-      <p>
-        Ela fecha a persiana que dá para a área comum, só que, como está tão cheia
-        de vincos e dobras, pouca é a privacidade que oferece.
-        Sentes que estás prestes a ser interrogado, o que é verdade.
+        Estabas seguro que nunca podrías dormirte, pero anoche sentiste un cansancio en todo el cuerpo que no habías sentido
+        desde que eras un niño. Recuerdas los días de verano cuando hacía mucho calor para quedarse en la sala de lectura
+        (mamá no compró un aire acondicionado hasta el año 75, mucho despúes de que te mudaste) y pasabas
+        todo el día en el océano. No eras muy bueno nadando, pero tan solo pelear contra
+        la corriente te cansaba, hasta que volvías a casa, dejabas un rastro de arena en el vestíbulo y las
+        escaleras hasta el departamento sobre la tienda, y te desplomabas sobre la cama. Mamá
+        no empezaba a trabajar hasta
+        la tarde, entonces solías dormir durante todo ese tiempo hasta que te despertaba, a menudo
+        mucho despúes de la medianoche, y preparaba una cena simple. Como resultado, solías perderte lo que daban en
+        la televisión, lo que obviamente te hizo aun más popular con tus compañeros de la escuela.
       </p>
       <p>
-        “Porque é que voltaste para Jersey?” Como pareces confundido, ela diz, “Depois da morte da tua mãe. Ela era dona
-        daquela casa, que deve valer um dinheirão, ali mesmo em cima do passeio marítimo.”
-        Ela senta-se à tua frente e cruza as mãos de maneira empertigada.
+        “¿Crema?” pregunta Whitby e interrumpe tus pensamientos.
+      </p>
+      <p>Niegas con la cabeza. “Intento dejarla. Aunque sí acepto un montón de azúcar”.
       </p>
       <p>
-        “Investigaste o meu passado?” Ela encolhe os ombros: <em>É o meu trabalho</em>. “Voltei para aquela casa
-        quando ela estava no hospital. Pensei que podia tomar conta das coisas até ela se recompor.”
-        Paras, dás um gole no café, pões mais açúcar. "Nunca aconteceu. E nunca arranjei tempo para a vender.”
+        Te da una taza y un puñado de
+        sobresitos de azúcar. Su oficina es compartida, pero es fin de semana y solo están
+        los policías de guardia, completando papeleo tristemente en la comisaría.
       </p>
       <p>
-        “Isso foi há quatro anos.” É óbvio que o sabes, mas é diferente quando outra pessoa o diz em voz alta.
-        Antes de conseguires responder, ela diz,
-      “Desculpa, não são contas do meu rosário.”</p>
+        Cierra la persiana veneciana que da al área común, aunque
+        tiene tantas arrugas y dobleces que apenas da privacidad.
+        Se siente como si te fueran a interrogar, lo que es verdad.
+      </p>
       <p>
-        Hesitas por um momento e depois dizes, “Nem sempre há um porquê. As pessoas, às vezes, simplesmente ficam bloqueadas.”
+        “¿Por qué volviste a Nueva Jersey?” Cuando luces confundido, dice “Después de que murió tu mamá. Era dueña
+        de esa propiedad, así que seguro vale mucho, justo ahí en el paseo marítimo”.
+        Se sienta en frente tuyo y entrelaza las manos con delicadeza.
       </p>
-
-      <p>Ela acena com a cabeça, pega numa pequena pilha de fotografias e começa a dispô-las —
-        vira-as com afinco e coloca-as viradas para baixo. Ela daria uma ótima crupiê.
+      <p>
+        “¿Revisaste mis antecedentes?” Se encoje de hombros: <em>Eso es lo que hago</em>. “Volví a casa
+        cuando ella estaba en el hospital, pensé que manejaría las cosas un tiempo hasta que se recuperara”.
+        Pausas,
+        le das un sorbo al café, agregas más azúcar. “Nunca pasó. Todavía no encontré el tiempo para venderlo”.
       </p>
-      
-       <p>“Mais um teste?” suspiras.</p>
-      <p>“Não, palerma. Chegou a altura de conheceres a família.” Ela vira a
-        primeira <List expansions={["foto", "foto, de Healey e de um homem mais novo, muito parecido a ele"]} tag="c3_healeyphoto" />.
+      <p>
+        “Eso fue hace cuatro años”. Lógicamente sabes esto, pero es diferente cuando alguien más lo dice en voz alta.
+        Antes de poder responder, dice
+      “Perdón, no me incumbe saber por qué”.</p>
+      <p>
+        Vacilas y luego dices “No siempre existe un porqué. A veces las personas
+        solo quedan... estancadas”.
+      </p>
+      <p>Asiente y levanta una pequeña pila de fotos y empieza a exponerlas
+        con cuidado hacia abajo. Sería una excelente crupier.
+      </p>
+      <p>“¿Otra prueba?” suspiras.</p>
+      <p>“No, tonto. Es hora de que conozcas a la familia”. Da vuelta la
+        primera <List expansions={["foto", "foto de Healey y un joven parecido"]} tag="c3_healeyphoto" />.
       </p>
     </section>,
     <section>
- 
-      <p>“Este à esquerda é Alan e, à direita, o seu irmão mais novo, Jared.
-        Eu andei na escola com a mulher de Jared, Allison — fomos vizinhas por uns anos — e
-        ficámos em contacto durante os seus tempos de universidade. Só conheci o Jared depois de se terem casado.
-        A família dela e a minha não frequentavam, digamos, os mesmos salões.” Ela fica pensativa por um momento. “Nunca percebi porque é que ela me escolheu para ser madrinha da Sarah. Não sou católica e,
-        naquela altura, não éramos próximas. Ela só disse que queria ter a certeza de que a sua menina estaria 'protegida,' do quê, já não sei. Assumi que eu era o único polícia que conhecia."
+      <p>“El de la izquierda es Alan y el de la derecha es su hermano menor Jared.
+        Fui a la escuela con la esposa de Jared, Allison, fuimos vecinas unos años, y
+        nos mantuvimos en contacto cuando se fue a la universidad. No conocí a Jared hasta que se casaron.
+        Su familia y la mía no iban exactamente a las mismas fiestas”. Reflexiona
+        un momento. “Nunca supe por qué me nombró madrina de Sarah. No soy católica y
+        no eramos cercanas en ese momento. Solo dijo que quería asegurarse de que su hija estuviera ‘protegida’, pero
+        de qué, no sé. Asumí que era la única oficial que conocía.
       </p>
       <p>
-
-        “Há cerca de nove anos, ela foi-se embora. Ficou só uma nota a dizer que tinha decidido começar uma vida nova.
-        Tentei localizá-la;
-        ela deixou-me uma mensagem no gabinete a dizer que tinha encontrado uma pessoa nova e que eu não deveria procurá-la.
-        Não aprovei, mas quem sou eu para a julgar?”
+        “Hace nueve años, se fue. Solo dejó una nota que decía que había decidido comenzar una nueva vida.
+        Intenté rastrearla;
+        me dejó un mensaje en la oficina donde decía que había conocido a alguien más y que
+        no la buscara. No estaba de acuerdo, pero ¿quién soy yo para juzgarla?”
       </p>
-      <p>“Como é que o marido reagiu?”</p>
-      <p>“Como bem imaginas. Tem criado a filha sozinho.
-        É um bom pai solteiro, mas é daqueles que pensa que merece
-        uma medalha por fazer o que um milhão de mulheres faz todos os anos.” Ela vira
-        outra <List expansions={["foto", "foto de Sarah, a rapariga com a boneca"]} tag="c1_photos2"/>.
+      <p>“¿Cómo lo tomó su esposo?”</p>
+      <p>“Como te lo imaginas. Así que ha estado criando a su
+        hija solo. Es un buen padre soltero, pero la clase que cree que se merece
+        una medalla por hacer lo que millones de mujeres hacen cada año”. Da vuelta
+        otra <List expansions={["foto", "foto de Sarah, la niña con la muñeca"]} tag="c1_photos2"/>.
       </p>
     </section>,
     <section>
-      <p>“Esta fotografia já tem uns anitos. Ela agora tem onze anos.”
-        Whitby contempla-a por um momento. “Toda a gente adora a miúda. Não só porque
-        a mãe a abandonou; mas porque, pura e simplesmente, é um doce de criança.”
-        Ela vira <List expansions={["outra fotografia", "uma fotografia de dois gémeos adultos"]} tag="c1_photos3" />.</p>
+      <p>“Esta foto es de hace unos años, ya tiene once”.
+        Whitby la considera un momento. “Todos aman a esa pequeña. No solo porque
+        su mamá la abandonó, sino porque simplemente es una chica dulce”.
+        Da vuelta <List expansions={["otra foto", "una foto de dos gemelos adultos"]} tag="c1_photos3" />.</p>
     </section>,
     <section>
-      <p>“Michael e Michelle Herschel,” diz ela, e não consegues evitar uma bufada de troça. "Pois, zero pontos pela originalidade. Estes dois são a sobrinha e o sobrinho de Alan — a mãe era Christina, a irmã mais velha de Alan e Jared, mas faleceu há alguns anos. Os gémeos ainda vivem na casa dela para as bandas de Sea Isle. Não os conheço pessoalmente."</p>
-      <p>“A última,” diz ela, e passa-te <List expansions={["uma foto de uma mulher que reconheces", "uma foto de Maggie Healey"]} tag="c1_photos4"/>.</p>
+      <p>“Michael y Michelle Herschel”, dice y no puedes evitar resoplar. “Sí, cero puntos por
+        originalidad. Son los sobrinos de Alan; su madre era Christina, la hermana mayor de
+        Alan y Jared, pero falleció hace unos años. Los gemelos aún viven en su casa en Sea Isle.
+      No los conozco personalmente”.</p>
+      <p>“Última”, dice y te entrega <List expansions={["una foto de una mujer que reconoces", "una foto de Maggie Healey"]} tag="c1_photos4"/>.</p>
     </section>,
     <section>
-      <p>“Margaret ou Maggie. Uma mulher adorável, mas com um caráter de ferro, como viste. Do que ouvi dizer, ela seria
-        a primeira a desenrascar-te num aperto, mas também a primeira a pôr-te na rua
-        se tornasses a lixar tudo. Se mais pessoas fossem como ela, ficava sem trabalho.”
+      <p>“Margaret o Maggie. Una mujer agradable, pero estricta también, como viste. Por lo que oí sería la
+        primera en salvarte de problemas y también la primera en arrojarte a
+        la calle si cometes el mismo error. Si más personas fueran como ella, no tendría trabajo”.
       </p>
-      <p>“Ela não o matou,” dizes tu, surpreendendo-te até a ti próprio. “Eu vi como ela olhou para ele na noite
-      em que morreu. Ela estava preocupada com ele. Amava-o.”</p>
-
+      <p>“Ella no lo mató”, dices y te sorprendes a ti mismo. “Vi como lo miraba la noche
+      que murió. Estaba preocupada por él. Lo amaba”.</p>
       <p>
-        “Eu também acho que não, mas nunca se sabe,” diz com um pouco de pena. “Cada uma das pessoas que te mostrei aqui ou
-        estava em casa de Healey ou perto dela no fim de semana em que ele morreu.
-        Se estivéssemos a tratar isto como uma investigação de homicídio, eles estariam todos sob
-        forte vigilância, mas — uma porta trancada, um medicamento comum, uma vítima idosa?
-        Tudo isto redunda numa morte infeliz, mas perfeitamente vulgar.”
+        “Yo también lo creo, pero nunca se sabe”, dice un poco triste. “Todos los que te he mostrado
+        estaban en o cerca de la finca Healey el fin de semana que murió.
+        Si fuera una investigación de asesinato activa, todos estarían
+        bajo vigilancia, pero ¿una puerta cerrada, un medicamento común, una víctima anciana?
+        Solo indicaba una muerte desafortunada, pero normal”.
       </p>
- 
-      <p>“Ainda pensas assim?” perguntas.</p>
-     <p>O telemóvel dela toca antes de te poder responder. Whitby ouve e acena com a cabeça algumas vezes, depois
-        tapa o auscultador. “Preciso de atender isto. Podes esperar lá fora?”
+      <p>“¿Todavía piensas eso?” preguntas.</p>
+      <p>Le suena el teléfono antes de poder responder. Whitby escucha y asiente un par de veces, luego
+        tapa el auricular. “Debo atender esto. ¿Puedes esperar afuera?”
       </p>
-       <p>Banido, esgueiras-te até à sala de espera mais próxima. Seis cadeiras de plástico e uns quantos tipos.
-        Não estás na secção das admissões gerais
-        — essa estaria repleta de pessoas impacientes, bêbadas ou zangadas, ou, mais provavelmente, ambas.
-        Esta é a parte onde estacionam os visitantes que estão cá voluntariamente, esses que vêm para falar com a polícia.</p>
-
-      <p>Ninguém parece
-        feliz por estar aqui, e francamente duvidas que quisesses beber um copo com qualquer um deles,
-        mas pelo menos não estão a vomitar.
-        Finges que não existem e pões-te a folhear uma pilha de revistas antigas sobre uma mesa de café improvisada.
+      <p>Desterrado, te escabulles a través de la comisaría hacia una sala de espera cercana. Seis sillas de plástico, algunos otros hombres.
+        Aquí no es el ingreso
+        general, ese estaría infestado de gente impaciente y borracha, enojada o, lo que es más probable, ambos.
+        Aquí es donde ponen a las visitas que vinieron por voluntad propia, los que vienen a hablar con
+      los detectives.</p>
+      <p>Nadie luce
+        contento de estar aquí, y honestamente no te gustaría compartir una cerveza con ninguno,
+        pero al menos estas personas no están vomitando.
+        Finges que no existen y escudriñas una pila de revistas obsoletas sobre una mesita improvisada.
       </p>
-      
-
       <p>
-        Estás a folhear uma edição de 1982 da <em>Reader’s Digest</em> (e o pior é que parece que já leste esta)
-        quando uma mulher começa a discutir com um jovem agente que se mantém indiferente:
-        “Mas a inspetora Whitby disse-me justamente para vir cá agora!” Olhas para cima
-        e, com surpresa, reconheces, da foto, Michelle, a sobrinha mais velha de Healey.
+        Estás hojeando una edición de 1982 de <em>Selecciones</em> (peor, crees que esta ya la leíste)
+        cuando una mujer empieza a discutir con un joven oficial impasible:
+        “¡Pero la detective Whitby me dijo específicamente que viniera ahora!” Levantas la vista
+        y, con sorpresa, reconoces a la sobrina mayor de Healey, Michelle, de la foto.
       </p>
-      <p>Dizem-lhe para aguentar os cavalos, e ela senta-se em frente de ti numa das poucas cadeiras vazias.</p>
-
-      <p>Nunca, jamais, em circunstância alguma deves meter conversa com esta mulher. Isto é um assunto da polícia, e ela está
-        aqui, neste momento, à espera para falar com a polícia. Devias ir para casa. Há apenas dez semanas de
-        época alta e é delas que vem 80% do teu rendimento anual. Isto não é um problema teu.
+      <p>Le dicen que se calme y espere sentada. Ella se sienta en frente tuyo en una de las pocas sillas vacías.</p>
+      <p>Sin duda, bajo ninguna circunstancia deberías interactuar con esta mujer. Estos son asuntos policiales y está
+        aquí, en este momento, esperando para hablar con la policía. Deberías irte a casa. La temporada de turistas solo tiene
+        diez semanas y equivale al 80% de tus ingresos de todo el año. Este no es tu problema.
       </p>
-
       <p>
-        Mas depois pões-te a pensar naquela boneca a olhar fixamente para ti.
-        </p>
+        Pero entonces piensas en esa muñeca mirándote.
+      </p>
       <p>
-        Michelle Herschel, como o seu irmão gémeo, é loura, risco ao meio e
-        com a longa franja metida detrás das orelhas. Não traz joias, nem sequer um
-        relógio, mas talvez se tenha esquecido dele — ela não pára quieta no lugar e, por duas vezes, já olhou para o pulso, encontrando-o vazio. Não se sente nem nervosa, nem culpada,
-        só irritada. Tem aonde ir. E agora reparou que
-        tu estás <Map from={inventory.c3_staring} to={{olhar: "a olhar para os seus "}}/>
+        Michelle Herschel, como su gemelo, es rubia, lleva el cabello separado justo a la mitad
+        con un flequillo largo escondido detrás de las orejas. No lleva joyas, ni siquiera un
+        reloj, pero seguro solo se lo olvidó; se mueve inquieta en el asiento y ya miró dos veces su muñeca
+        solo para encontrarla vacía. No está nerviosa ni se siente culpable,
+        simplemente irritada. Tiene otros compromisos. Y acaba de notar
+        que <Map from={inventory.c3_staring} to={{staring: "observas"}}/>
 
-        <List expansions={["a olhar", ["sapatos", "mãos", "bolsa"], "a olhar para ela"]} conjunction="e" tag="c3_staring"/>.
+        <List expansions={["observas", ["sus manos", "sus zapatos", "su bolso"], "la observas"]} conjunction="y" tag="c3_staring"/>.
         <Map from={inventory.c3_staring} to={{
-          mãos: " As mãos dela estão bem cuidadas, limpas, mas sem manicure.",
-          sapatos: " Os sapatos dela são pesadões, fora de moda. Provavelmente ortopédicos.",
-          bolsa: " A bolsa que ela está a agarrar é castanha? Ocre? Beje? Lá prática parece."
+          manos: " Sus manos están bien cuidadas, limpias, pero sin manicura.",
+          zapatos: " Sus zapatos son burdos, anticuados. Probablemente ortopédicos.",
+          bolso: " El bolso que lleva, ¿es marrón? ¿Tostado? ¿Crudo? Apropiado sin duda."
         }}/>
       </p>
     </section>,
     <section>
-      <p>“Podia ser pior,” dizes sorrindo com pena. “A senhora viu a <em>outra</em> sala de espera?”</p>
-
-      <p>Ela não responde. Pudera — passas por um tipo repelente
-        a tentar engatá-la numa esquadra de polícia. <Map from={inventory.c3_staring} to={{
-          mãos: `“Tome,” dizes, e passas-lhe um pacote de toalhetes que palmaste do quarto de Whitby.
-          “Para quando sair. Há só uma casa de banho e o sabonete já acabou.”`,
-          sapatos: ` Montas um pequeno espetáculo a tentar pôr-te confortável no teu lugar. “Chiça, o dia todo no trabuco e agora estas cadeiras? Estou pronto para confessar qualquer coisa.”`,
-          bolsa: ` “Peço imensa desculpa por estar a incomodá-la,” continuas, “mas teria, porventura, um lenço de papel?” As mulheres têm sempre lenços nas bolsas.
-          “Deve haver aqui mofo ou alguma coisa parecida, as minhas alergias estão a dar cabo de mim.”
+      <p>“Podría ser peor”, dices con una sonrisa triste. “¿Vio la <em>otra</em> sala de espera?”</p>
+      <p>No responde. ¿Quién puede culparla? Eres un extraño raro
+        que le habla en una comisaría. <Map from={inventory.c3_staring} to={{
+          manos: `“Aquí tiene”, dices y le pasas una toallita de mano que te robaste de la oficina de Whitby.
+          “Para cuando se vaya. Solo hay un baño y no tiene jabón”`,
+          zapatos: `Finges intentar ponerte cómodo en el asiento. “Dios, ¿todo el día trabajando y ahora estas
+          sillas? Estoy listo para confesar lo que sea”`,
+          bolso: ` “Lamento molestarla”, continúas, “pero ¿tiene un pañuelo?” Las mujeres siempre tienen pañuelos en el bolso.
+          “Debe haber moho acá o algo, mi alergia me está matando”
           `
-        }}/>
+        }}/>.
       </p>
       <p>“<Map from={inventory.c3_staring} to={{
-        sapatos: "Obrigada",
-        mãos: "Sim, eu também",
-        bolsa: "Desculpe, mas não"
-      }}/>,” diz ela lentamente. <Map from={inventory.c3_staring} to={{
-        mãos: "Ela chega a bolsa ainda mais ao corpo e evita o teu olhar.",
-        sapatos: "Ela chega a bolsa ainda mais ao corpo e mete os sapatos mais para debaixo da cadeira.",
-      bolsa: "Ela chega a bolsa mais ao corpo." }}/> Sentes alguma coisa <psychic>matreira, paranoica </psychic> 
-         a encolher-se dentro da bolsa, como um rato nervoso.
+        manos: "Gracias",
+        zapatos: "Sí, yo también",
+        bolso: "Perdón, no"
+      }}/>”, dice despacio. <Map from={inventory.c3_staring} to={{
+        manos: "Se aferra más a un bolso marrón y evita tu mirada",
+        zapatos: "Se aferra más a un bolso marrón y esconde los zapatos abajo del asiento",
+      bolso: "Se aferra más al bolso" }}/>. Sientes algo <psychic>sospechoso, paranoico</psychic>,
+        acobardándose en su bolso, como un ratón nervioso.
       </p>
       <p>
-        Herschel olha à sua volta, provavelmente em busca de uma outra mulher que a venha salvar, mas não há mais ninguém na sala de espera, além de <List expansions={["mais gajos pouco recomendáveis como tu", "uma data de gajos, mas chama-te a atenção uma espécie de motoqueiro que está sentado ao lado dela"]} tag="c3_guys" />.
+        Herschel mira alrededor, seguro esperando que otra mujer
+        la salve, pero no hay nadie más en la sala de espera aparte de <List expansions={["tipos más desagradables que tú", "unos tipos, pero notas en particular a un motociclista sentado a su lado"]} tag="c3_guys" />.
       </p>
       <p>
-        Se continuares a falar com ela, vais afugentá-la, por isso precisas é que seja ela a vir falar contigo se é que queres entrar naquela bolsa.
+        Si le sigues hablando, es posible que la espantes, así que necesitas que venga a ti
+        si pretendes conseguir ese bolso.
       </p>
-
     </section>,
     <section>
-      <p> Ele é uma variedade de trazer por casa dos motoqueiros Hell's Angels. Daqueles que anda na autoestrada para cima e para baixo no verão com a sua malta. Ele começa a soltar um rosnar agora que se apercebeu que
-        estás a <List expansions={["olhar para ele", "olhar. Em vez de desviares o olhar, levantas um pouco as sobrancelhas na direção de Michelle Herschel naquela linguagem universal dos depravados"]} tag="c3_biker" />.
+      <p> Es un tipo común que parece pertenecer a un moto club. Maneja por toda la autopista en el verano
+        con un grupo de amigos. Está gruñiendo un poco ahora que nota que
+        estás <List expansions={["mirandolo", "mirandolo a él. En vez de detenerte, le arqueas las cejas un poco hacia Michelle Herschel en el idioma universal de hombres sórdidos"]} tag="c3_biker" />.
       </p>
     </section>,
     <section>
       <p>
         <Map from={inventory.c3_biker} to={{
-          ele: "O motoqueiro parece confuso, então acenas com a cabeça expressamente na direção dela, e ele finalmente apanha a indireta. Desliza para a cadeira mais próxima da Sra. Herschel, não se preocupando em evitar que a sua perna se encoste ao espaço pessoal dela."
+          él: "El motociclista luce confundido, así que señalas con la cabeza a Michelle y finalmente capta la indirecta. Se desliza hacia el asiento junto a ella, sin molestarse en alejar su pierna para que no invada su espacio personal."
         }} />
 
       </p>
       <p>
+        Es obvio que Herschel no quiere tener nada que ver con él y decide que eres lo mejor de lo peor. Se mueve
+        hacia el asiento vacío restante al lado tuyo. Su bolso está entre los dos y puedes sentirlo
+        alejarse temeroso. Hay algo dentro que no quiere ser encontrado.
 
-        Herschel claramente não quer nada com ele e decide que és a melhor dentre as más opções. Ela muda-se
-        para o único lugar que resta, ao teu lado. A bolsa dela fica entre vocês, e podes senti-la receosa a tentar afastar-se. Há alguma coisa lá dentro que não quer ser encontrada.
-
-        O motoqueiro resmunga algo à mulher. “Deixe-a em paz, amigo,” avisa-lo, e ele faz cara de magoado — mas afinal não estavam do mesmo lado?
-</p>
-      <p>
-        “Desculpe,” diz a Sra. Herschel, inesperadamente. “Fui indelicada com o senhor.”
+        El motociclista le murmura algo. “Déjela tranquilo, amigo”, le adviertes y parece
+        ofendido, ¿no estaban del mismo lado?
       </p>
       <p>
-        “Não tem de se desculpar.” <em>E também estou a tentar roubar-lhe a bolsa.</em>
+        “Perdón”, dice la señora Herschel de repente. “Fui maleducada con usted”.
       </p>
       <p>
-        “Chamo-me Michelle.”
+        “No hace falta disculparse”. <em>Además, intento robarte el bolso.</em>
       </p>
       <p>
-        “Frank,” respondes. “Frank Desiderio.” Era o nome do teu pai. Nunca foi o teu.
+        “Soy Michelle”.
       </p>
       <p>
-        “E o que é que faz, Frank?” Ela não está realmente interessada, pergunta apenas por gentileza, e isso vê-se quando ela pega na bolsa e começa a remexer nas coisas lá dentro, empurrando
-        o objeto assustado mais para o fundo. Talvez até seja o objeto que esteja a obrigá-la a fazê-lo; uma pequena
-        compulsão que não sabe de onde vem. Inclinas-te para tentar ver o que é, mas
-        não queres assustá-la.
+        “Frank”, contestas. “Frank Desiderio”. Ese era el apellido de tu padre. Nunca fue el tuyo.
       </p>
       <p>
-        “Chofer de limusina,” respondes. E também é verdade. Tens uns quantos carros que agora subalugas a um amigo teu.
-        Estás sempre a pensar que
-        vais vender as coisas da tua Mãe, voltar ao teu próprio negócio, mas nunca é a altura certa.
-        Dá bom dinheiro. Há sempre otários ricos para levar até aos casinos desde Philadelphia ou de Nova Iorque.”
-     </p>
-      <p>
-        Tarde demais, lembras-te de que <em>ela é</em> rica. Ou
-        pelo menos a família dela. Tem graça que isso nem sempre é a mesma coisa.
-        “E você?” perguntas, esperando mudar de assunto.
+        “¿Y a qué te dedicas, Frank?” No está verdaderamente interesada, solo está siendo educada y
+        se nota cuando agarra el bolso y empieza a revolver las cosas adentro, para guardar el
+        objeto asustado más en el fondo. Quizá incluso la presiona a hacerlo, una pequeña
+        compulsión que no puede identificar. Te acercas para ver lo que es, pero
+        no quieres espantarla.
       </p>
       <p>
-        “Trabalho com o meu irmão,” diz ela, e dá para ver que a conversa acabou. Ela fecha
-        a bolsa, e, visivelmente perturbada, põe-na do outro lado longe de ti. Sentes alívio
-        do que quer que estivesse a tentar evadir-se à tua proximidade.
-      </p>
-      <p>Whitby aparece na sala de espera e passa por ti de forma rente e rude, que só pode ser um sinal intencional. “Sra. Herschel,” diz ela, agachando-se em frente
-        da mulher e inclinando-se sobre ela como uma confidente. “Lamento imenso tê-la feito esperar.”
+        “Conductor de limusinas”, respondes. Eso también es verdad. Tienes algunos autos que le estás subarrendando a un amigo por el momento.
+        Sigues pensando
+        que venderás la propiedad de mamá, comenzarás tu negocio de nuevo, pero nunca es el momento adecuado.
+        “Paga bien. Siempre hay ricos tontos para trasladar a los casinos de Filadelfia o Nueva York”.
       </p>
       <p>
-        “Não faz mal, é que estou com um bocadinho de pressa—”
+        Demasiado tarde recuerdas que <em>ella</em> es rica. O
+        por lo menos su familia. Es curioso como eso no implica siempre lo mismo.
+        “¿Y tú?” preguntas, con la esperanza de cambiar de tema.
       </p>
       <p>
-        Interrompes, em voz alta. “Mas ó senhora polícia, eu estava cá primeiro e já estou à espera há mais de uma hora.”
+        “Trabajo con mi hermano”, dice y te das cuenta que terminó la conversación. Cierra
+        el bolso y, angustiosamente, lo deja del otro lado. Sientes alivio de
+        lo que sea que ha intentado evitarte.
+      </p>
+      <p>Whitby entra a la sala de espera y te roza al pasar de manera tan brusca
+        que sabes que es una señal deliberada. “Señora Herschel”, dice, se agacha en frente
+        de la mujer y se le acerca como una confidente. “Lamento haberla hecho esperar”.
       </p>
       <p>
-        A cara de Whitby não mostra sinal de te reconhecer. “Meu senhor, se me disser de que precisa
-        posso tentar encontrar alguém que —”
-      </p>
-
-      <p>
-        “Do que eu <em>preciso</em> é de ser ajudado mesmo não tendo uma cara bonita nem uma <em>bolsa</em>.”
+        “Está bien, solo estoy un poco apurada...”
       </p>
       <p>
-        “O senhor faça o favor de se acalmar.”
-        Whitby estende um braço protetor em torno de Michelle Herschel e ajuda-a a levantar-se. Ao fazê-lo, ela
-        derruba a bolsa, e — graças a Deus — o seu conteúdo espalha-se por toda a parte.
-        O <List expansions={["<psychic>objeto amedrontado</psychic>", "<psychic>recibo apavorado</psychic>",
-        "<psychic>recibo histérico</psychic> fica abençoadamente abafado quando o pisas com o pé, escondendo-o"]} tag="c3_receipt" />
+        Interrumpes en voz alta. “Oiga, señorita policía, llegué primero y he estado esperando más de una hora”.
+      </p>
+      <p>
+        La cara de Whitby no muestra señales de reconocerte. “Señor, si me dice qué necesita,
+        puedo intentar encontrar a alguien...”
+      </p>
+      <p>
+        “Lo que <em>necesito</em> es que alguien me ayude aunque no tenga una cara bonita ni un <em>bolso</em>”.
+      </p>
+      <p>
+        “Señor, debo pedirle que se calme”.
+        Whitby abraza a Michelle Herschel de manera protectora y la levanta. Al hacerlo,
+        tira el bolso y, gracias a Dios, su contenido se esparce por todos lados.
+        El <List expansions={["<psychic>objeto temeroso</psychic>", "<psychic>recibo aterrado</psychic>",
+        "<psychic>recibo histérico</psychic> afortunadamente se amortigua cuando lo pisas fuerte y lo escondes de vista"]} tag="c3_receipt" />
         <Map from={inventory.c3_receipt} to={{
-          undefined: " grita de pavor",
-          "objeto": " grita mais alto, deixando-te quase surdo",
+          undefined: " grita aterrado",
+          "objeto": " grita más fuerte, casi dejándote sordo",
         "recibo": "" }} offset={0}/>.
       </p>
       <p>
-        “Peço imensa desculpa,” diz Whitby a Herschel, dobrando-se para ajudá-la a arrumar.
+        “Lo siento mucho”, le dice Whitby a Herschel y se agacha para ayudarla a limpiar.
         <Map from={inventory.c3_receipt} to={{
-          "objeto": "  Ela já apanhou quase tudo e conversa distraída.",
-        "recibo": " Ela está a pôr tudo de novo dentro da bolsa." }} offset={0}/>
+          "objeto": " Ya recogió casi todo, mientras habla distraída",
+        "recibo": " Está acomodando el bolso" }} offset={0}/>.
       </p>
     </section>,
     <section>
-      <p>Fazendo um pequeno espetáculo da tua falta de jeito, apanhas do chão <Map from={inventory.c3_staring} to={{
-        bolsa: "um dos lenços que querias",
-        mãos: "um lenço desdobrado",
-        sapatos: "um lenço desdobrado"
-      }} /> e oferece-lo a Herschel, mas ela afasta-se de ti. “Eu sabia que você era um tarado,”
-        diz ela, e despacha-se a sair da sala em direção ao gabinete da inspetora. Whitby lança-te um olhar de comiseração,
-        e tu dás-lhe um pequeno aceno de cabeça: <em>Já cá tenho o que queria</em>.
+      <p>Exagerando tu propia torpeza, levantas <Map from={inventory.c3_staring} to={{
+        bolso: "uno de los pañuelos que pediste",
+        manos: "un pañuelo que se cayó",
+        zapatos: "un pañuelo que se cayó"
+      }} /> del piso y se lo ofreces a Herschel, pero se aleja de ti. “Sabía que eras un pervertido”,
+        dice y sale corriendo de la habitación hacia la oficina de la detective. Whitby te mira
+        con compasión y asientes ligeramente: <em>Conseguí lo que quería</em>.
       </p>
-
-      <p>Quando ninguém está a olhar, apanhas o recibo com o lenço e enfia-lo no bolso com cuidado.</p>
-      <p><em>E provavelmente o que mereço.</em></p>
+      <p>Cuando nadie está mirando, levantas el recibo con el pañuelo y lo guardas con cuidado en el bolsillo.</p>
+      <p><em>Y probablemente lo que me merezco.</em></p>
       <NextChapter chapter="4" />
     </section>
     ]
