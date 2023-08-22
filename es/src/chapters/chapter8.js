@@ -93,12 +93,12 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
           from={inventory.c8_prints}
           to={{
             undefined: ` con pisadas superpuestas, `,
-            stairs: ` con las mismas pisadas, `,
+            escalinata: ` con las mismas pisadas, `,
           }} /> manchas no de lodo, sino de miedo y enojo. No ves pisadas del tamaño de una niña,
           pero la <List expansions={["baranda de la escalera...", "baranda te llama como si te extendiera la mano para bailar, te seduce para que la sigas."]} tag="c8_stairrail"/>
       </p>
       <p>
-        Jared Healey yace tirado al pie de la escalera con el cuello doblado hacia atrás. No sabes si fue la caída lo que lo mató, pero hay un <List expansions={["pesado atizador de hierro", "apenado atizador de hierro "]} tag="c8_poker" nextUnit={null} /> a su lado, empapado de sangre. <Map from={inventory.c8_poker} to={{atizador: "Susurras tus pesares." }} />
+        Jared Healey yace tirado al pie de la escalera con el cuello doblado hacia atrás. No sabes si fue la caída lo que lo mató, pero hay un <List expansions={["pesado atizador de hierro", "apenado atizador de hierro "]} tag="c8_poker" nextUnit={null} /> a su lado, empapado de sangre. <Map from={inventory.c8_poker} to={{hierro: "Susurras tus pesares." }} />
       </p>
     </section>,
     <section>
@@ -148,18 +148,18 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         <Map from={inventory.c8_michelle} to={{
           undefined: " ve ",
           rostro: " ven ",
-          ojos: "ven ",
-          frente: "ve ",
-          mejillas: " ven ",
+          aterrorizados: " ven ",
+          transpirada: " ve ",
+          enrojecidas: " ven ",
         }} /> en la penumbra.
           </p>
     </section>,
     <section>
       <p>
         <Map from={inventory.c8_michelle} to={{
-          ojos: "Te mira de arriba a abajo, intentando descifrarte.",
-          mejillas: "Su rostro está enrojecido como los mentirosos cuando los descubren.",
-          frente: "Ha transpirado un largo rato, sola aquí adentro."
+          aterrorizados: "Te mira de arriba a abajo, intentando descifrarte.",
+          enrojecidas: "Su rostro está enrojecido como los mentirosos cuando los descubren.",
+          transpirada: "Ha transpirado un largo rato, sola aquí adentro."
         }}/> Está intentando entender cómo el desconocido de la estación de policía es la misma persona que ha estado esperando.
       </p>
       <p>
@@ -175,9 +175,9 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       </p>
       <p>
         <Map from={inventory.c8_michelle} to={{
-          ojos: "“¿Qué miras?” dices y tratas de verte aburrido.",
-          mejillas: "“¿Qué escondes?” dices y la señalas de modo acusador.",
-          frente: "“Apesta a transpiración aquí”, dices y la miras con asco."
+          aterrorizados: "“¿Qué miras?” dices y tratas de verte aburrido.",
+          enrojecidas: "“¿Qué escondes?” dices y la señalas de modo acusador.",
+          transpirada: "“Apesta a transpiración aquí”, dices y la miras con asco."
         }}/>&nbsp; “¿Dónde está?”
       </p>
       <p>
