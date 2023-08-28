@@ -85,7 +85,7 @@ const _Prologue = ({currentSection, inventory}) => {
     </section>,
     <section>
       <p>
-        ―Siento una poderosa fuerza psíquica de tu <FromInventory inventory={inventory.p0_customer_clothes} offset={1} /> &#x2015;dices―. ¿Puedes dármelo?
+        ―Siento una poderosa fuerza psíquica de tu <FromInventory inventory={inventory.p0_customer_clothes} offset={1} /> ―dices―. ¿Puedes dármelo?
         ―El cliente mira asombrado cuando te lo entrega. Cierras los ojos y giras
         el <FromInventory inventory={inventory.p0_customer_clothes} offset={1} /> lentamente entre tus manos―. <Map 
         from={inventory.p0_customer_clothes} to={mapsClothes} offset={1}/>.
