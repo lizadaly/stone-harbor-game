@@ -81,7 +81,7 @@ const _Prologue = ({currentSection, inventory}) => {
       </p>
       <p>“Then let us begin. Some reach the spirits via palms or cards. I require a personal object, one infused with the spirits themselves.”
       </p>
-      <p>You look over the customer, who is wearing <List expansions={Customer.clothes} tag="p0_customer_clothes"/>.</p>
+      <p>You look over the customer. He is wearing <List expansions={Customer.clothes} tag="p0_customer_clothes"/>.</p>
     </section>,
     <section>
       <p>
