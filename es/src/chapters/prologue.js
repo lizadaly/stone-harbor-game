@@ -162,10 +162,10 @@ const _Prologue = ({currentSection, inventory}) => {
       pueblo, así que la historia apareció bastante en las noticias.</p>
       <p>
         Stone Harbor es un hermoso pueblo próspero y autosuficiente a quince minutos y un millón
-        de kilómetros de distancia del pueblo carnaval de clase media donde vives. ―&#8288;Perdón, ¿qué tiene que ver esto conmigo?
+        de kilómetros de distancia del pueblo carnaval de clase media donde vives. ―Perdón, ¿qué tiene que ver esto conmigo?
       </p>
       <p>―Healey tiene una sobrinita que vivía con él. Ella es mi ahijada.
-        Su madre ya no está, pero sé que ella... Yo siento... ―&#8288;La detective luce
+        Su madre ya no está, pero sé que ella... Yo siento... ―La detective luce
         incómoda, como muchos de tus clientes al principio―.
       Es una persona muy... espiritual. Cree fácilmente. ―Whitby pausa de nuevo.</p>
       <p>―Quiere decir que es ingenua ―dices.</p>
