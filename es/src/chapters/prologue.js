@@ -157,7 +157,7 @@ const _Prologue = ({currentSection, inventory}) => {
       <p>Mira intencionadamente la sala de lectura y no necesitas ser vidente para saber
         lo que opina de tu carrera. Saca una carpeta y comienza
         a leerla.
-        ―&#8288;Healey fue encontrado muerto en su casa después de ingerir
+        ―Healey fue encontrado muerto en su casa después de ingerir
         una sobredosis de su remedio para la presión arterial. Los Healey son una familia antigua y adinerada del
       pueblo, así que la historia apareció bastante en las noticias.</p>
       <p>
