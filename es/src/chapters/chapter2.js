@@ -24,38 +24,20 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         la mayoría de las casas de la costa. Pero la propiedad tampoco es de advenedizos. Es antigua, pero está bien cuidada. Cuando vives en la
         costa, es fácil encontrar gente rica a la que resentir, pero la casa de los Healey se siente como un hogar.
       </p>
-      <p>
-        “La esposa está con su hermana, así que no hay nadie”, dice Whitby mientras sale del auto. “Pero no puedo dejarte entrar ni aunque quisiera”. Es bastante claro
-        que no quiere.
-      </p>
-      <p>
-        “No necesito entrar, está atrás”, contestas. Conoces el camino y no la esperas.
-      </p>
+      <p>—La esposa está con su hermana, así que no hay nadie —dice Whitby mientras sale del auto—. Pero no puedo
+      dejarte entrar ni aunque quisiera. —Es bastante claro que no quiere.</p>
+      <p>—No necesito entrar, está atrás —contestas. Conoces el camino y no la esperas.</p>
       <p>
         Es tarde, así que ya hay sombra en el patio, pero es un día muy, muy caluroso y estás sudando hasta las bolas
-        en pantalón corto. Por supuesto que la detective parece estar bien fresca en su uniforme de poliéster. “Detente”,
-        grita. “Solo dime dónde está”.
-      </p>
-      <p>
-        “¿No quieres que deje ninguna evidencia falsa?”
-      </p>
-      <p>
-        “Exacto”.
-      </p>
-      <p>
-        “Me dolería menos si me mintieras”. No dice nada, así que solo señalas. “Está en un
-        arbusto al pie de las escaleras. Tal vez.”
-      </p>
-      <p>
-        Pausa. “¿Tal vez?”
-      </p>
-      <p>
-        “<em>Estaba</em> ahí, pero Healey murió hace semanas. ¿Cómo diablos debería saber
-        lo que pasó desde entonces?” La oyes murmurar algo sobre ser un pésimo vidente.
-      </p>
-      <p>
-        “¿Quiénes son? ¿Qué hacen aquí?”
-      </p>
+        en pantalón corto. Por supuesto que la detective parece estar bien fresca en su uniforme de poliéster.</p>
+        <p>—Detente —grita—. Solo dime dónde está.</p>
+      <p>—¿No quieres que deje ninguna evidencia falsa?</p>
+      <p>—Exacto.</p>
+      <p>—Me dolería menos si me mintieras. —No dice nada, así que solo señalas—. Está en un arbusto al pie de las escaleras. Tal vez.</p>
+      <p>Pausa.</p>
+      <p>—¿Tal vez?</p>
+      <p>—<em>Estaba</em> ahí, pero Healey murió hace semanas. ¿Cómo diablos debería saber lo que pasó desde entonces? —La oyes murmurar algo sobre ser un pésimo vidente.</p>
+      <p>—¿Quiénes son? ¿Qué hacen aquí?</p>
       <p>Te giras sorprendido. Es una anciana, alarmada por tu presencia. Su ropa
         es <List expansions={["cara", "cara, pero también puesta un poco al azar; no todo combina"]} tag="c2_clothes" nextUnit={null} />.
         Lleva un <List expansions={["morral", "morral y por la forma en la que lo sostiene parece estar lleno y pesado"]} tag="c2_duffel" nextUnit={null}/>.
@@ -64,35 +46,22 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
     </section>,
     <section>
       <p>
-        <em>Ah, debe ser la viuda</em>. Los mira mal a los dos. “¿Están con la policía?”
-      </p>
-      <p>
-        “Sí”, dice Whitby, con sinceridad. “Lamento mucho su pérdida, señora Healey”.
-      </p>
-      <p>Le alivia saber que no somos ladrones, pero tampoco se alegra de vernos. “Pensé
-        que ya habían terminado todo”.
-      </p>
-      <p>
-        “Solo estamos investigando unos cabos sueltos. Disculpe las molestias, pensé que ya se había ido”,
-        contesta Whitby. Te mira de una manera que sin duda significa ‘cierra la boca’.
-      </p>
-      <p>
-        “Yo te conozco”, dice la señora Healey. “Eres la madrina de Sarah”.
-      </p>
-      <p>
-        Whitby asiente. “Fui a la escuela con Allison”.
-      </p>
-      <p>
-        La mujer camina un poco por el área mientras arranca unas flores secas.
-        “No he visto a Sarah desde—esa noche—pero dejó algo en la casa. Déjame dártelo”.
-        Mete la mano en el morral y se acerca a ofrecerte algo a ti, porque estás parado al lado, y te golpea una oleada de miedo que literalmente
+        <em>Ah, debe ser la viuda</em>. Los mira mal a los dos.</p>
+        <p>—¿Están con la policía?</p>
+      <p>—Sí —dice Whitby, con sinceridad—. Lamento mucho su pérdida, señora Healey. —Le alivia saber que no somos ladrones,
+      pero tampoco se alegra de vernos.</p>
+      <p>—Pensé que ya habían terminado todo.</p>
+      <p>—Solo estamos investigando unos cabos sueltos. Disculpe las molestias, pensé que ya se había ido —contesta Whitby.
+      Te mira de una manera que sin duda significa "cierra la boca".</p>
+      <p>—Yo te conozco —dice la señora Healey—. Eres la madrina de Sarah. —Whitby asiente.</p>
+      <p>—Fui a la escuela con Allison. —La mujer camina un poco por el área mientras arranca unas flores secas.</p>
+        <p>—No he visto a Sarah desde... esa noche... pero dejó algo en la casa. Déjame dártelo.</p>
+        <p>Mete la mano en el morral y se acerca
+        a ofrecerte algo a ti, porque estás parado al lado, y te golpea una oleada de miedo que literalmente
         te empuja hacia atrás. Luce perpleja por tu reacción, pero se acerca, con el objeto
-        en la mano. Tu vista está tan distorsionada que no puedes distinguirlo aunque está frente
-        a tu cara.
-      </p>
-      <p>Whitby ve tu aflicción y empieza a correr a través del patio. “Gracias, señora Healey,
-        yo lo agarro...”
-      </p>
+        en la mano. Tu vista está tan distorsionada que no puedes distinguirlo aunque está frente a tu cara.</p>
+      <p>Whitby ve tu aflicción y empieza a correr a través del patio.</p>
+      <p>—Gracias, señora Healey, yo lo agarro...</p>
       <p>
         Sientes la sangre drenándose de tus extremidades y
         tu vista reduciéndose a un agujerito. Whitby estira el brazo para interceptarla, pero es demasiado tarde,
@@ -123,18 +92,15 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>En los brazos de su dueña, la muñeca irradia alegría en vez de miedo. Quizá es porque aún tiene cabeza.</p>
       <p>La esposa de Healey todavía tiene mechones marrones en su pelo gris rizado. Está vestida formal,
         como tiende a hacerlo su generación, aunque estás seguro que en la habitación hace mucho calor.
-        Le pregunta a la niña “Cielo, ¿quieres algo?” Su voz es firme, pero amable, como imaginas
-      que sería la de una tía.</p>
+        Le pregunta a la niña:</p>
+        <p>—Cielo, ¿quieres algo? —Su voz es firme, pero amable, como imaginas que sería la de una tía.</p>
 
-      <p>“No, gracias, tía Maggie”, dice la niña. Abraza a
-      la muñeca con una fuerza que podría matar a un animal pequeño, pero el juguete lo ama.</p>
-      <p>
-        Su tía asiente y le dice a su esposo “Te traeré tu té helado, cariño”.
-      </p>
+      <p>—No, gracias, tía Maggie —dice la niña. Abraza a la muñeca con una fuerza que podría matar a un animal pequeño, pero el juguete lo ama.</p>
+      <p>Su tía asiente y le dice a su esposo:</p>
+      <p>—Te traeré tu té helado, cariño.</p>
       <p>Healey usa unos enormes anteojos gruesos y está calvo, excepto por unos mechones que debería cortarse.
         Es probable que su esposa le corte el pelo después de muchas quejas y protestas. Con dolor, adviertes que nunca
-        lo podrá volver a hacer; algún extraño lo peinará para el funeral y ella pensará que está
-        todo mal hecho.
+        lo podrá volver a hacer; algún extraño lo peinará para el funeral y ella pensará que está todo mal hecho.
       </p>
 
       <p>Healey no dice nada,
@@ -147,28 +113,19 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         por siempre, que no lo pierda de vista. Pero no estás allí de verdad y esto ya
         sucedió. Elige creer en esa sonrisa falsa y se va.
       </p>
-      <p>Al momento que desaparece, Healey levanta un pesado teléfono negro de
-        una mesilla y lo pone sobre su regazo. “Juega con Vicky, Sarah. El tío Alan
-      solo tiene que hacer una llamada rápida”. La niña asiente y le tararea fuera de tono a la muñeca.</p>
+      <p>Al momento que desaparece, Healey levanta un pesado teléfono negro de una mesilla y lo pone sobre su regazo.</p>
+        <p>—Juega con Vicky, Sarah. El tío Alan solo tiene que hacer una llamada rápida. —La niña asiente y le tararea fuera de tono a la muñeca.</p>
       <p>Healey marca el teléfono a disco lentamente; es obvio que le duele mover las manos. Es un número
         corto, local. La conversación es en voz baja e incomprensible porque no quiere que la niña
-        lo escuche. Captas algunas palabras: “nunca”, “ese dinero”,
-        y luego dice enojado “¿Cómo pudiste?” y la niña, Sarah, lo mira sobresaltada y suelta la muñeca
-        que cae al piso.
-      </p>
-      <p>
-        “No dejaré que ella sufra por tus errores. A la mañana ya estará hecho”, dice Healey y cuelga el auricular con un golpe seco cuando
-        su esposa entra con unos vasos transpirados en una bandeja. “Número equivocado”, dice, para evitar cualquier
-        discusión. Su esposa no dice nada, solo deja
-        los vasos en la mesa.
-      </p>
-      <p>
-        “Perdón”, dice de manera brusca, se saca los anteojos para frotarse la cara y se levanta. No ve
-        la muñeca, la pisa y le aplasta la
-        cabeza. La pequeña Sarah ya estaba
-        por llorar, pero esto
-        la vuelve histérica. Maggie Healey la arropa y dice “Te leeré un cuento en la cama, cielo, vamos”.
-      </p>
+        lo escuche. Captas algunas palabras: “nunca”, “ese dinero”, y luego dice enojado:</p>
+        <p>—¿Cómo pudiste? —La niña, Sarah, lo mira sobresaltada y suelta la muñeca que cae al piso—. No dejaré que ella sufra por tus errores.
+        A la mañana ya estará hecho —dice Healey y cuelga el auricular con un golpe seco cuando
+        su esposa entra con unos vasos transpirados en una bandeja—. Número equivocado —dice para evitar cualquier discusión.</p>
+        <p>Su esposa no dice nada, solo deja los vasos en la mesa.</p>
+      <p>—Perdón —dice de manera brusca, se saca los anteojos para frotarse la cara y se levanta.</p>
+        <p>No ve la muñeca, la pisa y le aplasta la cabeza. La pequeña Sarah ya estaba por llorar, pero esto
+        la vuelve histérica. Maggie Healey la arropa y dice:</p>
+        <p>—Te leeré un cuento en la cama, cielo, vamos.</p>
       <p>
         Ahora la habitación está vacía excepto por la muñeca, que yace olvidada bajo un armario ornamentado. Pasa
         el tiempo, quizá horas. Las luces de la casa se apagan cuando todos se van a dormir, las agujas del reloj
@@ -185,43 +142,31 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <section>
         <h3>En la mansión (dentro del auto de Whitby)</h3>
         <p>
-          Te despiertas de repente. “¿Cómo llegué aquí?”
-        </p>
-        <p>
-          “Te arrastramos”. Whitby está fumando, no pensaste que era de esas. La ceniza es larga.
-        </p>
-        <p>“¿Tú y quién más?”</p>
-        <p>“La señora Healey y yo”, dice con infinita paciencia. “Es más fuerte de lo que parece.
-          Le dije que te bajó la glucosa. Pensé
-        que ibamos a mantener un perfil bajo”.</p>
-        <p>Afuera es un infierno, pero estás helado hasta los huesos y no puedes
-          dejar de temblar. Te ríes un poco y te suena raro.
-          “Qué buen policía resulté ser”.
-        </p>
-        <p>“Nunca dije que eras un policía”, responde con severidad.</p>
-        <p>“Claramente no le corregiste el malentendido”.</p>
-        <p>Nota su cigarrillo olvidado y lo tira por la ventana. “¿Qué otra opción
-          tenía? <em>¿Hola, soy la detective Whitby y este es mi vidente mascota?</em>”
-        </p>
-        <p>“Qué dulce de tu parte, pero recién nos conocemos”.</p>
-        <p>Ve que estás temblando y cierra la ventana aunque debe estar sofocante
-          en el auto. Estás agradecido.
-        “¿Qué pasó esta vez?” pregunta con gentileza.</p>
-        <p>
-          Le recitas los hechos, incluso la parte de la muñeca.
-          “Pero entiendo”, dices cuando no responde. “Está en mi cabeza o
-          soy un fraude. Solo déjame de nuevo
-          en el paseo marítimo. No te volveré a molestar”.
-        </p>
-        <p>Asiente y arranca el auto. “Te dejaré allí”, dice. “¿A qué hora puedes estar listo mañana?”</p>
-        <p>“¿Listo para <em>qué</em>?”</p>
-        <p>Señala. Reposado en el asiento trasero está
-        el guante del asesino... no, un par de guantes idénticos.</p>
-        <p>“El otro estaba justo donde dijiste, bajo un arbusto cerca del pie de la escalera. Lo levanté
+          Te despiertas de repente.</p>
+          <p>—¿Cómo llegué aquí?</p>
+        <p>—Te arrastramos. —Whitby está fumando, no pensaste que era de esas. La ceniza es larga.</p>
+        <p>—¿Tú y quién más?</p>
+        <p>—La señora Healey y yo —dice con infinita paciencia—. Es más fuerte de lo que parece. Le dije que te bajó la glucosa. Pensé
+        que ibamos a mantener un perfil bajo. —Afuera es un infierno, pero estás helado hasta los huesos y no puedes dejar de temblar.
+        Te ríes un poco y te suena raro.</p>
+          <p>—Qué buen policía resulté ser.</p>
+        <p>—Nunca dije que eras un policía —responde con severidad.</p>
+        <p>—Claramente no le corregiste el malentendido. —Ella nota su cigarrillo olvidado y lo tira por la ventana.</p>
+        <p>—¿Qué otra opción tenía? <em>¿Hola, soy la detective Whitby y este es mi vidente mascota?</em></p>
+        <p>—Qué dulce de tu parte, pero recién nos conocemos. —Ve que estás temblando y cierra la ventana aunque debe estar sofocante en el auto.
+        Estás agradecido.</p>
+        <p>—¿Qué pasó esta vez? —pregunta con gentileza. Le recitas los hechos, incluso la parte de la muñeca.</p>
+          <p>—Pero entiendo —dices cuando no responde—. Está en mi cabeza o soy un fraude. Solo déjame de nuevo
+          en el paseo marítimo. No te volveré a molestar.</p>
+        <p>Asiente y arranca el auto.</p>
+        <p>—Te dejaré allí —dice—. ¿A qué hora puedes estar listo mañana?</p>
+        <p>—¿Listo para <em>qué</em>?</p>
+        <p>Señala. Reposado en el asiento trasero está el guante del asesino... no, un par de guantes idénticos.</p>
+        <p>—El otro estaba justo donde dijiste, bajo un arbusto cerca del pie de la escalera. Lo levanté
           antes de que te marchitaras como una flor. Cuando vuelva al trabajo el lunes, tengo que hablar
-          con los investigadores forenses sobre su meticulosidad”.
-        </p>
-        <p>No dices nada, solo la miras fijo, así que agrega “Mira, solo relájate, Pietro. Te creo”.</p>
+          con los investigadores forenses sobre su meticulosidad.</p>
+        <p>No dices nada, solo la miras fijo, así que agrega:</p>
+        <p>—Mira, solo relájate, Pietro. Te creo.</p>
 
         <NextChapter chapter="3" />
       </section>

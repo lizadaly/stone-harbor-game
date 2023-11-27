@@ -10,7 +10,7 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
     <section>
       <h2>Capítulo Cinco</h2>
       <h3>En tu sala de lectura</h3>
-      <p>"¿Buscas el conocimiento de los sabios? ¡Avante!"</p>
+      <p>―¿Buscas el conocimiento de los sabios? ¡Avante!</p>
       <p>
         No visitaste a un amigo (ya no esperan oír de ti) y no te tomaste el día
         (no puedes permitírtelo), pero sí lograste volver a tu vida cotidiana.
@@ -22,23 +22,25 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         Esta clienta es una preadolescente. Por lo general, sueles rechazarlas a menos que vengan
         con un adulto, pero estás de mal humor y tomar su dinero te hará feliz. A las jovencitas
-        solo les interesan los chicos, así que decides ir al grano. "Veo un nombre", dices. "Comienza con S..."
-        Instantáneamente ves el reconocimiento.  “<List expansions={
-        ["¿Scott?", "¿Steven?", "¿Sam?"]} tag="p5_customer_names"/>”
+        solo les interesan los chicos, así que decides ir al grano.
+        </p>
+        <p>
+        ―Veo un nombre ―dices―. Comienza con S... ―instantáneamente ves el reconocimiento―. <List expansions={
+        ["¿Scott?", "¿Steven?", "¿Sam?"]} tag="p5_customer_names"/>
       </p>
     </section>,
     <section>
       <p>
-        “¡Sam!” susurra.
+        ―¡Sam! ―susurra.
       </p>
       <p>
-        "Siento una fuerte conexión. Sam y tú tienen una amistad... estrecha, pero no tanto como te gustaría".
-        Se oyen risitas del otro lado de la cortina. No es sorprendente: es raro que vengan
-        solas.
+        ―Siento una fuerte conexión. Sam y tú tienen una amistad... estrecha, pero no tanto como te gustaría.
+        </p>
+        <p>Se oyen risitas del otro lado de la cortina. No es sorprendente: es raro que vengan
+        solas. La clienta voltea a mirar la cortina.
         </p>
       <p>
-        La clienta voltea a mirar la cortina. "Les dije que esperaran afuera. No pueden enterarse
-        de lo nuestro", dice con urgencia.
+        ―Les dije que esperaran afuera. No pueden enterarse de lo nuestro ―dice con urgencia.
         Sus <List expansions={["manos", "inquietas manos"]} tag="c5_hands" />
         <Map from={inventory.c5_hands} to={{
           undefined: " se mueven con impaciencia en la mesa",
@@ -52,46 +54,43 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
     </section>,
     <section>
       <Map from={inventory.c5_bracelets} to={{
-        muñeca: <p>"Siento una fuerte conexión emocional de tus pulseras". Las mira sorprendida,
-        como si hubiese olvidado que estaban allí. “Sí, las compramos en el centro comercial”.</p>
+        muñeca: <p>―Siento una fuerte conexión emocional de tus pulseras. ―Las mira sorprendida,
+        como si hubiese olvidado que estaban allí. <p></p><p>―Sí, las compramos en el centro comercial.</p></p>
       }} />
       <Map from={inventory.c5_necklace} to={{
-        collar: <p>“Tu collar me llama”.
+        collar: <p>―Tu collar me llama.
           <Map from={inventory.c5_bracelets} to={{
-            muñeca: <span> Notas que parpadea más rápido. "Es una conexión mucho más fuerte que la de las pulseras".</span>
+            muñeca: <span> Notas que parpadea más rápido. ―Es una conexión mucho más fuerte que la de las pulseras.</span>
           }} />
 
-        &nbsp;Toma el collar y sonríe en secreto. "Sam lo hizo".</p>
+        &nbsp;Toma el collar y sonríe en secreto. ―Sam lo hizo.</p>
       }} />
       <p>
-        "A él le importas mucho", dices. Comienzas a notar su repentina y
-        profunda decepción cuando oyes una conmoción afuera. Una mujer adulta entra furiosa.
-        La madre de alguna. Por esto mismo no sueles tratar con niños.
+        ―A él le importas mucho ―dices.
+        Comienzas a notar su repentina y profunda decepción cuando oyes una conmoción afuera.
+        Una mujer adulta entra furiosa. La madre de alguna. Por esto mismo no sueles tratar con niños.
       </p>
       <p>
-        "Sal inmediatamente, Jennifer", dice la mujer. Detrás de ella, entran las dos chicas
+        ―Sal inmediatamente, Jennifer ―dice la mujer. Detrás de ella, entran las dos chicas
         que seguro son amigas de tu clienta. <List expansions={["Una de ellas",
-        "una lleva puesto un collar de caracol y "]} tag="c5_girlfriend" /> se ve muy pálida.
+        "Una lleva puesto un collar de caracol y "]} tag="c5_girlfriend" /> se ve muy pálida.
       </p>
     </section>,
     <section>
 
-      <p>“Jennifer, Amy, Samantha, nos vemos en el auto”. Las niñas huyen, Jennifer te mira como
-       si se acabara de enterar que Papá Noel no existe. Sabes que es lo que te espera.</p>
-
+      <p>―Jennifer, Amy, Samantha, nos vemos en el auto. ―Las niñas huyen, Jennifer te mira como si se acabara de enterar que Papá Noel no existe. Sabes que es lo que te espera.</p>
       <p>
-        “Devuélveme lo que te haya pagado”, dice la madre y extiende la mano.
+        ―Devuélveme lo que te haya pagado ―dice la madre y extiende la mano.
       </p>
 
       <p>
-        “No quiero problemas”, respondes. Dudas mucho de que tu policía amiga te ayude a salir de esta.
+        ―No quiero problemas ―respondes. Dudas mucho de que tu policía amiga te ayude a salir de esta.
         Automáticamente, le devuelves cinco dólares, la mitad de lo que le cobraste a la niña.
       </p>
 
       <p>
         Te arranca el dinero de las manos y se voltea para marcharse. Pones los ojos en blanco
-        y le dices "Oye". Se voltea desconfiada. Le entregas el resto del dinero, que mira extrañada.
-        "Dale un respiro, ¿sí?" Resopla y se marcha.
+        y le dices:</p> <p>―Oye. ―Se voltea desconfiada. Le entregas el resto del dinero, que mira extrañada―. Dale un respiro, ¿sí? ―resopla y se marcha.
       </p>
       <p>
         Te refriegas los ojos hasta ver estrellas. Suena la campanilla de la puerta y decides saltearte las
@@ -107,25 +106,22 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         Parece como si hubiese envejecido unos cuantos años desde lo que sucedió en la visión,
         que no pudo haber sido hace más de un mes.
         Ni se molestó en afeitarse, y en algún momento reciente se le rompieron los anteojos y los reparó con cinta adhesiva.
-        "¿Cómo funciona esto?" pregunta.
-        </p>
-      <p>
-
-        Te cuesta hablar unos segundos y él te interrumpe. "¿Cómo es? ¿Me lees las palmas o algo así?"
+        </p><p>―¿Cómo funciona esto? ―pregunta. Te cuesta hablar por unos segundos y él te interrumpe―. ¿Cómo es? ¿Me lees las palmas o algo así?
       </p>
       <p>
-        "No, yo... requiero un objeto personal", dices de memoria, pero te ahoga el miedo.
+        ―No, yo... requiero un objeto personal ―dices de memoria, pero te ahoga el miedo.
         ¿Y si te da algo que te haga volver a caer en un trance? ¿Y si se te escapa
         algo incriminante? <em>¿Y si te quedas indefenso ante un asesino?</em>
       </p>
       <p>
-        "¿Qué? ¿Algo como un reloj? Los vendí todos. Ah, pero tengo esto..." Se quita algo de la mano
+        ―¿Qué? ¿Algo como un reloj? Los vendí todos. Ah, pero tengo esto... ―Se quita algo de la mano
         (¿un anillo?), lo apoya en la mesa, pero lo cubre para que no se vea. Inmediatamente percibes
         olas de culpa que inundan la mesa y se dirigen hacia ti.
       </p>
       <p>
         No puedes hacer esto ahora, no frente a él.
-        "Cartas de tarot", dices con brusquedad. "Siento que su sabiduría te podría beneficiar". Tomas el mazo de cartas de tu mamá.
+        </p><p>―Cartas de tarot ―dices con brusquedad―. Siento que su sabiduría te podría beneficiar.
+        </p><p>Tomas el mazo de cartas de tu mamá.
         Las mantienes cerca porque algunos clientes saben lo que quieren, pero siempre te resultó más fácil leer a las personas
         a tráves de sus posesiones. En este caso, demasiado fácil.
       </p>
@@ -136,15 +132,13 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         Siete de Bastos. Oye, es solo para entretenimiento, ¿no?
       </p>
       <p>
-        El ritual te tranquiliza. "El tarot no es clarividencia", concluyes.
-        "Las cartas reflejan la energía presente en cierta zona o circunstancia". Otra vez te sientes en control,
-        te centras en Healey y lo miras serio.
-        "Diriges esa energía mediante las decisiones que tomas en la vida.
-        Si no te gusta lo que te dicen las cartas hoy, siempre puedes
-        cambiar tu comportamiento para mejorar el resultado. ¿Estás listo?"
+        El ritual te tranquiliza.
+        </p><p>―El tarot no es clarividencia ―concluyes―. Las cartas reflejan la energía presente en cierta zona o circunstancia. ―Otra vez te sientes en control,
+        te centras en Healey y lo miras serio―. Diriges esa energía mediante las decisiones que tomas en la vida.
+        Si no te gusta lo que te dicen las cartas hoy, siempre puedes cambiar tu comportamiento para mejorar el resultado. ¿Estás listo?
       </p>
       <p>
-        “Sí”.
+        ―Sí.
       </p>
       <p>
         Despliegas dos cartas:
@@ -159,18 +153,18 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       pero ahora sabes que no es un asesino. Es demasiado débil.
       </p>
       <p>
-        "Si deseas cambiar tu destino, debes apaciguar al espíritu del muerto", dices de forma amenazante.
+        ―Si deseas cambiar tu destino, debes apaciguar al espíritu del muerto ―dices de forma amenazante.
         Por lo general, acostumbras a bajar tu estruendosa voz, pero ahora decides darle rienda suelta. El lugar es
         tan pequeño que tu voz lo devora, exprime lo que aparenta ser su conciencia.
       </p>
-      <p>“¿Qué debo hacer?” llora.</p>
-      <p>“Debes purgarte de tus mentiras”.</p>
+      <p>―¿Qué debo hacer? ―llora.</p>
+      <p>―Debes purgarte de tus mentiras.</p>
       <p>
-        “¡No sé a qué te refieres!”
+        ―¡No sé a qué te refieres!
       </p>
       <p>
         Tienes una sola oportunidad para obtener la información que tú y Whitby necesitan.
-        “Extiende la <List expansions={["mano", "mano y los espíritus me revelarán lo que debes hacer"]} tag="c5_hand" />”, dices.
+        </p><p>―Extiende la <List expansions={["mano", "mano y los espíritus me revelarán lo que debes hacer"]} tag="c5_hand" /> ―dices.
       </p>
     </section>,
     <section>
@@ -180,18 +174,19 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <p>
         Te estremeces un poco cuando tomas sus palmas, ¿y si esto provoca una visión?, pero solo sientes asco al
         tocar el cuerpo húmedo y pegajoso de otro ser humano.
-        "Veo números, filas y filas de números. Hay mucho dolor y sufrimiento en ellos".
-        Intenta separarse, pero lo sujetas más fuerte y continúas hablando sin importar su objeción. "¿Quién es el número ocho?"
+        </p><p>―Veo números, filas y filas de números. Hay mucho dolor y sufrimiento en ellos.
+        ―Intenta separarse, pero lo sujetas más fuerte y continúas hablando sin importar su objeción―. ¿Quién es el número ocho?
       </p>
       <p>
-        Por fin logra librarse y notas como tiembla de pies a cabeza. "Mi esposa me dijo que eras...
-        pero no creí... ¿Qué eres?"
+        Por fin logra librarse y notas como tiembla de pies a cabeza. </p>
+        <p>
+        ―Mi esposa me dijo que eras... pero no creí... ¿Qué eres?
       </p>
       <p>
-        <em>“¿Quién es el número ocho?”</em>
+        <em>―¿Quién es el número ocho?</em>
       </p>
       <p>
-        “Troiano”, susurra. A duras penas oyes el nombre.
+        ―Troiano ―susurra. A duras penas oyes el nombre.
         Healey se levanta, tira la silla en el proceso y escapa a través de la cortina.
       </p>
       <p>
@@ -273,9 +268,9 @@ class _Deck extends React.Component {
                   undefined: [<p>Consideras cuál carta elegir.</p>,
                   <p>Observas el segundo par.</p>,
                   <p>Observas el último par de la lectura.</p>][i],
-                  death: <p>“<em>La Muerte</em>”, dices serio. “La mayoría de las veces esto solo significa cambios, pero en tu caso...”
-                    Haces una pausa. “Presiento que hubo una muerte física hace poco y que fue injusta.
-                    ¿Alguien cercano a ti?” Healey se limpia el rostro. "Su espíritu te considera responsable por lo que pasó".
+                  death: <p>―<em>La Muerte</em> ―dices serio―. La mayoría de las veces esto solo significa cambios, pero en tu caso...
+                    ―Haces una pausa―. Presiento que hubo una muerte física hace poco y que fue injusta.
+                    ¿Alguien cercano a ti? ―Healey se limpia el rostro―. Su espíritu te considera responsable por lo que pasó.
                     <AnyMap from={this.props.chosen} indexStart={i} to={
                       {
                         traitor: ` Porque eres el Traidor.
@@ -287,48 +282,48 @@ class _Deck extends React.Component {
                       }
                     } />”
                   </p>,
-                  fool: <p>“<em>El Bufón</em>. Los espíritus no son claros. ¿El bufón es alguien que conoces? ¿O eres tú?”</p>,
-                  justice: <p>“<em>La Justicia</em> al final nos alcanzará a todos. A unos más rápido que a otros”.
-                    Como no contesta, prosigues. "¿Temes que llegue a ti? Los espíritus piensan que sí deberías.
-                    Debes temerle y mucho". Por fin has captado su atención.
+                  fool: <p>―<em>El Bufón</em>. Los espíritus no son claros. ¿El bufón es alguien que conoces? ¿O eres tú?</p>,
+                  justice: <p>―<em>La Justicia</em> al final nos alcanzará a todos. A unos más rápido que a otros.
+                    ―Como no contesta, prosigues―. ¿Temes que llegue a ti? Los espíritus piensan que sí deberías.
+                    Debes temerle y mucho. ―Por fin has captado su atención.
                     <AnyMap from={this.props.chosen} indexStart={i} to={
                       {
-                        traitor: ` “El Traidor será castigado por su deslealtad”.
+                        traitor: ` ―El Traidor será castigado por su deslealtad.
                         `,
-                        fool: ` “Definitivamente eres el Bufón si te dejas castigar tan fácil
-                        en vez de aceptar quién eres realmente”.
+                        fool: ` ―Definitivamente eres el Bufón si te dejas castigar tan fácil
+                        en vez de aceptar quién eres realmente.
                         `,
-                    death: ` “¿No crees que no existe mejor justicia que vengar una Muerte injusta?”`,
-                    man: ` “Esperas que el Hombre Rubio sea el único que sea castigado.
-                    Pero, si no actúas, si continúas teniendo miedo y escondiéndote, solo tú serás castigado”.`
+                    death: ` ―¿No crees que no existe mejor justicia que vengar una Muerte injusta?`,
+                    man: ` ―Esperas que el Hombre Rubio sea el único que sea castigado.
+                    Pero, si no actúas, si continúas teniendo miedo y escondiéndote, solo tú serás castigado.`
                   }
                 } />
               </p>,
-              man: <p>“<em>El Hombre Rubio</em>”. Frunces el ceño.
+              man: <p>―<em>El Hombre Rubio.</em> ―Frunces el ceño
                 <AnyMap from={this.props.chosen} indexStart={i} to={
                   {
-                    undefined: `" Los espíritus dicen que un hombre rubio juega un papel importante en tus problemas actuales".
-                     Haces una pausa. "Han confabulado, cometieron un gran mal juntos".`,
-                    traitor: `“¿Es él el Traidor que vimos antes? ¿O eres tú?” Healey se estremece.
-                    “Los espíritus me dicen que son ambos. Los dos cometieron un gran mal juntos.
-                    Para liberarte de esta carga debes actuar con penitencia”.
+                    undefined: `―. Los espíritus dicen que un hombre rubio juega un papel importante en tus problemas actuales.
+                     ―Haces una pausa―. Han confabulado, cometieron un gran mal juntos.`,
+                    traitor: `―¿Es él el Traidor que vimos antes? ¿O eres tú? ―Healey se estremece
+                    ―. Los espíritus me dicen que son ambos. Los dos cometieron un gran mal juntos.
+                    Para liberarte de esta carga debes actuar con penitencia.
                       `,
-                      fool: `“¿Es él el Bufón de esta lectura?” Esquiva tu mirada. “No, tú eres el Bufón.
+                      fool: `―¿Es él el Bufón de esta lectura? ―Esquiva tu mirada―. No, tú eres el Bufón.
                       Te mezclaste con las personas equivocadas y te desviaste del camino. Y alguien salió herido.
-                      Todavía no es demasiado tarde para arrepentirte de tu participación”.
+                      Todavía no es demasiado tarde para arrepentirte de tu participación.
                       `,
                     }
                   } /></p>,
-                money: <p>"<em>Dinero</em>. Casi todas las tradiciones religiosas perciben al dinero como una fuerza maligna y corrupta.
-                Nos convendría hacerles caso". Cierras los ojos. "Siento que el dinero es la raíz de tus problemas.
-                Te está envenenando a ti y a aquellos que te rodean. Debes purificarte de su influencia".
+                money: <p>―<em>Dinero</em>. Casi todas las tradiciones religiosas perciben al dinero como una fuerza maligna y corrupta.
+                Nos convendría hacerles caso. ―Cierras los ojos―. Siento que el dinero es la raíz de tus problemas.
+                Te está envenenando a ti y a aquellos que te rodean. Debes purificarte de su influencia.
                 </p>,
-                traitor: <p>“<em>El Traidor</em>”.
+                traitor: <p>―<em>El Traidor</em>
                   { [
-                    ` Lo miras con tranquilidad. "¿Conoces a alguien que haya traicionado a un ser querido?"
-                      Cuando comienza a tartamudear, dices "Las cartas saben lo que te aterra admitir".
+                    ` Lo miras con tranquilidad. ―¿Conoces a alguien que haya traicionado a un ser querido? ―
+                      cuando comienza a tartamudear, dices― las cartas saben lo que te aterra admitir.
                     `,
-                    ` Solo lo miras hasta que se averguenza. “Las cartas saben lo que temes admitir de ti”.
+                    ` ―Solo lo miras hasta que se averguenza―. Las cartas saben lo que temes admitir de ti.
                     `
                     ][i === 0 ? 0 : 1]
                   }</p>,
