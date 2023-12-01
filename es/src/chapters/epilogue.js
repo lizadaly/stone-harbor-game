@@ -10,30 +10,33 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
       <h2>Epílogo</h2>
       <h3>En tu sala de lectura</h3>
       <p>
-        "¿Buscas los conocimientos de los sabios? ¡Avante!"
+        ―¿Buscas el conocimiento de los sabios? ¡Avante!
       </p>
       <p>
         A.J., uno de tus estudiantes favoritos, asoma la cabeza por la puerta.
-        “Le dije que soy demasiado grande para esa mierda, señor Pietro”.
+        </p><p>―Le dije que soy demasiado grande para esa mierda, señor Pietro.
       </p>
       <p>
-        "Demasiado grande para esa <em>basura</em>", corriges. "¿En serio privarás a un viejo de su diversión?"
+        ―Demasiado grande para esa <em>basura</em> ―corriges―. ¿En serio privarás a un viejo de su diversión?
       </p>
       <p>
-        El niño pone los ojos en blanco. "Sí. En fin, ¿vendrá al partido?"
+        El niño pone los ojos en blanco.
+        </p><p>―Sí. En fin, ¿vendrá al partido?
       </p>
       <p>
-        "No tengo otra opción", dices alegremente.
-        Es el último día de clases antes del Día de Acción de Gracias, lo que significa que es el partido de bienvenida, lo que significa
+        ―No tengo otra opción ―dices alegremente.
+        </p><p>Es el último día de clases antes del Día de Acción de Gracias, lo que significa que es el partido de bienvenida, lo que significa
         que todos los empleados de la escuela, tanto los maestros, como los conserjes y los humildes ayudantes (ese eres tú) tienen
         el trabajo de controlar a la multitud, atender la barra de refrigerios y servir como animadores extras.
       </p>
       <p>
-        “Genial”, dice obviamente sin haber escuchado. Vino a recoger su mochila, la cual ha olvidado por milésima vez.
+        ―Genial ―dice obviamente sin haber escuchado.
+        </p><p>Vino a recoger su mochila, la cual ha olvidado por milésima vez.
         Te preguntas si se sentirá triste cuando eso pasa.
       </p>
       <p>
-        Casi colisiona con Nicki Troiano mientra él sale y ella entra. "¡Perdón!" grita desde el pasillo.
+        Casi colisiona con Nicki Troiano mientra él sale y ella entra.
+        </p><p>―¡Perdón! ―grita desde el pasillo.
       </p>
       <p>
         El hijo de Nicky recién comienza la universidad, lo cual es bueno; el padre ya no está, lo cual es fantástico.
@@ -41,32 +44,37 @@ const _Chapter = ({currentSection, inventory, chapterId}) => {
         pero decirlo te hace sentir mejor y sabes que a ella también le ayuda.
       </p>
       <p>
-        Mira la sala sorprendida. "Me gusta la nueva decoración". La "sala de lectura" (tú elegiste el nombre) es donde los niños con dificultades de aprendizaje
+        Mira la sala sorprendida.
+        </p><p>―Me gusta la nueva decoración.
+        </p><p>La "sala de lectura" (tú elegiste el nombre) es donde los niños con dificultades de aprendizaje
         vienen a recibir clases particulares o de apoyo. No eres más que un niñero con pretensiones, una maestra especializada maneja todo esto, pero
         te deja jugar al maestro y distraer a los niños de sus problemas cuando no se relacionan con los deberes. La semana pasada trajiste
         algunas de las baratijas de tu mamá; cuando nadie está mirando, les enseñas a hacer lecturas en frío. Mira, seguro será más útil que la geometría.
       </p>
       <p>
-        "¿Harás algo luego del partido?" pregunta. Te sientes halagado por lo tímida que suena su voz.
-      </p>
-      <p>
-        Le quitas el polvo a una bola de cristal para matar un poco tu nerviosismo. "No sé, debería estudiar..." Solo te falta
-        el 99% de la carrera para conseguir tu licenciatura en asistente social (idea de Whitby), pero, a este punto, solo estás tomando
+        ―¿Harás algo luego del partido? ―pregunta.
+        </p>
+        <p>Te sientes halagado por lo tímida que suena su voz.
+        Le quitas el polvo a una bola de cristal para matar un poco tu nerviosismo.
+        </p>
+        <p>―No sé, debería estudiar...</p>
+        <p>Solo te falta el 99% de la carrera para conseguir tu licenciatura en asistente social (idea de Whitby), pero, a este punto, solo estás tomando
         créditos fáciles para la universidad (idea tuya). El material no es díficil, pero ha pasado mucho tiempo desde la última vez
         que estudiaste. Cuando te quejas de todo lo que debes hacer, Whitby se siente culpable
         y Hank el Tanque te prepara espagueti. Te vives quejando.
       </p>
       <p>
-        “Es el Día de Acción de Gracias, Frankie”.
+        ―Es el Día de Acción de Gracias, Frankie.
       </p>
       <p>
         Te encojes de hombros. Te gusta molestarla. Técnicamente siguen siendo amigos, pero parece que están progresando. Van un 1% del camino.
       </p>
       <p>
-        "Bueno, si no estás muy ocupado, a Paul le encantaría verte". Paul es su hijo. Es callado, tal como tú lo eras.
+        ―Bueno, si no estás muy ocupado, a Paul le encantaría verte. ―Paul es su hijo. Es callado, tal como tú lo eras.
       </p>
       <p>
-        Nunca estás ocupado. "Está bien, te buscaré luego del partido", dices. Ella te saluda.
+        Nunca estás ocupado.
+        </p><p>―Está bien, te buscaré luego del partido ―dices. Ella te saluda.
       </p>
       <p>
         Terminas de ordenar por hoy: enderezas las sillas, tiras la basura de los niños, aspiras debajo de la mesa con tu ridículamente
