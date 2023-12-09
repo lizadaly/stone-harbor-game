@@ -1605,7 +1605,9 @@ h1 {
   font-weight: 600; }
 
 section {
-  margin: 0; }
+  margin: 0; 
+  text-indent: 5ch;
+}
 
 .current-chapter {
   margin-bottom: 8rem; }
