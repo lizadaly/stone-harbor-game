@@ -21,14 +21,20 @@ const advanceToChapter = async (page, count) => {
 }
 
 let pageErrors
+let externalRequests
 
-test.beforeEach(({ page }) => {
+test.beforeEach(({ page, baseURL }) => {
   pageErrors = []
+  externalRequests = []
   page.on('pageerror', (e) => pageErrors.push(e.message))
+  page.on('request', (r) => {
+    if (new URL(r.url()).origin !== new URL(baseURL).origin) externalRequests.push(r.url())
+  })
 })
 
 test.afterEach(() => {
   expect(pageErrors).toEqual([])
+  expect(externalRequests).toEqual([])
 })
 
 for (const { lang, path, headings } of languages) {
@@ -37,6 +43,16 @@ for (const { lang, path, headings } of languages) {
       await page.goto(path)
       await expect(page.locator('html')).toHaveAttribute('lang', lang)
       await expect(page.locator('#article h2')).toHaveText(headings.slice(0, 1))
+    })
+
+    test('every declared font should load', async ({ page }) => {
+      const fonts = await page.evaluate(async () => {
+        const faces = [...document.fonts]
+        await Promise.allSettled(faces.map((f) => f.load()))
+        return faces.map((f) => ({ face: `${f.family} ${f.weight} ${f.style}`, status: f.status }))
+      })
+      expect(fonts.length).toBeGreaterThan(0)
+      expect(fonts.filter((f) => f.status !== 'loaded')).toEqual([])
     })
 
     test('playing through should reach chapter three', async ({ page }) => {
