@@ -9,3 +9,5 @@ dist
 fabfile.py
 build
 CLAUDE.local.md
+test-results
+playwright-report
