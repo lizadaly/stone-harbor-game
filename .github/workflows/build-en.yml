@@ -27,4 +27,4 @@ jobs:
         npm install
     - name: Run 
       run: |
-        npx gulp sass
+        npm run build

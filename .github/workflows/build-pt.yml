@@ -28,6 +28,6 @@ jobs:
       working-directory: pt
     - name: Run 
       run: |
-        npx gulp sass
+        npm run build
       working-directory: pt
 
