@@ -45,6 +45,16 @@ for (const { lang, path, headings } of languages) {
       await expect(page.locator('#article h2')).toHaveText(headings.slice(0, 1))
     })
 
+    test('the head should point to itself and every translation', async ({ page }) => {
+      const pathname = (selector) => page.locator(selector).evaluateAll((links) =>
+        Object.fromEntries(links.map((l) => [l.hreflang || l.rel, new URL(l.href).pathname])))
+      expect(await pathname('link[rel=canonical]')).toEqual({ canonical: path })
+      expect(await pathname('link[rel=alternate]')).toEqual({
+        ...Object.fromEntries(languages.map((l) => [l.lang, l.path])),
+        'x-default': '/'
+      })
+    })
+
     test('every declared font should load', async ({ page }) => {
       const fonts = await page.evaluate(async () => {
         const faces = [...document.fonts]
@@ -117,3 +127,14 @@ for (const { lang, path, headings } of languages) {
     })
   })
 }
+
+test.describe('without JavaScript', () => {
+  test.use({ javaScriptEnabled: false })
+
+  for (const { lang, path } of languages) {
+    test(`${lang} should explain that JavaScript is required`, async ({ page }) => {
+      await page.goto(path)
+      await expect(page.locator('#article p')).toContainText('JavaScript')
+    })
+  }
+})
