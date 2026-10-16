@@ -9,3 +9,4 @@ build/*.map
 dist
 fabfile.py
 build
+CLAUDE.local.md
