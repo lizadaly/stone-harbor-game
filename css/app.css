@@ -1,3 +1,46 @@
+/* Self-hosted fonts (SIL OFL 1.1, see fonts/OFL-*.txt) */
+@font-face {
+  font-family: "Bitter";
+  src: url(fonts/bitter-latin-400-normal.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Bitter";
+  src: url(fonts/bitter-latin-400-italic.woff2) format("woff2");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Bitter";
+  src: url(fonts/bitter-latin-700-normal.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Bitter";
+  src: url(fonts/bitter-latin-700-italic.woff2) format("woff2");
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Raleway";
+  src: url(fonts/raleway-latin-500-normal.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Raleway";
+  src: url(fonts/raleway-latin-700-normal.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap; }
+
 nav a {
   color: #8a8a8a;
   text-transform: uppercase;
@@ -380,7 +423,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "adelle", "georgia", serif;
+  font-family: "Bitter", "georgia", serif;
   font-weight: normal;
   line-height: 1.75;
   color: #0a0a0a;
@@ -1594,9 +1637,6 @@ kbd {
   float: right;
 }
 
-.wf-loading * {
-  visibility: hidden; }
-
 .button {
   border: 0; }
 
@@ -1852,4 +1892,3 @@ aside.about-modal {
   position: absolute;
   width: 1px; }
 
-/*# sourceMappingURL=app.css.map */
