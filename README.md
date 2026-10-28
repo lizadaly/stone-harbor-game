@@ -48,4 +48,4 @@ http://localhost:8000/
 
 ## Running the translations
 
-In the `pt/` or `es/` directory, follow the same steps. The `runserver.sh` script will run the translation on a different URL. (The language toggle in the upper right of the UI is only meant to work on the production site.)
+In the `pt/` or `es/` directory, follow the same steps. The `runserver.sh` script will run the translation on a different port, at `/pt/` or `/es/`. The translations share the stylesheet and fonts in the top-level `css/` directory, so the server runs from the repo root. (The language toggle in the upper right of the UI is only meant to work on the production site.)
