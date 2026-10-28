@@ -605,7 +605,7 @@ h1 {
 section {
   margin: 0; }
 
-html[lang="es"] section {
+html[lang="es"] section p {
   text-indent: 5ch; }
 
 .current-chapter {
