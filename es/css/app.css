@@ -1893,3 +1893,27 @@ aside.about-modal {
   position: absolute;
   width: 1px; }
 
+
+/* Keep the nav on one row on phones; it wraps only if it can't fit (e.g. ES/PT at 320px) */
+@media screen and (max-width: 39.9375em) {
+  .top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+  .top-bar::before, .top-bar::after {
+    display: none; }
+  .top-bar-left, .top-bar-right {
+    width: auto; }
+  .top-bar .menu > li > a {
+    padding: 0.7rem 0.4rem;
+    white-space: nowrap; }
+  .top-bar-right .menu > li:last-child {
+    white-space: nowrap;
+    padding: 0 0.5rem 0 0.4rem;
+    font-size: 0.8rem; }
+  .top-bar-right .menu > li:last-child > a {
+    /* override the language links' inline padding */
+    padding: 0 !important; }
+  nav a {
+    font-size: 0.8rem; } }
