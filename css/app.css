@@ -1648,6 +1648,9 @@ h1 {
 section {
   margin: 0; }
 
+html[lang="es"] section {
+  text-indent: 5ch; }
+
 .current-chapter {
   margin-bottom: 8rem; }
 
